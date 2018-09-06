@@ -1,0 +1,42 @@
+dependencies: \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthProvider.m \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthCredential_Internal.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAPNSToken.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAPNSTokenManager.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAppCredential.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAppCredentialManager.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthGlobalWorkQueue.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuth_Internal.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthURLPresenter.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthNotificationManager.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthWebUtils.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRIdentityToolkitRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRequestConfiguration.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigResponse.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCResponse.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSendVerificationCodeRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSendVerificationCodeResponse.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyClientRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop-V2/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyClientResponse.h

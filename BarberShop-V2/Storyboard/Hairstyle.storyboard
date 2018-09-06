@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HAIRSTYLE-->
+        <scene sceneID="9yR-3P-DA4">
+            <objects>
+                <viewController storyboardIdentifier="HairStylesViewController" id="AXO-oN-4Qg" customClass="HairStylesViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CPE-Uh-8vf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-k4-NSb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mPa-fi-eEG">
+                                    <size key="itemSize" width="347" height="317"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hairStyleCell" id="5Uw-vO-LS1" customClass="HairstyleCollectionViewCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="14" y="0.0" width="347" height="317"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="347" height="317"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kdi-EC-Px8">
+                                                    <rect key="frame" x="33" y="20" width="280" height="233"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-zn-vxv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="347" height="128"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X6-39-KYe">
+                                                            <rect key="frame" x="0.0" y="128" width="347" height="189"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Kdi-EC-Px8" firstAttribute="top" secondItem="5Uw-vO-LS1" secondAttribute="top" id="4RO-ig-NHj"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kdi-EC-Px8" secondAttribute="bottom" id="QaA-3R-wKA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kdi-EC-Px8" secondAttribute="trailing" id="j7M-Zs-TUc"/>
+                                            <constraint firstItem="Kdi-EC-Px8" firstAttribute="leading" secondItem="5Uw-vO-LS1" secondAttribute="leading" id="rWb-zj-Fcm"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageStyleHair" destination="BLA-zn-vxv" id="red-BV-4bK"/>
+                                            <outlet property="shapeNameLabel" destination="7X6-39-KYe" id="Yfu-K5-IdX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lNK-k4-NSb" secondAttribute="bottom" id="0z6-bf-vr5"/>
+                            <constraint firstItem="lNK-k4-NSb" firstAttribute="leading" secondItem="CPE-Uh-8vf" secondAttribute="leading" id="u0Z-DY-3k5"/>
+                            <constraint firstAttribute="trailing" secondItem="lNK-k4-NSb" secondAttribute="trailing" id="vfn-2A-YxZ"/>
+                            <constraint firstItem="lNK-k4-NSb" firstAttribute="top" secondItem="hgM-4M-vsG" secondAttribute="top" id="yPU-ol-VXc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hgM-4M-vsG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HAIRSTYLE" id="Dmk-7u-SY5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQO-ml-kLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816.79999999999995" y="232.53373313343329"/>
+        </scene>
+        <!--Hairtype Style View Controller-->
+        <scene sceneID="XgO-kD-A8W">
+            <objects>
+                <viewController storyboardIdentifier="HairtypeStyleViewController" id="a49-Sr-qGv" customClass="HairtypeStyleViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHd-8O-Cp4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ohp-zV-ksF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g8H-Wl-r5h">
+                                    <size key="itemSize" width="336" height="293"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hairTypeCell" id="pQ1-Hn-8cV" customClass="HairstyleTypeCollectionViewCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="19.5" y="0.0" width="336" height="293"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="293"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OlP-4W-HHv">
+                                                    <rect key="frame" x="36" y="33" width="280" height="226"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iwO-EO-USD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="336" height="128"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5r-0f-e1k">
+                                                            <rect key="frame" x="0.0" y="128" width="336" height="165"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="OlP-4W-HHv" firstAttribute="leading" secondItem="pQ1-Hn-8cV" secondAttribute="leading" id="9ef-rO-KEV"/>
+                                            <constraint firstAttribute="trailing" secondItem="OlP-4W-HHv" secondAttribute="trailing" id="cNk-S2-NtE"/>
+                                            <constraint firstItem="OlP-4W-HHv" firstAttribute="top" secondItem="pQ1-Hn-8cV" secondAttribute="top" id="qAx-ZY-Q0J"/>
+                                            <constraint firstAttribute="bottom" secondItem="OlP-4W-HHv" secondAttribute="bottom" id="t7C-ri-4td"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="hairTypeImage" destination="iwO-EO-USD" id="q7T-RU-Y8M"/>
+                                            <outlet property="shapeNameLabel" destination="p5r-0f-e1k" id="8Kd-y6-cmj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ohp-zV-ksF" firstAttribute="top" secondItem="1iN-vv-AqR" secondAttribute="top" id="0r2-4T-QNe"/>
+                            <constraint firstItem="Ohp-zV-ksF" firstAttribute="leading" secondItem="vHd-8O-Cp4" secondAttribute="leading" id="Igz-fM-KYM"/>
+                            <constraint firstAttribute="bottom" secondItem="Ohp-zV-ksF" secondAttribute="bottom" id="M3g-aQ-SzP"/>
+                            <constraint firstAttribute="trailing" secondItem="Ohp-zV-ksF" secondAttribute="trailing" id="chX-tU-Qnf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1iN-vv-AqR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqW-f4-B0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="232.53373313343329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HBZ-sj-R27">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DfG-ms-KrB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Edm-Vl-oqu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AXO-oN-4Qg" kind="relationship" relationship="rootViewController" id="EKa-Bc-lM8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uo-mB-lvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="232.53373313343329"/>
+        </scene>
+    </scenes>
+</document>
