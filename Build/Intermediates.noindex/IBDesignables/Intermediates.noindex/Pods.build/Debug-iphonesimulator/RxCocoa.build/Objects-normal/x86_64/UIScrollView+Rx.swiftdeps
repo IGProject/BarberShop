@@ -34,6 +34,8 @@ depends-top-level:
 - "ControlProperty"
 - "DelegateProxy"
 - "Disposable"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - !private "MemoryLayout"
 - !private "NSValue"
 - "Reactive"
@@ -48,7 +50,8 @@ depends-top-level:
 - !private "castOrThrow"
 depends-member:
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "subscript"]
 - !private ["7RxCocoa6BinderV", "deinit"]
 - !private ["7RxCocoa6BinderV", "init"]
 - !private ["So15CALayerDelegateP", "contentOffset"]
@@ -62,8 +65,8 @@ depends-member:
 - !private ["s7CVarArgP", "pointerValue"]
 - !private ["s7CVarArgP", "proxy"]
 - !private ["s7CVarArgP", "subscript"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "bindMemory"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "bindMemory"]
 - !private ["7RxCocoa12ControlEventV", "init"]
 - !private ["7RxCocoa16ControlEventTypeP", "init"]
 - !private ["7RxCocoa15ControlPropertyV", "init"]
@@ -91,7 +94,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "pointerValue"]
 - !private ["s23CustomStringConvertibleP", "proxy"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
-- !private ["s9DecodableP", "subscript"]
+- !private ["Se", "subscript"]
 - !private ["7RxCocoa13DelegateProxyC", "contentOffsetBehaviorSubject"]
 - !private ["7RxCocoa13DelegateProxyC", "contentOffsetPublishSubject"]
 - !private ["7RxCocoa13DelegateProxyC", "installForwardDelegate"]
@@ -101,32 +104,33 @@ depends-member:
 - !private ["7RxCocoa17DelegateProxyTypeP", "contentOffsetPublishSubject"]
 - !private ["7RxCocoa17DelegateProxyTypeP", "installForwardDelegate"]
 - !private ["7RxCocoa17DelegateProxyTypeP", "proxy"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "bindMemory"]
-- !private ["s9EquatableP", "contentOffset"]
-- !private ["s9EquatableP", "contentOffsetBehaviorSubject"]
-- !private ["s9EquatableP", "contentOffsetPublishSubject"]
-- !private ["s9EquatableP", "installForwardDelegate"]
-- !private ["s9EquatableP", "isScrollEnabled"]
-- !private ["s9EquatableP", "methodInvoked"]
-- !private ["s9EquatableP", "pointerValue"]
-- !private ["s9EquatableP", "proxy"]
-- !private ["s9EquatableP", "subscript"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "bindMemory"]
+- !private ["SQ", "contentOffset"]
+- !private ["SQ", "contentOffsetBehaviorSubject"]
+- !private ["SQ", "contentOffsetPublishSubject"]
+- !private ["SQ", "installForwardDelegate"]
+- !private ["SQ", "isScrollEnabled"]
+- !private ["SQ", "methodInvoked"]
+- !private ["SQ", "pointerValue"]
+- !private ["SQ", "proxy"]
+- !private ["SQ", "subscript"]
 - !private ["s5ErrorP", "unknown"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["7RxCocoa11HasDelegateP", "contentOffset"]
 - !private ["7RxCocoa11HasDelegateP", "isScrollEnabled"]
-- !private ["s8HashableP", "bindMemory"]
-- !private ["s8HashableP", "contentOffset"]
-- !private ["s8HashableP", "contentOffsetBehaviorSubject"]
-- !private ["s8HashableP", "contentOffsetPublishSubject"]
-- !private ["s8HashableP", "installForwardDelegate"]
-- !private ["s8HashableP", "isScrollEnabled"]
-- !private ["s8HashableP", "methodInvoked"]
-- !private ["s8HashableP", "pointerValue"]
-- !private ["s8HashableP", "proxy"]
+- !private ["SH", "bindMemory"]
+- !private ["SH", "contentOffset"]
+- !private ["SH", "contentOffsetBehaviorSubject"]
+- !private ["SH", "contentOffsetPublishSubject"]
+- !private ["SH", "installForwardDelegate"]
+- !private ["SH", "isScrollEnabled"]
+- !private ["SH", "methodInvoked"]
+- !private ["SH", "pointerValue"]
+- !private ["SH", "proxy"]
+- !private ["SH", "subscript"]
 - !private ["s12MemoryLayoutO", "size"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "contentOffset"]
 - !private ["So8NSCodingP", "isScrollEnabled"]
 - !private ["So8NSCodingP", "pointerValue"]
@@ -139,24 +143,24 @@ depends-member:
 - !private ["So8NSObjectC", "methodInvoked"]
 - !private ["So8NSObjectC", "pointerValue"]
 - !private ["So8NSObjectC", "proxy"]
-- !private ["So16NSObjectProtocolP", "contentOffset"]
-- !private ["So16NSObjectProtocolP", "contentOffsetBehaviorSubject"]
-- !private ["So16NSObjectProtocolP", "contentOffsetPublishSubject"]
-- !private ["So16NSObjectProtocolP", "installForwardDelegate"]
-- !private ["So16NSObjectProtocolP", "isScrollEnabled"]
-- !private ["So16NSObjectProtocolP", "methodInvoked"]
-- !private ["So16NSObjectProtocolP", "pointerValue"]
-- !private ["So16NSObjectProtocolP", "proxy"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
-- !private ["So16NSObjectProtocolP", "scrollViewDidZoom"]
-- !private ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
-- !private ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
-- !private ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
-- !private ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
+- !private ["So8NSObjectP", "contentOffset"]
+- !private ["So8NSObjectP", "contentOffsetBehaviorSubject"]
+- !private ["So8NSObjectP", "contentOffsetPublishSubject"]
+- !private ["So8NSObjectP", "installForwardDelegate"]
+- !private ["So8NSObjectP", "isScrollEnabled"]
+- !private ["So8NSObjectP", "methodInvoked"]
+- !private ["So8NSObjectP", "pointerValue"]
+- !private ["So8NSObjectP", "proxy"]
+- !private ["So8NSObjectP", "scrollViewDidEndDecelerating"]
+- !private ["So8NSObjectP", "scrollViewDidEndDragging"]
+- !private ["So8NSObjectP", "scrollViewDidEndScrollingAnimation"]
+- !private ["So8NSObjectP", "scrollViewDidEndZooming"]
+- !private ["So8NSObjectP", "scrollViewDidScrollToTop"]
+- !private ["So8NSObjectP", "scrollViewDidZoom"]
+- !private ["So8NSObjectP", "scrollViewWillBeginDecelerating"]
+- !private ["So8NSObjectP", "scrollViewWillBeginDragging"]
+- !private ["So8NSObjectP", "scrollViewWillBeginZooming"]
+- !private ["So8NSObjectP", "scrollViewWillEndDragging"]
 - !private ["So14NSSecureCodingP", "pointerValue"]
 - !private ["So7NSValueC", "pointerValue"]
 - !private ["7RxSwift10ObservableC", "map"]
@@ -165,8 +169,8 @@ depends-member:
 - !private ["7RxSwift14ObservableTypeP", "init"]
 - !private ["7RxSwift14ObservableTypeP", "map"]
 - !private ["7RxSwift12ObserverTypeP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
 - !private ["7RxSwift8ReactiveV", "AnyObject"]
 - ["7RxSwift8ReactiveV", "Binder"]
 - ["7RxSwift8ReactiveV", "Bool"]
@@ -220,8 +224,8 @@ depends-member:
 - !private ["7RxCocoa0A23ScrollViewDelegateProxyC", "deinit"]
 - !private ["7RxCocoa0A23ScrollViewDelegateProxyC", "installForwardDelegate"]
 - !private ["7RxCocoa0A23ScrollViewDelegateProxyC", "proxy"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s10StrideableP", "bindMemory"]
+- !private ["ST", "subscript"]
+- !private ["Sx", "bindMemory"]
 - !private ["So29UIAccessibilityIdentificationP", "contentOffset"]
 - !private ["So29UIAccessibilityIdentificationP", "isScrollEnabled"]
 - !private ["So12UIAppearanceP", "contentOffset"]
@@ -236,6 +240,10 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "isScrollEnabled"]
 - !private ["So11UIFocusItemP", "contentOffset"]
 - !private ["So11UIFocusItemP", "isScrollEnabled"]
+- !private ["So20UIFocusItemContainerP", "contentOffset"]
+- !private ["So20UIFocusItemContainerP", "isScrollEnabled"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentOffset"]
+- !private ["So30UIFocusItemScrollableContainerP", "isScrollEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentOffset"]
 - !private ["So30UIPasteConfigurationSupportingP", "isScrollEnabled"]
 - !private ["So11UIResponderC", "contentOffset"]
@@ -260,13 +268,15 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So18UITraitEnvironmentP", "contentOffset"]
 - !private ["So18UITraitEnvironmentP", "isScrollEnabled"]
+- !private ["So23UIUserActivityRestoringP", "contentOffset"]
+- !private ["So23UIUserActivityRestoringP", "isScrollEnabled"]
 - !private ["So6UIViewC", "contentOffset"]
 - !private ["So6UIViewC", "isScrollEnabled"]
 - !private ["Sv", "bindMemory"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentOffset"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isScrollEnabled"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffsetBehaviorSubject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffsetPublishSubject"]
@@ -284,12 +294,13 @@ depends-member:
 - !private ["So16_RXDelegateProxyC", "proxy"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "7RxCocoa6BinderV"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "7RxCocoa12ControlEventV"
 - !private "7RxCocoa16ControlEventTypeP"
 - !private "7RxCocoa15ControlPropertyV"
@@ -298,35 +309,35 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "7RxCocoa13DelegateProxyC"
 - !private "7RxCocoa17DelegateProxyTypeP"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "SE"
+- !private "SQ"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "7RxCocoa11HasDelegateP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "s12MemoryLayoutO"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So7NSValueC"
 - !private "7RxSwift10ObservableC"
 - !private "7RxSwift25ObservableConvertibleTypeP"
 - !private "7RxSwift14ObservableTypeP"
 - !private "7RxSwift12ObserverTypeP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- !private "Sk"
+- !private "Sm"
 - "7RxSwift8ReactiveV"
 - !private "7RxSwift18ReactiveCompatibleP"
 - !private "7RxCocoa0aB5ErrorO"
 - !private "7RxCocoa0A23ScrollViewDelegateProxyC"
-- !private "s8SequenceP"
-- !private "s10StrideableP"
+- !private "ST"
+- !private "Sx"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -334,37 +345,40 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So12UIScrollViewC"
 - !private "So20UIScrollViewDelegateP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - !private "Sv"
-- !private "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
 - !private "So16_RXDelegateProxyC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
@@ -376,14 +390,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "480b67240c0c0bc4890a2e404cf624ab"

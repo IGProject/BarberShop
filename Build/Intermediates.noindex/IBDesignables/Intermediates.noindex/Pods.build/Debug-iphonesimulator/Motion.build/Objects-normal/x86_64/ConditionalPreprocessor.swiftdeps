@@ -35,19 +35,32 @@ depends-member:
 - !private ["6Motion23ConditionalPreprocessorC", "MotionConditionalContext"]
 - ["6Motion23ConditionalPreprocessorC", "UIView"]
 - !private ["6Motion23ConditionalPreprocessorC", "context"]
-- ["6Motion23ConditionalPreprocessorC", "deinit"]
+- !private ["6Motion23ConditionalPreprocessorC", "deinit"]
 - ["6Motion23ConditionalPreprocessorC", "init"]
 - !private ["6Motion23ConditionalPreprocessorC", "motion"]
 - ["6Motion23ConditionalPreprocessorC", "process"]
+- !private ["s28CustomDebugStringConvertibleP", "container"]
 - !private ["s28CustomDebugStringConvertibleP", "context"]
 - !private ["s28CustomDebugStringConvertibleP", "fromViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "isNavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "isPresenting"]
 - !private ["s28CustomDebugStringConvertibleP", "isTabBarController"]
+- !private ["s28CustomDebugStringConvertibleP", "pairedView"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "superview"]
 - !private ["s28CustomDebugStringConvertibleP", "toViewController"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "container"]
+- !private ["s17CustomReflectableP", "context"]
+- !private ["s17CustomReflectableP", "fromViewController"]
+- !private ["s17CustomReflectableP", "isNavigationController"]
+- !private ["s17CustomReflectableP", "isPresenting"]
+- !private ["s17CustomReflectableP", "isTabBarController"]
+- !private ["s17CustomReflectableP", "pairedView"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "superview"]
+- !private ["s17CustomReflectableP", "toViewController"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "context"]
 - !private ["s23CustomStringConvertibleP", "fromViewController"]
@@ -56,27 +69,63 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isTabBarController"]
 - !private ["s23CustomStringConvertibleP", "superview"]
 - !private ["s23CustomStringConvertibleP", "toViewController"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "context"]
-- !private ["s9EquatableP", "fromViewController"]
-- !private ["s9EquatableP", "isNavigationController"]
-- !private ["s9EquatableP", "isPresenting"]
-- !private ["s9EquatableP", "isTabBarController"]
-- !private ["s9EquatableP", "superview"]
-- !private ["s9EquatableP", "toViewController"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "container"]
+- !private ["Se", "context"]
+- !private ["Se", "fromViewController"]
+- !private ["Se", "isNavigationController"]
+- !private ["Se", "isPresenting"]
+- !private ["Se", "isTabBarController"]
+- !private ["Se", "pairedView"]
+- !private ["Se", "subscript"]
+- !private ["Se", "superview"]
+- !private ["Se", "toViewController"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "container"]
+- !private ["SE", "context"]
+- !private ["SE", "fromViewController"]
+- !private ["SE", "isNavigationController"]
+- !private ["SE", "isPresenting"]
+- !private ["SE", "isTabBarController"]
+- !private ["SE", "pairedView"]
+- !private ["SE", "subscript"]
+- !private ["SE", "superview"]
+- !private ["SE", "toViewController"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "container"]
+- !private ["SQ", "context"]
+- !private ["SQ", "fromViewController"]
+- !private ["SQ", "isNavigationController"]
+- !private ["SQ", "isPresenting"]
+- !private ["SQ", "isTabBarController"]
+- !private ["SQ", "pairedView"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "superview"]
+- !private ["SQ", "toViewController"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "conditionalModifiers"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "context"]
-- !private ["s8HashableP", "fromViewController"]
-- !private ["s8HashableP", "isNavigationController"]
-- !private ["s8HashableP", "isPresenting"]
-- !private ["s8HashableP", "isTabBarController"]
-- !private ["s8HashableP", "superview"]
-- !private ["s8HashableP", "toViewController"]
+- !private ["s23ExpressibleByNilLiteralP", "container"]
+- !private ["s23ExpressibleByNilLiteralP", "context"]
+- !private ["s23ExpressibleByNilLiteralP", "fromViewController"]
+- !private ["s23ExpressibleByNilLiteralP", "isNavigationController"]
+- !private ["s23ExpressibleByNilLiteralP", "isPresenting"]
+- !private ["s23ExpressibleByNilLiteralP", "isTabBarController"]
+- !private ["s23ExpressibleByNilLiteralP", "pairedView"]
+- !private ["s23ExpressibleByNilLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "superview"]
+- !private ["s23ExpressibleByNilLiteralP", "toViewController"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "container"]
+- !private ["SH", "context"]
+- !private ["SH", "fromViewController"]
+- !private ["SH", "isNavigationController"]
+- !private ["SH", "isPresenting"]
+- !private ["SH", "isTabBarController"]
+- !private ["SH", "pairedView"]
+- !private ["SH", "subscript"]
+- !private ["SH", "superview"]
+- !private ["SH", "toViewController"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["6Motion0A18ConditionalContextV", "Bool"]
 - ["6Motion0A18ConditionalContextV", "MotionTransition"]
@@ -106,11 +155,13 @@ depends-member:
 - ["6Motion0A16CorePreprocessorC", ""]
 - !private ["6Motion0A16CorePreprocessorC", "context"]
 - ["6Motion0A16CorePreprocessorC", "init"]
+- !private ["6Motion0A16CorePreprocessorC", "init"]
 - !private ["6Motion0A16CorePreprocessorC", "motion"]
 - ["6Motion0A16CorePreprocessorC", "process"]
 - !private ["6Motion0A12PreprocessorP", "MotionConditionalContext"]
 - ["6Motion0A12PreprocessorP", ""]
 - !private ["6Motion0A12PreprocessorP", "context"]
+- !private ["6Motion0A12PreprocessorP", "init"]
 - !private ["6Motion0A12PreprocessorP", "init"]
 - !private ["6Motion0A12PreprocessorP", "motion"]
 - !private ["6Motion0A12PreprocessorP", "process"]
@@ -136,13 +187,23 @@ depends-member:
 - !private ["So8NSObjectC", "isTabBarController"]
 - !private ["So8NSObjectC", "superview"]
 - !private ["So8NSObjectC", "toViewController"]
-- !private ["So16NSObjectProtocolP", "context"]
-- !private ["So16NSObjectProtocolP", "fromViewController"]
-- !private ["So16NSObjectProtocolP", "isNavigationController"]
-- !private ["So16NSObjectProtocolP", "isPresenting"]
-- !private ["So16NSObjectProtocolP", "isTabBarController"]
-- !private ["So16NSObjectProtocolP", "superview"]
-- !private ["So16NSObjectProtocolP", "toViewController"]
+- !private ["So8NSObjectP", "context"]
+- !private ["So8NSObjectP", "fromViewController"]
+- !private ["So8NSObjectP", "isNavigationController"]
+- !private ["So8NSObjectP", "isPresenting"]
+- !private ["So8NSObjectP", "isTabBarController"]
+- !private ["So8NSObjectP", "superview"]
+- !private ["So8NSObjectP", "toViewController"]
+- !private ["Sq", "container"]
+- !private ["Sq", "context"]
+- !private ["Sq", "fromViewController"]
+- !private ["Sq", "isNavigationController"]
+- !private ["Sq", "isPresenting"]
+- !private ["Sq", "isTabBarController"]
+- !private ["Sq", "pairedView"]
+- !private ["Sq", "subscript"]
+- !private ["Sq", "superview"]
+- !private ["Sq", "toViewController"]
 - !private ["So29UIAccessibilityIdentificationP", "superview"]
 - !private ["So12UIAppearanceP", "superview"]
 - !private ["So21UIAppearanceContainerP", "superview"]
@@ -150,6 +211,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "superview"]
 - !private ["So18UIFocusEnvironmentP", "superview"]
 - !private ["So11UIFocusItemP", "superview"]
+- !private ["So20UIFocusItemContainerP", "superview"]
 - !private ["So30UINavigationControllerDelegateP", "context"]
 - !private ["So30UINavigationControllerDelegateP", "fromViewController"]
 - !private ["So30UINavigationControllerDelegateP", "isNavigationController"]
@@ -166,6 +228,7 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "isTabBarController"]
 - !private ["So26UITabBarControllerDelegateP", "toViewController"]
 - !private ["So18UITraitEnvironmentP", "superview"]
+- !private ["So23UIUserActivityRestoringP", "superview"]
 - !private ["So6UIViewC", "superview"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "context"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "fromViewController"]
@@ -195,6 +258,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toViewController"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "container"]
+- !private ["s21_ObjectiveCBridgeableP", "context"]
+- !private ["s21_ObjectiveCBridgeableP", "fromViewController"]
+- !private ["s21_ObjectiveCBridgeableP", "isNavigationController"]
+- !private ["s21_ObjectiveCBridgeableP", "isPresenting"]
+- !private ["s21_ObjectiveCBridgeableP", "isTabBarController"]
+- !private ["s21_ObjectiveCBridgeableP", "pairedView"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "superview"]
+- !private ["s21_ObjectiveCBridgeableP", "toViewController"]
 depends-nominal:
 - !private "Sb"
 - !private "So15CALayerDelegateP"
@@ -204,12 +277,13 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s8HashableP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - "6Motion0A18ConditionalContextV"
 - !private "6Motion0A7ContextC"
@@ -220,7 +294,8 @@ depends-nominal:
 - !private "6Motion0A10TransitionC"
 - !private "So8NSCodingP"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
+- !private "Sq"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -228,12 +303,14 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So30UINavigationControllerDelegateP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So26UITabBarControllerDelegateP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - !private "So37UIViewControllerAnimatedTransitioningP"
 - !private "So40UIViewControllerInteractiveTransitioningP"
@@ -244,34 +321,35 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "c04d479a8f1c7402c22ec9219e723f51"

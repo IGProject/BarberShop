@@ -21,6 +21,8 @@ depends-top-level:
 - "FABMenuBacking"
 - "FABMenuController"
 - "FABMenuDelegate"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "TransitionController"
 - !private "UIBlurEffect"
 - "UIBlurEffectStyle"
@@ -30,7 +32,8 @@ depends-top-level:
 - !private "UIVisualEffectView"
 depends-member:
 - !private ["Sa", "last"]
-- !private ["s23BidirectionalCollectionP", "last"]
+- !private ["s13ArrayProtocolP", "last"]
+- !private ["SK", "last"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So19CAAnimationDelegateP", "zPosition"]
 - !private ["So7CALayerC", "zPosition"]
@@ -90,6 +93,7 @@ depends-member:
 - !private ["s7CVarArgP", "hideFabMenuBacking"]
 - !private ["s7CVarArgP", "hideFade"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "isOpened"]
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
@@ -108,7 +112,7 @@ depends-member:
 - !private ["s7CVarArgP", "traverseViewControllerHierarchyForClassType"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "zPosition"]
-- !private ["s10CollectionP", "last"]
+- !private ["Sl", "last"]
 - ["s28CustomDebugStringConvertibleP", "FABMenu"]
 - ["s28CustomDebugStringConvertibleP", "FABMenuBacking"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBlurEffect"]
@@ -143,6 +147,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "hideFabMenuBacking"]
 - !private ["s28CustomDebugStringConvertibleP", "hideFade"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "isOpened"]
 - !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
@@ -163,7 +168,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zPosition"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "addSubview"]
+- !private ["s17CustomReflectableP", "alpha"]
+- !private ["s17CustomReflectableP", "bounds"]
+- !private ["s17CustomReflectableP", "bringSubview"]
+- !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "last"]
+- !private ["s17CustomReflectableP", "layout"]
+- !private ["s17CustomReflectableP", "view"]
 - ["s23CustomStringConvertibleP", "FABMenu"]
 - ["s23CustomStringConvertibleP", "FABMenuBacking"]
 - !private ["s23CustomStringConvertibleP", "UIBlurEffect"]
@@ -199,6 +211,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "hideFabMenuBacking"]
 - !private ["s23CustomStringConvertibleP", "hideFade"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "isOpened"]
 - !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
@@ -217,70 +230,94 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "traverseViewControllerHierarchyForClassType"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "zPosition"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "last"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "last"]
-- ["s9EquatableP", "FABMenu"]
-- ["s9EquatableP", "FABMenuBacking"]
-- !private ["s9EquatableP", "UIBlurEffect"]
-- ["s9EquatableP", "UIBlurEffectStyle"]
-- !private ["s9EquatableP", "UIView"]
-- !private ["s9EquatableP", "UIVisualEffectView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "alpha"]
-- !private ["s9EquatableP", "animate"]
-- ["s9EquatableP", "blur"]
-- !private ["s9EquatableP", "blurView"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "bringSubview"]
-- !private ["s9EquatableP", "close"]
-- !private ["s9EquatableP", "delegate"]
-- ["s9EquatableP", "fabMenu"]
-- !private ["s9EquatableP", "fabMenuBacking"]
-- !private ["s9EquatableP", "fabMenuBackingBlurEffectStyle"]
-- ["s9EquatableP", "fabMenuDidClose"]
-- ["s9EquatableP", "fabMenuDidOpen"]
-- !private ["s9EquatableP", "fabMenuItems"]
-- ["s9EquatableP", "fabMenuShouldClose"]
-- ["s9EquatableP", "fabMenuShouldOpen"]
-- ["s9EquatableP", "fabMenuWillClose"]
-- ["s9EquatableP", "fabMenuWillOpen"]
-- !private ["s9EquatableP", "fade"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "handleCloseCallback"]
-- !private ["s9EquatableP", "handleCompletionCallback"]
-- !private ["s9EquatableP", "handleFABButtonCallback"]
-- !private ["s9EquatableP", "handleOpenCallback"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "hideBlurView"]
-- !private ["s9EquatableP", "hideFabMenuBacking"]
-- !private ["s9EquatableP", "hideFade"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isEnabled"]
-- !private ["s9EquatableP", "isOpened"]
-- !private ["s9EquatableP", "isUserInteractionEnabled"]
-- !private ["s9EquatableP", "last"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "layout"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- ["s9EquatableP", "light"]
-- !private ["s9EquatableP", "open"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "prepareFABMenu"]
-- !private ["s9EquatableP", "removeFromSuperview"]
-- !private ["s9EquatableP", "rootViewController"]
-- !private ["s9EquatableP", "showBlurView"]
-- !private ["s9EquatableP", "showFabMenuBacking"]
-- !private ["s9EquatableP", "showFade"]
-- !private ["s9EquatableP", "traverseViewControllerHierarchyForClassType"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "zPosition"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "addSubview"]
+- !private ["Se", "alpha"]
+- !private ["Se", "bounds"]
+- !private ["Se", "bringSubview"]
+- !private ["Se", "frame"]
+- !private ["Se", "last"]
+- !private ["Se", "layout"]
+- !private ["Se", "view"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "addSubview"]
+- !private ["SE", "alpha"]
+- !private ["SE", "bounds"]
+- !private ["SE", "bringSubview"]
+- !private ["SE", "frame"]
+- !private ["SE", "last"]
+- !private ["SE", "layout"]
+- !private ["SE", "view"]
+- ["SQ", "FABMenu"]
+- ["SQ", "FABMenuBacking"]
+- !private ["SQ", "UIBlurEffect"]
+- ["SQ", "UIBlurEffectStyle"]
+- !private ["SQ", "UIView"]
+- !private ["SQ", "UIVisualEffectView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "alpha"]
+- !private ["SQ", "animate"]
+- ["SQ", "blur"]
+- !private ["SQ", "blurView"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "bringSubview"]
+- !private ["SQ", "close"]
+- !private ["SQ", "delegate"]
+- ["SQ", "fabMenu"]
+- !private ["SQ", "fabMenuBacking"]
+- !private ["SQ", "fabMenuBackingBlurEffectStyle"]
+- ["SQ", "fabMenuDidClose"]
+- ["SQ", "fabMenuDidOpen"]
+- !private ["SQ", "fabMenuItems"]
+- ["SQ", "fabMenuShouldClose"]
+- ["SQ", "fabMenuShouldOpen"]
+- ["SQ", "fabMenuWillClose"]
+- ["SQ", "fabMenuWillOpen"]
+- !private ["SQ", "fade"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "handleCloseCallback"]
+- !private ["SQ", "handleCompletionCallback"]
+- !private ["SQ", "handleFABButtonCallback"]
+- !private ["SQ", "handleOpenCallback"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "hideBlurView"]
+- !private ["SQ", "hideFabMenuBacking"]
+- !private ["SQ", "hideFade"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "isOpened"]
+- !private ["SQ", "isUserInteractionEnabled"]
+- !private ["SQ", "last"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "layout"]
+- !private ["SQ", "layoutSubviews"]
+- ["SQ", "light"]
+- !private ["SQ", "open"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "prepareFABMenu"]
+- !private ["SQ", "removeFromSuperview"]
+- !private ["SQ", "rootViewController"]
+- !private ["SQ", "showBlurView"]
+- !private ["SQ", "showFabMenuBacking"]
+- !private ["SQ", "showFade"]
+- !private ["SQ", "traverseViewControllerHierarchyForClassType"]
+- !private ["SQ", "view"]
+- !private ["SQ", "zPosition"]
 - !private ["s25ExpressibleByArrayLiteralP", "last"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s23ExpressibleByNilLiteralP", "addSubview"]
+- !private ["s23ExpressibleByNilLiteralP", "alpha"]
+- !private ["s23ExpressibleByNilLiteralP", "bounds"]
+- !private ["s23ExpressibleByNilLiteralP", "bringSubview"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
+- !private ["s23ExpressibleByNilLiteralP", "layout"]
+- !private ["s23ExpressibleByNilLiteralP", "view"]
 - !private ["8Material7FABMenuC", "close"]
+- ["8Material7FABMenuC", "deinit"]
 - !private ["8Material7FABMenuC", "delegate"]
 - !private ["8Material7FABMenuC", "fabMenuItems"]
 - !private ["8Material7FABMenuC", "handleCloseCallback"]
@@ -296,6 +333,7 @@ depends-member:
 - ["8Material14FABMenuBackingO", "blur"]
 - ["8Material14FABMenuBackingO", "deinit"]
 - ["8Material14FABMenuBackingO", "fade"]
+- ["8Material14FABMenuBackingO", "hash"]
 - ["8Material14FABMenuBackingO", "hashValue"]
 - ["8Material14FABMenuBackingO", "none"]
 - ["8Material17FABMenuControllerC", "FABMenu"]
@@ -365,65 +403,69 @@ depends-member:
 - !private ["8Material15FABMenuDelegateP", "showFade"]
 - !private ["8Material15FABMenuDelegateP", "view"]
 - !private ["8Material11FABMenuItemC", "deinit"]
-- ["s8HashableP", "FABMenu"]
-- ["s8HashableP", "FABMenuBacking"]
-- !private ["s8HashableP", "UIBlurEffect"]
-- ["s8HashableP", "UIBlurEffectStyle"]
-- !private ["s8HashableP", "UIView"]
-- !private ["s8HashableP", "UIVisualEffectView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "alpha"]
-- !private ["s8HashableP", "animate"]
-- ["s8HashableP", "blur"]
-- !private ["s8HashableP", "blurView"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "bringSubview"]
-- !private ["s8HashableP", "close"]
-- !private ["s8HashableP", "delegate"]
-- ["s8HashableP", "fabMenu"]
-- !private ["s8HashableP", "fabMenuBacking"]
-- !private ["s8HashableP", "fabMenuBackingBlurEffectStyle"]
-- ["s8HashableP", "fabMenuDidClose"]
-- ["s8HashableP", "fabMenuDidOpen"]
-- !private ["s8HashableP", "fabMenuItems"]
-- ["s8HashableP", "fabMenuShouldClose"]
-- ["s8HashableP", "fabMenuShouldOpen"]
-- ["s8HashableP", "fabMenuWillClose"]
-- ["s8HashableP", "fabMenuWillOpen"]
-- !private ["s8HashableP", "fade"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "handleCloseCallback"]
-- !private ["s8HashableP", "handleCompletionCallback"]
-- !private ["s8HashableP", "handleFABButtonCallback"]
-- !private ["s8HashableP", "handleOpenCallback"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "hideBlurView"]
-- !private ["s8HashableP", "hideFabMenuBacking"]
-- !private ["s8HashableP", "hideFade"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isEnabled"]
-- !private ["s8HashableP", "isOpened"]
-- !private ["s8HashableP", "isUserInteractionEnabled"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "layout"]
-- !private ["s8HashableP", "layoutSubviews"]
-- ["s8HashableP", "light"]
-- !private ["s8HashableP", "open"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "prepareFABMenu"]
-- !private ["s8HashableP", "removeFromSuperview"]
-- !private ["s8HashableP", "rootViewController"]
-- !private ["s8HashableP", "showBlurView"]
-- !private ["s8HashableP", "showFabMenuBacking"]
-- !private ["s8HashableP", "showFade"]
-- !private ["s8HashableP", "traverseViewControllerHierarchyForClassType"]
-- !private ["s8HashableP", "view"]
-- !private ["s8HashableP", "zPosition"]
+- ["SH", "FABMenu"]
+- ["SH", "FABMenuBacking"]
+- !private ["SH", "UIBlurEffect"]
+- ["SH", "UIBlurEffectStyle"]
+- !private ["SH", "UIView"]
+- !private ["SH", "UIVisualEffectView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "alpha"]
+- !private ["SH", "animate"]
+- ["SH", "blur"]
+- !private ["SH", "blurView"]
+- !private ["SH", "bounds"]
+- !private ["SH", "bringSubview"]
+- !private ["SH", "close"]
+- !private ["SH", "delegate"]
+- ["SH", "fabMenu"]
+- !private ["SH", "fabMenuBacking"]
+- !private ["SH", "fabMenuBackingBlurEffectStyle"]
+- ["SH", "fabMenuDidClose"]
+- ["SH", "fabMenuDidOpen"]
+- !private ["SH", "fabMenuItems"]
+- ["SH", "fabMenuShouldClose"]
+- ["SH", "fabMenuShouldOpen"]
+- ["SH", "fabMenuWillClose"]
+- ["SH", "fabMenuWillOpen"]
+- !private ["SH", "fade"]
+- !private ["SH", "frame"]
+- !private ["SH", "handleCloseCallback"]
+- !private ["SH", "handleCompletionCallback"]
+- !private ["SH", "handleFABButtonCallback"]
+- !private ["SH", "handleOpenCallback"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "hideBlurView"]
+- !private ["SH", "hideFabMenuBacking"]
+- !private ["SH", "hideFade"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "isOpened"]
+- !private ["SH", "isUserInteractionEnabled"]
+- !private ["SH", "last"]
+- !private ["SH", "layer"]
+- !private ["SH", "layout"]
+- !private ["SH", "layoutSubviews"]
+- ["SH", "light"]
+- !private ["SH", "open"]
+- !private ["SH", "prepare"]
+- !private ["SH", "prepareFABMenu"]
+- !private ["SH", "removeFromSuperview"]
+- !private ["SH", "rootViewController"]
+- !private ["SH", "showBlurView"]
+- !private ["SH", "showFabMenuBacking"]
+- !private ["SH", "showFade"]
+- !private ["SH", "traverseViewControllerHierarchyForClassType"]
+- !private ["SH", "view"]
+- !private ["SH", "zPosition"]
+- !private ["s6HasherV", "combine"]
 - !private ["8Material6LayoutC", "edges"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s17MutableCollectionP", "last"]
+- !private ["SM", "last"]
 - ["So8NSCodingP", "FABMenu"]
 - ["So8NSCodingP", "FABMenuBacking"]
 - !private ["So8NSCodingP", "UIBlurEffect"]
@@ -458,6 +500,7 @@ depends-member:
 - !private ["So8NSCodingP", "hideFabMenuBacking"]
 - !private ["So8NSCodingP", "hideFade"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "isOpened"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
@@ -500,6 +543,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "hideBlurView"]
 - !private ["So26NSExtensionRequestHandlingP", "hideFabMenuBacking"]
 - !private ["So26NSExtensionRequestHandlingP", "hideFade"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "isUserInteractionEnabled"]
 - !private ["So26NSExtensionRequestHandlingP", "layoutSubviews"]
@@ -547,6 +591,7 @@ depends-member:
 - ["So8NSObjectC", "hideFabMenuBacking"]
 - ["So8NSObjectC", "hideFade"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isEnabled"]
 - !private ["So8NSObjectC", "isOpened"]
 - !private ["So8NSObjectC", "isUserInteractionEnabled"]
@@ -564,63 +609,72 @@ depends-member:
 - !private ["So8NSObjectC", "traverseViewControllerHierarchyForClassType"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "zPosition"]
-- ["So16NSObjectProtocolP", "FABMenu"]
-- ["So16NSObjectProtocolP", "FABMenuBacking"]
-- !private ["So16NSObjectProtocolP", "UIBlurEffect"]
-- ["So16NSObjectProtocolP", "UIBlurEffectStyle"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- !private ["So16NSObjectProtocolP", "UIVisualEffectView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "alpha"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "blurView"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "bringSubview"]
-- !private ["So16NSObjectProtocolP", "close"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- ["So16NSObjectProtocolP", "fabMenu"]
-- !private ["So16NSObjectProtocolP", "fabMenuBacking"]
-- !private ["So16NSObjectProtocolP", "fabMenuBackingBlurEffectStyle"]
-- ["So16NSObjectProtocolP", "fabMenuDidClose"]
-- ["So16NSObjectProtocolP", "fabMenuDidOpen"]
-- !private ["So16NSObjectProtocolP", "fabMenuItems"]
-- ["So16NSObjectProtocolP", "fabMenuShouldClose"]
-- ["So16NSObjectProtocolP", "fabMenuShouldOpen"]
-- ["So16NSObjectProtocolP", "fabMenuWillClose"]
-- ["So16NSObjectProtocolP", "fabMenuWillOpen"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "handleCloseCallback"]
-- !private ["So16NSObjectProtocolP", "handleCompletionCallback"]
-- !private ["So16NSObjectProtocolP", "handleFABButtonCallback"]
-- !private ["So16NSObjectProtocolP", "handleOpenCallback"]
-- !private ["So16NSObjectProtocolP", "hideBlurView"]
-- !private ["So16NSObjectProtocolP", "hideFabMenuBacking"]
-- !private ["So16NSObjectProtocolP", "hideFade"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isEnabled"]
-- !private ["So16NSObjectProtocolP", "isOpened"]
-- !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "layout"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "open"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "prepareFABMenu"]
-- !private ["So16NSObjectProtocolP", "removeFromSuperview"]
-- !private ["So16NSObjectProtocolP", "rootViewController"]
-- !private ["So16NSObjectProtocolP", "showBlurView"]
-- !private ["So16NSObjectProtocolP", "showFabMenuBacking"]
-- !private ["So16NSObjectProtocolP", "showFade"]
-- !private ["So16NSObjectProtocolP", "traverseViewControllerHierarchyForClassType"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "zPosition"]
+- ["So8NSObjectP", "FABMenu"]
+- ["So8NSObjectP", "FABMenuBacking"]
+- !private ["So8NSObjectP", "UIBlurEffect"]
+- ["So8NSObjectP", "UIBlurEffectStyle"]
+- !private ["So8NSObjectP", "UIView"]
+- !private ["So8NSObjectP", "UIVisualEffectView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "alpha"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "blurView"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "bringSubview"]
+- !private ["So8NSObjectP", "close"]
+- !private ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "fabMenu"]
+- !private ["So8NSObjectP", "fabMenuBacking"]
+- !private ["So8NSObjectP", "fabMenuBackingBlurEffectStyle"]
+- ["So8NSObjectP", "fabMenuDidClose"]
+- ["So8NSObjectP", "fabMenuDidOpen"]
+- !private ["So8NSObjectP", "fabMenuItems"]
+- ["So8NSObjectP", "fabMenuShouldClose"]
+- ["So8NSObjectP", "fabMenuShouldOpen"]
+- ["So8NSObjectP", "fabMenuWillClose"]
+- ["So8NSObjectP", "fabMenuWillOpen"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "handleCloseCallback"]
+- !private ["So8NSObjectP", "handleCompletionCallback"]
+- !private ["So8NSObjectP", "handleFABButtonCallback"]
+- !private ["So8NSObjectP", "handleOpenCallback"]
+- !private ["So8NSObjectP", "hideBlurView"]
+- !private ["So8NSObjectP", "hideFabMenuBacking"]
+- !private ["So8NSObjectP", "hideFade"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "isOpened"]
+- !private ["So8NSObjectP", "isUserInteractionEnabled"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "layout"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "open"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "prepareFABMenu"]
+- !private ["So8NSObjectP", "removeFromSuperview"]
+- !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "showBlurView"]
+- !private ["So8NSObjectP", "showFabMenuBacking"]
+- !private ["So8NSObjectP", "showFade"]
+- !private ["So8NSObjectP", "traverseViewControllerHierarchyForClassType"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "zPosition"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "zPosition"]
-- !private ["s22RandomAccessCollectionP", "last"]
-- !private ["s26RangeReplaceableCollectionP", "last"]
-- ["s16RawRepresentableP", "light"]
-- !private ["s8SequenceP", "last"]
+- !private ["Sq", "addSubview"]
+- !private ["Sq", "alpha"]
+- !private ["Sq", "bounds"]
+- !private ["Sq", "bringSubview"]
+- !private ["Sq", "frame"]
+- !private ["Sq", "layout"]
+- !private ["Sq", "view"]
+- !private ["Sk", "last"]
+- !private ["Sm", "last"]
+- ["SY", "light"]
+- !private ["ST", "last"]
+- ["So17UIBlurEffectStyleV", "light"]
 - ["8Material20TransitionControllerC", "FABMenu"]
 - ["8Material20TransitionControllerC", "FABMenuBacking"]
 - !private ["8Material20TransitionControllerC", "UIBlurEffect"]
@@ -630,6 +684,7 @@ depends-member:
 - !private ["8Material20TransitionControllerC", "UIVisualEffectView"]
 - ["8Material20TransitionControllerC", ""]
 - ["8Material20TransitionControllerC", "blurView"]
+- !private ["8Material20TransitionControllerC", "deinit"]
 - ["8Material20TransitionControllerC", "fabMenu"]
 - ["8Material20TransitionControllerC", "fabMenuBacking"]
 - ["8Material20TransitionControllerC", "fabMenuBackingBlurEffectStyle"]
@@ -647,6 +702,7 @@ depends-member:
 - ["8Material20TransitionControllerC", "hideFabMenuBacking"]
 - ["8Material20TransitionControllerC", "hideFade"]
 - ["8Material20TransitionControllerC", "init"]
+- !private ["8Material20TransitionControllerC", "init"]
 - !private ["8Material20TransitionControllerC", "isUserInteractionEnabled"]
 - ["8Material20TransitionControllerC", "layoutSubviews"]
 - ["8Material20TransitionControllerC", "prepare"]
@@ -730,6 +786,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "hideFabMenuBacking"]
 - !private ["So21UIAppearanceContainerP", "hideFade"]
 - ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isEnabled"]
 - !private ["So21UIAppearanceContainerP", "isOpened"]
 - !private ["So21UIAppearanceContainerP", "isUserInteractionEnabled"]
@@ -747,7 +804,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So12UIBlurEffectC", "init"]
-- ["SC17UIBlurEffectStyleO", "light"]
 - ["So18UIContentContainerP", "FABMenu"]
 - ["So18UIContentContainerP", "FABMenuBacking"]
 - !private ["So18UIContentContainerP", "UIBlurEffect"]
@@ -772,6 +828,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "hideBlurView"]
 - !private ["So18UIContentContainerP", "hideFabMenuBacking"]
 - !private ["So18UIContentContainerP", "hideFade"]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "isUserInteractionEnabled"]
 - !private ["So18UIContentContainerP", "layoutSubviews"]
@@ -857,6 +914,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "hideFabMenuBacking"]
 - !private ["So18UIFocusEnvironmentP", "hideFade"]
 - ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isEnabled"]
 - !private ["So18UIFocusEnvironmentP", "isOpened"]
 - !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
@@ -893,6 +951,26 @@ depends-member:
 - !private ["So11UIFocusItemP", "layout"]
 - !private ["So11UIFocusItemP", "open"]
 - !private ["So11UIFocusItemP", "removeFromSuperview"]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "alpha"]
+- !private ["So20UIFocusItemContainerP", "animate"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "bringSubview"]
+- !private ["So20UIFocusItemContainerP", "close"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "fabMenuItems"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "handleCloseCallback"]
+- !private ["So20UIFocusItemContainerP", "handleCompletionCallback"]
+- !private ["So20UIFocusItemContainerP", "handleFABButtonCallback"]
+- !private ["So20UIFocusItemContainerP", "handleOpenCallback"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isEnabled"]
+- !private ["So20UIFocusItemContainerP", "isOpened"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "layout"]
+- !private ["So20UIFocusItemContainerP", "open"]
+- !private ["So20UIFocusItemContainerP", "removeFromSuperview"]
 - ["So30UIPasteConfigurationSupportingP", "FABMenu"]
 - ["So30UIPasteConfigurationSupportingP", "FABMenuBacking"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBlurEffect"]
@@ -927,6 +1005,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "hideFabMenuBacking"]
 - !private ["So30UIPasteConfigurationSupportingP", "hideFade"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "isOpened"]
 - !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
@@ -979,6 +1058,7 @@ depends-member:
 - ["So11UIResponderC", "hideFabMenuBacking"]
 - ["So11UIResponderC", "hideFade"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isEnabled"]
 - !private ["So11UIResponderC", "isOpened"]
 - !private ["So11UIResponderC", "isUserInteractionEnabled"]
@@ -1029,6 +1109,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "hideFabMenuBacking"]
 - !private ["So30UIResponderStandardEditActionsP", "hideFade"]
 - ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
 - !private ["So30UIResponderStandardEditActionsP", "isOpened"]
 - !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
@@ -1069,6 +1150,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "hideBlurView"]
 - !private ["So16UIStateRestoringP", "hideFabMenuBacking"]
 - !private ["So16UIStateRestoringP", "hideFade"]
+- !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "isUserInteractionEnabled"]
 - !private ["So16UIStateRestoringP", "layoutSubviews"]
@@ -1114,6 +1196,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "hideFabMenuBacking"]
 - !private ["So18UITraitEnvironmentP", "hideFade"]
 - ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isEnabled"]
 - !private ["So18UITraitEnvironmentP", "isOpened"]
 - !private ["So18UITraitEnvironmentP", "isUserInteractionEnabled"]
@@ -1130,6 +1213,57 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "showFade"]
 - !private ["So18UITraitEnvironmentP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So18UITraitEnvironmentP", "view"]
+- ["So23UIUserActivityRestoringP", "FABMenu"]
+- ["So23UIUserActivityRestoringP", "FABMenuBacking"]
+- !private ["So23UIUserActivityRestoringP", "UIBlurEffect"]
+- ["So23UIUserActivityRestoringP", "UIBlurEffectStyle"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- !private ["So23UIUserActivityRestoringP", "UIVisualEffectView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "alpha"]
+- !private ["So23UIUserActivityRestoringP", "animate"]
+- !private ["So23UIUserActivityRestoringP", "blurView"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "bringSubview"]
+- !private ["So23UIUserActivityRestoringP", "close"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- ["So23UIUserActivityRestoringP", "fabMenu"]
+- !private ["So23UIUserActivityRestoringP", "fabMenuBacking"]
+- !private ["So23UIUserActivityRestoringP", "fabMenuBackingBlurEffectStyle"]
+- ["So23UIUserActivityRestoringP", "fabMenuDidClose"]
+- ["So23UIUserActivityRestoringP", "fabMenuDidOpen"]
+- !private ["So23UIUserActivityRestoringP", "fabMenuItems"]
+- ["So23UIUserActivityRestoringP", "fabMenuShouldClose"]
+- ["So23UIUserActivityRestoringP", "fabMenuShouldOpen"]
+- ["So23UIUserActivityRestoringP", "fabMenuWillClose"]
+- ["So23UIUserActivityRestoringP", "fabMenuWillOpen"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "handleCloseCallback"]
+- !private ["So23UIUserActivityRestoringP", "handleCompletionCallback"]
+- !private ["So23UIUserActivityRestoringP", "handleFABButtonCallback"]
+- !private ["So23UIUserActivityRestoringP", "handleOpenCallback"]
+- !private ["So23UIUserActivityRestoringP", "hideBlurView"]
+- !private ["So23UIUserActivityRestoringP", "hideFabMenuBacking"]
+- !private ["So23UIUserActivityRestoringP", "hideFade"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isEnabled"]
+- !private ["So23UIUserActivityRestoringP", "isOpened"]
+- !private ["So23UIUserActivityRestoringP", "isUserInteractionEnabled"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "layout"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "open"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "prepareFABMenu"]
+- !private ["So23UIUserActivityRestoringP", "removeFromSuperview"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "showBlurView"]
+- !private ["So23UIUserActivityRestoringP", "showFabMenuBacking"]
+- !private ["So23UIUserActivityRestoringP", "showFade"]
+- !private ["So23UIUserActivityRestoringP", "traverseViewControllerHierarchyForClassType"]
+- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "alpha"]
 - !private ["So6UIViewC", "animate"]
@@ -1177,6 +1311,7 @@ depends-member:
 - ["So16UIViewControllerC", "hideFabMenuBacking"]
 - ["So16UIViewControllerC", "hideFade"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "isUserInteractionEnabled"]
 - ["So16UIViewControllerC", "layoutSubviews"]
 - ["So16UIViewControllerC", "prepare"]
@@ -1201,7 +1336,41 @@ depends-member:
 - !private ["8Material4ViewC", "isOpened"]
 - !private ["8Material4ViewC", "layer"]
 - !private ["8Material4ViewC", "open"]
-- !private ["s14_ArrayProtocolP", "last"]
+- ["8Material14ViewControllerC", "FABMenu"]
+- ["8Material14ViewControllerC", "FABMenuBacking"]
+- !private ["8Material14ViewControllerC", "UIBlurEffect"]
+- ["8Material14ViewControllerC", "UIBlurEffectStyle"]
+- ["8Material14ViewControllerC", "UIButton"]
+- ["8Material14ViewControllerC", "UIView"]
+- !private ["8Material14ViewControllerC", "UIVisualEffectView"]
+- ["8Material14ViewControllerC", "blurView"]
+- ["8Material14ViewControllerC", "fabMenu"]
+- ["8Material14ViewControllerC", "fabMenuBacking"]
+- ["8Material14ViewControllerC", "fabMenuBackingBlurEffectStyle"]
+- ["8Material14ViewControllerC", "fabMenuDidClose"]
+- ["8Material14ViewControllerC", "fabMenuDidOpen"]
+- ["8Material14ViewControllerC", "fabMenuShouldClose"]
+- ["8Material14ViewControllerC", "fabMenuShouldOpen"]
+- ["8Material14ViewControllerC", "fabMenuWillClose"]
+- ["8Material14ViewControllerC", "fabMenuWillOpen"]
+- ["8Material14ViewControllerC", "handleCloseCallback"]
+- ["8Material14ViewControllerC", "handleCompletionCallback"]
+- ["8Material14ViewControllerC", "handleFABButtonCallback"]
+- ["8Material14ViewControllerC", "handleOpenCallback"]
+- ["8Material14ViewControllerC", "hideBlurView"]
+- ["8Material14ViewControllerC", "hideFabMenuBacking"]
+- ["8Material14ViewControllerC", "hideFade"]
+- ["8Material14ViewControllerC", "init"]
+- !private ["8Material14ViewControllerC", "init"]
+- !private ["8Material14ViewControllerC", "isUserInteractionEnabled"]
+- ["8Material14ViewControllerC", "layoutSubviews"]
+- ["8Material14ViewControllerC", "prepare"]
+- ["8Material14ViewControllerC", "prepareFABMenu"]
+- !private ["8Material14ViewControllerC", "rootViewController"]
+- ["8Material14ViewControllerC", "showBlurView"]
+- ["8Material14ViewControllerC", "showFabMenuBacking"]
+- ["8Material14ViewControllerC", "showFade"]
+- !private ["8Material14ViewControllerC", "view"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alpha"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
@@ -1224,6 +1393,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
 - !private ["s24_DestructorSafeContainerP", "last"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "FABMenu"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "FABMenuBacking"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBlurEffect"]
@@ -1258,6 +1428,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideFabMenuBacking"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideFade"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isOpened"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
@@ -1276,110 +1447,125 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addSubview"]
+- !private ["s21_ObjectiveCBridgeableP", "alpha"]
+- !private ["s21_ObjectiveCBridgeableP", "bounds"]
+- !private ["s21_ObjectiveCBridgeableP", "bringSubview"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "layout"]
+- !private ["s21_ObjectiveCBridgeableP", "view"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "Sb"
 - !private "So19CAAnimationDelegateP"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- !private "Sl"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "8Material7FABMenuC"
 - "8Material14FABMenuBackingO"
 - "8Material17FABMenuControllerC"
 - "8Material15FABMenuDelegateP"
 - !private "8Material11FABMenuItemC"
-- "s8HashableP"
+- "SH"
+- !private "s6HasherV"
 - !private "8Material6LayoutC"
 - !private "s25LosslessStringConvertibleP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "ST"
+- "So17UIBlurEffectStyleV"
 - "8Material20TransitionControllerC"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So12UIBlurEffectC"
-- "SC17UIBlurEffectStyleO"
 - "So18UIContentContainerP"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So14UIVisualEffectC"
 - !private "So18UIVisualEffectViewC"
 - "8Material4ViewC"
-- !private "s14_ArrayProtocolP"
+- "8Material14ViewControllerC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "dc81ce862e471eeaa1a94131def0dc48"

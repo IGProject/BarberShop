@@ -8,8 +8,6 @@
 
 import UIKit
 
-class HairstyleTypeCollectionViewCell: UICollectionViewCell {
+class HairstyleTypeCollectionCell: UICollectionViewCell {
     @IBOutlet weak var hairTypeImage: UIImageView!
-    @IBOutlet weak var shapeNameLabel: UILabel!
-    
 }

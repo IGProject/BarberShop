@@ -19,7 +19,6 @@ provides-member:
 - ["Si", ""]
 - ["Sd", ""]
 - ["SS", ""]
-- ["12FacebookCore8AppEventV", "init"]
 provides-dynamic-lookup:
 depends-top-level:
 - "AppEvent"
@@ -60,24 +59,24 @@ depends-member:
 - ["12FacebookCore21AppEventParameterNameO", "deinit"]
 - ["12FacebookCore26AppEventParameterValueTypeP", ""]
 - ["12FacebookCore26AppEventParameterValueTypeP", "appEventParameterValue"]
-- ["s23BidirectionalCollectionP", "appEventParameterValue"]
-- ["s19BinaryFloatingPointP", "appEventParameterValue"]
-- ["s13BinaryIntegerP", "appEventParameterValue"]
+- ["SK", "appEventParameterValue"]
+- ["SB", "appEventParameterValue"]
+- ["Sz", "appEventParameterValue"]
 - ["s7CVarArgP", "appEventParameterValue"]
-- ["s10CollectionP", "appEventParameterValue"]
-- ["s10ComparableP", "appEventParameterValue"]
+- ["Sl", "appEventParameterValue"]
+- ["SL", "appEventParameterValue"]
 - ["s28CustomDebugStringConvertibleP", "appEventParameterValue"]
 - ["s29CustomPlaygroundQuickLookableP", "appEventParameterValue"]
 - ["s17CustomReflectableP", "appEventParameterValue"]
 - ["s23CustomStringConvertibleP", "appEventParameterValue"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- ["s9DecodableP", "appEventParameterValue"]
+- ["Se", "appEventParameterValue"]
 - !private ["Sd", "NSNumber"]
 - ["Sd", "appEventParameterValue"]
 - ["Sd", "deinit"]
-- ["s9EncodableP", "appEventParameterValue"]
-- ["s9EquatableP", "appEventParameterValue"]
-- !private ["s9EquatableP", "init"]
+- ["SE", "appEventParameterValue"]
+- ["SQ", "appEventParameterValue"]
+- !private ["SQ", "init"]
 - ["s27ExpressibleByBooleanLiteralP", "appEventParameterValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "appEventParameterValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -88,9 +87,9 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", "appEventParameterValue"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s17FixedWidthIntegerP", "appEventParameterValue"]
-- ["s13FloatingPointP", "appEventParameterValue"]
-- ["s8HashableP", "appEventParameterValue"]
-- !private ["s8HashableP", "init"]
+- ["SF", "appEventParameterValue"]
+- ["SH", "appEventParameterValue"]
+- !private ["SH", "init"]
 - !private ["Si", "NSNumber"]
 - ["Si", "appEventParameterValue"]
 - ["Si", "deinit"]
@@ -101,19 +100,19 @@ depends-member:
 - ["So8NSNumberC", "appEventParameterValue"]
 - ["So8NSNumberC", "deinit"]
 - ["So8NSObjectC", "appEventParameterValue"]
-- ["So16NSObjectProtocolP", "appEventParameterValue"]
+- ["So8NSObjectP", "appEventParameterValue"]
 - ["So14NSSecureCodingP", "appEventParameterValue"]
 - ["So7NSValueC", "appEventParameterValue"]
-- ["s7NumericP", "appEventParameterValue"]
-- ["s26RangeReplaceableCollectionP", "appEventParameterValue"]
-- !private ["s16RawRepresentableP", "init"]
-- ["s8SequenceP", "appEventParameterValue"]
-- ["s13SignedIntegerP", "appEventParameterValue"]
+- ["Sj", "appEventParameterValue"]
+- ["Sm", "appEventParameterValue"]
+- !private ["SY", "init"]
+- ["ST", "appEventParameterValue"]
+- ["SZ", "appEventParameterValue"]
 - ["s13SignedNumericP", "appEventParameterValue"]
-- ["s10StrideableP", "appEventParameterValue"]
+- ["Sx", "appEventParameterValue"]
 - ["SS", "appEventParameterValue"]
 - ["SS", "deinit"]
-- ["s14StringProtocolP", "appEventParameterValue"]
+- ["Sy", "appEventParameterValue"]
 - ["s16TextOutputStreamP", "appEventParameterValue"]
 - ["s20TextOutputStreamableP", "appEventParameterValue"]
 - ["s18_BitwiseOperationsP", "appEventParameterValue"]
@@ -136,20 +135,20 @@ depends-nominal:
 - !private "12FacebookCore12AppEventNameO"
 - "12FacebookCore21AppEventParameterNameO"
 - "12FacebookCore26AppEventParameterValueTypeP"
-- "s23BidirectionalCollectionP"
-- "s19BinaryFloatingPointP"
-- "s13BinaryIntegerP"
+- "SK"
+- "SB"
+- "Sz"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
+- "Se"
 - "Sd"
-- "s9EncodableP"
-- "s9EquatableP"
+- "SE"
+- "SQ"
 - "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
@@ -157,8 +156,8 @@ depends-nominal:
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s17FixedWidthIntegerP"
-- "s13FloatingPointP"
-- "s8HashableP"
+- "SF"
+- "SH"
 - "Si"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
@@ -166,18 +165,18 @@ depends-nominal:
 - "So9NSCopyingP"
 - "So8NSNumberC"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - "So7NSValueC"
-- "s7NumericP"
-- "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- "s8SequenceP"
-- "s13SignedIntegerP"
+- "Sj"
+- "Sm"
+- !private "SY"
+- "ST"
+- "SZ"
 - "s13SignedNumericP"
-- "s10StrideableP"
+- "Sx"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "s18_BitwiseOperationsP"
@@ -196,19 +195,19 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
@@ -217,6 +216,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -252,15 +252,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "1aa4cdabcccbc6137b7a8ea907dd2d40"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "332fbcf54780596aadfc15575434bc08"

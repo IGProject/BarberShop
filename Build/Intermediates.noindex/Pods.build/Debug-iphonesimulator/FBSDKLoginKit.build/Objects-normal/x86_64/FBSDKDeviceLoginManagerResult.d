@@ -23,6 +23,7 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLink.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/Bolts/Bolts-umbrella.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h \

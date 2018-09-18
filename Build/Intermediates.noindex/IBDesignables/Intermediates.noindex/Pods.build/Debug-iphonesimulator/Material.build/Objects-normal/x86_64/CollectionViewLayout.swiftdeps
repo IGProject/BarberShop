@@ -38,7 +38,9 @@ depends-top-level:
 - "EdgeInsets"
 - "EdgeInsetsPreset"
 - !private "EdgeInsetsPresetToValue"
+- "FloatLiteralType"
 - "IndexPath"
+- "IntegerLiteralType"
 - "InterimSpace"
 - "InterimSpacePreset"
 - !private "InterimSpacePresetToValue"
@@ -54,12 +56,17 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "removeAll"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "item"]
-- !private ["s23BidirectionalCollectionP", "removeAll"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "removeAll"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- ["SK", "init"]
+- !private ["SK", "item"]
+- !private ["SK", "removeAll"]
+- !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "bounds"]
 - !private ["So15CALayerDelegateP", "dataSource"]
@@ -67,17 +74,17 @@ depends-member:
 - !private ["So15CALayerDelegateP", "setNeedsLayout"]
 - !private ["So15CALayerDelegateP", "updateConstraints"]
 - !private ["So15CALayerDelegateP", "updateConstraintsIfNeeded"]
-- !private ["SC7CGPointV", "x"]
-- !private ["SC7CGPointV", "y"]
-- ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "intersects"]
-- !private ["SC6CGRectV", "width"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "init"]
-- !private ["SC6CGSizeV", "width"]
-- ["SC6CGSizeV", "zero"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "intersects"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
+- ["So6CGSizeV", "zero"]
 - ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "CGRect"]
 - ["s7CVarArgP", "CGSize"]
@@ -103,6 +110,7 @@ depends-member:
 - !private ["s7CVarArgP", "dataSourceItems"]
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "interimSpace"]
 - !private ["s7CVarArgP", "interimSpacePreset"]
 - !private ["s7CVarArgP", "itemSize"]
@@ -117,12 +125,12 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "updateConstraints"]
 - !private ["s7CVarArgP", "updateConstraintsIfNeeded"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "count"]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "item"]
-- !private ["s10CollectionP", "removeAll"]
-- !private ["s10CollectionP", "subscript"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- ["Sl", "init"]
+- !private ["Sl", "item"]
+- !private ["Sl", "removeAll"]
+- !private ["Sl", "subscript"]
 - !private ["8Material24CollectionViewDataSourceP", "dataSourceItems"]
 - ["8Material20CollectionViewLayoutC", "Bool"]
 - ["8Material20CollectionViewLayoutC", "CGPoint"]
@@ -163,8 +171,8 @@ depends-member:
 - ["8Material20CollectionViewLayoutC", "scrollDirection"]
 - ["8Material20CollectionViewLayoutC", "shouldInvalidateLayout"]
 - ["8Material20CollectionViewLayoutC", "targetContentOffset"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "item"]
+- !private ["SL", "init"]
+- !private ["SL", "item"]
 - ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - ["s28CustomDebugStringConvertibleP", "CGSize"]
@@ -190,6 +198,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "interimSpace"]
 - !private ["s28CustomDebugStringConvertibleP", "interimSpacePreset"]
 - !private ["s28CustomDebugStringConvertibleP", "intersects"]
@@ -256,6 +265,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dataSourceItems"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "interimSpace"]
 - !private ["s23CustomStringConvertibleP", "interimSpacePreset"]
 - !private ["s23CustomStringConvertibleP", "item"]
@@ -274,85 +284,86 @@ depends-member:
 - !private ["8Material14DataSourceItemV", "data"]
 - !private ["8Material14DataSourceItemV", "height"]
 - !private ["8Material14DataSourceItemV", "width"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "height"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "intersects"]
-- !private ["s9DecodableP", "item"]
-- !private ["s9DecodableP", "removeAll"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9DecodableP", "x"]
-- !private ["s9DecodableP", "y"]
-- ["s9DecodableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "height"]
+- ["Se", "init"]
+- !private ["Se", "intersects"]
+- !private ["Se", "item"]
+- !private ["Se", "removeAll"]
+- !private ["Se", "subscript"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- ["Se", "zero"]
 - ["8Material16EdgeInsetsPresetO", "none"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "height"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "intersects"]
-- !private ["s9EncodableP", "item"]
-- !private ["s9EncodableP", "removeAll"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EncodableP", "x"]
-- !private ["s9EncodableP", "y"]
-- ["s9EncodableP", "zero"]
-- ["s9EquatableP", "CGPoint"]
-- !private ["s9EquatableP", "CGRect"]
-- ["s9EquatableP", "CGSize"]
-- ["s9EquatableP", "EdgeInsets"]
-- ["s9EquatableP", "EdgeInsetsPreset"]
-- !private ["s9EquatableP", "EdgeInsetsPresetToValue"]
-- !private ["s9EquatableP", "IndexPath"]
-- ["s9EquatableP", "InterimSpacePreset"]
-- !private ["s9EquatableP", "InterimSpacePresetToValue"]
-- ["s9EquatableP", "NSIndexPath"]
-- ["s9EquatableP", "UICollectionViewLayoutAttributes"]
-- ["s9EquatableP", "UICollectionViewScrollDirection"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "bottom"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "collectionView"]
-- !private ["s9EquatableP", "contentEdgeInsets"]
-- !private ["s9EquatableP", "contentEdgeInsetsPreset"]
-- !private ["s9EquatableP", "contentSize"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "dataSource"]
-- !private ["s9EquatableP", "dataSourceItems"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "height"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "interimSpace"]
-- !private ["s9EquatableP", "interimSpacePreset"]
-- !private ["s9EquatableP", "intersects"]
-- !private ["s9EquatableP", "item"]
-- !private ["s9EquatableP", "itemSize"]
-- !private ["s9EquatableP", "layoutAttributesForItem"]
-- !private ["s9EquatableP", "layoutIfNeeded"]
-- !private ["s9EquatableP", "layoutItems"]
-- !private ["s9EquatableP", "left"]
-- ["s9EquatableP", "none"]
-- !private ["s9EquatableP", "offset"]
-- !private ["s9EquatableP", "prepareLayout"]
-- !private ["s9EquatableP", "removeAll"]
-- !private ["s9EquatableP", "right"]
-- !private ["s9EquatableP", "scrollDirection"]
-- !private ["s9EquatableP", "setNeedsLayout"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "top"]
-- !private ["s9EquatableP", "updateConstraints"]
-- !private ["s9EquatableP", "updateConstraintsIfNeeded"]
-- ["s9EquatableP", "vertical"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "x"]
-- !private ["s9EquatableP", "y"]
-- ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "height"]
+- ["SE", "init"]
+- !private ["SE", "intersects"]
+- !private ["SE", "item"]
+- !private ["SE", "removeAll"]
+- !private ["SE", "subscript"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- ["SE", "zero"]
+- ["SQ", "CGPoint"]
+- !private ["SQ", "CGRect"]
+- ["SQ", "CGSize"]
+- ["SQ", "EdgeInsets"]
+- ["SQ", "EdgeInsetsPreset"]
+- !private ["SQ", "EdgeInsetsPresetToValue"]
+- !private ["SQ", "IndexPath"]
+- ["SQ", "InterimSpacePreset"]
+- !private ["SQ", "InterimSpacePresetToValue"]
+- ["SQ", "NSIndexPath"]
+- ["SQ", "UICollectionViewLayoutAttributes"]
+- ["SQ", "UICollectionViewScrollDirection"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "bottom"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "collectionView"]
+- !private ["SQ", "contentEdgeInsets"]
+- !private ["SQ", "contentEdgeInsetsPreset"]
+- !private ["SQ", "contentSize"]
+- !private ["SQ", "count"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "dataSourceItems"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "height"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "interimSpace"]
+- !private ["SQ", "interimSpacePreset"]
+- !private ["SQ", "intersects"]
+- !private ["SQ", "item"]
+- !private ["SQ", "itemSize"]
+- !private ["SQ", "layoutAttributesForItem"]
+- !private ["SQ", "layoutIfNeeded"]
+- !private ["SQ", "layoutItems"]
+- !private ["SQ", "left"]
+- ["SQ", "none"]
+- !private ["SQ", "offset"]
+- !private ["SQ", "prepareLayout"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "right"]
+- !private ["SQ", "scrollDirection"]
+- !private ["SQ", "setNeedsLayout"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "top"]
+- !private ["SQ", "updateConstraints"]
+- !private ["SQ", "updateConstraintsIfNeeded"]
+- ["SQ", "vertical"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -360,54 +371,59 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s8HashableP", "CGPoint"]
-- !private ["s8HashableP", "CGRect"]
-- ["s8HashableP", "CGSize"]
-- ["s8HashableP", "EdgeInsets"]
-- ["s8HashableP", "EdgeInsetsPreset"]
-- !private ["s8HashableP", "EdgeInsetsPresetToValue"]
-- !private ["s8HashableP", "IndexPath"]
-- ["s8HashableP", "InterimSpacePreset"]
-- !private ["s8HashableP", "InterimSpacePresetToValue"]
-- ["s8HashableP", "NSIndexPath"]
-- ["s8HashableP", "UICollectionViewLayoutAttributes"]
-- ["s8HashableP", "UICollectionViewScrollDirection"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "collectionView"]
-- !private ["s8HashableP", "contentEdgeInsets"]
-- !private ["s8HashableP", "contentEdgeInsetsPreset"]
-- !private ["s8HashableP", "contentSize"]
-- !private ["s8HashableP", "dataSource"]
-- !private ["s8HashableP", "dataSourceItems"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "interimSpace"]
-- !private ["s8HashableP", "interimSpacePreset"]
-- !private ["s8HashableP", "item"]
-- !private ["s8HashableP", "itemSize"]
-- !private ["s8HashableP", "layoutAttributesForItem"]
-- !private ["s8HashableP", "layoutIfNeeded"]
-- !private ["s8HashableP", "layoutItems"]
-- ["s8HashableP", "none"]
-- !private ["s8HashableP", "offset"]
-- !private ["s8HashableP", "prepareLayout"]
-- !private ["s8HashableP", "scrollDirection"]
-- !private ["s8HashableP", "setNeedsLayout"]
-- !private ["s8HashableP", "updateConstraints"]
-- !private ["s8HashableP", "updateConstraintsIfNeeded"]
-- ["s8HashableP", "vertical"]
+- ["SH", "CGPoint"]
+- !private ["SH", "CGRect"]
+- ["SH", "CGSize"]
+- ["SH", "EdgeInsets"]
+- ["SH", "EdgeInsetsPreset"]
+- !private ["SH", "EdgeInsetsPresetToValue"]
+- !private ["SH", "IndexPath"]
+- ["SH", "InterimSpacePreset"]
+- !private ["SH", "InterimSpacePresetToValue"]
+- ["SH", "NSIndexPath"]
+- ["SH", "UICollectionViewLayoutAttributes"]
+- ["SH", "UICollectionViewScrollDirection"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "bounds"]
+- !private ["SH", "collectionView"]
+- !private ["SH", "contentEdgeInsets"]
+- !private ["SH", "contentEdgeInsetsPreset"]
+- !private ["SH", "contentSize"]
+- !private ["SH", "count"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "dataSourceItems"]
+- !private ["SH", "frame"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "interimSpace"]
+- !private ["SH", "interimSpacePreset"]
+- !private ["SH", "item"]
+- !private ["SH", "itemSize"]
+- !private ["SH", "layoutAttributesForItem"]
+- !private ["SH", "layoutIfNeeded"]
+- !private ["SH", "layoutItems"]
+- ["SH", "none"]
+- !private ["SH", "offset"]
+- !private ["SH", "prepareLayout"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "scrollDirection"]
+- !private ["SH", "setNeedsLayout"]
+- !private ["SH", "subscript"]
+- !private ["SH", "updateConstraints"]
+- !private ["SH", "updateConstraintsIfNeeded"]
+- ["SH", "vertical"]
 - !private ["10Foundation9IndexPathV", "init"]
 - !private ["10Foundation9IndexPathV", "item"]
 - ["8Material18InterimSpacePresetO", "none"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "count"]
-- ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "item"]
-- !private ["s17MutableCollectionP", "removeAll"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- ["SM", "init"]
+- !private ["SM", "item"]
+- !private ["SM", "removeAll"]
+- !private ["SM", "subscript"]
 - ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "CGRect"]
 - ["So8NSCodingP", "CGSize"]
@@ -428,6 +444,7 @@ depends-member:
 - !private ["So8NSCodingP", "contentSize"]
 - !private ["So8NSCodingP", "dataSource"]
 - !private ["So8NSCodingP", "dataSourceItems"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "interimSpace"]
 - !private ["So8NSCodingP", "interimSpacePreset"]
@@ -471,6 +488,7 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "indexPathsOfItems"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "interimSpace"]
 - ["So8NSObjectC", "interimSpacePreset"]
 - ["So8NSObjectC", "itemSize"]
@@ -488,61 +506,63 @@ depends-member:
 - ["So8NSObjectC", "targetContentOffset"]
 - !private ["So8NSObjectC", "updateConstraints"]
 - !private ["So8NSObjectC", "updateConstraintsIfNeeded"]
-- ["So16NSObjectProtocolP", "CGPoint"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- ["So16NSObjectProtocolP", "CGSize"]
-- ["So16NSObjectProtocolP", "EdgeInsets"]
-- ["So16NSObjectProtocolP", "EdgeInsetsPreset"]
-- !private ["So16NSObjectProtocolP", "EdgeInsetsPresetToValue"]
-- !private ["So16NSObjectProtocolP", "IndexPath"]
-- ["So16NSObjectProtocolP", "InterimSpacePreset"]
-- !private ["So16NSObjectProtocolP", "InterimSpacePresetToValue"]
-- ["So16NSObjectProtocolP", "NSIndexPath"]
-- ["So16NSObjectProtocolP", "UICollectionViewLayoutAttributes"]
-- ["So16NSObjectProtocolP", "UICollectionViewScrollDirection"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "collectionView"]
-- !private ["So16NSObjectProtocolP", "contentEdgeInsets"]
-- !private ["So16NSObjectProtocolP", "contentEdgeInsetsPreset"]
-- !private ["So16NSObjectProtocolP", "contentSize"]
-- !private ["So16NSObjectProtocolP", "dataSource"]
-- !private ["So16NSObjectProtocolP", "dataSourceItems"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "interimSpace"]
-- !private ["So16NSObjectProtocolP", "interimSpacePreset"]
-- !private ["So16NSObjectProtocolP", "itemSize"]
-- !private ["So16NSObjectProtocolP", "layoutAttributesForItem"]
-- !private ["So16NSObjectProtocolP", "layoutIfNeeded"]
-- !private ["So16NSObjectProtocolP", "layoutItems"]
-- !private ["So16NSObjectProtocolP", "offset"]
-- !private ["So16NSObjectProtocolP", "prepareLayout"]
-- !private ["So16NSObjectProtocolP", "scrollDirection"]
-- !private ["So16NSObjectProtocolP", "setNeedsLayout"]
-- !private ["So16NSObjectProtocolP", "updateConstraints"]
-- !private ["So16NSObjectProtocolP", "updateConstraintsIfNeeded"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "item"]
-- !private ["s22RandomAccessCollectionP", "removeAll"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "removeAll"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- ["s16RawRepresentableP", "none"]
-- ["s16RawRepresentableP", "vertical"]
+- ["So8NSObjectP", "CGPoint"]
+- !private ["So8NSObjectP", "CGRect"]
+- ["So8NSObjectP", "CGSize"]
+- ["So8NSObjectP", "EdgeInsets"]
+- ["So8NSObjectP", "EdgeInsetsPreset"]
+- !private ["So8NSObjectP", "EdgeInsetsPresetToValue"]
+- !private ["So8NSObjectP", "IndexPath"]
+- ["So8NSObjectP", "InterimSpacePreset"]
+- !private ["So8NSObjectP", "InterimSpacePresetToValue"]
+- ["So8NSObjectP", "NSIndexPath"]
+- ["So8NSObjectP", "UICollectionViewLayoutAttributes"]
+- ["So8NSObjectP", "UICollectionViewScrollDirection"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "contentEdgeInsets"]
+- !private ["So8NSObjectP", "contentEdgeInsetsPreset"]
+- !private ["So8NSObjectP", "contentSize"]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "dataSourceItems"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "interimSpace"]
+- !private ["So8NSObjectP", "interimSpacePreset"]
+- !private ["So8NSObjectP", "itemSize"]
+- !private ["So8NSObjectP", "layoutAttributesForItem"]
+- !private ["So8NSObjectP", "layoutIfNeeded"]
+- !private ["So8NSObjectP", "layoutItems"]
+- !private ["So8NSObjectP", "offset"]
+- !private ["So8NSObjectP", "prepareLayout"]
+- !private ["So8NSObjectP", "scrollDirection"]
+- !private ["So8NSObjectP", "setNeedsLayout"]
+- !private ["So8NSObjectP", "updateConstraints"]
+- !private ["So8NSObjectP", "updateConstraintsIfNeeded"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- ["Sk", "init"]
+- !private ["Sk", "item"]
+- !private ["Sk", "removeAll"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- ["Sm", "init"]
+- !private ["Sm", "removeAll"]
+- !private ["Sm", "subscript"]
+- ["SY", "none"]
+- ["SY", "vertical"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "item"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "count"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "item"]
-- !private ["s8SequenceP", "removeAll"]
-- !private ["s8SequenceP", "subscript"]
+- ["So31UICollectionViewScrollDirectionV", "vertical"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- ["ST", "init"]
+- !private ["ST", "item"]
+- !private ["ST", "removeAll"]
+- !private ["ST", "subscript"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "layoutIfNeeded"]
@@ -590,6 +610,7 @@ depends-member:
 - ["So22UICollectionViewLayoutC", "dataSourceItems"]
 - ["So22UICollectionViewLayoutC", "indexPathsOfItems"]
 - ["So22UICollectionViewLayoutC", "init"]
+- !private ["So22UICollectionViewLayoutC", "init"]
 - ["So22UICollectionViewLayoutC", "interimSpace"]
 - ["So22UICollectionViewLayoutC", "interimSpacePreset"]
 - ["So22UICollectionViewLayoutC", "itemSize"]
@@ -605,7 +626,6 @@ depends-member:
 - ["So22UICollectionViewLayoutC", "targetContentOffset"]
 - !private ["So32UICollectionViewLayoutAttributesC", "frame"]
 - !private ["So32UICollectionViewLayoutAttributesC", "init"]
-- ["SC31UICollectionViewScrollDirectionO", "vertical"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "layoutIfNeeded"]
@@ -622,11 +642,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "setNeedsLayout"]
 - !private ["So13UIDynamicItemP", "updateConstraints"]
 - !private ["So13UIDynamicItemP", "updateConstraintsIfNeeded"]
-- !private ["SC12UIEdgeInsetsV", "bottom"]
-- !private ["SC12UIEdgeInsetsV", "left"]
-- !private ["SC12UIEdgeInsetsV", "right"]
-- !private ["SC12UIEdgeInsetsV", "top"]
-- ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So12UIEdgeInsetsV", "bottom"]
+- !private ["So12UIEdgeInsetsV", "left"]
+- !private ["So12UIEdgeInsetsV", "right"]
+- !private ["So12UIEdgeInsetsV", "top"]
+- ["So12UIEdgeInsetsV", "zero"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "layoutIfNeeded"]
@@ -639,6 +659,14 @@ depends-member:
 - !private ["So11UIFocusItemP", "setNeedsLayout"]
 - !private ["So11UIFocusItemP", "updateConstraints"]
 - !private ["So11UIFocusItemP", "updateConstraintsIfNeeded"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "dataSource"]
+- !private ["So20UIFocusItemContainerP", "layoutIfNeeded"]
+- !private ["So20UIFocusItemContainerP", "setNeedsLayout"]
+- !private ["So20UIFocusItemContainerP", "updateConstraints"]
+- !private ["So20UIFocusItemContainerP", "updateConstraintsIfNeeded"]
+- !private ["So30UIFocusItemScrollableContainerP", "bounds"]
+- !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "layoutIfNeeded"]
@@ -667,17 +695,18 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setNeedsLayout"]
 - !private ["So18UITraitEnvironmentP", "updateConstraints"]
 - !private ["So18UITraitEnvironmentP", "updateConstraintsIfNeeded"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "layoutIfNeeded"]
+- !private ["So23UIUserActivityRestoringP", "setNeedsLayout"]
+- !private ["So23UIUserActivityRestoringP", "updateConstraints"]
+- !private ["So23UIUserActivityRestoringP", "updateConstraintsIfNeeded"]
 - !private ["So6UIViewC", "bounds"]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "layoutIfNeeded"]
 - !private ["So6UIViewC", "setNeedsLayout"]
 - !private ["So6UIViewC", "updateConstraints"]
 - !private ["So6UIViewC", "updateConstraintsIfNeeded"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "count"]
-- ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "removeAll"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layoutIfNeeded"]
@@ -690,6 +719,11 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
@@ -711,6 +745,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSourceItems"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "interimSpace"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "interimSpacePreset"]
@@ -743,42 +778,44 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
 - "Sa"
-- "s23BidirectionalCollectionP"
+- "s13ArrayProtocolP"
+- "SK"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
-- "SC7CGPointV"
-- !private "SC6CGRectV"
-- "SC6CGSizeV"
+- "So7CGPointV"
+- !private "So6CGRectV"
+- "So6CGSizeV"
 - "s7CVarArgP"
-- "s10CollectionP"
+- "Sl"
 - !private "8Material24CollectionViewDataSourceP"
 - "8Material20CollectionViewLayoutC"
-- !private "s10ComparableP"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "8Material14DataSourceItemV"
-- "s9DecodableP"
+- "Se"
 - "8Material16EdgeInsetsPresetO"
-- "s9EncodableP"
-- "s9EquatableP"
+- "SE"
+- "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "10Foundation9IndexPathV"
 - "8Material18InterimSpacePresetO"
 - !private "s25LosslessStringConvertibleP"
-- "s17MutableCollectionP"
+- "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- "So8NSObjectP"
+- "Sk"
+- "Sm"
+- "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- "s8SequenceP"
+- "So31UICollectionViewScrollDirectionV"
+- "ST"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -786,64 +823,67 @@ depends-nominal:
 - !private "So26UICollectionViewDataSourceP"
 - "So22UICollectionViewLayoutC"
 - !private "So32UICollectionViewLayoutAttributesC"
-- "SC31UICollectionViewScrollDirectionO"
 - !private "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
 - !private "So13UIDynamicItemP"
-- "SC12UIEdgeInsetsV"
+- "So12UIEdgeInsetsV"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So12UIScrollViewC"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
-- "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "b9d17e770a47f4fdf1db4215ded7ccb7"

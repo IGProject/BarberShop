@@ -8,17 +8,7 @@
 
 import Foundation
 
-class StylesHairViewModel {
-    weak var dataSource: GenericStylesHairDataSource<HairStyleModel>?
-    weak var service: ServiceNetworkProtocol?
-    
-    init(service:ServiceNetworkProtocol = GenericNetworkService.shared,dataSource: GenericStylesHairDataSource<HairStyleModel>?) {
-        self.dataSource = dataSource
-        self.service = service
-    }
-    
-    
-}
+
 
 
 

@@ -8,14 +8,14 @@
 
 import UIKit
 
-struct ProductDetails: Decodable {
+struct ProductDetails: Codable {
     let id:Int
     let title:String?
     let price:String?
     let image_product: ProductImage?
 }
 
-struct ProductImage: Decodable {
+struct ProductImage: Codable {
     let id: Int
     let file_name: String?
     let file_path: String?

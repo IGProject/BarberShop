@@ -12,10 +12,4 @@ class HomeCollectionViewCell: UICollectionViewCell{
 
     @IBOutlet weak var iconBarberShop: UIImageView!
     @IBOutlet weak var titleBarberShop: UILabel!
-    
-    func setup(vm: HomeViewModel<HomeModel>){
-        self.iconBarberShop.image = vm.value.imageName
-        self.titleBarberShop.text = vm.value.name
-    }
-
 }

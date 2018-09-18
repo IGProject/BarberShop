@@ -31,6 +31,8 @@ depends-top-level:
 - "CastingPrecedence"
 - "CheckBoxLayer"
 - "CheckButton"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - !private "StringLiteralType"
 - "TernaryPrecedence"
 - "UIBezierPath"
@@ -70,6 +72,7 @@ depends-member:
 - ["8Material13BaseIconLayerC", "disabledColor"]
 - ["8Material13BaseIconLayerC", "firstAnimation"]
 - ["8Material13BaseIconLayerC", "init"]
+- !private ["8Material13BaseIconLayerC", "init"]
 - !private ["8Material13BaseIconLayerC", "isAnimating"]
 - !private ["8Material13BaseIconLayerC", "isEnabled"]
 - !private ["8Material13BaseIconLayerC", "isSelected"]
@@ -89,14 +92,17 @@ depends-member:
 - ["8Material19BaseIconLayerButtonC", ""]
 - !private ["8Material19BaseIconLayerButtonC", "addTarget"]
 - ["8Material19BaseIconLayerButtonC", "checkmarkColor"]
+- !private ["8Material19BaseIconLayerButtonC", "deinit"]
 - ["8Material19BaseIconLayerButtonC", "didTap"]
 - ["8Material19BaseIconLayerButtonC", "iconLayer"]
 - ["8Material19BaseIconLayerButtonC", "init"]
+- !private ["8Material19BaseIconLayerButtonC", "init"]
 - !private ["8Material19BaseIconLayerButtonC", "isAnimating"]
 - !private ["8Material19BaseIconLayerButtonC", "isSelected"]
 - ["8Material19BaseIconLayerButtonC", "prepare"]
 - !private ["8Material19BaseIconLayerButtonC", "setSelected"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["8Material6ButtonC", "BaseIconLayer"]
 - !private ["8Material6ButtonC", "CheckBoxLayer"]
@@ -106,6 +112,7 @@ depends-member:
 - ["8Material6ButtonC", "didTap"]
 - ["8Material6ButtonC", "iconLayer"]
 - ["8Material6ButtonC", "init"]
+- !private ["8Material6ButtonC", "init"]
 - !private ["8Material6ButtonC", "isAnimating"]
 - !private ["8Material6ButtonC", "isSelected"]
 - ["8Material6ButtonC", "prepare"]
@@ -144,6 +151,7 @@ depends-member:
 - !private ["So19CAAnimationDelegateP", "disabledColor"]
 - !private ["So19CAAnimationDelegateP", "frame"]
 - ["So19CAAnimationDelegateP", "init"]
+- !private ["So19CAAnimationDelegateP", "init"]
 - !private ["So19CAAnimationDelegateP", "isAnimating"]
 - !private ["So19CAAnimationDelegateP", "isEnabled"]
 - !private ["So19CAAnimationDelegateP", "isSelected"]
@@ -197,6 +205,7 @@ depends-member:
 - ["So7CALayerC", "firstAnimation"]
 - !private ["So7CALayerC", "frame"]
 - ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "init"]
 - !private ["So7CALayerC", "isAnimating"]
 - !private ["So7CALayerC", "isEnabled"]
 - !private ["So7CALayerC", "isSelected"]
@@ -221,6 +230,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "didTap"]
 - !private ["So15CALayerDelegateP", "iconLayer"]
+- !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "isAnimating"]
 - !private ["So15CALayerDelegateP", "isSelected"]
@@ -260,6 +270,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "disabledColor"]
 - !private ["So13CAMediaTimingP", "frame"]
 - ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "init"]
 - !private ["So13CAMediaTimingP", "isAnimating"]
 - !private ["So13CAMediaTimingP", "isEnabled"]
 - !private ["So13CAMediaTimingP", "isSelected"]
@@ -284,12 +295,12 @@ depends-member:
 - !private ["So12CAShapeLayerC", "path"]
 - !private ["So12CAShapeLayerC", "strokeColor"]
 - ["So12CAShapeLayerC", "strokeEnd"]
-- !private ["SC13CATransform3DV", "identity"]
-- !private ["SC7CGPointV", "init"]
-- !private ["SC7CGPointV", "x"]
-- !private ["SC7CGPointV", "y"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "init"]
+- !private ["So13CATransform3DV", "identity"]
+- !private ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "init"]
 - ["s7CVarArgP", "CALayer"]
 - ["s7CVarArgP", "CAShapeLayer"]
 - !private ["s7CVarArgP", "CATransform3DMakeScale"]
@@ -333,6 +344,7 @@ depends-member:
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "iconLayer"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isAnimating"]
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "isSelected"]
@@ -380,7 +392,7 @@ depends-member:
 - ["8Material13CheckBoxLayerC", "checkMarkRightLayer"]
 - !private ["8Material13CheckBoxLayerC", "checkMarkStartPoint"]
 - ["8Material13CheckBoxLayerC", "checkmarkColor"]
-- ["8Material13CheckBoxLayerC", "deinit"]
+- !private ["8Material13CheckBoxLayerC", "deinit"]
 - ["8Material13CheckBoxLayerC", "disabledColor"]
 - ["8Material13CheckBoxLayerC", "firstAnimation"]
 - ["8Material13CheckBoxLayerC", "init"]
@@ -402,7 +414,6 @@ depends-member:
 - ["8Material11CheckButtonC", "UIColor"]
 - !private ["8Material11CheckButtonC", "addTarget"]
 - ["8Material11CheckButtonC", "checkmarkColor"]
-- ["8Material11CheckButtonC", "deinit"]
 - !private ["8Material11CheckButtonC", "didTap"]
 - ["8Material11CheckButtonC", "iconLayer"]
 - ["8Material11CheckButtonC", "init"]
@@ -410,8 +421,10 @@ depends-member:
 - !private ["8Material11CheckButtonC", "isSelected"]
 - ["8Material11CheckButtonC", "prepare"]
 - !private ["8Material11CheckButtonC", "setSelected"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["8Material13BaseIconLayerC9ConstantsV", "totalDuration"]
 - ["s28CustomDebugStringConvertibleP", "CALayer"]
 - ["s28CustomDebugStringConvertibleP", "CAShapeLayer"]
@@ -455,6 +468,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "iconLayer"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isAnimating"]
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "isSelected"]
@@ -479,10 +493,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "x"]
 - !private ["s29CustomPlaygroundQuickLookableP", "y"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "x"]
@@ -530,6 +546,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "iconLayer"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isAnimating"]
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "isSelected"]
@@ -549,151 +566,161 @@ depends-member:
 - ["s23CustomStringConvertibleP", "strokeEnd"]
 - !private ["s23CustomStringConvertibleP", "transform"]
 - ["s23CustomStringConvertibleP", "white"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "x"]
-- !private ["s9DecodableP", "y"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "x"]
-- !private ["s9EncodableP", "y"]
-- ["s9EquatableP", "CALayer"]
-- ["s9EquatableP", "CAShapeLayer"]
-- !private ["s9EquatableP", "CATransform3DMakeScale"]
-- !private ["s9EquatableP", "CATransform3DMakeTranslation"]
-- !private ["s9EquatableP", "CGPoint"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "CheckBoxLayer"]
-- !private ["s9EquatableP", "Constants"]
-- !private ["s9EquatableP", "UIBezierPath"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addLine"]
-- !private ["s9EquatableP", "addSublayer"]
-- !private ["s9EquatableP", "addTarget"]
-- !private ["s9EquatableP", "animate"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "borderColor"]
-- !private ["s9EquatableP", "borderLayer"]
-- !private ["s9EquatableP", "borderLayerCenterDotBorderWidth"]
-- !private ["s9EquatableP", "borderLayerCornerRadius"]
-- !private ["s9EquatableP", "borderLayerFullBorderWidth"]
-- !private ["s9EquatableP", "borderLayerNormalBorderWidth"]
-- !private ["s9EquatableP", "borderLayerScalePercentageToShrink"]
-- !private ["s9EquatableP", "borderLayerScaleToShrink"]
-- ["s9EquatableP", "borderWidth"]
-- !private ["s9EquatableP", "cgColor"]
-- !private ["s9EquatableP", "cgPath"]
-- !private ["s9EquatableP", "checkMarkLayer"]
-- !private ["s9EquatableP", "checkMarkLeftEndPoint"]
-- !private ["s9EquatableP", "checkMarkLeftLayer"]
-- !private ["s9EquatableP", "checkMarkPathLeft"]
-- !private ["s9EquatableP", "checkMarkPathRigth"]
-- !private ["s9EquatableP", "checkMarkRightEndPoint"]
-- !private ["s9EquatableP", "checkMarkRightLayer"]
-- !private ["s9EquatableP", "checkMarkStartPoint"]
-- !private ["s9EquatableP", "checkmarkColor"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "cornerRadius"]
-- !private ["s9EquatableP", "didTap"]
-- !private ["s9EquatableP", "disabledColor"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "iconLayer"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isAnimating"]
-- !private ["s9EquatableP", "isEnabled"]
-- !private ["s9EquatableP", "isSelected"]
-- !private ["s9EquatableP", "kCALineCapSquare"]
-- !private ["s9EquatableP", "layoutSublayers"]
-- !private ["s9EquatableP", "lineCap"]
-- !private ["s9EquatableP", "lineWidth"]
-- !private ["s9EquatableP", "move"]
-- !private ["s9EquatableP", "normalColor"]
-- ["s9EquatableP", "opacity"]
-- !private ["s9EquatableP", "path"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "selectedColor"]
-- !private ["s9EquatableP", "setSelected"]
-- !private ["s9EquatableP", "sideLength"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "strokeColor"]
-- ["s9EquatableP", "strokeEnd"]
-- !private ["s9EquatableP", "touchUpInside"]
-- !private ["s9EquatableP", "transform"]
-- ["s9EquatableP", "white"]
-- !private ["s9EquatableP", "x"]
-- !private ["s9EquatableP", "y"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "size"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "size"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- ["SQ", "CALayer"]
+- ["SQ", "CAShapeLayer"]
+- !private ["SQ", "CATransform3DMakeScale"]
+- !private ["SQ", "CATransform3DMakeTranslation"]
+- !private ["SQ", "CGPoint"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "CheckBoxLayer"]
+- !private ["SQ", "Constants"]
+- !private ["SQ", "UIBezierPath"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addLine"]
+- !private ["SQ", "addSublayer"]
+- !private ["SQ", "addTarget"]
+- !private ["SQ", "animate"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "borderColor"]
+- !private ["SQ", "borderLayer"]
+- !private ["SQ", "borderLayerCenterDotBorderWidth"]
+- !private ["SQ", "borderLayerCornerRadius"]
+- !private ["SQ", "borderLayerFullBorderWidth"]
+- !private ["SQ", "borderLayerNormalBorderWidth"]
+- !private ["SQ", "borderLayerScalePercentageToShrink"]
+- !private ["SQ", "borderLayerScaleToShrink"]
+- ["SQ", "borderWidth"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "cgPath"]
+- !private ["SQ", "checkMarkLayer"]
+- !private ["SQ", "checkMarkLeftEndPoint"]
+- !private ["SQ", "checkMarkLeftLayer"]
+- !private ["SQ", "checkMarkPathLeft"]
+- !private ["SQ", "checkMarkPathRigth"]
+- !private ["SQ", "checkMarkRightEndPoint"]
+- !private ["SQ", "checkMarkRightLayer"]
+- !private ["SQ", "checkMarkStartPoint"]
+- !private ["SQ", "checkmarkColor"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "didTap"]
+- !private ["SQ", "disabledColor"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "iconLayer"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isAnimating"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "isSelected"]
+- !private ["SQ", "kCALineCapSquare"]
+- !private ["SQ", "layoutSublayers"]
+- !private ["SQ", "lineCap"]
+- !private ["SQ", "lineWidth"]
+- !private ["SQ", "move"]
+- !private ["SQ", "normalColor"]
+- ["SQ", "opacity"]
+- !private ["SQ", "path"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "selectedColor"]
+- !private ["SQ", "setSelected"]
+- !private ["SQ", "sideLength"]
+- !private ["SQ", "size"]
+- !private ["SQ", "strokeColor"]
+- ["SQ", "strokeEnd"]
+- !private ["SQ", "touchUpInside"]
+- !private ["SQ", "transform"]
+- ["SQ", "white"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["So15UIControlEventsV", "touchUpInside"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s8HashableP", "CALayer"]
-- ["s8HashableP", "CAShapeLayer"]
-- !private ["s8HashableP", "CATransform3DMakeScale"]
-- !private ["s8HashableP", "CATransform3DMakeTranslation"]
-- !private ["s8HashableP", "CGPoint"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "CheckBoxLayer"]
-- !private ["s8HashableP", "Constants"]
-- !private ["s8HashableP", "UIBezierPath"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addLine"]
-- !private ["s8HashableP", "addSublayer"]
-- !private ["s8HashableP", "addTarget"]
-- !private ["s8HashableP", "animate"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "borderColor"]
-- !private ["s8HashableP", "borderLayer"]
-- !private ["s8HashableP", "borderLayerCenterDotBorderWidth"]
-- !private ["s8HashableP", "borderLayerCornerRadius"]
-- !private ["s8HashableP", "borderLayerFullBorderWidth"]
-- !private ["s8HashableP", "borderLayerNormalBorderWidth"]
-- !private ["s8HashableP", "borderLayerScalePercentageToShrink"]
-- !private ["s8HashableP", "borderLayerScaleToShrink"]
-- ["s8HashableP", "borderWidth"]
-- !private ["s8HashableP", "cgColor"]
-- !private ["s8HashableP", "cgPath"]
-- !private ["s8HashableP", "checkMarkLayer"]
-- !private ["s8HashableP", "checkMarkLeftEndPoint"]
-- !private ["s8HashableP", "checkMarkLeftLayer"]
-- !private ["s8HashableP", "checkMarkPathLeft"]
-- !private ["s8HashableP", "checkMarkPathRigth"]
-- !private ["s8HashableP", "checkMarkRightEndPoint"]
-- !private ["s8HashableP", "checkMarkRightLayer"]
-- !private ["s8HashableP", "checkMarkStartPoint"]
-- !private ["s8HashableP", "checkmarkColor"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "cornerRadius"]
-- !private ["s8HashableP", "didTap"]
-- !private ["s8HashableP", "disabledColor"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "iconLayer"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isAnimating"]
-- !private ["s8HashableP", "isEnabled"]
-- !private ["s8HashableP", "isSelected"]
-- !private ["s8HashableP", "kCALineCapSquare"]
-- !private ["s8HashableP", "layoutSublayers"]
-- !private ["s8HashableP", "lineCap"]
-- !private ["s8HashableP", "lineWidth"]
-- !private ["s8HashableP", "move"]
-- !private ["s8HashableP", "normalColor"]
-- ["s8HashableP", "opacity"]
-- !private ["s8HashableP", "path"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "selectedColor"]
-- !private ["s8HashableP", "setSelected"]
-- !private ["s8HashableP", "sideLength"]
-- !private ["s8HashableP", "strokeColor"]
-- ["s8HashableP", "strokeEnd"]
-- !private ["s8HashableP", "transform"]
-- ["s8HashableP", "white"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "CALayer"]
+- ["SH", "CAShapeLayer"]
+- !private ["SH", "CATransform3DMakeScale"]
+- !private ["SH", "CATransform3DMakeTranslation"]
+- !private ["SH", "CGPoint"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "CheckBoxLayer"]
+- !private ["SH", "Constants"]
+- !private ["SH", "UIBezierPath"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addLine"]
+- !private ["SH", "addSublayer"]
+- !private ["SH", "addTarget"]
+- !private ["SH", "animate"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "borderColor"]
+- !private ["SH", "borderLayer"]
+- !private ["SH", "borderLayerCenterDotBorderWidth"]
+- !private ["SH", "borderLayerCornerRadius"]
+- !private ["SH", "borderLayerFullBorderWidth"]
+- !private ["SH", "borderLayerNormalBorderWidth"]
+- !private ["SH", "borderLayerScalePercentageToShrink"]
+- !private ["SH", "borderLayerScaleToShrink"]
+- ["SH", "borderWidth"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "cgPath"]
+- !private ["SH", "checkMarkLayer"]
+- !private ["SH", "checkMarkLeftEndPoint"]
+- !private ["SH", "checkMarkLeftLayer"]
+- !private ["SH", "checkMarkPathLeft"]
+- !private ["SH", "checkMarkPathRigth"]
+- !private ["SH", "checkMarkRightEndPoint"]
+- !private ["SH", "checkMarkRightLayer"]
+- !private ["SH", "checkMarkStartPoint"]
+- !private ["SH", "checkmarkColor"]
+- !private ["SH", "clear"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "didTap"]
+- !private ["SH", "disabledColor"]
+- !private ["SH", "frame"]
+- !private ["SH", "iconLayer"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isAnimating"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "isSelected"]
+- !private ["SH", "kCALineCapSquare"]
+- !private ["SH", "layoutSublayers"]
+- !private ["SH", "lineCap"]
+- !private ["SH", "lineWidth"]
+- !private ["SH", "move"]
+- !private ["SH", "normalColor"]
+- ["SH", "opacity"]
+- !private ["SH", "path"]
+- !private ["SH", "prepare"]
+- !private ["SH", "selectedColor"]
+- !private ["SH", "setSelected"]
+- !private ["SH", "sideLength"]
+- !private ["SH", "strokeColor"]
+- ["SH", "strokeEnd"]
+- !private ["SH", "transform"]
+- ["SH", "white"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "CALayer"]
 - ["So8NSCodingP", "CAShapeLayer"]
@@ -737,6 +764,7 @@ depends-member:
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "iconLayer"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isAnimating"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "isSelected"]
@@ -815,6 +843,7 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "iconLayer"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isAnimating"]
 - !private ["So8NSObjectC", "isEnabled"]
 - !private ["So8NSObjectC", "isSelected"]
@@ -837,67 +866,68 @@ depends-member:
 - ["So8NSObjectC", "strokeEnd"]
 - !private ["So8NSObjectC", "transform"]
 - ["So8NSObjectC", "white"]
-- ["So16NSObjectProtocolP", "CALayer"]
-- ["So16NSObjectProtocolP", "CAShapeLayer"]
-- !private ["So16NSObjectProtocolP", "CATransform3DMakeScale"]
-- !private ["So16NSObjectProtocolP", "CATransform3DMakeTranslation"]
-- !private ["So16NSObjectProtocolP", "CGPoint"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "CheckBoxLayer"]
-- !private ["So16NSObjectProtocolP", "Constants"]
-- !private ["So16NSObjectProtocolP", "UIBezierPath"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addLine"]
-- !private ["So16NSObjectProtocolP", "addSublayer"]
-- !private ["So16NSObjectProtocolP", "addTarget"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "borderColor"]
-- !private ["So16NSObjectProtocolP", "borderLayer"]
-- !private ["So16NSObjectProtocolP", "borderLayerCenterDotBorderWidth"]
-- !private ["So16NSObjectProtocolP", "borderLayerCornerRadius"]
-- !private ["So16NSObjectProtocolP", "borderLayerFullBorderWidth"]
-- !private ["So16NSObjectProtocolP", "borderLayerNormalBorderWidth"]
-- !private ["So16NSObjectProtocolP", "borderLayerScalePercentageToShrink"]
-- !private ["So16NSObjectProtocolP", "borderLayerScaleToShrink"]
-- ["So16NSObjectProtocolP", "borderWidth"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "cgPath"]
-- !private ["So16NSObjectProtocolP", "checkMarkLayer"]
-- !private ["So16NSObjectProtocolP", "checkMarkLeftEndPoint"]
-- !private ["So16NSObjectProtocolP", "checkMarkLeftLayer"]
-- !private ["So16NSObjectProtocolP", "checkMarkPathLeft"]
-- !private ["So16NSObjectProtocolP", "checkMarkPathRigth"]
-- !private ["So16NSObjectProtocolP", "checkMarkRightEndPoint"]
-- !private ["So16NSObjectProtocolP", "checkMarkRightLayer"]
-- !private ["So16NSObjectProtocolP", "checkMarkStartPoint"]
-- !private ["So16NSObjectProtocolP", "checkmarkColor"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "cornerRadius"]
-- !private ["So16NSObjectProtocolP", "didTap"]
-- !private ["So16NSObjectProtocolP", "disabledColor"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "iconLayer"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isAnimating"]
-- !private ["So16NSObjectProtocolP", "isEnabled"]
-- !private ["So16NSObjectProtocolP", "isSelected"]
-- !private ["So16NSObjectProtocolP", "kCALineCapSquare"]
-- !private ["So16NSObjectProtocolP", "layoutSublayers"]
-- !private ["So16NSObjectProtocolP", "lineCap"]
-- !private ["So16NSObjectProtocolP", "lineWidth"]
-- !private ["So16NSObjectProtocolP", "move"]
-- !private ["So16NSObjectProtocolP", "normalColor"]
-- ["So16NSObjectProtocolP", "opacity"]
-- !private ["So16NSObjectProtocolP", "path"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "selectedColor"]
-- !private ["So16NSObjectProtocolP", "setSelected"]
-- !private ["So16NSObjectProtocolP", "sideLength"]
-- !private ["So16NSObjectProtocolP", "strokeColor"]
-- ["So16NSObjectProtocolP", "strokeEnd"]
-- !private ["So16NSObjectProtocolP", "transform"]
-- ["So16NSObjectProtocolP", "white"]
+- ["So8NSObjectP", "CALayer"]
+- ["So8NSObjectP", "CAShapeLayer"]
+- !private ["So8NSObjectP", "CATransform3DMakeScale"]
+- !private ["So8NSObjectP", "CATransform3DMakeTranslation"]
+- !private ["So8NSObjectP", "CGPoint"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "CheckBoxLayer"]
+- !private ["So8NSObjectP", "Constants"]
+- !private ["So8NSObjectP", "UIBezierPath"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addLine"]
+- !private ["So8NSObjectP", "addSublayer"]
+- !private ["So8NSObjectP", "addTarget"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "borderColor"]
+- !private ["So8NSObjectP", "borderLayer"]
+- !private ["So8NSObjectP", "borderLayerCenterDotBorderWidth"]
+- !private ["So8NSObjectP", "borderLayerCornerRadius"]
+- !private ["So8NSObjectP", "borderLayerFullBorderWidth"]
+- !private ["So8NSObjectP", "borderLayerNormalBorderWidth"]
+- !private ["So8NSObjectP", "borderLayerScalePercentageToShrink"]
+- !private ["So8NSObjectP", "borderLayerScaleToShrink"]
+- ["So8NSObjectP", "borderWidth"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "cgPath"]
+- !private ["So8NSObjectP", "checkMarkLayer"]
+- !private ["So8NSObjectP", "checkMarkLeftEndPoint"]
+- !private ["So8NSObjectP", "checkMarkLeftLayer"]
+- !private ["So8NSObjectP", "checkMarkPathLeft"]
+- !private ["So8NSObjectP", "checkMarkPathRigth"]
+- !private ["So8NSObjectP", "checkMarkRightEndPoint"]
+- !private ["So8NSObjectP", "checkMarkRightLayer"]
+- !private ["So8NSObjectP", "checkMarkStartPoint"]
+- !private ["So8NSObjectP", "checkmarkColor"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "didTap"]
+- !private ["So8NSObjectP", "disabledColor"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "iconLayer"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isAnimating"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "isSelected"]
+- !private ["So8NSObjectP", "kCALineCapSquare"]
+- !private ["So8NSObjectP", "layoutSublayers"]
+- !private ["So8NSObjectP", "lineCap"]
+- !private ["So8NSObjectP", "lineWidth"]
+- !private ["So8NSObjectP", "move"]
+- !private ["So8NSObjectP", "normalColor"]
+- ["So8NSObjectP", "opacity"]
+- !private ["So8NSObjectP", "path"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "selectedColor"]
+- !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "sideLength"]
+- !private ["So8NSObjectP", "strokeColor"]
+- ["So8NSObjectP", "strokeEnd"]
+- !private ["So8NSObjectP", "transform"]
+- ["So8NSObjectP", "white"]
 - ["So14NSSecureCodingP", "CALayer"]
 - ["So14NSSecureCodingP", "CAShapeLayer"]
 - !private ["So14NSSecureCodingP", "CATransform3DMakeScale"]
@@ -936,6 +966,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "disabledColor"]
 - !private ["So14NSSecureCodingP", "frame"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "isAnimating"]
 - !private ["So14NSSecureCodingP", "isEnabled"]
 - !private ["So14NSSecureCodingP", "isSelected"]
@@ -961,6 +992,7 @@ depends-member:
 - !private ["8Material9PulseableP", "didTap"]
 - !private ["8Material9PulseableP", "iconLayer"]
 - !private ["8Material9PulseableP", "init"]
+- !private ["8Material9PulseableP", "init"]
 - !private ["8Material9PulseableP", "isAnimating"]
 - !private ["8Material9PulseableP", "isSelected"]
 - !private ["8Material9PulseableP", "prepare"]
@@ -971,23 +1003,31 @@ depends-member:
 - !private ["8Material14PulseableLayerP", "didTap"]
 - !private ["8Material14PulseableLayerP", "iconLayer"]
 - !private ["8Material14PulseableLayerP", "init"]
+- !private ["8Material14PulseableLayerP", "init"]
 - !private ["8Material14PulseableLayerP", "isAnimating"]
 - !private ["8Material14PulseableLayerP", "isSelected"]
 - !private ["8Material14PulseableLayerP", "prepare"]
 - !private ["8Material14PulseableLayerP", "setSelected"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "touchUpInside"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "touchUpInside"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "CheckBoxLayer"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", ""]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "didTap"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "iconLayer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isAnimating"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isSelected"]
@@ -999,6 +1039,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "didTap"]
 - !private ["So29UIAccessibilityIdentificationP", "iconLayer"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isAnimating"]
 - !private ["So29UIAccessibilityIdentificationP", "isSelected"]
 - !private ["So29UIAccessibilityIdentificationP", "prepare"]
@@ -1009,6 +1050,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "didTap"]
 - !private ["So12UIAppearanceP", "iconLayer"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "isAnimating"]
 - !private ["So12UIAppearanceP", "isSelected"]
 - !private ["So12UIAppearanceP", "prepare"]
@@ -1018,6 +1060,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "didTap"]
 - !private ["So21UIAppearanceContainerP", "iconLayer"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isAnimating"]
 - !private ["So21UIAppearanceContainerP", "isSelected"]
@@ -1035,6 +1078,7 @@ depends-member:
 - ["So8UIButtonC", "didTap"]
 - ["So8UIButtonC", "iconLayer"]
 - ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "init"]
 - !private ["So8UIButtonC", "isAnimating"]
 - !private ["So8UIButtonC", "isSelected"]
 - ["So8UIButtonC", "prepare"]
@@ -1050,16 +1094,17 @@ depends-member:
 - ["So9UIControlC", "didTap"]
 - ["So9UIControlC", "iconLayer"]
 - ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "init"]
 - !private ["So9UIControlC", "isAnimating"]
 - !private ["So9UIControlC", "isSelected"]
 - ["So9UIControlC", "prepare"]
 - !private ["So9UIControlC", "setSelected"]
-- !private ["SC15UIControlEventsV", "touchUpInside"]
 - !private ["So17UICoordinateSpaceP", "CheckBoxLayer"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "didTap"]
 - !private ["So17UICoordinateSpaceP", "iconLayer"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "isAnimating"]
 - !private ["So17UICoordinateSpaceP", "isSelected"]
@@ -1071,6 +1116,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "didTap"]
 - !private ["So13UIDynamicItemP", "iconLayer"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "isAnimating"]
 - !private ["So13UIDynamicItemP", "isSelected"]
 - !private ["So13UIDynamicItemP", "prepare"]
@@ -1080,6 +1126,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "didTap"]
 - !private ["So18UIFocusEnvironmentP", "iconLayer"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isAnimating"]
 - !private ["So18UIFocusEnvironmentP", "isSelected"]
@@ -1091,15 +1138,28 @@ depends-member:
 - !private ["So11UIFocusItemP", "didTap"]
 - !private ["So11UIFocusItemP", "iconLayer"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "isAnimating"]
 - !private ["So11UIFocusItemP", "isSelected"]
 - !private ["So11UIFocusItemP", "prepare"]
 - !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "CheckBoxLayer"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addTarget"]
+- !private ["So20UIFocusItemContainerP", "didTap"]
+- !private ["So20UIFocusItemContainerP", "iconLayer"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isAnimating"]
+- !private ["So20UIFocusItemContainerP", "isSelected"]
+- !private ["So20UIFocusItemContainerP", "prepare"]
+- !private ["So20UIFocusItemContainerP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "CheckBoxLayer"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "didTap"]
 - !private ["So30UIPasteConfigurationSupportingP", "iconLayer"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isAnimating"]
 - !private ["So30UIPasteConfigurationSupportingP", "isSelected"]
@@ -1113,6 +1173,7 @@ depends-member:
 - ["So11UIResponderC", "didTap"]
 - ["So11UIResponderC", "iconLayer"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isAnimating"]
 - !private ["So11UIResponderC", "isSelected"]
 - ["So11UIResponderC", "prepare"]
@@ -1122,6 +1183,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "didTap"]
 - !private ["So30UIResponderStandardEditActionsP", "iconLayer"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isAnimating"]
 - !private ["So30UIResponderStandardEditActionsP", "isSelected"]
@@ -1133,6 +1195,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "didTap"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "iconLayer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isAnimating"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isSelected"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "prepare"]
@@ -1143,10 +1206,22 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "didTap"]
 - !private ["So18UITraitEnvironmentP", "iconLayer"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isAnimating"]
 - !private ["So18UITraitEnvironmentP", "isSelected"]
 - !private ["So18UITraitEnvironmentP", "prepare"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "CheckBoxLayer"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addTarget"]
+- !private ["So23UIUserActivityRestoringP", "didTap"]
+- !private ["So23UIUserActivityRestoringP", "iconLayer"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isAnimating"]
+- !private ["So23UIUserActivityRestoringP", "isSelected"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "BaseIconLayer"]
 - !private ["So6UIViewC", "CheckBoxLayer"]
 - ["So6UIViewC", "UIColor"]
@@ -1155,6 +1230,7 @@ depends-member:
 - ["So6UIViewC", "didTap"]
 - ["So6UIViewC", "iconLayer"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "isAnimating"]
 - !private ["So6UIViewC", "isSelected"]
 - ["So6UIViewC", "prepare"]
@@ -1165,18 +1241,24 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "didTap"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "iconLayer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isAnimating"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isSelected"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepare"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CALayer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CAShapeLayer"]
@@ -1220,6 +1302,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "iconLayer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isAnimating"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isSelected"]
@@ -1242,14 +1325,16 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "identity"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "8Material13BaseIconLayerC"
 - "8Material19BaseIconLayerButtonC"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
 - "8Material6ButtonC"
 - "So19CAAnimationDelegateP"
@@ -1257,29 +1342,30 @@ depends-nominal:
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
 - "So12CAShapeLayerC"
-- !private "SC13CATransform3DV"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So13CATransform3DV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
 - "8Material13CheckBoxLayerC"
 - "8Material11CheckButtonC"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "8Material13BaseIconLayerC9ConstantsV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "So15UIControlEventsV"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
@@ -1287,17 +1373,17 @@ depends-nominal:
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "s9OptionSetP"
 - "8Material9PulseableP"
 - "8Material14PulseableLayerP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - !private "s10SetAlgebraP"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -1308,16 +1394,17 @@ depends-nominal:
 - "So8UIButtonC"
 - "So7UIColorC"
 - "So9UIControlC"
-- !private "SC15UIControlEventsV"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1332,42 +1419,43 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "ebde38e6189c0bed67ed38341fb8c9d2"

@@ -69,6 +69,8 @@ depends-top-level:
 - "/"
 - "Color"
 - "ColorPalette"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "UIColor"
 depends-member:
 - ["s7CVarArgP", "Color"]
@@ -76,6 +78,7 @@ depends-member:
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "black"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "white"]
 - ["s7CVarArgP", "withAlphaComponent"]
 - ["8Material5ColorC", "Color"]
@@ -90,7 +93,6 @@ depends-member:
 - ["8Material5ColorC", "darkText"]
 - ["8Material5ColorC", "deepOrange"]
 - ["8Material5ColorC", "deepPurple"]
-- ["8Material5ColorC", "deinit"]
 - ["8Material5ColorC", "green"]
 - ["8Material5ColorC", "grey"]
 - ["8Material5ColorC", "indigo"]
@@ -127,6 +129,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "black"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", "withAlphaComponent"]
 - ["s23CustomStringConvertibleP", "Color"]
@@ -134,27 +137,31 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "black"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "white"]
 - ["s23CustomStringConvertibleP", "withAlphaComponent"]
-- ["s9EquatableP", "Color"]
-- ["s9EquatableP", "UIColor"]
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "black"]
-- ["s9EquatableP", "init"]
-- ["s9EquatableP", "white"]
-- ["s9EquatableP", "withAlphaComponent"]
-- ["s8HashableP", "Color"]
-- ["s8HashableP", "UIColor"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "black"]
-- ["s8HashableP", "init"]
-- ["s8HashableP", "white"]
-- ["s8HashableP", "withAlphaComponent"]
+- ["SQ", "Color"]
+- ["SQ", "UIColor"]
+- ["SQ", ""]
+- ["SQ", "black"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "white"]
+- ["SQ", "withAlphaComponent"]
+- ["SH", "Color"]
+- ["SH", "UIColor"]
+- ["SH", ""]
+- ["SH", "black"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "white"]
+- ["SH", "withAlphaComponent"]
 - ["So8NSCodingP", "Color"]
 - ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", ""]
 - ["So8NSCodingP", "black"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - ["So8NSCodingP", "white"]
 - ["So8NSCodingP", "withAlphaComponent"]
 - ["So9NSCopyingP", "Color"]
@@ -162,6 +169,7 @@ depends-member:
 - ["So9NSCopyingP", ""]
 - ["So9NSCopyingP", "black"]
 - ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "init"]
 - ["So9NSCopyingP", "white"]
 - ["So9NSCopyingP", "withAlphaComponent"]
 - ["So21NSItemProviderReadingP", "Color"]
@@ -169,6 +177,7 @@ depends-member:
 - ["So21NSItemProviderReadingP", ""]
 - ["So21NSItemProviderReadingP", "black"]
 - ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderReadingP", "white"]
 - ["So21NSItemProviderReadingP", "withAlphaComponent"]
 - ["So21NSItemProviderWritingP", "Color"]
@@ -176,26 +185,31 @@ depends-member:
 - ["So21NSItemProviderWritingP", ""]
 - ["So21NSItemProviderWritingP", "black"]
 - ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - ["So21NSItemProviderWritingP", "white"]
 - ["So21NSItemProviderWritingP", "withAlphaComponent"]
 - ["So8NSObjectC", "Color"]
 - ["So8NSObjectC", "ColorPalette"]
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "white"]
 - ["So8NSObjectC", "withAlphaComponent"]
-- ["So16NSObjectProtocolP", "Color"]
-- ["So16NSObjectProtocolP", "UIColor"]
-- ["So16NSObjectProtocolP", ""]
-- ["So16NSObjectProtocolP", "black"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So16NSObjectProtocolP", "white"]
-- ["So16NSObjectProtocolP", "withAlphaComponent"]
+- ["So8NSObjectP", "Color"]
+- ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "black"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "white"]
+- ["So8NSObjectP", "withAlphaComponent"]
 - ["So14NSSecureCodingP", "Color"]
 - ["So14NSSecureCodingP", "UIColor"]
 - ["So14NSSecureCodingP", ""]
 - ["So14NSSecureCodingP", "black"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - ["So14NSSecureCodingP", "white"]
 - ["So14NSSecureCodingP", "withAlphaComponent"]
 - ["So7UIColorC", "Color"]
@@ -204,6 +218,7 @@ depends-member:
 - ["So7UIColorC", ""]
 - ["So7UIColorC", "black"]
 - ["So7UIColorC", "init"]
+- !private ["So7UIColorC", "init"]
 - ["So7UIColorC", "white"]
 - ["So7UIColorC", "withAlphaComponent"]
 - ["s26_ExpressibleByColorLiteralP", "Color"]
@@ -211,6 +226,7 @@ depends-member:
 - ["s26_ExpressibleByColorLiteralP", ""]
 - ["s26_ExpressibleByColorLiteralP", "black"]
 - ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s26_ExpressibleByColorLiteralP", "withAlphaComponent"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Color"]
@@ -218,6 +234,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "withAlphaComponent"]
 - ["8Material5ColorC5amberC", "UIColor"]
@@ -306,7 +323,6 @@ depends-member:
 - ["8Material5ColorC4cyanC", "lighten4"]
 - ["8Material5ColorC4cyanC", "lighten5"]
 - ["8Material5ColorC8darkTextC", "Color"]
-- ["8Material5ColorC8darkTextC", "deinit"]
 - ["8Material5ColorC8darkTextC", "dividers"]
 - ["8Material5ColorC8darkTextC", "init"]
 - ["8Material5ColorC8darkTextC", "others"]
@@ -432,7 +448,6 @@ depends-member:
 - ["8Material5ColorC10lightGreenC", "lighten4"]
 - ["8Material5ColorC10lightGreenC", "lighten5"]
 - ["8Material5ColorC9lightTextC", "Color"]
-- ["8Material5ColorC9lightTextC", "deinit"]
 - ["8Material5ColorC9lightTextC", "dividers"]
 - ["8Material5ColorC9lightTextC", "init"]
 - ["8Material5ColorC9lightTextC", "others"]
@@ -563,14 +578,14 @@ depends-nominal:
 - "8Material12ColorPaletteP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
-- "s9EquatableP"
-- "s8HashableP"
+- "SQ"
+- "SH"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - "So7UIColorC"
 - "s26_ExpressibleByColorLiteralP"
@@ -598,42 +613,43 @@ depends-nominal:
 - "8Material5ColorC6yellowC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "b6033e6fcb46c3550544daf36166ef53"

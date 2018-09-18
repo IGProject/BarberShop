@@ -75,11 +75,11 @@ depends-member:
 - !private ["12FacebookCore12AppEventNameO", "spentCredits"]
 - !private ["12FacebookCore12AppEventNameO", "unlockedAchievement"]
 - !private ["12FacebookCore12AppEventNameO", "viewedContent"]
-- !private ["12FacebookCore21AppEventParameterNameO", "Description"]
 - !private ["12FacebookCore21AppEventParameterNameO", "contentId"]
 - !private ["12FacebookCore21AppEventParameterNameO", "contentType"]
 - !private ["12FacebookCore21AppEventParameterNameO", "currency"]
 - !private ["12FacebookCore21AppEventParameterNameO", "deinit"]
+- !private ["12FacebookCore21AppEventParameterNameO", "description"]
 - !private ["12FacebookCore21AppEventParameterNameO", "itemCount"]
 - !private ["12FacebookCore21AppEventParameterNameO", "level"]
 - !private ["12FacebookCore21AppEventParameterNameO", "maxRatingValue"]
@@ -101,20 +101,20 @@ depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "spentCredits"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "unlockedAchievement"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "viewedContent"]
-- !private ["s23BidirectionalCollectionP", "achievedLevel"]
-- !private ["s23BidirectionalCollectionP", "addedPaymentInfo"]
-- !private ["s23BidirectionalCollectionP", "addedToCart"]
-- !private ["s23BidirectionalCollectionP", "addedToWishlist"]
-- !private ["s23BidirectionalCollectionP", "completedRegistration"]
-- !private ["s23BidirectionalCollectionP", "completedTutorial"]
-- !private ["s23BidirectionalCollectionP", "initiatedCheckout"]
-- !private ["s23BidirectionalCollectionP", "purchased"]
-- !private ["s23BidirectionalCollectionP", "rated"]
-- !private ["s23BidirectionalCollectionP", "searched"]
-- !private ["s23BidirectionalCollectionP", "spentCredits"]
-- !private ["s23BidirectionalCollectionP", "unlockedAchievement"]
-- !private ["s23BidirectionalCollectionP", "viewedContent"]
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["SK", "achievedLevel"]
+- !private ["SK", "addedPaymentInfo"]
+- !private ["SK", "addedToCart"]
+- !private ["SK", "addedToWishlist"]
+- !private ["SK", "completedRegistration"]
+- !private ["SK", "completedTutorial"]
+- !private ["SK", "initiatedCheckout"]
+- !private ["SK", "purchased"]
+- !private ["SK", "rated"]
+- !private ["SK", "searched"]
+- !private ["SK", "spentCredits"]
+- !private ["SK", "unlockedAchievement"]
+- !private ["SK", "viewedContent"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "achievedLevel"]
@@ -132,34 +132,34 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "unlockedAchievement"]
 - !private ["s7CVarArgP", "viewedContent"]
-- !private ["s10CollectionP", "achievedLevel"]
-- !private ["s10CollectionP", "addedPaymentInfo"]
-- !private ["s10CollectionP", "addedToCart"]
-- !private ["s10CollectionP", "addedToWishlist"]
-- !private ["s10CollectionP", "completedRegistration"]
-- !private ["s10CollectionP", "completedTutorial"]
-- !private ["s10CollectionP", "initiatedCheckout"]
-- !private ["s10CollectionP", "purchased"]
-- !private ["s10CollectionP", "rated"]
-- !private ["s10CollectionP", "searched"]
-- !private ["s10CollectionP", "spentCredits"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10CollectionP", "unlockedAchievement"]
-- !private ["s10CollectionP", "viewedContent"]
-- !private ["s10ComparableP", "achievedLevel"]
-- !private ["s10ComparableP", "addedPaymentInfo"]
-- !private ["s10ComparableP", "addedToCart"]
-- !private ["s10ComparableP", "addedToWishlist"]
-- !private ["s10ComparableP", "completedRegistration"]
-- !private ["s10ComparableP", "completedTutorial"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "initiatedCheckout"]
-- !private ["s10ComparableP", "purchased"]
-- !private ["s10ComparableP", "rated"]
-- !private ["s10ComparableP", "searched"]
-- !private ["s10ComparableP", "spentCredits"]
-- !private ["s10ComparableP", "unlockedAchievement"]
-- !private ["s10ComparableP", "viewedContent"]
+- !private ["Sl", "achievedLevel"]
+- !private ["Sl", "addedPaymentInfo"]
+- !private ["Sl", "addedToCart"]
+- !private ["Sl", "addedToWishlist"]
+- !private ["Sl", "completedRegistration"]
+- !private ["Sl", "completedTutorial"]
+- !private ["Sl", "initiatedCheckout"]
+- !private ["Sl", "purchased"]
+- !private ["Sl", "rated"]
+- !private ["Sl", "searched"]
+- !private ["Sl", "spentCredits"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "unlockedAchievement"]
+- !private ["Sl", "viewedContent"]
+- !private ["SL", "achievedLevel"]
+- !private ["SL", "addedPaymentInfo"]
+- !private ["SL", "addedToCart"]
+- !private ["SL", "addedToWishlist"]
+- !private ["SL", "completedRegistration"]
+- !private ["SL", "completedTutorial"]
+- !private ["SL", "init"]
+- !private ["SL", "initiatedCheckout"]
+- !private ["SL", "purchased"]
+- !private ["SL", "rated"]
+- !private ["SL", "searched"]
+- !private ["SL", "spentCredits"]
+- !private ["SL", "unlockedAchievement"]
+- !private ["SL", "viewedContent"]
 - !private ["s28CustomDebugStringConvertibleP", "achievedLevel"]
 - !private ["s28CustomDebugStringConvertibleP", "addedPaymentInfo"]
 - !private ["s28CustomDebugStringConvertibleP", "addedToCart"]
@@ -208,7 +208,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "unlockedAchievement"]
 - !private ["s17CustomReflectableP", "viewedContent"]
-- !private ["s23CustomStringConvertibleP", "Description"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "achievedLevel"]
 - !private ["s23CustomStringConvertibleP", "addedPaymentInfo"]
@@ -219,6 +218,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "contentId"]
 - !private ["s23CustomStringConvertibleP", "contentType"]
 - !private ["s23CustomStringConvertibleP", "currency"]
+- !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "initiatedCheckout"]
 - !private ["s23CustomStringConvertibleP", "itemCount"]
@@ -235,73 +235,72 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "successful"]
 - !private ["s23CustomStringConvertibleP", "unlockedAchievement"]
 - !private ["s23CustomStringConvertibleP", "viewedContent"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "achievedLevel"]
-- !private ["s9DecodableP", "addedPaymentInfo"]
-- !private ["s9DecodableP", "addedToCart"]
-- !private ["s9DecodableP", "addedToWishlist"]
-- !private ["s9DecodableP", "completedRegistration"]
-- !private ["s9DecodableP", "completedTutorial"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "initiatedCheckout"]
-- !private ["s9DecodableP", "onSome"]
-- !private ["s9DecodableP", "purchased"]
-- !private ["s9DecodableP", "rated"]
-- !private ["s9DecodableP", "searched"]
-- !private ["s9DecodableP", "spentCredits"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "unlockedAchievement"]
-- !private ["s9DecodableP", "viewedContent"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "achievedLevel"]
-- !private ["s9EncodableP", "addedPaymentInfo"]
-- !private ["s9EncodableP", "addedToCart"]
-- !private ["s9EncodableP", "addedToWishlist"]
-- !private ["s9EncodableP", "completedRegistration"]
-- !private ["s9EncodableP", "completedTutorial"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "initiatedCheckout"]
-- !private ["s9EncodableP", "onSome"]
-- !private ["s9EncodableP", "purchased"]
-- !private ["s9EncodableP", "rated"]
-- !private ["s9EncodableP", "searched"]
-- !private ["s9EncodableP", "spentCredits"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "unlockedAchievement"]
-- !private ["s9EncodableP", "viewedContent"]
-- !private ["s9EquatableP", "Description"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "achievedLevel"]
-- !private ["s9EquatableP", "addedPaymentInfo"]
-- !private ["s9EquatableP", "addedToCart"]
-- !private ["s9EquatableP", "addedToWishlist"]
-- !private ["s9EquatableP", "completedRegistration"]
-- !private ["s9EquatableP", "completedTutorial"]
-- !private ["s9EquatableP", "contentId"]
-- !private ["s9EquatableP", "contentType"]
-- !private ["s9EquatableP", "currency"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "initiatedCheckout"]
-- !private ["s9EquatableP", "itemCount"]
-- !private ["s9EquatableP", "level"]
-- !private ["s9EquatableP", "maxRatingValue"]
-- !private ["s9EquatableP", "onSome"]
-- !private ["s9EquatableP", "paymentInfoAvailable"]
-- !private ["s9EquatableP", "purchased"]
-- !private ["s9EquatableP", "rated"]
-- !private ["s9EquatableP", "registrationMethod"]
-- !private ["s9EquatableP", "searched"]
-- !private ["s9EquatableP", "searchedString"]
-- !private ["s9EquatableP", "spentCredits"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "successful"]
-- !private ["s9EquatableP", "unlockedAchievement"]
-- !private ["s9EquatableP", "viewedContent"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "achievedLevel"]
+- !private ["Se", "addedPaymentInfo"]
+- !private ["Se", "addedToCart"]
+- !private ["Se", "addedToWishlist"]
+- !private ["Se", "completedRegistration"]
+- !private ["Se", "completedTutorial"]
+- !private ["Se", "init"]
+- !private ["Se", "initiatedCheckout"]
+- !private ["Se", "onSome"]
+- !private ["Se", "purchased"]
+- !private ["Se", "rated"]
+- !private ["Se", "searched"]
+- !private ["Se", "spentCredits"]
+- !private ["Se", "subscript"]
+- !private ["Se", "unlockedAchievement"]
+- !private ["Se", "viewedContent"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "achievedLevel"]
+- !private ["SE", "addedPaymentInfo"]
+- !private ["SE", "addedToCart"]
+- !private ["SE", "addedToWishlist"]
+- !private ["SE", "completedRegistration"]
+- !private ["SE", "completedTutorial"]
+- !private ["SE", "init"]
+- !private ["SE", "initiatedCheckout"]
+- !private ["SE", "onSome"]
+- !private ["SE", "purchased"]
+- !private ["SE", "rated"]
+- !private ["SE", "searched"]
+- !private ["SE", "spentCredits"]
+- !private ["SE", "subscript"]
+- !private ["SE", "unlockedAchievement"]
+- !private ["SE", "viewedContent"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "achievedLevel"]
+- !private ["SQ", "addedPaymentInfo"]
+- !private ["SQ", "addedToCart"]
+- !private ["SQ", "addedToWishlist"]
+- !private ["SQ", "completedRegistration"]
+- !private ["SQ", "completedTutorial"]
+- !private ["SQ", "contentId"]
+- !private ["SQ", "contentType"]
+- !private ["SQ", "currency"]
+- !private ["SQ", "description"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initiatedCheckout"]
+- !private ["SQ", "itemCount"]
+- !private ["SQ", "level"]
+- !private ["SQ", "maxRatingValue"]
+- !private ["SQ", "onSome"]
+- !private ["SQ", "paymentInfoAvailable"]
+- !private ["SQ", "purchased"]
+- !private ["SQ", "rated"]
+- !private ["SQ", "registrationMethod"]
+- !private ["SQ", "searched"]
+- !private ["SQ", "searchedString"]
+- !private ["SQ", "spentCredits"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "successful"]
+- !private ["SQ", "unlockedAchievement"]
+- !private ["SQ", "viewedContent"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Description"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "achievedLevel"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addedPaymentInfo"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addedToCart"]
@@ -311,6 +310,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contentId"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contentType"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "currency"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "description"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "initiatedCheckout"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "itemCount"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "level"]
@@ -328,7 +328,6 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "onSome"]
-- !private ["s26ExpressibleByStringLiteralP", "Description"]
 - !private ["s26ExpressibleByStringLiteralP", "achievedLevel"]
 - !private ["s26ExpressibleByStringLiteralP", "addedPaymentInfo"]
 - !private ["s26ExpressibleByStringLiteralP", "addedToCart"]
@@ -338,6 +337,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "contentId"]
 - !private ["s26ExpressibleByStringLiteralP", "contentType"]
 - !private ["s26ExpressibleByStringLiteralP", "currency"]
+- !private ["s26ExpressibleByStringLiteralP", "description"]
 - !private ["s26ExpressibleByStringLiteralP", "initiatedCheckout"]
 - !private ["s26ExpressibleByStringLiteralP", "itemCount"]
 - !private ["s26ExpressibleByStringLiteralP", "level"]
@@ -352,7 +352,6 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "successful"]
 - !private ["s26ExpressibleByStringLiteralP", "unlockedAchievement"]
 - !private ["s26ExpressibleByStringLiteralP", "viewedContent"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Description"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "achievedLevel"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "addedPaymentInfo"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "addedToCart"]
@@ -362,6 +361,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "contentId"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "contentType"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "currency"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "description"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "initiatedCheckout"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "itemCount"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "level"]
@@ -377,32 +377,34 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "unlockedAchievement"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "viewedContent"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["s8HashableP", "Description"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "achievedLevel"]
-- !private ["s8HashableP", "addedPaymentInfo"]
-- !private ["s8HashableP", "addedToCart"]
-- !private ["s8HashableP", "addedToWishlist"]
-- !private ["s8HashableP", "completedRegistration"]
-- !private ["s8HashableP", "completedTutorial"]
-- !private ["s8HashableP", "contentId"]
-- !private ["s8HashableP", "contentType"]
-- !private ["s8HashableP", "currency"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "initiatedCheckout"]
-- !private ["s8HashableP", "itemCount"]
-- !private ["s8HashableP", "level"]
-- !private ["s8HashableP", "maxRatingValue"]
-- !private ["s8HashableP", "paymentInfoAvailable"]
-- !private ["s8HashableP", "purchased"]
-- !private ["s8HashableP", "rated"]
-- !private ["s8HashableP", "registrationMethod"]
-- !private ["s8HashableP", "searched"]
-- !private ["s8HashableP", "searchedString"]
-- !private ["s8HashableP", "spentCredits"]
-- !private ["s8HashableP", "successful"]
-- !private ["s8HashableP", "unlockedAchievement"]
-- !private ["s8HashableP", "viewedContent"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "achievedLevel"]
+- !private ["SH", "addedPaymentInfo"]
+- !private ["SH", "addedToCart"]
+- !private ["SH", "addedToWishlist"]
+- !private ["SH", "completedRegistration"]
+- !private ["SH", "completedTutorial"]
+- !private ["SH", "contentId"]
+- !private ["SH", "contentType"]
+- !private ["SH", "currency"]
+- !private ["SH", "description"]
+- !private ["SH", "init"]
+- !private ["SH", "initiatedCheckout"]
+- !private ["SH", "itemCount"]
+- !private ["SH", "level"]
+- !private ["SH", "maxRatingValue"]
+- !private ["SH", "onSome"]
+- !private ["SH", "paymentInfoAvailable"]
+- !private ["SH", "purchased"]
+- !private ["SH", "rated"]
+- !private ["SH", "registrationMethod"]
+- !private ["SH", "searched"]
+- !private ["SH", "searchedString"]
+- !private ["SH", "spentCredits"]
+- !private ["SH", "subscript"]
+- !private ["SH", "successful"]
+- !private ["SH", "unlockedAchievement"]
+- !private ["SH", "viewedContent"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "achievedLevel"]
 - !private ["s25LosslessStringConvertibleP", "addedPaymentInfo"]
@@ -435,62 +437,64 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So8NSNumberC", "deinit"]
 - !private ["So8NSNumberC", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "init"]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["s7NumericP", "init"]
+- !private ["So7NSValueC", "init"]
+- !private ["Sj", "init"]
 - !private ["Sq", "onSome"]
-- !private ["s26RangeReplaceableCollectionP", "achievedLevel"]
-- !private ["s26RangeReplaceableCollectionP", "addedPaymentInfo"]
-- !private ["s26RangeReplaceableCollectionP", "addedToCart"]
-- !private ["s26RangeReplaceableCollectionP", "addedToWishlist"]
-- !private ["s26RangeReplaceableCollectionP", "completedRegistration"]
-- !private ["s26RangeReplaceableCollectionP", "completedTutorial"]
-- !private ["s26RangeReplaceableCollectionP", "initiatedCheckout"]
-- !private ["s26RangeReplaceableCollectionP", "purchased"]
-- !private ["s26RangeReplaceableCollectionP", "rated"]
-- !private ["s26RangeReplaceableCollectionP", "searched"]
-- !private ["s26RangeReplaceableCollectionP", "spentCredits"]
-- !private ["s26RangeReplaceableCollectionP", "unlockedAchievement"]
-- !private ["s26RangeReplaceableCollectionP", "viewedContent"]
-- !private ["s16RawRepresentableP", "Description"]
-- !private ["s16RawRepresentableP", "achievedLevel"]
-- !private ["s16RawRepresentableP", "addedPaymentInfo"]
-- !private ["s16RawRepresentableP", "addedToCart"]
-- !private ["s16RawRepresentableP", "addedToWishlist"]
-- !private ["s16RawRepresentableP", "completedRegistration"]
-- !private ["s16RawRepresentableP", "completedTutorial"]
-- !private ["s16RawRepresentableP", "contentId"]
-- !private ["s16RawRepresentableP", "contentType"]
-- !private ["s16RawRepresentableP", "currency"]
-- !private ["s16RawRepresentableP", "initiatedCheckout"]
-- !private ["s16RawRepresentableP", "itemCount"]
-- !private ["s16RawRepresentableP", "level"]
-- !private ["s16RawRepresentableP", "maxRatingValue"]
-- !private ["s16RawRepresentableP", "paymentInfoAvailable"]
-- !private ["s16RawRepresentableP", "purchased"]
-- !private ["s16RawRepresentableP", "rated"]
-- !private ["s16RawRepresentableP", "registrationMethod"]
-- !private ["s16RawRepresentableP", "searched"]
-- !private ["s16RawRepresentableP", "searchedString"]
-- !private ["s16RawRepresentableP", "spentCredits"]
-- !private ["s16RawRepresentableP", "successful"]
-- !private ["s16RawRepresentableP", "unlockedAchievement"]
-- !private ["s16RawRepresentableP", "viewedContent"]
-- !private ["s8SequenceP", "achievedLevel"]
-- !private ["s8SequenceP", "addedPaymentInfo"]
-- !private ["s8SequenceP", "addedToCart"]
-- !private ["s8SequenceP", "addedToWishlist"]
-- !private ["s8SequenceP", "completedRegistration"]
-- !private ["s8SequenceP", "completedTutorial"]
-- !private ["s8SequenceP", "initiatedCheckout"]
-- !private ["s8SequenceP", "purchased"]
-- !private ["s8SequenceP", "rated"]
-- !private ["s8SequenceP", "searched"]
-- !private ["s8SequenceP", "spentCredits"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s8SequenceP", "unlockedAchievement"]
-- !private ["s8SequenceP", "viewedContent"]
-- !private ["s10StrideableP", "init"]
+- !private ["Sm", "achievedLevel"]
+- !private ["Sm", "addedPaymentInfo"]
+- !private ["Sm", "addedToCart"]
+- !private ["Sm", "addedToWishlist"]
+- !private ["Sm", "completedRegistration"]
+- !private ["Sm", "completedTutorial"]
+- !private ["Sm", "initiatedCheckout"]
+- !private ["Sm", "purchased"]
+- !private ["Sm", "rated"]
+- !private ["Sm", "searched"]
+- !private ["Sm", "spentCredits"]
+- !private ["Sm", "unlockedAchievement"]
+- !private ["Sm", "viewedContent"]
+- !private ["SY", "achievedLevel"]
+- !private ["SY", "addedPaymentInfo"]
+- !private ["SY", "addedToCart"]
+- !private ["SY", "addedToWishlist"]
+- !private ["SY", "completedRegistration"]
+- !private ["SY", "completedTutorial"]
+- !private ["SY", "contentId"]
+- !private ["SY", "contentType"]
+- !private ["SY", "currency"]
+- !private ["SY", "description"]
+- !private ["SY", "initiatedCheckout"]
+- !private ["SY", "itemCount"]
+- !private ["SY", "level"]
+- !private ["SY", "maxRatingValue"]
+- !private ["SY", "paymentInfoAvailable"]
+- !private ["SY", "purchased"]
+- !private ["SY", "rated"]
+- !private ["SY", "registrationMethod"]
+- !private ["SY", "searched"]
+- !private ["SY", "searchedString"]
+- !private ["SY", "spentCredits"]
+- !private ["SY", "successful"]
+- !private ["SY", "unlockedAchievement"]
+- !private ["SY", "viewedContent"]
+- !private ["ST", "achievedLevel"]
+- !private ["ST", "addedPaymentInfo"]
+- !private ["ST", "addedToCart"]
+- !private ["ST", "addedToWishlist"]
+- !private ["ST", "completedRegistration"]
+- !private ["ST", "completedTutorial"]
+- !private ["ST", "initiatedCheckout"]
+- !private ["ST", "purchased"]
+- !private ["ST", "rated"]
+- !private ["ST", "searched"]
+- !private ["ST", "spentCredits"]
+- !private ["ST", "subscript"]
+- !private ["ST", "unlockedAchievement"]
+- !private ["ST", "viewedContent"]
+- !private ["Sx", "init"]
 - !private ["SS", "achievedLevel"]
 - !private ["SS", "addedPaymentInfo"]
 - !private ["SS", "addedToCart"]
@@ -505,19 +509,19 @@ depends-member:
 - !private ["SS", "spentCredits"]
 - !private ["SS", "unlockedAchievement"]
 - !private ["SS", "viewedContent"]
-- !private ["s14StringProtocolP", "achievedLevel"]
-- !private ["s14StringProtocolP", "addedPaymentInfo"]
-- !private ["s14StringProtocolP", "addedToCart"]
-- !private ["s14StringProtocolP", "addedToWishlist"]
-- !private ["s14StringProtocolP", "completedRegistration"]
-- !private ["s14StringProtocolP", "completedTutorial"]
-- !private ["s14StringProtocolP", "initiatedCheckout"]
-- !private ["s14StringProtocolP", "purchased"]
-- !private ["s14StringProtocolP", "rated"]
-- !private ["s14StringProtocolP", "searched"]
-- !private ["s14StringProtocolP", "spentCredits"]
-- !private ["s14StringProtocolP", "unlockedAchievement"]
-- !private ["s14StringProtocolP", "viewedContent"]
+- !private ["Sy", "achievedLevel"]
+- !private ["Sy", "addedPaymentInfo"]
+- !private ["Sy", "addedToCart"]
+- !private ["Sy", "addedToWishlist"]
+- !private ["Sy", "completedRegistration"]
+- !private ["Sy", "completedTutorial"]
+- !private ["Sy", "initiatedCheckout"]
+- !private ["Sy", "purchased"]
+- !private ["Sy", "rated"]
+- !private ["Sy", "searched"]
+- !private ["Sy", "spentCredits"]
+- !private ["Sy", "unlockedAchievement"]
+- !private ["Sy", "viewedContent"]
 - !private ["s16TextOutputStreamP", "achievedLevel"]
 - !private ["s16TextOutputStreamP", "addedPaymentInfo"]
 - !private ["s16TextOutputStreamP", "addedToCart"]
@@ -545,7 +549,7 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "unlockedAchievement"]
 - !private ["s20TextOutputStreamableP", "viewedContent"]
 - !private ["s6UInt64V", "init"]
-- !private ["s15UnsignedIntegerP", "init"]
+- !private ["SU", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -616,6 +620,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "unlockedAchievement"]
 - !private ["s33_ExpressibleByStringInterpolationP", "viewedContent"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "achievedLevel"]
@@ -653,20 +658,20 @@ depends-nominal:
 - !private "12FacebookCore12AppEventNameO"
 - !private "12FacebookCore21AppEventParameterNameO"
 - !private "12FacebookCore26AppEventParameterValueTypeP"
-- !private "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
+- !private "SK"
+- !private "Sz"
 - !private "Sb"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -676,26 +681,28 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So8NSNumberC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s7NumericP"
+- !private "So7NSValueC"
+- !private "Sj"
 - !private "Sq"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
-- !private "s10StrideableP"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "Sx"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s6UInt64V"
-- !private "s15UnsignedIntegerP"
+- !private "SU"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -711,19 +718,19 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
@@ -732,6 +739,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -767,15 +775,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f7b06464f80e391890ef4b8bd6870429"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2b6eb017928f310fc54572ed463f4e94"

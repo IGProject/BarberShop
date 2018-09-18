@@ -11,7 +11,9 @@ depends-top-level:
 - !private "=="
 - "BaseButtonGroup"
 - !private "BooleanLiteralType"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "RadioButton"
 - "RadioButtonGroup"
 - "String"
@@ -22,24 +24,31 @@ depends-member:
 - !private ["Sa", "index"]
 - !private ["Sa", "map"]
 - !private ["Sa", "reduce"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "forEach"]
+- !private ["s13ArrayProtocolP", "index"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["s13ArrayProtocolP", "reduce"]
 - ["8Material15BaseButtonGroupC", "Int"]
 - ["8Material15BaseButtonGroupC", "RadioButton"]
 - ["8Material15BaseButtonGroupC", "String"]
 - ["8Material15BaseButtonGroupC", ""]
 - !private ["8Material15BaseButtonGroupC", "buttons"]
+- !private ["8Material15BaseButtonGroupC", "deinit"]
 - ["8Material15BaseButtonGroupC", "didTap"]
 - ["8Material15BaseButtonGroupC", "init"]
+- !private ["8Material15BaseButtonGroupC", "init"]
 - ["8Material15BaseButtonGroupC", "selectedButton"]
 - ["8Material15BaseButtonGroupC", "selectedIndex"]
 - !private ["8Material19BaseIconLayerButtonC", "init"]
 - !private ["8Material19BaseIconLayerButtonC", "isAnimating"]
 - !private ["8Material19BaseIconLayerButtonC", "isSelected"]
 - !private ["8Material19BaseIconLayerButtonC", "setSelected"]
-- !private ["s23BidirectionalCollectionP", "first"]
-- !private ["s23BidirectionalCollectionP", "forEach"]
-- !private ["s23BidirectionalCollectionP", "index"]
-- !private ["s23BidirectionalCollectionP", "map"]
-- !private ["s23BidirectionalCollectionP", "reduce"]
+- !private ["SK", "first"]
+- !private ["SK", "forEach"]
+- !private ["SK", "index"]
+- !private ["SK", "map"]
+- !private ["SK", "reduce"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["8Material6ButtonC", "init"]
 - !private ["8Material6ButtonC", "isAnimating"]
@@ -48,6 +57,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "RadioButton"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "buttons"]
+- !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "isAnimating"]
 - !private ["So15CALayerDelegateP", "isSelected"]
@@ -61,23 +71,25 @@ depends-member:
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "index"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isAnimating"]
 - !private ["s7CVarArgP", "isSelected"]
 - !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "reduce"]
 - !private ["s7CVarArgP", "selectedButton"]
 - !private ["s7CVarArgP", "setSelected"]
-- !private ["s10CollectionP", "first"]
-- !private ["s10CollectionP", "forEach"]
-- !private ["s10CollectionP", "index"]
-- !private ["s10CollectionP", "map"]
-- !private ["s10CollectionP", "reduce"]
+- !private ["Sl", "first"]
+- !private ["Sl", "forEach"]
+- !private ["Sl", "index"]
+- !private ["Sl", "map"]
+- !private ["Sl", "reduce"]
 - !private ["s28CustomDebugStringConvertibleP", "RadioButton"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "buttons"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "index"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isAnimating"]
 - !private ["s28CustomDebugStringConvertibleP", "isSelected"]
@@ -100,62 +112,71 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "index"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isAnimating"]
 - !private ["s23CustomStringConvertibleP", "isSelected"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "reduce"]
 - !private ["s23CustomStringConvertibleP", "selectedButton"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "first"]
-- !private ["s9DecodableP", "forEach"]
-- !private ["s9DecodableP", "index"]
-- !private ["s9DecodableP", "map"]
-- !private ["s9DecodableP", "reduce"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "first"]
-- !private ["s9EncodableP", "forEach"]
-- !private ["s9EncodableP", "index"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EncodableP", "reduce"]
-- !private ["s9EquatableP", "RadioButton"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "buttons"]
-- !private ["s9EquatableP", "first"]
-- !private ["s9EquatableP", "forEach"]
-- !private ["s9EquatableP", "index"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isAnimating"]
-- !private ["s9EquatableP", "isSelected"]
-- !private ["s9EquatableP", "map"]
-- !private ["s9EquatableP", "reduce"]
-- !private ["s9EquatableP", "selectedButton"]
-- !private ["s9EquatableP", "setSelected"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "first"]
+- !private ["Se", "forEach"]
+- !private ["Se", "index"]
+- !private ["Se", "map"]
+- !private ["Se", "reduce"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "first"]
+- !private ["SE", "forEach"]
+- !private ["SE", "index"]
+- !private ["SE", "map"]
+- !private ["SE", "reduce"]
+- !private ["SQ", "RadioButton"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "buttons"]
+- !private ["SQ", "first"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "index"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isAnimating"]
+- !private ["SQ", "isSelected"]
+- !private ["SQ", "map"]
+- !private ["SQ", "reduce"]
+- !private ["SQ", "selectedButton"]
+- !private ["SQ", "setSelected"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - !private ["s25ExpressibleByArrayLiteralP", "index"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
 - !private ["s25ExpressibleByArrayLiteralP", "reduce"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "RadioButton"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "buttons"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isAnimating"]
-- !private ["s8HashableP", "isSelected"]
-- !private ["s8HashableP", "selectedButton"]
-- !private ["s8HashableP", "setSelected"]
+- !private ["SH", "RadioButton"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "buttons"]
+- !private ["SH", "first"]
+- !private ["SH", "forEach"]
+- !private ["SH", "index"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isAnimating"]
+- !private ["SH", "isSelected"]
+- !private ["SH", "map"]
+- !private ["SH", "reduce"]
+- !private ["SH", "selectedButton"]
+- !private ["SH", "setSelected"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s17MutableCollectionP", "first"]
-- !private ["s17MutableCollectionP", "forEach"]
-- !private ["s17MutableCollectionP", "index"]
-- !private ["s17MutableCollectionP", "map"]
-- !private ["s17MutableCollectionP", "reduce"]
+- !private ["SM", "first"]
+- !private ["SM", "forEach"]
+- !private ["SM", "index"]
+- !private ["SM", "map"]
+- !private ["SM", "reduce"]
 - !private ["So8NSCodingP", "RadioButton"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "buttons"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isAnimating"]
 - !private ["So8NSCodingP", "isSelected"]
@@ -167,19 +188,21 @@ depends-member:
 - !private ["So8NSObjectC", "buttons"]
 - ["So8NSObjectC", "didTap"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isAnimating"]
 - !private ["So8NSObjectC", "isSelected"]
 - ["So8NSObjectC", "selectedButton"]
 - ["So8NSObjectC", "selectedIndex"]
 - !private ["So8NSObjectC", "setSelected"]
-- !private ["So16NSObjectProtocolP", "RadioButton"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "buttons"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isAnimating"]
-- !private ["So16NSObjectProtocolP", "isSelected"]
-- !private ["So16NSObjectProtocolP", "selectedButton"]
-- !private ["So16NSObjectProtocolP", "setSelected"]
+- !private ["So8NSObjectP", "RadioButton"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "buttons"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isAnimating"]
+- !private ["So8NSObjectP", "isSelected"]
+- !private ["So8NSObjectP", "selectedButton"]
+- !private ["So8NSObjectP", "setSelected"]
 - !private ["8Material9PulseableP", "init"]
 - !private ["8Material9PulseableP", "isAnimating"]
 - !private ["8Material9PulseableP", "isSelected"]
@@ -197,26 +220,26 @@ depends-member:
 - ["8Material16RadioButtonGroupC", "RadioButton"]
 - ["8Material16RadioButtonGroupC", "String"]
 - !private ["8Material16RadioButtonGroupC", "buttons"]
-- ["8Material16RadioButtonGroupC", "deinit"]
+- !private ["8Material16RadioButtonGroupC", "deinit"]
 - ["8Material16RadioButtonGroupC", "didTap"]
 - ["8Material16RadioButtonGroupC", "init"]
 - ["8Material16RadioButtonGroupC", "selectedButton"]
 - ["8Material16RadioButtonGroupC", "selectedIndex"]
-- !private ["s22RandomAccessCollectionP", "first"]
-- !private ["s22RandomAccessCollectionP", "forEach"]
-- !private ["s22RandomAccessCollectionP", "index"]
-- !private ["s22RandomAccessCollectionP", "map"]
-- !private ["s22RandomAccessCollectionP", "reduce"]
-- !private ["s26RangeReplaceableCollectionP", "first"]
-- !private ["s26RangeReplaceableCollectionP", "forEach"]
-- !private ["s26RangeReplaceableCollectionP", "index"]
-- !private ["s26RangeReplaceableCollectionP", "map"]
-- !private ["s26RangeReplaceableCollectionP", "reduce"]
-- !private ["s8SequenceP", "first"]
-- !private ["s8SequenceP", "forEach"]
-- !private ["s8SequenceP", "index"]
-- !private ["s8SequenceP", "map"]
-- !private ["s8SequenceP", "reduce"]
+- !private ["Sk", "first"]
+- !private ["Sk", "forEach"]
+- !private ["Sk", "index"]
+- !private ["Sk", "map"]
+- !private ["Sk", "reduce"]
+- !private ["Sm", "first"]
+- !private ["Sm", "forEach"]
+- !private ["Sm", "index"]
+- !private ["Sm", "map"]
+- !private ["Sm", "reduce"]
+- !private ["ST", "first"]
+- !private ["ST", "forEach"]
+- !private ["ST", "index"]
+- !private ["ST", "map"]
+- !private ["ST", "reduce"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isAnimating"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isSelected"]
@@ -224,6 +247,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "RadioButton"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "buttons"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isAnimating"]
 - !private ["So29UIAccessibilityIdentificationP", "isSelected"]
@@ -233,6 +257,7 @@ depends-member:
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "buttons"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "isAnimating"]
 - !private ["So12UIAppearanceP", "isSelected"]
 - !private ["So12UIAppearanceP", "selectedButton"]
@@ -240,6 +265,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "RadioButton"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "buttons"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isAnimating"]
 - !private ["So21UIAppearanceContainerP", "isSelected"]
@@ -257,6 +283,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "buttons"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "isAnimating"]
 - !private ["So17UICoordinateSpaceP", "isSelected"]
 - !private ["So17UICoordinateSpaceP", "selectedButton"]
@@ -264,6 +291,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "RadioButton"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "buttons"]
+- !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "isAnimating"]
 - !private ["So13UIDynamicItemP", "isSelected"]
@@ -273,6 +301,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "buttons"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isAnimating"]
 - !private ["So18UIFocusEnvironmentP", "isSelected"]
 - !private ["So18UIFocusEnvironmentP", "selectedButton"]
@@ -281,13 +310,24 @@ depends-member:
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "buttons"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "isAnimating"]
 - !private ["So11UIFocusItemP", "isSelected"]
 - !private ["So11UIFocusItemP", "selectedButton"]
 - !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "RadioButton"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "buttons"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isAnimating"]
+- !private ["So20UIFocusItemContainerP", "isSelected"]
+- !private ["So20UIFocusItemContainerP", "selectedButton"]
+- !private ["So20UIFocusItemContainerP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "RadioButton"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "buttons"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isAnimating"]
 - !private ["So30UIPasteConfigurationSupportingP", "isSelected"]
@@ -299,6 +339,7 @@ depends-member:
 - !private ["So11UIResponderC", "buttons"]
 - ["So11UIResponderC", "didTap"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isAnimating"]
 - !private ["So11UIResponderC", "isSelected"]
 - ["So11UIResponderC", "selectedButton"]
@@ -307,6 +348,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "RadioButton"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "buttons"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isAnimating"]
 - !private ["So30UIResponderStandardEditActionsP", "isSelected"]
@@ -320,16 +362,27 @@ depends-member:
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "buttons"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isAnimating"]
 - !private ["So18UITraitEnvironmentP", "isSelected"]
 - !private ["So18UITraitEnvironmentP", "selectedButton"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "RadioButton"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "buttons"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isAnimating"]
+- !private ["So23UIUserActivityRestoringP", "isSelected"]
+- !private ["So23UIUserActivityRestoringP", "selectedButton"]
+- !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Int"]
 - ["So6UIViewC", "RadioButton"]
 - ["So6UIViewC", "String"]
 - !private ["So6UIViewC", "buttons"]
 - ["So6UIViewC", "didTap"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "isAnimating"]
 - !private ["So6UIViewC", "isSelected"]
 - ["So6UIViewC", "selectedButton"]
@@ -341,16 +394,13 @@ depends-member:
 - !private ["8Material4ViewC", "buttons"]
 - ["8Material4ViewC", "didTap"]
 - ["8Material4ViewC", "init"]
+- !private ["8Material4ViewC", "init"]
 - ["8Material4ViewC", "selectedButton"]
 - ["8Material4ViewC", "selectedIndex"]
-- !private ["s14_ArrayProtocolP", "first"]
-- !private ["s14_ArrayProtocolP", "forEach"]
-- !private ["s14_ArrayProtocolP", "index"]
-- !private ["s14_ArrayProtocolP", "map"]
-- !private ["s14_ArrayProtocolP", "reduce"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "RadioButton"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "buttons"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isAnimating"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isSelected"]
@@ -362,9 +412,15 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "reduce"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reduce"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "RadioButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "buttons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isAnimating"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isSelected"]
@@ -378,36 +434,37 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "reduce"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - "8Material15BaseButtonGroupC"
 - !private "8Material19BaseIconLayerButtonC"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
 - !private "8Material6ButtonC"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- !private "Sl"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "8Material9PulseableP"
 - !private "8Material14PulseableLayerP"
 - !private "8Material11RadioButtonC"
 - "8Material16RadioButtonGroupC"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -418,57 +475,60 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "8Material4ViewC"
-- !private "s14_ArrayProtocolP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "5817f9a8fbe9f1b2c3e5358c6eac612b"

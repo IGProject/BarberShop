@@ -5,9 +5,9 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRAppAssociationRegistration.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/third_party/FIRAppEnvironmentUtil.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h \
@@ -18,7 +18,14 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentRegistrant.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRCoreConfigurable.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleUtilities.build/module.modulemap \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/EmailPassword/FIREmailPasswordAuthCredential.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthCredential_Internal.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \

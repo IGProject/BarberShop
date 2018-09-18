@@ -9,5 +9,8 @@
 import UIKit
 
 class ByLocationCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var locationImageView: UIImageView!
+    @IBOutlet weak var addressLocationLabel: UILabel!
+    @IBOutlet weak var phoneLocationLabel: UILabel!
+    @IBOutlet weak var timeLocationLabel: UILabel!
 }

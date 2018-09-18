@@ -73,6 +73,7 @@ depends-top-level:
 - !private "kvImageNoFlags"
 - !private "round"
 - !private "sqrt"
+- !private "unsafeBitCast"
 - !private "vImageBoxConvolve_ARGB8888"
 - !private "vImageMatrixMultiply_ARGB8888"
 - !private "vImagePixelCount"
@@ -84,48 +85,51 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s19BinaryFloatingPointP", "init"]
-- !private ["s19BinaryFloatingPointP", "pi"]
-- !private ["s19BinaryFloatingPointP", "ulpOfOne"]
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["SB", "init"]
+- !private ["SB", "pi"]
+- !private ["SB", "ulpOfOne"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["SC17CGAffineTransformV", "identity"]
-- !private ["SC17CGAffineTransformV", "rotated"]
-- !private ["SC17CGAffineTransformV", "scaledBy"]
-- !private ["SC17CGAffineTransformV", "translatedBy"]
-- !private ["SC12CGBitmapInfoV", "rawValue"]
-- !private ["SC11CGBlendModeO", "multiply"]
-- !private ["SC11CGBlendModeO", "normal"]
-- !private ["So9CGContextC", "bytesPerRow"]
-- !private ["So9CGContextC", "clip"]
-- !private ["So9CGContextC", "concatenate"]
-- !private ["So9CGContextC", "data"]
-- !private ["So9CGContextC", "draw"]
-- !private ["So9CGContextC", "fill"]
-- !private ["So9CGContextC", "height"]
-- !private ["So9CGContextC", "init"]
-- !private ["So9CGContextC", "makeImage"]
-- !private ["So9CGContextC", "restoreGState"]
-- !private ["So9CGContextC", "saveGState"]
-- !private ["So9CGContextC", "scaleBy"]
-- !private ["So9CGContextC", "setBlendMode"]
-- !private ["So9CGContextC", "setFillColor"]
-- !private ["So9CGContextC", "translateBy"]
-- !private ["So9CGContextC", "width"]
+- !private ["So17CGAffineTransformV", "identity"]
+- !private ["So17CGAffineTransformV", "rotated"]
+- !private ["So17CGAffineTransformV", "scaledBy"]
+- !private ["So17CGAffineTransformV", "translatedBy"]
+- !private ["So12CGBitmapInfoV", "rawValue"]
+- !private ["So11CGBlendModeV", "multiply"]
+- !private ["So11CGBlendModeV", "normal"]
+- !private ["So12CGContextRefa", "bytesPerRow"]
+- !private ["So12CGContextRefa", "clip"]
+- !private ["So12CGContextRefa", "concatenate"]
+- !private ["So12CGContextRefa", "data"]
+- !private ["So12CGContextRefa", "draw"]
+- !private ["So12CGContextRefa", "fill"]
+- !private ["So12CGContextRefa", "height"]
+- !private ["So12CGContextRefa", "init"]
+- !private ["So12CGContextRefa", "makeImage"]
+- !private ["So12CGContextRefa", "restoreGState"]
+- !private ["So12CGContextRefa", "saveGState"]
+- !private ["So12CGContextRefa", "scaleBy"]
+- !private ["So12CGContextRefa", "setBlendMode"]
+- !private ["So12CGContextRefa", "setFillColor"]
+- !private ["So12CGContextRefa", "translateBy"]
+- !private ["So12CGContextRefa", "width"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
 - !private ["12CoreGraphics7CGFloatV", "pi"]
-- !private ["So7CGImageC", "bitmapInfo"]
-- !private ["So7CGImageC", "bitsPerComponent"]
-- !private ["So7CGImageC", "colorSpace"]
-- !private ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "init"]
-- !private ["SC6CGSizeV", "width"]
+- !private ["So10CGImageRefa", "bitmapInfo"]
+- !private ["So10CGImageRefa", "bitsPerComponent"]
+- !private ["So10CGImageRefa", "colorSpace"]
+- !private ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "CGContext"]
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGRect"]
@@ -176,12 +180,12 @@ depends-member:
 - !private ["s7CVarArgP", "vImage_Flags"]
 - !private ["s7CVarArgP", "width"]
 - !private ["s7CVarArgP", "withRenderingMode"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "pi"]
-- !private ["s10ComparableP", "ulpOfOne"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "pi"]
+- !private ["SL", "ulpOfOne"]
 - !private ["s28CustomDebugStringConvertibleP", "CGContext"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
@@ -300,121 +304,123 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "vImage_Flags"]
 - !private ["s23CustomStringConvertibleP", "width"]
 - !private ["s23CustomStringConvertibleP", "withRenderingMode"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "identity"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "pi"]
-- !private ["s9DecodableP", "rotated"]
-- !private ["s9DecodableP", "scaledBy"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "translatedBy"]
-- !private ["s9DecodableP", "ulpOfOne"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9DecodableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- !private ["Se", "height"]
+- !private ["Se", "identity"]
+- !private ["Se", "init"]
+- !private ["Se", "pi"]
+- !private ["Se", "rotated"]
+- !private ["Se", "scaledBy"]
+- !private ["Se", "size"]
+- !private ["Se", "subscript"]
+- !private ["Se", "translatedBy"]
+- !private ["Se", "ulpOfOne"]
+- !private ["Se", "width"]
+- !private ["Se", "zero"]
 - !private ["Sd", "pi"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "identity"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "pi"]
-- !private ["s9EncodableP", "rotated"]
-- !private ["s9EncodableP", "scaledBy"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "translatedBy"]
-- !private ["s9EncodableP", "ulpOfOne"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "CGContext"]
-- !private ["s9EquatableP", "CGFloat"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "Double"]
-- !private ["s9EquatableP", "Float"]
-- !private ["s9EquatableP", "Int"]
-- !private ["s9EquatableP", "Int16"]
-- !private ["s9EquatableP", "Int32"]
-- !private ["s9EquatableP", "Motion"]
-- ["s9EquatableP", "RawValue"]
-- !private ["s9EquatableP", "Screen"]
-- !private ["s9EquatableP", "UIGraphicsBeginImageContext"]
-- !private ["s9EquatableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s9EquatableP", "UIGraphicsEndImageContext"]
-- !private ["s9EquatableP", "UIGraphicsGetCurrentContext"]
-- !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s9EquatableP", "UIImage"]
-- !private ["s9EquatableP", "UInt32"]
-- !private ["s9EquatableP", "URLRequest"]
-- !private ["s9EquatableP", "URLSession"]
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "_Default_RawValue"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "alwaysOriginal"]
-- !private ["s9EquatableP", "async"]
-- !private ["s9EquatableP", "bitmapInfo"]
-- !private ["s9EquatableP", "bitsPerComponent"]
-- !private ["s9EquatableP", "bytesPerRow"]
-- !private ["s9EquatableP", "cgColor"]
-- !private ["s9EquatableP", "cgImage"]
-- !private ["s9EquatableP", "clip"]
-- !private ["s9EquatableP", "colorSpace"]
-- !private ["s9EquatableP", "concatenate"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "createEffectBuffer"]
-- !private ["s9EquatableP", "data"]
-- !private ["s9EquatableP", "dataTask"]
-- ["s9EquatableP", "down"]
-- ["s9EquatableP", "downMirrored"]
-- !private ["s9EquatableP", "draw"]
-- !private ["s9EquatableP", "fabs"]
-- !private ["s9EquatableP", "fill"]
-- !private ["s9EquatableP", "floor"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "identity"]
-- !private ["s9EquatableP", "imageOrientation"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "internalResize"]
-- !private ["s9EquatableP", "kvImageEdgeExtend"]
-- !private ["s9EquatableP", "kvImageNoFlags"]
-- ["s9EquatableP", "left"]
-- ["s9EquatableP", "leftMirrored"]
-- !private ["s9EquatableP", "makeImage"]
-- !private ["s9EquatableP", "multiply"]
-- !private ["s9EquatableP", "normal"]
-- !private ["s9EquatableP", "pi"]
-- ["s9EquatableP", "rawValue"]
-- !private ["s9EquatableP", "restoreGState"]
-- !private ["s9EquatableP", "resume"]
-- ["s9EquatableP", "right"]
-- ["s9EquatableP", "rightMirrored"]
-- !private ["s9EquatableP", "rotated"]
-- !private ["s9EquatableP", "round"]
-- !private ["s9EquatableP", "saveGState"]
-- !private ["s9EquatableP", "scaleBy"]
-- !private ["s9EquatableP", "scaledBy"]
-- !private ["s9EquatableP", "setBlendMode"]
-- !private ["s9EquatableP", "setFill"]
-- !private ["s9EquatableP", "setFillColor"]
-- !private ["s9EquatableP", "shared"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "sqrt"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "translateBy"]
-- !private ["s9EquatableP", "translatedBy"]
-- !private ["s9EquatableP", "ulpOfOne"]
-- !private ["s9EquatableP", "up"]
-- ["s9EquatableP", "upMirrored"]
-- !private ["s9EquatableP", "vImageBoxConvolve_ARGB8888"]
-- !private ["s9EquatableP", "vImageMatrixMultiply_ARGB8888"]
-- !private ["s9EquatableP", "vImage_Flags"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "withRenderingMode"]
-- !private ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- !private ["SE", "height"]
+- !private ["SE", "identity"]
+- !private ["SE", "init"]
+- !private ["SE", "pi"]
+- !private ["SE", "rotated"]
+- !private ["SE", "scaledBy"]
+- !private ["SE", "size"]
+- !private ["SE", "subscript"]
+- !private ["SE", "translatedBy"]
+- !private ["SE", "ulpOfOne"]
+- !private ["SE", "width"]
+- !private ["SE", "zero"]
+- !private ["SQ", "CGContext"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "Int16"]
+- !private ["SQ", "Int32"]
+- !private ["SQ", "Motion"]
+- ["SQ", "RawValue"]
+- !private ["SQ", "Screen"]
+- !private ["SQ", "UIGraphicsBeginImageContext"]
+- !private ["SQ", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SQ", "UIGraphicsEndImageContext"]
+- !private ["SQ", "UIGraphicsGetCurrentContext"]
+- !private ["SQ", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SQ", "UIImage"]
+- !private ["SQ", "UInt32"]
+- !private ["SQ", "URLRequest"]
+- !private ["SQ", "URLSession"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "alwaysOriginal"]
+- !private ["SQ", "async"]
+- !private ["SQ", "bitmapInfo"]
+- !private ["SQ", "bitsPerComponent"]
+- !private ["SQ", "bytesPerRow"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "cgImage"]
+- !private ["SQ", "clip"]
+- !private ["SQ", "colorSpace"]
+- !private ["SQ", "concatenate"]
+- !private ["SQ", "count"]
+- !private ["SQ", "createEffectBuffer"]
+- !private ["SQ", "data"]
+- !private ["SQ", "dataTask"]
+- ["SQ", "down"]
+- ["SQ", "downMirrored"]
+- !private ["SQ", "draw"]
+- !private ["SQ", "fabs"]
+- !private ["SQ", "fill"]
+- !private ["SQ", "floor"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "height"]
+- !private ["SQ", "identity"]
+- !private ["SQ", "imageOrientation"]
+- ["SQ", "init"]
+- !private ["SQ", "internalResize"]
+- !private ["SQ", "kvImageEdgeExtend"]
+- !private ["SQ", "kvImageNoFlags"]
+- ["SQ", "left"]
+- ["SQ", "leftMirrored"]
+- !private ["SQ", "makeImage"]
+- !private ["SQ", "multiply"]
+- !private ["SQ", "normal"]
+- !private ["SQ", "pi"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "restoreGState"]
+- !private ["SQ", "resume"]
+- ["SQ", "right"]
+- ["SQ", "rightMirrored"]
+- !private ["SQ", "rotated"]
+- !private ["SQ", "round"]
+- !private ["SQ", "saveGState"]
+- !private ["SQ", "scaleBy"]
+- !private ["SQ", "scaledBy"]
+- !private ["SQ", "setBlendMode"]
+- !private ["SQ", "setFill"]
+- !private ["SQ", "setFillColor"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "size"]
+- !private ["SQ", "sqrt"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "translateBy"]
+- !private ["SQ", "translatedBy"]
+- !private ["SQ", "ulpOfOne"]
+- !private ["SQ", "unsafeBitCast"]
+- !private ["SQ", "up"]
+- ["SQ", "upMirrored"]
+- !private ["SQ", "vImageBoxConvolve_ARGB8888"]
+- !private ["SQ", "vImageMatrixMultiply_ARGB8888"]
+- !private ["SQ", "vImage_Flags"]
+- !private ["SQ", "width"]
+- !private ["SQ", "withRenderingMode"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "rawValue"]
@@ -430,96 +436,103 @@ depends-member:
 - !private ["Sf", "pi"]
 - !private ["Sf", "ulpOfOne"]
 - !private ["s7Float80V", "pi"]
-- !private ["s13FloatingPointP", "init"]
-- !private ["s13FloatingPointP", "pi"]
-- !private ["s13FloatingPointP", "ulpOfOne"]
-- !private ["s8HashableP", "CGContext"]
-- !private ["s8HashableP", "CGFloat"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "Double"]
-- !private ["s8HashableP", "Float"]
-- !private ["s8HashableP", "Int"]
-- !private ["s8HashableP", "Int16"]
-- !private ["s8HashableP", "Int32"]
-- !private ["s8HashableP", "Motion"]
-- ["s8HashableP", "RawValue"]
-- !private ["s8HashableP", "Screen"]
-- !private ["s8HashableP", "UIGraphicsBeginImageContext"]
-- !private ["s8HashableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s8HashableP", "UIGraphicsEndImageContext"]
-- !private ["s8HashableP", "UIGraphicsGetCurrentContext"]
-- !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s8HashableP", "UIImage"]
-- !private ["s8HashableP", "UInt32"]
-- !private ["s8HashableP", "URLRequest"]
-- !private ["s8HashableP", "URLSession"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "_Default_RawValue"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "alwaysOriginal"]
-- !private ["s8HashableP", "async"]
-- !private ["s8HashableP", "bitmapInfo"]
-- !private ["s8HashableP", "bitsPerComponent"]
-- !private ["s8HashableP", "bytesPerRow"]
-- !private ["s8HashableP", "cgColor"]
-- !private ["s8HashableP", "cgImage"]
-- !private ["s8HashableP", "clip"]
-- !private ["s8HashableP", "colorSpace"]
-- !private ["s8HashableP", "concatenate"]
-- !private ["s8HashableP", "createEffectBuffer"]
-- !private ["s8HashableP", "data"]
-- !private ["s8HashableP", "dataTask"]
-- ["s8HashableP", "down"]
-- ["s8HashableP", "downMirrored"]
-- !private ["s8HashableP", "draw"]
-- !private ["s8HashableP", "fabs"]
-- !private ["s8HashableP", "fill"]
-- !private ["s8HashableP", "floor"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "height"]
-- !private ["s8HashableP", "imageOrientation"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "internalResize"]
-- !private ["s8HashableP", "kvImageEdgeExtend"]
-- !private ["s8HashableP", "kvImageNoFlags"]
-- ["s8HashableP", "left"]
-- ["s8HashableP", "leftMirrored"]
-- !private ["s8HashableP", "makeImage"]
-- !private ["s8HashableP", "multiply"]
-- !private ["s8HashableP", "normal"]
-- !private ["s8HashableP", "pi"]
-- ["s8HashableP", "rawValue"]
-- !private ["s8HashableP", "restoreGState"]
-- !private ["s8HashableP", "resume"]
-- ["s8HashableP", "right"]
-- ["s8HashableP", "rightMirrored"]
-- !private ["s8HashableP", "round"]
-- !private ["s8HashableP", "saveGState"]
-- !private ["s8HashableP", "scaleBy"]
-- !private ["s8HashableP", "setBlendMode"]
-- !private ["s8HashableP", "setFill"]
-- !private ["s8HashableP", "setFillColor"]
-- !private ["s8HashableP", "shared"]
-- !private ["s8HashableP", "size"]
-- !private ["s8HashableP", "sqrt"]
-- !private ["s8HashableP", "translateBy"]
-- !private ["s8HashableP", "ulpOfOne"]
-- !private ["s8HashableP", "up"]
-- ["s8HashableP", "upMirrored"]
-- !private ["s8HashableP", "vImageBoxConvolve_ARGB8888"]
-- !private ["s8HashableP", "vImageMatrixMultiply_ARGB8888"]
-- !private ["s8HashableP", "vImage_Flags"]
-- !private ["s8HashableP", "width"]
-- !private ["s8HashableP", "withRenderingMode"]
+- !private ["SF", "init"]
+- !private ["SF", "pi"]
+- !private ["SF", "ulpOfOne"]
+- !private ["SH", "CGContext"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "Double"]
+- !private ["SH", "Float"]
+- !private ["SH", "Int"]
+- !private ["SH", "Int16"]
+- !private ["SH", "Int32"]
+- !private ["SH", "Motion"]
+- ["SH", "RawValue"]
+- !private ["SH", "Screen"]
+- !private ["SH", "UIGraphicsBeginImageContext"]
+- !private ["SH", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SH", "UIGraphicsEndImageContext"]
+- !private ["SH", "UIGraphicsGetCurrentContext"]
+- !private ["SH", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SH", "UIImage"]
+- !private ["SH", "UInt32"]
+- !private ["SH", "URLRequest"]
+- !private ["SH", "URLSession"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "alwaysOriginal"]
+- !private ["SH", "async"]
+- !private ["SH", "bitmapInfo"]
+- !private ["SH", "bitsPerComponent"]
+- !private ["SH", "bytesPerRow"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "cgImage"]
+- !private ["SH", "clip"]
+- !private ["SH", "colorSpace"]
+- !private ["SH", "concatenate"]
+- !private ["SH", "count"]
+- !private ["SH", "createEffectBuffer"]
+- !private ["SH", "data"]
+- !private ["SH", "dataTask"]
+- ["SH", "down"]
+- ["SH", "downMirrored"]
+- !private ["SH", "draw"]
+- !private ["SH", "fabs"]
+- !private ["SH", "fill"]
+- !private ["SH", "floor"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "height"]
+- !private ["SH", "imageOrientation"]
+- ["SH", "init"]
+- !private ["SH", "internalResize"]
+- !private ["SH", "kvImageEdgeExtend"]
+- !private ["SH", "kvImageNoFlags"]
+- ["SH", "left"]
+- ["SH", "leftMirrored"]
+- !private ["SH", "makeImage"]
+- !private ["SH", "multiply"]
+- !private ["SH", "normal"]
+- !private ["SH", "pi"]
+- ["SH", "rawValue"]
+- !private ["SH", "restoreGState"]
+- !private ["SH", "resume"]
+- ["SH", "right"]
+- ["SH", "rightMirrored"]
+- !private ["SH", "round"]
+- !private ["SH", "saveGState"]
+- !private ["SH", "scaleBy"]
+- !private ["SH", "setBlendMode"]
+- !private ["SH", "setFill"]
+- !private ["SH", "setFillColor"]
+- !private ["SH", "shared"]
+- !private ["SH", "size"]
+- !private ["SH", "sqrt"]
+- !private ["SH", "subscript"]
+- !private ["SH", "translateBy"]
+- !private ["SH", "ulpOfOne"]
+- !private ["SH", "unsafeBitCast"]
+- !private ["SH", "up"]
+- ["SH", "upMirrored"]
+- !private ["SH", "vImageBoxConvolve_ARGB8888"]
+- !private ["SH", "vImageMatrixMultiply_ARGB8888"]
+- !private ["SH", "vImage_Flags"]
+- !private ["SH", "width"]
+- !private ["SH", "withRenderingMode"]
+- !private ["s6HasherV", "combine"]
 - ["8Material11ImageFormatO", "RawValue"]
 - ["8Material11ImageFormatO", "_Default_RawValue"]
 - ["8Material11ImageFormatO", "deinit"]
+- ["8Material11ImageFormatO", "hash"]
 - ["8Material11ImageFormatO", "hashValue"]
 - ["8Material11ImageFormatO", "init"]
 - ["8Material11ImageFormatO", "jpeg"]
 - ["8Material11ImageFormatO", "png"]
 - ["8Material11ImageFormatO", "rawValue"]
+- !private ["8Material11ImageFormatO", "unsafeBitCast"]
 - !private ["Si", "init"]
 - !private ["s5Int16V", "init"]
 - !private ["s5Int32V", "init"]
@@ -529,9 +542,9 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "ulpOfOne"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["6MotionAAC", "async"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "CGContext"]
 - !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGRect"]
@@ -702,6 +715,7 @@ depends-member:
 - ["So8NSObjectC", "height"]
 - ["So8NSObjectC", "image"]
 - !private ["So8NSObjectC", "imageOrientation"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "internalResize"]
 - !private ["So8NSObjectC", "kvImageEdgeExtend"]
 - !private ["So8NSObjectC", "kvImageNoFlags"]
@@ -718,51 +732,51 @@ depends-member:
 - !private ["So8NSObjectC", "vImage_Flags"]
 - ["So8NSObjectC", "width"]
 - !private ["So8NSObjectC", "withRenderingMode"]
-- !private ["So16NSObjectProtocolP", "CGContext"]
-- !private ["So16NSObjectProtocolP", "CGFloat"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "Double"]
-- !private ["So16NSObjectProtocolP", "Float"]
-- !private ["So16NSObjectProtocolP", "Int"]
-- !private ["So16NSObjectProtocolP", "Int16"]
-- !private ["So16NSObjectProtocolP", "Int32"]
-- !private ["So16NSObjectProtocolP", "Motion"]
-- !private ["So16NSObjectProtocolP", "Screen"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetCurrentContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So16NSObjectProtocolP", "UIImage"]
-- !private ["So16NSObjectProtocolP", "UInt32"]
-- !private ["So16NSObjectProtocolP", "URLRequest"]
-- !private ["So16NSObjectProtocolP", "URLSession"]
-- !private ["So16NSObjectProtocolP", "async"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "cgImage"]
-- !private ["So16NSObjectProtocolP", "createEffectBuffer"]
-- !private ["So16NSObjectProtocolP", "dataTask"]
-- !private ["So16NSObjectProtocolP", "draw"]
-- !private ["So16NSObjectProtocolP", "fabs"]
-- !private ["So16NSObjectProtocolP", "floor"]
-- !private ["So16NSObjectProtocolP", "height"]
-- !private ["So16NSObjectProtocolP", "imageOrientation"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "internalResize"]
-- !private ["So16NSObjectProtocolP", "kvImageEdgeExtend"]
-- !private ["So16NSObjectProtocolP", "kvImageNoFlags"]
-- !private ["So16NSObjectProtocolP", "resume"]
-- !private ["So16NSObjectProtocolP", "round"]
-- !private ["So16NSObjectProtocolP", "setFill"]
-- !private ["So16NSObjectProtocolP", "shared"]
-- !private ["So16NSObjectProtocolP", "size"]
-- !private ["So16NSObjectProtocolP", "sqrt"]
-- !private ["So16NSObjectProtocolP", "vImageBoxConvolve_ARGB8888"]
-- !private ["So16NSObjectProtocolP", "vImageMatrixMultiply_ARGB8888"]
-- !private ["So16NSObjectProtocolP", "vImage_Flags"]
-- !private ["So16NSObjectProtocolP", "width"]
-- !private ["So16NSObjectProtocolP", "withRenderingMode"]
+- !private ["So8NSObjectP", "CGContext"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "Double"]
+- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "Int16"]
+- !private ["So8NSObjectP", "Int32"]
+- !private ["So8NSObjectP", "Motion"]
+- !private ["So8NSObjectP", "Screen"]
+- !private ["So8NSObjectP", "UIGraphicsBeginImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["So8NSObjectP", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UInt32"]
+- !private ["So8NSObjectP", "URLRequest"]
+- !private ["So8NSObjectP", "URLSession"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "cgImage"]
+- !private ["So8NSObjectP", "createEffectBuffer"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "draw"]
+- !private ["So8NSObjectP", "fabs"]
+- !private ["So8NSObjectP", "floor"]
+- !private ["So8NSObjectP", "height"]
+- !private ["So8NSObjectP", "imageOrientation"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "internalResize"]
+- !private ["So8NSObjectP", "kvImageEdgeExtend"]
+- !private ["So8NSObjectP", "kvImageNoFlags"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "round"]
+- !private ["So8NSObjectP", "setFill"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "size"]
+- !private ["So8NSObjectP", "sqrt"]
+- !private ["So8NSObjectP", "vImageBoxConvolve_ARGB8888"]
+- !private ["So8NSObjectP", "vImageMatrixMultiply_ARGB8888"]
+- !private ["So8NSObjectP", "vImage_Flags"]
+- !private ["So8NSObjectP", "width"]
+- !private ["So8NSObjectP", "withRenderingMode"]
 - !private ["So14NSSecureCodingP", "CGContext"]
 - !private ["So14NSSecureCodingP", "CGFloat"]
 - !private ["So14NSSecureCodingP", "CGRect"]
@@ -804,47 +818,58 @@ depends-member:
 - !private ["So14NSSecureCodingP", "vImage_Flags"]
 - !private ["So14NSSecureCodingP", "width"]
 - !private ["So14NSSecureCodingP", "withRenderingMode"]
-- !private ["s7NumericP", "init"]
-- !private ["s7NumericP", "pi"]
-- !private ["s7NumericP", "ulpOfOne"]
+- !private ["Sj", "init"]
+- !private ["Sj", "pi"]
+- !private ["Sj", "ulpOfOne"]
 - !private ["s9OptionSetP", "rawValue"]
-- !private ["So17ProgressReportingP", "resume"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- ["s16RawRepresentableP", "RawValue"]
-- ["s16RawRepresentableP", ""]
-- ["s16RawRepresentableP", "_Default_RawValue"]
-- !private ["s16RawRepresentableP", "alwaysOriginal"]
-- ["s16RawRepresentableP", "down"]
-- ["s16RawRepresentableP", "downMirrored"]
-- ["s16RawRepresentableP", "hashValue"]
-- ["s16RawRepresentableP", "init"]
-- ["s16RawRepresentableP", "left"]
-- ["s16RawRepresentableP", "leftMirrored"]
-- !private ["s16RawRepresentableP", "multiply"]
-- !private ["s16RawRepresentableP", "normal"]
-- ["s16RawRepresentableP", "rawValue"]
-- ["s16RawRepresentableP", "right"]
-- ["s16RawRepresentableP", "rightMirrored"]
-- !private ["s16RawRepresentableP", "up"]
-- ["s16RawRepresentableP", "upMirrored"]
+- ["So18UIImageOrientationV", "down"]
+- ["So18UIImageOrientationV", "downMirrored"]
+- ["So18UIImageOrientationV", "left"]
+- ["So18UIImageOrientationV", "leftMirrored"]
+- ["So18UIImageOrientationV", "right"]
+- ["So18UIImageOrientationV", "rightMirrored"]
+- !private ["So18UIImageOrientationV", "up"]
+- ["So18UIImageOrientationV", "upMirrored"]
+- !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "alwaysOriginal"]
+- ["SY", "down"]
+- ["SY", "downMirrored"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "left"]
+- ["SY", "leftMirrored"]
+- !private ["SY", "multiply"]
+- !private ["SY", "normal"]
+- ["SY", "rawValue"]
+- ["SY", "right"]
+- ["SY", "rightMirrored"]
+- !private ["SY", "unsafeBitCast"]
+- !private ["SY", "up"]
+- ["SY", "upMirrored"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["So20UIImageRenderingModeV", "alwaysOriginal"]
 - !private ["8Material6ScreenV", "scale"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
 - !private ["s10SetAlgebraP", "rawValue"]
-- !private ["s13SignedIntegerP", "init"]
+- !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s13SignedNumericP", "pi"]
 - !private ["s13SignedNumericP", "ulpOfOne"]
-- !private ["s10StrideableP", "init"]
-- !private ["s10StrideableP", "pi"]
-- !private ["s10StrideableP", "ulpOfOne"]
+- !private ["Sx", "init"]
+- !private ["Sx", "pi"]
+- !private ["Sx", "ulpOfOne"]
 - !private ["So29UIAccessibilityIdentificationP", "CGContext"]
 - !private ["So29UIAccessibilityIdentificationP", "CGFloat"]
 - !private ["So29UIAccessibilityIdentificationP", "CGRect"]
@@ -941,15 +966,6 @@ depends-member:
 - !private ["So7UIImageC", "vImage_Flags"]
 - ["So7UIImageC", "width"]
 - !private ["So7UIImageC", "withRenderingMode"]
-- ["SC18UIImageOrientationO", "down"]
-- ["SC18UIImageOrientationO", "downMirrored"]
-- ["SC18UIImageOrientationO", "left"]
-- ["SC18UIImageOrientationO", "leftMirrored"]
-- ["SC18UIImageOrientationO", "right"]
-- ["SC18UIImageOrientationO", "rightMirrored"]
-- !private ["SC18UIImageOrientationO", "up"]
-- ["SC18UIImageOrientationO", "upMirrored"]
-- !private ["SC20UIImageRenderingModeO", "alwaysOriginal"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "CGContext"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "CGFloat"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "CGRect"]
@@ -992,14 +1008,11 @@ depends-member:
 - !private ["Su", "init"]
 - !private ["s6UInt32V", "init"]
 - !private ["10Foundation10URLRequestV", "init"]
-- !private ["So10URLSessionC", "dataTask"]
-- !private ["So10URLSessionC", "shared"]
-- !private ["So18URLSessionDataTaskC", "resume"]
-- !private ["So14URLSessionTaskC", "resume"]
-- !private ["s15UnsignedIntegerP", "init"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["SU", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["14CoreFoundation9_CFObjectP", "bitmapInfo"]
 - !private ["14CoreFoundation9_CFObjectP", "bitsPerComponent"]
@@ -1076,6 +1089,11 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "vImage_Flags"]
 - !private ["s26_ExpressibleByImageLiteralP", "width"]
 - !private ["s26_ExpressibleByImageLiteralP", "withRenderingMode"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "pi"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "ulpOfOne"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
@@ -1135,33 +1153,34 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "ulpOfOne"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
-- !private ["SC13vImage_BufferV", "init"]
+- !private ["So13vImage_BufferV", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
-- !private "s13BinaryIntegerP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "SB"
+- !private "Sz"
 - !private "Sb"
-- !private "SC17CGAffineTransformV"
-- !private "SC12CGBitmapInfoV"
-- !private "SC11CGBlendModeO"
-- !private "So9CGContextC"
+- !private "So17CGAffineTransformV"
+- !private "So12CGBitmapInfoV"
+- !private "So11CGBlendModeV"
+- !private "So12CGContextRefa"
 - !private "12CoreGraphics7CGFloatV"
-- !private "So7CGImageC"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So10CGImageRefa"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "Sd"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
@@ -1169,8 +1188,9 @@ depends-nominal:
 - !private "s17FixedWidthIntegerP"
 - !private "Sf"
 - !private "s7Float80V"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
+- !private "s6HasherV"
 - "8Material11ImageFormatO"
 - !private "Si"
 - !private "s5Int16V"
@@ -1178,41 +1198,40 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "6MotionAAC"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s7NumericP"
+- !private "Sj"
 - !private "s9OptionSetP"
-- !private "So17ProgressReportingP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- "So18UIImageOrientationV"
+- !private "So19NSProgressReportingP"
+- !private "Sk"
+- !private "Sm"
+- "SY"
 - !private "10Foundation20ReferenceConvertibleP"
+- !private "So20UIImageRenderingModeV"
 - !private "8Material6ScreenV"
-- !private "s8SequenceP"
+- !private "ST"
 - !private "s10SetAlgebraP"
-- !private "s13SignedIntegerP"
+- !private "SZ"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So7UIColorC"
 - "So7UIImageC"
-- "SC18UIImageOrientationO"
-- !private "SC20UIImageRenderingModeO"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "Su"
 - !private "s6UInt32V"
 - !private "10Foundation10URLRequestV"
-- !private "So10URLSessionC"
-- !private "So18URLSessionDataTaskC"
-- !private "So14URLSessionTaskC"
-- !private "s15UnsignedIntegerP"
-- !private "s14_ArrayProtocolP"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- !private "SU"
 - !private "s18_BitwiseOperationsP"
 - !private "14CoreFoundation9_CFObjectP"
 - !private "s15_CVarArgAlignedP"
@@ -1223,47 +1242,49 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "SC13vImage_BufferV"
+- !private "So13vImage_BufferV"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "d4980753a3efe0d01761407811b794ed"

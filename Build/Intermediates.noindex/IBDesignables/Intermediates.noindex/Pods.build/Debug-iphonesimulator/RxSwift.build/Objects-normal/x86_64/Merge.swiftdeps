@@ -42,7 +42,9 @@ depends-top-level:
 - !private "FlatMapFirst"
 - !private "FlatMapFirstSink"
 - !private "FlatMapSink"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "LockOwnerType"
 - "Merge"
 - !private "MergeArray"
@@ -68,8 +70,10 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
@@ -82,8 +86,8 @@ depends-member:
 - !private ["7RxSwift10CancelableP", "insert"]
 - !private ["7RxSwift10CancelableP", "remove"]
 - !private ["7RxSwift10CancelableP", "setDisposable"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
 - ["7RxSwift19CompositeDisposableC", "DisposeKey"]
 - !private ["7RxSwift19CompositeDisposableC", "deinit"]
 - ["7RxSwift19CompositeDisposableC", "init"]
@@ -99,13 +103,13 @@ depends-member:
 - ["7RxSwift9ConcatMapC", "SourceSequence"]
 - !private ["7RxSwift9ConcatMapC", "_selector"]
 - !private ["7RxSwift9ConcatMapC", "_source"]
-- ["7RxSwift9ConcatMapC", "deinit"]
 - ["7RxSwift9ConcatMapC", "init"]
 - ["7RxSwift9ConcatMapC", "run"]
 - ["s28CustomDebugStringConvertibleP", "completed"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - ["s28CustomDebugStringConvertibleP", "error"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lock"]
 - ["s28CustomDebugStringConvertibleP", "next"]
 - !private ["s28CustomDebugStringConvertibleP", "unlock"]
@@ -113,14 +117,16 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lock"]
 - !private ["s23CustomStringConvertibleP", "unlock"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "init"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
 - ["7RxSwift10DisposableP", "CompositeDisposable"]
 - ["7RxSwift10DisposableP", "DisposeKey"]
 - ["7RxSwift10DisposableP", "E"]
@@ -143,6 +149,7 @@ depends-member:
 - !private ["7RxSwift10DisposableP", "dispose"]
 - !private ["7RxSwift10DisposableP", "forwardOn"]
 - ["7RxSwift10DisposableP", "init"]
+- !private ["7RxSwift10DisposableP", "init"]
 - !private ["7RxSwift10DisposableP", "insert"]
 - !private ["7RxSwift10DisposableP", "nextElementArrived"]
 - ["7RxSwift10DisposableP", "on"]
@@ -160,14 +167,14 @@ depends-member:
 - !private ["7RxSwift11DisposeBaseC", "insert"]
 - !private ["7RxSwift11DisposeBaseC", "remove"]
 - !private ["7RxSwift11DisposeBaseC", "setDisposable"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "count"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "lock"]
-- !private ["s9EquatableP", "unlock"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "count"]
+- ["SQ", "init"]
+- !private ["SQ", "lock"]
+- !private ["SQ", "unlock"]
 - ["7RxSwift5EventO", "completed"]
 - ["7RxSwift5EventO", "error"]
 - ["7RxSwift5EventO", "next"]
@@ -178,12 +185,16 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "lock"]
-- !private ["s8HashableP", "unlock"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "count"]
+- ["SH", "init"]
+- !private ["SH", "lock"]
+- !private ["SH", "unlock"]
 - ["7RxSwift4LockP", "E"]
 - !private ["7RxSwift4LockP", ""]
 - !private ["7RxSwift4LockP", "_disposeKey"]
@@ -214,20 +225,19 @@ depends-member:
 - ["7RxSwift5MergeC", "ObserverType"]
 - ["7RxSwift5MergeC", "SourceSequence"]
 - !private ["7RxSwift5MergeC", "_source"]
-- ["7RxSwift5MergeC", "deinit"]
 - ["7RxSwift5MergeC", "init"]
 - ["7RxSwift5MergeC", "run"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
 - ["So9NSLockingP", "init"]
 - !private ["So9NSLockingP", "lock"]
 - !private ["So9NSLockingP", "unlock"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "lock"]
 - !private ["So8NSObjectC", "unlock"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "lock"]
-- !private ["So16NSObjectProtocolP", "unlock"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "lock"]
+- !private ["So8NSObjectP", "unlock"]
 - !private ["So15NSRecursiveLockC", "deinit"]
 - ["So15NSRecursiveLockC", "init"]
 - !private ["So15NSRecursiveLockC", "lock"]
@@ -335,6 +345,7 @@ depends-member:
 - !private ["7RxSwift12ObserverTypeP", "dispose"]
 - !private ["7RxSwift12ObserverTypeP", "forwardOn"]
 - !private ["7RxSwift12ObserverTypeP", "init"]
+- !private ["7RxSwift12ObserverTypeP", "init"]
 - ["7RxSwift12ObserverTypeP", "lock"]
 - !private ["7RxSwift12ObserverTypeP", "nextElementArrived"]
 - ["7RxSwift12ObserverTypeP", "on"]
@@ -371,17 +382,17 @@ depends-member:
 - !private ["7RxSwift5QueueV", "dequeue"]
 - !private ["7RxSwift5QueueV", "enqueue"]
 - ["7RxSwift5QueueV", "init"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
 - ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "lock"]
 - !private ["7RxSwift18ReactiveCompatibleP", "unlock"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "dequeue"]
-- !private ["s8SequenceP", "enqueue"]
-- ["s8SequenceP", "init"]
+- !private ["ST", "count"]
+- !private ["ST", "dequeue"]
+- !private ["ST", "enqueue"]
+- ["ST", "init"]
 - !private ["7RxSwift26SingleAssignmentDisposableC", "deinit"]
 - !private ["7RxSwift26SingleAssignmentDisposableC", "dispose"]
 - ["7RxSwift26SingleAssignmentDisposableC", "init"]
@@ -419,6 +430,7 @@ depends-member:
 - !private ["7RxSwift4SinkC", "dispose"]
 - !private ["7RxSwift4SinkC", "forwardOn"]
 - ["7RxSwift4SinkC", "init"]
+- !private ["7RxSwift4SinkC", "init"]
 - ["7RxSwift4SinkC", "nextElementArrived"]
 - ["7RxSwift4SinkC", "on"]
 - ["7RxSwift4SinkC", "performMap"]
@@ -427,6 +439,7 @@ depends-member:
 - ["7RxSwift4SinkC", "subscribe"]
 - ["7RxSwift4SinkC", "subscribeInner"]
 - ["7RxSwift4SinkC", "subscribeNext"]
+- !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - ["7RxSwift18SynchronizedOnTypeP", "E"]
 - !private ["7RxSwift18SynchronizedOnTypeP", ""]
@@ -439,14 +452,17 @@ depends-member:
 - ["7RxSwift18SynchronizedOnTypeP", "on"]
 - !private ["7RxSwift18SynchronizedOnTypeP", "synchronizedOn"]
 - ["7RxSwift18SynchronizedOnTypeP", "unlock"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
@@ -455,22 +471,23 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "Sb"
 - "s7CVarArgP"
 - "7RxSwift10CancelableP"
-- !private "s10CollectionP"
+- !private "Sl"
 - "7RxSwift19CompositeDisposableC"
 - "7RxSwift9ConcatMapC"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - "7RxSwift10DisposableP"
 - "7RxSwift11DisposeBaseC"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - "7RxSwift5EventO"
 - "7RxSwift16EventConvertibleP"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -478,15 +495,15 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - "7RxSwift4LockP"
 - "7RxSwift13LockOwnerTypeP"
 - !private "s25LosslessStringConvertibleP"
 - "7RxSwift5MergeC"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So9NSLockingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So15NSRecursiveLockC"
 - "7RxSwift10ObservableC"
 - "7RxSwift25ObservableConvertibleTypeP"
@@ -494,47 +511,48 @@ depends-nominal:
 - "7RxSwift12ObserverTypeP"
 - "7RxSwift8ProducerC"
 - "7RxSwift5QueueV"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- !private "Sk"
+- !private "Sm"
 - "7RxSwift18ReactiveCompatibleP"
-- "s8SequenceP"
+- "ST"
 - "7RxSwift26SingleAssignmentDisposableC"
 - "7RxSwift4SinkC"
 - !private "s12StaticStringV"
 - "7RxSwift18SynchronizedOnTypeP"
-- !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "819b50a679423e683debcd7dc85ce496"

@@ -46,9 +46,6 @@ class SignInViewController: UIViewController{
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
        self.navigationController?.navigationBar.shadowImage = UIImage()
-        
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.black
-//    UIApplication.shared.statusBarView?.backgroundColor = UIColor.black
     }
     
     @IBAction func SignInTappedGroup(_ sender: UIButton) {
@@ -57,6 +54,7 @@ class SignInViewController: UIViewController{
             print("user")
             break
         case 1:
+            print("Sign In with facebook")
             break
         case 2:
             break

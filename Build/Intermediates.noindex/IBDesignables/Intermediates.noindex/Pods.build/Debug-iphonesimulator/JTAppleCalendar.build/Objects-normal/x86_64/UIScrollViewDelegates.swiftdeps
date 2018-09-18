@@ -29,8 +29,10 @@ depends-top-level:
 - !private "CGFloat"
 - "CGPoint"
 - !private "DispatchQueue"
+- !private "FloatLiteralType"
 - !private "IndexPath"
 - !private "Int"
+- !private "IntegerLiteralType"
 - "JTAppleCalendarView"
 - "TernaryPrecedence"
 - !private "UICollectionElementKindSectionHeader"
@@ -45,8 +47,9 @@ depends-top-level:
 - !private "||"
 depends-member:
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "init"]
+- !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "CGPoint"]
 - !private ["So15CALayerDelegateP", "DispatchQueue"]
@@ -90,15 +93,15 @@ depends-member:
 - ["So15CALayerDelegateP", "viewForZooming"]
 - ["So15CALayerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So15CALayerDelegateP", "visibleDates"]
-- !private ["SC7CGPointV", "init"]
-- !private ["SC7CGPointV", "x"]
-- !private ["SC7CGPointV", "y"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "origin"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGRectV", "width"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "width"]
+- !private ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "IndexPath"]
@@ -154,11 +157,11 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "visibleDates"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "now"]
-- !private ["s10ComparableP", "pointee"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "now"]
+- !private ["SL", "pointee"]
 - !private ["15JTAppleCalendar23ConfigurationParametersV", "generateOutDates"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
@@ -182,6 +185,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "executeDelayedTasks"]
 - !private ["s28CustomDebugStringConvertibleP", "floor"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "generateOutDates"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "horizontal"]
 - !private ["s28CustomDebugStringConvertibleP", "indexPathForItem"]
@@ -233,6 +237,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "x"]
 - !private ["s29CustomPlaygroundQuickLookableP", "y"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "generateOutDates"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "horizontal"]
 - !private ["s17CustomReflectableP", "init"]
@@ -299,176 +304,182 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "visibleDates"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "horizontal"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "origin"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "vertical"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9DecodableP", "x"]
-- !private ["s9DecodableP", "y"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "generateOutDates"]
+- !private ["Se", "height"]
+- !private ["Se", "horizontal"]
+- !private ["Se", "init"]
+- !private ["Se", "origin"]
+- !private ["Se", "size"]
+- !private ["Se", "subscript"]
+- !private ["Se", "vertical"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
 - !private ["15JTAppleCalendar15DelayedTaskTypeO", "scroll"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["So14DispatchObjectC", "async"]
-- !private ["So14DispatchObjectC", "asyncAfter"]
-- !private ["So14DispatchObjectC", "main"]
-- !private ["So13DispatchQueueC", "async"]
-- !private ["So13DispatchQueueC", "asyncAfter"]
-- !private ["So13DispatchQueueC", "main"]
+- !private ["SD", "subscript"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "asyncAfter"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "asyncAfter"]
+- !private ["So17OS_dispatch_queueC", "main"]
 - !private ["8Dispatch0A4TimeV", "now"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "horizontal"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "origin"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "vertical"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EncodableP", "x"]
-- !private ["s9EncodableP", "y"]
-- !private ["s9EquatableP", "CGPoint"]
-- !private ["s9EquatableP", "DispatchQueue"]
-- !private ["s9EquatableP", "IndexPath"]
-- !private ["s9EquatableP", "UICollectionElementKindSectionHeader"]
-- !private ["s9EquatableP", "UIScrollViewDecelerationRateFast"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "abs"]
-- !private ["s9EquatableP", "async"]
-- !private ["s9EquatableP", "asyncAfter"]
-- !private ["s9EquatableP", "cachedConfiguration"]
-- !private ["s9EquatableP", "calendarDelegate"]
-- !private ["s9EquatableP", "calendarViewLayout"]
-- !private ["s9EquatableP", "ceil"]
-- !private ["s9EquatableP", "cellCache"]
-- !private ["s9EquatableP", "contentOffset"]
-- !private ["s9EquatableP", "contentSize"]
-- !private ["s9EquatableP", "currentSection"]
-- !private ["s9EquatableP", "decelerationRate"]
-- !private ["s9EquatableP", "didEndScollCount"]
-- !private ["s9EquatableP", "endScrollTargetLocation"]
-- !private ["s9EquatableP", "executeDelayedTasks"]
-- !private ["s9EquatableP", "floor"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "horizontal"]
-- !private ["s9EquatableP", "indexPathForItem"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isScrollInProgress"]
-- !private ["s9EquatableP", "lastSavedContentOffset"]
-- !private ["s9EquatableP", "layoutAttributesForItem"]
-- !private ["s9EquatableP", "layoutAttributesForSupplementaryView"]
-- !private ["s9EquatableP", "main"]
-- ["s9EquatableP", "nonStopTo"]
-- ["s9EquatableP", "nonStopToCell"]
-- ["s9EquatableP", "nonStopToSection"]
-- ["s9EquatableP", "none"]
-- !private ["s9EquatableP", "now"]
-- !private ["s9EquatableP", "origin"]
-- !private ["s9EquatableP", "pointee"]
-- !private ["s9EquatableP", "saveLastContentOffset"]
-- !private ["s9EquatableP", "scroll"]
-- !private ["s9EquatableP", "scrollDirection"]
-- ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s9EquatableP", "scrollViewDidEndDecelerating"]
-- ["s9EquatableP", "scrollViewDidEndDragging"]
-- ["s9EquatableP", "scrollViewDidEndScrollingAnimation"]
-- ["s9EquatableP", "scrollViewDidEndZooming"]
-- ["s9EquatableP", "scrollViewDidScroll"]
-- ["s9EquatableP", "scrollViewDidScrollToTop"]
-- ["s9EquatableP", "scrollViewDidZoom"]
-- ["s9EquatableP", "scrollViewShouldScrollToTop"]
-- ["s9EquatableP", "scrollViewWillBeginDecelerating"]
-- ["s9EquatableP", "scrollViewWillBeginDragging"]
-- ["s9EquatableP", "scrollViewWillBeginZooming"]
-- ["s9EquatableP", "scrollViewWillEndDragging"]
-- !private ["s9EquatableP", "scrollingMode"]
-- !private ["s9EquatableP", "sectionFromOffset"]
-- !private ["s9EquatableP", "sectionSize"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "sizeOfContentForSection"]
-- ["s9EquatableP", "stopAtEach"]
-- ["s9EquatableP", "stopAtEachCalendarFrame"]
-- ["s9EquatableP", "stopAtEachSection"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "thereAreHeaders"]
-- !private ["s9EquatableP", "tillEndOfGrid"]
-- !private ["s9EquatableP", "triggerScrollToDateDelegate"]
-- !private ["s9EquatableP", "vertical"]
-- ["s9EquatableP", "viewForZooming"]
-- ["s9EquatableP", "viewForZoomingInScrollView"]
-- !private ["s9EquatableP", "visibleDates"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "x"]
-- !private ["s9EquatableP", "y"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "generateOutDates"]
+- !private ["SE", "height"]
+- !private ["SE", "horizontal"]
+- !private ["SE", "init"]
+- !private ["SE", "origin"]
+- !private ["SE", "size"]
+- !private ["SE", "subscript"]
+- !private ["SE", "vertical"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SQ", "CGPoint"]
+- !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "IndexPath"]
+- !private ["SQ", "UICollectionElementKindSectionHeader"]
+- !private ["SQ", "UIScrollViewDecelerationRateFast"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "abs"]
+- !private ["SQ", "async"]
+- !private ["SQ", "asyncAfter"]
+- !private ["SQ", "cachedConfiguration"]
+- !private ["SQ", "calendarDelegate"]
+- !private ["SQ", "calendarViewLayout"]
+- !private ["SQ", "ceil"]
+- !private ["SQ", "cellCache"]
+- !private ["SQ", "contentOffset"]
+- !private ["SQ", "contentSize"]
+- !private ["SQ", "currentSection"]
+- !private ["SQ", "decelerationRate"]
+- !private ["SQ", "didEndScollCount"]
+- !private ["SQ", "endScrollTargetLocation"]
+- !private ["SQ", "executeDelayedTasks"]
+- !private ["SQ", "floor"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "generateOutDates"]
+- !private ["SQ", "height"]
+- !private ["SQ", "horizontal"]
+- !private ["SQ", "indexPathForItem"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isScrollInProgress"]
+- !private ["SQ", "lastSavedContentOffset"]
+- !private ["SQ", "layoutAttributesForItem"]
+- !private ["SQ", "layoutAttributesForSupplementaryView"]
+- !private ["SQ", "main"]
+- ["SQ", "nonStopTo"]
+- ["SQ", "nonStopToCell"]
+- ["SQ", "nonStopToSection"]
+- ["SQ", "none"]
+- !private ["SQ", "now"]
+- !private ["SQ", "origin"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "saveLastContentOffset"]
+- !private ["SQ", "scroll"]
+- !private ["SQ", "scrollDirection"]
+- ["SQ", "scrollViewDidChangeAdjustedContentInset"]
+- ["SQ", "scrollViewDidEndDecelerating"]
+- ["SQ", "scrollViewDidEndDragging"]
+- ["SQ", "scrollViewDidEndScrollingAnimation"]
+- ["SQ", "scrollViewDidEndZooming"]
+- ["SQ", "scrollViewDidScroll"]
+- ["SQ", "scrollViewDidScrollToTop"]
+- ["SQ", "scrollViewDidZoom"]
+- ["SQ", "scrollViewShouldScrollToTop"]
+- ["SQ", "scrollViewWillBeginDecelerating"]
+- ["SQ", "scrollViewWillBeginDragging"]
+- ["SQ", "scrollViewWillBeginZooming"]
+- ["SQ", "scrollViewWillEndDragging"]
+- !private ["SQ", "scrollingMode"]
+- !private ["SQ", "sectionFromOffset"]
+- !private ["SQ", "sectionSize"]
+- !private ["SQ", "size"]
+- !private ["SQ", "sizeOfContentForSection"]
+- ["SQ", "stopAtEach"]
+- ["SQ", "stopAtEachCalendarFrame"]
+- ["SQ", "stopAtEachSection"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "thereAreHeaders"]
+- !private ["SQ", "tillEndOfGrid"]
+- !private ["SQ", "triggerScrollToDateDelegate"]
+- !private ["SQ", "vertical"]
+- ["SQ", "viewForZooming"]
+- ["SQ", "viewForZoomingInScrollView"]
+- !private ["SQ", "visibleDates"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "generateOutDates"]
 - !private ["s23ExpressibleByNilLiteralP", "horizontal"]
 - !private ["s23ExpressibleByNilLiteralP", "vertical"]
-- !private ["s8HashableP", "CGPoint"]
-- !private ["s8HashableP", "DispatchQueue"]
-- !private ["s8HashableP", "IndexPath"]
-- !private ["s8HashableP", "UICollectionElementKindSectionHeader"]
-- !private ["s8HashableP", "UIScrollViewDecelerationRateFast"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "abs"]
-- !private ["s8HashableP", "async"]
-- !private ["s8HashableP", "asyncAfter"]
-- !private ["s8HashableP", "cachedConfiguration"]
-- !private ["s8HashableP", "calendarDelegate"]
-- !private ["s8HashableP", "calendarViewLayout"]
-- !private ["s8HashableP", "ceil"]
-- !private ["s8HashableP", "cellCache"]
-- !private ["s8HashableP", "contentOffset"]
-- !private ["s8HashableP", "contentSize"]
-- !private ["s8HashableP", "currentSection"]
-- !private ["s8HashableP", "decelerationRate"]
-- !private ["s8HashableP", "didEndScollCount"]
-- !private ["s8HashableP", "endScrollTargetLocation"]
-- !private ["s8HashableP", "executeDelayedTasks"]
-- !private ["s8HashableP", "floor"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "horizontal"]
-- !private ["s8HashableP", "indexPathForItem"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isScrollInProgress"]
-- !private ["s8HashableP", "lastSavedContentOffset"]
-- !private ["s8HashableP", "layoutAttributesForItem"]
-- !private ["s8HashableP", "layoutAttributesForSupplementaryView"]
-- !private ["s8HashableP", "main"]
-- !private ["s8HashableP", "pointee"]
-- !private ["s8HashableP", "saveLastContentOffset"]
-- !private ["s8HashableP", "scroll"]
-- !private ["s8HashableP", "scrollDirection"]
-- ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s8HashableP", "scrollViewDidEndDecelerating"]
-- ["s8HashableP", "scrollViewDidEndDragging"]
-- ["s8HashableP", "scrollViewDidEndScrollingAnimation"]
-- ["s8HashableP", "scrollViewDidEndZooming"]
-- ["s8HashableP", "scrollViewDidScroll"]
-- ["s8HashableP", "scrollViewDidScrollToTop"]
-- ["s8HashableP", "scrollViewDidZoom"]
-- ["s8HashableP", "scrollViewShouldScrollToTop"]
-- ["s8HashableP", "scrollViewWillBeginDecelerating"]
-- ["s8HashableP", "scrollViewWillBeginDragging"]
-- ["s8HashableP", "scrollViewWillBeginZooming"]
-- ["s8HashableP", "scrollViewWillEndDragging"]
-- !private ["s8HashableP", "scrollingMode"]
-- !private ["s8HashableP", "sectionFromOffset"]
-- !private ["s8HashableP", "sectionSize"]
-- !private ["s8HashableP", "sizeOfContentForSection"]
-- !private ["s8HashableP", "thereAreHeaders"]
-- !private ["s8HashableP", "tillEndOfGrid"]
-- !private ["s8HashableP", "triggerScrollToDateDelegate"]
-- !private ["s8HashableP", "vertical"]
-- ["s8HashableP", "viewForZooming"]
-- ["s8HashableP", "viewForZoomingInScrollView"]
-- !private ["s8HashableP", "visibleDates"]
+- !private ["SH", "CGPoint"]
+- !private ["SH", "DispatchQueue"]
+- !private ["SH", "IndexPath"]
+- !private ["SH", "UICollectionElementKindSectionHeader"]
+- !private ["SH", "UIScrollViewDecelerationRateFast"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "abs"]
+- !private ["SH", "async"]
+- !private ["SH", "asyncAfter"]
+- !private ["SH", "cachedConfiguration"]
+- !private ["SH", "calendarDelegate"]
+- !private ["SH", "calendarViewLayout"]
+- !private ["SH", "ceil"]
+- !private ["SH", "cellCache"]
+- !private ["SH", "contentOffset"]
+- !private ["SH", "contentSize"]
+- !private ["SH", "currentSection"]
+- !private ["SH", "decelerationRate"]
+- !private ["SH", "didEndScollCount"]
+- !private ["SH", "endScrollTargetLocation"]
+- !private ["SH", "executeDelayedTasks"]
+- !private ["SH", "floor"]
+- !private ["SH", "frame"]
+- !private ["SH", "generateOutDates"]
+- !private ["SH", "horizontal"]
+- !private ["SH", "indexPathForItem"]
+- !private ["SH", "init"]
+- !private ["SH", "isScrollInProgress"]
+- !private ["SH", "lastSavedContentOffset"]
+- !private ["SH", "layoutAttributesForItem"]
+- !private ["SH", "layoutAttributesForSupplementaryView"]
+- !private ["SH", "main"]
+- !private ["SH", "pointee"]
+- !private ["SH", "saveLastContentOffset"]
+- !private ["SH", "scroll"]
+- !private ["SH", "scrollDirection"]
+- ["SH", "scrollViewDidChangeAdjustedContentInset"]
+- ["SH", "scrollViewDidEndDecelerating"]
+- ["SH", "scrollViewDidEndDragging"]
+- ["SH", "scrollViewDidEndScrollingAnimation"]
+- ["SH", "scrollViewDidEndZooming"]
+- ["SH", "scrollViewDidScroll"]
+- ["SH", "scrollViewDidScrollToTop"]
+- ["SH", "scrollViewDidZoom"]
+- ["SH", "scrollViewShouldScrollToTop"]
+- ["SH", "scrollViewWillBeginDecelerating"]
+- ["SH", "scrollViewWillBeginDragging"]
+- ["SH", "scrollViewWillBeginZooming"]
+- ["SH", "scrollViewWillEndDragging"]
+- !private ["SH", "scrollingMode"]
+- !private ["SH", "sectionFromOffset"]
+- !private ["SH", "sectionSize"]
+- !private ["SH", "sizeOfContentForSection"]
+- !private ["SH", "subscript"]
+- !private ["SH", "thereAreHeaders"]
+- !private ["SH", "tillEndOfGrid"]
+- !private ["SH", "triggerScrollToDateDelegate"]
+- !private ["SH", "vertical"]
+- ["SH", "viewForZooming"]
+- ["SH", "viewForZoomingInScrollView"]
+- !private ["SH", "visibleDates"]
 - !private ["10Foundation9IndexPathV", "init"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "CGPoint"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "DispatchQueue"]
@@ -573,8 +584,8 @@ depends-member:
 - !private ["15JTAppleCalendar0aB12ViewDelegateP", "calendarDidScroll"]
 - !private ["15JTAppleCalendar0aB12ViewDelegateP", "scrollDidEndDecelerating"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
+- !private ["SM", "init"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - !private ["So8NSCodingP", "IndexPath"]
@@ -683,71 +694,74 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectC", "visibleDates"]
-- !private ["So16NSObjectProtocolP", "CGPoint"]
-- !private ["So16NSObjectProtocolP", "DispatchQueue"]
-- !private ["So16NSObjectProtocolP", "IndexPath"]
-- !private ["So16NSObjectProtocolP", "UICollectionElementKindSectionHeader"]
-- !private ["So16NSObjectProtocolP", "UIScrollViewDecelerationRateFast"]
-- !private ["So16NSObjectProtocolP", "abs"]
-- !private ["So16NSObjectProtocolP", "async"]
-- !private ["So16NSObjectProtocolP", "asyncAfter"]
-- !private ["So16NSObjectProtocolP", "cachedConfiguration"]
-- !private ["So16NSObjectProtocolP", "calendarDelegate"]
-- !private ["So16NSObjectProtocolP", "calendarViewLayout"]
-- !private ["So16NSObjectProtocolP", "ceil"]
-- !private ["So16NSObjectProtocolP", "cellCache"]
-- !private ["So16NSObjectProtocolP", "contentOffset"]
-- !private ["So16NSObjectProtocolP", "contentSize"]
-- !private ["So16NSObjectProtocolP", "currentSection"]
-- !private ["So16NSObjectProtocolP", "decelerationRate"]
-- !private ["So16NSObjectProtocolP", "didEndScollCount"]
-- !private ["So16NSObjectProtocolP", "endScrollTargetLocation"]
-- !private ["So16NSObjectProtocolP", "executeDelayedTasks"]
-- !private ["So16NSObjectProtocolP", "floor"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "indexPathForItem"]
-- !private ["So16NSObjectProtocolP", "isScrollInProgress"]
-- !private ["So16NSObjectProtocolP", "lastSavedContentOffset"]
-- !private ["So16NSObjectProtocolP", "layoutAttributesForItem"]
-- !private ["So16NSObjectProtocolP", "layoutAttributesForSupplementaryView"]
-- !private ["So16NSObjectProtocolP", "main"]
-- !private ["So16NSObjectProtocolP", "saveLastContentOffset"]
-- !private ["So16NSObjectProtocolP", "scrollDirection"]
-- ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
-- ["So16NSObjectProtocolP", "scrollViewDidScroll"]
-- ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewDidZoom"]
-- ["So16NSObjectProtocolP", "scrollViewShouldScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
-- ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
-- !private ["So16NSObjectProtocolP", "scrollingMode"]
-- !private ["So16NSObjectProtocolP", "sectionFromOffset"]
-- !private ["So16NSObjectProtocolP", "sectionSize"]
-- !private ["So16NSObjectProtocolP", "sizeOfContentForSection"]
-- !private ["So16NSObjectProtocolP", "thereAreHeaders"]
-- !private ["So16NSObjectProtocolP", "triggerScrollToDateDelegate"]
-- ["So16NSObjectProtocolP", "viewForZooming"]
-- ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
-- !private ["So16NSObjectProtocolP", "visibleDates"]
+- !private ["So8NSObjectP", "CGPoint"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "IndexPath"]
+- !private ["So8NSObjectP", "UICollectionElementKindSectionHeader"]
+- !private ["So8NSObjectP", "UIScrollViewDecelerationRateFast"]
+- !private ["So8NSObjectP", "abs"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "asyncAfter"]
+- !private ["So8NSObjectP", "cachedConfiguration"]
+- !private ["So8NSObjectP", "calendarDelegate"]
+- !private ["So8NSObjectP", "calendarViewLayout"]
+- !private ["So8NSObjectP", "ceil"]
+- !private ["So8NSObjectP", "cellCache"]
+- !private ["So8NSObjectP", "contentOffset"]
+- !private ["So8NSObjectP", "contentSize"]
+- !private ["So8NSObjectP", "currentSection"]
+- !private ["So8NSObjectP", "decelerationRate"]
+- !private ["So8NSObjectP", "didEndScollCount"]
+- !private ["So8NSObjectP", "endScrollTargetLocation"]
+- !private ["So8NSObjectP", "executeDelayedTasks"]
+- !private ["So8NSObjectP", "floor"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "indexPathForItem"]
+- !private ["So8NSObjectP", "isScrollInProgress"]
+- !private ["So8NSObjectP", "lastSavedContentOffset"]
+- !private ["So8NSObjectP", "layoutAttributesForItem"]
+- !private ["So8NSObjectP", "layoutAttributesForSupplementaryView"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "saveLastContentOffset"]
+- !private ["So8NSObjectP", "scrollDirection"]
+- ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectP", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectP", "scrollViewDidEndDragging"]
+- ["So8NSObjectP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectP", "scrollViewDidEndZooming"]
+- ["So8NSObjectP", "scrollViewDidScroll"]
+- ["So8NSObjectP", "scrollViewDidScrollToTop"]
+- ["So8NSObjectP", "scrollViewDidZoom"]
+- ["So8NSObjectP", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectP", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectP", "scrollViewWillBeginDragging"]
+- ["So8NSObjectP", "scrollViewWillBeginZooming"]
+- ["So8NSObjectP", "scrollViewWillEndDragging"]
+- !private ["So8NSObjectP", "scrollingMode"]
+- !private ["So8NSObjectP", "sectionFromOffset"]
+- !private ["So8NSObjectP", "sectionSize"]
+- !private ["So8NSObjectP", "sizeOfContentForSection"]
+- !private ["So8NSObjectP", "thereAreHeaders"]
+- !private ["So8NSObjectP", "triggerScrollToDateDelegate"]
+- ["So8NSObjectP", "viewForZooming"]
+- ["So8NSObjectP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "visibleDates"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "asyncAfter"]
 - !private ["So9OS_objectC", "main"]
+- !private ["Sq", "generateOutDates"]
 - !private ["Sq", "horizontal"]
 - !private ["Sq", "vertical"]
 - !private ["15JTAppleCalendar21OutDateCellGenerationO", "deinit"]
 - !private ["15JTAppleCalendar21OutDateCellGenerationO", "tillEndOfGrid"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s16RawRepresentableP", "horizontal"]
-- !private ["s16RawRepresentableP", "vertical"]
+- !private ["Sk", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "horizontal"]
+- !private ["SY", "vertical"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["So31UICollectionViewScrollDirectionV", "horizontal"]
+- !private ["So31UICollectionViewScrollDirectionV", "vertical"]
 - !private ["15JTAppleCalendar13ScrollingModeO", "deinit"]
 - ["15JTAppleCalendar13ScrollingModeO", "nonStopTo"]
 - ["15JTAppleCalendar13ScrollingModeO", "nonStopToCell"]
@@ -756,9 +770,9 @@ depends-member:
 - ["15JTAppleCalendar13ScrollingModeO", "stopAtEach"]
 - ["15JTAppleCalendar13ScrollingModeO", "stopAtEachCalendarFrame"]
 - ["15JTAppleCalendar13ScrollingModeO", "stopAtEachSection"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s10StrideableP", "pointee"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["Sx", "pointee"]
 - !private ["So29UIAccessibilityIdentificationP", "CGPoint"]
 - !private ["So29UIAccessibilityIdentificationP", "DispatchQueue"]
 - !private ["So29UIAccessibilityIdentificationP", "IndexPath"]
@@ -1016,8 +1030,6 @@ depends-member:
 - !private ["So22UICollectionViewLayoutC", "sizeOfContentForSection"]
 - !private ["So22UICollectionViewLayoutC", "thereAreHeaders"]
 - !private ["So32UICollectionViewLayoutAttributesC", "frame"]
-- !private ["SC31UICollectionViewScrollDirectionO", "horizontal"]
-- !private ["SC31UICollectionViewScrollDirectionO", "vertical"]
 - !private ["So17UICoordinateSpaceP", "CGPoint"]
 - !private ["So17UICoordinateSpaceP", "DispatchQueue"]
 - !private ["So17UICoordinateSpaceP", "IndexPath"]
@@ -1225,6 +1237,90 @@ depends-member:
 - ["So11UIFocusItemP", "viewForZooming"]
 - ["So11UIFocusItemP", "viewForZoomingInScrollView"]
 - !private ["So11UIFocusItemP", "visibleDates"]
+- !private ["So20UIFocusItemContainerP", "CGPoint"]
+- !private ["So20UIFocusItemContainerP", "DispatchQueue"]
+- !private ["So20UIFocusItemContainerP", "IndexPath"]
+- !private ["So20UIFocusItemContainerP", "UICollectionElementKindSectionHeader"]
+- !private ["So20UIFocusItemContainerP", "UIScrollViewDecelerationRateFast"]
+- !private ["So20UIFocusItemContainerP", "abs"]
+- !private ["So20UIFocusItemContainerP", "cachedConfiguration"]
+- !private ["So20UIFocusItemContainerP", "calendarDelegate"]
+- !private ["So20UIFocusItemContainerP", "calendarViewLayout"]
+- !private ["So20UIFocusItemContainerP", "ceil"]
+- !private ["So20UIFocusItemContainerP", "contentOffset"]
+- !private ["So20UIFocusItemContainerP", "contentSize"]
+- !private ["So20UIFocusItemContainerP", "currentSection"]
+- !private ["So20UIFocusItemContainerP", "decelerationRate"]
+- !private ["So20UIFocusItemContainerP", "didEndScollCount"]
+- !private ["So20UIFocusItemContainerP", "endScrollTargetLocation"]
+- !private ["So20UIFocusItemContainerP", "executeDelayedTasks"]
+- !private ["So20UIFocusItemContainerP", "floor"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "indexPathForItem"]
+- !private ["So20UIFocusItemContainerP", "isScrollInProgress"]
+- !private ["So20UIFocusItemContainerP", "lastSavedContentOffset"]
+- !private ["So20UIFocusItemContainerP", "saveLastContentOffset"]
+- !private ["So20UIFocusItemContainerP", "scrollDirection"]
+- ["So20UIFocusItemContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScroll"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewDidZoom"]
+- ["So20UIFocusItemContainerP", "scrollViewShouldScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewWillEndDragging"]
+- !private ["So20UIFocusItemContainerP", "scrollingMode"]
+- !private ["So20UIFocusItemContainerP", "triggerScrollToDateDelegate"]
+- ["So20UIFocusItemContainerP", "viewForZooming"]
+- ["So20UIFocusItemContainerP", "viewForZoomingInScrollView"]
+- !private ["So20UIFocusItemContainerP", "visibleDates"]
+- !private ["So30UIFocusItemScrollableContainerP", "CGPoint"]
+- !private ["So30UIFocusItemScrollableContainerP", "DispatchQueue"]
+- !private ["So30UIFocusItemScrollableContainerP", "IndexPath"]
+- !private ["So30UIFocusItemScrollableContainerP", "UICollectionElementKindSectionHeader"]
+- !private ["So30UIFocusItemScrollableContainerP", "UIScrollViewDecelerationRateFast"]
+- !private ["So30UIFocusItemScrollableContainerP", "abs"]
+- !private ["So30UIFocusItemScrollableContainerP", "cachedConfiguration"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarDelegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarViewLayout"]
+- !private ["So30UIFocusItemScrollableContainerP", "ceil"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentOffset"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentSize"]
+- !private ["So30UIFocusItemScrollableContainerP", "currentSection"]
+- !private ["So30UIFocusItemScrollableContainerP", "decelerationRate"]
+- !private ["So30UIFocusItemScrollableContainerP", "didEndScollCount"]
+- !private ["So30UIFocusItemScrollableContainerP", "endScrollTargetLocation"]
+- !private ["So30UIFocusItemScrollableContainerP", "executeDelayedTasks"]
+- !private ["So30UIFocusItemScrollableContainerP", "floor"]
+- !private ["So30UIFocusItemScrollableContainerP", "frame"]
+- !private ["So30UIFocusItemScrollableContainerP", "indexPathForItem"]
+- !private ["So30UIFocusItemScrollableContainerP", "isScrollInProgress"]
+- !private ["So30UIFocusItemScrollableContainerP", "lastSavedContentOffset"]
+- !private ["So30UIFocusItemScrollableContainerP", "saveLastContentOffset"]
+- !private ["So30UIFocusItemScrollableContainerP", "scrollDirection"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidEndDecelerating"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidEndDragging"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidEndZooming"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidScroll"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidScrollToTop"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewDidZoom"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewShouldScrollToTop"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewWillBeginDecelerating"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewWillBeginDragging"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewWillBeginZooming"]
+- ["So30UIFocusItemScrollableContainerP", "scrollViewWillEndDragging"]
+- !private ["So30UIFocusItemScrollableContainerP", "scrollingMode"]
+- !private ["So30UIFocusItemScrollableContainerP", "triggerScrollToDateDelegate"]
+- ["So30UIFocusItemScrollableContainerP", "viewForZooming"]
+- ["So30UIFocusItemScrollableContainerP", "viewForZoomingInScrollView"]
+- !private ["So30UIFocusItemScrollableContainerP", "visibleDates"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "IndexPath"]
@@ -1526,6 +1622,48 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "visibleDates"]
+- !private ["So23UIUserActivityRestoringP", "CGPoint"]
+- !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
+- !private ["So23UIUserActivityRestoringP", "IndexPath"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionElementKindSectionHeader"]
+- !private ["So23UIUserActivityRestoringP", "UIScrollViewDecelerationRateFast"]
+- !private ["So23UIUserActivityRestoringP", "abs"]
+- !private ["So23UIUserActivityRestoringP", "cachedConfiguration"]
+- !private ["So23UIUserActivityRestoringP", "calendarDelegate"]
+- !private ["So23UIUserActivityRestoringP", "calendarViewLayout"]
+- !private ["So23UIUserActivityRestoringP", "ceil"]
+- !private ["So23UIUserActivityRestoringP", "contentOffset"]
+- !private ["So23UIUserActivityRestoringP", "contentSize"]
+- !private ["So23UIUserActivityRestoringP", "currentSection"]
+- !private ["So23UIUserActivityRestoringP", "decelerationRate"]
+- !private ["So23UIUserActivityRestoringP", "didEndScollCount"]
+- !private ["So23UIUserActivityRestoringP", "endScrollTargetLocation"]
+- !private ["So23UIUserActivityRestoringP", "executeDelayedTasks"]
+- !private ["So23UIUserActivityRestoringP", "floor"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "indexPathForItem"]
+- !private ["So23UIUserActivityRestoringP", "isScrollInProgress"]
+- !private ["So23UIUserActivityRestoringP", "lastSavedContentOffset"]
+- !private ["So23UIUserActivityRestoringP", "saveLastContentOffset"]
+- !private ["So23UIUserActivityRestoringP", "scrollDirection"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndScrollingAnimation"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScroll"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidZoom"]
+- ["So23UIUserActivityRestoringP", "scrollViewShouldScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
+- !private ["So23UIUserActivityRestoringP", "scrollingMode"]
+- !private ["So23UIUserActivityRestoringP", "triggerScrollToDateDelegate"]
+- ["So23UIUserActivityRestoringP", "viewForZooming"]
+- ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "visibleDates"]
 - !private ["So6UIViewC", "Bool"]
 - !private ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGPoint"]
@@ -1575,7 +1713,6 @@ depends-member:
 - ["So6UIViewC", "viewForZoomingInScrollView"]
 - !private ["So6UIViewC", "visibleDates"]
 - !private ["Sp", "pointee"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGPoint"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DispatchQueue"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "IndexPath"]
@@ -1620,6 +1757,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "visibleDates"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
@@ -1673,6 +1811,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "visibleDates"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "generateOutDates"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "horizontal"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -1688,33 +1827,34 @@ depends-member:
 - !private ["s8_PointerP", "pointee"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "Sb"
 - "So15CALayerDelegateP"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "15JTAppleCalendar23ConfigurationParametersV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "15JTAppleCalendar15DelayedTaskTypeO"
-- !private "s10DictionaryV"
-- !private "So14DispatchObjectC"
-- !private "So13DispatchQueueC"
+- !private "SD"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
 - !private "8Dispatch0A4TimeV"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "10Foundation9IndexPathV"
 - "15JTAppleCalendar0aB16DelegateProtocolP"
 - !private "15JTAppleCalendar0aB6LayoutC"
@@ -1722,21 +1862,22 @@ depends-nominal:
 - "15JTAppleCalendar0aB4ViewC"
 - !private "15JTAppleCalendar0aB12ViewDelegateP"
 - !private "s25LosslessStringConvertibleP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So9OS_objectC"
 - !private "Sq"
 - !private "15JTAppleCalendar21OutDateCellGenerationO"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
+- !private "So31UICollectionViewScrollDirectionV"
 - "15JTAppleCalendar13ScrollingModeO"
-- !private "s8SequenceP"
-- !private "s10StrideableP"
+- !private "ST"
+- !private "Sx"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1745,12 +1886,13 @@ depends-nominal:
 - "So24UICollectionViewDelegateP"
 - !private "So22UICollectionViewLayoutC"
 - !private "So32UICollectionViewLayoutAttributesC"
-- !private "SC31UICollectionViewScrollDirectionO"
 - "So17UICoordinateSpaceP"
 - "So23UIDataSourceTranslatingP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1758,41 +1900,43 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - !private "Sp"
-- !private "s14_ArrayProtocolP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s26_OptionalNilComparisonTypeV"
 - !private "s8_PointerP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "b95784bf41fd65f1f2702b432a836f6b"

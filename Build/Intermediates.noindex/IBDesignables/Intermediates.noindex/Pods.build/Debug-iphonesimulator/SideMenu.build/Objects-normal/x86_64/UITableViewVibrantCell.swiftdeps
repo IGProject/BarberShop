@@ -25,6 +25,8 @@ depends-top-level:
 - "UIView"
 - "UIVisualEffectView"
 depends-member:
+- !private ["So18UIViewAutoresizingV", "flexibleHeight"]
+- !private ["So18UIViewAutoresizingV", "flexibleWidth"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "UIAccessibilityIsReduceTransparencyEnabled"]
 - !private ["So15CALayerDelegateP", "UIBlurEffect"]
@@ -117,61 +119,61 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "updateBlur"]
 - !private ["s23CustomStringConvertibleP", "vibrancySelectedBackgroundView"]
 - !private ["s23CustomStringConvertibleP", "vibrancyView"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "UIAccessibilityIsReduceTransparencyEnabled"]
-- !private ["s9EquatableP", "UIBlurEffect"]
-- !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIVibrancyEffect"]
-- ["s9EquatableP", "UIVisualEffectView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "autoresizingMask"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "blurEffectStyle"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "contentView"]
-- !private ["s9EquatableP", "defaultSelectedBackgroundView"]
-- !private ["s9EquatableP", "effect"]
-- !private ["s9EquatableP", "flexibleHeight"]
-- !private ["s9EquatableP", "flexibleWidth"]
-- !private ["s9EquatableP", "frame"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "light"]
-- !private ["s9EquatableP", "selectedBackgroundView"]
-- !private ["s9EquatableP", "subviews"]
-- !private ["s9EquatableP", "updateBlur"]
-- !private ["s9EquatableP", "vibrancySelectedBackgroundView"]
-- !private ["s9EquatableP", "vibrancyView"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SQ", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["SQ", "UIBlurEffect"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIVibrancyEffect"]
+- ["SQ", "UIVisualEffectView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "autoresizingMask"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "blurEffectStyle"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "contentView"]
+- !private ["SQ", "defaultSelectedBackgroundView"]
+- !private ["SQ", "effect"]
+- !private ["SQ", "flexibleHeight"]
+- !private ["SQ", "flexibleWidth"]
+- !private ["SQ", "frame"]
+- ["SQ", "init"]
+- !private ["SQ", "light"]
+- !private ["SQ", "selectedBackgroundView"]
+- !private ["SQ", "subviews"]
+- !private ["SQ", "updateBlur"]
+- !private ["SQ", "vibrancySelectedBackgroundView"]
+- !private ["SQ", "vibrancyView"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleHeight"]
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleWidth"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "UIAccessibilityIsReduceTransparencyEnabled"]
-- !private ["s8HashableP", "UIBlurEffect"]
-- !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIVibrancyEffect"]
-- ["s8HashableP", "UIVisualEffectView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "autoresizingMask"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "blurEffectStyle"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "contentView"]
-- !private ["s8HashableP", "defaultSelectedBackgroundView"]
-- !private ["s8HashableP", "effect"]
-- !private ["s8HashableP", "frame"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "light"]
-- !private ["s8HashableP", "selectedBackgroundView"]
-- !private ["s8HashableP", "subviews"]
-- !private ["s8HashableP", "updateBlur"]
-- !private ["s8HashableP", "vibrancySelectedBackgroundView"]
-- !private ["s8HashableP", "vibrancyView"]
+- !private ["SH", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["SH", "UIBlurEffect"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIVibrancyEffect"]
+- ["SH", "UIVisualEffectView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "autoresizingMask"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "blurEffectStyle"]
+- !private ["SH", "bounds"]
+- !private ["SH", "clear"]
+- !private ["SH", "contentView"]
+- !private ["SH", "defaultSelectedBackgroundView"]
+- !private ["SH", "effect"]
+- !private ["SH", "frame"]
+- ["SH", "init"]
+- !private ["SH", "light"]
+- !private ["SH", "selectedBackgroundView"]
+- !private ["SH", "subviews"]
+- !private ["SH", "updateBlur"]
+- !private ["SH", "vibrancySelectedBackgroundView"]
+- !private ["SH", "vibrancyView"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["So8NSCodingP", "UIAccessibilityIsReduceTransparencyEnabled"]
 - !private ["So8NSCodingP", "UIBlurEffect"]
@@ -225,28 +227,28 @@ depends-member:
 - ["So8NSObjectC", "updateBlur"]
 - ["So8NSObjectC", "vibrancySelectedBackgroundView"]
 - ["So8NSObjectC", "vibrancyView"]
-- !private ["So16NSObjectProtocolP", "UIAccessibilityIsReduceTransparencyEnabled"]
-- !private ["So16NSObjectProtocolP", "UIBlurEffect"]
-- !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIVibrancyEffect"]
-- ["So16NSObjectProtocolP", "UIVisualEffectView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "autoresizingMask"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "blurEffectStyle"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "contentView"]
-- !private ["So16NSObjectProtocolP", "defaultSelectedBackgroundView"]
-- !private ["So16NSObjectProtocolP", "effect"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "selectedBackgroundView"]
-- !private ["So16NSObjectProtocolP", "subviews"]
-- !private ["So16NSObjectProtocolP", "updateBlur"]
-- !private ["So16NSObjectProtocolP", "vibrancySelectedBackgroundView"]
-- !private ["So16NSObjectProtocolP", "vibrancyView"]
+- !private ["So8NSObjectP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["So8NSObjectP", "UIBlurEffect"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIVibrancyEffect"]
+- ["So8NSObjectP", "UIVisualEffectView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "autoresizingMask"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "blurEffectStyle"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "contentView"]
+- !private ["So8NSObjectP", "defaultSelectedBackgroundView"]
+- !private ["So8NSObjectP", "effect"]
+- !private ["So8NSObjectP", "frame"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "selectedBackgroundView"]
+- !private ["So8NSObjectP", "subviews"]
+- !private ["So8NSObjectP", "updateBlur"]
+- !private ["So8NSObjectP", "vibrancySelectedBackgroundView"]
+- !private ["So8NSObjectP", "vibrancyView"]
 - !private ["So14NSSecureCodingP", "autoresizingMask"]
 - !private ["So14NSSecureCodingP", "clear"]
 - !private ["So14NSSecureCodingP", "contentView"]
@@ -255,11 +257,12 @@ depends-member:
 - ["So14NSSecureCodingP", "init"]
 - !private ["s9OptionSetP", "flexibleHeight"]
 - !private ["s9OptionSetP", "flexibleWidth"]
-- !private ["s16RawRepresentableP", "flexibleHeight"]
-- !private ["s16RawRepresentableP", "flexibleWidth"]
-- !private ["s16RawRepresentableP", "light"]
+- !private ["SY", "flexibleHeight"]
+- !private ["SY", "flexibleWidth"]
+- !private ["SY", "light"]
 - !private ["s10SetAlgebraP", "flexibleHeight"]
 - !private ["s10SetAlgebraP", "flexibleWidth"]
+- !private ["So17UIBlurEffectStyleV", "light"]
 - !private ["So29UIAccessibilityIdentificationP", "UIAccessibilityIsReduceTransparencyEnabled"]
 - !private ["So29UIAccessibilityIdentificationP", "UIBlurEffect"]
 - !private ["So29UIAccessibilityIdentificationP", "UIColor"]
@@ -324,7 +327,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "vibrancySelectedBackgroundView"]
 - !private ["So21UIAppearanceContainerP", "vibrancyView"]
 - !private ["So12UIBlurEffectC", "init"]
-- !private ["SC17UIBlurEffectStyleO", "light"]
 - !private ["So7UIColorC", "clear"]
 - !private ["So17UICoordinateSpaceP", "UIAccessibilityIsReduceTransparencyEnabled"]
 - !private ["So17UICoordinateSpaceP", "UIBlurEffect"]
@@ -410,6 +412,27 @@ depends-member:
 - !private ["So11UIFocusItemP", "updateBlur"]
 - !private ["So11UIFocusItemP", "vibrancySelectedBackgroundView"]
 - !private ["So11UIFocusItemP", "vibrancyView"]
+- !private ["So20UIFocusItemContainerP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["So20UIFocusItemContainerP", "UIBlurEffect"]
+- !private ["So20UIFocusItemContainerP", "UIColor"]
+- !private ["So20UIFocusItemContainerP", "UIVibrancyEffect"]
+- ["So20UIFocusItemContainerP", "UIVisualEffectView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "autoresizingMask"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "blurEffectStyle"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
+- !private ["So20UIFocusItemContainerP", "defaultSelectedBackgroundView"]
+- !private ["So20UIFocusItemContainerP", "effect"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "selectedBackgroundView"]
+- !private ["So20UIFocusItemContainerP", "subviews"]
+- !private ["So20UIFocusItemContainerP", "updateBlur"]
+- !private ["So20UIFocusItemContainerP", "vibrancySelectedBackgroundView"]
+- !private ["So20UIFocusItemContainerP", "vibrancyView"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIAccessibilityIsReduceTransparencyEnabled"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIBlurEffect"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIColor"]
@@ -531,7 +554,7 @@ depends-member:
 - ["8SideMenu22UITableViewVibrantCellC", "blurEffectStyle"]
 - !private ["8SideMenu22UITableViewVibrantCellC", "bounds"]
 - !private ["8SideMenu22UITableViewVibrantCellC", "defaultSelectedBackgroundView"]
-- ["8SideMenu22UITableViewVibrantCellC", "deinit"]
+- !private ["8SideMenu22UITableViewVibrantCellC", "deinit"]
 - ["8SideMenu22UITableViewVibrantCellC", "init"]
 - !private ["8SideMenu22UITableViewVibrantCellC", "selectedBackgroundView"]
 - !private ["8SideMenu22UITableViewVibrantCellC", "subviews"]
@@ -559,6 +582,27 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "updateBlur"]
 - !private ["So18UITraitEnvironmentP", "vibrancySelectedBackgroundView"]
 - !private ["So18UITraitEnvironmentP", "vibrancyView"]
+- !private ["So23UIUserActivityRestoringP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["So23UIUserActivityRestoringP", "UIBlurEffect"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIVibrancyEffect"]
+- ["So23UIUserActivityRestoringP", "UIVisualEffectView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "autoresizingMask"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "blurEffectStyle"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
+- !private ["So23UIUserActivityRestoringP", "defaultSelectedBackgroundView"]
+- !private ["So23UIUserActivityRestoringP", "effect"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "selectedBackgroundView"]
+- !private ["So23UIUserActivityRestoringP", "subviews"]
+- !private ["So23UIUserActivityRestoringP", "updateBlur"]
+- !private ["So23UIUserActivityRestoringP", "vibrancySelectedBackgroundView"]
+- !private ["So23UIUserActivityRestoringP", "vibrancyView"]
 - !private ["So16UIVibrancyEffectC", "init"]
 - ["So6UIViewC", "NSCoder"]
 - ["So6UIViewC", "String"]
@@ -585,8 +629,6 @@ depends-member:
 - ["So6UIViewC", "updateBlur"]
 - ["So6UIViewC", "vibrancySelectedBackgroundView"]
 - ["So6UIViewC", "vibrancyView"]
-- !private ["SC18UIViewAutoresizingV", "flexibleHeight"]
-- !private ["SC18UIViewAutoresizingV", "flexibleWidth"]
 - !private ["So14UIVisualEffectC", "init"]
 - !private ["So18UIVisualEffectViewC", "autoresizingMask"]
 - !private ["So18UIVisualEffectViewC", "contentView"]
@@ -640,6 +682,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "vibrancyView"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
+- !private "So18UIViewAutoresizingV"
 - !private "Sb"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -647,33 +690,34 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "s9OptionSetP"
-- !private "s16RawRepresentableP"
+- !private "SY"
 - !private "s10SetAlgebraP"
+- !private "So17UIBlurEffectStyleV"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So12UIBlurEffectC"
-- !private "SC17UIBlurEffectStyleO"
 - !private "So7UIColorC"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So27UIGestureRecognizerDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -681,9 +725,9 @@ depends-nominal:
 - "So15UITableViewCellC"
 - "8SideMenu22UITableViewVibrantCellC"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - !private "So16UIVibrancyEffectC"
 - "So6UIViewC"
-- !private "SC18UIViewAutoresizingV"
 - !private "So14UIVisualEffectC"
 - "So18UIVisualEffectViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -693,29 +737,30 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/SideMenu/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SideMenu.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "228911c7429bb59dbfabc75ba5ac5910"

@@ -45,6 +45,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "imageViewEdgeInsets"]
 - !private ["So15CALayerDelegateP", "imageViewEdgeInsetsPreset"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "layoutSubviews"]
 - !private ["So15CALayerDelegateP", "prepare"]
 - !private ["So15CALayerDelegateP", "removeFromSuperview"]
@@ -52,11 +53,11 @@ depends-member:
 - !private ["So15CALayerDelegateP", "toolbar"]
 - !private ["So15CALayerDelegateP", "toolbarAlignment"]
 - !private ["So15CALayerDelegateP", "toolbarEdgeInsets"]
-- !private ["SC7CGPointV", "y"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "origin"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "height"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "height"]
 - ["s7CVarArgP", "DisplayStyle"]
 - ["s7CVarArgP", "EdgeInsets"]
 - ["s7CVarArgP", "EdgeInsetsPreset"]
@@ -76,6 +77,7 @@ depends-member:
 - !private ["s7CVarArgP", "imageView"]
 - !private ["s7CVarArgP", "imageViewEdgeInsets"]
 - !private ["s7CVarArgP", "imageViewEdgeInsetsPreset"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layoutSubviews"]
 - !private ["s7CVarArgP", "prepare"]
@@ -98,11 +100,13 @@ depends-member:
 - !private ["8Material4CardC", "container"]
 - !private ["8Material4CardC", "contentView"]
 - !private ["8Material4CardC", "contentViewEdgeInsets"]
+- !private ["8Material4CardC", "deinit"]
 - ["8Material4CardC", "displayStyle"]
 - ["8Material4CardC", "imageView"]
 - ["8Material4CardC", "imageViewEdgeInsets"]
 - ["8Material4CardC", "imageViewEdgeInsetsPreset"]
 - ["8Material4CardC", "init"]
+- !private ["8Material4CardC", "init"]
 - !private ["8Material4CardC", "layoutSubviews"]
 - !private ["8Material4CardC", "prepare"]
 - ["8Material4CardC", "reload"]
@@ -128,6 +132,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - !private ["s28CustomDebugStringConvertibleP", "imageViewEdgeInsets"]
 - !private ["s28CustomDebugStringConvertibleP", "imageViewEdgeInsetsPreset"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
 - !private ["s28CustomDebugStringConvertibleP", "origin"]
@@ -169,6 +174,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageViewEdgeInsets"]
 - !private ["s23CustomStringConvertibleP", "imageViewEdgeInsetsPreset"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layoutSubviews"]
 - !private ["s23CustomStringConvertibleP", "prepare"]
 - !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
@@ -176,86 +182,88 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "toolbar"]
 - !private ["s23CustomStringConvertibleP", "toolbarAlignment"]
 - !private ["s23CustomStringConvertibleP", "toolbarEdgeInsets"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "origin"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "y"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "height"]
+- !private ["Se", "origin"]
+- !private ["Se", "size"]
+- !private ["Se", "y"]
 - ["8Material12DisplayStyleO", "partial"]
 - ["8Material16EdgeInsetsPresetO", "none"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "origin"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "y"]
-- ["s9EquatableP", "DisplayStyle"]
-- ["s9EquatableP", "EdgeInsets"]
-- ["s9EquatableP", "EdgeInsetsPreset"]
-- !private ["s9EquatableP", "EdgeInsetsPresetToValue"]
-- ["s9EquatableP", "ToolbarAlignment"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- ["s9EquatableP", "bottom"]
-- !private ["s9EquatableP", "bottomBar"]
-- !private ["s9EquatableP", "bottomBarEdgeInsets"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "bringSubview"]
-- !private ["s9EquatableP", "container"]
-- !private ["s9EquatableP", "contentView"]
-- !private ["s9EquatableP", "contentViewEdgeInsets"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "imageView"]
-- !private ["s9EquatableP", "imageViewEdgeInsets"]
-- !private ["s9EquatableP", "imageViewEdgeInsetsPreset"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- ["s9EquatableP", "none"]
-- !private ["s9EquatableP", "origin"]
-- ["s9EquatableP", "partial"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "removeFromSuperview"]
-- !private ["s9EquatableP", "sendSubview"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "toolbar"]
-- !private ["s9EquatableP", "toolbarAlignment"]
-- !private ["s9EquatableP", "toolbarEdgeInsets"]
-- !private ["s9EquatableP", "top"]
-- !private ["s9EquatableP", "y"]
-- ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "height"]
+- !private ["SE", "origin"]
+- !private ["SE", "size"]
+- !private ["SE", "y"]
+- ["SQ", "DisplayStyle"]
+- ["SQ", "EdgeInsets"]
+- ["SQ", "EdgeInsetsPreset"]
+- !private ["SQ", "EdgeInsetsPresetToValue"]
+- ["SQ", "ToolbarAlignment"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- ["SQ", "bottom"]
+- !private ["SQ", "bottomBar"]
+- !private ["SQ", "bottomBarEdgeInsets"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "bringSubview"]
+- !private ["SQ", "container"]
+- !private ["SQ", "contentView"]
+- !private ["SQ", "contentViewEdgeInsets"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "height"]
+- !private ["SQ", "imageView"]
+- !private ["SQ", "imageViewEdgeInsets"]
+- !private ["SQ", "imageViewEdgeInsetsPreset"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "layoutSubviews"]
+- ["SQ", "none"]
+- !private ["SQ", "origin"]
+- ["SQ", "partial"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "removeFromSuperview"]
+- !private ["SQ", "sendSubview"]
+- !private ["SQ", "size"]
+- !private ["SQ", "toolbar"]
+- !private ["SQ", "toolbarAlignment"]
+- !private ["SQ", "toolbarEdgeInsets"]
+- !private ["SQ", "top"]
+- !private ["SQ", "y"]
+- ["SQ", "zero"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s8HashableP", "DisplayStyle"]
-- ["s8HashableP", "EdgeInsets"]
-- ["s8HashableP", "EdgeInsetsPreset"]
-- !private ["s8HashableP", "EdgeInsetsPresetToValue"]
-- ["s8HashableP", "ToolbarAlignment"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- ["s8HashableP", "bottom"]
-- !private ["s8HashableP", "bottomBar"]
-- !private ["s8HashableP", "bottomBarEdgeInsets"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "bringSubview"]
-- !private ["s8HashableP", "container"]
-- !private ["s8HashableP", "contentView"]
-- !private ["s8HashableP", "contentViewEdgeInsets"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "imageView"]
-- !private ["s8HashableP", "imageViewEdgeInsets"]
-- !private ["s8HashableP", "imageViewEdgeInsetsPreset"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "layoutSubviews"]
-- ["s8HashableP", "none"]
-- ["s8HashableP", "partial"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "removeFromSuperview"]
-- !private ["s8HashableP", "sendSubview"]
-- !private ["s8HashableP", "toolbar"]
-- !private ["s8HashableP", "toolbarAlignment"]
-- !private ["s8HashableP", "toolbarEdgeInsets"]
-- !private ["s8HashableP", "top"]
+- ["SH", "DisplayStyle"]
+- ["SH", "EdgeInsets"]
+- ["SH", "EdgeInsetsPreset"]
+- !private ["SH", "EdgeInsetsPresetToValue"]
+- ["SH", "ToolbarAlignment"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- ["SH", "bottom"]
+- !private ["SH", "bottomBar"]
+- !private ["SH", "bottomBarEdgeInsets"]
+- !private ["SH", "bounds"]
+- !private ["SH", "bringSubview"]
+- !private ["SH", "container"]
+- !private ["SH", "contentView"]
+- !private ["SH", "contentViewEdgeInsets"]
+- !private ["SH", "frame"]
+- !private ["SH", "imageView"]
+- !private ["SH", "imageViewEdgeInsets"]
+- !private ["SH", "imageViewEdgeInsetsPreset"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "layoutSubviews"]
+- ["SH", "none"]
+- ["SH", "partial"]
+- !private ["SH", "prepare"]
+- !private ["SH", "removeFromSuperview"]
+- !private ["SH", "sendSubview"]
+- !private ["SH", "toolbar"]
+- !private ["SH", "toolbarAlignment"]
+- !private ["SH", "toolbarEdgeInsets"]
+- !private ["SH", "top"]
 - !private ["8Material9ImageCardC", "CGFloat"]
 - ["8Material9ImageCardC", "DisplayStyle"]
 - ["8Material9ImageCardC", "EdgeInsets"]
@@ -269,7 +277,7 @@ depends-member:
 - !private ["8Material9ImageCardC", "container"]
 - !private ["8Material9ImageCardC", "contentView"]
 - !private ["8Material9ImageCardC", "contentViewEdgeInsets"]
-- ["8Material9ImageCardC", "deinit"]
+- !private ["8Material9ImageCardC", "deinit"]
 - ["8Material9ImageCardC", "displayStyle"]
 - ["8Material9ImageCardC", "imageView"]
 - ["8Material9ImageCardC", "imageViewEdgeInsets"]
@@ -301,6 +309,7 @@ depends-member:
 - !private ["So8NSCodingP", "imageViewEdgeInsets"]
 - !private ["So8NSCodingP", "imageViewEdgeInsetsPreset"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layoutSubviews"]
 - !private ["So8NSCodingP", "prepare"]
 - !private ["So8NSCodingP", "removeFromSuperview"]
@@ -329,6 +338,7 @@ depends-member:
 - ["So8NSObjectC", "imageViewEdgeInsets"]
 - ["So8NSObjectC", "imageViewEdgeInsetsPreset"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layoutSubviews"]
 - !private ["So8NSObjectC", "prepare"]
 - ["So8NSObjectC", "reload"]
@@ -337,32 +347,33 @@ depends-member:
 - !private ["So8NSObjectC", "toolbar"]
 - ["So8NSObjectC", "toolbarAlignment"]
 - !private ["So8NSObjectC", "toolbarEdgeInsets"]
-- ["So16NSObjectProtocolP", "DisplayStyle"]
-- ["So16NSObjectProtocolP", "EdgeInsets"]
-- ["So16NSObjectProtocolP", "EdgeInsetsPreset"]
-- !private ["So16NSObjectProtocolP", "EdgeInsetsPresetToValue"]
-- ["So16NSObjectProtocolP", "ToolbarAlignment"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "bottomBar"]
-- !private ["So16NSObjectProtocolP", "bottomBarEdgeInsets"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "bringSubview"]
-- !private ["So16NSObjectProtocolP", "container"]
-- !private ["So16NSObjectProtocolP", "contentView"]
-- !private ["So16NSObjectProtocolP", "contentViewEdgeInsets"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "imageView"]
-- !private ["So16NSObjectProtocolP", "imageViewEdgeInsets"]
-- !private ["So16NSObjectProtocolP", "imageViewEdgeInsetsPreset"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "removeFromSuperview"]
-- !private ["So16NSObjectProtocolP", "sendSubview"]
-- !private ["So16NSObjectProtocolP", "toolbar"]
-- !private ["So16NSObjectProtocolP", "toolbarAlignment"]
-- !private ["So16NSObjectProtocolP", "toolbarEdgeInsets"]
+- ["So8NSObjectP", "DisplayStyle"]
+- ["So8NSObjectP", "EdgeInsets"]
+- ["So8NSObjectP", "EdgeInsetsPreset"]
+- !private ["So8NSObjectP", "EdgeInsetsPresetToValue"]
+- ["So8NSObjectP", "ToolbarAlignment"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "bottomBar"]
+- !private ["So8NSObjectP", "bottomBarEdgeInsets"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "bringSubview"]
+- !private ["So8NSObjectP", "container"]
+- !private ["So8NSObjectP", "contentView"]
+- !private ["So8NSObjectP", "contentViewEdgeInsets"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "imageView"]
+- !private ["So8NSObjectP", "imageViewEdgeInsets"]
+- !private ["So8NSObjectP", "imageViewEdgeInsetsPreset"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "removeFromSuperview"]
+- !private ["So8NSObjectP", "sendSubview"]
+- !private ["So8NSObjectP", "toolbar"]
+- !private ["So8NSObjectP", "toolbarAlignment"]
+- !private ["So8NSObjectP", "toolbarEdgeInsets"]
 - !private ["8Material9PulseViewC", "CGFloat"]
 - ["8Material9PulseViewC", "DisplayStyle"]
 - ["8Material9PulseViewC", "EdgeInsets"]
@@ -381,6 +392,7 @@ depends-member:
 - ["8Material9PulseViewC", "imageViewEdgeInsets"]
 - ["8Material9PulseViewC", "imageViewEdgeInsetsPreset"]
 - ["8Material9PulseViewC", "init"]
+- !private ["8Material9PulseViewC", "init"]
 - !private ["8Material9PulseViewC", "layoutSubviews"]
 - !private ["8Material9PulseViewC", "prepare"]
 - ["8Material9PulseViewC", "reload"]
@@ -403,6 +415,7 @@ depends-member:
 - !private ["8Material9PulseableP", "imageViewEdgeInsets"]
 - !private ["8Material9PulseableP", "imageViewEdgeInsetsPreset"]
 - !private ["8Material9PulseableP", "init"]
+- !private ["8Material9PulseableP", "init"]
 - !private ["8Material9PulseableP", "layoutSubviews"]
 - !private ["8Material9PulseableP", "prepare"]
 - !private ["8Material9PulseableP", "toolbar"]
@@ -424,15 +437,16 @@ depends-member:
 - !private ["8Material14PulseableLayerP", "imageViewEdgeInsets"]
 - !private ["8Material14PulseableLayerP", "imageViewEdgeInsetsPreset"]
 - !private ["8Material14PulseableLayerP", "init"]
+- !private ["8Material14PulseableLayerP", "init"]
 - !private ["8Material14PulseableLayerP", "layoutSubviews"]
 - !private ["8Material14PulseableLayerP", "prepare"]
 - !private ["8Material14PulseableLayerP", "toolbar"]
 - !private ["8Material14PulseableLayerP", "toolbarAlignment"]
 - !private ["8Material14PulseableLayerP", "toolbarEdgeInsets"]
-- ["s16RawRepresentableP", "bottom"]
-- ["s16RawRepresentableP", "none"]
-- ["s16RawRepresentableP", "partial"]
-- !private ["s16RawRepresentableP", "top"]
+- ["SY", "bottom"]
+- ["SY", "none"]
+- ["SY", "partial"]
+- !private ["SY", "top"]
 - !private ["8Material7ToolbarC", "bounds"]
 - !private ["8Material7ToolbarC", "deinit"]
 - !private ["8Material7ToolbarC", "frame"]
@@ -458,6 +472,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "imageView"]
 - !private ["So29UIAccessibilityIdentificationP", "imageViewEdgeInsets"]
 - !private ["So29UIAccessibilityIdentificationP", "imageViewEdgeInsetsPreset"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layoutSubviews"]
 - !private ["So29UIAccessibilityIdentificationP", "prepare"]
@@ -485,6 +500,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "imageViewEdgeInsets"]
 - !private ["So12UIAppearanceP", "imageViewEdgeInsetsPreset"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "layoutSubviews"]
 - !private ["So12UIAppearanceP", "prepare"]
 - !private ["So12UIAppearanceP", "removeFromSuperview"]
@@ -510,6 +526,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "imageViewEdgeInsets"]
 - !private ["So21UIAppearanceContainerP", "imageViewEdgeInsetsPreset"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layoutSubviews"]
 - !private ["So21UIAppearanceContainerP", "prepare"]
@@ -537,6 +554,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "imageViewEdgeInsets"]
 - !private ["So17UICoordinateSpaceP", "imageViewEdgeInsetsPreset"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "layoutSubviews"]
 - !private ["So17UICoordinateSpaceP", "prepare"]
 - !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
@@ -563,6 +581,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "imageViewEdgeInsets"]
 - !private ["So13UIDynamicItemP", "imageViewEdgeInsetsPreset"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "layoutSubviews"]
 - !private ["So13UIDynamicItemP", "prepare"]
 - !private ["So13UIDynamicItemP", "removeFromSuperview"]
@@ -570,9 +589,9 @@ depends-member:
 - !private ["So13UIDynamicItemP", "toolbar"]
 - !private ["So13UIDynamicItemP", "toolbarAlignment"]
 - !private ["So13UIDynamicItemP", "toolbarEdgeInsets"]
-- !private ["SC12UIEdgeInsetsV", "bottom"]
-- !private ["SC12UIEdgeInsetsV", "top"]
-- ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So12UIEdgeInsetsV", "bottom"]
+- !private ["So12UIEdgeInsetsV", "top"]
+- ["So12UIEdgeInsetsV", "zero"]
 - ["So18UIFocusEnvironmentP", "DisplayStyle"]
 - ["So18UIFocusEnvironmentP", "EdgeInsets"]
 - ["So18UIFocusEnvironmentP", "EdgeInsetsPreset"]
@@ -591,6 +610,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "imageViewEdgeInsets"]
 - !private ["So18UIFocusEnvironmentP", "imageViewEdgeInsetsPreset"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layoutSubviews"]
 - !private ["So18UIFocusEnvironmentP", "prepare"]
@@ -618,6 +638,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "imageViewEdgeInsets"]
 - !private ["So11UIFocusItemP", "imageViewEdgeInsetsPreset"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "layoutSubviews"]
 - !private ["So11UIFocusItemP", "prepare"]
 - !private ["So11UIFocusItemP", "removeFromSuperview"]
@@ -625,6 +646,33 @@ depends-member:
 - !private ["So11UIFocusItemP", "toolbar"]
 - !private ["So11UIFocusItemP", "toolbarAlignment"]
 - !private ["So11UIFocusItemP", "toolbarEdgeInsets"]
+- ["So20UIFocusItemContainerP", "DisplayStyle"]
+- ["So20UIFocusItemContainerP", "EdgeInsets"]
+- ["So20UIFocusItemContainerP", "EdgeInsetsPreset"]
+- !private ["So20UIFocusItemContainerP", "EdgeInsetsPresetToValue"]
+- ["So20UIFocusItemContainerP", "ToolbarAlignment"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "bottomBar"]
+- !private ["So20UIFocusItemContainerP", "bottomBarEdgeInsets"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "bringSubview"]
+- !private ["So20UIFocusItemContainerP", "container"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
+- !private ["So20UIFocusItemContainerP", "contentViewEdgeInsets"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "imageView"]
+- !private ["So20UIFocusItemContainerP", "imageViewEdgeInsets"]
+- !private ["So20UIFocusItemContainerP", "imageViewEdgeInsetsPreset"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layoutSubviews"]
+- !private ["So20UIFocusItemContainerP", "prepare"]
+- !private ["So20UIFocusItemContainerP", "removeFromSuperview"]
+- !private ["So20UIFocusItemContainerP", "sendSubview"]
+- !private ["So20UIFocusItemContainerP", "toolbar"]
+- !private ["So20UIFocusItemContainerP", "toolbarAlignment"]
+- !private ["So20UIFocusItemContainerP", "toolbarEdgeInsets"]
 - !private ["So11UIImageViewC", "removeFromSuperview"]
 - ["So30UIPasteConfigurationSupportingP", "DisplayStyle"]
 - ["So30UIPasteConfigurationSupportingP", "EdgeInsets"]
@@ -644,6 +692,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageViewEdgeInsets"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageViewEdgeInsetsPreset"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
 - !private ["So30UIPasteConfigurationSupportingP", "prepare"]
@@ -673,6 +722,7 @@ depends-member:
 - ["So11UIResponderC", "imageViewEdgeInsets"]
 - ["So11UIResponderC", "imageViewEdgeInsetsPreset"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layoutSubviews"]
 - !private ["So11UIResponderC", "prepare"]
 - ["So11UIResponderC", "reload"]
@@ -700,6 +750,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "imageViewEdgeInsets"]
 - !private ["So30UIResponderStandardEditActionsP", "imageViewEdgeInsetsPreset"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
 - !private ["So30UIResponderStandardEditActionsP", "prepare"]
 - !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
@@ -726,6 +777,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "imageViewEdgeInsets"]
 - !private ["So18UITraitEnvironmentP", "imageViewEdgeInsetsPreset"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layoutSubviews"]
 - !private ["So18UITraitEnvironmentP", "prepare"]
 - !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
@@ -733,6 +785,33 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "toolbar"]
 - !private ["So18UITraitEnvironmentP", "toolbarAlignment"]
 - !private ["So18UITraitEnvironmentP", "toolbarEdgeInsets"]
+- ["So23UIUserActivityRestoringP", "DisplayStyle"]
+- ["So23UIUserActivityRestoringP", "EdgeInsets"]
+- ["So23UIUserActivityRestoringP", "EdgeInsetsPreset"]
+- !private ["So23UIUserActivityRestoringP", "EdgeInsetsPresetToValue"]
+- ["So23UIUserActivityRestoringP", "ToolbarAlignment"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "bottomBar"]
+- !private ["So23UIUserActivityRestoringP", "bottomBarEdgeInsets"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "bringSubview"]
+- !private ["So23UIUserActivityRestoringP", "container"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
+- !private ["So23UIUserActivityRestoringP", "contentViewEdgeInsets"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "imageView"]
+- !private ["So23UIUserActivityRestoringP", "imageViewEdgeInsets"]
+- !private ["So23UIUserActivityRestoringP", "imageViewEdgeInsetsPreset"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "removeFromSuperview"]
+- !private ["So23UIUserActivityRestoringP", "sendSubview"]
+- !private ["So23UIUserActivityRestoringP", "toolbar"]
+- !private ["So23UIUserActivityRestoringP", "toolbarAlignment"]
+- !private ["So23UIUserActivityRestoringP", "toolbarEdgeInsets"]
 - !private ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "DisplayStyle"]
 - ["So6UIViewC", "EdgeInsets"]
@@ -754,6 +833,7 @@ depends-member:
 - ["So6UIViewC", "imageViewEdgeInsets"]
 - ["So6UIViewC", "imageViewEdgeInsetsPreset"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layoutSubviews"]
 - !private ["So6UIViewC", "prepare"]
 - ["So6UIViewC", "reload"]
@@ -781,6 +861,7 @@ depends-member:
 - ["8Material4ViewC", "imageViewEdgeInsets"]
 - ["8Material4ViewC", "imageViewEdgeInsetsPreset"]
 - ["8Material4ViewC", "init"]
+- !private ["8Material4ViewC", "init"]
 - !private ["8Material4ViewC", "layoutSubviews"]
 - !private ["8Material4ViewC", "prepare"]
 - ["8Material4ViewC", "reload"]
@@ -805,6 +886,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageViewEdgeInsets"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageViewEdgeInsetsPreset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layoutSubviews"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepare"]
@@ -833,6 +915,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageViewEdgeInsets"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageViewEdgeInsetsPreset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
@@ -852,31 +935,31 @@ depends-nominal:
 - !private "8Material3BarC"
 - !private "Sb"
 - "So15CALayerDelegateP"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
 - "8Material4CardC"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - "8Material12DisplayStyleO"
 - "8Material16EdgeInsetsPresetO"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - "8Material9ImageCardC"
 - !private "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "8Material9PulseViewC"
 - "8Material9PulseableP"
 - "8Material14PulseableLayerP"
-- "s16RawRepresentableP"
+- "SY"
 - !private "8Material7ToolbarC"
 - "8Material16ToolbarAlignmentO"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -885,14 +968,16 @@ depends-nominal:
 - "So21UIAppearanceContainerP"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
-- "SC12UIEdgeInsetsV"
+- "So12UIEdgeInsetsV"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So11UIImageViewC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "8Material4ViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -901,42 +986,43 @@ depends-nominal:
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "507ba29d1e085ae04316f4ca91843c9b"

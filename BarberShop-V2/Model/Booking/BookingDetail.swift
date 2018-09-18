@@ -9,12 +9,11 @@
 import Foundation
 
 
-struct BookingDetail: Decodable {
-    
-    let user_id: UserSocial
-    let location_id:LocationDetail
-    let team_id:TeamDetails
-    let seva_id:ServicesDetails
+struct BookingDetail: Codable {
+    let user_id: Int
     let work_time: String
+    let location_id:LocationDetail
+    let service_id:ServicesDetails
+    let team_id:TeamDetails    
 }
 

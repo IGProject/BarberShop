@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LocationDetail: Decodable {
+struct LocationDetail: Codable {
     let id: Int?
     let address: String?
     let phone: String?

@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ServicesDetails: Decodable{
+struct ServicesDetails: Codable{
     //filed of Service
     let id:Int?
     let title:String?
@@ -20,7 +20,7 @@ struct ServicesDetails: Decodable{
 }
 
 //subclass name Service Profile of Service
-struct ServiceProfiles: Decodable{
+struct ServiceProfiles: Codable{
     let file_id:String?
     let file_name:String
     let file_path:String?

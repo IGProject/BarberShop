@@ -21,6 +21,7 @@ depends-top-level:
 - "NSObject"
 - "PublishSubject"
 - "RxCollectionViewDataSourcePrefetchingProxy"
+- !private "StringLiteralType"
 - "UICollectionView"
 - "UICollectionViewDataSourcePrefetching"
 - "collectionViewPrefetchDataSourceNotSet"
@@ -41,6 +42,7 @@ depends-member:
 - ["s7CVarArgP", "forwardToDelegate"]
 - ["s7CVarArgP", "identifier"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "prefetchDataSource"]
 - !private ["s7CVarArgP", "register"]
 - ["s7CVarArgP", "registerKnownImplementations"]
@@ -63,12 +65,15 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "forwardToDelegate"]
 - ["s28CustomDebugStringConvertibleP", "identifier"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "next"]
 - ["s28CustomDebugStringConvertibleP", "prefetchDataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "register"]
 - ["s28CustomDebugStringConvertibleP", "registerKnownImplementations"]
 - ["s28CustomDebugStringConvertibleP", "setCurrentDelegate"]
 - ["s28CustomDebugStringConvertibleP", "setForwardToDelegate"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Delegate"]
 - ["s23CustomStringConvertibleP", "ParentObject"]
 - ["s23CustomStringConvertibleP", "PrefetchDataSource"]
@@ -83,6 +88,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "forwardToDelegate"]
 - ["s23CustomStringConvertibleP", "identifier"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "prefetchDataSource"]
 - !private ["s23CustomStringConvertibleP", "register"]
 - ["s23CustomStringConvertibleP", "registerKnownImplementations"]
@@ -129,29 +135,36 @@ depends-member:
 - ["7RxCocoa17DelegateProxyTypeP", "setForwardToDelegate"]
 - !private ["7RxSwift10DisposableP", "init"]
 - !private ["7RxSwift10DisposableP", "on"]
-- ["s9EquatableP", "Delegate"]
-- ["s9EquatableP", "ParentObject"]
-- ["s9EquatableP", "PrefetchDataSource"]
-- !private ["s9EquatableP", "PublishSubject"]
-- !private ["s9EquatableP", "RxCollectionViewDataSourcePrefetchingProxy"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_prefetchItemsPublishSubject"]
-- !private ["s9EquatableP", "_requiredMethodsPrefetchDataSource"]
-- ["s9EquatableP", "collectionView"]
-- ["s9EquatableP", "collectionViewPrefetchDataSourceNotSet"]
-- ["s9EquatableP", "currentDelegate"]
-- ["s9EquatableP", "forwardToDelegate"]
-- ["s9EquatableP", "identifier"]
-- ["s9EquatableP", "init"]
-- ["s9EquatableP", "prefetchDataSource"]
-- !private ["s9EquatableP", "register"]
-- ["s9EquatableP", "registerKnownImplementations"]
-- ["s9EquatableP", "setCurrentDelegate"]
-- ["s9EquatableP", "setForwardToDelegate"]
+- ["SQ", "Delegate"]
+- ["SQ", "ParentObject"]
+- ["SQ", "PrefetchDataSource"]
+- !private ["SQ", "PublishSubject"]
+- !private ["SQ", "RxCollectionViewDataSourcePrefetchingProxy"]
+- ["SQ", ""]
+- !private ["SQ", "_prefetchItemsPublishSubject"]
+- !private ["SQ", "_requiredMethodsPrefetchDataSource"]
+- ["SQ", "collectionView"]
+- ["SQ", "collectionViewPrefetchDataSourceNotSet"]
+- ["SQ", "currentDelegate"]
+- ["SQ", "forwardToDelegate"]
+- ["SQ", "identifier"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "prefetchDataSource"]
+- !private ["SQ", "register"]
+- ["SQ", "registerKnownImplementations"]
+- ["SQ", "setCurrentDelegate"]
+- ["SQ", "setForwardToDelegate"]
 - !private ["7RxSwift5EventO", "completed"]
 - !private ["7RxSwift5EventO", "next"]
 - !private ["7RxSwift16EventConvertibleP", "completed"]
 - !private ["7RxSwift16EventConvertibleP", "next"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["7RxCocoa13HasDataSourceP", "PrefetchDataSource"]
 - ["7RxCocoa13HasDataSourceP", "prefetchDataSource"]
 - ["7RxCocoa11HasDelegateP", "PrefetchDataSource"]
@@ -159,25 +172,26 @@ depends-member:
 - ["7RxCocoa21HasPrefetchDataSourceP", "PrefetchDataSource"]
 - ["7RxCocoa21HasPrefetchDataSourceP", ""]
 - ["7RxCocoa21HasPrefetchDataSourceP", "prefetchDataSource"]
-- ["s8HashableP", "Delegate"]
-- ["s8HashableP", "ParentObject"]
-- ["s8HashableP", "PrefetchDataSource"]
-- !private ["s8HashableP", "PublishSubject"]
-- !private ["s8HashableP", "RxCollectionViewDataSourcePrefetchingProxy"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_prefetchItemsPublishSubject"]
-- !private ["s8HashableP", "_requiredMethodsPrefetchDataSource"]
-- ["s8HashableP", "collectionView"]
-- ["s8HashableP", "collectionViewPrefetchDataSourceNotSet"]
-- ["s8HashableP", "currentDelegate"]
-- ["s8HashableP", "forwardToDelegate"]
-- ["s8HashableP", "identifier"]
-- ["s8HashableP", "init"]
-- ["s8HashableP", "prefetchDataSource"]
-- !private ["s8HashableP", "register"]
-- ["s8HashableP", "registerKnownImplementations"]
-- ["s8HashableP", "setCurrentDelegate"]
-- ["s8HashableP", "setForwardToDelegate"]
+- ["SH", "Delegate"]
+- ["SH", "ParentObject"]
+- ["SH", "PrefetchDataSource"]
+- !private ["SH", "PublishSubject"]
+- !private ["SH", "RxCollectionViewDataSourcePrefetchingProxy"]
+- ["SH", ""]
+- !private ["SH", "_prefetchItemsPublishSubject"]
+- !private ["SH", "_requiredMethodsPrefetchDataSource"]
+- ["SH", "collectionView"]
+- ["SH", "collectionViewPrefetchDataSourceNotSet"]
+- ["SH", "currentDelegate"]
+- ["SH", "forwardToDelegate"]
+- ["SH", "identifier"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "prefetchDataSource"]
+- !private ["SH", "register"]
+- ["SH", "registerKnownImplementations"]
+- ["SH", "setCurrentDelegate"]
+- ["SH", "setForwardToDelegate"]
 - ["So8NSCodingP", "PrefetchDataSource"]
 - ["So8NSCodingP", "prefetchDataSource"]
 - ["So8NSObjectC", "Bool"]
@@ -198,31 +212,33 @@ depends-member:
 - ["So8NSObjectC", "forwardToDelegate"]
 - ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "prefetchDataSource"]
 - ["So8NSObjectC", "prefetchItemsPublishSubject"]
 - !private ["So8NSObjectC", "register"]
 - ["So8NSObjectC", "registerKnownImplementations"]
 - ["So8NSObjectC", "setCurrentDelegate"]
 - ["So8NSObjectC", "setForwardToDelegate"]
-- ["So16NSObjectProtocolP", "Delegate"]
-- ["So16NSObjectProtocolP", "ParentObject"]
-- ["So16NSObjectProtocolP", "PrefetchDataSource"]
-- !private ["So16NSObjectProtocolP", "PublishSubject"]
-- !private ["So16NSObjectProtocolP", "RxCollectionViewDataSourcePrefetchingProxy"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "_prefetchItemsPublishSubject"]
-- !private ["So16NSObjectProtocolP", "_requiredMethodsPrefetchDataSource"]
-- ["So16NSObjectProtocolP", "collectionView"]
-- ["So16NSObjectProtocolP", "collectionViewPrefetchDataSourceNotSet"]
-- ["So16NSObjectProtocolP", "currentDelegate"]
-- ["So16NSObjectProtocolP", "forwardToDelegate"]
-- ["So16NSObjectProtocolP", "identifier"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So16NSObjectProtocolP", "prefetchDataSource"]
-- !private ["So16NSObjectProtocolP", "register"]
-- ["So16NSObjectProtocolP", "registerKnownImplementations"]
-- ["So16NSObjectProtocolP", "setCurrentDelegate"]
-- ["So16NSObjectProtocolP", "setForwardToDelegate"]
+- ["So8NSObjectP", "Delegate"]
+- ["So8NSObjectP", "ParentObject"]
+- ["So8NSObjectP", "PrefetchDataSource"]
+- !private ["So8NSObjectP", "PublishSubject"]
+- !private ["So8NSObjectP", "RxCollectionViewDataSourcePrefetchingProxy"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "_prefetchItemsPublishSubject"]
+- !private ["So8NSObjectP", "_requiredMethodsPrefetchDataSource"]
+- ["So8NSObjectP", "collectionView"]
+- ["So8NSObjectP", "collectionViewPrefetchDataSourceNotSet"]
+- ["So8NSObjectP", "currentDelegate"]
+- ["So8NSObjectP", "forwardToDelegate"]
+- ["So8NSObjectP", "identifier"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "prefetchDataSource"]
+- !private ["So8NSObjectP", "register"]
+- ["So8NSObjectP", "registerKnownImplementations"]
+- ["So8NSObjectP", "setCurrentDelegate"]
+- ["So8NSObjectP", "setForwardToDelegate"]
 - !private ["7RxSwift10ObservableC", "init"]
 - !private ["7RxSwift10ObservableC", "on"]
 - !private ["7RxSwift25ObservableConvertibleTypeP", "init"]
@@ -247,6 +263,7 @@ depends-member:
 - ["7RxSwift18ReactiveCompatibleP", "forwardToDelegate"]
 - ["7RxSwift18ReactiveCompatibleP", "identifier"]
 - ["7RxSwift18ReactiveCompatibleP", "init"]
+- !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - ["7RxSwift18ReactiveCompatibleP", "prefetchDataSource"]
 - !private ["7RxSwift18ReactiveCompatibleP", "register"]
 - ["7RxSwift18ReactiveCompatibleP", "registerKnownImplementations"]
@@ -274,6 +291,8 @@ depends-member:
 - ["7RxCocoa0A40CollectionViewDataSourcePrefetchingProxyC", "registerKnownImplementations"]
 - ["7RxCocoa0A40CollectionViewDataSourcePrefetchingProxyC", "setCurrentDelegate"]
 - ["7RxCocoa0A40CollectionViewDataSourcePrefetchingProxyC", "setForwardToDelegate"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - !private ["7RxSwift11SubjectTypeP", "init"]
 - !private ["7RxSwift11SubjectTypeP", "on"]
 - !private ["7RxSwift27SynchronizedUnsubscribeTypeP", "init"]
@@ -315,6 +334,10 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "prefetchDataSource"]
 - ["So11UIFocusItemP", "PrefetchDataSource"]
 - ["So11UIFocusItemP", "prefetchDataSource"]
+- ["So20UIFocusItemContainerP", "PrefetchDataSource"]
+- ["So20UIFocusItemContainerP", "prefetchDataSource"]
+- ["So30UIFocusItemScrollableContainerP", "PrefetchDataSource"]
+- ["So30UIFocusItemScrollableContainerP", "prefetchDataSource"]
 - ["So30UIPasteConfigurationSupportingP", "PrefetchDataSource"]
 - ["So30UIPasteConfigurationSupportingP", "prefetchDataSource"]
 - ["So11UIResponderC", "PrefetchDataSource"]
@@ -329,11 +352,19 @@ depends-member:
 - ["So35UISpringLoadedInteractionSupportingP", "prefetchDataSource"]
 - ["So18UITraitEnvironmentP", "PrefetchDataSource"]
 - ["So18UITraitEnvironmentP", "prefetchDataSource"]
+- ["So23UIUserActivityRestoringP", "PrefetchDataSource"]
+- ["So23UIUserActivityRestoringP", "prefetchDataSource"]
 - ["So6UIViewC", "PrefetchDataSource"]
 - ["So6UIViewC", "UICollectionViewDataSourcePrefetching"]
 - ["So6UIViewC", "prefetchDataSource"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "PrefetchDataSource"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "prefetchDataSource"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Delegate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ParentObject"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "PrefetchDataSource"]
@@ -348,6 +379,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "forwardToDelegate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "prefetchDataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "registerKnownImplementations"]
@@ -378,20 +410,24 @@ depends-nominal:
 - "s7CVarArgP"
 - !private "7RxSwift10CancelableP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "7RxCocoa13DelegateProxyC"
 - "7RxCocoa17DelegateProxyTypeP"
 - !private "7RxSwift10DisposableP"
-- "s9EquatableP"
+- "SQ"
 - !private "7RxSwift5EventO"
 - !private "7RxSwift16EventConvertibleP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "7RxCocoa13HasDataSourceP"
 - "7RxCocoa11HasDelegateP"
 - "7RxCocoa21HasPrefetchDataSourceP"
-- "s8HashableP"
+- "SH"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "7RxSwift10ObservableC"
 - !private "7RxSwift25ObservableConvertibleTypeP"
 - !private "7RxSwift14ObservableTypeP"
@@ -399,6 +435,7 @@ depends-nominal:
 - !private "7RxSwift14PublishSubjectC"
 - "7RxSwift18ReactiveCompatibleP"
 - "7RxCocoa0A40CollectionViewDataSourcePrefetchingProxyC"
+- !private "s12StaticStringV"
 - !private "7RxSwift11SubjectTypeP"
 - !private "7RxSwift27SynchronizedUnsubscribeTypeP"
 - "So29UIAccessibilityIdentificationP"
@@ -411,32 +448,38 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So12UIScrollViewC"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "So16_RXDelegateProxyC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
@@ -448,14 +491,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "e4660ed3b70a3389b88fe6b99eba2440"

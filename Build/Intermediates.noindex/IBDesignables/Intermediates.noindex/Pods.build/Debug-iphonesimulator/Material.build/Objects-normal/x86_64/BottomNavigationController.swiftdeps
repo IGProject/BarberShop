@@ -11,7 +11,6 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "viewWillLayoutSubviews"
 depends-top-level:
-- !private "!="
 - !private "-"
 - !private "=="
 - "AssignmentPrecedence"
@@ -19,9 +18,10 @@ depends-top-level:
 - "BottomNavigationController"
 - "Bundle"
 - !private "CGFloat"
-- "CastingPrecedence"
 - !private "Color"
 - !private "Device"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSCoder"
 - !private "Screen"
 - "String"
@@ -41,7 +41,7 @@ depends-member:
 - !private ["8Material26BottomNavigationControllerC", "UIEdgeInsetsMake"]
 - !private ["8Material26BottomNavigationControllerC", "UIImage"]
 - ["8Material26BottomNavigationControllerC", "UIViewController"]
-- ["8Material26BottomNavigationControllerC", "deinit"]
+- !private ["8Material26BottomNavigationControllerC", "deinit"]
 - ["8Material26BottomNavigationControllerC", "init"]
 - ["8Material26BottomNavigationControllerC", "layoutSubviews"]
 - ["8Material26BottomNavigationControllerC", "prepare"]
@@ -83,13 +83,13 @@ depends-member:
 - !private ["s7CVarArgP", "items"]
 - !private ["s7CVarArgP", "layoutDivider"]
 - !private ["s7CVarArgP", "layoutSubviews"]
-- !private ["s7CVarArgP", "parent"]
 - !private ["s7CVarArgP", "prepare"]
 - !private ["s7CVarArgP", "prepareTabBar"]
 - !private ["s7CVarArgP", "shadowImage"]
 - !private ["s7CVarArgP", "tabBar"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "titlePositionAdjustment"]
+- !private ["s7CVarArgP", "traverseViewControllerHierarchyForClassType"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -117,13 +117,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "items"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutDivider"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
-- !private ["s28CustomDebugStringConvertibleP", "parent"]
 - !private ["s28CustomDebugStringConvertibleP", "prepare"]
 - !private ["s28CustomDebugStringConvertibleP", "prepareTabBar"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
 - !private ["s28CustomDebugStringConvertibleP", "tabBar"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "titlePositionAdjustment"]
+- !private ["s28CustomDebugStringConvertibleP", "traverseViewControllerHierarchyForClassType"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
@@ -131,6 +131,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "clipsToBounds"]
+- !private ["s17CustomReflectableP", "contentScaleFactor"]
 - !private ["s17CustomReflectableP", "white"]
 - !private ["s23CustomStringConvertibleP", "Color"]
 - !private ["s23CustomStringConvertibleP", "Device"]
@@ -153,99 +156,108 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "items"]
 - !private ["s23CustomStringConvertibleP", "layoutDivider"]
 - !private ["s23CustomStringConvertibleP", "layoutSubviews"]
-- !private ["s23CustomStringConvertibleP", "parent"]
 - !private ["s23CustomStringConvertibleP", "prepare"]
 - !private ["s23CustomStringConvertibleP", "prepareTabBar"]
 - !private ["s23CustomStringConvertibleP", "shadowImage"]
 - !private ["s23CustomStringConvertibleP", "tabBar"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "titlePositionAdjustment"]
+- !private ["s23CustomStringConvertibleP", "traverseViewControllerHierarchyForClassType"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillLayoutSubviews"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "white"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "backgroundColor"]
+- !private ["Se", "clipsToBounds"]
+- !private ["Se", "contentScaleFactor"]
+- !private ["Se", "white"]
 - !private ["8Material6DeviceV", "userInterfaceIdiom"]
 - !private ["8Material16DividerAlignmentO", "top"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "white"]
-- !private ["s9EquatableP", "Color"]
-- !private ["s9EquatableP", "Device"]
-- !private ["s9EquatableP", "Screen"]
-- !private ["s9EquatableP", "UIEdgeInsetsMake"]
-- !private ["s9EquatableP", "UIImage"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "backgroundImage"]
-- !private ["s9EquatableP", "clipsToBounds"]
-- !private ["s9EquatableP", "contentScaleFactor"]
-- !private ["s9EquatableP", "dividerAlignment"]
-- !private ["s9EquatableP", "dividerColor"]
-- !private ["s9EquatableP", "grey"]
-- !private ["s9EquatableP", "heightPreset"]
-- !private ["s9EquatableP", "imageInsets"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isTranslucent"]
-- !private ["s9EquatableP", "items"]
-- !private ["s9EquatableP", "layoutDivider"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- !private ["s9EquatableP", "normal"]
-- !private ["s9EquatableP", "parent"]
-- !private ["s9EquatableP", "phone"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "prepareTabBar"]
-- !private ["s9EquatableP", "shadowImage"]
-- !private ["s9EquatableP", "tabBar"]
-- !private ["s9EquatableP", "title"]
-- !private ["s9EquatableP", "titlePositionAdjustment"]
-- !private ["s9EquatableP", "top"]
-- !private ["s9EquatableP", "vertical"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "viewControllers"]
-- !private ["s9EquatableP", "viewDidLoad"]
-- !private ["s9EquatableP", "viewWillLayoutSubviews"]
-- !private ["s9EquatableP", "white"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "backgroundColor"]
+- !private ["SE", "clipsToBounds"]
+- !private ["SE", "contentScaleFactor"]
+- !private ["SE", "white"]
+- !private ["SQ", "Color"]
+- !private ["SQ", "Device"]
+- !private ["SQ", "Screen"]
+- !private ["SQ", "UIEdgeInsetsMake"]
+- !private ["SQ", "UIImage"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "backgroundImage"]
+- !private ["SQ", "clipsToBounds"]
+- !private ["SQ", "contentScaleFactor"]
+- !private ["SQ", "dividerAlignment"]
+- !private ["SQ", "dividerColor"]
+- !private ["SQ", "grey"]
+- !private ["SQ", "heightPreset"]
+- !private ["SQ", "imageInsets"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isTranslucent"]
+- !private ["SQ", "items"]
+- !private ["SQ", "layoutDivider"]
+- !private ["SQ", "layoutSubviews"]
+- !private ["SQ", "normal"]
+- !private ["SQ", "phone"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "prepareTabBar"]
+- !private ["SQ", "shadowImage"]
+- !private ["SQ", "tabBar"]
+- !private ["SQ", "title"]
+- !private ["SQ", "titlePositionAdjustment"]
+- !private ["SQ", "top"]
+- !private ["SQ", "traverseViewControllerHierarchyForClassType"]
+- !private ["SQ", "vertical"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewControllers"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWillLayoutSubviews"]
+- !private ["SQ", "white"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- !private ["s23ExpressibleByNilLiteralP", "clipsToBounds"]
+- !private ["s23ExpressibleByNilLiteralP", "contentScaleFactor"]
 - !private ["s23ExpressibleByNilLiteralP", "white"]
-- !private ["s8HashableP", "Color"]
-- !private ["s8HashableP", "Device"]
-- !private ["s8HashableP", "Screen"]
-- !private ["s8HashableP", "UIEdgeInsetsMake"]
-- !private ["s8HashableP", "UIImage"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "backgroundImage"]
-- !private ["s8HashableP", "clipsToBounds"]
-- !private ["s8HashableP", "contentScaleFactor"]
-- !private ["s8HashableP", "dividerAlignment"]
-- !private ["s8HashableP", "dividerColor"]
-- !private ["s8HashableP", "grey"]
-- !private ["s8HashableP", "heightPreset"]
-- !private ["s8HashableP", "imageInsets"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isTranslucent"]
-- !private ["s8HashableP", "items"]
-- !private ["s8HashableP", "layoutDivider"]
-- !private ["s8HashableP", "layoutSubviews"]
-- !private ["s8HashableP", "normal"]
-- !private ["s8HashableP", "parent"]
-- !private ["s8HashableP", "phone"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "prepareTabBar"]
-- !private ["s8HashableP", "shadowImage"]
-- !private ["s8HashableP", "tabBar"]
-- !private ["s8HashableP", "title"]
-- !private ["s8HashableP", "titlePositionAdjustment"]
-- !private ["s8HashableP", "top"]
-- !private ["s8HashableP", "view"]
-- !private ["s8HashableP", "viewControllers"]
-- !private ["s8HashableP", "viewDidLoad"]
-- !private ["s8HashableP", "viewWillLayoutSubviews"]
-- !private ["s8HashableP", "white"]
+- !private ["SH", "Color"]
+- !private ["SH", "Device"]
+- !private ["SH", "Screen"]
+- !private ["SH", "UIEdgeInsetsMake"]
+- !private ["SH", "UIImage"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "backgroundImage"]
+- !private ["SH", "clipsToBounds"]
+- !private ["SH", "contentScaleFactor"]
+- !private ["SH", "dividerAlignment"]
+- !private ["SH", "dividerColor"]
+- !private ["SH", "grey"]
+- !private ["SH", "heightPreset"]
+- !private ["SH", "imageInsets"]
+- !private ["SH", "init"]
+- !private ["SH", "isTranslucent"]
+- !private ["SH", "items"]
+- !private ["SH", "layoutDivider"]
+- !private ["SH", "layoutSubviews"]
+- !private ["SH", "normal"]
+- !private ["SH", "phone"]
+- !private ["SH", "prepare"]
+- !private ["SH", "prepareTabBar"]
+- !private ["SH", "shadowImage"]
+- !private ["SH", "tabBar"]
+- !private ["SH", "title"]
+- !private ["SH", "titlePositionAdjustment"]
+- !private ["SH", "top"]
+- !private ["SH", "traverseViewControllerHierarchyForClassType"]
+- !private ["SH", "view"]
+- !private ["SH", "viewControllers"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWillLayoutSubviews"]
+- !private ["SH", "white"]
 - !private ["8Material12HeightPresetO", "normal"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["So8NSCodingP", "Color"]
@@ -268,13 +280,13 @@ depends-member:
 - !private ["So8NSCodingP", "items"]
 - !private ["So8NSCodingP", "layoutDivider"]
 - !private ["So8NSCodingP", "layoutSubviews"]
-- !private ["So8NSCodingP", "parent"]
 - !private ["So8NSCodingP", "prepare"]
 - !private ["So8NSCodingP", "prepareTabBar"]
 - !private ["So8NSCodingP", "shadowImage"]
 - !private ["So8NSCodingP", "tabBar"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "titlePositionAdjustment"]
+- !private ["So8NSCodingP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewControllers"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -290,10 +302,10 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "layoutSubviews"]
-- !private ["So26NSExtensionRequestHandlingP", "parent"]
 - !private ["So26NSExtensionRequestHandlingP", "prepare"]
 - !private ["So26NSExtensionRequestHandlingP", "prepareTabBar"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBar"]
+- !private ["So26NSExtensionRequestHandlingP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -330,57 +342,60 @@ depends-member:
 - !private ["So8NSObjectC", "items"]
 - !private ["So8NSObjectC", "layoutDivider"]
 - ["So8NSObjectC", "layoutSubviews"]
-- !private ["So8NSObjectC", "parent"]
 - ["So8NSObjectC", "prepare"]
 - ["So8NSObjectC", "prepareTabBar"]
 - !private ["So8NSObjectC", "shadowImage"]
 - !private ["So8NSObjectC", "tabBar"]
 - !private ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "titlePositionAdjustment"]
+- !private ["So8NSObjectC", "traverseViewControllerHierarchyForClassType"]
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillLayoutSubviews"]
 - !private ["So8NSObjectC", "white"]
-- !private ["So16NSObjectProtocolP", "Color"]
-- !private ["So16NSObjectProtocolP", "Device"]
-- !private ["So16NSObjectProtocolP", "Screen"]
-- !private ["So16NSObjectProtocolP", "UIEdgeInsetsMake"]
-- !private ["So16NSObjectProtocolP", "UIImage"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "backgroundImage"]
-- !private ["So16NSObjectProtocolP", "clipsToBounds"]
-- !private ["So16NSObjectProtocolP", "contentScaleFactor"]
-- !private ["So16NSObjectProtocolP", "dividerAlignment"]
-- !private ["So16NSObjectProtocolP", "dividerColor"]
-- !private ["So16NSObjectProtocolP", "grey"]
-- !private ["So16NSObjectProtocolP", "heightPreset"]
-- !private ["So16NSObjectProtocolP", "imageInsets"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isTranslucent"]
-- !private ["So16NSObjectProtocolP", "items"]
-- !private ["So16NSObjectProtocolP", "layoutDivider"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "parent"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "prepareTabBar"]
-- !private ["So16NSObjectProtocolP", "shadowImage"]
-- !private ["So16NSObjectProtocolP", "tabBar"]
-- !private ["So16NSObjectProtocolP", "title"]
-- !private ["So16NSObjectProtocolP", "titlePositionAdjustment"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "viewControllers"]
-- !private ["So16NSObjectProtocolP", "viewDidLoad"]
-- !private ["So16NSObjectProtocolP", "viewWillLayoutSubviews"]
-- !private ["So16NSObjectProtocolP", "white"]
+- !private ["So8NSObjectP", "Color"]
+- !private ["So8NSObjectP", "Device"]
+- !private ["So8NSObjectP", "Screen"]
+- !private ["So8NSObjectP", "UIEdgeInsetsMake"]
+- !private ["So8NSObjectP", "UIImage"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "backgroundImage"]
+- !private ["So8NSObjectP", "clipsToBounds"]
+- !private ["So8NSObjectP", "contentScaleFactor"]
+- !private ["So8NSObjectP", "dividerAlignment"]
+- !private ["So8NSObjectP", "dividerColor"]
+- !private ["So8NSObjectP", "grey"]
+- !private ["So8NSObjectP", "heightPreset"]
+- !private ["So8NSObjectP", "imageInsets"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isTranslucent"]
+- !private ["So8NSObjectP", "items"]
+- !private ["So8NSObjectP", "layoutDivider"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "prepareTabBar"]
+- !private ["So8NSObjectP", "shadowImage"]
+- !private ["So8NSObjectP", "tabBar"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "titlePositionAdjustment"]
+- !private ["So8NSObjectP", "traverseViewControllerHierarchyForClassType"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewControllers"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWillLayoutSubviews"]
+- !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "grey"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["Sq", "backgroundColor"]
+- !private ["Sq", "clipsToBounds"]
+- !private ["Sq", "contentScaleFactor"]
 - !private ["Sq", "white"]
-- !private ["s16RawRepresentableP", "normal"]
-- !private ["s16RawRepresentableP", "phone"]
-- !private ["s16RawRepresentableP", "top"]
+- !private ["SY", "normal"]
+- !private ["SY", "phone"]
+- !private ["SY", "top"]
 - !private ["8Material6ScreenV", "scale"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundImage"]
@@ -429,11 +444,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "items"]
 - !private ["So21UIAppearanceContainerP", "layoutDivider"]
 - !private ["So21UIAppearanceContainerP", "layoutSubviews"]
-- !private ["So21UIAppearanceContainerP", "parent"]
 - !private ["So21UIAppearanceContainerP", "prepare"]
 - !private ["So21UIAppearanceContainerP", "prepareTabBar"]
 - !private ["So21UIAppearanceContainerP", "shadowImage"]
 - !private ["So21UIAppearanceContainerP", "tabBar"]
+- !private ["So21UIAppearanceContainerP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewControllers"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
@@ -451,10 +466,10 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "layoutSubviews"]
-- !private ["So18UIContentContainerP", "parent"]
 - !private ["So18UIContentContainerP", "prepare"]
 - !private ["So18UIContentContainerP", "prepareTabBar"]
 - !private ["So18UIContentContainerP", "tabBar"]
+- !private ["So18UIContentContainerP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -499,11 +514,11 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "items"]
 - !private ["So18UIFocusEnvironmentP", "layoutDivider"]
 - !private ["So18UIFocusEnvironmentP", "layoutSubviews"]
-- !private ["So18UIFocusEnvironmentP", "parent"]
 - !private ["So18UIFocusEnvironmentP", "prepare"]
 - !private ["So18UIFocusEnvironmentP", "prepareTabBar"]
 - !private ["So18UIFocusEnvironmentP", "shadowImage"]
 - !private ["So18UIFocusEnvironmentP", "tabBar"]
+- !private ["So18UIFocusEnvironmentP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -519,9 +534,20 @@ depends-member:
 - !private ["So11UIFocusItemP", "items"]
 - !private ["So11UIFocusItemP", "layoutDivider"]
 - !private ["So11UIFocusItemP", "shadowImage"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "backgroundImage"]
+- !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "contentScaleFactor"]
+- !private ["So20UIFocusItemContainerP", "dividerAlignment"]
+- !private ["So20UIFocusItemContainerP", "dividerColor"]
+- !private ["So20UIFocusItemContainerP", "heightPreset"]
+- !private ["So20UIFocusItemContainerP", "isTranslucent"]
+- !private ["So20UIFocusItemContainerP", "items"]
+- !private ["So20UIFocusItemContainerP", "layoutDivider"]
+- !private ["So20UIFocusItemContainerP", "shadowImage"]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["SC8UIOffsetV", "vertical"]
+- !private ["So8UIOffsetV", "vertical"]
 - !private ["So30UIPasteConfigurationSupportingP", "Color"]
 - !private ["So30UIPasteConfigurationSupportingP", "Device"]
 - !private ["So30UIPasteConfigurationSupportingP", "Screen"]
@@ -540,11 +566,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "items"]
 - !private ["So30UIPasteConfigurationSupportingP", "layoutDivider"]
 - !private ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
-- !private ["So30UIPasteConfigurationSupportingP", "parent"]
 - !private ["So30UIPasteConfigurationSupportingP", "prepare"]
 - !private ["So30UIPasteConfigurationSupportingP", "prepareTabBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "shadowImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "tabBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
@@ -573,11 +599,11 @@ depends-member:
 - !private ["So11UIResponderC", "items"]
 - !private ["So11UIResponderC", "layoutDivider"]
 - ["So11UIResponderC", "layoutSubviews"]
-- !private ["So11UIResponderC", "parent"]
 - ["So11UIResponderC", "prepare"]
 - ["So11UIResponderC", "prepareTabBar"]
 - !private ["So11UIResponderC", "shadowImage"]
 - !private ["So11UIResponderC", "tabBar"]
+- !private ["So11UIResponderC", "traverseViewControllerHierarchyForClassType"]
 - !private ["So11UIResponderC", "view"]
 - !private ["So11UIResponderC", "viewControllers"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -600,11 +626,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "items"]
 - !private ["So30UIResponderStandardEditActionsP", "layoutDivider"]
 - !private ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
-- !private ["So30UIResponderStandardEditActionsP", "parent"]
 - !private ["So30UIResponderStandardEditActionsP", "prepare"]
 - !private ["So30UIResponderStandardEditActionsP", "prepareTabBar"]
 - !private ["So30UIResponderStandardEditActionsP", "shadowImage"]
 - !private ["So30UIResponderStandardEditActionsP", "tabBar"]
+- !private ["So30UIResponderStandardEditActionsP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
@@ -629,10 +655,10 @@ depends-member:
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "layoutSubviews"]
-- !private ["So16UIStateRestoringP", "parent"]
 - !private ["So16UIStateRestoringP", "prepare"]
 - !private ["So16UIStateRestoringP", "prepareTabBar"]
 - !private ["So16UIStateRestoringP", "tabBar"]
+- !private ["So16UIStateRestoringP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewControllers"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -702,16 +728,43 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "items"]
 - !private ["So18UITraitEnvironmentP", "layoutDivider"]
 - !private ["So18UITraitEnvironmentP", "layoutSubviews"]
-- !private ["So18UITraitEnvironmentP", "parent"]
 - !private ["So18UITraitEnvironmentP", "prepare"]
 - !private ["So18UITraitEnvironmentP", "prepareTabBar"]
 - !private ["So18UITraitEnvironmentP", "shadowImage"]
 - !private ["So18UITraitEnvironmentP", "tabBar"]
+- !private ["So18UITraitEnvironmentP", "traverseViewControllerHierarchyForClassType"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillLayoutSubviews"]
-- !private ["SC20UIUserInterfaceIdiomO", "phone"]
+- !private ["So23UIUserActivityRestoringP", "Color"]
+- !private ["So23UIUserActivityRestoringP", "Device"]
+- !private ["So23UIUserActivityRestoringP", "Screen"]
+- !private ["So23UIUserActivityRestoringP", "UIEdgeInsetsMake"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "backgroundImage"]
+- !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
+- !private ["So23UIUserActivityRestoringP", "contentScaleFactor"]
+- !private ["So23UIUserActivityRestoringP", "dividerAlignment"]
+- !private ["So23UIUserActivityRestoringP", "dividerColor"]
+- !private ["So23UIUserActivityRestoringP", "heightPreset"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isTranslucent"]
+- !private ["So23UIUserActivityRestoringP", "items"]
+- !private ["So23UIUserActivityRestoringP", "layoutDivider"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "prepareTabBar"]
+- !private ["So23UIUserActivityRestoringP", "shadowImage"]
+- !private ["So23UIUserActivityRestoringP", "tabBar"]
+- !private ["So23UIUserActivityRestoringP", "traverseViewControllerHierarchyForClassType"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewControllers"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWillLayoutSubviews"]
+- !private ["So20UIUserInterfaceIdiomV", "phone"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "backgroundImage"]
 - !private ["So6UIViewC", "clipsToBounds"]
@@ -737,10 +790,10 @@ depends-member:
 - ["So16UIViewControllerC", "bottomNavigationController"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "layoutSubviews"]
-- !private ["So16UIViewControllerC", "parent"]
 - ["So16UIViewControllerC", "prepare"]
 - ["So16UIViewControllerC", "prepareTabBar"]
 - !private ["So16UIViewControllerC", "tabBar"]
+- !private ["So16UIViewControllerC", "traverseViewControllerHierarchyForClassType"]
 - !private ["So16UIViewControllerC", "view"]
 - !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -780,19 +833,22 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "items"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutDivider"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "parent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepareTabBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titlePositionAdjustment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "traverseViewControllerHierarchyForClassType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillLayoutSubviews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "clipsToBounds"]
+- !private ["s21_ObjectiveCBridgeableP", "contentScaleFactor"]
 - !private ["s21_ObjectiveCBridgeableP", "vertical"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["8Material5ColorC4greyC", "deinit"]
@@ -808,14 +864,14 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "8Material6DeviceV"
 - !private "8Material16DividerAlignmentO"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "8Material12HeightPresetO"
 - !private "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
@@ -824,10 +880,10 @@ depends-nominal:
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- !private "s16RawRepresentableP"
+- !private "SY"
 - !private "8Material6ScreenV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -839,9 +895,10 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
-- !private "SC8UIOffsetV"
+- !private "So8UIOffsetV"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -852,7 +909,8 @@ depends-nominal:
 - "So16UITabBarDelegateP"
 - !private "So12UITabBarItemC"
 - "So18UITraitEnvironmentP"
-- !private "SC20UIUserInterfaceIdiomO"
+- "So23UIUserActivityRestoringP"
+- !private "So20UIUserInterfaceIdiomV"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -864,42 +922,43 @@ depends-nominal:
 - !private "8Material5ColorC4greyC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "6d7e27611cafde3f58cc857c994316f8"

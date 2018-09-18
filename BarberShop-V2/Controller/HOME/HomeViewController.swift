@@ -7,81 +7,86 @@
 //
 
 import UIKit
-
+import SideMenu
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var iconImage = [#imageLiteral(resourceName: "barber-team"),#imageLiteral(resourceName: "map-location"),#imageLiteral(resourceName: "service"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "product"),#imageLiteral(resourceName: "booking")]
+    var titleIcon = ["Barber Team","Location","Services","Style Hair","Product","Booking"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
         setupClearNavigation()
+        setupSideMenu()
     }
     
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 38/255.0, green: 103/255.0, blue: 164/255.0, alpha: 1)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 38/255.0, green: 103/255.0, blue: 164/255.0, alpha: 1)
+        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+    }
+    
+    //MARK- Setup SideMenu
+    fileprivate func setupSideMenu() {
+        // Define the menus
+        SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        SideMenuManager.default.menuPresentMode = .viewSlideOut
+        
+        SideMenuManager.default.menuShadowColor = .black
+        SideMenuManager.default.menuWidth = 260
+        SideMenuManager.default.menuEnableSwipeGestures = true
+        SideMenuManager.default.menuAnimationBackgroundColor = UIColor.clear
+        
+    }
+    
+    
+    @IBAction func menuTapped(_ sender: UIBarButtonItem) {
+        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
 }
 
 extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return titleIcon.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        return UICollectionViewCell()
+        let homeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
+        homeCell.iconBarberShop.image = iconImage[indexPath.row]
+        homeCell.titleBarberShop.text = titleIcon[indexPath.row]
+        homeCell.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
+        homeCell.layer.cornerRadius = 5
+        homeCell.layer.borderWidth = 0.5
+        return homeCell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
+        cell?.layer.borderWidth = 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.white.cgColor
+        cell?.layer.borderWidth = 0.5
     }
 }
 
-////slide bar
-//extension HomeViewController: SidebarViewDelegate {
-//    func sidebarDidSelectRow(row: Row) {
-//        blackScreen.isHidden=true
-//        blackScreen.frame=self.view.bounds
-//        UIView.animate(withDuration: 0.3) {
-//            self.sidebarView.frame=CGRect(x: 0, y: 0, width: 0, height: self.sidebarView.frame.height)
-//        }
-//        switch row {
-//        case .editProfile:
-//            break
-//        case .home:
-//            let storyBoard: UIStoryboard = UIStoryboard(storyboard: .home)
-//            let home = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-//            self.navigationController?.pushViewController(home, animated: false)
-//            break
-//        case .my_appointments:
-//            print("my_appointments")
-//            break
-//        case .reward_points:
-//            print("reward_points")
-//            break
-//        case .notification:
-//            print("notification")
-//            break
-//        case .setting:
-//            print("setting")
-//            break
-//        case .transaction_history:
-//            print("transaction_history")
-//            break
-//        case .about_us:
-//            print("about_us")
-//            break
-//        case .signOut:
-////            UserDefaults.standard.set(false, forKey: "ISUSERLOGINNED")
-////            self.navigationController?.popViewController(animated: true)
-//
-//            print("logout")
-//            break
-//        default:
-//            print("default")
-//            break
-//        }
-//    }
-//}
-//
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfColumns: CGFloat = 2
+        let width = collectionView.frame.size.width
+        let xInsets:CGFloat = 10
+        let cellSpacing: CGFloat = 5
+        
+        return CGSize(width: (width/numberOfColumns) - (xInsets + cellSpacing), height: (width/numberOfColumns) - (xInsets + cellSpacing))
+    }
+}

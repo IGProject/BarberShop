@@ -54,6 +54,8 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Double"
 - !private "Float"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "MotionAnimation"
 - "MotionModifier"
 - "MotionTargetState"
@@ -78,13 +80,15 @@ depends-top-level:
 - !private "||"
 depends-member:
 - !private ["Sa", "flatMap"]
+- !private ["s13ArrayProtocolP", "flatMap"]
 - !private ["6Motion16AssociatedObjectV", "get"]
 - !private ["6Motion16AssociatedObjectV", "set"]
-- !private ["s23BidirectionalCollectionP", "flatMap"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s19BinaryFloatingPointP", "clamp"]
-- !private ["s19BinaryFloatingPointP", "init"]
-- !private ["s19BinaryFloatingPointP", "pi"]
+- !private ["SK", "flatMap"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SB", "clamp"]
+- !private ["SB", "init"]
+- !private ["SB", "pi"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So19CAAnimationDelegateP", "animate"]
 - !private ["So19CAAnimationDelegateP", "bounds"]
@@ -143,17 +147,17 @@ depends-member:
 - !private ["So13CAMediaTimingP", "presentation"]
 - !private ["So13CAMediaTimingP", "render"]
 - !private ["So13CAMediaTimingP", "transform"]
-- !private ["SC17CGAffineTransformV", "a"]
-- !private ["SC17CGAffineTransformV", "b"]
-- !private ["SC17CGAffineTransformV", "init"]
+- !private ["So17CGAffineTransformV", "a"]
+- !private ["So17CGAffineTransformV", "b"]
+- !private ["So17CGAffineTransformV", "init"]
 - !private ["12CoreGraphics7CGFloatV", "clamp"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
-- !private ["SC7CGPointV", "distance"]
-- !private ["SC7CGPointV", "transform"]
-- !private ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "bottomRight"]
-- !private ["SC6CGSizeV", "transform"]
+- !private ["So7CGPointV", "distance"]
+- !private ["So7CGPointV", "transform"]
+- !private ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "bottomRight"]
+- !private ["So6CGSizeV", "transform"]
 - !private ["s7CVarArgP", "AssociatedInstance"]
 - !private ["s7CVarArgP", "AssociatedInstanceKey"]
 - !private ["s7CVarArgP", "AssociatedObject"]
@@ -184,6 +188,7 @@ depends-member:
 - !private ["s7CVarArgP", "flattenedViewHierarchy"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "isMotionEnabled"]
 - !private ["s7CVarArgP", "isMotionEnabledForSubviews"]
@@ -201,11 +206,13 @@ depends-member:
 - !private ["s7CVarArgP", "superview"]
 - !private ["s7CVarArgP", "transform"]
 - !private ["s7CVarArgP", "transition"]
-- !private ["s10CollectionP", "flatMap"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "clamp"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "pi"]
+- !private ["Sl", "flatMap"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "clamp"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "pi"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedInstanceKey"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedObject"]
@@ -236,6 +243,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "flattenedViewHierarchy"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "isMotionEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "isMotionEnabledForSubviews"]
@@ -259,6 +267,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "bottomRight"]
 - !private ["s29CustomPlaygroundQuickLookableP", "distance"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "pi"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "transform"]
@@ -268,6 +277,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "clamp"]
 - !private ["s17CustomReflectableP", "distance"]
 - !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "pi"]
 - !private ["s17CustomReflectableP", "size"]
@@ -303,6 +313,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "flattenedViewHierarchy"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "isMotionEnabled"]
 - !private ["s23CustomStringConvertibleP", "isMotionEnabledForSubviews"]
@@ -320,90 +331,94 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "superview"]
 - !private ["s23CustomStringConvertibleP", "transform"]
 - !private ["s23CustomStringConvertibleP", "transition"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "a"]
-- !private ["s9DecodableP", "b"]
-- !private ["s9DecodableP", "bottomRight"]
-- !private ["s9DecodableP", "clamp"]
-- !private ["s9DecodableP", "distance"]
-- !private ["s9DecodableP", "flatMap"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "pi"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "transform"]
-- !private ["s9DecodableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "a"]
+- !private ["Se", "b"]
+- !private ["Se", "bottomRight"]
+- !private ["Se", "clamp"]
+- !private ["Se", "distance"]
+- !private ["Se", "flatMap"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "pi"]
+- !private ["Se", "size"]
+- !private ["Se", "transform"]
+- !private ["Se", "zero"]
 - !private ["Sd", "init"]
 - !private ["Sd", "pi"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "a"]
-- !private ["s9EncodableP", "b"]
-- !private ["s9EncodableP", "bottomRight"]
-- !private ["s9EncodableP", "clamp"]
-- !private ["s9EncodableP", "distance"]
-- !private ["s9EncodableP", "flatMap"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "pi"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "transform"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "AssociatedInstance"]
-- !private ["s9EquatableP", "AssociatedInstanceKey"]
-- !private ["s9EquatableP", "AssociatedObject"]
-- !private ["s9EquatableP", "CGAffineTransform"]
-- !private ["s9EquatableP", "CGFloat"]
-- !private ["s9EquatableP", "CGPoint"]
-- !private ["s9EquatableP", "Double"]
-- !private ["s9EquatableP", "Float"]
-- !private ["s9EquatableP", "SnapshotWrapperView"]
-- !private ["s9EquatableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s9EquatableP", "UIGraphicsEndImageContext"]
-- !private ["s9EquatableP", "UIGraphicsGetCurrentContext"]
-- !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s9EquatableP", "UIImageView"]
-- !private ["s9EquatableP", "UIView"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "a"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "animate"]
-- !private ["s9EquatableP", "associatedInstance"]
-- !private ["s9EquatableP", "atan2f"]
-- !private ["s9EquatableP", "b"]
-- !private ["s9EquatableP", "bottomRight"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "clamp"]
-- !private ["s9EquatableP", "contentView"]
-- !private ["s9EquatableP", "convert"]
-- !private ["s9EquatableP", "distance"]
-- !private ["s9EquatableP", "fatalError"]
-- !private ["s9EquatableP", "flatMap"]
-- !private ["s9EquatableP", "flattenedViewHierarchy"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isHidden"]
-- !private ["s9EquatableP", "isMotionEnabled"]
-- !private ["s9EquatableP", "isMotionEnabledForSubviews"]
-- !private ["s9EquatableP", "isOpaque"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- !private ["s9EquatableP", "motionModifiers"]
-- !private ["s9EquatableP", "optimizedDuration"]
-- !private ["s9EquatableP", "pi"]
-- !private ["s9EquatableP", "position"]
-- !private ["s9EquatableP", "presentation"]
-- !private ["s9EquatableP", "render"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "snapshotView"]
-- !private ["s9EquatableP", "subviews"]
-- !private ["s9EquatableP", "superview"]
-- !private ["s9EquatableP", "transform"]
-- !private ["s9EquatableP", "transition"]
-- !private ["s9EquatableP", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "a"]
+- !private ["SE", "b"]
+- !private ["SE", "bottomRight"]
+- !private ["SE", "clamp"]
+- !private ["SE", "distance"]
+- !private ["SE", "flatMap"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "pi"]
+- !private ["SE", "size"]
+- !private ["SE", "transform"]
+- !private ["SE", "zero"]
+- !private ["SQ", "AssociatedInstance"]
+- !private ["SQ", "AssociatedInstanceKey"]
+- !private ["SQ", "AssociatedObject"]
+- !private ["SQ", "CGAffineTransform"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGPoint"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "Float"]
+- !private ["SQ", "SnapshotWrapperView"]
+- !private ["SQ", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SQ", "UIGraphicsEndImageContext"]
+- !private ["SQ", "UIGraphicsGetCurrentContext"]
+- !private ["SQ", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SQ", "UIImageView"]
+- !private ["SQ", "UIView"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "a"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "animate"]
+- !private ["SQ", "associatedInstance"]
+- !private ["SQ", "atan2f"]
+- !private ["SQ", "b"]
+- !private ["SQ", "bottomRight"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "clamp"]
+- !private ["SQ", "contentView"]
+- !private ["SQ", "convert"]
+- !private ["SQ", "distance"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "flatMap"]
+- !private ["SQ", "flattenedViewHierarchy"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isHidden"]
+- !private ["SQ", "isMotionEnabled"]
+- !private ["SQ", "isMotionEnabledForSubviews"]
+- !private ["SQ", "isOpaque"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "layoutSubviews"]
+- !private ["SQ", "motionModifiers"]
+- !private ["SQ", "optimizedDuration"]
+- !private ["SQ", "pi"]
+- !private ["SQ", "position"]
+- !private ["SQ", "presentation"]
+- !private ["SQ", "render"]
+- !private ["SQ", "size"]
+- !private ["SQ", "snapshotView"]
+- !private ["SQ", "subviews"]
+- !private ["SQ", "superview"]
+- !private ["SQ", "transform"]
+- !private ["SQ", "transition"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "flatMap"]
 - !private ["s25ExpressibleByArrayLiteralP", "position"]
 - !private ["s25ExpressibleByArrayLiteralP", "size"]
 - !private ["s25ExpressibleByArrayLiteralP", "transform"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "clamp"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
@@ -412,65 +427,71 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "pi"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["Sf", "init"]
-- !private ["s13FloatingPointP", "clamp"]
-- !private ["s13FloatingPointP", "init"]
-- !private ["s13FloatingPointP", "pi"]
-- !private ["s8HashableP", "AssociatedInstance"]
-- !private ["s8HashableP", "AssociatedInstanceKey"]
-- !private ["s8HashableP", "AssociatedObject"]
-- !private ["s8HashableP", "CGAffineTransform"]
-- !private ["s8HashableP", "CGFloat"]
-- !private ["s8HashableP", "CGPoint"]
-- !private ["s8HashableP", "Double"]
-- !private ["s8HashableP", "Float"]
-- !private ["s8HashableP", "SnapshotWrapperView"]
-- !private ["s8HashableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s8HashableP", "UIGraphicsEndImageContext"]
-- !private ["s8HashableP", "UIGraphicsGetCurrentContext"]
-- !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s8HashableP", "UIImageView"]
-- !private ["s8HashableP", "UIView"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "animate"]
-- !private ["s8HashableP", "associatedInstance"]
-- !private ["s8HashableP", "atan2f"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "clamp"]
-- !private ["s8HashableP", "contentView"]
-- !private ["s8HashableP", "convert"]
-- !private ["s8HashableP", "fatalError"]
-- !private ["s8HashableP", "flattenedViewHierarchy"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isHidden"]
-- !private ["s8HashableP", "isMotionEnabled"]
-- !private ["s8HashableP", "isMotionEnabledForSubviews"]
-- !private ["s8HashableP", "isOpaque"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "layoutSubviews"]
-- !private ["s8HashableP", "motionModifiers"]
-- !private ["s8HashableP", "optimizedDuration"]
-- !private ["s8HashableP", "pi"]
-- !private ["s8HashableP", "position"]
-- !private ["s8HashableP", "presentation"]
-- !private ["s8HashableP", "render"]
-- !private ["s8HashableP", "snapshotView"]
-- !private ["s8HashableP", "subviews"]
-- !private ["s8HashableP", "superview"]
-- !private ["s8HashableP", "transform"]
-- !private ["s8HashableP", "transition"]
+- !private ["SF", "clamp"]
+- !private ["SF", "init"]
+- !private ["SF", "pi"]
+- !private ["SH", "AssociatedInstance"]
+- !private ["SH", "AssociatedInstanceKey"]
+- !private ["SH", "AssociatedObject"]
+- !private ["SH", "CGAffineTransform"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGPoint"]
+- !private ["SH", "Double"]
+- !private ["SH", "Float"]
+- !private ["SH", "SnapshotWrapperView"]
+- !private ["SH", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["SH", "UIGraphicsEndImageContext"]
+- !private ["SH", "UIGraphicsGetCurrentContext"]
+- !private ["SH", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["SH", "UIImageView"]
+- !private ["SH", "UIView"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "animate"]
+- !private ["SH", "associatedInstance"]
+- !private ["SH", "atan2f"]
+- !private ["SH", "bounds"]
+- !private ["SH", "clamp"]
+- !private ["SH", "contentView"]
+- !private ["SH", "convert"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "flatMap"]
+- !private ["SH", "flattenedViewHierarchy"]
+- !private ["SH", "frame"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isHidden"]
+- !private ["SH", "isMotionEnabled"]
+- !private ["SH", "isMotionEnabledForSubviews"]
+- !private ["SH", "isOpaque"]
+- !private ["SH", "layer"]
+- !private ["SH", "layoutSubviews"]
+- !private ["SH", "motionModifiers"]
+- !private ["SH", "optimizedDuration"]
+- !private ["SH", "pi"]
+- !private ["SH", "position"]
+- !private ["SH", "presentation"]
+- !private ["SH", "render"]
+- !private ["SH", "snapshotView"]
+- !private ["SH", "subviews"]
+- !private ["SH", "superview"]
+- !private ["SH", "transform"]
+- !private ["SH", "transition"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "pi"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["6Motion0A11TargetStateV", "position"]
 - !private ["6Motion0A11TargetStateV", "size"]
 - !private ["6Motion0A11TargetStateV", "transform"]
-- !private ["s17MutableCollectionP", "flatMap"]
+- !private ["SM", "flatMap"]
 - !private ["So8NSCodingP", "AssociatedInstance"]
 - !private ["So8NSCodingP", "AssociatedInstanceKey"]
 - !private ["So8NSCodingP", "AssociatedObject"]
@@ -578,63 +599,65 @@ depends-member:
 - !private ["So8NSObjectC", "superview"]
 - !private ["So8NSObjectC", "transform"]
 - ["So8NSObjectC", "transition"]
-- !private ["So16NSObjectProtocolP", "AssociatedInstance"]
-- !private ["So16NSObjectProtocolP", "AssociatedInstanceKey"]
-- !private ["So16NSObjectProtocolP", "AssociatedObject"]
-- !private ["So16NSObjectProtocolP", "CGAffineTransform"]
-- !private ["So16NSObjectProtocolP", "CGFloat"]
-- !private ["So16NSObjectProtocolP", "CGPoint"]
-- !private ["So16NSObjectProtocolP", "Double"]
-- !private ["So16NSObjectProtocolP", "Float"]
-- !private ["So16NSObjectProtocolP", "SnapshotWrapperView"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetCurrentContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So16NSObjectProtocolP", "UIImageView"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "associatedInstance"]
-- !private ["So16NSObjectProtocolP", "atan2f"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "contentView"]
-- !private ["So16NSObjectProtocolP", "convert"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "flattenedViewHierarchy"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isHidden"]
-- !private ["So16NSObjectProtocolP", "isMotionEnabled"]
-- !private ["So16NSObjectProtocolP", "isMotionEnabledForSubviews"]
-- !private ["So16NSObjectProtocolP", "isOpaque"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "motionModifiers"]
-- !private ["So16NSObjectProtocolP", "optimizedDuration"]
-- !private ["So16NSObjectProtocolP", "position"]
-- !private ["So16NSObjectProtocolP", "presentation"]
-- !private ["So16NSObjectProtocolP", "render"]
-- !private ["So16NSObjectProtocolP", "snapshotView"]
-- !private ["So16NSObjectProtocolP", "subviews"]
-- !private ["So16NSObjectProtocolP", "superview"]
-- !private ["So16NSObjectProtocolP", "transform"]
-- !private ["So16NSObjectProtocolP", "transition"]
+- !private ["So8NSObjectP", "AssociatedInstance"]
+- !private ["So8NSObjectP", "AssociatedInstanceKey"]
+- !private ["So8NSObjectP", "AssociatedObject"]
+- !private ["So8NSObjectP", "CGAffineTransform"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CGPoint"]
+- !private ["So8NSObjectP", "Double"]
+- !private ["So8NSObjectP", "Float"]
+- !private ["So8NSObjectP", "SnapshotWrapperView"]
+- !private ["So8NSObjectP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["So8NSObjectP", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So8NSObjectP", "UIImageView"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "associatedInstance"]
+- !private ["So8NSObjectP", "atan2f"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "contentView"]
+- !private ["So8NSObjectP", "convert"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "flattenedViewHierarchy"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isHidden"]
+- !private ["So8NSObjectP", "isMotionEnabled"]
+- !private ["So8NSObjectP", "isMotionEnabledForSubviews"]
+- !private ["So8NSObjectP", "isOpaque"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "motionModifiers"]
+- !private ["So8NSObjectP", "optimizedDuration"]
+- !private ["So8NSObjectP", "position"]
+- !private ["So8NSObjectP", "presentation"]
+- !private ["So8NSObjectP", "render"]
+- !private ["So8NSObjectP", "snapshotView"]
+- !private ["So8NSObjectP", "subviews"]
+- !private ["So8NSObjectP", "superview"]
+- !private ["So8NSObjectP", "transform"]
+- !private ["So8NSObjectP", "transition"]
 - !private ["So14NSSecureCodingP", "animate"]
 - !private ["So14NSSecureCodingP", "bounds"]
 - !private ["So14NSSecureCodingP", "position"]
 - !private ["So14NSSecureCodingP", "presentation"]
 - !private ["So14NSSecureCodingP", "render"]
 - !private ["So14NSSecureCodingP", "transform"]
-- !private ["s7NumericP", "clamp"]
-- !private ["s7NumericP", "init"]
-- !private ["s7NumericP", "pi"]
-- !private ["s22RandomAccessCollectionP", "flatMap"]
-- !private ["s26RangeReplaceableCollectionP", "flatMap"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s8SequenceP", "flatMap"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sj", "clamp"]
+- !private ["Sj", "init"]
+- !private ["Sj", "pi"]
+- !private ["Sk", "flatMap"]
+- !private ["Sm", "flatMap"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "flatMap"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s13SignedNumericP", "clamp"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s13SignedNumericP", "pi"]
@@ -643,17 +666,22 @@ depends-member:
 - !private ["6Motion19SnapshotWrapperViewC", "addSubview"]
 - !private ["6Motion19SnapshotWrapperViewC", "bounds"]
 - ["6Motion19SnapshotWrapperViewC", "contentView"]
-- ["6Motion19SnapshotWrapperViewC", "deinit"]
+- !private ["6Motion19SnapshotWrapperViewC", "deinit"]
 - !private ["6Motion19SnapshotWrapperViewC", "fatalError"]
 - ["6Motion19SnapshotWrapperViewC", "init"]
 - ["6Motion19SnapshotWrapperViewC", "layoutSubviews"]
 - !private ["s12StaticStringV", "init"]
-- !private ["s10StrideableP", "clamp"]
-- !private ["s10StrideableP", "init"]
-- !private ["s10StrideableP", "pi"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "clamp"]
+- !private ["Sx", "init"]
+- !private ["Sx", "pi"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
@@ -930,6 +958,45 @@ depends-member:
 - !private ["So11UIFocusItemP", "superview"]
 - !private ["So11UIFocusItemP", "transform"]
 - !private ["So11UIFocusItemP", "transition"]
+- !private ["So20UIFocusItemContainerP", "AssociatedInstance"]
+- !private ["So20UIFocusItemContainerP", "AssociatedInstanceKey"]
+- !private ["So20UIFocusItemContainerP", "AssociatedObject"]
+- !private ["So20UIFocusItemContainerP", "CGAffineTransform"]
+- !private ["So20UIFocusItemContainerP", "CGFloat"]
+- !private ["So20UIFocusItemContainerP", "CGPoint"]
+- !private ["So20UIFocusItemContainerP", "Double"]
+- !private ["So20UIFocusItemContainerP", "Float"]
+- !private ["So20UIFocusItemContainerP", "SnapshotWrapperView"]
+- !private ["So20UIFocusItemContainerP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["So20UIFocusItemContainerP", "UIGraphicsEndImageContext"]
+- !private ["So20UIFocusItemContainerP", "UIGraphicsGetCurrentContext"]
+- !private ["So20UIFocusItemContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So20UIFocusItemContainerP", "UIImageView"]
+- !private ["So20UIFocusItemContainerP", "UIView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "associatedInstance"]
+- !private ["So20UIFocusItemContainerP", "atan2f"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
+- !private ["So20UIFocusItemContainerP", "convert"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "flattenedViewHierarchy"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isHidden"]
+- !private ["So20UIFocusItemContainerP", "isMotionEnabled"]
+- !private ["So20UIFocusItemContainerP", "isMotionEnabledForSubviews"]
+- !private ["So20UIFocusItemContainerP", "isOpaque"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "layoutSubviews"]
+- !private ["So20UIFocusItemContainerP", "motionModifiers"]
+- !private ["So20UIFocusItemContainerP", "optimizedDuration"]
+- !private ["So20UIFocusItemContainerP", "snapshotView"]
+- !private ["So20UIFocusItemContainerP", "subviews"]
+- !private ["So20UIFocusItemContainerP", "superview"]
+- !private ["So20UIFocusItemContainerP", "transform"]
+- !private ["So20UIFocusItemContainerP", "transition"]
 - !private ["So11UIImageViewC", "frame"]
 - !private ["So11UIImageViewC", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "AssociatedInstance"]
@@ -1110,6 +1177,45 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "superview"]
 - !private ["So18UITraitEnvironmentP", "transform"]
 - !private ["So18UITraitEnvironmentP", "transition"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedInstance"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedInstanceKey"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedObject"]
+- !private ["So23UIUserActivityRestoringP", "CGAffineTransform"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
+- !private ["So23UIUserActivityRestoringP", "CGPoint"]
+- !private ["So23UIUserActivityRestoringP", "Double"]
+- !private ["So23UIUserActivityRestoringP", "Float"]
+- !private ["So23UIUserActivityRestoringP", "SnapshotWrapperView"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsEndImageContext"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsGetCurrentContext"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["So23UIUserActivityRestoringP", "UIImageView"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "associatedInstance"]
+- !private ["So23UIUserActivityRestoringP", "atan2f"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
+- !private ["So23UIUserActivityRestoringP", "convert"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "flattenedViewHierarchy"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isHidden"]
+- !private ["So23UIUserActivityRestoringP", "isMotionEnabled"]
+- !private ["So23UIUserActivityRestoringP", "isMotionEnabledForSubviews"]
+- !private ["So23UIUserActivityRestoringP", "isOpaque"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "motionModifiers"]
+- !private ["So23UIUserActivityRestoringP", "optimizedDuration"]
+- !private ["So23UIUserActivityRestoringP", "snapshotView"]
+- !private ["So23UIUserActivityRestoringP", "subviews"]
+- !private ["So23UIUserActivityRestoringP", "superview"]
+- !private ["So23UIUserActivityRestoringP", "transform"]
+- !private ["So23UIUserActivityRestoringP", "transition"]
 - ["So6UIViewC", "AssociatedInstance"]
 - !private ["So6UIViewC", "AssociatedInstanceKey"]
 - !private ["So6UIViewC", "AssociatedObject"]
@@ -1172,7 +1278,6 @@ depends-member:
 - !private ["So6UIViewC", "superview"]
 - !private ["So6UIViewC", "transform"]
 - ["So6UIViewC", "transition"]
-- !private ["s14_ArrayProtocolP", "flatMap"]
 - !private ["s15_CVarArgAlignedP", "clamp"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s15_CVarArgAlignedP", "pi"]
@@ -1221,14 +1326,22 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "flatMap"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "pi"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "pi"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "flatMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "pi"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedInstanceKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedObject"]
@@ -1280,37 +1393,40 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "distance"]
 - !private ["s21_ObjectiveCBridgeableP", "flatMap"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "pi"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "transform"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "6Motion16AssociatedObjectV"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
+- !private "SK"
+- !private "SB"
 - !private "Sb"
 - !private "So19CAAnimationDelegateP"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
-- !private "SC17CGAffineTransformV"
+- !private "So17CGAffineTransformV"
 - !private "12CoreGraphics7CGFloatV"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "Sd"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -1319,26 +1435,26 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "Sf"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "6Motion0A11TargetStateV"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s7NumericP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
 - !private "s13SignedNumericP"
 - "6Motion19SnapshotWrapperViewC"
 - !private "s12StaticStringV"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -1349,13 +1465,14 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So11UIImageViewC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -1368,39 +1485,41 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "2da48be7c845f5a23f3d4929ae143a9a"

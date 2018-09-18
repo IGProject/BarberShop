@@ -7,7 +7,7 @@
 //
 
 import UIKit
-struct TeamDetails: Decodable {
+struct TeamDetails: Codable {
     let id: Int?
     let username: String?
     let phone: String?
@@ -18,7 +18,7 @@ struct TeamDetails: Decodable {
     let team_image = [TeamImage]()
 }
 
-struct TeamImage: Decodable {
+struct TeamImage: Codable {
     let file_id:Int?
     let file_name:String?
     let file_path:String?

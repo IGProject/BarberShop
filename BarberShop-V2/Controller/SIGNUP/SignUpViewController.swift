@@ -13,11 +13,20 @@ import Motion
 class SignUpViewController: UIViewController {
     //MARK- Outlet Connection
     @IBOutlet weak var fullnameTextField: TextField!
-    @IBOutlet weak var phoneNumberTextField: TextField!
-    @IBOutlet weak var emailTextField: TextField!
-    @IBOutlet weak var usernameTextField: TextField!
-    @IBOutlet weak var passwordTextField: TextField!
+    @IBOutlet weak var fullnameValidation: UILabel!
     
+    @IBOutlet weak var phoneNumberTextField: TextField!
+    @IBOutlet weak var phoneValidation: UILabel!
+    
+    @IBOutlet weak var emailTextField: TextField!
+    @IBOutlet weak var emailValidation: UILabel!
+    
+    @IBOutlet weak var usernameTextField: TextField!
+    @IBOutlet weak var usernameValidation: UILabel!
+    
+    
+    @IBOutlet weak var passwordTextField: TextField!
+    @IBOutlet weak var passwordValidation: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -34,6 +34,7 @@ depends-top-level:
 - !private "Dictionary"
 - !private "Icon"
 - "IconButton"
+- !private "IntegerLiteralType"
 - !private "NSAttributedString"
 - "NSCoder"
 - !private "RobotoFont"
@@ -63,6 +64,7 @@ depends-member:
 - ["8Material3BarC", ""]
 - ["8Material3BarC", "clearButton"]
 - !private ["8Material3BarC", "contentView"]
+- !private ["8Material3BarC", "deinit"]
 - ["8Material3BarC", "delegate"]
 - ["8Material3BarC", "handleClearButton"]
 - ["8Material3BarC", "handleEditingChanged"]
@@ -81,7 +83,8 @@ depends-member:
 - ["8Material3BarC", "textField"]
 - ["8Material3BarC", "tintColor"]
 - !private ["8Material3BarC", "willLayout"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["8Material6ButtonC", "addTarget"]
 - !private ["8Material6ButtonC", "contentEdgeInsets"]
@@ -133,9 +136,9 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textField"]
 - !private ["So15CALayerDelegateP", "tintColor"]
 - !private ["So15CALayerDelegateP", "willLayout"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "width"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "width"]
 - !private ["s7CVarArgP", "CGRect"]
 - ["s7CVarArgP", "Color"]
 - !private ["s7CVarArgP", "Icon"]
@@ -165,6 +168,7 @@ depends-member:
 - !private ["s7CVarArgP", "handleClearButton"]
 - !private ["s7CVarArgP", "handleEditingChanged"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isClearButtonAutoHandleEnabled"]
 - !private ["s7CVarArgP", "layoutClearButton"]
 - !private ["s7CVarArgP", "layoutLeftView"]
@@ -184,10 +188,13 @@ depends-member:
 - !private ["s7CVarArgP", "textField"]
 - !private ["s7CVarArgP", "tintColor"]
 - !private ["s7CVarArgP", "willLayout"]
-- !private ["s10CollectionP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
 - !private ["8Material5ColorC", "clear"]
 - ["8Material5ColorC", "darkText"]
-- !private ["s10ComparableP", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["So17UIViewContentModeV", "scaleAspectFit"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - ["s28CustomDebugStringConvertibleP", "Color"]
 - !private ["s28CustomDebugStringConvertibleP", "Icon"]
@@ -217,6 +224,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "handleEditingChanged"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isClearButtonAutoHandleEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutClearButton"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutLeftView"]
@@ -240,10 +248,16 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "addTarget"]
+- !private ["s17CustomReflectableP", "contentEdgeInsets"]
+- !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeTarget"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
 - ["s23CustomStringConvertibleP", "Color"]
@@ -274,6 +288,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "handleClearButton"]
 - !private ["s23CustomStringConvertibleP", "handleEditingChanged"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isClearButtonAutoHandleEnabled"]
 - !private ["s23CustomStringConvertibleP", "layoutClearButton"]
 - !private ["s23CustomStringConvertibleP", "layoutLeftView"]
@@ -293,141 +308,165 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textField"]
 - !private ["s23CustomStringConvertibleP", "tintColor"]
 - !private ["s23CustomStringConvertibleP", "willLayout"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EquatableP", "CGRect"]
-- ["s9EquatableP", "Color"]
-- !private ["s9EquatableP", "Icon"]
-- !private ["s9EquatableP", "IconButton"]
-- !private ["s9EquatableP", "NSAttributedString"]
-- !private ["s9EquatableP", "RobotoFont"]
-- !private ["s9EquatableP", "Screen"]
-- ["s9EquatableP", "UITextField"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "addTarget"]
-- !private ["s9EquatableP", "attributedPlaceholder"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "clearButton"]
-- !private ["s9EquatableP", "clearButtonMode"]
-- !private ["s9EquatableP", "contentEdgeInsets"]
-- !private ["s9EquatableP", "contentMode"]
-- !private ["s9EquatableP", "contentScaleFactor"]
-- !private ["s9EquatableP", "contentView"]
-- ["s9EquatableP", "darkText"]
-- !private ["s9EquatableP", "delegate"]
-- !private ["s9EquatableP", "editingChanged"]
-- !private ["s9EquatableP", "font"]
-- !private ["s9EquatableP", "foregroundColor"]
-- !private ["s9EquatableP", "frame"]
-- !private ["s9EquatableP", "handleClearButton"]
-- !private ["s9EquatableP", "handleEditingChanged"]
-- !private ["s9EquatableP", "height"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isClearButtonAutoHandleEnabled"]
-- !private ["s9EquatableP", "layoutClearButton"]
-- !private ["s9EquatableP", "layoutLeftView"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- !private ["s9EquatableP", "layoutTextField"]
-- !private ["s9EquatableP", "leftView"]
-- !private ["s9EquatableP", "never"]
-- !private ["s9EquatableP", "placeholder"]
-- !private ["s9EquatableP", "placeholderColor"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "prepareClearButton"]
-- !private ["s9EquatableP", "prepareTextField"]
-- !private ["s9EquatableP", "removeTarget"]
-- !private ["s9EquatableP", "rightView"]
-- !private ["s9EquatableP", "rightViewMode"]
-- !private ["s9EquatableP", "scaleAspectFit"]
-- !private ["s9EquatableP", "text"]
-- !private ["s9EquatableP", "textColor"]
-- !private ["s9EquatableP", "textField"]
-- !private ["s9EquatableP", "tintColor"]
-- !private ["s9EquatableP", "touchUpInside"]
-- !private ["s9EquatableP", "whileEditing"]
-- !private ["s9EquatableP", "width"]
-- !private ["s9EquatableP", "willLayout"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "addTarget"]
+- !private ["Se", "contentEdgeInsets"]
+- !private ["Se", "frame"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "removeTarget"]
+- !private ["Se", "width"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "addTarget"]
+- !private ["SE", "contentEdgeInsets"]
+- !private ["SE", "frame"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "removeTarget"]
+- !private ["SE", "width"]
+- !private ["SQ", "CGRect"]
+- ["SQ", "Color"]
+- !private ["SQ", "Icon"]
+- !private ["SQ", "IconButton"]
+- !private ["SQ", "NSAttributedString"]
+- !private ["SQ", "RobotoFont"]
+- !private ["SQ", "Screen"]
+- ["SQ", "UITextField"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "addTarget"]
+- !private ["SQ", "attributedPlaceholder"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "clearButton"]
+- !private ["SQ", "clearButtonMode"]
+- !private ["SQ", "contentEdgeInsets"]
+- !private ["SQ", "contentMode"]
+- !private ["SQ", "contentScaleFactor"]
+- !private ["SQ", "contentView"]
+- ["SQ", "darkText"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "editingChanged"]
+- !private ["SQ", "font"]
+- !private ["SQ", "foregroundColor"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "handleClearButton"]
+- !private ["SQ", "handleEditingChanged"]
+- !private ["SQ", "height"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isClearButtonAutoHandleEnabled"]
+- !private ["SQ", "layoutClearButton"]
+- !private ["SQ", "layoutLeftView"]
+- !private ["SQ", "layoutSubviews"]
+- !private ["SQ", "layoutTextField"]
+- !private ["SQ", "leftView"]
+- !private ["SQ", "never"]
+- !private ["SQ", "placeholder"]
+- !private ["SQ", "placeholderColor"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "prepareClearButton"]
+- !private ["SQ", "prepareTextField"]
+- !private ["SQ", "removeTarget"]
+- !private ["SQ", "rightView"]
+- !private ["SQ", "rightViewMode"]
+- !private ["SQ", "scaleAspectFit"]
+- !private ["SQ", "text"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "textField"]
+- !private ["SQ", "tintColor"]
+- !private ["SQ", "touchUpInside"]
+- !private ["SQ", "whileEditing"]
+- !private ["SQ", "width"]
+- !private ["SQ", "willLayout"]
+- !private ["SQ", "zero"]
+- !private ["So15UIControlEventsV", "editingChanged"]
+- !private ["So15UIControlEventsV", "touchUpInside"]
 - !private ["s25ExpressibleByArrayLiteralP", "editingChanged"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "addTarget"]
+- !private ["s23ExpressibleByNilLiteralP", "contentEdgeInsets"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
+- !private ["s23ExpressibleByNilLiteralP", "removeTarget"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["8Material8FontTypeP", "regular"]
-- !private ["s8HashableP", "CGRect"]
-- ["s8HashableP", "Color"]
-- !private ["s8HashableP", "Icon"]
-- !private ["s8HashableP", "IconButton"]
-- !private ["s8HashableP", "NSAttributedString"]
-- !private ["s8HashableP", "RobotoFont"]
-- !private ["s8HashableP", "Screen"]
-- ["s8HashableP", "UITextField"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "addTarget"]
-- !private ["s8HashableP", "attributedPlaceholder"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "clearButton"]
-- !private ["s8HashableP", "clearButtonMode"]
-- !private ["s8HashableP", "contentEdgeInsets"]
-- !private ["s8HashableP", "contentMode"]
-- !private ["s8HashableP", "contentScaleFactor"]
-- !private ["s8HashableP", "contentView"]
-- ["s8HashableP", "darkText"]
-- !private ["s8HashableP", "delegate"]
-- !private ["s8HashableP", "font"]
-- !private ["s8HashableP", "foregroundColor"]
-- !private ["s8HashableP", "frame"]
-- !private ["s8HashableP", "handleClearButton"]
-- !private ["s8HashableP", "handleEditingChanged"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isClearButtonAutoHandleEnabled"]
-- !private ["s8HashableP", "layoutClearButton"]
-- !private ["s8HashableP", "layoutLeftView"]
-- !private ["s8HashableP", "layoutSubviews"]
-- !private ["s8HashableP", "layoutTextField"]
-- !private ["s8HashableP", "leftView"]
-- !private ["s8HashableP", "never"]
-- !private ["s8HashableP", "placeholder"]
-- !private ["s8HashableP", "placeholderColor"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "prepareClearButton"]
-- !private ["s8HashableP", "prepareTextField"]
-- !private ["s8HashableP", "removeTarget"]
-- !private ["s8HashableP", "rightView"]
-- !private ["s8HashableP", "rightViewMode"]
-- !private ["s8HashableP", "scaleAspectFit"]
-- !private ["s8HashableP", "text"]
-- !private ["s8HashableP", "textColor"]
-- !private ["s8HashableP", "textField"]
-- !private ["s8HashableP", "tintColor"]
-- !private ["s8HashableP", "whileEditing"]
-- !private ["s8HashableP", "willLayout"]
+- !private ["SH", "CGRect"]
+- ["SH", "Color"]
+- !private ["SH", "Icon"]
+- !private ["SH", "IconButton"]
+- !private ["SH", "NSAttributedString"]
+- !private ["SH", "RobotoFont"]
+- !private ["SH", "Screen"]
+- ["SH", "UITextField"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "addTarget"]
+- !private ["SH", "attributedPlaceholder"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "bounds"]
+- !private ["SH", "clear"]
+- !private ["SH", "clearButton"]
+- !private ["SH", "clearButtonMode"]
+- !private ["SH", "contentEdgeInsets"]
+- !private ["SH", "contentMode"]
+- !private ["SH", "contentScaleFactor"]
+- !private ["SH", "contentView"]
+- ["SH", "darkText"]
+- !private ["SH", "delegate"]
+- !private ["SH", "font"]
+- !private ["SH", "foregroundColor"]
+- !private ["SH", "frame"]
+- !private ["SH", "handleClearButton"]
+- !private ["SH", "handleEditingChanged"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isClearButtonAutoHandleEnabled"]
+- !private ["SH", "layoutClearButton"]
+- !private ["SH", "layoutLeftView"]
+- !private ["SH", "layoutSubviews"]
+- !private ["SH", "layoutTextField"]
+- !private ["SH", "leftView"]
+- !private ["SH", "never"]
+- !private ["SH", "placeholder"]
+- !private ["SH", "placeholderColor"]
+- !private ["SH", "prepare"]
+- !private ["SH", "prepareClearButton"]
+- !private ["SH", "prepareTextField"]
+- !private ["SH", "removeTarget"]
+- !private ["SH", "rightView"]
+- !private ["SH", "rightViewMode"]
+- !private ["SH", "scaleAspectFit"]
+- !private ["SH", "text"]
+- !private ["SH", "textColor"]
+- !private ["SH", "textField"]
+- !private ["SH", "tintColor"]
+- !private ["SH", "whileEditing"]
+- !private ["SH", "willLayout"]
 - !private ["8Material4IconV", "cm"]
 - !private ["8Material10IconButtonC", "addTarget"]
 - !private ["8Material10IconButtonC", "contentEdgeInsets"]
+- !private ["8Material10IconButtonC", "deinit"]
 - !private ["8Material10IconButtonC", "frame"]
 - !private ["8Material10IconButtonC", "init"]
 - !private ["8Material10IconButtonC", "removeTarget"]
+- !private ["So21NSAttributedStringKeya", "foregroundColor"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So18NSAttributedStringC", "init"]
-- !private ["SC21NSAttributedStringKeyV", "foregroundColor"]
 - !private ["So8NSCodingP", "CGRect"]
 - ["So8NSCodingP", "Color"]
 - !private ["So8NSCodingP", "Icon"]
@@ -536,59 +575,63 @@ depends-member:
 - ["So8NSObjectC", "textField"]
 - ["So8NSObjectC", "tintColor"]
 - !private ["So8NSObjectC", "willLayout"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- ["So16NSObjectProtocolP", "Color"]
-- !private ["So16NSObjectProtocolP", "Icon"]
-- !private ["So16NSObjectProtocolP", "IconButton"]
-- !private ["So16NSObjectProtocolP", "NSAttributedString"]
-- !private ["So16NSObjectProtocolP", "RobotoFont"]
-- !private ["So16NSObjectProtocolP", "Screen"]
-- ["So16NSObjectProtocolP", "UITextField"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "addTarget"]
-- !private ["So16NSObjectProtocolP", "attributedPlaceholder"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "clearButton"]
-- !private ["So16NSObjectProtocolP", "clearButtonMode"]
-- !private ["So16NSObjectProtocolP", "contentEdgeInsets"]
-- !private ["So16NSObjectProtocolP", "contentMode"]
-- !private ["So16NSObjectProtocolP", "contentScaleFactor"]
-- !private ["So16NSObjectProtocolP", "contentView"]
-- ["So16NSObjectProtocolP", "darkText"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "font"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "handleClearButton"]
-- !private ["So16NSObjectProtocolP", "handleEditingChanged"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isClearButtonAutoHandleEnabled"]
-- !private ["So16NSObjectProtocolP", "layoutClearButton"]
-- !private ["So16NSObjectProtocolP", "layoutLeftView"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "layoutTextField"]
-- !private ["So16NSObjectProtocolP", "leftView"]
-- !private ["So16NSObjectProtocolP", "placeholder"]
-- !private ["So16NSObjectProtocolP", "placeholderColor"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "prepareClearButton"]
-- !private ["So16NSObjectProtocolP", "prepareTextField"]
-- !private ["So16NSObjectProtocolP", "removeTarget"]
-- !private ["So16NSObjectProtocolP", "rightView"]
-- !private ["So16NSObjectProtocolP", "rightViewMode"]
-- !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "textColor"]
-- !private ["So16NSObjectProtocolP", "textField"]
-- !private ["So16NSObjectProtocolP", "textFieldShouldClear"]
-- !private ["So16NSObjectProtocolP", "tintColor"]
-- !private ["So16NSObjectProtocolP", "willLayout"]
+- !private ["So8NSObjectP", "CGRect"]
+- ["So8NSObjectP", "Color"]
+- !private ["So8NSObjectP", "Icon"]
+- !private ["So8NSObjectP", "IconButton"]
+- !private ["So8NSObjectP", "NSAttributedString"]
+- !private ["So8NSObjectP", "RobotoFont"]
+- !private ["So8NSObjectP", "Screen"]
+- ["So8NSObjectP", "UITextField"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "addTarget"]
+- !private ["So8NSObjectP", "attributedPlaceholder"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "clearButton"]
+- !private ["So8NSObjectP", "clearButtonMode"]
+- !private ["So8NSObjectP", "contentEdgeInsets"]
+- !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "contentScaleFactor"]
+- !private ["So8NSObjectP", "contentView"]
+- ["So8NSObjectP", "darkText"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "font"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "handleClearButton"]
+- !private ["So8NSObjectP", "handleEditingChanged"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isClearButtonAutoHandleEnabled"]
+- !private ["So8NSObjectP", "layoutClearButton"]
+- !private ["So8NSObjectP", "layoutLeftView"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "layoutTextField"]
+- !private ["So8NSObjectP", "leftView"]
+- !private ["So8NSObjectP", "placeholder"]
+- !private ["So8NSObjectP", "placeholderColor"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "prepareClearButton"]
+- !private ["So8NSObjectP", "prepareTextField"]
+- !private ["So8NSObjectP", "removeTarget"]
+- !private ["So8NSObjectP", "rightView"]
+- !private ["So8NSObjectP", "rightViewMode"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "textField"]
+- !private ["So8NSObjectP", "textFieldShouldClear"]
+- !private ["So8NSObjectP", "tintColor"]
+- !private ["So8NSObjectP", "willLayout"]
 - !private ["So14NSSecureCodingP", "clear"]
 - ["So14NSSecureCodingP", "darkText"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["s9OptionSetP", "editingChanged"]
 - !private ["s9OptionSetP", "touchUpInside"]
+- !private ["Sq", "addTarget"]
+- !private ["Sq", "contentEdgeInsets"]
+- !private ["Sq", "frame"]
+- !private ["Sq", "removeTarget"]
 - !private ["8Material9PulseableP", "addTarget"]
 - !private ["8Material9PulseableP", "contentEdgeInsets"]
 - !private ["8Material9PulseableP", "frame"]
@@ -599,13 +642,14 @@ depends-member:
 - !private ["8Material14PulseableLayerP", "frame"]
 - !private ["8Material14PulseableLayerP", "init"]
 - !private ["8Material14PulseableLayerP", "removeTarget"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "editingChanged"]
-- !private ["s16RawRepresentableP", "foregroundColor"]
-- !private ["s16RawRepresentableP", "never"]
-- !private ["s16RawRepresentableP", "scaleAspectFit"]
-- !private ["s16RawRepresentableP", "touchUpInside"]
-- !private ["s16RawRepresentableP", "whileEditing"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "editingChanged"]
+- !private ["SY", "foregroundColor"]
+- !private ["SY", "never"]
+- !private ["SY", "scaleAspectFit"]
+- !private ["SY", "touchUpInside"]
+- !private ["SY", "whileEditing"]
 - !private ["8Material10RobotoFontV", "regular"]
 - !private ["8Material6ScreenV", "scale"]
 - ["8Material9SearchBarC", "CGRect"]
@@ -623,7 +667,6 @@ depends-member:
 - ["8Material9SearchBarC", "UITextField"]
 - ["8Material9SearchBarC", "clearButton"]
 - !private ["8Material9SearchBarC", "contentView"]
-- ["8Material9SearchBarC", "deinit"]
 - ["8Material9SearchBarC", "delegate"]
 - !private ["8Material9SearchBarC", "handleClearButton"]
 - !private ["8Material9SearchBarC", "handleEditingChanged"]
@@ -646,12 +689,17 @@ depends-member:
 - ["8Material17SearchBarDelegateP", "String"]
 - ["8Material17SearchBarDelegateP", "UITextField"]
 - ["8Material17SearchBarDelegateP", "searchBar"]
-- !private ["s8SequenceP", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s10SetAlgebraP", "editingChanged"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentEdgeInsets"]
@@ -833,8 +881,6 @@ depends-member:
 - !private ["So9UIControlC", "text"]
 - !private ["So9UIControlC", "textColor"]
 - !private ["So9UIControlC", "tintColor"]
-- !private ["SC15UIControlEventsV", "editingChanged"]
-- !private ["SC15UIControlEventsV", "touchUpInside"]
 - !private ["So17UICoordinateSpaceP", "CGRect"]
 - ["So17UICoordinateSpaceP", "Color"]
 - !private ["So17UICoordinateSpaceP", "Icon"]
@@ -925,7 +971,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "textField"]
 - !private ["So13UIDynamicItemP", "tintColor"]
 - !private ["So13UIDynamicItemP", "willLayout"]
-- !private ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So12UIEdgeInsetsV", "zero"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - ["So18UIFocusEnvironmentP", "Color"]
 - !private ["So18UIFocusEnvironmentP", "Icon"]
@@ -1016,6 +1062,51 @@ depends-member:
 - !private ["So11UIFocusItemP", "textField"]
 - !private ["So11UIFocusItemP", "tintColor"]
 - !private ["So11UIFocusItemP", "willLayout"]
+- !private ["So20UIFocusItemContainerP", "CGRect"]
+- ["So20UIFocusItemContainerP", "Color"]
+- !private ["So20UIFocusItemContainerP", "Icon"]
+- !private ["So20UIFocusItemContainerP", "IconButton"]
+- !private ["So20UIFocusItemContainerP", "NSAttributedString"]
+- !private ["So20UIFocusItemContainerP", "RobotoFont"]
+- !private ["So20UIFocusItemContainerP", "Screen"]
+- ["So20UIFocusItemContainerP", "UITextField"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "addTarget"]
+- !private ["So20UIFocusItemContainerP", "attributedPlaceholder"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "clearButton"]
+- !private ["So20UIFocusItemContainerP", "clearButtonMode"]
+- !private ["So20UIFocusItemContainerP", "contentEdgeInsets"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
+- !private ["So20UIFocusItemContainerP", "contentScaleFactor"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "font"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "handleClearButton"]
+- !private ["So20UIFocusItemContainerP", "handleEditingChanged"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isClearButtonAutoHandleEnabled"]
+- !private ["So20UIFocusItemContainerP", "layoutClearButton"]
+- !private ["So20UIFocusItemContainerP", "layoutLeftView"]
+- !private ["So20UIFocusItemContainerP", "layoutSubviews"]
+- !private ["So20UIFocusItemContainerP", "layoutTextField"]
+- !private ["So20UIFocusItemContainerP", "leftView"]
+- !private ["So20UIFocusItemContainerP", "placeholder"]
+- !private ["So20UIFocusItemContainerP", "placeholderColor"]
+- !private ["So20UIFocusItemContainerP", "prepare"]
+- !private ["So20UIFocusItemContainerP", "prepareClearButton"]
+- !private ["So20UIFocusItemContainerP", "prepareTextField"]
+- !private ["So20UIFocusItemContainerP", "removeTarget"]
+- !private ["So20UIFocusItemContainerP", "rightView"]
+- !private ["So20UIFocusItemContainerP", "rightViewMode"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "textField"]
+- !private ["So20UIFocusItemContainerP", "tintColor"]
+- !private ["So20UIFocusItemContainerP", "willLayout"]
 - !private ["So11UIImageViewC", "contentMode"]
 - !private ["So10UIKeyInputP", "addTarget"]
 - !private ["So10UIKeyInputP", "attributedPlaceholder"]
@@ -1222,8 +1313,6 @@ depends-member:
 - !private ["So11UITextFieldC", "textColor"]
 - !private ["So11UITextFieldC", "tintColor"]
 - !private ["So19UITextFieldDelegateP", "textFieldShouldClear"]
-- !private ["SC19UITextFieldViewModeO", "never"]
-- !private ["SC19UITextFieldViewModeO", "whileEditing"]
 - !private ["So11UITextInputP", "addTarget"]
 - !private ["So11UITextInputP", "attributedPlaceholder"]
 - !private ["So11UITextInputP", "backgroundColor"]
@@ -1314,6 +1403,51 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textField"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
 - !private ["So18UITraitEnvironmentP", "willLayout"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- ["So23UIUserActivityRestoringP", "Color"]
+- !private ["So23UIUserActivityRestoringP", "Icon"]
+- !private ["So23UIUserActivityRestoringP", "IconButton"]
+- !private ["So23UIUserActivityRestoringP", "NSAttributedString"]
+- !private ["So23UIUserActivityRestoringP", "RobotoFont"]
+- !private ["So23UIUserActivityRestoringP", "Screen"]
+- ["So23UIUserActivityRestoringP", "UITextField"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "addTarget"]
+- !private ["So23UIUserActivityRestoringP", "attributedPlaceholder"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "clearButton"]
+- !private ["So23UIUserActivityRestoringP", "clearButtonMode"]
+- !private ["So23UIUserActivityRestoringP", "contentEdgeInsets"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
+- !private ["So23UIUserActivityRestoringP", "contentScaleFactor"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "font"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "handleClearButton"]
+- !private ["So23UIUserActivityRestoringP", "handleEditingChanged"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isClearButtonAutoHandleEnabled"]
+- !private ["So23UIUserActivityRestoringP", "layoutClearButton"]
+- !private ["So23UIUserActivityRestoringP", "layoutLeftView"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "layoutTextField"]
+- !private ["So23UIUserActivityRestoringP", "leftView"]
+- !private ["So23UIUserActivityRestoringP", "placeholder"]
+- !private ["So23UIUserActivityRestoringP", "placeholderColor"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "prepareClearButton"]
+- !private ["So23UIUserActivityRestoringP", "prepareTextField"]
+- !private ["So23UIUserActivityRestoringP", "removeTarget"]
+- !private ["So23UIUserActivityRestoringP", "rightView"]
+- !private ["So23UIUserActivityRestoringP", "rightViewMode"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "textField"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "willLayout"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "Color"]
 - !private ["So6UIViewC", "Icon"]
@@ -1363,7 +1497,6 @@ depends-member:
 - ["So6UIViewC", "textField"]
 - ["So6UIViewC", "tintColor"]
 - !private ["So6UIViewC", "willLayout"]
-- !private ["SC17UIViewContentModeO", "scaleAspectFit"]
 - ["8Material4ViewC", "CGRect"]
 - ["8Material4ViewC", "Color"]
 - !private ["8Material4ViewC", "Icon"]
@@ -1397,6 +1530,8 @@ depends-member:
 - ["8Material4ViewC", "textField"]
 - ["8Material4ViewC", "tintColor"]
 - !private ["8Material4ViewC", "willLayout"]
+- !private ["So19UITextFieldViewModeV", "never"]
+- !private ["So19UITextFieldViewModeV", "whileEditing"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "Color"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Icon"]
@@ -1444,12 +1579,18 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "willLayout"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
 - ["s26_ExpressibleByColorLiteralP", "darkText"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Color"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Icon"]
@@ -1498,68 +1639,78 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "willLayout"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addTarget"]
+- !private ["s21_ObjectiveCBridgeableP", "contentEdgeInsets"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeTarget"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["8Material4IconV2cmV", "close"]
 - ["8Material5ColorC8darkTextC", "others"]
 - !private ["8Material5ColorC8darkTextC", "primary"]
 depends-nominal:
 - "8Material3BarC"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
 - !private "8Material6ButtonC"
 - "So15CALayerDelegateP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- !private "Sl"
 - "8Material5ColorC"
-- !private "s10ComparableP"
+- !private "SL"
+- !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "So15UIControlEventsV"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "8Material8FontTypeP"
-- "s8HashableP"
+- "SH"
 - !private "8Material4IconV"
 - !private "8Material10IconButtonC"
+- !private "So21NSAttributedStringKeya"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So18NSAttributedStringC"
-- !private "SC21NSAttributedStringKeyV"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "s9OptionSetP"
+- !private "Sq"
 - !private "8Material9PulseableP"
 - !private "8Material14PulseableLayerP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- !private "Sm"
+- !private "SY"
 - !private "8Material10RobotoFontV"
 - !private "8Material6ScreenV"
 - "8Material9SearchBarC"
 - "8Material17SearchBarDelegateP"
-- !private "s8SequenceP"
+- !private "ST"
 - !private "s10SetAlgebraP"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -1570,12 +1721,12 @@ depends-nominal:
 - "So7UIColorC"
 - "So30UIContentSizeCategoryAdjustingP"
 - "So9UIControlC"
-- !private "SC15UIControlEventsV"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
-- !private "SC12UIEdgeInsetsV"
+- !private "So12UIEdgeInsetsV"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So11UIImageViewC"
 - "So10UIKeyInputP"
 - "So30UIPasteConfigurationSupportingP"
@@ -1586,14 +1737,14 @@ depends-nominal:
 - "So15UITextDroppableP"
 - "So11UITextFieldC"
 - !private "So19UITextFieldDelegateP"
-- !private "SC19UITextFieldViewModeO"
 - "So11UITextInputP"
 - "So17UITextInputTraitsP"
 - "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "SC17UIViewContentModeO"
 - "8Material4ViewC"
+- !private "So19UITextFieldViewModeV"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1602,6 +1753,7 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s26_ExpressibleByColorLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
@@ -1610,42 +1762,43 @@ depends-nominal:
 - "8Material5ColorC8darkTextC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "37d1a38cad46915aca74cc14ce95c289"

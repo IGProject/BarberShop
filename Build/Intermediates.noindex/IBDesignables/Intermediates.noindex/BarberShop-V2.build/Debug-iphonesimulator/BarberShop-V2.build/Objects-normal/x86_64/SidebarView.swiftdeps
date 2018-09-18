@@ -23,8 +23,10 @@ depends-top-level:
 - "BooleanLiteralType"
 - "CGFloat"
 - "CGRect"
+- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
+- !private "IntegerLiteralType"
 - "NSCoder"
 - "Row"
 - "SidebarView"
@@ -48,13 +50,18 @@ depends-top-level:
 - !private "~="
 depends-member:
 - ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- ["12FacebookCore26AppEventParameterValueTypeP", "init"]
 - !private ["Sa", "count"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "row"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "count"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "row"]
+- !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So19CAAnimationDelegateP", "cornerRadius"]
 - !private ["So19CAAnimationDelegateP", "masksToBounds"]
@@ -131,9 +138,9 @@ depends-member:
 - ["So15CALayerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["So13CAMediaTimingP", "masksToBounds"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "width"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "width"]
 - !private ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "Row"]
 - ["s7CVarArgP", "String"]
@@ -171,6 +178,7 @@ depends-member:
 - !private ["s7CVarArgP", "image"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
+- ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isActive"]
 - !private ["s7CVarArgP", "layer"]
@@ -214,12 +222,15 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "white"]
-- !private ["s10CollectionP", "count"]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "row"]
-- !private ["s10CollectionP", "subscript"]
-- ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "row"]
+- !private ["Sl", "count"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "row"]
+- !private ["Sl", "subscript"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["SL", "row"]
+- !private ["So17UIViewContentModeV", "scaleAspectFill"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "Row"]
 - ["s28CustomDebugStringConvertibleP", "String"]
@@ -257,6 +268,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isActive"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
@@ -305,12 +317,17 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "clear"]
+- !private ["s17CustomReflectableP", "contentMode"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "image"]
 - ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "layer"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "width"]
@@ -351,6 +368,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "image"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
+- ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isActive"]
 - !private ["s23CustomStringConvertibleP", "layer"]
@@ -395,129 +413,145 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "clear"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "height"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "row"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "clear"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "height"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "row"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "width"]
-- !private ["s9EquatableP", "CGRect"]
-- ["s9EquatableP", "RawValue"]
-- !private ["s9EquatableP", "Row"]
-- ["s9EquatableP", "String"]
-- !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIFont"]
-- ["s9EquatableP", "UIImage"]
-- !private ["s9EquatableP", "UIImageView"]
-- !private ["s9EquatableP", "UILabel"]
-- ["s9EquatableP", "UITableView"]
-- !private ["s9EquatableP", "UITableViewCell"]
-- !private ["s9EquatableP", "UITableViewCellSeparatorStyle"]
-- !private ["s9EquatableP", "UIView"]
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "_Default_RawValue"]
-- !private ["s9EquatableP", "_findStringSwitchCase"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "about_us"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "allowsSelection"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "backgroundView"]
-- !private ["s9EquatableP", "black"]
-- !private ["s9EquatableP", "bottomAnchor"]
-- !private ["s9EquatableP", "bounces"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "clipsToBounds"]
-- !private ["s9EquatableP", "constraint"]
-- !private ["s9EquatableP", "contentMode"]
-- !private ["s9EquatableP", "cornerRadius"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "dataSource"]
-- !private ["s9EquatableP", "delegate"]
-- !private ["s9EquatableP", "dequeueReusableCell"]
-- !private ["s9EquatableP", "editProfile"]
-- !private ["s9EquatableP", "fatalError"]
-- !private ["s9EquatableP", "font"]
-- !private ["s9EquatableP", "frame"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "height"]
-- !private ["s9EquatableP", "home"]
-- !private ["s9EquatableP", "icon_image"]
-- !private ["s9EquatableP", "image"]
-- ["s9EquatableP", "indexPathForPreferredFocusedView"]
-- ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isActive"]
-- !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "leftAnchor"]
-- !private ["s9EquatableP", "masksToBounds"]
-- !private ["s9EquatableP", "myTableView"]
-- !private ["s9EquatableP", "my_appointments"]
-- !private ["s9EquatableP", "none"]
-- !private ["s9EquatableP", "notification"]
-- ["s9EquatableP", "numberOfSections"]
-- ["s9EquatableP", "numberOfSectionsInTableView"]
-- ["s9EquatableP", "rawValue"]
-- !private ["s9EquatableP", "register"]
-- !private ["s9EquatableP", "reward_points"]
-- !private ["s9EquatableP", "rightAnchor"]
-- !private ["s9EquatableP", "row"]
-- !private ["s9EquatableP", "scaleAspectFill"]
-- ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s9EquatableP", "scrollViewDidEndDecelerating"]
-- ["s9EquatableP", "scrollViewDidEndDragging"]
-- ["s9EquatableP", "scrollViewDidEndScrollingAnimation"]
-- ["s9EquatableP", "scrollViewDidEndZooming"]
-- ["s9EquatableP", "scrollViewDidScroll"]
-- ["s9EquatableP", "scrollViewDidScrollToTop"]
-- ["s9EquatableP", "scrollViewDidZoom"]
-- ["s9EquatableP", "scrollViewShouldScrollToTop"]
-- ["s9EquatableP", "scrollViewWillBeginDecelerating"]
-- ["s9EquatableP", "scrollViewWillBeginDragging"]
-- ["s9EquatableP", "scrollViewWillBeginZooming"]
-- ["s9EquatableP", "scrollViewWillEndDragging"]
-- ["s9EquatableP", "sectionIndexTitles"]
-- ["s9EquatableP", "sectionIndexTitlesForTableView"]
-- !private ["s9EquatableP", "selectionStyle"]
-- !private ["s9EquatableP", "separatorStyle"]
-- !private ["s9EquatableP", "setting"]
-- !private ["s9EquatableP", "setupViews"]
-- !private ["s9EquatableP", "shadowColor"]
-- !private ["s9EquatableP", "showsVerticalScrollIndicator"]
-- !private ["s9EquatableP", "signOut"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "systemFont"]
-- !private ["s9EquatableP", "tableFooterView"]
-- ["s9EquatableP", "tableView"]
-- !private ["s9EquatableP", "text"]
-- !private ["s9EquatableP", "textColor"]
-- !private ["s9EquatableP", "textLabel"]
-- !private ["s9EquatableP", "titleArr"]
-- !private ["s9EquatableP", "topAnchor"]
-- !private ["s9EquatableP", "transaction_history"]
-- ["s9EquatableP", "translatesAutoresizingMaskIntoConstraints"]
-- ["s9EquatableP", "viewForZooming"]
-- ["s9EquatableP", "viewForZoomingInScrollView"]
-- !private ["s9EquatableP", "white"]
-- !private ["s9EquatableP", "width"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "clear"]
+- !private ["Se", "contentMode"]
+- !private ["Se", "count"]
+- !private ["Se", "height"]
+- !private ["Se", "image"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "layer"]
+- !private ["Se", "row"]
+- !private ["Se", "subscript"]
+- !private ["Se", "width"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "clear"]
+- !private ["SE", "contentMode"]
+- !private ["SE", "count"]
+- !private ["SE", "height"]
+- !private ["SE", "image"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "layer"]
+- !private ["SE", "row"]
+- !private ["SE", "subscript"]
+- !private ["SE", "width"]
+- !private ["SQ", "CGRect"]
+- ["SQ", "RawValue"]
+- !private ["SQ", "Row"]
+- ["SQ", "String"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIFont"]
+- ["SQ", "UIImage"]
+- !private ["SQ", "UIImageView"]
+- !private ["SQ", "UILabel"]
+- ["SQ", "UITableView"]
+- !private ["SQ", "UITableViewCell"]
+- !private ["SQ", "UITableViewCellSeparatorStyle"]
+- !private ["SQ", "UIView"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "about_us"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "allowsSelection"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "backgroundView"]
+- !private ["SQ", "black"]
+- !private ["SQ", "bottomAnchor"]
+- !private ["SQ", "bounces"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "clipsToBounds"]
+- !private ["SQ", "constraint"]
+- !private ["SQ", "contentMode"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "count"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "editProfile"]
+- !private ["SQ", "fatalError"]
+- !private ["SQ", "font"]
+- !private ["SQ", "frame"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "height"]
+- !private ["SQ", "home"]
+- !private ["SQ", "icon_image"]
+- !private ["SQ", "image"]
+- ["SQ", "indexPathForPreferredFocusedView"]
+- ["SQ", "indexPathForPreferredFocusedViewInTableView"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "isActive"]
+- !private ["SQ", "layer"]
+- !private ["SQ", "leftAnchor"]
+- !private ["SQ", "masksToBounds"]
+- !private ["SQ", "myTableView"]
+- !private ["SQ", "my_appointments"]
+- !private ["SQ", "none"]
+- !private ["SQ", "notification"]
+- ["SQ", "numberOfSections"]
+- ["SQ", "numberOfSectionsInTableView"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "register"]
+- !private ["SQ", "reward_points"]
+- !private ["SQ", "rightAnchor"]
+- !private ["SQ", "row"]
+- !private ["SQ", "scaleAspectFill"]
+- ["SQ", "scrollViewDidChangeAdjustedContentInset"]
+- ["SQ", "scrollViewDidEndDecelerating"]
+- ["SQ", "scrollViewDidEndDragging"]
+- ["SQ", "scrollViewDidEndScrollingAnimation"]
+- ["SQ", "scrollViewDidEndZooming"]
+- ["SQ", "scrollViewDidScroll"]
+- ["SQ", "scrollViewDidScrollToTop"]
+- ["SQ", "scrollViewDidZoom"]
+- ["SQ", "scrollViewShouldScrollToTop"]
+- ["SQ", "scrollViewWillBeginDecelerating"]
+- ["SQ", "scrollViewWillBeginDragging"]
+- ["SQ", "scrollViewWillBeginZooming"]
+- ["SQ", "scrollViewWillEndDragging"]
+- ["SQ", "sectionIndexTitles"]
+- ["SQ", "sectionIndexTitlesForTableView"]
+- !private ["SQ", "selectionStyle"]
+- !private ["SQ", "separatorStyle"]
+- !private ["SQ", "setting"]
+- !private ["SQ", "setupViews"]
+- !private ["SQ", "shadowColor"]
+- !private ["SQ", "showsVerticalScrollIndicator"]
+- !private ["SQ", "signOut"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "systemFont"]
+- !private ["SQ", "tableFooterView"]
+- ["SQ", "tableView"]
+- !private ["SQ", "text"]
+- !private ["SQ", "textColor"]
+- !private ["SQ", "textLabel"]
+- !private ["SQ", "titleArr"]
+- !private ["SQ", "topAnchor"]
+- !private ["SQ", "transaction_history"]
+- ["SQ", "translatesAutoresizingMaskIntoConstraints"]
+- ["SQ", "viewForZooming"]
+- ["SQ", "viewForZoomingInScrollView"]
+- !private ["SQ", "white"]
+- !private ["SQ", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "clear"]
+- !private ["s23ExpressibleByNilLiteralP", "contentMode"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["7RxCocoa13HasDataSourceP", "allowsSelection"]
 - !private ["7RxCocoa13HasDataSourceP", "backgroundColor"]
@@ -567,101 +601,106 @@ depends-member:
 - !private ["7RxCocoa21HasPrefetchDataSourceP", "tableFooterView"]
 - !private ["7RxCocoa21HasPrefetchDataSourceP", "topAnchor"]
 - ["7RxCocoa21HasPrefetchDataSourceP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["s8HashableP", "CGRect"]
-- ["s8HashableP", "RawValue"]
-- !private ["s8HashableP", "Row"]
-- ["s8HashableP", "String"]
-- !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIFont"]
-- ["s8HashableP", "UIImage"]
-- !private ["s8HashableP", "UIImageView"]
-- !private ["s8HashableP", "UILabel"]
-- ["s8HashableP", "UITableView"]
-- !private ["s8HashableP", "UITableViewCell"]
-- !private ["s8HashableP", "UITableViewCellSeparatorStyle"]
-- !private ["s8HashableP", "UIView"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "_Default_RawValue"]
-- !private ["s8HashableP", "_findStringSwitchCase"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "about_us"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "allowsSelection"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "backgroundView"]
-- !private ["s8HashableP", "black"]
-- !private ["s8HashableP", "bottomAnchor"]
-- !private ["s8HashableP", "bounces"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "clipsToBounds"]
-- !private ["s8HashableP", "constraint"]
-- !private ["s8HashableP", "contentMode"]
-- !private ["s8HashableP", "cornerRadius"]
-- !private ["s8HashableP", "dataSource"]
-- !private ["s8HashableP", "delegate"]
-- !private ["s8HashableP", "dequeueReusableCell"]
-- !private ["s8HashableP", "editProfile"]
-- !private ["s8HashableP", "fatalError"]
-- !private ["s8HashableP", "font"]
-- !private ["s8HashableP", "frame"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "home"]
-- !private ["s8HashableP", "icon_image"]
-- !private ["s8HashableP", "image"]
-- ["s8HashableP", "indexPathForPreferredFocusedView"]
-- ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isActive"]
-- !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "leftAnchor"]
-- !private ["s8HashableP", "masksToBounds"]
-- !private ["s8HashableP", "myTableView"]
-- !private ["s8HashableP", "my_appointments"]
-- !private ["s8HashableP", "none"]
-- !private ["s8HashableP", "notification"]
-- ["s8HashableP", "numberOfSections"]
-- ["s8HashableP", "numberOfSectionsInTableView"]
-- ["s8HashableP", "rawValue"]
-- !private ["s8HashableP", "register"]
-- !private ["s8HashableP", "reward_points"]
-- !private ["s8HashableP", "rightAnchor"]
-- !private ["s8HashableP", "row"]
-- !private ["s8HashableP", "scaleAspectFill"]
-- ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s8HashableP", "scrollViewDidEndDecelerating"]
-- ["s8HashableP", "scrollViewDidEndDragging"]
-- ["s8HashableP", "scrollViewDidEndScrollingAnimation"]
-- ["s8HashableP", "scrollViewDidEndZooming"]
-- ["s8HashableP", "scrollViewDidScroll"]
-- ["s8HashableP", "scrollViewDidScrollToTop"]
-- ["s8HashableP", "scrollViewDidZoom"]
-- ["s8HashableP", "scrollViewShouldScrollToTop"]
-- ["s8HashableP", "scrollViewWillBeginDecelerating"]
-- ["s8HashableP", "scrollViewWillBeginDragging"]
-- ["s8HashableP", "scrollViewWillBeginZooming"]
-- ["s8HashableP", "scrollViewWillEndDragging"]
-- ["s8HashableP", "sectionIndexTitles"]
-- ["s8HashableP", "sectionIndexTitlesForTableView"]
-- !private ["s8HashableP", "selectionStyle"]
-- !private ["s8HashableP", "separatorStyle"]
-- !private ["s8HashableP", "setting"]
-- !private ["s8HashableP", "setupViews"]
-- !private ["s8HashableP", "shadowColor"]
-- !private ["s8HashableP", "showsVerticalScrollIndicator"]
-- !private ["s8HashableP", "signOut"]
-- !private ["s8HashableP", "systemFont"]
-- !private ["s8HashableP", "tableFooterView"]
-- ["s8HashableP", "tableView"]
-- !private ["s8HashableP", "text"]
-- !private ["s8HashableP", "textColor"]
-- !private ["s8HashableP", "textLabel"]
-- !private ["s8HashableP", "titleArr"]
-- !private ["s8HashableP", "topAnchor"]
-- !private ["s8HashableP", "transaction_history"]
-- ["s8HashableP", "translatesAutoresizingMaskIntoConstraints"]
-- ["s8HashableP", "viewForZooming"]
-- ["s8HashableP", "viewForZoomingInScrollView"]
-- !private ["s8HashableP", "white"]
+- !private ["SH", "CGRect"]
+- ["SH", "RawValue"]
+- !private ["SH", "Row"]
+- ["SH", "String"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIFont"]
+- ["SH", "UIImage"]
+- !private ["SH", "UIImageView"]
+- !private ["SH", "UILabel"]
+- ["SH", "UITableView"]
+- !private ["SH", "UITableViewCell"]
+- !private ["SH", "UITableViewCellSeparatorStyle"]
+- !private ["SH", "UIView"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "about_us"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "allowsSelection"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "backgroundView"]
+- !private ["SH", "black"]
+- !private ["SH", "bottomAnchor"]
+- !private ["SH", "bounces"]
+- !private ["SH", "clear"]
+- !private ["SH", "clipsToBounds"]
+- !private ["SH", "constraint"]
+- !private ["SH", "contentMode"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "count"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "delegate"]
+- !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "editProfile"]
+- !private ["SH", "fatalError"]
+- !private ["SH", "font"]
+- !private ["SH", "frame"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "home"]
+- !private ["SH", "icon_image"]
+- !private ["SH", "image"]
+- ["SH", "indexPathForPreferredFocusedView"]
+- ["SH", "indexPathForPreferredFocusedViewInTableView"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "isActive"]
+- !private ["SH", "layer"]
+- !private ["SH", "leftAnchor"]
+- !private ["SH", "masksToBounds"]
+- !private ["SH", "myTableView"]
+- !private ["SH", "my_appointments"]
+- !private ["SH", "none"]
+- !private ["SH", "notification"]
+- ["SH", "numberOfSections"]
+- ["SH", "numberOfSectionsInTableView"]
+- ["SH", "rawValue"]
+- !private ["SH", "register"]
+- !private ["SH", "reward_points"]
+- !private ["SH", "rightAnchor"]
+- !private ["SH", "row"]
+- !private ["SH", "scaleAspectFill"]
+- ["SH", "scrollViewDidChangeAdjustedContentInset"]
+- ["SH", "scrollViewDidEndDecelerating"]
+- ["SH", "scrollViewDidEndDragging"]
+- ["SH", "scrollViewDidEndScrollingAnimation"]
+- ["SH", "scrollViewDidEndZooming"]
+- ["SH", "scrollViewDidScroll"]
+- ["SH", "scrollViewDidScrollToTop"]
+- ["SH", "scrollViewDidZoom"]
+- ["SH", "scrollViewShouldScrollToTop"]
+- ["SH", "scrollViewWillBeginDecelerating"]
+- ["SH", "scrollViewWillBeginDragging"]
+- ["SH", "scrollViewWillBeginZooming"]
+- ["SH", "scrollViewWillEndDragging"]
+- ["SH", "sectionIndexTitles"]
+- ["SH", "sectionIndexTitlesForTableView"]
+- !private ["SH", "selectionStyle"]
+- !private ["SH", "separatorStyle"]
+- !private ["SH", "setting"]
+- !private ["SH", "setupViews"]
+- !private ["SH", "shadowColor"]
+- !private ["SH", "showsVerticalScrollIndicator"]
+- !private ["SH", "signOut"]
+- !private ["SH", "subscript"]
+- !private ["SH", "systemFont"]
+- !private ["SH", "tableFooterView"]
+- ["SH", "tableView"]
+- !private ["SH", "text"]
+- !private ["SH", "textColor"]
+- !private ["SH", "textLabel"]
+- !private ["SH", "titleArr"]
+- !private ["SH", "topAnchor"]
+- !private ["SH", "transaction_history"]
+- ["SH", "translatesAutoresizingMaskIntoConstraints"]
+- ["SH", "viewForZooming"]
+- ["SH", "viewForZoomingInScrollView"]
+- !private ["SH", "white"]
+- !private ["s6HasherV", "combine"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["7RxCocoa16KVORepresentableP", "_getBuiltinLogicValue"]
 - !private ["7RxCocoa16KVORepresentableP", "height"]
@@ -669,11 +708,13 @@ depends-member:
 - !private ["7RxCocoa16KVORepresentableP", "width"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "count"]
-- ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "row"]
-- !private ["s17MutableCollectionP", "subscript"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- ["SM", "init"]
+- !private ["SM", "row"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "Row"]
 - ["So8NSCodingP", "String"]
@@ -847,83 +888,83 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectC", "white"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "Row"]
-- ["So16NSObjectProtocolP", "String"]
-- !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIFont"]
-- ["So16NSObjectProtocolP", "UIImage"]
-- !private ["So16NSObjectProtocolP", "UIImageView"]
-- !private ["So16NSObjectProtocolP", "UILabel"]
-- ["So16NSObjectProtocolP", "UITableView"]
-- !private ["So16NSObjectProtocolP", "UITableViewCell"]
-- !private ["So16NSObjectProtocolP", "UITableViewCellSeparatorStyle"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "allowsSelection"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "backgroundView"]
-- !private ["So16NSObjectProtocolP", "black"]
-- !private ["So16NSObjectProtocolP", "bottomAnchor"]
-- !private ["So16NSObjectProtocolP", "bounces"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "clipsToBounds"]
-- !private ["So16NSObjectProtocolP", "constraint"]
-- !private ["So16NSObjectProtocolP", "contentMode"]
-- !private ["So16NSObjectProtocolP", "cornerRadius"]
-- !private ["So16NSObjectProtocolP", "dataSource"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "dequeueReusableCell"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "font"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "icon_image"]
-- !private ["So16NSObjectProtocolP", "image"]
-- ["So16NSObjectProtocolP", "indexPathForPreferredFocusedView"]
-- ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isActive"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "leftAnchor"]
-- !private ["So16NSObjectProtocolP", "masksToBounds"]
-- !private ["So16NSObjectProtocolP", "myTableView"]
-- ["So16NSObjectProtocolP", "numberOfSections"]
-- ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
-- !private ["So16NSObjectProtocolP", "register"]
-- !private ["So16NSObjectProtocolP", "rightAnchor"]
-- ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
-- ["So16NSObjectProtocolP", "scrollViewDidScroll"]
-- ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewDidZoom"]
-- ["So16NSObjectProtocolP", "scrollViewShouldScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
-- ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
-- ["So16NSObjectProtocolP", "sectionIndexTitles"]
-- ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
-- !private ["So16NSObjectProtocolP", "selectionStyle"]
-- !private ["So16NSObjectProtocolP", "separatorStyle"]
-- !private ["So16NSObjectProtocolP", "setupViews"]
-- !private ["So16NSObjectProtocolP", "shadowColor"]
-- !private ["So16NSObjectProtocolP", "showsVerticalScrollIndicator"]
-- !private ["So16NSObjectProtocolP", "systemFont"]
-- !private ["So16NSObjectProtocolP", "tableFooterView"]
-- ["So16NSObjectProtocolP", "tableView"]
-- !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "textColor"]
-- !private ["So16NSObjectProtocolP", "textLabel"]
-- !private ["So16NSObjectProtocolP", "titleArr"]
-- !private ["So16NSObjectProtocolP", "topAnchor"]
-- ["So16NSObjectProtocolP", "translatesAutoresizingMaskIntoConstraints"]
-- ["So16NSObjectProtocolP", "viewForZooming"]
-- ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
-- !private ["So16NSObjectProtocolP", "white"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "Row"]
+- ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIFont"]
+- ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UIImageView"]
+- !private ["So8NSObjectP", "UILabel"]
+- ["So8NSObjectP", "UITableView"]
+- !private ["So8NSObjectP", "UITableViewCell"]
+- !private ["So8NSObjectP", "UITableViewCellSeparatorStyle"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "allowsSelection"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "backgroundView"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "bottomAnchor"]
+- !private ["So8NSObjectP", "bounces"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "clipsToBounds"]
+- !private ["So8NSObjectP", "constraint"]
+- !private ["So8NSObjectP", "contentMode"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "font"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "icon_image"]
+- !private ["So8NSObjectP", "image"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedView"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isActive"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "leftAnchor"]
+- !private ["So8NSObjectP", "masksToBounds"]
+- !private ["So8NSObjectP", "myTableView"]
+- ["So8NSObjectP", "numberOfSections"]
+- ["So8NSObjectP", "numberOfSectionsInTableView"]
+- !private ["So8NSObjectP", "register"]
+- !private ["So8NSObjectP", "rightAnchor"]
+- ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectP", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectP", "scrollViewDidEndDragging"]
+- ["So8NSObjectP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectP", "scrollViewDidEndZooming"]
+- ["So8NSObjectP", "scrollViewDidScroll"]
+- ["So8NSObjectP", "scrollViewDidScrollToTop"]
+- ["So8NSObjectP", "scrollViewDidZoom"]
+- ["So8NSObjectP", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectP", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectP", "scrollViewWillBeginDragging"]
+- ["So8NSObjectP", "scrollViewWillBeginZooming"]
+- ["So8NSObjectP", "scrollViewWillEndDragging"]
+- ["So8NSObjectP", "sectionIndexTitles"]
+- ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectP", "selectionStyle"]
+- !private ["So8NSObjectP", "separatorStyle"]
+- !private ["So8NSObjectP", "setupViews"]
+- !private ["So8NSObjectP", "shadowColor"]
+- !private ["So8NSObjectP", "showsVerticalScrollIndicator"]
+- !private ["So8NSObjectP", "systemFont"]
+- !private ["So8NSObjectP", "tableFooterView"]
+- ["So8NSObjectP", "tableView"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "textLabel"]
+- !private ["So8NSObjectP", "titleArr"]
+- !private ["So8NSObjectP", "topAnchor"]
+- ["So8NSObjectP", "translatesAutoresizingMaskIntoConstraints"]
+- ["So8NSObjectP", "viewForZooming"]
+- ["So8NSObjectP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "clear"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
@@ -931,31 +972,36 @@ depends-member:
 - !private ["So14NSSecureCodingP", "masksToBounds"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["Sq", "clear"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "row"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- ["s16RawRepresentableP", "RawValue"]
-- ["s16RawRepresentableP", ""]
-- ["s16RawRepresentableP", "_Default_RawValue"]
-- !private ["s16RawRepresentableP", "_findStringSwitchCase"]
-- !private ["s16RawRepresentableP", "about_us"]
-- !private ["s16RawRepresentableP", "editProfile"]
-- ["s16RawRepresentableP", "hashValue"]
-- !private ["s16RawRepresentableP", "home"]
-- ["s16RawRepresentableP", "init"]
-- !private ["s16RawRepresentableP", "my_appointments"]
-- !private ["s16RawRepresentableP", "none"]
-- !private ["s16RawRepresentableP", "notification"]
-- ["s16RawRepresentableP", "rawValue"]
-- !private ["s16RawRepresentableP", "reward_points"]
-- !private ["s16RawRepresentableP", "scaleAspectFill"]
-- !private ["s16RawRepresentableP", "setting"]
-- !private ["s16RawRepresentableP", "signOut"]
-- !private ["s16RawRepresentableP", "transaction_history"]
+- !private ["Sq", "contentMode"]
+- !private ["Sq", "image"]
+- !private ["Sq", "layer"]
+- !private ["Sk", "count"]
+- ["Sk", "init"]
+- !private ["Sk", "row"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- !private ["SY", "about_us"]
+- !private ["SY", "editProfile"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "home"]
+- ["SY", "init"]
+- !private ["SY", "my_appointments"]
+- !private ["SY", "none"]
+- !private ["SY", "notification"]
+- ["SY", "rawValue"]
+- !private ["SY", "reward_points"]
+- !private ["SY", "scaleAspectFill"]
+- !private ["SY", "setting"]
+- !private ["SY", "signOut"]
+- !private ["SY", "transaction_history"]
 - !private ["7RxSwift18ReactiveCompatibleP", "CGRect"]
 - !private ["7RxSwift18ReactiveCompatibleP", "Row"]
 - ["7RxSwift18ReactiveCompatibleP", "String"]
@@ -1041,6 +1087,7 @@ depends-member:
 - ["13BarberShop_V23RowO", "about_us"]
 - ["13BarberShop_V23RowO", "deinit"]
 - ["13BarberShop_V23RowO", "editProfile"]
+- ["13BarberShop_V23RowO", "hash"]
 - ["13BarberShop_V23RowO", "hashValue"]
 - ["13BarberShop_V23RowO", "home"]
 - ["13BarberShop_V23RowO", "init"]
@@ -1052,10 +1099,13 @@ depends-member:
 - ["13BarberShop_V23RowO", "setting"]
 - ["13BarberShop_V23RowO", "signOut"]
 - ["13BarberShop_V23RowO", "transaction_history"]
-- !private ["s8SequenceP", "count"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "row"]
-- !private ["s8SequenceP", "subscript"]
+- !private ["So29UITableViewCellSelectionStyleV", "none"]
+- !private ["So29UITableViewCellSeparatorStyleV", "none"]
+- !private ["ST", "count"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "row"]
+- !private ["ST", "subscript"]
 - ["13BarberShop_V211SidebarViewC", "CGFloat"]
 - ["13BarberShop_V211SidebarViewC", "CGRect"]
 - ["13BarberShop_V211SidebarViewC", "IndexPath"]
@@ -1114,9 +1164,14 @@ depends-member:
 - ["13BarberShop_V219SidebarViewDelegateP", "Row"]
 - ["13BarberShop_V219SidebarViewDelegateP", "sidebarDidSelectRow"]
 - !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
@@ -1630,6 +1685,91 @@ depends-member:
 - ["So11UIFocusItemP", "translatesAutoresizingMaskIntoConstraints"]
 - ["So11UIFocusItemP", "viewForZooming"]
 - ["So11UIFocusItemP", "viewForZoomingInScrollView"]
+- !private ["So20UIFocusItemContainerP", "CGRect"]
+- !private ["So20UIFocusItemContainerP", "Row"]
+- ["So20UIFocusItemContainerP", "String"]
+- !private ["So20UIFocusItemContainerP", "UIColor"]
+- !private ["So20UIFocusItemContainerP", "UIFont"]
+- ["So20UIFocusItemContainerP", "UIImage"]
+- !private ["So20UIFocusItemContainerP", "UIImageView"]
+- !private ["So20UIFocusItemContainerP", "UILabel"]
+- ["So20UIFocusItemContainerP", "UITableView"]
+- !private ["So20UIFocusItemContainerP", "UITableViewCell"]
+- !private ["So20UIFocusItemContainerP", "UITableViewCellSeparatorStyle"]
+- !private ["So20UIFocusItemContainerP", "UIView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "allowsSelection"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "backgroundView"]
+- !private ["So20UIFocusItemContainerP", "bottomAnchor"]
+- !private ["So20UIFocusItemContainerP", "bounces"]
+- !private ["So20UIFocusItemContainerP", "clipsToBounds"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
+- !private ["So20UIFocusItemContainerP", "dataSource"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "font"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "icon_image"]
+- !private ["So20UIFocusItemContainerP", "image"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedView"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedViewInTableView"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "leftAnchor"]
+- !private ["So20UIFocusItemContainerP", "myTableView"]
+- ["So20UIFocusItemContainerP", "numberOfSections"]
+- ["So20UIFocusItemContainerP", "numberOfSectionsInTableView"]
+- !private ["So20UIFocusItemContainerP", "register"]
+- !private ["So20UIFocusItemContainerP", "rightAnchor"]
+- ["So20UIFocusItemContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScroll"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewDidZoom"]
+- ["So20UIFocusItemContainerP", "scrollViewShouldScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewWillEndDragging"]
+- ["So20UIFocusItemContainerP", "sectionIndexTitles"]
+- ["So20UIFocusItemContainerP", "sectionIndexTitlesForTableView"]
+- !private ["So20UIFocusItemContainerP", "selectionStyle"]
+- !private ["So20UIFocusItemContainerP", "separatorStyle"]
+- !private ["So20UIFocusItemContainerP", "setupViews"]
+- !private ["So20UIFocusItemContainerP", "shadowColor"]
+- !private ["So20UIFocusItemContainerP", "showsVerticalScrollIndicator"]
+- !private ["So20UIFocusItemContainerP", "tableFooterView"]
+- ["So20UIFocusItemContainerP", "tableView"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "textLabel"]
+- !private ["So20UIFocusItemContainerP", "titleArr"]
+- !private ["So20UIFocusItemContainerP", "topAnchor"]
+- ["So20UIFocusItemContainerP", "translatesAutoresizingMaskIntoConstraints"]
+- ["So20UIFocusItemContainerP", "viewForZooming"]
+- ["So20UIFocusItemContainerP", "viewForZoomingInScrollView"]
+- !private ["So30UIFocusItemScrollableContainerP", "allowsSelection"]
+- !private ["So30UIFocusItemScrollableContainerP", "backgroundColor"]
+- !private ["So30UIFocusItemScrollableContainerP", "bottomAnchor"]
+- !private ["So30UIFocusItemScrollableContainerP", "bounces"]
+- !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
+- !private ["So30UIFocusItemScrollableContainerP", "delegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- ["So30UIFocusItemScrollableContainerP", "init"]
+- !private ["So30UIFocusItemScrollableContainerP", "leftAnchor"]
+- !private ["So30UIFocusItemScrollableContainerP", "register"]
+- !private ["So30UIFocusItemScrollableContainerP", "rightAnchor"]
+- !private ["So30UIFocusItemScrollableContainerP", "separatorStyle"]
+- !private ["So30UIFocusItemScrollableContainerP", "showsVerticalScrollIndicator"]
+- !private ["So30UIFocusItemScrollableContainerP", "tableFooterView"]
+- !private ["So30UIFocusItemScrollableContainerP", "topAnchor"]
+- ["So30UIFocusItemScrollableContainerP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So6UIFontC", "systemFont"]
 - !private ["So27UIGestureRecognizerDelegateP", "addSubview"]
 - !private ["So27UIGestureRecognizerDelegateP", "backgroundColor"]
@@ -1960,8 +2100,6 @@ depends-member:
 - !private ["So15UITableViewCellC", "frame"]
 - !private ["So15UITableViewCellC", "selectionStyle"]
 - !private ["So15UITableViewCellC", "textLabel"]
-- !private ["SC29UITableViewCellSelectionStyleO", "none"]
-- !private ["SC29UITableViewCellSeparatorStyleO", "none"]
 - !private ["So21UITableViewDataSourceP", "CGRect"]
 - !private ["So21UITableViewDataSourceP", "Row"]
 - ["So21UITableViewDataSourceP", "String"]
@@ -2127,6 +2265,75 @@ depends-member:
 - ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- !private ["So23UIUserActivityRestoringP", "Row"]
+- ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIFont"]
+- ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UIImageView"]
+- !private ["So23UIUserActivityRestoringP", "UILabel"]
+- ["So23UIUserActivityRestoringP", "UITableView"]
+- !private ["So23UIUserActivityRestoringP", "UITableViewCell"]
+- !private ["So23UIUserActivityRestoringP", "UITableViewCellSeparatorStyle"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "allowsSelection"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "backgroundView"]
+- !private ["So23UIUserActivityRestoringP", "bottomAnchor"]
+- !private ["So23UIUserActivityRestoringP", "bounces"]
+- !private ["So23UIUserActivityRestoringP", "clipsToBounds"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "font"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "icon_image"]
+- !private ["So23UIUserActivityRestoringP", "image"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInTableView"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "leftAnchor"]
+- !private ["So23UIUserActivityRestoringP", "myTableView"]
+- ["So23UIUserActivityRestoringP", "numberOfSections"]
+- ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
+- !private ["So23UIUserActivityRestoringP", "register"]
+- !private ["So23UIUserActivityRestoringP", "rightAnchor"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndScrollingAnimation"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScroll"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidZoom"]
+- ["So23UIUserActivityRestoringP", "scrollViewShouldScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
+- ["So23UIUserActivityRestoringP", "sectionIndexTitles"]
+- ["So23UIUserActivityRestoringP", "sectionIndexTitlesForTableView"]
+- !private ["So23UIUserActivityRestoringP", "selectionStyle"]
+- !private ["So23UIUserActivityRestoringP", "separatorStyle"]
+- !private ["So23UIUserActivityRestoringP", "setupViews"]
+- !private ["So23UIUserActivityRestoringP", "shadowColor"]
+- !private ["So23UIUserActivityRestoringP", "showsVerticalScrollIndicator"]
+- !private ["So23UIUserActivityRestoringP", "tableFooterView"]
+- ["So23UIUserActivityRestoringP", "tableView"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "textLabel"]
+- !private ["So23UIUserActivityRestoringP", "titleArr"]
+- !private ["So23UIUserActivityRestoringP", "topAnchor"]
+- ["So23UIUserActivityRestoringP", "translatesAutoresizingMaskIntoConstraints"]
+- ["So23UIUserActivityRestoringP", "viewForZooming"]
+- ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
 - ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "IndexPath"]
@@ -2202,11 +2409,8 @@ depends-member:
 - ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
 - ["So6UIViewC", "viewForZooming"]
 - ["So6UIViewC", "viewForZoomingInScrollView"]
-- !private ["SC17UIViewContentModeO", "scaleAspectFill"]
 - ["9Alamofire14URLConvertibleP", "init"]
-- !private ["s14_ArrayProtocolP", "count"]
-- ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Row"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "String"]
@@ -2281,14 +2485,22 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Row"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
@@ -2368,33 +2580,40 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "clear"]
+- !private ["s21_ObjectiveCBridgeableP", "contentMode"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "12FacebookCore26AppEventParameterValueTypeP"
 - "Sa"
-- "s23BidirectionalCollectionP"
+- "s13ArrayProtocolP"
+- "SK"
 - !private "Sb"
 - !private "So19CAAnimationDelegateP"
 - !private "So7CALayerC"
 - "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
-- !private "SC6CGRectV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
+- !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
-- "s9EncodableP"
-- "s9EquatableP"
+- "Se"
+- "SE"
+- "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -2404,12 +2623,13 @@ depends-nominal:
 - "7RxCocoa13HasDataSourceP"
 - "7RxCocoa11HasDelegateP"
 - "7RxCocoa21HasPrefetchDataSourceP"
-- "s8HashableP"
+- "SH"
+- !private "s6HasherV"
 - !private "10Foundation9IndexPathV"
 - !private "7RxCocoa16KVORepresentableP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- "s17MutableCollectionP"
+- "SM"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -2419,21 +2639,23 @@ depends-nominal:
 - !private "So19NSLayoutXAxisAnchorC"
 - !private "So19NSLayoutYAxisAnchorC"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- "Sk"
+- "Sm"
+- "SY"
 - "7RxSwift18ReactiveCompatibleP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "13BarberShop_V23RowO"
-- "s8SequenceP"
+- !private "So29UITableViewCellSelectionStyleV"
+- !private "So29UITableViewCellSeparatorStyleV"
+- "ST"
 - "13BarberShop_V211SidebarViewC"
 - "13BarberShop_V219SidebarViewDelegateP"
 - !private "s12StaticStringV"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -2447,6 +2669,8 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
 - !private "So6UIFontC"
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So11UIImageViewC"
@@ -2459,15 +2683,12 @@ depends-nominal:
 - "So35UISpringLoadedInteractionSupportingP"
 - "So11UITableViewC"
 - !private "So15UITableViewCellC"
-- !private "SC29UITableViewCellSelectionStyleO"
-- !private "SC29UITableViewCellSeparatorStyleO"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "SC17UIViewContentModeO"
 - "9Alamofire14URLConvertibleP"
-- "s14_ArrayProtocolP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -2477,38 +2698,41 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
@@ -2519,48 +2743,83 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXParallaxHeader-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUserDataStore.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
@@ -2568,6 +2827,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXParallaxHeader.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
@@ -2575,28 +2835,58 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPagerController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXScrollViewController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerViewController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
@@ -2608,21 +2898,34 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXScrollView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
@@ -2632,27 +2935,39 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Modules/module.modulemap"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "f44a3ad3dbf51bd58a2bdc5928058340"

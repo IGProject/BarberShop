@@ -21,8 +21,10 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Binder"
 - "Event"
+- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
+- !private "IntegerLiteralType"
 - "NSObject"
 - !private "RxCocoaError"
 - "RxTableViewDataSourceType"
@@ -41,12 +43,15 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "item"]
-- !private ["s23BidirectionalCollectionP", "row"]
-- !private ["s23BidirectionalCollectionP", "section"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "item"]
+- !private ["SK", "row"]
+- !private ["SK", "section"]
+- !private ["SK", "subscript"]
 - !private ["7RxCocoa6BinderV", "deinit"]
 - !private ["7RxCocoa6BinderV", "init"]
 - !private ["7RxCocoa6BinderV", "on"]
@@ -60,6 +65,7 @@ depends-member:
 - !private ["s7CVarArgP", "cellFactory"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "itemModels"]
 - ["s7CVarArgP", "model"]
 - ["s7CVarArgP", "numberOfSections"]
@@ -71,15 +77,15 @@ depends-member:
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "item"]
-- !private ["s10CollectionP", "row"]
-- !private ["s10CollectionP", "section"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "item"]
-- !private ["s10ComparableP", "row"]
-- !private ["s10ComparableP", "section"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "item"]
+- !private ["Sl", "row"]
+- !private ["Sl", "section"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "item"]
+- !private ["SL", "row"]
+- !private ["SL", "section"]
 - !private ["s28CustomDebugStringConvertibleP", "Array"]
 - !private ["s28CustomDebugStringConvertibleP", "Binder"]
 - ["s28CustomDebugStringConvertibleP", "Element"]
@@ -88,6 +94,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "_tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "cellFactory"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "item"]
 - !private ["s28CustomDebugStringConvertibleP", "itemModels"]
@@ -106,6 +113,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "item"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "section"]
@@ -118,6 +126,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_tableView"]
 - !private ["s23CustomStringConvertibleP", "cellFactory"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "item"]
 - !private ["s23CustomStringConvertibleP", "itemModels"]
@@ -133,41 +142,42 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "item"]
-- !private ["s9DecodableP", "row"]
-- !private ["s9DecodableP", "section"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "item"]
-- !private ["s9EncodableP", "row"]
-- !private ["s9EncodableP", "section"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "Array"]
-- !private ["s9EquatableP", "Binder"]
-- ["s9EquatableP", "Element"]
-- !private ["s9EquatableP", "RxCocoaError"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_tableView"]
-- !private ["s9EquatableP", "cellFactory"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "item"]
-- !private ["s9EquatableP", "itemModels"]
-- ["s9EquatableP", "model"]
-- ["s9EquatableP", "numberOfSections"]
-- ["s9EquatableP", "numberOfSectionsInTableView"]
-- !private ["s9EquatableP", "precondition"]
-- !private ["s9EquatableP", "reloadData"]
-- !private ["s9EquatableP", "row"]
-- !private ["s9EquatableP", "rxAbstractMethod"]
-- !private ["s9EquatableP", "section"]
-- ["s9EquatableP", "sectionIndexTitles"]
-- ["s9EquatableP", "sectionIndexTitlesForTableView"]
-- !private ["s9EquatableP", "subscript"]
-- ["s9EquatableP", "tableView"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "item"]
+- !private ["Se", "row"]
+- !private ["Se", "section"]
+- !private ["Se", "subscript"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "item"]
+- !private ["SE", "row"]
+- !private ["SE", "section"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Array"]
+- !private ["SQ", "Binder"]
+- ["SQ", "Element"]
+- !private ["SQ", "RxCocoaError"]
+- ["SQ", ""]
+- !private ["SQ", "_tableView"]
+- !private ["SQ", "cellFactory"]
+- !private ["SQ", "count"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "item"]
+- !private ["SQ", "itemModels"]
+- ["SQ", "model"]
+- ["SQ", "numberOfSections"]
+- ["SQ", "numberOfSectionsInTableView"]
+- !private ["SQ", "precondition"]
+- !private ["SQ", "reloadData"]
+- !private ["SQ", "row"]
+- !private ["SQ", "rxAbstractMethod"]
+- !private ["SQ", "section"]
+- ["SQ", "sectionIndexTitles"]
+- ["SQ", "sectionIndexTitlesForTableView"]
+- !private ["SQ", "subscript"]
+- ["SQ", "tableView"]
 - !private ["s5ErrorP", "itemsNotYetBound"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
@@ -176,42 +186,48 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "section"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["7RxCocoa13HasDataSourceP", "reloadData"]
 - !private ["7RxCocoa11HasDelegateP", "reloadData"]
 - !private ["7RxCocoa21HasPrefetchDataSourceP", "reloadData"]
-- !private ["s8HashableP", "Array"]
-- !private ["s8HashableP", "Binder"]
-- ["s8HashableP", "Element"]
-- !private ["s8HashableP", "RxCocoaError"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_tableView"]
-- !private ["s8HashableP", "cellFactory"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "item"]
-- !private ["s8HashableP", "itemModels"]
-- ["s8HashableP", "model"]
-- ["s8HashableP", "numberOfSections"]
-- ["s8HashableP", "numberOfSectionsInTableView"]
-- !private ["s8HashableP", "precondition"]
-- !private ["s8HashableP", "reloadData"]
-- !private ["s8HashableP", "row"]
-- !private ["s8HashableP", "rxAbstractMethod"]
-- !private ["s8HashableP", "section"]
-- ["s8HashableP", "sectionIndexTitles"]
-- ["s8HashableP", "sectionIndexTitlesForTableView"]
-- ["s8HashableP", "tableView"]
+- !private ["SH", "Array"]
+- !private ["SH", "Binder"]
+- ["SH", "Element"]
+- !private ["SH", "RxCocoaError"]
+- ["SH", ""]
+- !private ["SH", "_tableView"]
+- !private ["SH", "cellFactory"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "item"]
+- !private ["SH", "itemModels"]
+- ["SH", "model"]
+- ["SH", "numberOfSections"]
+- ["SH", "numberOfSectionsInTableView"]
+- !private ["SH", "precondition"]
+- !private ["SH", "reloadData"]
+- !private ["SH", "row"]
+- !private ["SH", "rxAbstractMethod"]
+- !private ["SH", "section"]
+- ["SH", "sectionIndexTitles"]
+- ["SH", "sectionIndexTitlesForTableView"]
+- !private ["SH", "subscript"]
+- ["SH", "tableView"]
 - !private ["10Foundation9IndexPathV", "item"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["10Foundation9IndexPathV", "section"]
-- ["s16IteratorProtocolP", "Element"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "item"]
-- !private ["s17MutableCollectionP", "row"]
-- !private ["s17MutableCollectionP", "section"]
-- !private ["s17MutableCollectionP", "subscript"]
+- ["St", "Element"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
+- !private ["SM", "item"]
+- !private ["SM", "row"]
+- !private ["SM", "section"]
+- !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSObjectC", "Array"]
 - !private ["So8NSObjectC", "Binder"]
@@ -228,6 +244,7 @@ depends-member:
 - ["So8NSObjectC", "_tableView"]
 - ["So8NSObjectC", "cellFactory"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "itemModels"]
 - ["So8NSObjectC", "model"]
 - ["So8NSObjectC", "modelAtIndex"]
@@ -239,35 +256,36 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - ["So8NSObjectC", "tableView"]
-- !private ["So16NSObjectProtocolP", "Array"]
-- !private ["So16NSObjectProtocolP", "Binder"]
-- ["So16NSObjectProtocolP", "Element"]
-- !private ["So16NSObjectProtocolP", "RxCocoaError"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "_tableView"]
-- !private ["So16NSObjectProtocolP", "cellFactory"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "itemModels"]
-- ["So16NSObjectProtocolP", "model"]
-- ["So16NSObjectProtocolP", "numberOfSections"]
-- ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
-- !private ["So16NSObjectProtocolP", "precondition"]
-- !private ["So16NSObjectProtocolP", "reloadData"]
-- !private ["So16NSObjectProtocolP", "rxAbstractMethod"]
-- ["So16NSObjectProtocolP", "sectionIndexTitles"]
-- ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
-- ["So16NSObjectProtocolP", "tableView"]
+- !private ["So8NSObjectP", "Array"]
+- !private ["So8NSObjectP", "Binder"]
+- ["So8NSObjectP", "Element"]
+- !private ["So8NSObjectP", "RxCocoaError"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "_tableView"]
+- !private ["So8NSObjectP", "cellFactory"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "itemModels"]
+- ["So8NSObjectP", "model"]
+- ["So8NSObjectP", "numberOfSections"]
+- ["So8NSObjectP", "numberOfSectionsInTableView"]
+- !private ["So8NSObjectP", "precondition"]
+- !private ["So8NSObjectP", "reloadData"]
+- !private ["So8NSObjectP", "rxAbstractMethod"]
+- ["So8NSObjectP", "sectionIndexTitles"]
+- ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- ["So8NSObjectP", "tableView"]
 - !private ["7RxSwift12ObserverTypeP", "init"]
 - !private ["7RxSwift12ObserverTypeP", "on"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "item"]
-- !private ["s22RandomAccessCollectionP", "row"]
-- !private ["s22RandomAccessCollectionP", "section"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sk", "item"]
+- !private ["Sk", "row"]
+- !private ["Sk", "section"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
 - !private ["7RxSwift18ReactiveCompatibleP", "Array"]
 - !private ["7RxSwift18ReactiveCompatibleP", "Binder"]
 - ["7RxSwift18ReactiveCompatibleP", "Element"]
@@ -275,6 +293,7 @@ depends-member:
 - ["7RxSwift18ReactiveCompatibleP", ""]
 - !private ["7RxSwift18ReactiveCompatibleP", "_tableView"]
 - !private ["7RxSwift18ReactiveCompatibleP", "cellFactory"]
+- !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "itemModels"]
 - ["7RxSwift18ReactiveCompatibleP", "model"]
@@ -338,13 +357,14 @@ depends-member:
 - ["7RxCocoa27SectionedViewDataSourceTypeP", "model"]
 - !private ["7RxCocoa27SectionedViewDataSourceTypeP", "precondition"]
 - ["7RxCocoa27SectionedViewDataSourceTypeP", "tableView"]
-- ["s8SequenceP", "Iterator"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "item"]
-- !private ["s8SequenceP", "row"]
-- !private ["s8SequenceP", "section"]
-- !private ["s8SequenceP", "subscript"]
+- ["ST", "Iterator"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "item"]
+- !private ["ST", "row"]
+- !private ["ST", "section"]
+- !private ["ST", "subscript"]
+- !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So12UIAppearanceP", "reloadData"]
@@ -354,6 +374,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So11UIFocusItemP", "reloadData"]
+- !private ["So20UIFocusItemContainerP", "reloadData"]
+- !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So11UIResponderC", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
@@ -378,17 +400,21 @@ depends-member:
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
+- !private ["So23UIUserActivityRestoringP", "reloadData"]
 - !private ["So6UIViewC", "reloadData"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Binder"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Element"]
@@ -396,6 +422,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "_tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellFactory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "itemModels"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "model"]
@@ -441,18 +468,19 @@ depends-member:
 - ["7RxCocoa01_A32TableViewReactiveArrayDataSourceC", "tableView"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "7RxCocoa6BinderV"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -461,16 +489,16 @@ depends-nominal:
 - !private "7RxCocoa13HasDataSourceP"
 - !private "7RxCocoa11HasDelegateP"
 - !private "7RxCocoa21HasPrefetchDataSourceP"
-- "s8HashableP"
+- "SH"
 - !private "10Foundation9IndexPathV"
-- "s16IteratorProtocolP"
-- !private "s17MutableCollectionP"
+- "St"
+- !private "SM"
 - !private "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "7RxSwift12ObserverTypeP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- !private "Sk"
+- !private "Sm"
 - "7RxSwift18ReactiveCompatibleP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "7RxCocoa0aB5ErrorO"
@@ -478,7 +506,7 @@ depends-nominal:
 - "7RxCocoa0A32TableViewReactiveArrayDataSourceC"
 - "7RxCocoa0A47TableViewReactiveArrayDataSourceSequenceWrapperC"
 - "7RxCocoa27SectionedViewDataSourceTypeP"
-- "s8SequenceP"
+- "ST"
 - !private "s12StaticStringV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -488,6 +516,8 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
@@ -496,32 +526,33 @@ depends-nominal:
 - !private "So11UITableViewC"
 - "So21UITableViewDataSourceP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7RxCocoa01_A32TableViewReactiveArrayDataSourceC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
@@ -533,14 +564,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "86f3573343dc51cc9dbc034ecefe6be1"

@@ -3,12 +3,9 @@ provides-top-level:
 - "SDKVersion"
 - "SDKSettings"
 provides-nominal:
-- "12FacebookCore11SDKSettingsV"
+- "12FacebookCore11SDKSettingsO"
 provides-member:
-- ["12FacebookCore11SDKSettingsV", ""]
-- ["12FacebookCore11SDKSettingsV", "enabledLoggingBehaviors"]
-- ["12FacebookCore11SDKSettingsV", "enableLoggingBehavior"]
-- ["12FacebookCore11SDKSettingsV", "disableLoggingBehavior"]
+- ["12FacebookCore11SDKSettingsO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "AnyHashable"
@@ -24,7 +21,7 @@ depends-top-level:
 - "String"
 depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["SB", "init"]
 - !private ["12CoreGraphics7CGFloatV", "init"]
 - !private ["s7CVarArgP", "appID"]
 - !private ["s7CVarArgP", "appURLSchemeSuffix"]
@@ -48,10 +45,10 @@ depends-member:
 - !private ["s7CVarArgP", "setJPEGCompressionQuality"]
 - !private ["s7CVarArgP", "setLimitEventAndDataUsage"]
 - !private ["s7CVarArgP", "setLoggingBehavior"]
-- !private ["s10CollectionP", "compactMap"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "map"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "appID"]
 - !private ["s28CustomDebugStringConvertibleP", "appURLSchemeSuffix"]
 - !private ["s28CustomDebugStringConvertibleP", "clientToken"]
@@ -100,41 +97,42 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setJPEGCompressionQuality"]
 - !private ["s23CustomStringConvertibleP", "setLimitEventAndDataUsage"]
 - !private ["s23CustomStringConvertibleP", "setLoggingBehavior"]
-- !private ["s9DecodableP", "compactMap"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "map"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
 - !private ["Sd", "init"]
-- !private ["s9EncodableP", "compactMap"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EquatableP", "appID"]
-- !private ["s9EquatableP", "appURLSchemeSuffix"]
-- !private ["s9EquatableP", "clientToken"]
-- !private ["s9EquatableP", "compactMap"]
-- !private ["s9EquatableP", "disableLoggingBehavior"]
-- !private ["s9EquatableP", "displayName"]
-- !private ["s9EquatableP", "enableLoggingBehavior"]
-- !private ["s9EquatableP", "facebookDomainPart"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "jpegCompressionQuality"]
-- !private ["s9EquatableP", "limitEventAndDataUsage"]
-- !private ["s9EquatableP", "loggingBehavior"]
-- !private ["s9EquatableP", "map"]
-- !private ["s9EquatableP", "sdkStringValue"]
-- ["s9EquatableP", "sdkVersion"]
-- !private ["s9EquatableP", "setAppID"]
-- !private ["s9EquatableP", "setAppURLSchemeSuffix"]
-- !private ["s9EquatableP", "setClientToken"]
-- !private ["s9EquatableP", "setDisplayName"]
-- !private ["s9EquatableP", "setFacebookDomainPart"]
-- !private ["s9EquatableP", "setJPEGCompressionQuality"]
-- !private ["s9EquatableP", "setLimitEventAndDataUsage"]
-- !private ["s9EquatableP", "setLoggingBehavior"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SQ", "appID"]
+- !private ["SQ", "appURLSchemeSuffix"]
+- !private ["SQ", "clientToken"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "disableLoggingBehavior"]
+- !private ["SQ", "displayName"]
+- !private ["SQ", "enableLoggingBehavior"]
+- !private ["SQ", "facebookDomainPart"]
+- !private ["SQ", "init"]
+- !private ["SQ", "jpegCompressionQuality"]
+- !private ["SQ", "limitEventAndDataUsage"]
+- !private ["SQ", "loggingBehavior"]
+- !private ["SQ", "map"]
+- !private ["SQ", "sdkStringValue"]
+- ["SQ", "sdkVersion"]
+- !private ["SQ", "setAppID"]
+- !private ["SQ", "setAppURLSchemeSuffix"]
+- !private ["SQ", "setClientToken"]
+- !private ["SQ", "setDisplayName"]
+- !private ["SQ", "setFacebookDomainPart"]
+- !private ["SQ", "setJPEGCompressionQuality"]
+- !private ["SQ", "setLimitEventAndDataUsage"]
+- !private ["SQ", "setLoggingBehavior"]
 - !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "compactMap"]
 - !private ["So13FBSDKSettingsC", "appID"]
 - !private ["So13FBSDKSettingsC", "appURLSchemeSuffix"]
 - !private ["So13FBSDKSettingsC", "clientToken"]
@@ -154,30 +152,30 @@ depends-member:
 - !private ["So13FBSDKSettingsC", "setJPEGCompressionQuality"]
 - !private ["So13FBSDKSettingsC", "setLimitEventAndDataUsage"]
 - !private ["So13FBSDKSettingsC", "setLoggingBehavior"]
-- !private ["s13FloatingPointP", "init"]
-- !private ["s8HashableP", "appID"]
-- !private ["s8HashableP", "appURLSchemeSuffix"]
-- !private ["s8HashableP", "clientToken"]
-- !private ["s8HashableP", "compactMap"]
-- !private ["s8HashableP", "disableLoggingBehavior"]
-- !private ["s8HashableP", "displayName"]
-- !private ["s8HashableP", "enableLoggingBehavior"]
-- !private ["s8HashableP", "facebookDomainPart"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "jpegCompressionQuality"]
-- !private ["s8HashableP", "limitEventAndDataUsage"]
-- !private ["s8HashableP", "loggingBehavior"]
-- !private ["s8HashableP", "map"]
-- !private ["s8HashableP", "sdkStringValue"]
-- ["s8HashableP", "sdkVersion"]
-- !private ["s8HashableP", "setAppID"]
-- !private ["s8HashableP", "setAppURLSchemeSuffix"]
-- !private ["s8HashableP", "setClientToken"]
-- !private ["s8HashableP", "setDisplayName"]
-- !private ["s8HashableP", "setFacebookDomainPart"]
-- !private ["s8HashableP", "setJPEGCompressionQuality"]
-- !private ["s8HashableP", "setLimitEventAndDataUsage"]
-- !private ["s8HashableP", "setLoggingBehavior"]
+- !private ["SF", "init"]
+- !private ["SH", "appID"]
+- !private ["SH", "appURLSchemeSuffix"]
+- !private ["SH", "clientToken"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "disableLoggingBehavior"]
+- !private ["SH", "displayName"]
+- !private ["SH", "enableLoggingBehavior"]
+- !private ["SH", "facebookDomainPart"]
+- !private ["SH", "init"]
+- !private ["SH", "jpegCompressionQuality"]
+- !private ["SH", "limitEventAndDataUsage"]
+- !private ["SH", "loggingBehavior"]
+- !private ["SH", "map"]
+- !private ["SH", "sdkStringValue"]
+- ["SH", "sdkVersion"]
+- !private ["SH", "setAppID"]
+- !private ["SH", "setAppURLSchemeSuffix"]
+- !private ["SH", "setClientToken"]
+- !private ["SH", "setDisplayName"]
+- !private ["SH", "setFacebookDomainPart"]
+- !private ["SH", "setJPEGCompressionQuality"]
+- !private ["SH", "setLimitEventAndDataUsage"]
+- !private ["SH", "setLoggingBehavior"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["So8NSObjectC", "appID"]
 - !private ["So8NSObjectC", "appURLSchemeSuffix"]
@@ -198,63 +196,66 @@ depends-member:
 - !private ["So8NSObjectC", "setJPEGCompressionQuality"]
 - !private ["So8NSObjectC", "setLimitEventAndDataUsage"]
 - !private ["So8NSObjectC", "setLoggingBehavior"]
-- !private ["So16NSObjectProtocolP", "appID"]
-- !private ["So16NSObjectProtocolP", "appURLSchemeSuffix"]
-- !private ["So16NSObjectProtocolP", "clientToken"]
-- !private ["So16NSObjectProtocolP", "disableLoggingBehavior"]
-- !private ["So16NSObjectProtocolP", "displayName"]
-- !private ["So16NSObjectProtocolP", "enableLoggingBehavior"]
-- !private ["So16NSObjectProtocolP", "facebookDomainPart"]
-- !private ["So16NSObjectProtocolP", "jpegCompressionQuality"]
-- !private ["So16NSObjectProtocolP", "limitEventAndDataUsage"]
-- !private ["So16NSObjectProtocolP", "loggingBehavior"]
-- ["So16NSObjectProtocolP", "sdkVersion"]
-- !private ["So16NSObjectProtocolP", "setAppID"]
-- !private ["So16NSObjectProtocolP", "setAppURLSchemeSuffix"]
-- !private ["So16NSObjectProtocolP", "setClientToken"]
-- !private ["So16NSObjectProtocolP", "setDisplayName"]
-- !private ["So16NSObjectProtocolP", "setFacebookDomainPart"]
-- !private ["So16NSObjectProtocolP", "setJPEGCompressionQuality"]
-- !private ["So16NSObjectProtocolP", "setLimitEventAndDataUsage"]
-- !private ["So16NSObjectProtocolP", "setLoggingBehavior"]
-- !private ["s7NumericP", "init"]
+- !private ["So8NSObjectP", "appID"]
+- !private ["So8NSObjectP", "appURLSchemeSuffix"]
+- !private ["So8NSObjectP", "clientToken"]
+- !private ["So8NSObjectP", "disableLoggingBehavior"]
+- !private ["So8NSObjectP", "displayName"]
+- !private ["So8NSObjectP", "enableLoggingBehavior"]
+- !private ["So8NSObjectP", "facebookDomainPart"]
+- !private ["So8NSObjectP", "jpegCompressionQuality"]
+- !private ["So8NSObjectP", "limitEventAndDataUsage"]
+- !private ["So8NSObjectP", "loggingBehavior"]
+- ["So8NSObjectP", "sdkVersion"]
+- !private ["So8NSObjectP", "setAppID"]
+- !private ["So8NSObjectP", "setAppURLSchemeSuffix"]
+- !private ["So8NSObjectP", "setClientToken"]
+- !private ["So8NSObjectP", "setDisplayName"]
+- !private ["So8NSObjectP", "setFacebookDomainPart"]
+- !private ["So8NSObjectP", "setJPEGCompressionQuality"]
+- !private ["So8NSObjectP", "setLimitEventAndDataUsage"]
+- !private ["So8NSObjectP", "setLoggingBehavior"]
+- !private ["Sj", "init"]
+- !private ["Sq", "compactMap"]
 - ["12FacebookCore18SDKLoggingBehaviorO", "deinit"]
 - !private ["12FacebookCore18SDKLoggingBehaviorO", "init"]
 - !private ["12FacebookCore18SDKLoggingBehaviorO", "sdkStringValue"]
-- !private ["12FacebookCore11SDKSettingsV", "AnyHashable"]
-- ["12FacebookCore11SDKSettingsV", "Bool"]
-- !private ["12FacebookCore11SDKSettingsV", "CGFloat"]
-- ["12FacebookCore11SDKSettingsV", "Double"]
-- !private ["12FacebookCore11SDKSettingsV", "FBSDKSettings"]
-- ["12FacebookCore11SDKSettingsV", "JPEGCompressionQuality"]
-- ["12FacebookCore11SDKSettingsV", "SDKLoggingBehavior"]
-- ["12FacebookCore11SDKSettingsV", "Set"]
-- ["12FacebookCore11SDKSettingsV", "String"]
-- ["12FacebookCore11SDKSettingsV", "appId"]
-- ["12FacebookCore11SDKSettingsV", "appURLSchemeSuffix"]
-- ["12FacebookCore11SDKSettingsV", "clientToken"]
-- ["12FacebookCore11SDKSettingsV", "disableLoggingBehavior"]
-- ["12FacebookCore11SDKSettingsV", "displayName"]
-- ["12FacebookCore11SDKSettingsV", "enableLoggingBehavior"]
-- ["12FacebookCore11SDKSettingsV", "enabledLoggingBehaviors"]
-- ["12FacebookCore11SDKSettingsV", "facebookSubdomain"]
-- ["12FacebookCore11SDKSettingsV", "init"]
-- ["12FacebookCore11SDKSettingsV", "limitedEventAndDataUsage"]
-- !private ["s8SequenceP", "compactMap"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "map"]
-- !private ["s3SetV", "compactMap"]
-- !private ["s3SetV", "init"]
-- !private ["s3SetV", "map"]
+- !private ["12FacebookCore11SDKSettingsO", "AnyHashable"]
+- ["12FacebookCore11SDKSettingsO", "Bool"]
+- !private ["12FacebookCore11SDKSettingsO", "CGFloat"]
+- ["12FacebookCore11SDKSettingsO", "Double"]
+- !private ["12FacebookCore11SDKSettingsO", "FBSDKSettings"]
+- ["12FacebookCore11SDKSettingsO", "JPEGCompressionQuality"]
+- ["12FacebookCore11SDKSettingsO", "SDKLoggingBehavior"]
+- ["12FacebookCore11SDKSettingsO", "Set"]
+- ["12FacebookCore11SDKSettingsO", "String"]
+- ["12FacebookCore11SDKSettingsO", "appId"]
+- ["12FacebookCore11SDKSettingsO", "appURLSchemeSuffix"]
+- ["12FacebookCore11SDKSettingsO", "clientToken"]
+- ["12FacebookCore11SDKSettingsO", "disableLoggingBehavior"]
+- ["12FacebookCore11SDKSettingsO", "displayName"]
+- ["12FacebookCore11SDKSettingsO", "enableLoggingBehavior"]
+- ["12FacebookCore11SDKSettingsO", "enabledLoggingBehaviors"]
+- ["12FacebookCore11SDKSettingsO", "facebookSubdomain"]
+- ["12FacebookCore11SDKSettingsO", "limitedEventAndDataUsage"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["Sh", "compactMap"]
+- !private ["Sh", "init"]
+- !private ["Sh", "map"]
 - !private ["s10SetAlgebraP", "compactMap"]
 - !private ["s10SetAlgebraP", "init"]
 - !private ["s10SetAlgebraP", "map"]
 - !private ["s13SignedNumericP", "init"]
-- !private ["s10StrideableP", "init"]
+- !private ["Sx", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appURLSchemeSuffix"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clientToken"]
@@ -279,57 +280,60 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 depends-nominal:
 - !private "12FacebookCore26AppEventParameterValueTypeP"
-- !private "s19BinaryFloatingPointP"
+- !private "SB"
 - !private "12CoreGraphics7CGFloatV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - !private "Sd"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "So13FBSDKSettingsC"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "s7NumericP"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "Sq"
 - "12FacebookCore18SDKLoggingBehaviorO"
-- "12FacebookCore11SDKSettingsV"
-- !private "s8SequenceP"
-- !private "s3SetV"
+- "12FacebookCore11SDKSettingsO"
+- !private "ST"
+- !private "Sh"
 - !private "s10SetAlgebraP"
 - !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "Sx"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
@@ -338,6 +342,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -373,15 +378,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "3e7f36a3938cff531441bea438888369"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6c1fd0780d96e8176996643c3bd13f8c"

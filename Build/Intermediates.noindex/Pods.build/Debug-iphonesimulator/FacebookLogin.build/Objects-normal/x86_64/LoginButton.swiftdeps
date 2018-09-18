@@ -5,10 +5,6 @@ provides-nominal:
 - "13FacebookLogin0B6ButtonC"
 provides-member:
 - ["13FacebookLogin0B6ButtonC", ""]
-- ["13FacebookLogin0B6ButtonC", "layoutSubviews"]
-- ["13FacebookLogin0B6ButtonC", "sizeToFit"]
-- ["13FacebookLogin0B6ButtonC", "sizeThatFits"]
-- ["13FacebookLogin0B6ButtonC", "intrinsicContentSize"]
 provides-dynamic-lookup:
 - "intrinsicContentSize"
 - "layoutSubviews"
@@ -33,17 +29,14 @@ depends-top-level:
 - "UIView"
 depends-member:
 - !private ["Sa", "map"]
-- !private ["s23BidirectionalCollectionP", "map"]
-- !private ["s19BinaryFloatingPointP", "greatestFiniteMagnitude"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["SK", "map"]
+- !private ["SB", "greatestFiniteMagnitude"]
 - !private ["So15CALayerDelegateP", "CGFloat"]
 - !private ["So15CALayerDelegateP", "CGRect"]
 - !private ["So15CALayerDelegateP", "CGSize"]
 - !private ["So15CALayerDelegateP", "FBSDKLoginButton"]
-- ["So15CALayerDelegateP", "LoginBehavior"]
 - !private ["So15CALayerDelegateP", "LoginButtonDelegateBridge"]
-- ["So15CALayerDelegateP", "LoginDefaultAudience"]
-- ["So15CALayerDelegateP", "TooltipBehavior"]
-- ["So15CALayerDelegateP", "TooltipColorStyle"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "bounds"]
@@ -61,19 +54,15 @@ depends-member:
 - !private ["So15CALayerDelegateP", "tooltipBehavior"]
 - !private ["So15CALayerDelegateP", "tooltipColorStyle"]
 - !private ["12CoreGraphics7CGFloatV", "greatestFiniteMagnitude"]
-- !private ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGSizeV", "init"]
+- !private ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "init"]
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "FBSDKLoginButton"]
-- ["s7CVarArgP", "LoginBehavior"]
 - !private ["s7CVarArgP", "LoginButtonDelegateBridge"]
-- ["s7CVarArgP", "LoginDefaultAudience"]
-- ["s7CVarArgP", "TooltipBehavior"]
-- ["s7CVarArgP", "TooltipColorStyle"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "bounds"]
@@ -93,23 +82,20 @@ depends-member:
 - !private ["s7CVarArgP", "sizeThatFits"]
 - !private ["s7CVarArgP", "tooltipBehavior"]
 - !private ["s7CVarArgP", "tooltipColorStyle"]
-- !private ["s10CollectionP", "map"]
-- !private ["s10ComparableP", "greatestFiniteMagnitude"]
+- !private ["Sl", "map"]
+- !private ["SL", "greatestFiniteMagnitude"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "FBSDKLoginButton"]
-- ["s28CustomDebugStringConvertibleP", "LoginBehavior"]
 - !private ["s28CustomDebugStringConvertibleP", "LoginButtonDelegateBridge"]
-- ["s28CustomDebugStringConvertibleP", "LoginDefaultAudience"]
-- ["s28CustomDebugStringConvertibleP", "TooltipBehavior"]
-- ["s28CustomDebugStringConvertibleP", "TooltipColorStyle"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "defaultAudience"]
 - !private ["s28CustomDebugStringConvertibleP", "delegateBridge"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "intrinsicContentSize"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
@@ -129,6 +115,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s17CustomReflectableP", "greatestFiniteMagnitude"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "zero"]
@@ -136,11 +123,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CGRect"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "FBSDKLoginButton"]
-- ["s23CustomStringConvertibleP", "LoginBehavior"]
 - !private ["s23CustomStringConvertibleP", "LoginButtonDelegateBridge"]
-- ["s23CustomStringConvertibleP", "LoginDefaultAudience"]
-- ["s23CustomStringConvertibleP", "TooltipBehavior"]
-- ["s23CustomStringConvertibleP", "TooltipColorStyle"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
@@ -148,6 +131,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "delegateBridge"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "greatestFiniteMagnitude"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "intrinsicContentSize"]
 - !private ["s23CustomStringConvertibleP", "layoutSubviews"]
@@ -160,61 +144,60 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sizeThatFits"]
 - !private ["s23CustomStringConvertibleP", "tooltipBehavior"]
 - !private ["s23CustomStringConvertibleP", "tooltipColorStyle"]
-- !private ["s9DecodableP", "greatestFiniteMagnitude"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "map"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s9EncodableP", "greatestFiniteMagnitude"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "CGFloat"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "FBSDKLoginButton"]
-- ["s9EquatableP", "LoginBehavior"]
-- !private ["s9EquatableP", "LoginButtonDelegateBridge"]
-- ["s9EquatableP", "LoginDefaultAudience"]
-- ["s9EquatableP", "TooltipBehavior"]
-- ["s9EquatableP", "TooltipColorStyle"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "addSubview"]
-- ["s9EquatableP", "automatic"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "defaultAudience"]
-- !private ["s9EquatableP", "delegateBridge"]
-- !private ["s9EquatableP", "frame"]
-- ["s9EquatableP", "friendlyBlue"]
-- ["s9EquatableP", "friends"]
-- !private ["s9EquatableP", "greatestFiniteMagnitude"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "intrinsicContentSize"]
-- !private ["s9EquatableP", "layoutSubviews"]
-- !private ["s9EquatableP", "loginBehavior"]
-- !private ["s9EquatableP", "map"]
-- !private ["s9EquatableP", "name"]
-- ["s9EquatableP", "native"]
-- !private ["s9EquatableP", "publishPermissions"]
-- !private ["s9EquatableP", "readPermissions"]
-- !private ["s9EquatableP", "sdkAudience"]
-- !private ["s9EquatableP", "sdkBehavior"]
-- !private ["s9EquatableP", "sdkColorStyle"]
-- !private ["s9EquatableP", "sdkLoginButton"]
-- !private ["s9EquatableP", "setupAsDelegateFor"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "sizeThatFits"]
-- !private ["s9EquatableP", "tooltipBehavior"]
-- !private ["s9EquatableP", "tooltipColorStyle"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "greatestFiniteMagnitude"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "size"]
+- !private ["Se", "zero"]
+- !private ["SE", "greatestFiniteMagnitude"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "size"]
+- !private ["SE", "zero"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "FBSDKLoginButton"]
+- !private ["SQ", "LoginButtonDelegateBridge"]
+- ["SQ", ""]
+- !private ["SQ", "addSubview"]
+- ["SQ", "automatic"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "defaultAudience"]
+- !private ["SQ", "delegateBridge"]
+- !private ["SQ", "frame"]
+- ["SQ", "friendlyBlue"]
+- ["SQ", "friends"]
+- !private ["SQ", "greatestFiniteMagnitude"]
+- !private ["SQ", "init"]
+- !private ["SQ", "intrinsicContentSize"]
+- !private ["SQ", "layoutSubviews"]
+- !private ["SQ", "loginBehavior"]
+- !private ["SQ", "map"]
+- !private ["SQ", "name"]
+- ["SQ", "native"]
+- !private ["SQ", "publishPermissions"]
+- !private ["SQ", "readPermissions"]
+- !private ["SQ", "sdkAudience"]
+- !private ["SQ", "sdkBehavior"]
+- !private ["SQ", "sdkColorStyle"]
+- !private ["SQ", "sdkLoginButton"]
+- !private ["SQ", "setupAsDelegateFor"]
+- !private ["SQ", "size"]
+- !private ["SQ", "sizeThatFits"]
+- !private ["SQ", "tooltipBehavior"]
+- !private ["SQ", "tooltipColorStyle"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "name"]
 - !private ["s25ExpressibleByFloatLiteralP", "greatestFiniteMagnitude"]
 - !private ["s27ExpressibleByIntegerLiteralP", "greatestFiniteMagnitude"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "name"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "name"]
 - !private ["So11FBSDKButtonC", "bounds"]
@@ -241,42 +224,39 @@ depends-member:
 - !private ["So16FBSDKLoginButtonC", "tooltipColorStyle"]
 - !private ["So24FBSDKLoginButtonDelegateP", "init"]
 - !private ["So24FBSDKLoginButtonDelegateP", "setupAsDelegateFor"]
-- !private ["s13FloatingPointP", "greatestFiniteMagnitude"]
-- !private ["s8HashableP", "CGFloat"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "FBSDKLoginButton"]
-- ["s8HashableP", "LoginBehavior"]
-- !private ["s8HashableP", "LoginButtonDelegateBridge"]
-- ["s8HashableP", "LoginDefaultAudience"]
-- ["s8HashableP", "TooltipBehavior"]
-- ["s8HashableP", "TooltipColorStyle"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "addSubview"]
-- ["s8HashableP", "automatic"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "defaultAudience"]
-- !private ["s8HashableP", "delegateBridge"]
-- !private ["s8HashableP", "frame"]
-- ["s8HashableP", "friendlyBlue"]
-- ["s8HashableP", "friends"]
-- !private ["s8HashableP", "greatestFiniteMagnitude"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "intrinsicContentSize"]
-- !private ["s8HashableP", "layoutSubviews"]
-- !private ["s8HashableP", "loginBehavior"]
-- !private ["s8HashableP", "name"]
-- ["s8HashableP", "native"]
-- !private ["s8HashableP", "publishPermissions"]
-- !private ["s8HashableP", "readPermissions"]
-- !private ["s8HashableP", "sdkAudience"]
-- !private ["s8HashableP", "sdkBehavior"]
-- !private ["s8HashableP", "sdkColorStyle"]
-- !private ["s8HashableP", "sdkLoginButton"]
-- !private ["s8HashableP", "setupAsDelegateFor"]
-- !private ["s8HashableP", "sizeThatFits"]
-- !private ["s8HashableP", "tooltipBehavior"]
-- !private ["s8HashableP", "tooltipColorStyle"]
+- !private ["SF", "greatestFiniteMagnitude"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "FBSDKLoginButton"]
+- !private ["SH", "LoginButtonDelegateBridge"]
+- ["SH", ""]
+- !private ["SH", "addSubview"]
+- ["SH", "automatic"]
+- !private ["SH", "bounds"]
+- !private ["SH", "defaultAudience"]
+- !private ["SH", "delegateBridge"]
+- !private ["SH", "frame"]
+- ["SH", "friendlyBlue"]
+- ["SH", "friends"]
+- !private ["SH", "greatestFiniteMagnitude"]
+- !private ["SH", "init"]
+- !private ["SH", "intrinsicContentSize"]
+- !private ["SH", "layoutSubviews"]
+- !private ["SH", "loginBehavior"]
+- !private ["SH", "map"]
+- !private ["SH", "name"]
+- ["SH", "native"]
+- !private ["SH", "publishPermissions"]
+- !private ["SH", "readPermissions"]
+- !private ["SH", "sdkAudience"]
+- !private ["SH", "sdkBehavior"]
+- !private ["SH", "sdkColorStyle"]
+- !private ["SH", "sdkLoginButton"]
+- !private ["SH", "setupAsDelegateFor"]
+- !private ["SH", "sizeThatFits"]
+- !private ["SH", "tooltipBehavior"]
+- !private ["SH", "tooltipColorStyle"]
 - ["13FacebookLogin0B8BehaviorO", "native"]
 - !private ["13FacebookLogin0B8BehaviorO", "sdkBehavior"]
 - !private ["13FacebookLogin0B6ButtonC", "CGFloat"]
@@ -295,7 +275,7 @@ depends-member:
 - !private ["13FacebookLogin0B6ButtonC", "addSubview"]
 - !private ["13FacebookLogin0B6ButtonC", "bounds"]
 - ["13FacebookLogin0B6ButtonC", "defaultAudience"]
-- ["13FacebookLogin0B6ButtonC", "deinit"]
+- !private ["13FacebookLogin0B6ButtonC", "deinit"]
 - ["13FacebookLogin0B6ButtonC", "delegate"]
 - !private ["13FacebookLogin0B6ButtonC", "delegateBridge"]
 - ["13FacebookLogin0B6ButtonC", "init"]
@@ -311,16 +291,12 @@ depends-member:
 - !private ["13FacebookLogin0B20ButtonDelegateBridgeC", "setupAsDelegateFor"]
 - ["13FacebookLogin0B15DefaultAudienceO", "friends"]
 - !private ["13FacebookLogin0B15DefaultAudienceO", "sdkAudience"]
-- !private ["s17MutableCollectionP", "map"]
+- !private ["SM", "map"]
 - !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "FBSDKLoginButton"]
-- ["So8NSCodingP", "LoginBehavior"]
 - !private ["So8NSCodingP", "LoginButtonDelegateBridge"]
-- ["So8NSCodingP", "LoginDefaultAudience"]
-- ["So8NSCodingP", "TooltipBehavior"]
-- ["So8NSCodingP", "TooltipColorStyle"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "bounds"]
@@ -368,43 +344,40 @@ depends-member:
 - ["So8NSObjectC", "sizeToFit"]
 - ["So8NSObjectC", "tooltipBehavior"]
 - ["So8NSObjectC", "tooltipColorStyle"]
-- !private ["So16NSObjectProtocolP", "CGFloat"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "FBSDKLoginButton"]
-- ["So16NSObjectProtocolP", "LoginBehavior"]
-- !private ["So16NSObjectProtocolP", "LoginButtonDelegateBridge"]
-- ["So16NSObjectProtocolP", "LoginDefaultAudience"]
-- ["So16NSObjectProtocolP", "TooltipBehavior"]
-- ["So16NSObjectProtocolP", "TooltipColorStyle"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "defaultAudience"]
-- !private ["So16NSObjectProtocolP", "delegateBridge"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "intrinsicContentSize"]
-- !private ["So16NSObjectProtocolP", "layoutSubviews"]
-- !private ["So16NSObjectProtocolP", "loginBehavior"]
-- !private ["So16NSObjectProtocolP", "publishPermissions"]
-- !private ["So16NSObjectProtocolP", "readPermissions"]
-- !private ["So16NSObjectProtocolP", "sdkLoginButton"]
-- !private ["So16NSObjectProtocolP", "setupAsDelegateFor"]
-- !private ["So16NSObjectProtocolP", "sizeThatFits"]
-- !private ["So16NSObjectProtocolP", "tooltipBehavior"]
-- !private ["So16NSObjectProtocolP", "tooltipColorStyle"]
-- !private ["s7NumericP", "greatestFiniteMagnitude"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "FBSDKLoginButton"]
+- !private ["So8NSObjectP", "LoginButtonDelegateBridge"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "defaultAudience"]
+- !private ["So8NSObjectP", "delegateBridge"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "intrinsicContentSize"]
+- !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "loginBehavior"]
+- !private ["So8NSObjectP", "publishPermissions"]
+- !private ["So8NSObjectP", "readPermissions"]
+- !private ["So8NSObjectP", "sdkLoginButton"]
+- !private ["So8NSObjectP", "setupAsDelegateFor"]
+- !private ["So8NSObjectP", "sizeThatFits"]
+- !private ["So8NSObjectP", "tooltipBehavior"]
+- !private ["So8NSObjectP", "tooltipColorStyle"]
+- !private ["Sj", "greatestFiniteMagnitude"]
 - !private ["12FacebookCore10PermissionV", "name"]
 - !private ["12FacebookCore23PermissionRepresentableP", "permissionValue"]
 - !private ["12FacebookCore17PublishPermissionO", "permissionValue"]
-- !private ["s22RandomAccessCollectionP", "map"]
-- !private ["s26RangeReplaceableCollectionP", "map"]
+- !private ["Sk", "map"]
+- !private ["Sm", "map"]
 - !private ["12FacebookCore14ReadPermissionO", "permissionValue"]
-- !private ["s8SequenceP", "map"]
+- !private ["ST", "map"]
 - !private ["s13SignedNumericP", "greatestFiniteMagnitude"]
 - !private ["s12StaticStringV", "init"]
-- !private ["s10StrideableP", "greatestFiniteMagnitude"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "greatestFiniteMagnitude"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "automatic"]
 - !private ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "sdkBehavior"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "friendlyBlue"]
@@ -424,11 +397,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "CGRect"]
 - !private ["So29UIAccessibilityIdentificationP", "CGSize"]
 - !private ["So29UIAccessibilityIdentificationP", "FBSDKLoginButton"]
-- ["So29UIAccessibilityIdentificationP", "LoginBehavior"]
 - !private ["So29UIAccessibilityIdentificationP", "LoginButtonDelegateBridge"]
-- ["So29UIAccessibilityIdentificationP", "LoginDefaultAudience"]
-- ["So29UIAccessibilityIdentificationP", "TooltipBehavior"]
-- ["So29UIAccessibilityIdentificationP", "TooltipColorStyle"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
@@ -449,11 +418,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "CGRect"]
 - !private ["So12UIAppearanceP", "CGSize"]
 - !private ["So12UIAppearanceP", "FBSDKLoginButton"]
-- ["So12UIAppearanceP", "LoginBehavior"]
 - !private ["So12UIAppearanceP", "LoginButtonDelegateBridge"]
-- ["So12UIAppearanceP", "LoginDefaultAudience"]
-- ["So12UIAppearanceP", "TooltipBehavior"]
-- ["So12UIAppearanceP", "TooltipColorStyle"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "addSubview"]
 - !private ["So12UIAppearanceP", "bounds"]
@@ -474,11 +439,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "FBSDKLoginButton"]
-- ["So21UIAppearanceContainerP", "LoginBehavior"]
 - !private ["So21UIAppearanceContainerP", "LoginButtonDelegateBridge"]
-- ["So21UIAppearanceContainerP", "LoginDefaultAudience"]
-- ["So21UIAppearanceContainerP", "TooltipBehavior"]
-- ["So21UIAppearanceContainerP", "TooltipColorStyle"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
@@ -521,11 +482,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "CGRect"]
 - !private ["So17UICoordinateSpaceP", "CGSize"]
 - !private ["So17UICoordinateSpaceP", "FBSDKLoginButton"]
-- ["So17UICoordinateSpaceP", "LoginBehavior"]
 - !private ["So17UICoordinateSpaceP", "LoginButtonDelegateBridge"]
-- ["So17UICoordinateSpaceP", "LoginDefaultAudience"]
-- ["So17UICoordinateSpaceP", "TooltipBehavior"]
-- ["So17UICoordinateSpaceP", "TooltipColorStyle"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
@@ -546,11 +503,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "CGRect"]
 - !private ["So13UIDynamicItemP", "CGSize"]
 - !private ["So13UIDynamicItemP", "FBSDKLoginButton"]
-- ["So13UIDynamicItemP", "LoginBehavior"]
 - !private ["So13UIDynamicItemP", "LoginButtonDelegateBridge"]
-- ["So13UIDynamicItemP", "LoginDefaultAudience"]
-- ["So13UIDynamicItemP", "TooltipBehavior"]
-- ["So13UIDynamicItemP", "TooltipColorStyle"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - !private ["So13UIDynamicItemP", "bounds"]
@@ -571,11 +524,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "FBSDKLoginButton"]
-- ["So18UIFocusEnvironmentP", "LoginBehavior"]
 - !private ["So18UIFocusEnvironmentP", "LoginButtonDelegateBridge"]
-- ["So18UIFocusEnvironmentP", "LoginDefaultAudience"]
-- ["So18UIFocusEnvironmentP", "TooltipBehavior"]
-- ["So18UIFocusEnvironmentP", "TooltipColorStyle"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
@@ -596,11 +545,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "CGRect"]
 - !private ["So11UIFocusItemP", "CGSize"]
 - !private ["So11UIFocusItemP", "FBSDKLoginButton"]
-- ["So11UIFocusItemP", "LoginBehavior"]
 - !private ["So11UIFocusItemP", "LoginButtonDelegateBridge"]
-- ["So11UIFocusItemP", "LoginDefaultAudience"]
-- ["So11UIFocusItemP", "TooltipBehavior"]
-- ["So11UIFocusItemP", "TooltipColorStyle"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "bounds"]
@@ -617,15 +562,32 @@ depends-member:
 - !private ["So11UIFocusItemP", "sizeThatFits"]
 - !private ["So11UIFocusItemP", "tooltipBehavior"]
 - !private ["So11UIFocusItemP", "tooltipColorStyle"]
+- !private ["So20UIFocusItemContainerP", "CGFloat"]
+- !private ["So20UIFocusItemContainerP", "CGRect"]
+- !private ["So20UIFocusItemContainerP", "CGSize"]
+- !private ["So20UIFocusItemContainerP", "FBSDKLoginButton"]
+- !private ["So20UIFocusItemContainerP", "LoginButtonDelegateBridge"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "defaultAudience"]
+- !private ["So20UIFocusItemContainerP", "delegateBridge"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "intrinsicContentSize"]
+- !private ["So20UIFocusItemContainerP", "layoutSubviews"]
+- !private ["So20UIFocusItemContainerP", "loginBehavior"]
+- !private ["So20UIFocusItemContainerP", "publishPermissions"]
+- !private ["So20UIFocusItemContainerP", "readPermissions"]
+- !private ["So20UIFocusItemContainerP", "sdkLoginButton"]
+- !private ["So20UIFocusItemContainerP", "sizeThatFits"]
+- !private ["So20UIFocusItemContainerP", "tooltipBehavior"]
+- !private ["So20UIFocusItemContainerP", "tooltipColorStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "FBSDKLoginButton"]
-- ["So30UIPasteConfigurationSupportingP", "LoginBehavior"]
 - !private ["So30UIPasteConfigurationSupportingP", "LoginButtonDelegateBridge"]
-- ["So30UIPasteConfigurationSupportingP", "LoginDefaultAudience"]
-- ["So30UIPasteConfigurationSupportingP", "TooltipBehavior"]
-- ["So30UIPasteConfigurationSupportingP", "TooltipColorStyle"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
@@ -676,11 +638,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "FBSDKLoginButton"]
-- ["So30UIResponderStandardEditActionsP", "LoginBehavior"]
 - !private ["So30UIResponderStandardEditActionsP", "LoginButtonDelegateBridge"]
-- ["So30UIResponderStandardEditActionsP", "LoginDefaultAudience"]
-- ["So30UIResponderStandardEditActionsP", "TooltipBehavior"]
-- ["So30UIResponderStandardEditActionsP", "TooltipColorStyle"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
@@ -712,11 +670,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "FBSDKLoginButton"]
-- ["So18UITraitEnvironmentP", "LoginBehavior"]
 - !private ["So18UITraitEnvironmentP", "LoginButtonDelegateBridge"]
-- ["So18UITraitEnvironmentP", "LoginDefaultAudience"]
-- ["So18UITraitEnvironmentP", "TooltipBehavior"]
-- ["So18UITraitEnvironmentP", "TooltipColorStyle"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -733,6 +687,27 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "sizeThatFits"]
 - !private ["So18UITraitEnvironmentP", "tooltipBehavior"]
 - !private ["So18UITraitEnvironmentP", "tooltipColorStyle"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "FBSDKLoginButton"]
+- !private ["So23UIUserActivityRestoringP", "LoginButtonDelegateBridge"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "defaultAudience"]
+- !private ["So23UIUserActivityRestoringP", "delegateBridge"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "intrinsicContentSize"]
+- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- !private ["So23UIUserActivityRestoringP", "loginBehavior"]
+- !private ["So23UIUserActivityRestoringP", "publishPermissions"]
+- !private ["So23UIUserActivityRestoringP", "readPermissions"]
+- !private ["So23UIUserActivityRestoringP", "sdkLoginButton"]
+- !private ["So23UIUserActivityRestoringP", "sizeThatFits"]
+- !private ["So23UIUserActivityRestoringP", "tooltipBehavior"]
+- !private ["So23UIUserActivityRestoringP", "tooltipColorStyle"]
 - !private ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "CGSize"]
@@ -764,18 +739,13 @@ depends-member:
 - ["So6UIViewC", "sizeToFit"]
 - ["So6UIViewC", "tooltipBehavior"]
 - ["So6UIViewC", "tooltipColorStyle"]
-- !private ["s14_ArrayProtocolP", "map"]
 - !private ["s15_CVarArgAlignedP", "greatestFiniteMagnitude"]
 - !private ["s22_CVarArgPassedAsDoubleP", "greatestFiniteMagnitude"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGFloat"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGSize"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "FBSDKLoginButton"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "LoginBehavior"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "LoginButtonDelegateBridge"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "LoginDefaultAudience"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "TooltipBehavior"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "TooltipColorStyle"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
@@ -794,17 +764,17 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tooltipColorStyle"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKLoginButton"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "LoginBehavior"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginButtonDelegateBridge"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "LoginDefaultAudience"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "TooltipBehavior"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "TooltipColorStyle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
@@ -829,23 +799,24 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "SB"
 - "So15CALayerDelegateP"
 - !private "12CoreGraphics7CGFloatV"
-- !private "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
@@ -855,27 +826,27 @@ depends-nominal:
 - !private "So11FBSDKButtonC"
 - !private "So16FBSDKLoginButtonC"
 - !private "So24FBSDKLoginButtonDelegateP"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
 - "13FacebookLogin0B8BehaviorO"
 - "13FacebookLogin0B6ButtonC"
 - !private "13FacebookLogin0B20ButtonDelegateBridgeC"
 - "13FacebookLogin0B15DefaultAudienceO"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "s7NumericP"
+- "So8NSObjectP"
+- !private "Sj"
 - !private "12FacebookCore10PermissionV"
 - !private "12FacebookCore23PermissionRepresentableP"
 - !private "12FacebookCore17PublishPermissionO"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- !private "Sk"
+- !private "Sm"
 - !private "12FacebookCore14ReadPermissionO"
-- !private "s8SequenceP"
+- !private "ST"
 - !private "s13SignedNumericP"
 - !private "s12StaticStringV"
-- !private "s10StrideableP"
+- !private "Sx"
 - "13FacebookLogin0B6ButtonC15TooltipBehaviorO"
 - "13FacebookLogin0B6ButtonC17TooltipColorStyleO"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -888,13 +859,14 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -902,24 +874,25 @@ depends-nominal:
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookLogin/FacebookLogin-umbrella.h"
@@ -930,6 +903,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -978,15 +952,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e8d90ef82e492deb82e5af34637033d2"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "5f71fd879b320376798e865dc5ca3206"

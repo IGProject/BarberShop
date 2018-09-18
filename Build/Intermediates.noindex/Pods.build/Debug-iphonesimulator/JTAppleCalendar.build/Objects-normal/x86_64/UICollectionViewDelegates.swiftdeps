@@ -19,8 +19,10 @@ depends-top-level:
 - !private "CellState"
 - !private "Date"
 - !private "DateOwner"
+- !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
+- !private "IntegerLiteralType"
 - "JTAppleCalendarView"
 - !private "JTAppleCell"
 - "SelectionAction"
@@ -40,9 +42,12 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "section"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "section"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "Array"]
 - !private ["So15CALayerDelegateP", "UICollectionReusableView"]
@@ -78,8 +83,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "semanticContentAttribute"]
 - !private ["So15CALayerDelegateP", "transform"]
 - !private ["So15CALayerDelegateP", "validForwardAndBackwordSelectedIndexes"]
-- !private ["SC17CGAffineTransformV", "a"]
-- !private ["SC6CGRectV", "zero"]
+- !private ["So17CGAffineTransformV", "a"]
+- !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "Array"]
 - !private ["s7CVarArgP", "UICollectionReusableView"]
 - !private ["s7CVarArgP", "UICollectionViewCell"]
@@ -107,6 +112,7 @@ depends-member:
 - ["s7CVarArgP", "indexTitles"]
 - ["s7CVarArgP", "indexTitlesForCollectionView"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "insert"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "isRangeSelectionUsed"]
@@ -125,17 +131,19 @@ depends-member:
 - !private ["s7CVarArgP", "validForwardAndBackwordSelectedIndexes"]
 - !private ["15JTAppleCalendar9CellStateV", "date"]
 - !private ["15JTAppleCalendar9CellStateV", "dateBelongsTo"]
-- !private ["s10CollectionP", "contains"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "formUnion"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "insert"]
-- !private ["s10CollectionP", "isEmpty"]
-- !private ["s10CollectionP", "remove"]
-- !private ["s10CollectionP", "section"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
-- !private ["s10ComparableP", "section"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "formUnion"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "insert"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "remove"]
+- !private ["Sl", "section"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "section"]
 - !private ["s28CustomDebugStringConvertibleP", "Array"]
 - !private ["s28CustomDebugStringConvertibleP", "UICollectionReusableView"]
 - !private ["s28CustomDebugStringConvertibleP", "UICollectionViewCell"]
@@ -162,6 +170,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexTitles"]
 - ["s28CustomDebugStringConvertibleP", "indexTitlesForCollectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "insert"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "isRangeSelectionUsed"]
@@ -182,11 +191,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "contains"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "formUnion"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "insert"]
 - !private ["s17CustomReflectableP", "isEmpty"]
@@ -221,6 +232,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexTitles"]
 - ["s23CustomStringConvertibleP", "indexTitlesForCollectionView"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "insert"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "isRangeSelectionUsed"]
@@ -238,85 +250,88 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "transform"]
 - !private ["s23CustomStringConvertibleP", "validForwardAndBackwordSelectedIndexes"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "a"]
-- !private ["s9DecodableP", "contains"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "formUnion"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "insert"]
-- !private ["s9DecodableP", "isEmpty"]
-- !private ["s9DecodableP", "remove"]
-- !private ["s9DecodableP", "section"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "zero"]
-- !private ["s10DictionaryV", "count"]
-- !private ["s10DictionaryV", "isEmpty"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "a"]
-- !private ["s9EncodableP", "contains"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "formUnion"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "insert"]
-- !private ["s9EncodableP", "isEmpty"]
-- !private ["s9EncodableP", "remove"]
-- !private ["s9EncodableP", "section"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "Array"]
-- !private ["s9EquatableP", "UICollectionReusableView"]
-- !private ["s9EquatableP", "UICollectionViewCell"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "a"]
-- !private ["s9EquatableP", "addCellToSelectedSet"]
-- !private ["s9EquatableP", "assert"]
-- !private ["s9EquatableP", "batchReloadIndexPaths"]
-- !private ["s9EquatableP", "calendarDelegate"]
-- !private ["s9EquatableP", "calendarViewLayout"]
-- !private ["s9EquatableP", "cellCache"]
-- !private ["s9EquatableP", "cellForItem"]
-- !private ["s9EquatableP", "cellStateFromIndexPath"]
-- ["s9EquatableP", "collectionView"]
-- !private ["s9EquatableP", "contains"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "dateOwnerInfoFromPath"]
-- !private ["s9EquatableP", "deleteCellFromSelectedSetIfSelected"]
-- !private ["s9EquatableP", "deselectCounterPartCellIndexPath"]
-- !private ["s9EquatableP", "developerError"]
-- !private ["s9EquatableP", "didDeselect"]
-- !private ["s9EquatableP", "didSelect"]
-- !private ["s9EquatableP", "forceRightToLeft"]
-- !private ["s9EquatableP", "formUnion"]
-- !private ["s9EquatableP", "handleSelectionValueChanged"]
-- !private ["s9EquatableP", "handleShouldSelectionValueChange"]
-- ["s9EquatableP", "indexPathForPreferredFocusedView"]
-- ["s9EquatableP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["s9EquatableP", "indexTitles"]
-- ["s9EquatableP", "indexTitlesForCollectionView"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "insert"]
-- !private ["s9EquatableP", "isEmpty"]
-- !private ["s9EquatableP", "isRangeSelectionUsed"]
-- !private ["s9EquatableP", "monthInfoFromSection"]
-- !private ["s9EquatableP", "monthMap"]
-- ["s9EquatableP", "numberOfSections"]
-- ["s9EquatableP", "numberOfSectionsInCollectionView"]
-- !private ["s9EquatableP", "pathsToReload"]
-- !private ["s9EquatableP", "print"]
-- !private ["s9EquatableP", "remove"]
-- !private ["s9EquatableP", "section"]
-- !private ["s9EquatableP", "selectCounterPartCellIndexPath"]
-- !private ["s9EquatableP", "selectedCellData"]
-- !private ["s9EquatableP", "semanticContentAttribute"]
-- ["s9EquatableP", "shouldDeselect"]
-- ["s9EquatableP", "shouldSelect"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "transform"]
-- !private ["s9EquatableP", "userInitiated"]
-- !private ["s9EquatableP", "validForwardAndBackwordSelectedIndexes"]
-- !private ["s9EquatableP", "zero"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "a"]
+- !private ["Se", "contains"]
+- !private ["Se", "count"]
+- !private ["Se", "formUnion"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "insert"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "remove"]
+- !private ["Se", "section"]
+- !private ["Se", "subscript"]
+- !private ["Se", "zero"]
+- !private ["SD", "count"]
+- !private ["SD", "isEmpty"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "a"]
+- !private ["SE", "contains"]
+- !private ["SE", "count"]
+- !private ["SE", "formUnion"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "insert"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "remove"]
+- !private ["SE", "section"]
+- !private ["SE", "subscript"]
+- !private ["SE", "zero"]
+- !private ["SQ", "Array"]
+- !private ["SQ", "UICollectionReusableView"]
+- !private ["SQ", "UICollectionViewCell"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "a"]
+- !private ["SQ", "addCellToSelectedSet"]
+- !private ["SQ", "assert"]
+- !private ["SQ", "batchReloadIndexPaths"]
+- !private ["SQ", "calendarDelegate"]
+- !private ["SQ", "calendarViewLayout"]
+- !private ["SQ", "cellCache"]
+- !private ["SQ", "cellForItem"]
+- !private ["SQ", "cellStateFromIndexPath"]
+- ["SQ", "collectionView"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "count"]
+- !private ["SQ", "dateOwnerInfoFromPath"]
+- !private ["SQ", "deleteCellFromSelectedSetIfSelected"]
+- !private ["SQ", "deselectCounterPartCellIndexPath"]
+- !private ["SQ", "developerError"]
+- !private ["SQ", "didDeselect"]
+- !private ["SQ", "didSelect"]
+- !private ["SQ", "forceRightToLeft"]
+- !private ["SQ", "formUnion"]
+- !private ["SQ", "handleSelectionValueChanged"]
+- !private ["SQ", "handleShouldSelectionValueChange"]
+- ["SQ", "indexPathForPreferredFocusedView"]
+- ["SQ", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["SQ", "indexTitles"]
+- ["SQ", "indexTitlesForCollectionView"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "isRangeSelectionUsed"]
+- !private ["SQ", "monthInfoFromSection"]
+- !private ["SQ", "monthMap"]
+- ["SQ", "numberOfSections"]
+- ["SQ", "numberOfSectionsInCollectionView"]
+- !private ["SQ", "pathsToReload"]
+- !private ["SQ", "print"]
+- !private ["SQ", "remove"]
+- !private ["SQ", "section"]
+- !private ["SQ", "selectCounterPartCellIndexPath"]
+- !private ["SQ", "selectedCellData"]
+- !private ["SQ", "semanticContentAttribute"]
+- ["SQ", "shouldDeselect"]
+- ["SQ", "shouldSelect"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "transform"]
+- !private ["SQ", "userInitiated"]
+- !private ["SQ", "validForwardAndBackwordSelectedIndexes"]
+- !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "formUnion"]
@@ -330,56 +345,62 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "Array"]
-- !private ["s8HashableP", "UICollectionReusableView"]
-- !private ["s8HashableP", "UICollectionViewCell"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addCellToSelectedSet"]
-- !private ["s8HashableP", "assert"]
-- !private ["s8HashableP", "batchReloadIndexPaths"]
-- !private ["s8HashableP", "calendarDelegate"]
-- !private ["s8HashableP", "calendarViewLayout"]
-- !private ["s8HashableP", "cellCache"]
-- !private ["s8HashableP", "cellForItem"]
-- !private ["s8HashableP", "cellStateFromIndexPath"]
-- ["s8HashableP", "collectionView"]
-- !private ["s8HashableP", "contains"]
-- !private ["s8HashableP", "dateOwnerInfoFromPath"]
-- !private ["s8HashableP", "deleteCellFromSelectedSetIfSelected"]
-- !private ["s8HashableP", "deselectCounterPartCellIndexPath"]
-- !private ["s8HashableP", "developerError"]
-- !private ["s8HashableP", "didDeselect"]
-- !private ["s8HashableP", "didSelect"]
-- !private ["s8HashableP", "forceRightToLeft"]
-- !private ["s8HashableP", "formUnion"]
-- !private ["s8HashableP", "handleSelectionValueChanged"]
-- !private ["s8HashableP", "handleShouldSelectionValueChange"]
-- ["s8HashableP", "indexPathForPreferredFocusedView"]
-- ["s8HashableP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["s8HashableP", "indexTitles"]
-- ["s8HashableP", "indexTitlesForCollectionView"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "insert"]
-- !private ["s8HashableP", "isEmpty"]
-- !private ["s8HashableP", "isRangeSelectionUsed"]
-- !private ["s8HashableP", "monthInfoFromSection"]
-- !private ["s8HashableP", "monthMap"]
-- ["s8HashableP", "numberOfSections"]
-- ["s8HashableP", "numberOfSectionsInCollectionView"]
-- !private ["s8HashableP", "pathsToReload"]
-- !private ["s8HashableP", "print"]
-- !private ["s8HashableP", "remove"]
-- !private ["s8HashableP", "section"]
-- !private ["s8HashableP", "selectCounterPartCellIndexPath"]
-- !private ["s8HashableP", "selectedCellData"]
-- !private ["s8HashableP", "semanticContentAttribute"]
-- ["s8HashableP", "shouldDeselect"]
-- ["s8HashableP", "shouldSelect"]
-- !private ["s8HashableP", "transform"]
-- !private ["s8HashableP", "userInitiated"]
-- !private ["s8HashableP", "validForwardAndBackwordSelectedIndexes"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "Array"]
+- !private ["SH", "UICollectionReusableView"]
+- !private ["SH", "UICollectionViewCell"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addCellToSelectedSet"]
+- !private ["SH", "assert"]
+- !private ["SH", "batchReloadIndexPaths"]
+- !private ["SH", "calendarDelegate"]
+- !private ["SH", "calendarViewLayout"]
+- !private ["SH", "cellCache"]
+- !private ["SH", "cellForItem"]
+- !private ["SH", "cellStateFromIndexPath"]
+- ["SH", "collectionView"]
+- !private ["SH", "contains"]
+- !private ["SH", "count"]
+- !private ["SH", "dateOwnerInfoFromPath"]
+- !private ["SH", "deleteCellFromSelectedSetIfSelected"]
+- !private ["SH", "deselectCounterPartCellIndexPath"]
+- !private ["SH", "developerError"]
+- !private ["SH", "didDeselect"]
+- !private ["SH", "didSelect"]
+- !private ["SH", "forceRightToLeft"]
+- !private ["SH", "formUnion"]
+- !private ["SH", "handleSelectionValueChanged"]
+- !private ["SH", "handleShouldSelectionValueChange"]
+- ["SH", "indexPathForPreferredFocusedView"]
+- ["SH", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["SH", "indexTitles"]
+- ["SH", "indexTitlesForCollectionView"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "insert"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "isRangeSelectionUsed"]
+- !private ["SH", "monthInfoFromSection"]
+- !private ["SH", "monthMap"]
+- ["SH", "numberOfSections"]
+- ["SH", "numberOfSectionsInCollectionView"]
+- !private ["SH", "pathsToReload"]
+- !private ["SH", "print"]
+- !private ["SH", "remove"]
+- !private ["SH", "section"]
+- !private ["SH", "selectCounterPartCellIndexPath"]
+- !private ["SH", "selectedCellData"]
+- !private ["SH", "semanticContentAttribute"]
+- ["SH", "shouldDeselect"]
+- ["SH", "shouldSelect"]
+- !private ["SH", "subscript"]
+- !private ["SH", "transform"]
+- !private ["SH", "userInitiated"]
+- !private ["SH", "validForwardAndBackwordSelectedIndexes"]
 - !private ["10Foundation9IndexPathV", "section"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "Array"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "UICollectionReusableView"]
@@ -468,10 +489,12 @@ depends-member:
 - !private ["15JTAppleCalendar0A22CollectionReusableViewC", "transform"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "section"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "init"]
+- !private ["SM", "section"]
 - !private ["So8NSCodingP", "Array"]
 - !private ["So8NSCodingP", "UICollectionReusableView"]
 - !private ["So8NSCodingP", "UICollectionViewCell"]
@@ -556,48 +579,49 @@ depends-member:
 - ["So8NSObjectC", "sizeOfDecorationView"]
 - !private ["So8NSObjectC", "transform"]
 - !private ["So8NSObjectC", "validForwardAndBackwordSelectedIndexes"]
-- !private ["So16NSObjectProtocolP", "Array"]
-- !private ["So16NSObjectProtocolP", "UICollectionReusableView"]
-- !private ["So16NSObjectProtocolP", "UICollectionViewCell"]
-- !private ["So16NSObjectProtocolP", "addCellToSelectedSet"]
-- !private ["So16NSObjectProtocolP", "assert"]
-- !private ["So16NSObjectProtocolP", "batchReloadIndexPaths"]
-- !private ["So16NSObjectProtocolP", "calendarDelegate"]
-- !private ["So16NSObjectProtocolP", "calendarViewLayout"]
-- !private ["So16NSObjectProtocolP", "cellCache"]
-- !private ["So16NSObjectProtocolP", "cellForItem"]
-- !private ["So16NSObjectProtocolP", "cellStateFromIndexPath"]
-- ["So16NSObjectProtocolP", "collectionView"]
-- !private ["So16NSObjectProtocolP", "dateOwnerInfoFromPath"]
-- !private ["So16NSObjectProtocolP", "deleteCellFromSelectedSetIfSelected"]
-- !private ["So16NSObjectProtocolP", "deselectCounterPartCellIndexPath"]
-- !private ["So16NSObjectProtocolP", "developerError"]
-- !private ["So16NSObjectProtocolP", "handleSelectionValueChanged"]
-- !private ["So16NSObjectProtocolP", "handleShouldSelectionValueChange"]
-- ["So16NSObjectProtocolP", "indexPathForPreferredFocusedView"]
-- ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["So16NSObjectProtocolP", "indexTitles"]
-- ["So16NSObjectProtocolP", "indexTitlesForCollectionView"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isRangeSelectionUsed"]
-- !private ["So16NSObjectProtocolP", "monthInfoFromSection"]
-- !private ["So16NSObjectProtocolP", "monthMap"]
-- ["So16NSObjectProtocolP", "numberOfSections"]
-- ["So16NSObjectProtocolP", "numberOfSectionsInCollectionView"]
-- !private ["So16NSObjectProtocolP", "pathsToReload"]
-- !private ["So16NSObjectProtocolP", "print"]
-- !private ["So16NSObjectProtocolP", "selectCounterPartCellIndexPath"]
-- !private ["So16NSObjectProtocolP", "selectedCellData"]
-- !private ["So16NSObjectProtocolP", "semanticContentAttribute"]
-- !private ["So16NSObjectProtocolP", "transform"]
-- !private ["So16NSObjectProtocolP", "validForwardAndBackwordSelectedIndexes"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "section"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "forceRightToLeft"]
-- !private ["s16RawRepresentableP", "userInitiated"]
+- !private ["So8NSObjectP", "Array"]
+- !private ["So8NSObjectP", "UICollectionReusableView"]
+- !private ["So8NSObjectP", "UICollectionViewCell"]
+- !private ["So8NSObjectP", "addCellToSelectedSet"]
+- !private ["So8NSObjectP", "assert"]
+- !private ["So8NSObjectP", "batchReloadIndexPaths"]
+- !private ["So8NSObjectP", "calendarDelegate"]
+- !private ["So8NSObjectP", "calendarViewLayout"]
+- !private ["So8NSObjectP", "cellCache"]
+- !private ["So8NSObjectP", "cellForItem"]
+- !private ["So8NSObjectP", "cellStateFromIndexPath"]
+- ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "dateOwnerInfoFromPath"]
+- !private ["So8NSObjectP", "deleteCellFromSelectedSetIfSelected"]
+- !private ["So8NSObjectP", "deselectCounterPartCellIndexPath"]
+- !private ["So8NSObjectP", "developerError"]
+- !private ["So8NSObjectP", "handleSelectionValueChanged"]
+- !private ["So8NSObjectP", "handleShouldSelectionValueChange"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedView"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So8NSObjectP", "indexTitles"]
+- ["So8NSObjectP", "indexTitlesForCollectionView"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isRangeSelectionUsed"]
+- !private ["So8NSObjectP", "monthInfoFromSection"]
+- !private ["So8NSObjectP", "monthMap"]
+- ["So8NSObjectP", "numberOfSections"]
+- ["So8NSObjectP", "numberOfSectionsInCollectionView"]
+- !private ["So8NSObjectP", "pathsToReload"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "selectCounterPartCellIndexPath"]
+- !private ["So8NSObjectP", "selectedCellData"]
+- !private ["So8NSObjectP", "semanticContentAttribute"]
+- !private ["So8NSObjectP", "transform"]
+- !private ["So8NSObjectP", "validForwardAndBackwordSelectedIndexes"]
+- !private ["Sk", "count"]
+- !private ["Sk", "init"]
+- !private ["Sk", "section"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "forceRightToLeft"]
+- !private ["SY", "userInitiated"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
 - !private ["15JTAppleCalendar16SelectedCellDataV", "cellState"]
 - !private ["15JTAppleCalendar16SelectedCellDataV", "counterIndexPath"]
@@ -605,20 +629,21 @@ depends-member:
 - !private ["15JTAppleCalendar15SelectionActionO", "didDeselect"]
 - !private ["15JTAppleCalendar15SelectionActionO", "didSelect"]
 - !private ["15JTAppleCalendar13SelectionTypeO", "userInitiated"]
-- !private ["s8SequenceP", "contains"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "formUnion"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "insert"]
-- !private ["s8SequenceP", "isEmpty"]
-- !private ["s8SequenceP", "remove"]
-- !private ["s8SequenceP", "section"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s3SetV", "contains"]
-- !private ["s3SetV", "formUnion"]
-- !private ["s3SetV", "insert"]
-- !private ["s3SetV", "isEmpty"]
-- !private ["s3SetV", "remove"]
+- !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "formUnion"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "insert"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "remove"]
+- !private ["ST", "section"]
+- !private ["ST", "subscript"]
+- !private ["Sh", "contains"]
+- !private ["Sh", "formUnion"]
+- !private ["Sh", "insert"]
+- !private ["Sh", "isEmpty"]
+- !private ["Sh", "remove"]
 - !private ["s10SetAlgebraP", "contains"]
 - !private ["s10SetAlgebraP", "formUnion"]
 - !private ["s10SetAlgebraP", "insert"]
@@ -627,9 +652,14 @@ depends-member:
 - ["15JTAppleCalendar21ShouldSelectionActionO", "shouldDeselect"]
 - ["15JTAppleCalendar21ShouldSelectionActionO", "shouldSelect"]
 - !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "Array"]
 - !private ["So29UIAccessibilityIdentificationP", "UICollectionReusableView"]
@@ -1016,6 +1046,72 @@ depends-member:
 - !private ["So11UIFocusItemP", "semanticContentAttribute"]
 - !private ["So11UIFocusItemP", "transform"]
 - !private ["So11UIFocusItemP", "validForwardAndBackwordSelectedIndexes"]
+- !private ["So20UIFocusItemContainerP", "Array"]
+- !private ["So20UIFocusItemContainerP", "UICollectionReusableView"]
+- !private ["So20UIFocusItemContainerP", "UICollectionViewCell"]
+- !private ["So20UIFocusItemContainerP", "addCellToSelectedSet"]
+- !private ["So20UIFocusItemContainerP", "assert"]
+- !private ["So20UIFocusItemContainerP", "batchReloadIndexPaths"]
+- !private ["So20UIFocusItemContainerP", "calendarDelegate"]
+- !private ["So20UIFocusItemContainerP", "calendarViewLayout"]
+- !private ["So20UIFocusItemContainerP", "cellForItem"]
+- !private ["So20UIFocusItemContainerP", "cellStateFromIndexPath"]
+- ["So20UIFocusItemContainerP", "collectionView"]
+- !private ["So20UIFocusItemContainerP", "dateOwnerInfoFromPath"]
+- !private ["So20UIFocusItemContainerP", "deleteCellFromSelectedSetIfSelected"]
+- !private ["So20UIFocusItemContainerP", "deselectCounterPartCellIndexPath"]
+- !private ["So20UIFocusItemContainerP", "developerError"]
+- !private ["So20UIFocusItemContainerP", "handleSelectionValueChanged"]
+- !private ["So20UIFocusItemContainerP", "handleShouldSelectionValueChange"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedView"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So20UIFocusItemContainerP", "indexTitles"]
+- ["So20UIFocusItemContainerP", "indexTitlesForCollectionView"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isRangeSelectionUsed"]
+- !private ["So20UIFocusItemContainerP", "monthInfoFromSection"]
+- !private ["So20UIFocusItemContainerP", "monthMap"]
+- ["So20UIFocusItemContainerP", "numberOfSections"]
+- ["So20UIFocusItemContainerP", "numberOfSectionsInCollectionView"]
+- !private ["So20UIFocusItemContainerP", "pathsToReload"]
+- !private ["So20UIFocusItemContainerP", "print"]
+- !private ["So20UIFocusItemContainerP", "selectCounterPartCellIndexPath"]
+- !private ["So20UIFocusItemContainerP", "selectedCellData"]
+- !private ["So20UIFocusItemContainerP", "semanticContentAttribute"]
+- !private ["So20UIFocusItemContainerP", "transform"]
+- !private ["So20UIFocusItemContainerP", "validForwardAndBackwordSelectedIndexes"]
+- !private ["So30UIFocusItemScrollableContainerP", "Array"]
+- !private ["So30UIFocusItemScrollableContainerP", "UICollectionReusableView"]
+- !private ["So30UIFocusItemScrollableContainerP", "UICollectionViewCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "addCellToSelectedSet"]
+- !private ["So30UIFocusItemScrollableContainerP", "assert"]
+- !private ["So30UIFocusItemScrollableContainerP", "batchReloadIndexPaths"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarDelegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarViewLayout"]
+- !private ["So30UIFocusItemScrollableContainerP", "cellForItem"]
+- !private ["So30UIFocusItemScrollableContainerP", "cellStateFromIndexPath"]
+- ["So30UIFocusItemScrollableContainerP", "collectionView"]
+- !private ["So30UIFocusItemScrollableContainerP", "dateOwnerInfoFromPath"]
+- !private ["So30UIFocusItemScrollableContainerP", "deleteCellFromSelectedSetIfSelected"]
+- !private ["So30UIFocusItemScrollableContainerP", "deselectCounterPartCellIndexPath"]
+- !private ["So30UIFocusItemScrollableContainerP", "developerError"]
+- !private ["So30UIFocusItemScrollableContainerP", "handleSelectionValueChanged"]
+- !private ["So30UIFocusItemScrollableContainerP", "handleShouldSelectionValueChange"]
+- ["So30UIFocusItemScrollableContainerP", "indexPathForPreferredFocusedView"]
+- ["So30UIFocusItemScrollableContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So30UIFocusItemScrollableContainerP", "indexTitles"]
+- ["So30UIFocusItemScrollableContainerP", "indexTitlesForCollectionView"]
+- !private ["So30UIFocusItemScrollableContainerP", "isRangeSelectionUsed"]
+- !private ["So30UIFocusItemScrollableContainerP", "monthInfoFromSection"]
+- !private ["So30UIFocusItemScrollableContainerP", "monthMap"]
+- ["So30UIFocusItemScrollableContainerP", "numberOfSections"]
+- ["So30UIFocusItemScrollableContainerP", "numberOfSectionsInCollectionView"]
+- !private ["So30UIFocusItemScrollableContainerP", "pathsToReload"]
+- !private ["So30UIFocusItemScrollableContainerP", "print"]
+- !private ["So30UIFocusItemScrollableContainerP", "selectCounterPartCellIndexPath"]
+- !private ["So30UIFocusItemScrollableContainerP", "selectedCellData"]
+- !private ["So30UIFocusItemScrollableContainerP", "semanticContentAttribute"]
+- !private ["So30UIFocusItemScrollableContainerP", "validForwardAndBackwordSelectedIndexes"]
 - !private ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "UICollectionReusableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UICollectionViewCell"]
@@ -1209,7 +1305,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "selectedCellData"]
 - !private ["So20UIScrollViewDelegateP", "semanticContentAttribute"]
 - !private ["So20UIScrollViewDelegateP", "validForwardAndBackwordSelectedIndexes"]
-- !private ["SC26UISemanticContentAttributeO", "forceRightToLeft"]
+- !private ["So26UISemanticContentAttributeV", "forceRightToLeft"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "Array"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "UICollectionReusableView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "UICollectionViewCell"]
@@ -1276,6 +1372,40 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "semanticContentAttribute"]
 - !private ["So18UITraitEnvironmentP", "transform"]
 - !private ["So18UITraitEnvironmentP", "validForwardAndBackwordSelectedIndexes"]
+- !private ["So23UIUserActivityRestoringP", "Array"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionReusableView"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionViewCell"]
+- !private ["So23UIUserActivityRestoringP", "addCellToSelectedSet"]
+- !private ["So23UIUserActivityRestoringP", "assert"]
+- !private ["So23UIUserActivityRestoringP", "batchReloadIndexPaths"]
+- !private ["So23UIUserActivityRestoringP", "calendarDelegate"]
+- !private ["So23UIUserActivityRestoringP", "calendarViewLayout"]
+- !private ["So23UIUserActivityRestoringP", "cellForItem"]
+- !private ["So23UIUserActivityRestoringP", "cellStateFromIndexPath"]
+- ["So23UIUserActivityRestoringP", "collectionView"]
+- !private ["So23UIUserActivityRestoringP", "dateOwnerInfoFromPath"]
+- !private ["So23UIUserActivityRestoringP", "deleteCellFromSelectedSetIfSelected"]
+- !private ["So23UIUserActivityRestoringP", "deselectCounterPartCellIndexPath"]
+- !private ["So23UIUserActivityRestoringP", "developerError"]
+- !private ["So23UIUserActivityRestoringP", "handleSelectionValueChanged"]
+- !private ["So23UIUserActivityRestoringP", "handleShouldSelectionValueChange"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So23UIUserActivityRestoringP", "indexTitles"]
+- ["So23UIUserActivityRestoringP", "indexTitlesForCollectionView"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isRangeSelectionUsed"]
+- !private ["So23UIUserActivityRestoringP", "monthInfoFromSection"]
+- !private ["So23UIUserActivityRestoringP", "monthMap"]
+- ["So23UIUserActivityRestoringP", "numberOfSections"]
+- ["So23UIUserActivityRestoringP", "numberOfSectionsInCollectionView"]
+- !private ["So23UIUserActivityRestoringP", "pathsToReload"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "selectCounterPartCellIndexPath"]
+- !private ["So23UIUserActivityRestoringP", "selectedCellData"]
+- !private ["So23UIUserActivityRestoringP", "semanticContentAttribute"]
+- !private ["So23UIUserActivityRestoringP", "transform"]
+- !private ["So23UIUserActivityRestoringP", "validForwardAndBackwordSelectedIndexes"]
 - !private ["So6UIViewC", "Array"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "CGRect"]
@@ -1324,8 +1454,6 @@ depends-member:
 - ["So6UIViewC", "sizeOfDecorationView"]
 - !private ["So6UIViewC", "transform"]
 - !private ["So6UIViewC", "validForwardAndBackwordSelectedIndexes"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Array"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UICollectionReusableView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UICollectionViewCell"]
@@ -1364,10 +1492,23 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "formUnion"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "insert"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionReusableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionViewCell"]
@@ -1409,6 +1550,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "formUnion"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insert"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
@@ -1416,32 +1558,34 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "Sb"
 - "So15CALayerDelegateP"
-- !private "SC17CGAffineTransformV"
-- !private "SC6CGRectV"
+- !private "So17CGAffineTransformV"
+- !private "So6CGRectV"
 - "s7CVarArgP"
 - !private "15JTAppleCalendar9CellStateV"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "10Foundation9IndexPathV"
 - "15JTAppleCalendar0aB16DelegateProtocolP"
 - !private "15JTAppleCalendar0aB6LayoutC"
@@ -1452,24 +1596,24 @@ depends-nominal:
 - !private "15JTAppleCalendar0A22CollectionReusableViewC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- "So8NSObjectP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "15JTAppleCalendar16SelectedCellDataV"
 - !private "15JTAppleCalendar15SelectionActionO"
 - !private "15JTAppleCalendar13SelectionTypeO"
-- !private "s8SequenceP"
-- !private "s3SetV"
+- !private "ST"
+- !private "Sh"
 - !private "s10SetAlgebraP"
 - "15JTAppleCalendar21ShouldSelectionActionO"
 - !private "s12StaticStringV"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "So29UIAccessibilityIdentificationP"
@@ -1486,16 +1630,18 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So12UIScrollViewC"
 - "So20UIScrollViewDelegateP"
-- !private "SC26UISemanticContentAttributeO"
+- !private "So26UISemanticContentAttributeV"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "s14_ArrayProtocolP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1504,34 +1650,36 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "22a5fc26122cc2c6bf8552e1e64e87c5"

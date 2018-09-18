@@ -18,6 +18,9 @@ depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "MotionTransition"
 - "TernaryPrecedence"
 - "TimeInterval"
@@ -43,6 +46,7 @@ depends-member:
 - !private ["s7CVarArgP", "interactiveTransitioning"]
 - ["s7CVarArgP", "interruptibleAnimator"]
 - ["s7CVarArgP", "interruptibleAnimatorForTransition"]
+- !private ["s7CVarArgP", "isModalTransition"]
 - !private ["s7CVarArgP", "isPresenting"]
 - !private ["s7CVarArgP", "isTransitioning"]
 - ["s7CVarArgP", "presentationController"]
@@ -69,6 +73,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "interactiveTransitioning"]
 - ["s28CustomDebugStringConvertibleP", "interruptibleAnimator"]
 - ["s28CustomDebugStringConvertibleP", "interruptibleAnimatorForTransition"]
+- !private ["s28CustomDebugStringConvertibleP", "isModalTransition"]
 - !private ["s28CustomDebugStringConvertibleP", "isPresenting"]
 - !private ["s28CustomDebugStringConvertibleP", "isTransitioning"]
 - ["s28CustomDebugStringConvertibleP", "presentationController"]
@@ -98,6 +103,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "interactiveTransitioning"]
 - ["s23CustomStringConvertibleP", "interruptibleAnimator"]
 - ["s23CustomStringConvertibleP", "interruptibleAnimatorForTransition"]
+- !private ["s23CustomStringConvertibleP", "isModalTransition"]
 - !private ["s23CustomStringConvertibleP", "isPresenting"]
 - !private ["s23CustomStringConvertibleP", "isTransitioning"]
 - ["s23CustomStringConvertibleP", "presentationController"]
@@ -110,71 +116,73 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "transitionContext"]
 - ["s23CustomStringConvertibleP", "transitionDuration"]
 - ["s23CustomStringConvertibleP", "wantsInteractiveStart"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- ["s9EquatableP", "animateTransition"]
-- ["s9EquatableP", "animationController"]
-- ["s9EquatableP", "animationControllerForDismissedController"]
-- ["s9EquatableP", "animationControllerForPresentedController"]
-- ["s9EquatableP", "animationEnded"]
-- ["s9EquatableP", "completionCurve"]
-- ["s9EquatableP", "completionSpeed"]
-- !private ["s9EquatableP", "forceNonInteractive"]
-- !private ["s9EquatableP", "from"]
-- !private ["s9EquatableP", "fromViewController"]
-- ["s9EquatableP", "interactionControllerForDismissal"]
-- ["s9EquatableP", "interactionControllerForPresentation"]
-- !private ["s9EquatableP", "interactiveTransitioning"]
-- ["s9EquatableP", "interruptibleAnimator"]
-- ["s9EquatableP", "interruptibleAnimatorForTransition"]
-- !private ["s9EquatableP", "isPresenting"]
-- !private ["s9EquatableP", "isTransitioning"]
-- !private ["s9EquatableP", "notified"]
-- !private ["s9EquatableP", "possible"]
-- ["s9EquatableP", "presentationController"]
-- ["s9EquatableP", "presentationControllerForPresentedViewController"]
-- !private ["s9EquatableP", "start"]
-- ["s9EquatableP", "startInteractiveTransition"]
-- !private ["s9EquatableP", "state"]
-- !private ["s9EquatableP", "to"]
-- !private ["s9EquatableP", "toViewController"]
-- !private ["s9EquatableP", "transitionContainer"]
-- !private ["s9EquatableP", "transitionContext"]
-- ["s9EquatableP", "transitionDuration"]
-- ["s9EquatableP", "wantsInteractiveStart"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "animateTransition"]
+- ["SQ", "animationController"]
+- ["SQ", "animationControllerForDismissedController"]
+- ["SQ", "animationControllerForPresentedController"]
+- ["SQ", "animationEnded"]
+- ["SQ", "completionCurve"]
+- ["SQ", "completionSpeed"]
+- !private ["SQ", "forceNonInteractive"]
+- !private ["SQ", "from"]
+- !private ["SQ", "fromViewController"]
+- ["SQ", "interactionControllerForDismissal"]
+- ["SQ", "interactionControllerForPresentation"]
+- !private ["SQ", "interactiveTransitioning"]
+- ["SQ", "interruptibleAnimator"]
+- ["SQ", "interruptibleAnimatorForTransition"]
+- !private ["SQ", "isModalTransition"]
+- !private ["SQ", "isPresenting"]
+- !private ["SQ", "isTransitioning"]
+- !private ["SQ", "notified"]
+- !private ["SQ", "possible"]
+- ["SQ", "presentationController"]
+- ["SQ", "presentationControllerForPresentedViewController"]
+- !private ["SQ", "start"]
+- ["SQ", "startInteractiveTransition"]
+- !private ["SQ", "state"]
+- !private ["SQ", "to"]
+- !private ["SQ", "toViewController"]
+- !private ["SQ", "transitionContainer"]
+- !private ["SQ", "transitionContext"]
+- ["SQ", "transitionDuration"]
+- ["SQ", "wantsInteractiveStart"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- ["s8HashableP", "animateTransition"]
-- ["s8HashableP", "animationController"]
-- ["s8HashableP", "animationControllerForDismissedController"]
-- ["s8HashableP", "animationControllerForPresentedController"]
-- ["s8HashableP", "animationEnded"]
-- ["s8HashableP", "completionCurve"]
-- ["s8HashableP", "completionSpeed"]
-- !private ["s8HashableP", "forceNonInteractive"]
-- !private ["s8HashableP", "from"]
-- !private ["s8HashableP", "fromViewController"]
-- ["s8HashableP", "interactionControllerForDismissal"]
-- ["s8HashableP", "interactionControllerForPresentation"]
-- !private ["s8HashableP", "interactiveTransitioning"]
-- ["s8HashableP", "interruptibleAnimator"]
-- ["s8HashableP", "interruptibleAnimatorForTransition"]
-- !private ["s8HashableP", "isPresenting"]
-- !private ["s8HashableP", "isTransitioning"]
-- !private ["s8HashableP", "notified"]
-- !private ["s8HashableP", "possible"]
-- ["s8HashableP", "presentationController"]
-- ["s8HashableP", "presentationControllerForPresentedViewController"]
-- !private ["s8HashableP", "start"]
-- ["s8HashableP", "startInteractiveTransition"]
-- !private ["s8HashableP", "state"]
-- !private ["s8HashableP", "to"]
-- !private ["s8HashableP", "toViewController"]
-- !private ["s8HashableP", "transitionContainer"]
-- !private ["s8HashableP", "transitionContext"]
-- ["s8HashableP", "transitionDuration"]
-- ["s8HashableP", "wantsInteractiveStart"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "animateTransition"]
+- ["SH", "animationController"]
+- ["SH", "animationControllerForDismissedController"]
+- ["SH", "animationControllerForPresentedController"]
+- ["SH", "animationEnded"]
+- ["SH", "completionCurve"]
+- ["SH", "completionSpeed"]
+- !private ["SH", "forceNonInteractive"]
+- !private ["SH", "from"]
+- !private ["SH", "fromViewController"]
+- ["SH", "interactionControllerForDismissal"]
+- ["SH", "interactionControllerForPresentation"]
+- !private ["SH", "interactiveTransitioning"]
+- ["SH", "interruptibleAnimator"]
+- ["SH", "interruptibleAnimatorForTransition"]
+- !private ["SH", "isModalTransition"]
+- !private ["SH", "isPresenting"]
+- !private ["SH", "isTransitioning"]
+- !private ["SH", "notified"]
+- !private ["SH", "possible"]
+- ["SH", "presentationController"]
+- ["SH", "presentationControllerForPresentedViewController"]
+- !private ["SH", "start"]
+- ["SH", "startInteractiveTransition"]
+- !private ["SH", "state"]
+- !private ["SH", "to"]
+- !private ["SH", "toViewController"]
+- !private ["SH", "transitionContainer"]
+- !private ["SH", "transitionContext"]
+- ["SH", "transitionDuration"]
+- ["SH", "wantsInteractiveStart"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["6Motion0A22ProgressRunnerDelegateP", "animateTransition"]
 - ["6Motion0A22ProgressRunnerDelegateP", "animationController"]
@@ -190,6 +198,7 @@ depends-member:
 - !private ["6Motion0A22ProgressRunnerDelegateP", "interactiveTransitioning"]
 - ["6Motion0A22ProgressRunnerDelegateP", "interruptibleAnimator"]
 - ["6Motion0A22ProgressRunnerDelegateP", "interruptibleAnimatorForTransition"]
+- !private ["6Motion0A22ProgressRunnerDelegateP", "isModalTransition"]
 - !private ["6Motion0A22ProgressRunnerDelegateP", "isPresenting"]
 - !private ["6Motion0A22ProgressRunnerDelegateP", "isTransitioning"]
 - ["6Motion0A22ProgressRunnerDelegateP", "presentationController"]
@@ -223,6 +232,7 @@ depends-member:
 - ["6Motion0A10TransitionC", "interactiveTransitioning"]
 - ["6Motion0A10TransitionC", "interruptibleAnimator"]
 - ["6Motion0A10TransitionC", "interruptibleAnimatorForTransition"]
+- !private ["6Motion0A10TransitionC", "isModalTransition"]
 - !private ["6Motion0A10TransitionC", "isPresenting"]
 - !private ["6Motion0A10TransitionC", "isTransitioning"]
 - ["6Motion0A10TransitionC", "presentationController"]
@@ -257,6 +267,7 @@ depends-member:
 - ["So8NSObjectC", "interactiveTransitioning"]
 - ["So8NSObjectC", "interruptibleAnimator"]
 - ["So8NSObjectC", "interruptibleAnimatorForTransition"]
+- !private ["So8NSObjectC", "isModalTransition"]
 - !private ["So8NSObjectC", "isPresenting"]
 - !private ["So8NSObjectC", "isTransitioning"]
 - ["So8NSObjectC", "presentationController"]
@@ -269,38 +280,39 @@ depends-member:
 - !private ["So8NSObjectC", "transitionContext"]
 - ["So8NSObjectC", "transitionDuration"]
 - ["So8NSObjectC", "wantsInteractiveStart"]
-- ["So16NSObjectProtocolP", "animateTransition"]
-- ["So16NSObjectProtocolP", "animationController"]
-- ["So16NSObjectProtocolP", "animationControllerForDismissedController"]
-- ["So16NSObjectProtocolP", "animationControllerForPresentedController"]
-- ["So16NSObjectProtocolP", "animationEnded"]
-- ["So16NSObjectProtocolP", "completionCurve"]
-- ["So16NSObjectProtocolP", "completionSpeed"]
-- !private ["So16NSObjectProtocolP", "containerView"]
-- !private ["So16NSObjectProtocolP", "forceNonInteractive"]
-- !private ["So16NSObjectProtocolP", "fromViewController"]
-- ["So16NSObjectProtocolP", "interactionControllerForDismissal"]
-- ["So16NSObjectProtocolP", "interactionControllerForPresentation"]
-- !private ["So16NSObjectProtocolP", "interactiveTransitioning"]
-- ["So16NSObjectProtocolP", "interruptibleAnimator"]
-- ["So16NSObjectProtocolP", "interruptibleAnimatorForTransition"]
-- !private ["So16NSObjectProtocolP", "isPresenting"]
-- !private ["So16NSObjectProtocolP", "isTransitioning"]
-- ["So16NSObjectProtocolP", "presentationController"]
-- ["So16NSObjectProtocolP", "presentationControllerForPresentedViewController"]
-- !private ["So16NSObjectProtocolP", "start"]
-- ["So16NSObjectProtocolP", "startInteractiveTransition"]
-- !private ["So16NSObjectProtocolP", "state"]
-- !private ["So16NSObjectProtocolP", "toViewController"]
-- !private ["So16NSObjectProtocolP", "transitionContainer"]
-- !private ["So16NSObjectProtocolP", "transitionContext"]
-- ["So16NSObjectProtocolP", "transitionDuration"]
-- !private ["So16NSObjectProtocolP", "viewController"]
-- ["So16NSObjectProtocolP", "wantsInteractiveStart"]
-- !private ["s16RawRepresentableP", "from"]
-- !private ["s16RawRepresentableP", "notified"]
-- !private ["s16RawRepresentableP", "possible"]
-- !private ["s16RawRepresentableP", "to"]
+- ["So8NSObjectP", "animateTransition"]
+- ["So8NSObjectP", "animationController"]
+- ["So8NSObjectP", "animationControllerForDismissedController"]
+- ["So8NSObjectP", "animationControllerForPresentedController"]
+- ["So8NSObjectP", "animationEnded"]
+- ["So8NSObjectP", "completionCurve"]
+- ["So8NSObjectP", "completionSpeed"]
+- !private ["So8NSObjectP", "containerView"]
+- !private ["So8NSObjectP", "forceNonInteractive"]
+- !private ["So8NSObjectP", "fromViewController"]
+- ["So8NSObjectP", "interactionControllerForDismissal"]
+- ["So8NSObjectP", "interactionControllerForPresentation"]
+- !private ["So8NSObjectP", "interactiveTransitioning"]
+- ["So8NSObjectP", "interruptibleAnimator"]
+- ["So8NSObjectP", "interruptibleAnimatorForTransition"]
+- !private ["So8NSObjectP", "isModalTransition"]
+- !private ["So8NSObjectP", "isPresenting"]
+- !private ["So8NSObjectP", "isTransitioning"]
+- ["So8NSObjectP", "presentationController"]
+- ["So8NSObjectP", "presentationControllerForPresentedViewController"]
+- !private ["So8NSObjectP", "start"]
+- ["So8NSObjectP", "startInteractiveTransition"]
+- !private ["So8NSObjectP", "state"]
+- !private ["So8NSObjectP", "toViewController"]
+- !private ["So8NSObjectP", "transitionContainer"]
+- !private ["So8NSObjectP", "transitionContext"]
+- ["So8NSObjectP", "transitionDuration"]
+- !private ["So8NSObjectP", "viewController"]
+- ["So8NSObjectP", "wantsInteractiveStart"]
+- !private ["SY", "from"]
+- !private ["SY", "notified"]
+- !private ["SY", "possible"]
+- !private ["SY", "to"]
 - ["So30UINavigationControllerDelegateP", "animateTransition"]
 - ["So30UINavigationControllerDelegateP", "animationController"]
 - ["So30UINavigationControllerDelegateP", "animationControllerForDismissedController"]
@@ -315,6 +327,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "interactiveTransitioning"]
 - ["So30UINavigationControllerDelegateP", "interruptibleAnimator"]
 - ["So30UINavigationControllerDelegateP", "interruptibleAnimatorForTransition"]
+- !private ["So30UINavigationControllerDelegateP", "isModalTransition"]
 - !private ["So30UINavigationControllerDelegateP", "isPresenting"]
 - !private ["So30UINavigationControllerDelegateP", "isTransitioning"]
 - ["So30UINavigationControllerDelegateP", "presentationController"]
@@ -341,6 +354,7 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "interactiveTransitioning"]
 - ["So26UITabBarControllerDelegateP", "interruptibleAnimator"]
 - ["So26UITabBarControllerDelegateP", "interruptibleAnimatorForTransition"]
+- !private ["So26UITabBarControllerDelegateP", "isModalTransition"]
 - !private ["So26UITabBarControllerDelegateP", "isPresenting"]
 - !private ["So26UITabBarControllerDelegateP", "isTransitioning"]
 - ["So26UITabBarControllerDelegateP", "presentationController"]
@@ -353,8 +367,8 @@ depends-member:
 - !private ["So26UITabBarControllerDelegateP", "transitionContext"]
 - ["So26UITabBarControllerDelegateP", "transitionDuration"]
 - ["So26UITabBarControllerDelegateP", "wantsInteractiveStart"]
-- !private ["SC36UITransitionContextViewControllerKeyV", "from"]
-- !private ["SC36UITransitionContextViewControllerKeyV", "to"]
+- !private ["So36UITransitionContextViewControllerKeya", "from"]
+- !private ["So36UITransitionContextViewControllerKeya", "to"]
 - ["So37UIViewControllerAnimatedTransitioningP", ""]
 - ["So37UIViewControllerAnimatedTransitioningP", "animateTransition"]
 - ["So37UIViewControllerAnimatedTransitioningP", "animationController"]
@@ -370,6 +384,7 @@ depends-member:
 - !private ["So37UIViewControllerAnimatedTransitioningP", "interactiveTransitioning"]
 - ["So37UIViewControllerAnimatedTransitioningP", "interruptibleAnimator"]
 - ["So37UIViewControllerAnimatedTransitioningP", "interruptibleAnimatorForTransition"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "isModalTransition"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "isPresenting"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "isTransitioning"]
 - ["So37UIViewControllerAnimatedTransitioningP", "presentationController"]
@@ -399,6 +414,7 @@ depends-member:
 - !private ["So40UIViewControllerInteractiveTransitioningP", "interactiveTransitioning"]
 - ["So40UIViewControllerInteractiveTransitioningP", "interruptibleAnimator"]
 - ["So40UIViewControllerInteractiveTransitioningP", "interruptibleAnimatorForTransition"]
+- !private ["So40UIViewControllerInteractiveTransitioningP", "isModalTransition"]
 - !private ["So40UIViewControllerInteractiveTransitioningP", "isPresenting"]
 - !private ["So40UIViewControllerInteractiveTransitioningP", "isTransitioning"]
 - ["So40UIViewControllerInteractiveTransitioningP", "presentationController"]
@@ -426,6 +442,7 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "interactiveTransitioning"]
 - ["So37UIViewControllerTransitioningDelegateP", "interruptibleAnimator"]
 - ["So37UIViewControllerTransitioningDelegateP", "interruptibleAnimatorForTransition"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "isModalTransition"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "isPresenting"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "isTransitioning"]
 - ["So37UIViewControllerTransitioningDelegateP", "presentationController"]
@@ -439,6 +456,8 @@ depends-member:
 - ["So37UIViewControllerTransitioningDelegateP", "transitionDuration"]
 - ["So37UIViewControllerTransitioningDelegateP", "wantsInteractiveStart"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "from"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "to"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "animateTransition"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "animationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "animationControllerForDismissedController"]
@@ -453,6 +472,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "interactiveTransitioning"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "interruptibleAnimator"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "interruptibleAnimatorForTransition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isModalTransition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isPresenting"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isTransitioning"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "presentationController"]
@@ -477,59 +497,61 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - "6Motion0A22ProgressRunnerDelegateP"
 - "6Motion0A10TransitionC"
 - !private "6Motion0A15TransitionStateO"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "s16RawRepresentableP"
+- "So8NSObjectP"
+- !private "SY"
 - "So30UINavigationControllerDelegateP"
 - "So26UITabBarControllerDelegateP"
-- !private "SC36UITransitionContextViewControllerKeyV"
+- !private "So36UITransitionContextViewControllerKeya"
 - "So37UIViewControllerAnimatedTransitioningP"
 - !private "So36UIViewControllerContextTransitioningP"
 - "So40UIViewControllerInteractiveTransitioningP"
 - "So37UIViewControllerTransitioningDelegateP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "bce342456c0aae775c30be2e9b3ba682"

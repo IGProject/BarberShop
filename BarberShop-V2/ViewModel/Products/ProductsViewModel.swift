@@ -7,13 +7,3 @@
 //
 
 import Foundation
-class ProductViewModel {
-    weak var dataSource: GenericProductsDataSource<ProductDetails>?
-    weak var service: ServiceNetworkProtocol?
-    
-    init(service:ServiceNetworkProtocol = GenericNetworkService.shared,dataSource: GenericProductsDataSource<ProductDetails>?) {
-        self.dataSource = dataSource
-        self.service = service
-    }
-    
-}

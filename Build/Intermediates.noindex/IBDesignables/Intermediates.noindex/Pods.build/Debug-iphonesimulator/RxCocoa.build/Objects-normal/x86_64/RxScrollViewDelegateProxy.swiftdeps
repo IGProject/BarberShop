@@ -16,12 +16,15 @@ depends-top-level:
 - "CGPoint"
 - "DelegateProxy"
 - "DelegateProxyType"
+- !private "FloatLiteralType"
 - "HasDelegate"
+- !private "IntegerLiteralType"
 - "PublishSubject"
 - !private "RxCollectionViewDelegateProxy"
 - "RxScrollViewDelegateProxy"
 - !private "RxTableViewDelegateProxy"
 - !private "RxTextViewDelegateProxy"
+- !private "StringLiteralType"
 - "UIScrollView"
 - "UIScrollViewDelegate"
 depends-member:
@@ -30,7 +33,7 @@ depends-member:
 - ["So15CALayerDelegateP", "Delegate"]
 - !private ["So15CALayerDelegateP", "contentOffset"]
 - ["So15CALayerDelegateP", "delegate"]
-- !private ["SC7CGPointV", "zero"]
+- !private ["So7CGPointV", "zero"]
 - !private ["s7CVarArgP", "BehaviorSubject"]
 - !private ["s7CVarArgP", "CGPoint"]
 - ["s7CVarArgP", "Delegate"]
@@ -92,6 +95,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "forwardToDelegate"]
 - ["s28CustomDebugStringConvertibleP", "identifier"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "next"]
 - !private ["s28CustomDebugStringConvertibleP", "register"]
 - ["s28CustomDebugStringConvertibleP", "registerKnownImplementations"]
@@ -115,6 +119,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "BehaviorSubject"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
@@ -134,6 +140,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "delegate"]
 - ["s23CustomStringConvertibleP", "forwardToDelegate"]
 - ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "register"]
 - ["s23CustomStringConvertibleP", "registerKnownImplementations"]
@@ -155,7 +162,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "setForwardToDelegate"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
-- !private ["s9DecodableP", "zero"]
+- !private ["Se", "zero"]
 - ["7RxCocoa13DelegateProxyC", "BehaviorSubject"]
 - ["7RxCocoa13DelegateProxyC", "CGPoint"]
 - ["7RxCocoa13DelegateProxyC", "Delegate"]
@@ -235,94 +242,100 @@ depends-member:
 - ["7RxCocoa17DelegateProxyTypeP", "viewForZoomingInScrollView"]
 - !private ["7RxSwift10DisposableP", "init"]
 - !private ["7RxSwift10DisposableP", "on"]
-- !private ["s9EncodableP", "zero"]
-- !private ["s9EquatableP", "BehaviorSubject"]
-- !private ["s9EquatableP", "CGPoint"]
-- ["s9EquatableP", "Delegate"]
-- ["s9EquatableP", "ParentObject"]
-- !private ["s9EquatableP", "PublishSubject"]
-- !private ["s9EquatableP", "RxCollectionViewDelegateProxy"]
-- !private ["s9EquatableP", "RxScrollViewDelegateProxy"]
-- !private ["s9EquatableP", "RxTableViewDelegateProxy"]
-- !private ["s9EquatableP", "RxTextViewDelegateProxy"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_contentOffsetBehaviorSubject"]
-- !private ["s9EquatableP", "_contentOffsetPublishSubject"]
-- !private ["s9EquatableP", "_forwardToDelegate"]
-- !private ["s9EquatableP", "contentOffset"]
-- ["s9EquatableP", "currentDelegate"]
-- ["s9EquatableP", "delegate"]
-- ["s9EquatableP", "forwardToDelegate"]
-- ["s9EquatableP", "identifier"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "register"]
-- ["s9EquatableP", "registerKnownImplementations"]
-- !private ["s9EquatableP", "scrollView"]
-- ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s9EquatableP", "scrollViewDidEndDecelerating"]
-- ["s9EquatableP", "scrollViewDidEndDragging"]
-- ["s9EquatableP", "scrollViewDidEndScrollingAnimation"]
-- ["s9EquatableP", "scrollViewDidEndZooming"]
-- ["s9EquatableP", "scrollViewDidScroll"]
-- ["s9EquatableP", "scrollViewDidScrollToTop"]
-- ["s9EquatableP", "scrollViewDidZoom"]
-- ["s9EquatableP", "scrollViewShouldScrollToTop"]
-- ["s9EquatableP", "scrollViewWillBeginDecelerating"]
-- ["s9EquatableP", "scrollViewWillBeginDragging"]
-- ["s9EquatableP", "scrollViewWillBeginZooming"]
-- ["s9EquatableP", "scrollViewWillEndDragging"]
-- ["s9EquatableP", "setCurrentDelegate"]
-- ["s9EquatableP", "setForwardToDelegate"]
-- ["s9EquatableP", "viewForZooming"]
-- ["s9EquatableP", "viewForZoomingInScrollView"]
-- !private ["s9EquatableP", "zero"]
+- !private ["SE", "zero"]
+- !private ["SQ", "BehaviorSubject"]
+- !private ["SQ", "CGPoint"]
+- ["SQ", "Delegate"]
+- ["SQ", "ParentObject"]
+- !private ["SQ", "PublishSubject"]
+- !private ["SQ", "RxCollectionViewDelegateProxy"]
+- !private ["SQ", "RxScrollViewDelegateProxy"]
+- !private ["SQ", "RxTableViewDelegateProxy"]
+- !private ["SQ", "RxTextViewDelegateProxy"]
+- ["SQ", ""]
+- !private ["SQ", "_contentOffsetBehaviorSubject"]
+- !private ["SQ", "_contentOffsetPublishSubject"]
+- !private ["SQ", "_forwardToDelegate"]
+- !private ["SQ", "contentOffset"]
+- ["SQ", "currentDelegate"]
+- ["SQ", "delegate"]
+- ["SQ", "forwardToDelegate"]
+- ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "register"]
+- ["SQ", "registerKnownImplementations"]
+- !private ["SQ", "scrollView"]
+- ["SQ", "scrollViewDidChangeAdjustedContentInset"]
+- ["SQ", "scrollViewDidEndDecelerating"]
+- ["SQ", "scrollViewDidEndDragging"]
+- ["SQ", "scrollViewDidEndScrollingAnimation"]
+- ["SQ", "scrollViewDidEndZooming"]
+- ["SQ", "scrollViewDidScroll"]
+- ["SQ", "scrollViewDidScrollToTop"]
+- ["SQ", "scrollViewDidZoom"]
+- ["SQ", "scrollViewShouldScrollToTop"]
+- ["SQ", "scrollViewWillBeginDecelerating"]
+- ["SQ", "scrollViewWillBeginDragging"]
+- ["SQ", "scrollViewWillBeginZooming"]
+- ["SQ", "scrollViewWillEndDragging"]
+- ["SQ", "setCurrentDelegate"]
+- ["SQ", "setForwardToDelegate"]
+- ["SQ", "viewForZooming"]
+- ["SQ", "viewForZoomingInScrollView"]
+- !private ["SQ", "zero"]
 - !private ["7RxSwift5EventO", "completed"]
 - !private ["7RxSwift5EventO", "next"]
 - !private ["7RxSwift16EventConvertibleP", "completed"]
 - !private ["7RxSwift16EventConvertibleP", "next"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["7RxCocoa11HasDelegateP", "Delegate"]
 - ["7RxCocoa11HasDelegateP", ""]
 - !private ["7RxCocoa11HasDelegateP", "contentOffset"]
 - ["7RxCocoa11HasDelegateP", "delegate"]
-- !private ["s8HashableP", "BehaviorSubject"]
-- !private ["s8HashableP", "CGPoint"]
-- ["s8HashableP", "Delegate"]
-- ["s8HashableP", "ParentObject"]
-- !private ["s8HashableP", "PublishSubject"]
-- !private ["s8HashableP", "RxCollectionViewDelegateProxy"]
-- !private ["s8HashableP", "RxScrollViewDelegateProxy"]
-- !private ["s8HashableP", "RxTableViewDelegateProxy"]
-- !private ["s8HashableP", "RxTextViewDelegateProxy"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_contentOffsetBehaviorSubject"]
-- !private ["s8HashableP", "_contentOffsetPublishSubject"]
-- !private ["s8HashableP", "_forwardToDelegate"]
-- !private ["s8HashableP", "contentOffset"]
-- ["s8HashableP", "currentDelegate"]
-- ["s8HashableP", "delegate"]
-- ["s8HashableP", "forwardToDelegate"]
-- ["s8HashableP", "identifier"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "register"]
-- ["s8HashableP", "registerKnownImplementations"]
-- !private ["s8HashableP", "scrollView"]
-- ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
-- ["s8HashableP", "scrollViewDidEndDecelerating"]
-- ["s8HashableP", "scrollViewDidEndDragging"]
-- ["s8HashableP", "scrollViewDidEndScrollingAnimation"]
-- ["s8HashableP", "scrollViewDidEndZooming"]
-- ["s8HashableP", "scrollViewDidScroll"]
-- ["s8HashableP", "scrollViewDidScrollToTop"]
-- ["s8HashableP", "scrollViewDidZoom"]
-- ["s8HashableP", "scrollViewShouldScrollToTop"]
-- ["s8HashableP", "scrollViewWillBeginDecelerating"]
-- ["s8HashableP", "scrollViewWillBeginDragging"]
-- ["s8HashableP", "scrollViewWillBeginZooming"]
-- ["s8HashableP", "scrollViewWillEndDragging"]
-- ["s8HashableP", "setCurrentDelegate"]
-- ["s8HashableP", "setForwardToDelegate"]
-- ["s8HashableP", "viewForZooming"]
-- ["s8HashableP", "viewForZoomingInScrollView"]
+- !private ["SH", "BehaviorSubject"]
+- !private ["SH", "CGPoint"]
+- ["SH", "Delegate"]
+- ["SH", "ParentObject"]
+- !private ["SH", "PublishSubject"]
+- !private ["SH", "RxCollectionViewDelegateProxy"]
+- !private ["SH", "RxScrollViewDelegateProxy"]
+- !private ["SH", "RxTableViewDelegateProxy"]
+- !private ["SH", "RxTextViewDelegateProxy"]
+- ["SH", ""]
+- !private ["SH", "_contentOffsetBehaviorSubject"]
+- !private ["SH", "_contentOffsetPublishSubject"]
+- !private ["SH", "_forwardToDelegate"]
+- !private ["SH", "contentOffset"]
+- ["SH", "currentDelegate"]
+- ["SH", "delegate"]
+- ["SH", "forwardToDelegate"]
+- ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "register"]
+- ["SH", "registerKnownImplementations"]
+- !private ["SH", "scrollView"]
+- ["SH", "scrollViewDidChangeAdjustedContentInset"]
+- ["SH", "scrollViewDidEndDecelerating"]
+- ["SH", "scrollViewDidEndDragging"]
+- ["SH", "scrollViewDidEndScrollingAnimation"]
+- ["SH", "scrollViewDidEndZooming"]
+- ["SH", "scrollViewDidScroll"]
+- ["SH", "scrollViewDidScrollToTop"]
+- ["SH", "scrollViewDidZoom"]
+- ["SH", "scrollViewShouldScrollToTop"]
+- ["SH", "scrollViewWillBeginDecelerating"]
+- ["SH", "scrollViewWillBeginDragging"]
+- ["SH", "scrollViewWillBeginZooming"]
+- ["SH", "scrollViewWillEndDragging"]
+- ["SH", "setCurrentDelegate"]
+- ["SH", "setForwardToDelegate"]
+- ["SH", "viewForZooming"]
+- ["SH", "viewForZoomingInScrollView"]
 - !private ["7RxCocoa16KVORepresentableP", "zero"]
 - ["So8NSCodingP", "Delegate"]
 - !private ["So8NSCodingP", "contentOffset"]
@@ -368,45 +381,45 @@ depends-member:
 - ["So8NSObjectC", "setForwardToDelegate"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
-- !private ["So16NSObjectProtocolP", "BehaviorSubject"]
-- !private ["So16NSObjectProtocolP", "CGPoint"]
-- ["So16NSObjectProtocolP", "Delegate"]
-- ["So16NSObjectProtocolP", "ParentObject"]
-- !private ["So16NSObjectProtocolP", "PublishSubject"]
-- !private ["So16NSObjectProtocolP", "RxCollectionViewDelegateProxy"]
-- !private ["So16NSObjectProtocolP", "RxScrollViewDelegateProxy"]
-- !private ["So16NSObjectProtocolP", "RxTableViewDelegateProxy"]
-- !private ["So16NSObjectProtocolP", "RxTextViewDelegateProxy"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "_contentOffsetBehaviorSubject"]
-- !private ["So16NSObjectProtocolP", "_contentOffsetPublishSubject"]
-- !private ["So16NSObjectProtocolP", "_forwardToDelegate"]
-- !private ["So16NSObjectProtocolP", "contentOffset"]
-- ["So16NSObjectProtocolP", "currentDelegate"]
-- ["So16NSObjectProtocolP", "delegate"]
-- ["So16NSObjectProtocolP", "forwardToDelegate"]
-- ["So16NSObjectProtocolP", "identifier"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "register"]
-- ["So16NSObjectProtocolP", "registerKnownImplementations"]
-- !private ["So16NSObjectProtocolP", "scrollView"]
-- ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
-- ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
-- ["So16NSObjectProtocolP", "scrollViewDidScroll"]
-- ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewDidZoom"]
-- ["So16NSObjectProtocolP", "scrollViewShouldScrollToTop"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
-- ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
-- ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
-- ["So16NSObjectProtocolP", "setCurrentDelegate"]
-- ["So16NSObjectProtocolP", "setForwardToDelegate"]
-- ["So16NSObjectProtocolP", "viewForZooming"]
-- ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "BehaviorSubject"]
+- !private ["So8NSObjectP", "CGPoint"]
+- ["So8NSObjectP", "Delegate"]
+- ["So8NSObjectP", "ParentObject"]
+- !private ["So8NSObjectP", "PublishSubject"]
+- !private ["So8NSObjectP", "RxCollectionViewDelegateProxy"]
+- !private ["So8NSObjectP", "RxScrollViewDelegateProxy"]
+- !private ["So8NSObjectP", "RxTableViewDelegateProxy"]
+- !private ["So8NSObjectP", "RxTextViewDelegateProxy"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "_contentOffsetBehaviorSubject"]
+- !private ["So8NSObjectP", "_contentOffsetPublishSubject"]
+- !private ["So8NSObjectP", "_forwardToDelegate"]
+- !private ["So8NSObjectP", "contentOffset"]
+- ["So8NSObjectP", "currentDelegate"]
+- ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "forwardToDelegate"]
+- ["So8NSObjectP", "identifier"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "register"]
+- ["So8NSObjectP", "registerKnownImplementations"]
+- !private ["So8NSObjectP", "scrollView"]
+- ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectP", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectP", "scrollViewDidEndDragging"]
+- ["So8NSObjectP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectP", "scrollViewDidEndZooming"]
+- ["So8NSObjectP", "scrollViewDidScroll"]
+- ["So8NSObjectP", "scrollViewDidScrollToTop"]
+- ["So8NSObjectP", "scrollViewDidZoom"]
+- ["So8NSObjectP", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectP", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectP", "scrollViewWillBeginDragging"]
+- ["So8NSObjectP", "scrollViewWillBeginZooming"]
+- ["So8NSObjectP", "scrollViewWillEndDragging"]
+- ["So8NSObjectP", "setCurrentDelegate"]
+- ["So8NSObjectP", "setForwardToDelegate"]
+- ["So8NSObjectP", "viewForZooming"]
+- ["So8NSObjectP", "viewForZoomingInScrollView"]
 - !private ["7RxSwift10ObservableC", "init"]
 - !private ["7RxSwift10ObservableC", "on"]
 - !private ["7RxSwift25ObservableConvertibleTypeP", "init"]
@@ -499,6 +512,8 @@ depends-member:
 - ["7RxCocoa0A23ScrollViewDelegateProxyC", "viewForZoomingInScrollView"]
 - !private ["7RxCocoa0A22TableViewDelegateProxyC", "init"]
 - !private ["7RxCocoa0A21TextViewDelegateProxyC", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
 - !private ["7RxSwift11SubjectTypeP", "init"]
 - !private ["7RxSwift11SubjectTypeP", "on"]
 - !private ["7RxSwift27SynchronizedUnsubscribeTypeP", "init"]
@@ -526,6 +541,12 @@ depends-member:
 - ["So11UIFocusItemP", "Delegate"]
 - !private ["So11UIFocusItemP", "contentOffset"]
 - ["So11UIFocusItemP", "delegate"]
+- ["So20UIFocusItemContainerP", "Delegate"]
+- !private ["So20UIFocusItemContainerP", "contentOffset"]
+- ["So20UIFocusItemContainerP", "delegate"]
+- ["So30UIFocusItemScrollableContainerP", "Delegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentOffset"]
+- ["So30UIFocusItemScrollableContainerP", "delegate"]
 - ["So30UIPasteConfigurationSupportingP", "Delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentOffset"]
 - ["So30UIPasteConfigurationSupportingP", "delegate"]
@@ -583,6 +604,9 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Delegate"]
 - !private ["So18UITraitEnvironmentP", "contentOffset"]
 - ["So18UITraitEnvironmentP", "delegate"]
+- ["So23UIUserActivityRestoringP", "Delegate"]
+- !private ["So23UIUserActivityRestoringP", "contentOffset"]
+- ["So23UIUserActivityRestoringP", "delegate"]
 - ["So6UIViewC", "Delegate"]
 - ["So6UIViewC", "UIScrollViewDelegate"]
 - !private ["So6UIViewC", "contentOffset"]
@@ -590,6 +614,12 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "Delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentOffset"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BehaviorSubject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Delegate"]
@@ -671,27 +701,30 @@ depends-member:
 depends-nominal:
 - !private "7RxSwift15BehaviorSubjectC"
 - "So15CALayerDelegateP"
-- !private "SC7CGPointV"
+- !private "So7CGPointV"
 - "s7CVarArgP"
 - !private "7RxSwift10CancelableP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "Se"
 - "7RxCocoa13DelegateProxyC"
 - "7RxCocoa17DelegateProxyTypeP"
 - !private "7RxSwift10DisposableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "SE"
+- "SQ"
 - !private "7RxSwift5EventO"
 - !private "7RxSwift16EventConvertibleP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "7RxCocoa11HasDelegateP"
-- "s8HashableP"
+- "SH"
 - !private "7RxCocoa16KVORepresentableP"
 - "So8NSCodingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "7RxSwift10ObservableC"
 - !private "7RxSwift25ObservableConvertibleTypeP"
 - !private "7RxSwift14ObservableTypeP"
@@ -702,6 +735,7 @@ depends-nominal:
 - "7RxCocoa0A23ScrollViewDelegateProxyC"
 - !private "7RxCocoa0A22TableViewDelegateProxyC"
 - !private "7RxCocoa0A21TextViewDelegateProxyC"
+- !private "s12StaticStringV"
 - !private "7RxSwift11SubjectTypeP"
 - !private "7RxSwift27SynchronizedUnsubscribeTypeP"
 - "So29UIAccessibilityIdentificationP"
@@ -713,6 +747,8 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIFocusItemScrollableContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -721,28 +757,32 @@ depends-nominal:
 - !private "So19UITableViewDelegateP"
 - !private "So18UITextViewDelegateP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "So16_RXDelegateProxyC"
 depends-dynamic-lookup:
 - !private "scrollViewDidScroll"
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxCocoa/RxCocoa-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
@@ -754,14 +794,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/RxCocoa/RxCocoa/Runtime/include/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxCocoa.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "c9ca1aea1020a3419d8173b2c79ccfb7"

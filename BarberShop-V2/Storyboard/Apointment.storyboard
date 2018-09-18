@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Data Source-->
+        <!--Ib Calendar Data Source-->
         <scene sceneID="eUO-tN-3aJ">
             <objects>
                 <viewController id="fYM-7K-oHc" customClass="AppointmentCalendarViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,116 +18,250 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xvr-k7-Zpc" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Biu-Ny-uw2" userLabel="DoW Stack">
+                                <rect key="frame" x="0.0" y="64" width="375" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fku-Nn-wKo">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lzL-vS-ql3">
+                                        <rect key="frame" x="53.5" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lrf-nT-Pda">
+                                        <rect key="frame" x="107" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cxp-a1-kOq">
+                                        <rect key="frame" x="160.5" y="0.0" width="54" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o9t-6T-iu1">
+                                        <rect key="frame" x="214.5" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Uii-sT-eni">
+                                        <rect key="frame" x="268" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="68G-Fl-A5c">
+                                        <rect key="frame" x="321.5" y="0.0" width="53.5" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Ddk-km-Bt5"/>
+                                    <constraint firstAttribute="height" constant="20" id="3lm-vc-eSx"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="headerMinimumDissolvedAlpha">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
-                                        <color key="value" red="0.81776827569999999" green="0.21930751200000001" blue="0.3065679073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
-                                        <color key="value" red="0.0078431372549019607" green="0.33725490196078434" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsScopeHandle" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleDefaultColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleTodayColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitlePlaceholderColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleWeekendColor">
-                                        <color key="value" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="headerTitleTextSize">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-oP-VF9" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="0.0" y="85" width="375" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Lo4-QP-bTp"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vR5-QA-OXT">
+                                    <size key="itemSize" width="123" height="114"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarDayCell" id="4RF-43-m0a" customClass="CalendarDayCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-27" width="123" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="123" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFs-yB-16r">
+                                                    <rect key="frame" x="42" y="37" width="40" height="40"/>
+                                                    <color key="backgroundColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="YML-Il-yhA"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ZO1-Jc-M3E"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1va-Z1-4fn">
+                                                    <rect key="frame" x="44.5" y="48.5" width="35.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1va-Z1-4fn" firstAttribute="centerX" secondItem="4RF-43-m0a" secondAttribute="centerX" id="H4G-Gt-Oz2"/>
+                                            <constraint firstItem="sFs-yB-16r" firstAttribute="centerY" secondItem="4RF-43-m0a" secondAttribute="centerY" id="SpH-P6-WRg"/>
+                                            <constraint firstItem="sFs-yB-16r" firstAttribute="centerX" secondItem="4RF-43-m0a" secondAttribute="centerX" id="VFr-0e-eOF"/>
+                                            <constraint firstItem="1va-Z1-4fn" firstAttribute="centerY" secondItem="4RF-43-m0a" secondAttribute="centerY" id="iIf-0q-PHU"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="1va-Z1-4fn" id="vTb-YU-cXr"/>
+                                            <outlet property="selectedView" destination="sFs-yB-16r" id="Gao-on-f14"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="fYM-7K-oHc" id="Usq-cT-KMb"/>
-                                    <outlet property="delegate" destination="fYM-7K-oHc" id="grC-ff-bAz"/>
+                                    <outlet property="ibCalendarDataSource" destination="fYM-7K-oHc" id="Fqk-eB-TUv"/>
+                                    <outlet property="ibCalendarDelegate" destination="fYM-7K-oHc" id="F3s-Ze-Scp"/>
                                 </connections>
-                            </view>
+                            </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-w2-Rzf">
-                                <rect key="frame" x="0.0" y="372" width="375" height="295"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XuG-Me-wBE">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ApointmentTableViewCell" rowHeight="93" id="XuG-Me-wBE" customClass="ApointmentTableViewCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XuG-Me-wBE" id="vHB-T3-TOh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-Lx-ZMZ" customClass="CustomUIView" customModule="BarberShop_V2" customModuleProvider="target">
+                                                    <rect key="frame" x="2" y="2" width="371" height="89"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFk-Mi-Gb9" customClass="CustomUIView" customModule="BarberShop_V2" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-4" width="80" height="97"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sok-nE-y5Q">
+                                                                    <rect key="frame" x="19" y="21" width="42" height="55"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="55" id="MND-jz-Gfq"/>
+                                                                        <constraint firstAttribute="width" constant="42" id="QAH-fc-9J0"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.0078431372549019607" green="0.33725490196078434" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Sok-nE-y5Q" firstAttribute="top" secondItem="WFk-Mi-Gb9" secondAttribute="top" constant="21" id="0VW-KB-6Us"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Sok-nE-y5Q" secondAttribute="trailing" constant="19" id="BWF-1W-zQq"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Sok-nE-y5Q" secondAttribute="bottom" constant="21" id="IfA-bD-jgL"/>
+                                                                <constraint firstItem="Sok-nE-y5Q" firstAttribute="leading" secondItem="WFk-Mi-Gb9" secondAttribute="leading" constant="19" id="geL-8p-bcy"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hWR-xD-eo4">
+                                                            <rect key="frame" x="100" y="10" width="261" height="69"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lab-Sq-7rb">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="34.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH1-ID-apV">
+                                                                    <rect key="frame" x="0.0" y="34.5" width="63.5" height="34.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="WFk-Mi-Gb9" firstAttribute="leading" secondItem="Zgn-Lx-ZMZ" secondAttribute="leading" id="0Sv-qf-ev1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hWR-xD-eo4" secondAttribute="trailing" constant="10" id="3Me-pJ-a2g"/>
+                                                        <constraint firstItem="hWR-xD-eo4" firstAttribute="top" secondItem="Zgn-Lx-ZMZ" secondAttribute="top" constant="10" id="57n-Uy-QjU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WFk-Mi-Gb9" secondAttribute="bottom" constant="-4.5" id="O64-zh-kZA"/>
+                                                        <constraint firstItem="hWR-xD-eo4" firstAttribute="leading" secondItem="WFk-Mi-Gb9" secondAttribute="trailing" constant="20" id="a7v-ka-xb0"/>
+                                                        <constraint firstItem="WFk-Mi-Gb9" firstAttribute="top" secondItem="Zgn-Lx-ZMZ" secondAttribute="top" constant="-4" id="sJA-Ve-Gz1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hWR-xD-eo4" secondAttribute="bottom" constant="10" id="sa3-xB-hfp"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="bordersColor">
+                                                            <color key="value" red="0.87035161260000005" green="0.87435978650000001" blue="0.88669359680000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowsColor">
+                                                            <color key="value" red="0.87035161260000005" green="0.87435978650000001" blue="0.88669359680000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zgn-Lx-ZMZ" firstAttribute="leading" secondItem="vHB-T3-TOh" secondAttribute="leading" constant="2" id="5dN-7m-MhO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zgn-Lx-ZMZ" secondAttribute="trailing" constant="2" id="5uE-8k-nhU"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zgn-Lx-ZMZ" secondAttribute="bottom" constant="2" id="ETt-ax-jO8"/>
+                                                <constraint firstItem="Zgn-Lx-ZMZ" firstAttribute="top" secondItem="vHB-T3-TOh" secondAttribute="top" constant="2" id="kUE-AT-8Tt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Sok-nE-y5Q" id="bRI-BD-AOy"/>
+                                            <outlet property="descripLabel" destination="lab-Sq-7rb" id="QAU-1O-dhC"/>
+                                            <outlet property="timeLabel" destination="BH1-ID-apV" id="8hb-Dd-1WO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="top" secondItem="Xvr-k7-Zpc" secondAttribute="bottom" constant="8" id="2JZ-yq-N2m"/>
-                            <constraint firstItem="Xvr-k7-Zpc" firstAttribute="top" secondItem="N1m-GS-oDN" secondAttribute="top" id="4E2-Pw-LWa"/>
-                            <constraint firstAttribute="bottom" secondItem="sJC-w2-Rzf" secondAttribute="bottom" id="7Qd-g9-Ga8"/>
-                            <constraint firstAttribute="trailing" secondItem="sJC-w2-Rzf" secondAttribute="trailing" id="8rq-ri-Sf0"/>
-                            <constraint firstItem="Xvr-k7-Zpc" firstAttribute="leading" secondItem="N1m-GS-oDN" secondAttribute="leading" id="RGB-Ai-mxD"/>
-                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="leading" secondItem="lw7-4T-1DJ" secondAttribute="leading" id="YpS-Pl-rBf"/>
-                            <constraint firstItem="N1m-GS-oDN" firstAttribute="trailing" secondItem="Xvr-k7-Zpc" secondAttribute="trailing" id="bpP-Zl-HG2"/>
+                            <constraint firstItem="B7m-oP-VF9" firstAttribute="top" secondItem="Biu-Ny-uw2" secondAttribute="bottom" constant="1" id="2YW-Ik-K2e"/>
+                            <constraint firstItem="Biu-Ny-uw2" firstAttribute="leading" secondItem="lw7-4T-1DJ" secondAttribute="leading" id="2ha-zO-BCk"/>
+                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="bottom" secondItem="N1m-GS-oDN" secondAttribute="bottom" id="EXq-5V-a6w"/>
+                            <constraint firstItem="B7m-oP-VF9" firstAttribute="centerX" secondItem="lw7-4T-1DJ" secondAttribute="centerX" id="ExQ-Ex-Xlr"/>
+                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="top" secondItem="B7m-oP-VF9" secondAttribute="bottom" constant="-2" id="FBk-hQ-lbA"/>
+                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="top" secondItem="B7m-oP-VF9" secondAttribute="bottom" constant="-2" id="Fy1-sd-xL4"/>
+                            <constraint firstAttribute="trailing" secondItem="sJC-w2-Rzf" secondAttribute="trailing" id="OUu-US-UAo"/>
+                            <constraint firstItem="Biu-Ny-uw2" firstAttribute="top" secondItem="N1m-GS-oDN" secondAttribute="top" id="Qhq-Ra-LIf"/>
+                            <constraint firstItem="Biu-Ny-uw2" firstAttribute="centerX" secondItem="lw7-4T-1DJ" secondAttribute="centerX" id="ilb-OY-4jb"/>
+                            <constraint firstAttribute="trailing" secondItem="B7m-oP-VF9" secondAttribute="trailing" id="l8x-NM-jEB"/>
+                            <constraint firstItem="sJC-w2-Rzf" firstAttribute="leading" secondItem="lw7-4T-1DJ" secondAttribute="leading" id="oTv-aR-Nlv"/>
+                            <constraint firstItem="B7m-oP-VF9" firstAttribute="leading" secondItem="lw7-4T-1DJ" secondAttribute="leading" id="rSO-q3-CCl"/>
+                            <constraint firstAttribute="trailing" secondItem="Biu-Ny-uw2" secondAttribute="trailing" id="vnk-ex-OwL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N1m-GS-oDN"/>
                     </view>
                     <navigationItem key="navigationItem" id="QUU-ib-FgS"/>
                     <connections>
-                        <outlet property="calendar" destination="Xvr-k7-Zpc" id="PYz-qp-bQW"/>
-                        <outlet property="calendarHeightConstraint" destination="Ddk-km-Bt5" id="1MA-Qo-Z4t"/>
+                        <outlet property="calendarView" destination="B7m-oP-VF9" id="LKs-Zw-zvO"/>
                         <outlet property="tableViewData" destination="sJC-w2-Rzf" id="Z74-lq-T0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a6-Ub-snP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="168.6656671664168"/>
+            <point key="canvasLocation" x="576.79999999999995" y="168.6656671664168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OvA-Qs-v08">

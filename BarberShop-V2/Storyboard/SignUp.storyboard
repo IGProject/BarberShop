@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,11 +46,11 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AjS-f7-x2O" userLabel="textfield">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AjS-f7-x2O" userLabel="textfield">
                                 <rect key="frame" x="30" y="189.5" width="315" height="460"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-rW-mcG" customClass="TextField" customModule="Material">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -60,8 +61,14 @@
                                             <outlet property="delegate" destination="ee5-lA-Hil" id="1Tq-cz-9mf"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fullname validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OH3-9g-l3G">
+                                        <rect key="frame" x="0.0" y="39" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yZ-2O-T9t" customClass="TextField" customModule="Material">
-                                        <rect key="frame" x="0.0" y="70" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="78" width="315" height="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -72,8 +79,14 @@
                                             <outlet property="delegate" destination="ee5-lA-Hil" id="bVn-ra-0YL"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oC9-tH-B2c">
+                                        <rect key="frame" x="0.0" y="117" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.81776827569999999" green="0.21930751200000001" blue="0.3065679073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zf-yi-6P5" customClass="TextField" customModule="Material">
-                                        <rect key="frame" x="0.0" y="140" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="156" width="315" height="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -84,8 +97,14 @@
                                             <outlet property="delegate" destination="ee5-lA-Hil" id="5az-u7-fD0"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="72n-Su-Td1">
+                                        <rect key="frame" x="0.0" y="195" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.81776827569999999" green="0.21930751200000001" blue="0.3065679073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-YZ-i0L" customClass="TextField" customModule="Material">
-                                        <rect key="frame" x="0.0" y="210" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="234" width="315" height="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -96,8 +115,14 @@
                                             <outlet property="delegate" destination="ee5-lA-Hil" id="Lcv-my-zWC"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-sJ-D1d">
+                                        <rect key="frame" x="0.0" y="273" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.81776827569999999" green="0.21930751200000001" blue="0.3065679073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4k-KY-tK9" customClass="TextField" customModule="Material">
-                                        <rect key="frame" x="0.0" y="280" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="312" width="315" height="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -108,15 +133,21 @@
                                             <outlet property="delegate" destination="ee5-lA-Hil" id="EOO-09-TCv"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-2o-qYg">
+                                        <rect key="frame" x="0.0" y="351" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.81776827569999999" green="0.21930751200000001" blue="0.3065679073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-oh-gd3" customClass="RoundButton" customModule="BarberShop_V2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="350" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="390" width="315" height="31"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="SIGN UP">
-                                            <color key="titleColor" red="0.23529411759999999" green="0.54901960780000003" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="18"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -124,16 +155,16 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lzg-TK-784">
-                                        <rect key="frame" x="0.0" y="420" width="315" height="40"/>
+                                        <rect key="frame" x="0.0" y="429" width="315" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qre-ep-Fzf">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEu-ag-689" customClass="RoundButton" customModule="BarberShop_V2" customModuleProvider="target">
-                                                <rect key="frame" x="157.5" y="0.0" width="157.5" height="40"/>
+                                                <rect key="frame" x="157.5" y="0.0" width="157.5" height="31"/>
                                                 <state key="normal" title="Sign In"/>
                                             </button>
                                         </subviews>
@@ -155,10 +186,15 @@
                     <navigationItem key="navigationItem" id="09y-1k-1L2"/>
                     <connections>
                         <outlet property="emailTextField" destination="8zf-yi-6P5" id="tqk-3n-alb"/>
+                        <outlet property="emailValidation" destination="72n-Su-Td1" id="b1b-p7-S1f"/>
                         <outlet property="fullnameTextField" destination="pTs-rW-mcG" id="Ksn-xs-WQx"/>
+                        <outlet property="fullnameValidation" destination="OH3-9g-l3G" id="aDg-ct-zBy"/>
                         <outlet property="passwordTextField" destination="n4k-KY-tK9" id="kaY-gs-uIN"/>
+                        <outlet property="passwordValidation" destination="c5Z-2o-qYg" id="nVa-TG-2rr"/>
                         <outlet property="phoneNumberTextField" destination="3yZ-2O-T9t" id="xNX-hN-Pza"/>
+                        <outlet property="phoneValidation" destination="oC9-tH-B2c" id="Ild-m3-mdz"/>
                         <outlet property="usernameTextField" destination="WIm-YZ-i0L" id="Jfj-Jn-qBI"/>
+                        <outlet property="usernameValidation" destination="D3s-sJ-D1d" id="cvI-pR-rwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyy-Sn-Qbm" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,3 +1,3 @@
 #!/bin/sh
-"${PODS_ROOT}/Target Support Files/Pods-BarberShop-V2/Pods-BarberShop-V2-resources.sh"
+"${SRCROOT}/Pods/Target Support Files/Pods-BarberShop-V2/Pods-BarberShop-V2-resources.sh"
 

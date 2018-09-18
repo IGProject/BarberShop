@@ -48,6 +48,7 @@ depends-member:
 - ["8Material13BaseIconLayerC", "disabledColor"]
 - ["8Material13BaseIconLayerC", "firstAnimation"]
 - ["8Material13BaseIconLayerC", "init"]
+- !private ["8Material13BaseIconLayerC", "init"]
 - !private ["8Material13BaseIconLayerC", "isAnimating"]
 - !private ["8Material13BaseIconLayerC", "isEnabled"]
 - !private ["8Material13BaseIconLayerC", "isSelected"]
@@ -69,12 +70,15 @@ depends-member:
 - !private ["8Material19BaseIconLayerButtonC", "RadioBoxLayer"]
 - ["8Material19BaseIconLayerButtonC", ""]
 - !private ["8Material19BaseIconLayerButtonC", "addTarget"]
+- !private ["8Material19BaseIconLayerButtonC", "deinit"]
 - ["8Material19BaseIconLayerButtonC", "didTap"]
 - ["8Material19BaseIconLayerButtonC", "iconLayer"]
 - ["8Material19BaseIconLayerButtonC", "init"]
+- !private ["8Material19BaseIconLayerButtonC", "init"]
 - ["8Material19BaseIconLayerButtonC", "prepare"]
 - !private ["8Material19BaseIconLayerButtonC", "setSelected"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["8Material6ButtonC", "BaseIconLayer"]
 - !private ["8Material6ButtonC", "RadioBoxLayer"]
@@ -82,6 +86,7 @@ depends-member:
 - ["8Material6ButtonC", "didTap"]
 - ["8Material6ButtonC", "iconLayer"]
 - ["8Material6ButtonC", "init"]
+- !private ["8Material6ButtonC", "init"]
 - ["8Material6ButtonC", "prepare"]
 - !private ["8Material6ButtonC", "setSelected"]
 - ["So19CAAnimationDelegateP", "CALayer"]
@@ -102,6 +107,7 @@ depends-member:
 - !private ["So19CAAnimationDelegateP", "disabledColor"]
 - !private ["So19CAAnimationDelegateP", "frame"]
 - ["So19CAAnimationDelegateP", "init"]
+- !private ["So19CAAnimationDelegateP", "init"]
 - !private ["So19CAAnimationDelegateP", "isAnimating"]
 - !private ["So19CAAnimationDelegateP", "isEnabled"]
 - !private ["So19CAAnimationDelegateP", "isSelected"]
@@ -138,6 +144,7 @@ depends-member:
 - ["So7CALayerC", "firstAnimation"]
 - !private ["So7CALayerC", "frame"]
 - ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "init"]
 - !private ["So7CALayerC", "isAnimating"]
 - !private ["So7CALayerC", "isEnabled"]
 - !private ["So7CALayerC", "isSelected"]
@@ -161,6 +168,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "didTap"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "prepare"]
 - !private ["So15CALayerDelegateP", "setSelected"]
 - ["So13CAMediaTimingP", "CALayer"]
@@ -181,6 +189,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "disabledColor"]
 - !private ["So13CAMediaTimingP", "frame"]
 - ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "init"]
 - !private ["So13CAMediaTimingP", "isAnimating"]
 - !private ["So13CAMediaTimingP", "isEnabled"]
 - !private ["So13CAMediaTimingP", "isSelected"]
@@ -196,11 +205,11 @@ depends-member:
 - !private ["So13CAMediaTimingP", "selectedColor"]
 - !private ["So13CAMediaTimingP", "sideLength"]
 - !private ["So13CAMediaTimingP", "transform"]
-- !private ["SC13CATransform3DV", "identity"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGRectV", "width"]
-- !private ["SC6CGSizeV", "init"]
+- !private ["So13CATransform3DV", "identity"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "init"]
 - ["s7CVarArgP", "CALayer"]
 - !private ["s7CVarArgP", "CATransform3DMakeScale"]
 - !private ["s7CVarArgP", "CGRect"]
@@ -225,6 +234,7 @@ depends-member:
 - !private ["s7CVarArgP", "disabledColor"]
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isAnimating"]
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "isSelected"]
@@ -241,8 +251,10 @@ depends-member:
 - !private ["s7CVarArgP", "setSelected"]
 - !private ["s7CVarArgP", "sideLength"]
 - !private ["s7CVarArgP", "transform"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", "CALayer"]
 - !private ["s28CustomDebugStringConvertibleP", "CATransform3DMakeScale"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
@@ -266,6 +278,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "disabledColor"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isAnimating"]
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "isSelected"]
@@ -286,9 +299,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "width"]
@@ -316,6 +331,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "disabledColor"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isAnimating"]
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "isSelected"]
@@ -332,104 +348,114 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setSelected"]
 - !private ["s23CustomStringConvertibleP", "sideLength"]
 - !private ["s23CustomStringConvertibleP", "transform"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "size"]
-- !private ["s9DecodableP", "width"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "size"]
-- !private ["s9EncodableP", "width"]
-- ["s9EquatableP", "CALayer"]
-- !private ["s9EquatableP", "CATransform3DMakeScale"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
-- !private ["s9EquatableP", "RadioBoxLayer"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSublayer"]
-- !private ["s9EquatableP", "addTarget"]
-- !private ["s9EquatableP", "animate"]
-- !private ["s9EquatableP", "backgroundColor"]
-- !private ["s9EquatableP", "borderColor"]
-- ["s9EquatableP", "borderWidth"]
-- !private ["s9EquatableP", "bounds"]
-- !private ["s9EquatableP", "centerDot"]
-- !private ["s9EquatableP", "centerDotDiameter"]
-- !private ["s9EquatableP", "centerDotScaleForMeeting"]
-- !private ["s9EquatableP", "cgColor"]
-- !private ["s9EquatableP", "clear"]
-- !private ["s9EquatableP", "cornerRadius"]
-- !private ["s9EquatableP", "didTap"]
-- !private ["s9EquatableP", "disabledColor"]
-- !private ["s9EquatableP", "frame"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isAnimating"]
-- !private ["s9EquatableP", "isEnabled"]
-- !private ["s9EquatableP", "isSelected"]
-- !private ["s9EquatableP", "layoutSublayers"]
-- !private ["s9EquatableP", "normalColor"]
-- !private ["s9EquatableP", "outerCircle"]
-- !private ["s9EquatableP", "outerCircleBorderWidth"]
-- !private ["s9EquatableP", "outerCircleFullBorderWidth"]
-- !private ["s9EquatableP", "outerCircleScaleToShrink"]
-- !private ["s9EquatableP", "percentageOfOuterCircleSizeToShrinkTo"]
-- !private ["s9EquatableP", "percentageOfOuterCircleWidthToStart"]
-- !private ["s9EquatableP", "prepare"]
-- !private ["s9EquatableP", "selectedColor"]
-- !private ["s9EquatableP", "setSelected"]
-- !private ["s9EquatableP", "sideLength"]
-- !private ["s9EquatableP", "size"]
-- !private ["s9EquatableP", "touchUpInside"]
-- !private ["s9EquatableP", "transform"]
-- !private ["s9EquatableP", "width"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "size"]
+- !private ["Se", "width"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "size"]
+- !private ["SE", "width"]
+- ["SQ", "CALayer"]
+- !private ["SQ", "CATransform3DMakeScale"]
+- !private ["SQ", "CGRect"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "RadioBoxLayer"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSublayer"]
+- !private ["SQ", "addTarget"]
+- !private ["SQ", "animate"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "borderColor"]
+- ["SQ", "borderWidth"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "centerDot"]
+- !private ["SQ", "centerDotDiameter"]
+- !private ["SQ", "centerDotScaleForMeeting"]
+- !private ["SQ", "cgColor"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "didTap"]
+- !private ["SQ", "disabledColor"]
+- !private ["SQ", "frame"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isAnimating"]
+- !private ["SQ", "isEnabled"]
+- !private ["SQ", "isSelected"]
+- !private ["SQ", "layoutSublayers"]
+- !private ["SQ", "normalColor"]
+- !private ["SQ", "outerCircle"]
+- !private ["SQ", "outerCircleBorderWidth"]
+- !private ["SQ", "outerCircleFullBorderWidth"]
+- !private ["SQ", "outerCircleScaleToShrink"]
+- !private ["SQ", "percentageOfOuterCircleSizeToShrinkTo"]
+- !private ["SQ", "percentageOfOuterCircleWidthToStart"]
+- !private ["SQ", "prepare"]
+- !private ["SQ", "selectedColor"]
+- !private ["SQ", "setSelected"]
+- !private ["SQ", "sideLength"]
+- !private ["SQ", "size"]
+- !private ["SQ", "touchUpInside"]
+- !private ["SQ", "transform"]
+- !private ["SQ", "width"]
+- !private ["So15UIControlEventsV", "touchUpInside"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s8HashableP", "CALayer"]
-- !private ["s8HashableP", "CATransform3DMakeScale"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
-- !private ["s8HashableP", "RadioBoxLayer"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSublayer"]
-- !private ["s8HashableP", "addTarget"]
-- !private ["s8HashableP", "animate"]
-- !private ["s8HashableP", "backgroundColor"]
-- !private ["s8HashableP", "borderColor"]
-- ["s8HashableP", "borderWidth"]
-- !private ["s8HashableP", "bounds"]
-- !private ["s8HashableP", "centerDot"]
-- !private ["s8HashableP", "centerDotDiameter"]
-- !private ["s8HashableP", "centerDotScaleForMeeting"]
-- !private ["s8HashableP", "cgColor"]
-- !private ["s8HashableP", "clear"]
-- !private ["s8HashableP", "cornerRadius"]
-- !private ["s8HashableP", "didTap"]
-- !private ["s8HashableP", "disabledColor"]
-- !private ["s8HashableP", "frame"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isAnimating"]
-- !private ["s8HashableP", "isEnabled"]
-- !private ["s8HashableP", "isSelected"]
-- !private ["s8HashableP", "layoutSublayers"]
-- !private ["s8HashableP", "normalColor"]
-- !private ["s8HashableP", "outerCircle"]
-- !private ["s8HashableP", "outerCircleBorderWidth"]
-- !private ["s8HashableP", "outerCircleFullBorderWidth"]
-- !private ["s8HashableP", "outerCircleScaleToShrink"]
-- !private ["s8HashableP", "percentageOfOuterCircleSizeToShrinkTo"]
-- !private ["s8HashableP", "percentageOfOuterCircleWidthToStart"]
-- !private ["s8HashableP", "prepare"]
-- !private ["s8HashableP", "selectedColor"]
-- !private ["s8HashableP", "setSelected"]
-- !private ["s8HashableP", "sideLength"]
-- !private ["s8HashableP", "transform"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "CALayer"]
+- !private ["SH", "CATransform3DMakeScale"]
+- !private ["SH", "CGRect"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "RadioBoxLayer"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSublayer"]
+- !private ["SH", "addTarget"]
+- !private ["SH", "animate"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "borderColor"]
+- ["SH", "borderWidth"]
+- !private ["SH", "bounds"]
+- !private ["SH", "centerDot"]
+- !private ["SH", "centerDotDiameter"]
+- !private ["SH", "centerDotScaleForMeeting"]
+- !private ["SH", "cgColor"]
+- !private ["SH", "clear"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "didTap"]
+- !private ["SH", "disabledColor"]
+- !private ["SH", "frame"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isAnimating"]
+- !private ["SH", "isEnabled"]
+- !private ["SH", "isSelected"]
+- !private ["SH", "layoutSublayers"]
+- !private ["SH", "normalColor"]
+- !private ["SH", "outerCircle"]
+- !private ["SH", "outerCircleBorderWidth"]
+- !private ["SH", "outerCircleFullBorderWidth"]
+- !private ["SH", "outerCircleScaleToShrink"]
+- !private ["SH", "percentageOfOuterCircleSizeToShrinkTo"]
+- !private ["SH", "percentageOfOuterCircleWidthToStart"]
+- !private ["SH", "prepare"]
+- !private ["SH", "selectedColor"]
+- !private ["SH", "setSelected"]
+- !private ["SH", "sideLength"]
+- !private ["SH", "transform"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "CALayer"]
 - !private ["So8NSCodingP", "CATransform3DMakeScale"]
@@ -454,6 +480,7 @@ depends-member:
 - !private ["So8NSCodingP", "disabledColor"]
 - !private ["So8NSCodingP", "frame"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isAnimating"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "isSelected"]
@@ -504,6 +531,7 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "iconLayer"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isAnimating"]
 - !private ["So8NSObjectC", "isEnabled"]
 - !private ["So8NSObjectC", "isSelected"]
@@ -523,45 +551,46 @@ depends-member:
 - !private ["So8NSObjectC", "setSelected"]
 - !private ["So8NSObjectC", "sideLength"]
 - !private ["So8NSObjectC", "transform"]
-- ["So16NSObjectProtocolP", "CALayer"]
-- !private ["So16NSObjectProtocolP", "CATransform3DMakeScale"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "RadioBoxLayer"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSublayer"]
-- !private ["So16NSObjectProtocolP", "addTarget"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "backgroundColor"]
-- !private ["So16NSObjectProtocolP", "borderColor"]
-- ["So16NSObjectProtocolP", "borderWidth"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "centerDot"]
-- !private ["So16NSObjectProtocolP", "centerDotDiameter"]
-- !private ["So16NSObjectProtocolP", "centerDotScaleForMeeting"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "clear"]
-- !private ["So16NSObjectProtocolP", "cornerRadius"]
-- !private ["So16NSObjectProtocolP", "didTap"]
-- !private ["So16NSObjectProtocolP", "disabledColor"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isAnimating"]
-- !private ["So16NSObjectProtocolP", "isEnabled"]
-- !private ["So16NSObjectProtocolP", "isSelected"]
-- !private ["So16NSObjectProtocolP", "layoutSublayers"]
-- !private ["So16NSObjectProtocolP", "normalColor"]
-- !private ["So16NSObjectProtocolP", "outerCircle"]
-- !private ["So16NSObjectProtocolP", "outerCircleBorderWidth"]
-- !private ["So16NSObjectProtocolP", "outerCircleFullBorderWidth"]
-- !private ["So16NSObjectProtocolP", "outerCircleScaleToShrink"]
-- !private ["So16NSObjectProtocolP", "percentageOfOuterCircleSizeToShrinkTo"]
-- !private ["So16NSObjectProtocolP", "percentageOfOuterCircleWidthToStart"]
-- !private ["So16NSObjectProtocolP", "prepare"]
-- !private ["So16NSObjectProtocolP", "selectedColor"]
-- !private ["So16NSObjectProtocolP", "setSelected"]
-- !private ["So16NSObjectProtocolP", "sideLength"]
-- !private ["So16NSObjectProtocolP", "transform"]
+- ["So8NSObjectP", "CALayer"]
+- !private ["So8NSObjectP", "CATransform3DMakeScale"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "RadioBoxLayer"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addSublayer"]
+- !private ["So8NSObjectP", "addTarget"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "borderColor"]
+- ["So8NSObjectP", "borderWidth"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "centerDot"]
+- !private ["So8NSObjectP", "centerDotDiameter"]
+- !private ["So8NSObjectP", "centerDotScaleForMeeting"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "didTap"]
+- !private ["So8NSObjectP", "disabledColor"]
+- !private ["So8NSObjectP", "frame"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isAnimating"]
+- !private ["So8NSObjectP", "isEnabled"]
+- !private ["So8NSObjectP", "isSelected"]
+- !private ["So8NSObjectP", "layoutSublayers"]
+- !private ["So8NSObjectP", "normalColor"]
+- !private ["So8NSObjectP", "outerCircle"]
+- !private ["So8NSObjectP", "outerCircleBorderWidth"]
+- !private ["So8NSObjectP", "outerCircleFullBorderWidth"]
+- !private ["So8NSObjectP", "outerCircleScaleToShrink"]
+- !private ["So8NSObjectP", "percentageOfOuterCircleSizeToShrinkTo"]
+- !private ["So8NSObjectP", "percentageOfOuterCircleWidthToStart"]
+- !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "selectedColor"]
+- !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "sideLength"]
+- !private ["So8NSObjectP", "transform"]
 - ["So14NSSecureCodingP", "CALayer"]
 - !private ["So14NSSecureCodingP", "CATransform3DMakeScale"]
 - !private ["So14NSSecureCodingP", "CGRect"]
@@ -582,6 +611,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "disabledColor"]
 - !private ["So14NSSecureCodingP", "frame"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "isAnimating"]
 - !private ["So14NSSecureCodingP", "isEnabled"]
 - !private ["So14NSSecureCodingP", "isSelected"]
@@ -603,12 +633,14 @@ depends-member:
 - !private ["8Material9PulseableP", "addTarget"]
 - !private ["8Material9PulseableP", "didTap"]
 - !private ["8Material9PulseableP", "init"]
+- !private ["8Material9PulseableP", "init"]
 - !private ["8Material9PulseableP", "prepare"]
 - !private ["8Material9PulseableP", "setSelected"]
 - !private ["8Material14PulseableLayerP", "RadioBoxLayer"]
 - ["8Material14PulseableLayerP", ""]
 - !private ["8Material14PulseableLayerP", "addTarget"]
 - !private ["8Material14PulseableLayerP", "didTap"]
+- !private ["8Material14PulseableLayerP", "init"]
 - !private ["8Material14PulseableLayerP", "init"]
 - !private ["8Material14PulseableLayerP", "prepare"]
 - !private ["8Material14PulseableLayerP", "setSelected"]
@@ -623,7 +655,7 @@ depends-member:
 - !private ["8Material13RadioBoxLayerC", "centerDot"]
 - !private ["8Material13RadioBoxLayerC", "centerDotDiameter"]
 - !private ["8Material13RadioBoxLayerC", "centerDotScaleForMeeting"]
-- ["8Material13RadioBoxLayerC", "deinit"]
+- !private ["8Material13RadioBoxLayerC", "deinit"]
 - ["8Material13RadioBoxLayerC", "disabledColor"]
 - ["8Material13RadioBoxLayerC", "firstAnimation"]
 - ["8Material13RadioBoxLayerC", "init"]
@@ -647,24 +679,30 @@ depends-member:
 - ["8Material11RadioButtonC", "BaseIconLayer"]
 - !private ["8Material11RadioButtonC", "RadioBoxLayer"]
 - !private ["8Material11RadioButtonC", "addTarget"]
-- ["8Material11RadioButtonC", "deinit"]
 - !private ["8Material11RadioButtonC", "didTap"]
 - ["8Material11RadioButtonC", "iconLayer"]
 - ["8Material11RadioButtonC", "init"]
 - ["8Material11RadioButtonC", "prepare"]
 - !private ["8Material11RadioButtonC", "setSelected"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "touchUpInside"]
-- !private ["s8SequenceP", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "touchUpInside"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "RadioBoxLayer"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", ""]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "didTap"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "prepare"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setSelected"]
@@ -673,6 +711,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "didTap"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "prepare"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - !private ["So12UIAppearanceP", "RadioBoxLayer"]
@@ -680,12 +719,14 @@ depends-member:
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "didTap"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "prepare"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - !private ["So21UIAppearanceContainerP", "RadioBoxLayer"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "didTap"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "prepare"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
@@ -695,6 +736,7 @@ depends-member:
 - ["So8UIButtonC", "didTap"]
 - ["So8UIButtonC", "iconLayer"]
 - ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "init"]
 - ["So8UIButtonC", "prepare"]
 - !private ["So8UIButtonC", "setSelected"]
 - !private ["So7UIColorC", "cgColor"]
@@ -705,13 +747,14 @@ depends-member:
 - ["So9UIControlC", "didTap"]
 - ["So9UIControlC", "iconLayer"]
 - ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "init"]
 - ["So9UIControlC", "prepare"]
 - !private ["So9UIControlC", "setSelected"]
-- !private ["SC15UIControlEventsV", "touchUpInside"]
 - !private ["So17UICoordinateSpaceP", "RadioBoxLayer"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "didTap"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "prepare"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
@@ -720,12 +763,14 @@ depends-member:
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "didTap"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "prepare"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - !private ["So18UIFocusEnvironmentP", "RadioBoxLayer"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "didTap"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "prepare"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
@@ -734,12 +779,22 @@ depends-member:
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "didTap"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "prepare"]
 - !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "RadioBoxLayer"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addTarget"]
+- !private ["So20UIFocusItemContainerP", "didTap"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "prepare"]
+- !private ["So20UIFocusItemContainerP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "RadioBoxLayer"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "didTap"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "prepare"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
@@ -749,12 +804,14 @@ depends-member:
 - ["So11UIResponderC", "didTap"]
 - ["So11UIResponderC", "iconLayer"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "setSelected"]
 - !private ["So30UIResponderStandardEditActionsP", "RadioBoxLayer"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "didTap"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "prepare"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
@@ -763,6 +820,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "didTap"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "prepare"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setSelected"]
 - !private ["So18UITraitEnvironmentP", "RadioBoxLayer"]
@@ -770,14 +828,24 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "didTap"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "prepare"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "RadioBoxLayer"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addTarget"]
+- !private ["So23UIUserActivityRestoringP", "didTap"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "BaseIconLayer"]
 - !private ["So6UIViewC", "RadioBoxLayer"]
 - !private ["So6UIViewC", "addTarget"]
 - ["So6UIViewC", "didTap"]
 - ["So6UIViewC", "iconLayer"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
 - ["So6UIViewC", "prepare"]
 - !private ["So6UIViewC", "setSelected"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "RadioBoxLayer"]
@@ -785,15 +853,21 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "didTap"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepare"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CALayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CATransform3DMakeScale"]
@@ -818,6 +892,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "disabledColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isAnimating"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isSelected"]
@@ -837,38 +912,41 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "identity"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "8Material13BaseIconLayerC"
 - "8Material19BaseIconLayerButtonC"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
 - "8Material6ButtonC"
 - "So19CAAnimationDelegateP"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
-- !private "SC13CATransform3DV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So13CATransform3DV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "So15UIControlEventsV"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
@@ -876,19 +954,19 @@ depends-nominal:
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "s9OptionSetP"
 - "8Material9PulseableP"
 - "8Material14PulseableLayerP"
 - "8Material13RadioBoxLayerC"
 - "8Material11RadioButtonC"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
 - !private "s10SetAlgebraP"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -898,16 +976,17 @@ depends-nominal:
 - "So8UIButtonC"
 - !private "So7UIColorC"
 - "So9UIControlC"
-- !private "SC15UIControlEventsV"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -922,42 +1001,43 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Material/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Material.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "ad1bcc837623550129ce72d4381f1c73"

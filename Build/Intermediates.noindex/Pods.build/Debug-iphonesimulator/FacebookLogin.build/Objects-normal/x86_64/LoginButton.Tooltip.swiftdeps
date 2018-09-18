@@ -16,48 +16,53 @@ depends-top-level:
 - "FBSDKTooltipColorStyle"
 - "LoginButton"
 depends-member:
-- ["s9EquatableP", ""]
-- ["s9EquatableP", "automatic"]
-- ["s9EquatableP", "disable"]
-- ["s9EquatableP", "forceDisplay"]
-- ["s9EquatableP", "friendlyBlue"]
-- ["s9EquatableP", "hashValue"]
-- ["s9EquatableP", "neutralGray"]
-- !private ["SC31FBSDKLoginButtonTooltipBehaviorO", "automatic"]
-- !private ["SC31FBSDKLoginButtonTooltipBehaviorO", "disable"]
-- !private ["SC31FBSDKLoginButtonTooltipBehaviorO", "forceDisplay"]
-- !private ["SC22FBSDKTooltipColorStyleO", "friendlyBlue"]
-- !private ["SC22FBSDKTooltipColorStyleO", "neutralGray"]
-- ["s8HashableP", ""]
-- ["s8HashableP", "automatic"]
-- ["s8HashableP", "disable"]
-- ["s8HashableP", "forceDisplay"]
-- ["s8HashableP", "friendlyBlue"]
-- ["s8HashableP", "hashValue"]
-- ["s8HashableP", "neutralGray"]
+- ["SQ", ""]
+- ["SQ", "automatic"]
+- ["SQ", "disable"]
+- ["SQ", "forceDisplay"]
+- ["SQ", "friendlyBlue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "neutralGray"]
+- !private ["So31FBSDKLoginButtonTooltipBehaviorV", "automatic"]
+- !private ["So31FBSDKLoginButtonTooltipBehaviorV", "disable"]
+- !private ["So31FBSDKLoginButtonTooltipBehaviorV", "forceDisplay"]
+- !private ["So22FBSDKTooltipColorStyleV", "friendlyBlue"]
+- !private ["So22FBSDKTooltipColorStyleV", "neutralGray"]
+- ["SH", ""]
+- ["SH", "automatic"]
+- ["SH", "disable"]
+- ["SH", "forceDisplay"]
+- ["SH", "friendlyBlue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "neutralGray"]
+- !private ["s6HasherV", "combine"]
 - ["13FacebookLogin0B6ButtonC", "FBSDKLoginButtonTooltipBehavior"]
 - ["13FacebookLogin0B6ButtonC", "FBSDKTooltipColorStyle"]
 - ["13FacebookLogin0B6ButtonC", "TooltipBehavior"]
 - ["13FacebookLogin0B6ButtonC", "TooltipColorStyle"]
 - ["So8NSObjectC", "FBSDKLoginButtonTooltipBehavior"]
 - ["So8NSObjectC", "FBSDKTooltipColorStyle"]
-- !private ["s16RawRepresentableP", "automatic"]
-- !private ["s16RawRepresentableP", "disable"]
-- !private ["s16RawRepresentableP", "forceDisplay"]
-- !private ["s16RawRepresentableP", "friendlyBlue"]
-- !private ["s16RawRepresentableP", "neutralGray"]
+- !private ["SY", "automatic"]
+- !private ["SY", "disable"]
+- !private ["SY", "forceDisplay"]
+- !private ["SY", "friendlyBlue"]
+- !private ["SY", "neutralGray"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "FBSDKLoginButtonTooltipBehavior"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "__derived_enum_equals"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "automatic"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "deinit"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "disable"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "forceDisplay"]
+- ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "hash"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "hashValue"]
 - ["13FacebookLogin0B6ButtonC15TooltipBehaviorO", "sdkBehavior"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "FBSDKTooltipColorStyle"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "__derived_enum_equals"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "deinit"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "friendlyBlue"]
+- ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "hash"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "hashValue"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "neutralGray"]
 - ["13FacebookLogin0B6ButtonC17TooltipColorStyleO", "sdkColorStyle"]
@@ -66,33 +71,34 @@ depends-member:
 - ["So6UIViewC", "FBSDKLoginButtonTooltipBehavior"]
 - ["So6UIViewC", "FBSDKTooltipColorStyle"]
 depends-nominal:
-- "s9EquatableP"
-- !private "SC31FBSDKLoginButtonTooltipBehaviorO"
-- !private "SC22FBSDKTooltipColorStyleO"
-- "s8HashableP"
+- "SQ"
+- !private "So31FBSDKLoginButtonTooltipBehaviorV"
+- !private "So22FBSDKTooltipColorStyleV"
+- "SH"
+- !private "s6HasherV"
 - "13FacebookLogin0B6ButtonC"
 - "So8NSObjectC"
-- !private "s16RawRepresentableP"
+- !private "SY"
 - "13FacebookLogin0B6ButtonC15TooltipBehaviorO"
 - "13FacebookLogin0B6ButtonC17TooltipColorStyleO"
 - "So11UIResponderC"
 - "So6UIViewC"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookLogin/FacebookLogin-umbrella.h"
@@ -103,6 +109,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -151,15 +158,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKLoginKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5c47159438fd587844e7061887e0eebc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "b8e92af6f213e2eb863f5828b3caad3c"

@@ -1,6 +1,5 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "StringProxy"
 - "arrayOfBytes"
 - "HashProtocol"
 - "toUInt32Array"
@@ -9,22 +8,21 @@ provides-top-level:
 - "rotateLeft"
 - "MD5"
 provides-nominal:
-- "10Kingfisher11StringProxyV"
 - "SS"
 - "10Kingfisher12HashProtocolP"
 - "10Kingfisher13BytesIteratorV"
 - "10Kingfisher13BytesSequenceV"
 - "10Kingfisher3MD5C"
 provides-member:
-- ["10Kingfisher11StringProxyV", ""]
 - ["SS", ""]
+- ["10KingfisherAAC", ""]
 - ["Si", ""]
 - ["So13NSMutableDataC", ""]
 - ["10Kingfisher12HashProtocolP", ""]
 - ["10Kingfisher13BytesIteratorV", ""]
 - ["10Kingfisher13BytesSequenceV", ""]
 - ["10Kingfisher3MD5C", ""]
-- ["10Kingfisher11StringProxyV", "md5"]
+- ["10KingfisherAAC", "md5"]
 - ["Si", "bytes"]
 - ["So13NSMutableDataC", "appendBytes"]
 - ["10Kingfisher12HashProtocolP", "prepare"]
@@ -52,9 +50,12 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - "BytesIterator"
 - "BytesSequence"
+- "FloatLiteralType"
 - "HashProtocol"
 - "Int"
+- "IntegerLiteralType"
 - "IteratorProtocol"
+- "Kingfisher"
 - "KingfisherCompatible"
 - "MD5"
 - !private "MemoryLayout"
@@ -62,7 +63,6 @@ depends-top-level:
 - "Sequence"
 - "String"
 - !private "StringLiteralType"
-- "StringProxy"
 - "TernaryPrecedence"
 - "UInt32"
 - "UInt8"
@@ -86,31 +86,41 @@ depends-member:
 - !private ["Sa", "reserveCapacity"]
 - !private ["Sa", "reversed"]
 - !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "endIndex"]
+- !private ["s13ArrayProtocolP", "forEach"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "reserveCapacity"]
+- !private ["s13ArrayProtocolP", "reversed"]
+- !private ["s13ArrayProtocolP", "startIndex"]
+- !private ["s13ArrayProtocolP", "subscript"]
 - !private ["s10ArraySliceV", "count"]
 - !private ["s10ArraySliceV", "endIndex"]
 - !private ["s10ArraySliceV", "startIndex"]
 - !private ["s10ArraySliceV", "subscript"]
-- ["s23BidirectionalCollectionP", "CompatibleType"]
-- !private ["s23BidirectionalCollectionP", "StringProxy"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "data"]
-- !private ["s23BidirectionalCollectionP", "endIndex"]
-- !private ["s23BidirectionalCollectionP", "forEach"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- ["s23BidirectionalCollectionP", "kf"]
-- !private ["s23BidirectionalCollectionP", "reserveCapacity"]
-- !private ["s23BidirectionalCollectionP", "reversed"]
-- !private ["s23BidirectionalCollectionP", "startIndex"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s23BidirectionalCollectionP", "withUnsafeBytes"]
-- !private ["s13BinaryIntegerP", "MemoryLayout"]
-- !private ["s13BinaryIntegerP", "advanced"]
-- !private ["s13BinaryIntegerP", "arrayOfBytes"]
-- !private ["s13BinaryIntegerP", "bytes"]
-- !private ["s13BinaryIntegerP", "init"]
-- !private ["s13BinaryIntegerP", "littleEndian"]
-- !private ["s13BinaryIntegerP", "pointee"]
+- ["SK", "CompatibleType"]
+- ["SK", "_Default_CompatibleType"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "data"]
+- !private ["SK", "endIndex"]
+- !private ["SK", "forEach"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- ["SK", "kf"]
+- !private ["SK", "reserveCapacity"]
+- !private ["SK", "reversed"]
+- !private ["SK", "startIndex"]
+- !private ["SK", "subscript"]
+- !private ["SK", "withUnsafeBytes"]
+- !private ["Sz", "MemoryLayout"]
+- !private ["Sz", "advanced"]
+- !private ["Sz", "arrayOfBytes"]
+- !private ["Sz", "bytes"]
+- !private ["Sz", "init"]
+- !private ["Sz", "littleEndian"]
+- !private ["Sz", "pointee"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["10Kingfisher13BytesIteratorV", "ArraySlice"]
 - ["10Kingfisher13BytesIteratorV", "Element"]
@@ -154,7 +164,7 @@ depends-member:
 - ["10Kingfisher13BytesSequenceV", "underestimatedCount"]
 - ["s7CVarArgP", "CompatibleType"]
 - !private ["s7CVarArgP", "MemoryLayout"]
-- !private ["s7CVarArgP", "StringProxy"]
+- ["s7CVarArgP", "_Default_CompatibleType"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "advanced"]
 - !private ["s7CVarArgP", "allocate"]
@@ -167,6 +177,7 @@ depends-member:
 - !private ["s7CVarArgP", "deinitialize"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "kf"]
 - !private ["s7CVarArgP", "littleEndian"]
 - !private ["s7CVarArgP", "pointee"]
@@ -174,37 +185,39 @@ depends-member:
 - !private ["s7CVarArgP", "reversed"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "withMemoryRebound"]
-- ["s10CollectionP", "CompatibleType"]
-- !private ["s10CollectionP", "StringProxy"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "data"]
-- !private ["s10CollectionP", "endIndex"]
-- !private ["s10CollectionP", "forEach"]
-- !private ["s10CollectionP", "init"]
-- ["s10CollectionP", "kf"]
-- !private ["s10CollectionP", "reserveCapacity"]
-- !private ["s10CollectionP", "reversed"]
-- !private ["s10CollectionP", "startIndex"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10CollectionP", "withUnsafeBytes"]
-- ["s10ComparableP", "CompatibleType"]
-- !private ["s10ComparableP", "MemoryLayout"]
-- !private ["s10ComparableP", "StringProxy"]
-- !private ["s10ComparableP", "advanced"]
-- !private ["s10ComparableP", "allocate"]
-- !private ["s10ComparableP", "arrayOfBytes"]
-- !private ["s10ComparableP", "bytes"]
-- !private ["s10ComparableP", "data"]
-- !private ["s10ComparableP", "deallocate"]
-- !private ["s10ComparableP", "deinitialize"]
-- !private ["s10ComparableP", "init"]
-- ["s10ComparableP", "kf"]
-- !private ["s10ComparableP", "littleEndian"]
-- !private ["s10ComparableP", "pointee"]
-- !private ["s10ComparableP", "withMemoryRebound"]
+- ["Sl", "CompatibleType"]
+- ["Sl", "_Default_CompatibleType"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "data"]
+- !private ["Sl", "endIndex"]
+- !private ["Sl", "forEach"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- ["Sl", "kf"]
+- !private ["Sl", "reserveCapacity"]
+- !private ["Sl", "reversed"]
+- !private ["Sl", "startIndex"]
+- !private ["Sl", "subscript"]
+- !private ["Sl", "withUnsafeBytes"]
+- ["SL", "CompatibleType"]
+- !private ["SL", "MemoryLayout"]
+- ["SL", "_Default_CompatibleType"]
+- !private ["SL", "advanced"]
+- !private ["SL", "allocate"]
+- !private ["SL", "arrayOfBytes"]
+- !private ["SL", "bytes"]
+- !private ["SL", "data"]
+- !private ["SL", "deallocate"]
+- !private ["SL", "deinitialize"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["SL", "kf"]
+- !private ["SL", "littleEndian"]
+- !private ["SL", "pointee"]
+- !private ["SL", "withMemoryRebound"]
 - ["s28CustomDebugStringConvertibleP", "CompatibleType"]
-- !private ["s28CustomDebugStringConvertibleP", "StringProxy"]
+- ["s28CustomDebugStringConvertibleP", "_Default_CompatibleType"]
 - !private ["s28CustomDebugStringConvertibleP", "allocate"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -213,6 +226,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "deinitialize"]
 - !private ["s28CustomDebugStringConvertibleP", "endIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "kf"]
 - !private ["s28CustomDebugStringConvertibleP", "pointee"]
@@ -224,7 +238,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "withUnsafeBytes"]
 - ["s29CustomPlaygroundQuickLookableP", "CompatibleType"]
 - !private ["s29CustomPlaygroundQuickLookableP", "MemoryLayout"]
-- !private ["s29CustomPlaygroundQuickLookableP", "StringProxy"]
+- ["s29CustomPlaygroundQuickLookableP", "_Default_CompatibleType"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "advanced"]
 - !private ["s29CustomPlaygroundQuickLookableP", "allocate"]
@@ -234,13 +248,14 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "deallocate"]
 - !private ["s29CustomPlaygroundQuickLookableP", "deinitialize"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "kf"]
 - !private ["s29CustomPlaygroundQuickLookableP", "littleEndian"]
 - !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
 - !private ["s29CustomPlaygroundQuickLookableP", "withMemoryRebound"]
 - ["s17CustomReflectableP", "CompatibleType"]
 - !private ["s17CustomReflectableP", "MemoryLayout"]
-- !private ["s17CustomReflectableP", "StringProxy"]
+- ["s17CustomReflectableP", "_Default_CompatibleType"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "advanced"]
 - !private ["s17CustomReflectableP", "allocate"]
@@ -254,6 +269,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "endIndex"]
 - !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "kf"]
 - !private ["s17CustomReflectableP", "littleEndian"]
 - !private ["s17CustomReflectableP", "pointee"]
@@ -265,7 +281,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "withUnsafeBytes"]
 - ["s23CustomStringConvertibleP", "CompatibleType"]
 - !private ["s23CustomStringConvertibleP", "MemoryLayout"]
-- !private ["s23CustomStringConvertibleP", "StringProxy"]
+- ["s23CustomStringConvertibleP", "_Default_CompatibleType"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "advanced"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -275,6 +291,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "data"]
 - !private ["s23CustomStringConvertibleP", "endIndex"]
 - !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "kf"]
 - !private ["s23CustomStringConvertibleP", "littleEndian"]
@@ -287,71 +304,74 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "withUnsafeBytes"]
 - !private ["10Foundation4DataV", "count"]
 - !private ["10Foundation4DataV", "withUnsafeBytes"]
-- ["s9DecodableP", "CompatibleType"]
-- !private ["s9DecodableP", "MemoryLayout"]
-- !private ["s9DecodableP", "StringProxy"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "advanced"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "arrayOfBytes"]
-- !private ["s9DecodableP", "bytes"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "data"]
-- !private ["s9DecodableP", "forEach"]
-- !private ["s9DecodableP", "init"]
-- ["s9DecodableP", "kf"]
-- !private ["s9DecodableP", "littleEndian"]
-- !private ["s9DecodableP", "pointee"]
-- !private ["s9DecodableP", "reserveCapacity"]
-- !private ["s9DecodableP", "reversed"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "withUnsafeBytes"]
-- ["s9EncodableP", "CompatibleType"]
-- !private ["s9EncodableP", "MemoryLayout"]
-- !private ["s9EncodableP", "StringProxy"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "advanced"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "arrayOfBytes"]
-- !private ["s9EncodableP", "bytes"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "data"]
-- !private ["s9EncodableP", "forEach"]
-- !private ["s9EncodableP", "init"]
-- ["s9EncodableP", "kf"]
-- !private ["s9EncodableP", "littleEndian"]
-- !private ["s9EncodableP", "pointee"]
-- !private ["s9EncodableP", "reserveCapacity"]
-- !private ["s9EncodableP", "reversed"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "withUnsafeBytes"]
+- ["Se", "CompatibleType"]
+- !private ["Se", "MemoryLayout"]
+- ["Se", "_Default_CompatibleType"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "advanced"]
+- !private ["Se", "append"]
+- !private ["Se", "arrayOfBytes"]
+- !private ["Se", "bytes"]
+- !private ["Se", "count"]
+- !private ["Se", "data"]
+- !private ["Se", "forEach"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- ["Se", "kf"]
+- !private ["Se", "littleEndian"]
+- !private ["Se", "pointee"]
+- !private ["Se", "reserveCapacity"]
+- !private ["Se", "reversed"]
+- !private ["Se", "subscript"]
+- !private ["Se", "withUnsafeBytes"]
+- ["SE", "CompatibleType"]
+- !private ["SE", "MemoryLayout"]
+- ["SE", "_Default_CompatibleType"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "advanced"]
+- !private ["SE", "append"]
+- !private ["SE", "arrayOfBytes"]
+- !private ["SE", "bytes"]
+- !private ["SE", "count"]
+- !private ["SE", "data"]
+- !private ["SE", "forEach"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- ["SE", "kf"]
+- !private ["SE", "littleEndian"]
+- !private ["SE", "pointee"]
+- !private ["SE", "reserveCapacity"]
+- !private ["SE", "reversed"]
+- !private ["SE", "subscript"]
+- !private ["SE", "withUnsafeBytes"]
 - !private ["SS10FoundationE8EncodingV", "utf8"]
-- ["s9EquatableP", "CompatibleType"]
-- !private ["s9EquatableP", "MemoryLayout"]
-- !private ["s9EquatableP", "StringProxy"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "advanced"]
-- !private ["s9EquatableP", "allocate"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "arrayOfBytes"]
-- !private ["s9EquatableP", "bytes"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "data"]
-- !private ["s9EquatableP", "deallocate"]
-- !private ["s9EquatableP", "deinitialize"]
-- !private ["s9EquatableP", "endIndex"]
-- !private ["s9EquatableP", "forEach"]
-- !private ["s9EquatableP", "init"]
-- ["s9EquatableP", "kf"]
-- !private ["s9EquatableP", "littleEndian"]
-- !private ["s9EquatableP", "pointee"]
-- !private ["s9EquatableP", "reserveCapacity"]
-- !private ["s9EquatableP", "reversed"]
-- !private ["s9EquatableP", "startIndex"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "utf8"]
-- !private ["s9EquatableP", "withMemoryRebound"]
-- !private ["s9EquatableP", "withUnsafeBytes"]
+- ["SQ", "CompatibleType"]
+- !private ["SQ", "MemoryLayout"]
+- ["SQ", "_Default_CompatibleType"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "advanced"]
+- !private ["SQ", "allocate"]
+- !private ["SQ", "append"]
+- !private ["SQ", "arrayOfBytes"]
+- !private ["SQ", "bytes"]
+- !private ["SQ", "count"]
+- !private ["SQ", "data"]
+- !private ["SQ", "deallocate"]
+- !private ["SQ", "deinitialize"]
+- !private ["SQ", "endIndex"]
+- !private ["SQ", "forEach"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- ["SQ", "kf"]
+- !private ["SQ", "littleEndian"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "reserveCapacity"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "startIndex"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "utf8"]
+- !private ["SQ", "withMemoryRebound"]
+- !private ["SQ", "withUnsafeBytes"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "endIndex"]
@@ -363,8 +383,9 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "CompatibleType"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "StringProxy"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "_Default_CompatibleType"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "kf"]
 - !private ["s27ExpressibleByIntegerLiteralP", "MemoryLayout"]
@@ -375,13 +396,15 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "littleEndian"]
 - !private ["s27ExpressibleByIntegerLiteralP", "pointee"]
 - ["s26ExpressibleByStringLiteralP", "CompatibleType"]
-- !private ["s26ExpressibleByStringLiteralP", "StringProxy"]
+- ["s26ExpressibleByStringLiteralP", "_Default_CompatibleType"]
 - !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "kf"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "CompatibleType"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "StringProxy"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "_Default_CompatibleType"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "kf"]
 - !private ["s17FixedWidthIntegerP", "MemoryLayout"]
@@ -406,26 +429,33 @@ depends-member:
 - !private ["10Kingfisher12HashProtocolP", "shifts"]
 - !private ["10Kingfisher12HashProtocolP", "sines"]
 - !private ["10Kingfisher12HashProtocolP", "toUInt32Array"]
-- ["s8HashableP", "CompatibleType"]
-- !private ["s8HashableP", "MemoryLayout"]
-- !private ["s8HashableP", "StringProxy"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "advanced"]
-- !private ["s8HashableP", "allocate"]
-- !private ["s8HashableP", "append"]
-- !private ["s8HashableP", "arrayOfBytes"]
-- !private ["s8HashableP", "bytes"]
-- !private ["s8HashableP", "count"]
-- !private ["s8HashableP", "data"]
-- !private ["s8HashableP", "deallocate"]
-- !private ["s8HashableP", "deinitialize"]
-- !private ["s8HashableP", "init"]
-- ["s8HashableP", "kf"]
-- !private ["s8HashableP", "littleEndian"]
-- !private ["s8HashableP", "pointee"]
-- !private ["s8HashableP", "utf8"]
-- !private ["s8HashableP", "withMemoryRebound"]
-- !private ["s8HashableP", "withUnsafeBytes"]
+- ["SH", "CompatibleType"]
+- !private ["SH", "MemoryLayout"]
+- ["SH", "_Default_CompatibleType"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "advanced"]
+- !private ["SH", "allocate"]
+- !private ["SH", "append"]
+- !private ["SH", "arrayOfBytes"]
+- !private ["SH", "bytes"]
+- !private ["SH", "count"]
+- !private ["SH", "data"]
+- !private ["SH", "deallocate"]
+- !private ["SH", "deinitialize"]
+- !private ["SH", "endIndex"]
+- !private ["SH", "forEach"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- ["SH", "kf"]
+- !private ["SH", "littleEndian"]
+- !private ["SH", "pointee"]
+- !private ["SH", "reserveCapacity"]
+- !private ["SH", "reversed"]
+- !private ["SH", "startIndex"]
+- !private ["SH", "subscript"]
+- !private ["SH", "utf8"]
+- !private ["SH", "withMemoryRebound"]
+- !private ["SH", "withUnsafeBytes"]
 - ["Si", "Int"]
 - !private ["Si", "MemoryLayout"]
 - ["Si", "UInt8"]
@@ -433,31 +463,40 @@ depends-member:
 - !private ["Si", "arrayOfBytes"]
 - ["Si", "bytes"]
 - !private ["Si", "pointee"]
-- ["s16IteratorProtocolP", "Element"]
-- ["s16IteratorProtocolP", ""]
-- ["s16IteratorProtocolP", "_Default_Element"]
-- !private ["s16IteratorProtocolP", "chunkSize"]
-- !private ["s16IteratorProtocolP", "data"]
-- !private ["s16IteratorProtocolP", "init"]
-- !private ["s16IteratorProtocolP", "min"]
-- ["s16IteratorProtocolP", "next"]
-- !private ["s16IteratorProtocolP", "offset"]
+- ["St", "Element"]
+- ["St", ""]
+- ["St", "_Default_Element"]
+- !private ["St", "chunkSize"]
+- !private ["St", "data"]
+- !private ["St", "init"]
+- !private ["St", "min"]
+- ["St", "next"]
+- !private ["St", "offset"]
+- !private ["10KingfisherAAC", "Array"]
+- !private ["10KingfisherAAC", "MD5"]
+- ["10KingfisherAAC", "String"]
+- !private ["10KingfisherAAC", "UInt8"]
+- !private ["10KingfisherAAC", "UnsafeBufferPointer"]
+- !private ["10KingfisherAAC", "base"]
+- ["10KingfisherAAC", "md5"]
 - ["10Kingfisher0A10CompatibleP", "CompatibleType"]
-- !private ["10Kingfisher0A10CompatibleP", "StringProxy"]
 - ["10Kingfisher0A10CompatibleP", ""]
+- ["10Kingfisher0A10CompatibleP", "_Default_CompatibleType"]
 - !private ["10Kingfisher0A10CompatibleP", "count"]
 - !private ["10Kingfisher0A10CompatibleP", "data"]
+- !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - ["10Kingfisher0A10CompatibleP", "kf"]
 - !private ["10Kingfisher0A10CompatibleP", "withUnsafeBytes"]
 - ["s25LosslessStringConvertibleP", "CompatibleType"]
 - !private ["s25LosslessStringConvertibleP", "MemoryLayout"]
-- !private ["s25LosslessStringConvertibleP", "StringProxy"]
+- ["s25LosslessStringConvertibleP", "_Default_CompatibleType"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "advanced"]
 - !private ["s25LosslessStringConvertibleP", "arrayOfBytes"]
 - !private ["s25LosslessStringConvertibleP", "bytes"]
 - !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "kf"]
 - !private ["s25LosslessStringConvertibleP", "littleEndian"]
@@ -480,24 +519,25 @@ depends-member:
 - !private ["s12MemoryLayoutO", "size"]
 - ["s10MirrorPathP", "CompatibleType"]
 - !private ["s10MirrorPathP", "MemoryLayout"]
-- !private ["s10MirrorPathP", "StringProxy"]
+- ["s10MirrorPathP", "_Default_CompatibleType"]
 - !private ["s10MirrorPathP", "advanced"]
 - !private ["s10MirrorPathP", "arrayOfBytes"]
 - !private ["s10MirrorPathP", "bytes"]
 - !private ["s10MirrorPathP", "data"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "kf"]
 - !private ["s10MirrorPathP", "pointee"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "endIndex"]
-- !private ["s17MutableCollectionP", "forEach"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "reserveCapacity"]
-- !private ["s17MutableCollectionP", "reversed"]
-- !private ["s17MutableCollectionP", "startIndex"]
-- !private ["s17MutableCollectionP", "subscript"]
-- !private ["s17MutableCollectionP", "withUnsafeBytes"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "endIndex"]
+- !private ["SM", "forEach"]
+- !private ["SM", "init"]
+- !private ["SM", "reserveCapacity"]
+- !private ["SM", "reversed"]
+- !private ["SM", "startIndex"]
+- !private ["SM", "subscript"]
+- !private ["SM", "withUnsafeBytes"]
 - !private ["So8NSCodingP", "append"]
 - !private ["So8NSCodingP", "data"]
 - !private ["So9NSCopyingP", "append"]
@@ -516,131 +556,130 @@ depends-member:
 - !private ["So8NSObjectC", "append"]
 - ["So8NSObjectC", "appendBytes"]
 - !private ["So8NSObjectC", "data"]
-- !private ["So16NSObjectProtocolP", "append"]
-- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So8NSObjectP", "append"]
+- !private ["So8NSObjectP", "data"]
 - !private ["So14NSSecureCodingP", "append"]
 - !private ["So14NSSecureCodingP", "data"]
 - !private ["So8NSStringC", "data"]
-- !private ["s7NumericP", "MemoryLayout"]
-- !private ["s7NumericP", "advanced"]
-- !private ["s7NumericP", "arrayOfBytes"]
-- !private ["s7NumericP", "bytes"]
-- !private ["s7NumericP", "init"]
-- !private ["s7NumericP", "littleEndian"]
-- !private ["s7NumericP", "pointee"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "endIndex"]
-- !private ["s22RandomAccessCollectionP", "forEach"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "reserveCapacity"]
-- !private ["s22RandomAccessCollectionP", "reversed"]
-- !private ["s22RandomAccessCollectionP", "startIndex"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s22RandomAccessCollectionP", "withUnsafeBytes"]
-- ["s26RangeReplaceableCollectionP", "CompatibleType"]
-- !private ["s26RangeReplaceableCollectionP", "StringProxy"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "data"]
-- !private ["s26RangeReplaceableCollectionP", "endIndex"]
-- !private ["s26RangeReplaceableCollectionP", "forEach"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- ["s26RangeReplaceableCollectionP", "kf"]
-- !private ["s26RangeReplaceableCollectionP", "reserveCapacity"]
-- !private ["s26RangeReplaceableCollectionP", "reversed"]
-- !private ["s26RangeReplaceableCollectionP", "startIndex"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "withUnsafeBytes"]
-- !private ["s16RawRepresentableP", "utf8"]
+- !private ["Sj", "MemoryLayout"]
+- !private ["Sj", "advanced"]
+- !private ["Sj", "arrayOfBytes"]
+- !private ["Sj", "bytes"]
+- !private ["Sj", "init"]
+- !private ["Sj", "littleEndian"]
+- !private ["Sj", "pointee"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "endIndex"]
+- !private ["Sk", "forEach"]
+- !private ["Sk", "init"]
+- !private ["Sk", "reserveCapacity"]
+- !private ["Sk", "reversed"]
+- !private ["Sk", "startIndex"]
+- !private ["Sk", "subscript"]
+- !private ["Sk", "withUnsafeBytes"]
+- ["Sm", "CompatibleType"]
+- ["Sm", "_Default_CompatibleType"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "data"]
+- !private ["Sm", "endIndex"]
+- !private ["Sm", "forEach"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- ["Sm", "kf"]
+- !private ["Sm", "reserveCapacity"]
+- !private ["Sm", "reversed"]
+- !private ["Sm", "startIndex"]
+- !private ["Sm", "subscript"]
+- !private ["Sm", "withUnsafeBytes"]
+- !private ["SY", "utf8"]
 - !private ["10Foundation20ReferenceConvertibleP", "count"]
 - !private ["10Foundation20ReferenceConvertibleP", "withUnsafeBytes"]
-- !private ["s8SequenceP", "BytesIterator"]
-- ["s8SequenceP", "CompatibleType"]
-- ["s8SequenceP", "Element"]
-- ["s8SequenceP", "Iterator"]
-- !private ["s8SequenceP", "StringProxy"]
-- ["s8SequenceP", "SubSequence"]
-- ["s8SequenceP", ""]
-- ["s8SequenceP", "_Default_Element"]
-- ["s8SequenceP", "_Default_Iterator"]
-- ["s8SequenceP", "_Default_SubSequence"]
-- ["s8SequenceP", "_copyContents"]
-- ["s8SequenceP", "_copyToContiguousArray"]
-- ["s8SequenceP", "_customContainsEquatableElement"]
-- ["s8SequenceP", "_preprocessingPass"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "chunkSize"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "data"]
-- ["s8SequenceP", "drop"]
-- ["s8SequenceP", "dropFirst"]
-- ["s8SequenceP", "dropLast"]
-- !private ["s8SequenceP", "endIndex"]
-- ["s8SequenceP", "filter"]
-- ["s8SequenceP", "forEach"]
-- !private ["s8SequenceP", "init"]
-- ["s8SequenceP", "kf"]
-- ["s8SequenceP", "makeIterator"]
-- ["s8SequenceP", "map"]
-- ["s8SequenceP", "prefix"]
-- !private ["s8SequenceP", "reserveCapacity"]
-- !private ["s8SequenceP", "reversed"]
-- ["s8SequenceP", "split"]
-- !private ["s8SequenceP", "startIndex"]
-- !private ["s8SequenceP", "subscript"]
-- ["s8SequenceP", "suffix"]
-- ["s8SequenceP", "underestimatedCount"]
-- !private ["s8SequenceP", "withUnsafeBytes"]
-- !private ["s13SignedIntegerP", "MemoryLayout"]
-- !private ["s13SignedIntegerP", "advanced"]
-- !private ["s13SignedIntegerP", "arrayOfBytes"]
-- !private ["s13SignedIntegerP", "bytes"]
-- !private ["s13SignedIntegerP", "pointee"]
+- !private ["ST", "BytesIterator"]
+- ["ST", "CompatibleType"]
+- ["ST", "Element"]
+- ["ST", "Iterator"]
+- ["ST", "SubSequence"]
+- ["ST", ""]
+- ["ST", "_Default_CompatibleType"]
+- ["ST", "_Default_Element"]
+- ["ST", "_Default_Iterator"]
+- ["ST", "_Default_SubSequence"]
+- ["ST", "_copyContents"]
+- ["ST", "_copyToContiguousArray"]
+- ["ST", "_customContainsEquatableElement"]
+- ["ST", "_preprocessingPass"]
+- !private ["ST", "append"]
+- !private ["ST", "chunkSize"]
+- !private ["ST", "count"]
+- !private ["ST", "data"]
+- ["ST", "drop"]
+- ["ST", "dropFirst"]
+- ["ST", "dropLast"]
+- !private ["ST", "endIndex"]
+- ["ST", "filter"]
+- ["ST", "forEach"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- ["ST", "kf"]
+- ["ST", "makeIterator"]
+- ["ST", "map"]
+- ["ST", "prefix"]
+- !private ["ST", "reserveCapacity"]
+- !private ["ST", "reversed"]
+- ["ST", "split"]
+- !private ["ST", "startIndex"]
+- !private ["ST", "subscript"]
+- ["ST", "suffix"]
+- ["ST", "underestimatedCount"]
+- !private ["ST", "withUnsafeBytes"]
+- !private ["SZ", "MemoryLayout"]
+- !private ["SZ", "advanced"]
+- !private ["SZ", "arrayOfBytes"]
+- !private ["SZ", "bytes"]
+- !private ["SZ", "pointee"]
 - !private ["s13SignedNumericP", "MemoryLayout"]
 - !private ["s13SignedNumericP", "advanced"]
 - !private ["s13SignedNumericP", "arrayOfBytes"]
 - !private ["s13SignedNumericP", "bytes"]
 - !private ["s13SignedNumericP", "pointee"]
 - !private ["s12StaticStringV", "init"]
-- !private ["s10StrideableP", "MemoryLayout"]
-- !private ["s10StrideableP", "advanced"]
-- !private ["s10StrideableP", "allocate"]
-- !private ["s10StrideableP", "arrayOfBytes"]
-- !private ["s10StrideableP", "bytes"]
-- !private ["s10StrideableP", "deallocate"]
-- !private ["s10StrideableP", "deinitialize"]
-- !private ["s10StrideableP", "init"]
-- !private ["s10StrideableP", "littleEndian"]
-- !private ["s10StrideableP", "pointee"]
-- !private ["s10StrideableP", "withMemoryRebound"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "MemoryLayout"]
+- !private ["Sx", "advanced"]
+- !private ["Sx", "allocate"]
+- !private ["Sx", "arrayOfBytes"]
+- !private ["Sx", "bytes"]
+- !private ["Sx", "deallocate"]
+- !private ["Sx", "deinitialize"]
+- !private ["Sx", "init"]
+- !private ["Sx", "littleEndian"]
+- !private ["Sx", "pointee"]
+- !private ["Sx", "withMemoryRebound"]
 - ["SS", "CompatibleType"]
-- ["SS", "StringProxy"]
+- ["SS", "_Default_CompatibleType"]
 - !private ["SS", "data"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["SS", "init"]
 - ["SS", "kf"]
-- ["s14StringProtocolP", "CompatibleType"]
-- !private ["s14StringProtocolP", "StringProxy"]
-- !private ["s14StringProtocolP", "data"]
-- !private ["s14StringProtocolP", "init"]
-- ["s14StringProtocolP", "kf"]
-- !private ["10Kingfisher11StringProxyV", "Array"]
-- !private ["10Kingfisher11StringProxyV", "MD5"]
-- ["10Kingfisher11StringProxyV", "String"]
-- !private ["10Kingfisher11StringProxyV", "UInt8"]
-- !private ["10Kingfisher11StringProxyV", "UnsafeBufferPointer"]
-- !private ["10Kingfisher11StringProxyV", "base"]
-- ["10Kingfisher11StringProxyV", "init"]
-- ["10Kingfisher11StringProxyV", "md5"]
+- ["Sy", "CompatibleType"]
+- ["Sy", "_Default_CompatibleType"]
+- !private ["Sy", "data"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- ["Sy", "kf"]
 - ["s16TextOutputStreamP", "CompatibleType"]
-- !private ["s16TextOutputStreamP", "StringProxy"]
+- ["s16TextOutputStreamP", "_Default_CompatibleType"]
 - !private ["s16TextOutputStreamP", "data"]
+- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "kf"]
 - ["s20TextOutputStreamableP", "CompatibleType"]
-- !private ["s20TextOutputStreamableP", "StringProxy"]
+- ["s20TextOutputStreamableP", "_Default_CompatibleType"]
 - !private ["s20TextOutputStreamableP", "data"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "kf"]
 - !private ["s6UInt32V", "init"]
@@ -652,17 +691,8 @@ depends-member:
 - !private ["Sp", "deinitialize"]
 - !private ["Sp", "pointee"]
 - !private ["Sp", "withMemoryRebound"]
-- !private ["s15UnsignedIntegerP", "init"]
-- !private ["s15UnsignedIntegerP", "littleEndian"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "endIndex"]
-- !private ["s14_ArrayProtocolP", "forEach"]
-- !private ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "reserveCapacity"]
-- !private ["s14_ArrayProtocolP", "reversed"]
-- !private ["s14_ArrayProtocolP", "startIndex"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["SU", "init"]
+- !private ["SU", "littleEndian"]
 - !private ["s18_BitwiseOperationsP", "MemoryLayout"]
 - !private ["s18_BitwiseOperationsP", "advanced"]
 - !private ["s18_BitwiseOperationsP", "arrayOfBytes"]
@@ -681,8 +711,9 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "CompatibleType"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "StringProxy"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "_Default_CompatibleType"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "kf"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "MemoryLayout"]
@@ -693,32 +724,48 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "littleEndian"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "pointee"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "CompatibleType"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "StringProxy"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "_Default_CompatibleType"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "kf"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "CompatibleType"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "StringProxy"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "_Default_CompatibleType"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "data"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "kf"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "CompatibleType"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "StringProxy"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "_Default_CompatibleType"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "kf"]
 - ["s33_ExpressibleByStringInterpolationP", "CompatibleType"]
-- !private ["s33_ExpressibleByStringInterpolationP", "StringProxy"]
+- ["s33_ExpressibleByStringInterpolationP", "_Default_CompatibleType"]
 - !private ["s33_ExpressibleByStringInterpolationP", "data"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "kf"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "MemoryLayout"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "advanced"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "arrayOfBytes"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "bytes"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "littleEndian"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "pointee"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reserveCapacity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
 - ["s21_ObjectiveCBridgeableP", "CompatibleType"]
 - !private ["s21_ObjectiveCBridgeableP", "MemoryLayout"]
-- !private ["s21_ObjectiveCBridgeableP", "StringProxy"]
+- ["s21_ObjectiveCBridgeableP", "_Default_CompatibleType"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "advanced"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -727,6 +774,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "data"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "kf"]
 - !private ["s21_ObjectiveCBridgeableP", "littleEndian"]
@@ -742,30 +790,32 @@ depends-member:
 - !private ["s8_PointerP", "withMemoryRebound"]
 - !private ["s14_StringElementP", "init"]
 - ["s16_SwiftStringViewP", "CompatibleType"]
-- !private ["s16_SwiftStringViewP", "StringProxy"]
+- ["s16_SwiftStringViewP", "_Default_CompatibleType"]
 - !private ["s16_SwiftStringViewP", "data"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "kf"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
-- "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
+- "SK"
+- !private "Sz"
 - !private "Sb"
 - "10Kingfisher13BytesIteratorV"
 - "10Kingfisher13BytesSequenceV"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DataV"
-- "s9DecodableP"
-- "s9EncodableP"
+- "Se"
+- "SE"
 - !private "SS10FoundationE8EncodingV"
-- "s9EquatableP"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -774,15 +824,16 @@ depends-nominal:
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - "10Kingfisher12HashProtocolP"
-- "s8HashableP"
+- "SH"
 - "Si"
-- "s16IteratorProtocolP"
+- "St"
+- "10KingfisherAAC"
 - "10Kingfisher0A10CompatibleP"
 - "s25LosslessStringConvertibleP"
 - "10Kingfisher3MD5C"
 - !private "s12MemoryLayoutO"
 - "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So6NSDataC"
@@ -791,30 +842,28 @@ depends-nominal:
 - !private "So16NSMutableCopyingP"
 - "So13NSMutableDataC"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s7NumericP"
-- !private "s22RandomAccessCollectionP"
-- "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- !private "Sj"
+- !private "Sk"
+- "Sm"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- "s8SequenceP"
-- !private "s13SignedIntegerP"
+- "ST"
+- !private "SZ"
 - !private "s13SignedNumericP"
 - !private "s12StaticStringV"
-- !private "s10StrideableP"
+- !private "Sx"
 - "SS"
-- "s14StringProtocolP"
-- "10Kingfisher11StringProxyV"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "s6UInt32V"
 - !private "s5UInt8V"
 - !private "SR"
 - !private "Sp"
-- !private "s15UnsignedIntegerP"
-- !private "s14_ArrayProtocolP"
+- !private "SU"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -832,34 +881,35 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Kingfisher/Sources/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Kingfisher.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f7257abae042e51101ec627f6c9627e6"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "9b8fce3c2aa42861928376d7f2e38b25"

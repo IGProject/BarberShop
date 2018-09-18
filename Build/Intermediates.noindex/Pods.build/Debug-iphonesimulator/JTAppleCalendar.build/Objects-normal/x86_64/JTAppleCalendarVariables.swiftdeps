@@ -44,8 +44,10 @@ depends-top-level:
 - !private "||"
 depends-member:
 - !private ["Sa", "count"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["So15CALayerDelegateP", "JTAppleCalendarLayout"]
 - !private ["So15CALayerDelegateP", "Set"]
 - !private ["So15CALayerDelegateP", "cachedConfiguration"]
@@ -75,6 +77,7 @@ depends-member:
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "developerError"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isCalendarLayoutLoaded"]
 - !private ["s7CVarArgP", "isReloadDataInProgress"]
 - !private ["s7CVarArgP", "isScrollInProgress"]
@@ -86,18 +89,21 @@ depends-member:
 - !private ["s7CVarArgP", "values"]
 - !private ["15JTAppleCalendar0B4DataV", "months"]
 - !private ["15JTAppleCalendar0B4DataV", "totalDays"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "map"]
-- !private ["s10CollectionP", "sorted"]
-- !private ["s10CollectionP", "values"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["Sl", "sorted"]
+- !private ["Sl", "values"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["15JTAppleCalendar23ConfigurationParametersV", "calendar"]
 - !private ["15JTAppleCalendar23ConfigurationParametersV", "endDate"]
 - !private ["15JTAppleCalendar23ConfigurationParametersV", "startDate"]
 - !private ["s28CustomDebugStringConvertibleP", "JTAppleCalendarLayout"]
 - !private ["s28CustomDebugStringConvertibleP", "Set"]
 - !private ["s28CustomDebugStringConvertibleP", "cachedConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "calendarDataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "calendarDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "calendarViewLayout"]
@@ -106,6 +112,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "developerError"]
+- !private ["s28CustomDebugStringConvertibleP", "endDate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isCalendarLayoutLoaded"]
 - !private ["s28CustomDebugStringConvertibleP", "isReloadDataInProgress"]
@@ -115,12 +123,18 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "selectedCellData"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedDatesSet"]
 - !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "startDate"]
 - !private ["s28CustomDebugStringConvertibleP", "theData"]
 - !private ["s28CustomDebugStringConvertibleP", "values"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "calendar"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "endDate"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "startDate"]
 - !private ["s17CustomReflectableP", "values"]
 - !private ["s23CustomStringConvertibleP", "JTAppleCalendarLayout"]
 - !private ["s23CustomStringConvertibleP", "Set"]
@@ -134,6 +148,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "developerError"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isCalendarLayoutLoaded"]
 - !private ["s23CustomStringConvertibleP", "isReloadDataInProgress"]
 - !private ["s23CustomStringConvertibleP", "isScrollInProgress"]
@@ -144,62 +159,86 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sorted"]
 - !private ["s23CustomStringConvertibleP", "theData"]
 - !private ["s23CustomStringConvertibleP", "values"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "sorted"]
-- !private ["s9DecodableP", "values"]
-- !private ["s10DictionaryV", "values"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "sorted"]
-- !private ["s9EncodableP", "values"]
-- !private ["s9EquatableP", "JTAppleCalendarLayout"]
-- !private ["s9EquatableP", "Set"]
-- !private ["s9EquatableP", "cachedConfiguration"]
-- !private ["s9EquatableP", "calendarDataSource"]
-- !private ["s9EquatableP", "calendarDelegate"]
-- !private ["s9EquatableP", "calendarViewLayout"]
-- !private ["s9EquatableP", "collectionViewLayout"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "dataSource"]
-- !private ["s9EquatableP", "delegate"]
-- !private ["s9EquatableP", "developerError"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isCalendarLayoutLoaded"]
-- !private ["s9EquatableP", "isReloadDataInProgress"]
-- !private ["s9EquatableP", "isScrollInProgress"]
-- !private ["s9EquatableP", "monthInfo"]
-- !private ["s9EquatableP", "selectedCellData"]
-- !private ["s9EquatableP", "selectedDatesSet"]
-- !private ["s9EquatableP", "sorted"]
-- !private ["s9EquatableP", "theData"]
-- !private ["s9EquatableP", "values"]
+- !private ["Se", "calendar"]
+- !private ["Se", "count"]
+- !private ["Se", "endDate"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "sorted"]
+- !private ["Se", "startDate"]
+- !private ["Se", "values"]
+- !private ["SD", "values"]
+- !private ["SE", "calendar"]
+- !private ["SE", "count"]
+- !private ["SE", "endDate"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "sorted"]
+- !private ["SE", "startDate"]
+- !private ["SE", "values"]
+- !private ["SQ", "JTAppleCalendarLayout"]
+- !private ["SQ", "Set"]
+- !private ["SQ", "cachedConfiguration"]
+- !private ["SQ", "calendar"]
+- !private ["SQ", "calendarDataSource"]
+- !private ["SQ", "calendarDelegate"]
+- !private ["SQ", "calendarViewLayout"]
+- !private ["SQ", "collectionViewLayout"]
+- !private ["SQ", "count"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "developerError"]
+- !private ["SQ", "endDate"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isCalendarLayoutLoaded"]
+- !private ["SQ", "isReloadDataInProgress"]
+- !private ["SQ", "isScrollInProgress"]
+- !private ["SQ", "monthInfo"]
+- !private ["SQ", "selectedCellData"]
+- !private ["SQ", "selectedDatesSet"]
+- !private ["SQ", "sorted"]
+- !private ["SQ", "startDate"]
+- !private ["SQ", "theData"]
+- !private ["SQ", "values"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "sorted"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "values"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "calendar"]
+- !private ["s23ExpressibleByNilLiteralP", "endDate"]
+- !private ["s23ExpressibleByNilLiteralP", "startDate"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "JTAppleCalendarLayout"]
-- !private ["s8HashableP", "Set"]
-- !private ["s8HashableP", "cachedConfiguration"]
-- !private ["s8HashableP", "calendarDataSource"]
-- !private ["s8HashableP", "calendarDelegate"]
-- !private ["s8HashableP", "calendarViewLayout"]
-- !private ["s8HashableP", "collectionViewLayout"]
-- !private ["s8HashableP", "dataSource"]
-- !private ["s8HashableP", "delegate"]
-- !private ["s8HashableP", "developerError"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isCalendarLayoutLoaded"]
-- !private ["s8HashableP", "isReloadDataInProgress"]
-- !private ["s8HashableP", "isScrollInProgress"]
-- !private ["s8HashableP", "monthInfo"]
-- !private ["s8HashableP", "selectedCellData"]
-- !private ["s8HashableP", "selectedDatesSet"]
-- !private ["s8HashableP", "sorted"]
-- !private ["s8HashableP", "theData"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "JTAppleCalendarLayout"]
+- !private ["SH", "Set"]
+- !private ["SH", "cachedConfiguration"]
+- !private ["SH", "calendar"]
+- !private ["SH", "calendarDataSource"]
+- !private ["SH", "calendarDelegate"]
+- !private ["SH", "calendarViewLayout"]
+- !private ["SH", "collectionViewLayout"]
+- !private ["SH", "count"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "delegate"]
+- !private ["SH", "developerError"]
+- !private ["SH", "endDate"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isCalendarLayoutLoaded"]
+- !private ["SH", "isReloadDataInProgress"]
+- !private ["SH", "isScrollInProgress"]
+- !private ["SH", "monthInfo"]
+- !private ["SH", "selectedCellData"]
+- !private ["SH", "selectedDatesSet"]
+- !private ["SH", "sorted"]
+- !private ["SH", "startDate"]
+- !private ["SH", "theData"]
+- !private ["SH", "values"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "JTAppleCalendarLayout"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "Set"]
 - !private ["15JTAppleCalendar0aB16DelegateProtocolP", "cachedConfiguration"]
@@ -258,9 +297,11 @@ depends-member:
 - !private ["15JTAppleCalendar0aB4ViewC", "theData"]
 - ["15JTAppleCalendar0aB4ViewC", "totalDays"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "map"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "map"]
 - !private ["So8NSCodingP", "JTAppleCalendarLayout"]
 - !private ["So8NSCodingP", "Set"]
 - !private ["So8NSCodingP", "cachedConfiguration"]
@@ -315,40 +356,49 @@ depends-member:
 - ["So8NSObjectC", "startDateCache"]
 - !private ["So8NSObjectC", "theData"]
 - ["So8NSObjectC", "totalDays"]
-- !private ["So16NSObjectProtocolP", "JTAppleCalendarLayout"]
-- !private ["So16NSObjectProtocolP", "Set"]
-- !private ["So16NSObjectProtocolP", "cachedConfiguration"]
-- !private ["So16NSObjectProtocolP", "calendarDataSource"]
-- !private ["So16NSObjectProtocolP", "calendarDelegate"]
-- !private ["So16NSObjectProtocolP", "calendarViewLayout"]
-- !private ["So16NSObjectProtocolP", "collectionViewLayout"]
-- !private ["So16NSObjectProtocolP", "dataSource"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "developerError"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isCalendarLayoutLoaded"]
-- !private ["So16NSObjectProtocolP", "isReloadDataInProgress"]
-- !private ["So16NSObjectProtocolP", "isScrollInProgress"]
-- !private ["So16NSObjectProtocolP", "monthInfo"]
-- !private ["So16NSObjectProtocolP", "selectedCellData"]
-- !private ["So16NSObjectProtocolP", "selectedDatesSet"]
-- !private ["So16NSObjectProtocolP", "theData"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["So8NSObjectP", "JTAppleCalendarLayout"]
+- !private ["So8NSObjectP", "Set"]
+- !private ["So8NSObjectP", "cachedConfiguration"]
+- !private ["So8NSObjectP", "calendarDataSource"]
+- !private ["So8NSObjectP", "calendarDelegate"]
+- !private ["So8NSObjectP", "calendarViewLayout"]
+- !private ["So8NSObjectP", "collectionViewLayout"]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "developerError"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isCalendarLayoutLoaded"]
+- !private ["So8NSObjectP", "isReloadDataInProgress"]
+- !private ["So8NSObjectP", "isScrollInProgress"]
+- !private ["So8NSObjectP", "monthInfo"]
+- !private ["So8NSObjectP", "selectedCellData"]
+- !private ["So8NSObjectP", "selectedDatesSet"]
+- !private ["So8NSObjectP", "theData"]
+- !private ["Sq", "calendar"]
+- !private ["Sq", "endDate"]
+- !private ["Sq", "startDate"]
+- !private ["Sk", "count"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
 - !private ["15JTAppleCalendar16SelectedCellDataV", "date"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "map"]
-- !private ["s8SequenceP", "sorted"]
-- !private ["s8SequenceP", "values"]
-- !private ["s3SetV", "init"]
-- !private ["s3SetV", "sorted"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["ST", "sorted"]
+- !private ["ST", "values"]
+- !private ["Sh", "init"]
+- !private ["Sh", "sorted"]
 - !private ["s10SetAlgebraP", "init"]
 - !private ["s10SetAlgebraP", "sorted"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "JTAppleCalendarLayout"]
 - !private ["So29UIAccessibilityIdentificationP", "Set"]
@@ -553,6 +603,40 @@ depends-member:
 - !private ["So11UIFocusItemP", "selectedCellData"]
 - !private ["So11UIFocusItemP", "selectedDatesSet"]
 - !private ["So11UIFocusItemP", "theData"]
+- !private ["So20UIFocusItemContainerP", "JTAppleCalendarLayout"]
+- !private ["So20UIFocusItemContainerP", "Set"]
+- !private ["So20UIFocusItemContainerP", "cachedConfiguration"]
+- !private ["So20UIFocusItemContainerP", "calendarDataSource"]
+- !private ["So20UIFocusItemContainerP", "calendarDelegate"]
+- !private ["So20UIFocusItemContainerP", "calendarViewLayout"]
+- !private ["So20UIFocusItemContainerP", "collectionViewLayout"]
+- !private ["So20UIFocusItemContainerP", "dataSource"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "developerError"]
+- !private ["So20UIFocusItemContainerP", "isCalendarLayoutLoaded"]
+- !private ["So20UIFocusItemContainerP", "isReloadDataInProgress"]
+- !private ["So20UIFocusItemContainerP", "isScrollInProgress"]
+- !private ["So20UIFocusItemContainerP", "monthInfo"]
+- !private ["So20UIFocusItemContainerP", "selectedCellData"]
+- !private ["So20UIFocusItemContainerP", "selectedDatesSet"]
+- !private ["So20UIFocusItemContainerP", "theData"]
+- !private ["So30UIFocusItemScrollableContainerP", "JTAppleCalendarLayout"]
+- !private ["So30UIFocusItemScrollableContainerP", "Set"]
+- !private ["So30UIFocusItemScrollableContainerP", "cachedConfiguration"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarDataSource"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarDelegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "calendarViewLayout"]
+- !private ["So30UIFocusItemScrollableContainerP", "collectionViewLayout"]
+- !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
+- !private ["So30UIFocusItemScrollableContainerP", "delegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "developerError"]
+- !private ["So30UIFocusItemScrollableContainerP", "isCalendarLayoutLoaded"]
+- !private ["So30UIFocusItemScrollableContainerP", "isReloadDataInProgress"]
+- !private ["So30UIFocusItemScrollableContainerP", "isScrollInProgress"]
+- !private ["So30UIFocusItemScrollableContainerP", "monthInfo"]
+- !private ["So30UIFocusItemScrollableContainerP", "selectedCellData"]
+- !private ["So30UIFocusItemScrollableContainerP", "selectedDatesSet"]
+- !private ["So30UIFocusItemScrollableContainerP", "theData"]
 - !private ["So30UIPasteConfigurationSupportingP", "JTAppleCalendarLayout"]
 - !private ["So30UIPasteConfigurationSupportingP", "Set"]
 - !private ["So30UIPasteConfigurationSupportingP", "cachedConfiguration"]
@@ -708,6 +792,23 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "selectedCellData"]
 - !private ["So18UITraitEnvironmentP", "selectedDatesSet"]
 - !private ["So18UITraitEnvironmentP", "theData"]
+- !private ["So23UIUserActivityRestoringP", "JTAppleCalendarLayout"]
+- !private ["So23UIUserActivityRestoringP", "Set"]
+- !private ["So23UIUserActivityRestoringP", "cachedConfiguration"]
+- !private ["So23UIUserActivityRestoringP", "calendarDataSource"]
+- !private ["So23UIUserActivityRestoringP", "calendarDelegate"]
+- !private ["So23UIUserActivityRestoringP", "calendarViewLayout"]
+- !private ["So23UIUserActivityRestoringP", "collectionViewLayout"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "developerError"]
+- !private ["So23UIUserActivityRestoringP", "isCalendarLayoutLoaded"]
+- !private ["So23UIUserActivityRestoringP", "isReloadDataInProgress"]
+- !private ["So23UIUserActivityRestoringP", "isScrollInProgress"]
+- !private ["So23UIUserActivityRestoringP", "monthInfo"]
+- !private ["So23UIUserActivityRestoringP", "selectedCellData"]
+- !private ["So23UIUserActivityRestoringP", "selectedDatesSet"]
+- !private ["So23UIUserActivityRestoringP", "theData"]
 - ["So6UIViewC", "AnyObject"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "Calendar"]
@@ -744,8 +845,7 @@ depends-member:
 - ["So6UIViewC", "startDateCache"]
 - !private ["So6UIViewC", "theData"]
 - ["So6UIViewC", "totalDays"]
-- !private ["s10DictionaryV6ValuesV", "map"]
-- !private ["s14_ArrayProtocolP", "count"]
+- !private ["SD6ValuesV", "map"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "JTAppleCalendarLayout"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Set"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cachedConfiguration"]
@@ -765,10 +865,19 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "theData"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "values"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JTAppleCalendarLayout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cachedConfiguration"]
@@ -787,52 +896,60 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedCellData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedDatesSet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "theData"]
+- !private ["s21_ObjectiveCBridgeableP", "calendar"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "endDate"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "startDate"]
 - !private ["s21_ObjectiveCBridgeableP", "values"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
 - !private "15JTAppleCalendar0B4DataV"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "15JTAppleCalendar23ConfigurationParametersV"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "15JTAppleCalendar0aB16DelegateProtocolP"
 - !private "15JTAppleCalendar0aB6LayoutC"
 - !private "15JTAppleCalendar0aB14LayoutProtocolP"
 - "15JTAppleCalendar0aB4ViewC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- !private "So8NSObjectP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
 - !private "15JTAppleCalendar16SelectedCellDataV"
-- !private "s8SequenceP"
-- !private "s3SetV"
+- !private "ST"
+- !private "Sh"
 - !private "s10SetAlgebraP"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -847,6 +964,8 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - !private "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
@@ -854,9 +973,9 @@ depends-nominal:
 - !private "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- !private "s10DictionaryV6ValuesV"
-- !private "s14_ArrayProtocolP"
+- !private "SD6ValuesV"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -864,34 +983,36 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "57b3ef20ffd375f27bb53aa9a79e09dc"

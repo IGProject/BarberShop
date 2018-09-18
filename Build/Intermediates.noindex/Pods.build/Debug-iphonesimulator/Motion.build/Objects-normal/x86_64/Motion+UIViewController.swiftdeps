@@ -37,6 +37,8 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - !private "MotionTransition"
 - "MotionTransitionAnimationType"
 - "Selector"
@@ -57,14 +59,20 @@ depends-member:
 - !private ["Sa", "isEmpty"]
 - !private ["Sa", "removeLast"]
 - !private ["Sa", "reversed"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "isEmpty"]
+- !private ["s13ArrayProtocolP", "removeLast"]
+- !private ["s13ArrayProtocolP", "reversed"]
 - !private ["6Motion16AssociatedObjectV", "get"]
 - !private ["6Motion16AssociatedObjectV", "set"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "first"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "isEmpty"]
-- !private ["s23BidirectionalCollectionP", "removeLast"]
-- !private ["s23BidirectionalCollectionP", "reversed"]
+- !private ["SK", "append"]
+- !private ["SK", "first"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "removeLast"]
+- !private ["SK", "reversed"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "contentView"]
@@ -88,6 +96,7 @@ depends-member:
 - !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "forceNonInteractive"]
 - !private ["s7CVarArgP", "fromViewController"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "isKind"]
@@ -117,13 +126,15 @@ depends-member:
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "window"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "first"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "isEmpty"]
-- !private ["s10CollectionP", "removeLast"]
-- !private ["s10CollectionP", "reversed"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "first"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "removeLast"]
+- !private ["Sl", "reversed"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedInstanceKey"]
 - !private ["s28CustomDebugStringConvertibleP", "AssociatedObject"]
@@ -139,6 +150,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "forceNonInteractive"]
 - !private ["s28CustomDebugStringConvertibleP", "fromViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "isKind"]
@@ -170,13 +182,18 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "removeLast"]
 - !private ["s17CustomReflectableP", "reversed"]
+- !private ["s17CustomReflectableP", "snapshotView"]
+- !private ["s17CustomReflectableP", "superview"]
+- !private ["s17CustomReflectableP", "window"]
 - !private ["s23CustomStringConvertibleP", "AssociatedInstance"]
 - !private ["s23CustomStringConvertibleP", "AssociatedInstanceKey"]
 - !private ["s23CustomStringConvertibleP", "AssociatedObject"]
@@ -193,6 +210,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "forceNonInteractive"]
 - !private ["s23CustomStringConvertibleP", "fromViewController"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "isKind"]
@@ -222,65 +240,74 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "window"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "first"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "isEmpty"]
-- !private ["s9DecodableP", "removeLast"]
-- !private ["s9DecodableP", "reversed"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "first"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "isEmpty"]
-- !private ["s9EncodableP", "removeLast"]
-- !private ["s9EncodableP", "reversed"]
-- !private ["s9EquatableP", "AssociatedInstance"]
-- !private ["s9EquatableP", "AssociatedInstanceKey"]
-- !private ["s9EquatableP", "AssociatedObject"]
-- !private ["s9EquatableP", "MotionTransition"]
-- !private ["s9EquatableP", "UIApplication"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "associatedInstance"]
-- !private ["s9EquatableP", "childViewControllers"]
-- !private ["s9EquatableP", "contentView"]
-- !private ["s9EquatableP", "delegate"]
-- !private ["s9EquatableP", "dismiss"]
-- !private ["s9EquatableP", "first"]
-- !private ["s9EquatableP", "forceNonInteractive"]
-- !private ["s9EquatableP", "fromViewController"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isEmpty"]
-- !private ["s9EquatableP", "isKind"]
-- !private ["s9EquatableP", "isMotionEnabled"]
-- !private ["s9EquatableP", "isTransitioning"]
-- !private ["s9EquatableP", "keyWindow"]
-- !private ["s9EquatableP", "motionUnwindToViewController"]
-- !private ["s9EquatableP", "navigationController"]
-- !private ["s9EquatableP", "popToViewController"]
-- !private ["s9EquatableP", "popViewController"]
-- !private ["s9EquatableP", "present"]
-- !private ["s9EquatableP", "presentedViewController"]
-- !private ["s9EquatableP", "presentingViewController"]
-- !private ["s9EquatableP", "previousNavigationDelegate"]
-- !private ["s9EquatableP", "previousTabBarDelegate"]
-- !private ["s9EquatableP", "print"]
-- !private ["s9EquatableP", "removeLast"]
-- !private ["s9EquatableP", "responds"]
-- !private ["s9EquatableP", "reversed"]
-- !private ["s9EquatableP", "rootViewController"]
-- !private ["s9EquatableP", "setViewControllers"]
-- !private ["s9EquatableP", "shared"]
-- !private ["s9EquatableP", "snapshotView"]
-- !private ["s9EquatableP", "superview"]
-- !private ["s9EquatableP", "transition"]
-- !private ["s9EquatableP", "transitioningDelegate"]
-- !private ["s9EquatableP", "view"]
-- !private ["s9EquatableP", "viewControllers"]
-- !private ["s9EquatableP", "window"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "removeLast"]
+- !private ["Se", "reversed"]
+- !private ["Se", "snapshotView"]
+- !private ["Se", "superview"]
+- !private ["Se", "window"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "removeLast"]
+- !private ["SE", "reversed"]
+- !private ["SE", "snapshotView"]
+- !private ["SE", "superview"]
+- !private ["SE", "window"]
+- !private ["SQ", "AssociatedInstance"]
+- !private ["SQ", "AssociatedInstanceKey"]
+- !private ["SQ", "AssociatedObject"]
+- !private ["SQ", "MotionTransition"]
+- !private ["SQ", "UIApplication"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addSubview"]
+- !private ["SQ", "append"]
+- !private ["SQ", "associatedInstance"]
+- !private ["SQ", "childViewControllers"]
+- !private ["SQ", "contentView"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "dismiss"]
+- !private ["SQ", "first"]
+- !private ["SQ", "forceNonInteractive"]
+- !private ["SQ", "fromViewController"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "isKind"]
+- !private ["SQ", "isMotionEnabled"]
+- !private ["SQ", "isTransitioning"]
+- !private ["SQ", "keyWindow"]
+- !private ["SQ", "motionUnwindToViewController"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "popToViewController"]
+- !private ["SQ", "popViewController"]
+- !private ["SQ", "present"]
+- !private ["SQ", "presentedViewController"]
+- !private ["SQ", "presentingViewController"]
+- !private ["SQ", "previousNavigationDelegate"]
+- !private ["SQ", "previousTabBarDelegate"]
+- !private ["SQ", "print"]
+- !private ["SQ", "removeLast"]
+- !private ["SQ", "responds"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "rootViewController"]
+- !private ["SQ", "setViewControllers"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "snapshotView"]
+- !private ["SQ", "superview"]
+- !private ["SQ", "transition"]
+- !private ["SQ", "transitioningDelegate"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewControllers"]
+- !private ["SQ", "window"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
@@ -288,50 +315,64 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "reversed"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "snapshotView"]
+- !private ["s23ExpressibleByNilLiteralP", "superview"]
+- !private ["s23ExpressibleByNilLiteralP", "window"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "AssociatedInstance"]
-- !private ["s8HashableP", "AssociatedInstanceKey"]
-- !private ["s8HashableP", "AssociatedObject"]
-- !private ["s8HashableP", "MotionTransition"]
-- !private ["s8HashableP", "UIApplication"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "associatedInstance"]
-- !private ["s8HashableP", "childViewControllers"]
-- !private ["s8HashableP", "contentView"]
-- !private ["s8HashableP", "delegate"]
-- !private ["s8HashableP", "dismiss"]
-- !private ["s8HashableP", "forceNonInteractive"]
-- !private ["s8HashableP", "fromViewController"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isKind"]
-- !private ["s8HashableP", "isMotionEnabled"]
-- !private ["s8HashableP", "isTransitioning"]
-- !private ["s8HashableP", "keyWindow"]
-- !private ["s8HashableP", "motionUnwindToViewController"]
-- !private ["s8HashableP", "navigationController"]
-- !private ["s8HashableP", "popToViewController"]
-- !private ["s8HashableP", "popViewController"]
-- !private ["s8HashableP", "present"]
-- !private ["s8HashableP", "presentedViewController"]
-- !private ["s8HashableP", "presentingViewController"]
-- !private ["s8HashableP", "previousNavigationDelegate"]
-- !private ["s8HashableP", "previousTabBarDelegate"]
-- !private ["s8HashableP", "print"]
-- !private ["s8HashableP", "responds"]
-- !private ["s8HashableP", "rootViewController"]
-- !private ["s8HashableP", "setViewControllers"]
-- !private ["s8HashableP", "shared"]
-- !private ["s8HashableP", "snapshotView"]
-- !private ["s8HashableP", "superview"]
-- !private ["s8HashableP", "transition"]
-- !private ["s8HashableP", "transitioningDelegate"]
-- !private ["s8HashableP", "view"]
-- !private ["s8HashableP", "viewControllers"]
-- !private ["s8HashableP", "window"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "AssociatedInstance"]
+- !private ["SH", "AssociatedInstanceKey"]
+- !private ["SH", "AssociatedObject"]
+- !private ["SH", "MotionTransition"]
+- !private ["SH", "UIApplication"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addSubview"]
+- !private ["SH", "append"]
+- !private ["SH", "associatedInstance"]
+- !private ["SH", "childViewControllers"]
+- !private ["SH", "contentView"]
+- !private ["SH", "delegate"]
+- !private ["SH", "dismiss"]
+- !private ["SH", "first"]
+- !private ["SH", "forceNonInteractive"]
+- !private ["SH", "fromViewController"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "isKind"]
+- !private ["SH", "isMotionEnabled"]
+- !private ["SH", "isTransitioning"]
+- !private ["SH", "keyWindow"]
+- !private ["SH", "motionUnwindToViewController"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "popToViewController"]
+- !private ["SH", "popViewController"]
+- !private ["SH", "present"]
+- !private ["SH", "presentedViewController"]
+- !private ["SH", "presentingViewController"]
+- !private ["SH", "previousNavigationDelegate"]
+- !private ["SH", "previousTabBarDelegate"]
+- !private ["SH", "print"]
+- !private ["SH", "removeLast"]
+- !private ["SH", "responds"]
+- !private ["SH", "reversed"]
+- !private ["SH", "rootViewController"]
+- !private ["SH", "setViewControllers"]
+- !private ["SH", "shared"]
+- !private ["SH", "snapshotView"]
+- !private ["SH", "superview"]
+- !private ["SH", "transition"]
+- !private ["SH", "transitioningDelegate"]
+- !private ["SH", "view"]
+- !private ["SH", "viewControllers"]
+- !private ["SH", "window"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["6Motion0A22ProgressRunnerDelegateP", "forceNonInteractive"]
 - !private ["6Motion0A22ProgressRunnerDelegateP", "fromViewController"]
@@ -345,11 +386,11 @@ depends-member:
 - !private ["6Motion0A10TransitionC", "shared"]
 - !private ["6Motion0A10TransitionC", "transition"]
 - !private ["6Motion0A23TransitionAnimationTypeO", "auto"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "first"]
-- !private ["s17MutableCollectionP", "isEmpty"]
-- !private ["s17MutableCollectionP", "removeLast"]
-- !private ["s17MutableCollectionP", "reversed"]
+- !private ["SM", "append"]
+- !private ["SM", "first"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "removeLast"]
+- !private ["SM", "reversed"]
 - !private ["So8NSCodingP", "AssociatedInstance"]
 - !private ["So8NSCodingP", "AssociatedInstanceKey"]
 - !private ["So8NSCodingP", "AssociatedObject"]
@@ -464,65 +505,74 @@ depends-member:
 - !private ["So8NSObjectC", "view"]
 - !private ["So8NSObjectC", "viewControllers"]
 - !private ["So8NSObjectC", "window"]
-- !private ["So16NSObjectProtocolP", "AssociatedInstance"]
-- !private ["So16NSObjectProtocolP", "AssociatedInstanceKey"]
-- !private ["So16NSObjectProtocolP", "AssociatedObject"]
-- !private ["So16NSObjectProtocolP", "MotionTransition"]
-- !private ["So16NSObjectProtocolP", "UIApplication"]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "associatedInstance"]
-- !private ["So16NSObjectProtocolP", "childViewControllers"]
-- !private ["So16NSObjectProtocolP", "contentView"]
-- !private ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "dismiss"]
-- !private ["So16NSObjectProtocolP", "forceNonInteractive"]
-- !private ["So16NSObjectProtocolP", "fromViewController"]
-- !private ["So16NSObjectProtocolP", "isKind"]
-- !private ["So16NSObjectProtocolP", "isMotionEnabled"]
-- !private ["So16NSObjectProtocolP", "isTransitioning"]
-- !private ["So16NSObjectProtocolP", "keyWindow"]
-- !private ["So16NSObjectProtocolP", "motionUnwindToViewController"]
-- !private ["So16NSObjectProtocolP", "navigationController"]
-- !private ["So16NSObjectProtocolP", "popToViewController"]
-- !private ["So16NSObjectProtocolP", "popViewController"]
-- !private ["So16NSObjectProtocolP", "present"]
-- !private ["So16NSObjectProtocolP", "presentedViewController"]
-- !private ["So16NSObjectProtocolP", "presentingViewController"]
-- !private ["So16NSObjectProtocolP", "previousNavigationDelegate"]
-- !private ["So16NSObjectProtocolP", "previousTabBarDelegate"]
-- !private ["So16NSObjectProtocolP", "print"]
-- !private ["So16NSObjectProtocolP", "responds"]
-- !private ["So16NSObjectProtocolP", "rootViewController"]
-- !private ["So16NSObjectProtocolP", "setViewControllers"]
-- !private ["So16NSObjectProtocolP", "shared"]
-- !private ["So16NSObjectProtocolP", "snapshotView"]
-- !private ["So16NSObjectProtocolP", "superview"]
-- !private ["So16NSObjectProtocolP", "transition"]
-- !private ["So16NSObjectProtocolP", "transitioningDelegate"]
-- !private ["So16NSObjectProtocolP", "view"]
-- !private ["So16NSObjectProtocolP", "viewControllers"]
-- !private ["So16NSObjectProtocolP", "window"]
+- !private ["So8NSObjectP", "AssociatedInstance"]
+- !private ["So8NSObjectP", "AssociatedInstanceKey"]
+- !private ["So8NSObjectP", "AssociatedObject"]
+- !private ["So8NSObjectP", "MotionTransition"]
+- !private ["So8NSObjectP", "UIApplication"]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "associatedInstance"]
+- !private ["So8NSObjectP", "childViewControllers"]
+- !private ["So8NSObjectP", "contentView"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "forceNonInteractive"]
+- !private ["So8NSObjectP", "fromViewController"]
+- !private ["So8NSObjectP", "isKind"]
+- !private ["So8NSObjectP", "isMotionEnabled"]
+- !private ["So8NSObjectP", "isTransitioning"]
+- !private ["So8NSObjectP", "keyWindow"]
+- !private ["So8NSObjectP", "motionUnwindToViewController"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "popToViewController"]
+- !private ["So8NSObjectP", "popViewController"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "presentedViewController"]
+- !private ["So8NSObjectP", "presentingViewController"]
+- !private ["So8NSObjectP", "previousNavigationDelegate"]
+- !private ["So8NSObjectP", "previousTabBarDelegate"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "responds"]
+- !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "setViewControllers"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "snapshotView"]
+- !private ["So8NSObjectP", "superview"]
+- !private ["So8NSObjectP", "transition"]
+- !private ["So8NSObjectP", "transitioningDelegate"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewControllers"]
+- !private ["So8NSObjectP", "window"]
 - !private ["So14NSSecureCodingP", "contentView"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "first"]
-- !private ["s22RandomAccessCollectionP", "isEmpty"]
-- !private ["s22RandomAccessCollectionP", "removeLast"]
-- !private ["s22RandomAccessCollectionP", "reversed"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "first"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "isEmpty"]
-- !private ["s26RangeReplaceableCollectionP", "removeLast"]
-- !private ["s26RangeReplaceableCollectionP", "reversed"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "first"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "isEmpty"]
-- !private ["s8SequenceP", "removeLast"]
-- !private ["s8SequenceP", "reversed"]
+- !private ["Sq", "snapshotView"]
+- !private ["Sq", "superview"]
+- !private ["Sq", "window"]
+- !private ["Sk", "append"]
+- !private ["Sk", "first"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "removeLast"]
+- !private ["Sk", "reversed"]
+- !private ["Sm", "append"]
+- !private ["Sm", "first"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "removeLast"]
+- !private ["Sm", "reversed"]
+- !private ["ST", "append"]
+- !private ["ST", "first"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "removeLast"]
+- !private ["ST", "reversed"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "contentView"]
@@ -646,6 +696,12 @@ depends-member:
 - !private ["So11UIFocusItemP", "snapshotView"]
 - !private ["So11UIFocusItemP", "superview"]
 - !private ["So11UIFocusItemP", "window"]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
+- !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So20UIFocusItemContainerP", "snapshotView"]
+- !private ["So20UIFocusItemContainerP", "superview"]
+- !private ["So20UIFocusItemContainerP", "window"]
 - ["So22UINavigationControllerC", "MotionTransitionAnimationType"]
 - !private ["So22UINavigationControllerC", "associatedInstance"]
 - !private ["So22UINavigationControllerC", "childViewControllers"]
@@ -850,6 +906,40 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "window"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedInstance"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedInstanceKey"]
+- !private ["So23UIUserActivityRestoringP", "AssociatedObject"]
+- !private ["So23UIUserActivityRestoringP", "MotionTransition"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "associatedInstance"]
+- !private ["So23UIUserActivityRestoringP", "childViewControllers"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "isKind"]
+- !private ["So23UIUserActivityRestoringP", "isMotionEnabled"]
+- !private ["So23UIUserActivityRestoringP", "keyWindow"]
+- !private ["So23UIUserActivityRestoringP", "motionUnwindToViewController"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "popToViewController"]
+- !private ["So23UIUserActivityRestoringP", "popViewController"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "presentedViewController"]
+- !private ["So23UIUserActivityRestoringP", "presentingViewController"]
+- !private ["So23UIUserActivityRestoringP", "previousNavigationDelegate"]
+- !private ["So23UIUserActivityRestoringP", "previousTabBarDelegate"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "responds"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "setViewControllers"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "snapshotView"]
+- !private ["So23UIUserActivityRestoringP", "superview"]
+- !private ["So23UIUserActivityRestoringP", "transitioningDelegate"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewControllers"]
+- !private ["So23UIUserActivityRestoringP", "window"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "contentView"]
 - !private ["So6UIViewC", "rootViewController"]
@@ -918,11 +1008,6 @@ depends-member:
 - !private ["So18UIVisualEffectViewC", "contentView"]
 - !private ["So8UIWindowC", "addSubview"]
 - !private ["So8UIWindowC", "rootViewController"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "first"]
-- !private ["s14_ArrayProtocolP", "isEmpty"]
-- !private ["s14_ArrayProtocolP", "removeLast"]
-- !private ["s14_ArrayProtocolP", "reversed"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
@@ -936,10 +1021,20 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "reversed"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeLast"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedInstanceKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedObject"]
@@ -982,48 +1077,56 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "removeLast"]
 - !private ["s21_ObjectiveCBridgeableP", "reversed"]
+- !private ["s21_ObjectiveCBridgeableP", "snapshotView"]
+- !private ["s21_ObjectiveCBridgeableP", "superview"]
+- !private ["s21_ObjectiveCBridgeableP", "window"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "6Motion16AssociatedObjectV"
-- !private "s23BidirectionalCollectionP"
+- !private "SK"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s8HashableP"
+- !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "6Motion0A22ProgressRunnerDelegateP"
 - !private "6Motion0A10TransitionC"
 - !private "6Motion0A23TransitionAnimationTypeO"
-- !private "s17MutableCollectionP"
+- !private "SM"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1035,6 +1138,7 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - "So22UINavigationControllerC"
 - !private "So30UINavigationControllerDelegateP"
 - !private "So30UIPasteConfigurationSupportingP"
@@ -1045,6 +1149,7 @@ depends-nominal:
 - !private "So26UITabBarControllerDelegateP"
 - !private "So16UITabBarDelegateP"
 - !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So37UIViewControllerAnimatedTransitioningP"
@@ -1052,7 +1157,6 @@ depends-nominal:
 - !private "So37UIViewControllerTransitioningDelegateP"
 - !private "So18UIVisualEffectViewC"
 - !private "So8UIWindowC"
-- !private "s14_ArrayProtocolP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1061,39 +1165,41 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Motion/Motion-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Motion.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "cfa7813e499132486dec3f92b95e0252"

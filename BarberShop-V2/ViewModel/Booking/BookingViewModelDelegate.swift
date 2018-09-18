@@ -17,10 +17,6 @@ protocol BookingViewModelDelegate {
     var locationId: Int {get}
     var barberId: Int {get}
     var serviceId: Int {get}
-//    var dateTimeString: Dynamic<String> {get}
-//    var locationString: Dynamic<String> {get}
-//    var serviceString: Dynamic<String> {get}
-//    var barberString: Dynamic<String> {get}
     
     func bookingConfirm()
 }

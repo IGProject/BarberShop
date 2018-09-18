@@ -7,22 +7,13 @@
 //
 
 import Foundation
-struct SigninEmailModel: Decodable {
+struct SignInModel: Codable {
     var email: String
     var password: String
     
-     init(email:String,password:String){
+    init(email: String, password: String) {
         self.email = email
         self.password = password
     }
-    
-    func isValid() -> Bool {
-        return email != "" && password != ""
-    }
 }
 
-
-struct SigninSocialModel: Decodable {
-    var email: String
-    var token: String
-}

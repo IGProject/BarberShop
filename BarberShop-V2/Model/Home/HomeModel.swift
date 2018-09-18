@@ -11,3 +11,14 @@ struct HomeModel{
     let name: String
     let imageName: UIImage
 }
+
+struct ProfileModel:Codable {
+    let username:String
+    let email:String
+    let image:String
+}
+
+struct ContentModel {
+    let image: String
+    let contentText:String
+}

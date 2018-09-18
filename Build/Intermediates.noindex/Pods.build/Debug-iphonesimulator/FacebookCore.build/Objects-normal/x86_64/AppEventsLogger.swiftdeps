@@ -2,9 +2,9 @@
 provides-top-level:
 - "AppEventsLogger"
 provides-nominal:
-- "12FacebookCore15AppEventsLoggerC"
+- "12FacebookCore15AppEventsLoggerO"
 provides-member:
-- ["12FacebookCore15AppEventsLoggerC", ""]
+- ["12FacebookCore15AppEventsLoggerO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "AccessToken"
@@ -44,34 +44,33 @@ depends-member:
 - !private ["12FacebookCore21AppEventParameterNameO", "rawValue"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "appEventParameterValue"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- ["12FacebookCore15AppEventsLoggerC", "AccessToken"]
-- ["12FacebookCore15AppEventsLoggerC", "AppEvent"]
-- ["12FacebookCore15AppEventsLoggerC", "AppEventLoggable"]
-- !private ["12FacebookCore15AppEventsLoggerC", "AppEventName"]
-- ["12FacebookCore15AppEventsLoggerC", "Data"]
-- ["12FacebookCore15AppEventsLoggerC", "Double"]
-- !private ["12FacebookCore15AppEventsLoggerC", "FBSDKAppEvents"]
-- !private ["12FacebookCore15AppEventsLoggerC", "FBSDKSettings"]
-- ["12FacebookCore15AppEventsLoggerC", "FlushBehavior"]
-- ["12FacebookCore15AppEventsLoggerC", "GraphRequest"]
-- !private ["12FacebookCore15AppEventsLoggerC", "GraphRequestConnection"]
-- ["12FacebookCore15AppEventsLoggerC", "GraphRequestResult"]
-- ["12FacebookCore15AppEventsLoggerC", "HTTPURLResponse"]
-- !private ["12FacebookCore15AppEventsLoggerC", "NSNumber"]
-- !private ["12FacebookCore15AppEventsLoggerC", "NSString"]
-- ["12FacebookCore15AppEventsLoggerC", "String"]
-- ["12FacebookCore15AppEventsLoggerC", "UIApplication"]
-- ["12FacebookCore15AppEventsLoggerC", "Void"]
-- ["12FacebookCore15AppEventsLoggerC", "activate"]
-- ["12FacebookCore15AppEventsLoggerC", "deinit"]
-- ["12FacebookCore15AppEventsLoggerC", "flush"]
-- ["12FacebookCore15AppEventsLoggerC", "flushBehavior"]
-- ["12FacebookCore15AppEventsLoggerC", "init"]
-- ["12FacebookCore15AppEventsLoggerC", "log"]
-- ["12FacebookCore15AppEventsLoggerC", "loggingAppId"]
-- ["12FacebookCore15AppEventsLoggerC", "pushNotificationsDeviceToken"]
-- ["12FacebookCore15AppEventsLoggerC", "updateUserProperties"]
-- ["12FacebookCore15AppEventsLoggerC", "userId"]
+- ["12FacebookCore15AppEventsLoggerO", "AccessToken"]
+- ["12FacebookCore15AppEventsLoggerO", "AppEvent"]
+- ["12FacebookCore15AppEventsLoggerO", "AppEventLoggable"]
+- !private ["12FacebookCore15AppEventsLoggerO", "AppEventName"]
+- ["12FacebookCore15AppEventsLoggerO", "Data"]
+- ["12FacebookCore15AppEventsLoggerO", "Double"]
+- !private ["12FacebookCore15AppEventsLoggerO", "FBSDKAppEvents"]
+- !private ["12FacebookCore15AppEventsLoggerO", "FBSDKSettings"]
+- ["12FacebookCore15AppEventsLoggerO", "FlushBehavior"]
+- ["12FacebookCore15AppEventsLoggerO", "GraphRequest"]
+- !private ["12FacebookCore15AppEventsLoggerO", "GraphRequestConnection"]
+- ["12FacebookCore15AppEventsLoggerO", "GraphRequestResult"]
+- ["12FacebookCore15AppEventsLoggerO", "HTTPURLResponse"]
+- !private ["12FacebookCore15AppEventsLoggerO", "NSNumber"]
+- !private ["12FacebookCore15AppEventsLoggerO", "NSString"]
+- ["12FacebookCore15AppEventsLoggerO", "String"]
+- ["12FacebookCore15AppEventsLoggerO", "UIApplication"]
+- ["12FacebookCore15AppEventsLoggerO", "UpdateUserPropertiesCompletion"]
+- ["12FacebookCore15AppEventsLoggerO", "Void"]
+- ["12FacebookCore15AppEventsLoggerO", "activate"]
+- ["12FacebookCore15AppEventsLoggerO", "flush"]
+- ["12FacebookCore15AppEventsLoggerO", "flushBehavior"]
+- ["12FacebookCore15AppEventsLoggerO", "log"]
+- ["12FacebookCore15AppEventsLoggerO", "loggingAppId"]
+- ["12FacebookCore15AppEventsLoggerO", "pushNotificationsDeviceToken"]
+- ["12FacebookCore15AppEventsLoggerO", "updateUserProperties"]
+- ["12FacebookCore15AppEventsLoggerO", "userId"]
 - !private ["s7CVarArgP", "activateApp"]
 - !private ["s7CVarArgP", "appID"]
 - !private ["s7CVarArgP", "flush"]
@@ -87,7 +86,7 @@ depends-member:
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "updateUserProperties"]
 - !private ["s7CVarArgP", "userID"]
-- !private ["s10CollectionP", "keyValueMap"]
+- !private ["Sl", "keyValueMap"]
 - !private ["s28CustomDebugStringConvertibleP", "activateApp"]
 - !private ["s28CustomDebugStringConvertibleP", "appID"]
 - !private ["s28CustomDebugStringConvertibleP", "flush"]
@@ -122,29 +121,29 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "updateUserProperties"]
 - !private ["s23CustomStringConvertibleP", "userID"]
-- !private ["s9DecodableP", "keyValueMap"]
-- !private ["s9DecodableP", "map"]
-- !private ["s10DictionaryV", "keyValueMap"]
-- !private ["s9EncodableP", "keyValueMap"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EquatableP", "activateApp"]
-- !private ["s9EquatableP", "appID"]
-- !private ["s9EquatableP", "flush"]
-- !private ["s9EquatableP", "flushBehavior"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "keyValueMap"]
-- !private ["s9EquatableP", "logEvent"]
-- !private ["s9EquatableP", "loggingOverrideAppID"]
-- !private ["s9EquatableP", "map"]
-- !private ["s9EquatableP", "rawValue"]
-- !private ["s9EquatableP", "sdkFlushBehavior"]
-- !private ["s9EquatableP", "setFlushBehavior"]
-- !private ["s9EquatableP", "setLoggingOverrideAppID"]
-- !private ["s9EquatableP", "setPushNotificationsDeviceToken"]
-- !private ["s9EquatableP", "setUserID"]
-- !private ["s9EquatableP", "shared"]
-- !private ["s9EquatableP", "updateUserProperties"]
-- !private ["s9EquatableP", "userID"]
+- !private ["Se", "keyValueMap"]
+- !private ["Se", "map"]
+- !private ["SD", "keyValueMap"]
+- !private ["SE", "keyValueMap"]
+- !private ["SE", "map"]
+- !private ["SQ", "activateApp"]
+- !private ["SQ", "appID"]
+- !private ["SQ", "flush"]
+- !private ["SQ", "flushBehavior"]
+- !private ["SQ", "init"]
+- !private ["SQ", "keyValueMap"]
+- !private ["SQ", "logEvent"]
+- !private ["SQ", "loggingOverrideAppID"]
+- !private ["SQ", "map"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "sdkFlushBehavior"]
+- !private ["SQ", "setFlushBehavior"]
+- !private ["SQ", "setLoggingOverrideAppID"]
+- !private ["SQ", "setPushNotificationsDeviceToken"]
+- !private ["SQ", "setUserID"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "updateUserProperties"]
+- !private ["SQ", "userID"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "keyValueMap"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -168,26 +167,28 @@ depends-member:
 - !private ["So14FBSDKAppEventsC", "updateUserProperties"]
 - !private ["So14FBSDKAppEventsC", "userID"]
 - !private ["So13FBSDKSettingsC", "appID"]
-- !private ["12FacebookCore15AppEventsLoggerC13FlushBehaviorO", "init"]
-- !private ["12FacebookCore15AppEventsLoggerC13FlushBehaviorO", "sdkFlushBehavior"]
+- !private ["12FacebookCore15AppEventsLoggerO13FlushBehaviorO", "init"]
+- !private ["12FacebookCore15AppEventsLoggerO13FlushBehaviorO", "sdkFlushBehavior"]
 - ["12FacebookCore12GraphRequestV", "deinit"]
 - !private ["12FacebookCore22GraphRequestConnectionC", "sdkRequestCompletion"]
-- !private ["s8HashableP", "activateApp"]
-- !private ["s8HashableP", "appID"]
-- !private ["s8HashableP", "flush"]
-- !private ["s8HashableP", "flushBehavior"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "logEvent"]
-- !private ["s8HashableP", "loggingOverrideAppID"]
-- !private ["s8HashableP", "rawValue"]
-- !private ["s8HashableP", "sdkFlushBehavior"]
-- !private ["s8HashableP", "setFlushBehavior"]
-- !private ["s8HashableP", "setLoggingOverrideAppID"]
-- !private ["s8HashableP", "setPushNotificationsDeviceToken"]
-- !private ["s8HashableP", "setUserID"]
-- !private ["s8HashableP", "shared"]
-- !private ["s8HashableP", "updateUserProperties"]
-- !private ["s8HashableP", "userID"]
+- !private ["SH", "activateApp"]
+- !private ["SH", "appID"]
+- !private ["SH", "flush"]
+- !private ["SH", "flushBehavior"]
+- !private ["SH", "init"]
+- !private ["SH", "keyValueMap"]
+- !private ["SH", "logEvent"]
+- !private ["SH", "loggingOverrideAppID"]
+- !private ["SH", "map"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "sdkFlushBehavior"]
+- !private ["SH", "setFlushBehavior"]
+- !private ["SH", "setLoggingOverrideAppID"]
+- !private ["SH", "setPushNotificationsDeviceToken"]
+- !private ["SH", "setUserID"]
+- !private ["SH", "shared"]
+- !private ["SH", "updateUserProperties"]
+- !private ["SH", "userID"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So8NSNumberC", "init"]
@@ -195,6 +196,7 @@ depends-member:
 - !private ["So8NSObjectC", "appID"]
 - !private ["So8NSObjectC", "flush"]
 - !private ["So8NSObjectC", "flushBehavior"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "logEvent"]
 - !private ["So8NSObjectC", "loggingOverrideAppID"]
 - !private ["So8NSObjectC", "setFlushBehavior"]
@@ -204,30 +206,33 @@ depends-member:
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "updateUserProperties"]
 - !private ["So8NSObjectC", "userID"]
-- !private ["So16NSObjectProtocolP", "activateApp"]
-- !private ["So16NSObjectProtocolP", "appID"]
-- !private ["So16NSObjectProtocolP", "flush"]
-- !private ["So16NSObjectProtocolP", "flushBehavior"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "logEvent"]
-- !private ["So16NSObjectProtocolP", "loggingOverrideAppID"]
-- !private ["So16NSObjectProtocolP", "setFlushBehavior"]
-- !private ["So16NSObjectProtocolP", "setLoggingOverrideAppID"]
-- !private ["So16NSObjectProtocolP", "setPushNotificationsDeviceToken"]
-- !private ["So16NSObjectProtocolP", "setUserID"]
-- !private ["So16NSObjectProtocolP", "shared"]
-- !private ["So16NSObjectProtocolP", "updateUserProperties"]
-- !private ["So16NSObjectProtocolP", "userID"]
+- !private ["So8NSObjectP", "activateApp"]
+- !private ["So8NSObjectP", "appID"]
+- !private ["So8NSObjectP", "flush"]
+- !private ["So8NSObjectP", "flushBehavior"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "logEvent"]
+- !private ["So8NSObjectP", "loggingOverrideAppID"]
+- !private ["So8NSObjectP", "setFlushBehavior"]
+- !private ["So8NSObjectP", "setLoggingOverrideAppID"]
+- !private ["So8NSObjectP", "setPushNotificationsDeviceToken"]
+- !private ["So8NSObjectP", "setUserID"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "updateUserProperties"]
+- !private ["So8NSObjectP", "userID"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So7NSValueC", "init"]
 - !private ["Sq", "map"]
-- !private ["s16RawRepresentableP", "init"]
-- !private ["s16RawRepresentableP", "rawValue"]
-- !private ["s8SequenceP", "keyValueMap"]
+- !private ["SY", "init"]
+- !private ["SY", "rawValue"]
+- !private ["ST", "keyValueMap"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "keyValueMap"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "activateApp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flush"]
@@ -251,16 +256,16 @@ depends-nominal:
 - !private "12FacebookCore12AppEventNameO"
 - !private "12FacebookCore21AppEventParameterNameO"
 - !private "12FacebookCore26AppEventParameterValueTypeP"
-- "12FacebookCore15AppEventsLoggerC"
+- "12FacebookCore15AppEventsLoggerO"
 - !private "s7CVarArgP"
-- !private "s10CollectionP"
+- !private "Sl"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -271,41 +276,43 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So14FBSDKAppEventsC"
 - !private "So13FBSDKSettingsC"
-- !private "12FacebookCore15AppEventsLoggerC13FlushBehaviorO"
+- !private "12FacebookCore15AppEventsLoggerO13FlushBehaviorO"
 - "12FacebookCore12GraphRequestV"
 - !private "12FacebookCore22GraphRequestConnectionC"
-- !private "s8HashableP"
+- !private "SH"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So8NSNumberC"
 - !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
+- !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "So7NSValueC"
 - !private "Sq"
-- !private "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "SY"
+- !private "ST"
 - !private "So13UIApplicationC"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
@@ -314,6 +321,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
@@ -349,15 +357,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "8bd17e3cc7f578888b887f15662ad4f1"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0599b12b9088e5a43b47590b1266fbb3"

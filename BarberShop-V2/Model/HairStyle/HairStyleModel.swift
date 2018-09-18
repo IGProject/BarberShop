@@ -8,26 +8,29 @@
 
 import UIKit
 
-struct HairStyleModel: Decodable {
-    let id:Int?
-    let shape:Shape?
-    let style_profile:String?
-    let style_profiles:[StyleProfile]?
-}
-
-struct Shape: Decodable {
+struct StyleListModel: Codable {
     let id:Int
-    let shape_name:String?
+    let shape:Shape
+    let style_profile:String
+    let style_profiles:[StyleProfile]
+}
+
+struct Shape: Codable {
+    let id:Int
+    let shape_name:ShapeType
 }
 
 
-enum ShapeType {
+enum ShapeType: String,Codable {
     
-    case Round
-    case Circle
-    case Square
+    case circleStyle
+    case squareStyle
+    case oblongStyle
+    case diamondStyle
+    case traingleStyle
+    case ovalStyle
 }
-struct StyleProfile: Decodable {
+struct StyleProfile: Codable {
     let id: Int?
     let file_name: String
     let file_path: String?

@@ -60,9 +60,11 @@ depends-top-level:
 - "DateSegmentInfo"
 - "DaysOfWeek"
 - !private "Float"
+- !private "FloatLiteralType"
 - "InDateCellGeneration"
 - "IndexPath"
 - "Int"
+- !private "IntegerLiteralType"
 - "JTAppleCell"
 - "JTAppleDateConfigGenerator"
 - "Month"
@@ -83,15 +85,20 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "index"]
 - !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "index"]
+- !private ["s13ArrayProtocolP", "reduce"]
+- !private ["s13ArrayProtocolP", "subscript"]
 - !private ["s10ArraySliceV", "reduce"]
-- !private ["s23BidirectionalCollectionP", "append"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "index"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "reduce"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s19BinaryFloatingPointP", "init"]
-- !private ["s13BinaryIntegerP", "init"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "index"]
+- !private ["SK", "init"]
+- !private ["SK", "reduce"]
+- !private ["SK", "subscript"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
@@ -134,16 +141,16 @@ depends-member:
 - ["15JTAppleCalendar9CellStateV", "selectedPosition"]
 - ["15JTAppleCalendar9CellStateV", "selectionType"]
 - ["15JTAppleCalendar9CellStateV", "text"]
-- !private ["s10CollectionP", "append"]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "index"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "key"]
-- !private ["s10CollectionP", "keys"]
-- !private ["s10CollectionP", "min"]
-- !private ["s10CollectionP", "reduce"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "index"]
+- !private ["Sl", "init"]
+- !private ["Sl", "key"]
+- !private ["Sl", "keys"]
+- !private ["Sl", "min"]
+- !private ["Sl", "reduce"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
 - !private ["10Foundation8CalendarV9ComponentO", "day"]
 - !private ["10Foundation8CalendarV9ComponentO", "month"]
 - !private ["10Foundation8CalendarV9ComponentO", "weekday"]
@@ -219,6 +226,7 @@ depends-member:
 - ["15JTAppleCalendar9DateOwnerO", "thisMonth"]
 - ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "__derived_enum_equals"]
 - ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "deinit"]
+- ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "hash"]
 - ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "hashValue"]
 - ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "inDate"]
 - ["15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO", "monthDate"]
@@ -236,94 +244,94 @@ depends-member:
 - ["15JTAppleCalendar10DaysOfWeekO", "thursday"]
 - ["15JTAppleCalendar10DaysOfWeekO", "tuesday"]
 - ["15JTAppleCalendar10DaysOfWeekO", "wednesday"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "append"]
-- !private ["s9DecodableP", "component"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "current"]
-- !private ["s9DecodableP", "date"]
-- !private ["s9DecodableP", "dateComponents"]
-- !private ["s9DecodableP", "index"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "key"]
-- !private ["s9DecodableP", "keys"]
-- !private ["s9DecodableP", "month"]
-- !private ["s9DecodableP", "range"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s10DictionaryV", "key"]
-- !private ["s10DictionaryV", "keys"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "append"]
-- !private ["s9EncodableP", "component"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "current"]
-- !private ["s9EncodableP", "date"]
-- !private ["s9EncodableP", "dateComponents"]
-- !private ["s9EncodableP", "index"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "key"]
-- !private ["s9EncodableP", "keys"]
-- !private ["s9EncodableP", "month"]
-- !private ["s9EncodableP", "range"]
-- !private ["s9EncodableP", "subscript"]
-- ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "append"]
-- !private ["s9EquatableP", "apr"]
-- !private ["s9EquatableP", "aug"]
-- !private ["s9EquatableP", "component"]
-- !private ["s9EquatableP", "count"]
-- !private ["s9EquatableP", "current"]
-- !private ["s9EquatableP", "date"]
-- !private ["s9EquatableP", "dateComponents"]
-- !private ["s9EquatableP", "day"]
-- !private ["s9EquatableP", "dec"]
-- !private ["s9EquatableP", "feb"]
-- ["s9EquatableP", "followingMonthOutsideBoundary"]
-- ["s9EquatableP", "followingMonthWithinBoundary"]
-- !private ["s9EquatableP", "forAllMonths"]
-- !private ["s9EquatableP", "forFirstMonthOnly"]
-- ["s9EquatableP", "friday"]
-- ["s9EquatableP", "hashValue"]
-- !private ["s9EquatableP", "inDate"]
-- !private ["s9EquatableP", "index"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "jan"]
-- !private ["s9EquatableP", "jul"]
-- !private ["s9EquatableP", "jun"]
-- !private ["s9EquatableP", "key"]
-- !private ["s9EquatableP", "keys"]
-- !private ["s9EquatableP", "mar"]
-- !private ["s9EquatableP", "may"]
-- !private ["s9EquatableP", "min"]
-- ["s9EquatableP", "monday"]
-- !private ["s9EquatableP", "month"]
-- !private ["s9EquatableP", "monthDate"]
-- !private ["s9EquatableP", "nov"]
-- !private ["s9EquatableP", "oct"]
-- !private ["s9EquatableP", "off"]
-- !private ["s9EquatableP", "outDate"]
-- ["s9EquatableP", "previousMonthOutsideBoundary"]
-- ["s9EquatableP", "previousMonthWithinBoundary"]
-- !private ["s9EquatableP", "range"]
-- !private ["s9EquatableP", "reduce"]
-- ["s9EquatableP", "saturday"]
-- !private ["s9EquatableP", "sep"]
-- !private ["s9EquatableP", "subscript"]
-- !private ["s9EquatableP", "sunday"]
-- ["s9EquatableP", "thisMonth"]
-- ["s9EquatableP", "thursday"]
-- ["s9EquatableP", "tillEndOfGrid"]
-- ["s9EquatableP", "tillEndOfRow"]
-- ["s9EquatableP", "tuesday"]
-- ["s9EquatableP", "wednesday"]
-- !private ["s9EquatableP", "weekday"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "component"]
+- !private ["Se", "count"]
+- !private ["Se", "current"]
+- !private ["Se", "date"]
+- !private ["Se", "dateComponents"]
+- !private ["Se", "index"]
+- !private ["Se", "init"]
+- !private ["Se", "key"]
+- !private ["Se", "keys"]
+- !private ["Se", "month"]
+- !private ["Se", "range"]
+- !private ["Se", "subscript"]
+- !private ["SD", "key"]
+- !private ["SD", "keys"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "component"]
+- !private ["SE", "count"]
+- !private ["SE", "current"]
+- !private ["SE", "date"]
+- !private ["SE", "dateComponents"]
+- !private ["SE", "index"]
+- !private ["SE", "init"]
+- !private ["SE", "key"]
+- !private ["SE", "keys"]
+- !private ["SE", "month"]
+- !private ["SE", "range"]
+- !private ["SE", "subscript"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "apr"]
+- !private ["SQ", "aug"]
+- !private ["SQ", "component"]
+- !private ["SQ", "count"]
+- !private ["SQ", "current"]
+- !private ["SQ", "date"]
+- !private ["SQ", "dateComponents"]
+- !private ["SQ", "day"]
+- !private ["SQ", "dec"]
+- !private ["SQ", "feb"]
+- ["SQ", "followingMonthOutsideBoundary"]
+- ["SQ", "followingMonthWithinBoundary"]
+- !private ["SQ", "forAllMonths"]
+- !private ["SQ", "forFirstMonthOnly"]
+- ["SQ", "friday"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "inDate"]
+- !private ["SQ", "index"]
+- !private ["SQ", "init"]
+- !private ["SQ", "jan"]
+- !private ["SQ", "jul"]
+- !private ["SQ", "jun"]
+- !private ["SQ", "key"]
+- !private ["SQ", "keys"]
+- !private ["SQ", "mar"]
+- !private ["SQ", "may"]
+- !private ["SQ", "min"]
+- ["SQ", "monday"]
+- !private ["SQ", "month"]
+- !private ["SQ", "monthDate"]
+- !private ["SQ", "nov"]
+- !private ["SQ", "oct"]
+- !private ["SQ", "off"]
+- !private ["SQ", "outDate"]
+- ["SQ", "previousMonthOutsideBoundary"]
+- ["SQ", "previousMonthWithinBoundary"]
+- !private ["SQ", "range"]
+- !private ["SQ", "reduce"]
+- ["SQ", "saturday"]
+- !private ["SQ", "sep"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "sunday"]
+- ["SQ", "thisMonth"]
+- ["SQ", "thursday"]
+- ["SQ", "tillEndOfGrid"]
+- ["SQ", "tillEndOfRow"]
+- ["SQ", "tuesday"]
+- ["SQ", "wednesday"]
+- !private ["SQ", "weekday"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "index"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
-- !private ["s25ExpressibleByArrayLiteralP", "month"]
 - !private ["s25ExpressibleByArrayLiteralP", "reduce"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -334,51 +342,60 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["Sf", "init"]
-- !private ["s13FloatingPointP", "init"]
-- ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "apr"]
-- !private ["s8HashableP", "aug"]
-- !private ["s8HashableP", "component"]
-- !private ["s8HashableP", "current"]
-- !private ["s8HashableP", "date"]
-- !private ["s8HashableP", "dateComponents"]
-- !private ["s8HashableP", "day"]
-- !private ["s8HashableP", "dec"]
-- !private ["s8HashableP", "feb"]
-- ["s8HashableP", "followingMonthOutsideBoundary"]
-- ["s8HashableP", "followingMonthWithinBoundary"]
-- !private ["s8HashableP", "forAllMonths"]
-- !private ["s8HashableP", "forFirstMonthOnly"]
-- ["s8HashableP", "friday"]
-- ["s8HashableP", "hashValue"]
-- !private ["s8HashableP", "inDate"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "jan"]
-- !private ["s8HashableP", "jul"]
-- !private ["s8HashableP", "jun"]
-- !private ["s8HashableP", "mar"]
-- !private ["s8HashableP", "may"]
-- ["s8HashableP", "monday"]
-- !private ["s8HashableP", "month"]
-- !private ["s8HashableP", "monthDate"]
-- !private ["s8HashableP", "nov"]
-- !private ["s8HashableP", "oct"]
-- !private ["s8HashableP", "off"]
-- !private ["s8HashableP", "outDate"]
-- ["s8HashableP", "previousMonthOutsideBoundary"]
-- ["s8HashableP", "previousMonthWithinBoundary"]
-- !private ["s8HashableP", "range"]
-- ["s8HashableP", "saturday"]
-- !private ["s8HashableP", "sep"]
-- !private ["s8HashableP", "sunday"]
-- ["s8HashableP", "thisMonth"]
-- ["s8HashableP", "thursday"]
-- ["s8HashableP", "tillEndOfGrid"]
-- ["s8HashableP", "tillEndOfRow"]
-- ["s8HashableP", "tuesday"]
-- ["s8HashableP", "wednesday"]
-- !private ["s8HashableP", "weekday"]
+- !private ["SF", "init"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "apr"]
+- !private ["SH", "aug"]
+- !private ["SH", "component"]
+- !private ["SH", "count"]
+- !private ["SH", "current"]
+- !private ["SH", "date"]
+- !private ["SH", "dateComponents"]
+- !private ["SH", "day"]
+- !private ["SH", "dec"]
+- !private ["SH", "feb"]
+- ["SH", "followingMonthOutsideBoundary"]
+- ["SH", "followingMonthWithinBoundary"]
+- !private ["SH", "forAllMonths"]
+- !private ["SH", "forFirstMonthOnly"]
+- ["SH", "friday"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "inDate"]
+- !private ["SH", "index"]
+- !private ["SH", "init"]
+- !private ["SH", "jan"]
+- !private ["SH", "jul"]
+- !private ["SH", "jun"]
+- !private ["SH", "key"]
+- !private ["SH", "keys"]
+- !private ["SH", "mar"]
+- !private ["SH", "may"]
+- ["SH", "monday"]
+- !private ["SH", "month"]
+- !private ["SH", "monthDate"]
+- !private ["SH", "nov"]
+- !private ["SH", "oct"]
+- !private ["SH", "off"]
+- !private ["SH", "outDate"]
+- ["SH", "previousMonthOutsideBoundary"]
+- ["SH", "previousMonthWithinBoundary"]
+- !private ["SH", "range"]
+- !private ["SH", "reduce"]
+- ["SH", "saturday"]
+- !private ["SH", "sep"]
+- !private ["SH", "subscript"]
+- !private ["SH", "sunday"]
+- ["SH", "thisMonth"]
+- ["SH", "thursday"]
+- ["SH", "tillEndOfGrid"]
+- ["SH", "tillEndOfRow"]
+- ["SH", "tuesday"]
+- ["SH", "wednesday"]
+- !private ["SH", "weekday"]
+- !private ["s6HasherV", "combine"]
 - !private ["15JTAppleCalendar20InDateCellGenerationO", "deinit"]
 - !private ["15JTAppleCalendar20InDateCellGenerationO", "forAllMonths"]
 - !private ["15JTAppleCalendar20InDateCellGenerationO", "forFirstMonthOnly"]
@@ -399,7 +416,7 @@ depends-member:
 - !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "maxNumberOfRowsPerMonth"]
 - !private ["15JTAppleCalendar0A19DateConfigGeneratorV", "numberOfInDatesForMonth"]
 - ["15JTAppleCalendar0A19DateConfigGeneratorV", "setupMonthInfoDataForStartAndEndDate"]
-- !private ["s10DictionaryV4KeysV", "min"]
+- !private ["SD4KeysV", "min"]
 - !private ["s22LazyCollectionProtocolP", "reduce"]
 - !private ["s20LazySequenceProtocolP", "reduce"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -444,55 +461,53 @@ depends-member:
 - !private ["15JTAppleCalendar12MonthsOfYearO", "nov"]
 - !private ["15JTAppleCalendar12MonthsOfYearO", "oct"]
 - !private ["15JTAppleCalendar12MonthsOfYearO", "sep"]
-- !private ["s17MutableCollectionP", "append"]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "index"]
-- !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "reduce"]
-- !private ["s17MutableCollectionP", "subscript"]
-- !private ["s7NumericP", "init"]
-- !private ["s9OptionSetP", "month"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "index"]
+- !private ["SM", "init"]
+- !private ["SM", "reduce"]
+- !private ["SM", "subscript"]
+- !private ["Sj", "init"]
 - !private ["15JTAppleCalendar21OutDateCellGenerationO", "deinit"]
 - ["15JTAppleCalendar21OutDateCellGenerationO", "tillEndOfGrid"]
 - ["15JTAppleCalendar21OutDateCellGenerationO", "tillEndOfRow"]
-- !private ["s22RandomAccessCollectionP", "append"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "index"]
-- !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "reduce"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s5RangeV", "count"]
-- !private ["s15RangeExpressionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "append"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "index"]
-- !private ["s26RangeReplaceableCollectionP", "reduce"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s16RawRepresentableP", "apr"]
-- !private ["s16RawRepresentableP", "aug"]
-- !private ["s16RawRepresentableP", "dec"]
-- !private ["s16RawRepresentableP", "feb"]
-- ["s16RawRepresentableP", "followingMonthOutsideBoundary"]
-- ["s16RawRepresentableP", "followingMonthWithinBoundary"]
-- ["s16RawRepresentableP", "friday"]
-- !private ["s16RawRepresentableP", "jan"]
-- !private ["s16RawRepresentableP", "jul"]
-- !private ["s16RawRepresentableP", "jun"]
-- !private ["s16RawRepresentableP", "mar"]
-- !private ["s16RawRepresentableP", "may"]
-- ["s16RawRepresentableP", "monday"]
-- !private ["s16RawRepresentableP", "month"]
-- !private ["s16RawRepresentableP", "nov"]
-- !private ["s16RawRepresentableP", "oct"]
-- ["s16RawRepresentableP", "previousMonthOutsideBoundary"]
-- ["s16RawRepresentableP", "previousMonthWithinBoundary"]
-- ["s16RawRepresentableP", "saturday"]
-- !private ["s16RawRepresentableP", "sep"]
-- !private ["s16RawRepresentableP", "sunday"]
-- ["s16RawRepresentableP", "thisMonth"]
-- ["s16RawRepresentableP", "thursday"]
-- ["s16RawRepresentableP", "tuesday"]
-- ["s16RawRepresentableP", "wednesday"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "index"]
+- !private ["Sk", "init"]
+- !private ["Sk", "reduce"]
+- !private ["Sk", "subscript"]
+- !private ["Sn", "count"]
+- !private ["SX", "count"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "index"]
+- !private ["Sm", "reduce"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "apr"]
+- !private ["SY", "aug"]
+- !private ["SY", "dec"]
+- !private ["SY", "feb"]
+- ["SY", "followingMonthOutsideBoundary"]
+- ["SY", "followingMonthWithinBoundary"]
+- ["SY", "friday"]
+- !private ["SY", "jan"]
+- !private ["SY", "jul"]
+- !private ["SY", "jun"]
+- !private ["SY", "mar"]
+- !private ["SY", "may"]
+- ["SY", "monday"]
+- !private ["SY", "nov"]
+- !private ["SY", "oct"]
+- ["SY", "previousMonthOutsideBoundary"]
+- ["SY", "previousMonthWithinBoundary"]
+- ["SY", "saturday"]
+- !private ["SY", "sep"]
+- !private ["SY", "sunday"]
+- ["SY", "thisMonth"]
+- ["SY", "thursday"]
+- ["SY", "tuesday"]
+- ["SY", "wednesday"]
 - !private ["10Foundation20ReferenceConvertibleP", "component"]
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - !private ["10Foundation20ReferenceConvertibleP", "date"]
@@ -510,26 +525,19 @@ depends-member:
 - ["15JTAppleCalendar16SelectedCellDataV", "dateBelongsTo"]
 - ["15JTAppleCalendar16SelectedCellDataV", "indexPath"]
 - ["15JTAppleCalendar16SelectedCellDataV", "init"]
-- !private ["s8SequenceP", "append"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "index"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "key"]
-- !private ["s8SequenceP", "keys"]
-- !private ["s8SequenceP", "min"]
-- !private ["s8SequenceP", "reduce"]
-- !private ["s8SequenceP", "subscript"]
-- !private ["s10SetAlgebraP", "month"]
-- !private ["s13SignedIntegerP", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "index"]
+- !private ["ST", "init"]
+- !private ["ST", "key"]
+- !private ["ST", "keys"]
+- !private ["ST", "min"]
+- !private ["ST", "reduce"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s5SliceV", "reduce"]
-- !private ["s10StrideableP", "init"]
-- !private ["So10NSCalendarC4UnitV", "month"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "index"]
-- !private ["s14_ArrayProtocolP", "reduce"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["Sx", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -541,6 +549,13 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "key"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "keys"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation14_MutableBoxingP", "component"]
 - !private ["10Foundation14_MutableBoxingP", "current"]
 - !private ["10Foundation14_MutableBoxingP", "date"]
@@ -563,17 +578,18 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
 - !private "Sa"
+- !private "s13ArrayProtocolP"
 - !private "s10ArraySliceV"
-- !private "s23BidirectionalCollectionP"
-- !private "s19BinaryFloatingPointP"
-- !private "s13BinaryIntegerP"
+- !private "SK"
+- !private "SB"
+- !private "Sz"
 - !private "Sb"
 - !private "s7CVarArgP"
 - !private "10Foundation8CalendarV"
 - "15JTAppleCalendar0B4DataV"
 - "15JTAppleCalendar9CellStateV"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - !private "10Foundation8CalendarV9ComponentO"
 - "15JTAppleCalendar23ConfigurationParametersV"
 - !private "s28CustomDebugStringConvertibleP"
@@ -585,10 +601,10 @@ depends-nominal:
 - "15JTAppleCalendar16SelectedCellDataV17DateOwnerCategoryO"
 - "15JTAppleCalendar15DateSegmentInfoV"
 - "15JTAppleCalendar10DaysOfWeekO"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
@@ -596,13 +612,14 @@ depends-nominal:
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "Sf"
-- !private "s13FloatingPointP"
-- "s8HashableP"
+- !private "SF"
+- "SH"
+- !private "s6HasherV"
 - !private "15JTAppleCalendar20InDateCellGenerationO"
 - !private "10Foundation9IndexPathV"
 - !private "Si"
 - "15JTAppleCalendar0A19DateConfigGeneratorV"
-- !private "s10DictionaryV4KeysV"
+- !private "SD4KeysV"
 - !private "s22LazyCollectionProtocolP"
 - !private "s20LazySequenceProtocolP"
 - !private "s25LosslessStringConvertibleP"
@@ -610,25 +627,21 @@ depends-nominal:
 - "15JTAppleCalendar5MonthV"
 - "15JTAppleCalendar9MonthSizeV"
 - !private "15JTAppleCalendar12MonthsOfYearO"
-- !private "s17MutableCollectionP"
-- !private "s7NumericP"
-- !private "s9OptionSetP"
+- !private "SM"
+- !private "Sj"
 - "15JTAppleCalendar21OutDateCellGenerationO"
-- !private "s22RandomAccessCollectionP"
-- !private "s5RangeV"
-- !private "s15RangeExpressionP"
-- !private "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- !private "Sk"
+- !private "Sn"
+- !private "SX"
+- !private "Sm"
+- "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - "15JTAppleCalendar16SelectedCellDataV"
-- !private "s8SequenceP"
-- !private "s10SetAlgebraP"
-- !private "s13SignedIntegerP"
+- !private "ST"
+- !private "SZ"
 - !private "s13SignedNumericP"
 - !private "s5SliceV"
-- !private "s10StrideableP"
-- !private "So10NSCalendarC4UnitV"
-- !private "s14_ArrayProtocolP"
+- !private "Sx"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -636,33 +649,35 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation14_MutableBoxingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop-V2/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/unextended-module.modulemap"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "26cdf10dba4e75040364b83d92c6dfc5"

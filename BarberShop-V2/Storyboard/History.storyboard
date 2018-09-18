@@ -18,25 +18,14 @@
                     <view key="view" contentMode="scaleToFill" id="elo-KM-GAC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-LA-jf2" userLabel="segment activity">
-                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="bottom" secondItem="3Gf-2J-LHI" secondAttribute="bottom" id="4To-H8-vtK"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="top" secondItem="3Gf-2J-LHI" secondAttribute="top" constant="45" id="ATH-76-Lhm"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="trailing" secondItem="3Gf-2J-LHI" secondAttribute="trailing" id="NQK-uj-Pc3"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="trailing" secondItem="3Gf-2J-LHI" secondAttribute="trailing" id="gcr-e6-MGI"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="leading" secondItem="3Gf-2J-LHI" secondAttribute="leading" id="rso-dO-YdU"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="bottom" secondItem="3Gf-2J-LHI" secondAttribute="bottom" id="u2G-i6-9Xz"/>
-                            <constraint firstItem="q0D-LA-jf2" firstAttribute="leading" secondItem="3Gf-2J-LHI" secondAttribute="leading" id="vU0-hp-enp"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Gf-2J-LHI"/>
                     </view>
                     <navigationItem key="navigationItem" title="ACTIVITY" id="qq1-Me-8p2"/>
+                    <connections>
+                        <segue destination="qRP-C3-Eei" kind="custom" identifier="mx_page_0" customClass="MXPageSegue" id="ZBP-Mc-K4I"/>
+                        <segue destination="sYJ-SZ-GYB" kind="custom" identifier="mx_page_1" customClass="MXPageSegue" id="o5c-Up-XYS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCc-mY-Fw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-dy-qkK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-dy-qkK">
                                 <rect key="frame" x="0.0" y="267" width="375" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.12941176469999999" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,7 +90,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EQx-LV-AG8" id="spV-An-len">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -134,7 +123,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xJ6-CF-Zis">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.12941176469999999" green="0.20784313730000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
