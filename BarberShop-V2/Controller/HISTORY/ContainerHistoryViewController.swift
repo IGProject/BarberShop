@@ -39,7 +39,9 @@ class ContainerHistoryViewController: MXSegmentedPagerController {
         segmentedPager.segmentedControl.selectionIndicatorColor = .white
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
         segmentedPager.segmentedControl.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
-        segmentedPager.segmentedControl.titleTextAttributes = [kCTForegroundColorAttributeName : UIColor(displayP3Red: 142/255, green: 174/255, blue: 204/255, alpha: 1)]
+        segmentedPager.segmentedControl.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor(displayP3Red: 142/255, green: 174/255, blue: 204/255, alpha: 1),NSAttributedStringKey.font : UIFont(name: "Helvetica Neue", size: 14) ??
+            UIFont.systemFont(ofSize: 14)]
+
         segmentedPager.segmentedControl.selectedTitleTextAttributes = [kCTForegroundColorAttributeName : UIColor.white]
     }
     

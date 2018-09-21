@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "/"
+- !private "??"
 - !private "Array"
 - "AssignmentPrecedence"
 - "ContainerHistoryViewController"
@@ -20,10 +21,12 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "MXSegmentedPager"
 - "MXSegmentedPagerController"
+- !private "NSAttributedStringKey"
 - "String"
 - !private "StringLiteralType"
 - !private "UIApplication"
 - !private "UIColor"
+- !private "UIFont"
 - !private "UIImage"
 - "UIView"
 - !private "kCTForegroundColorAttributeName"
@@ -46,8 +49,10 @@ depends-member:
 - !private ["So15CALayerDelegateP", "setBackgroundImage"]
 - !private ["So15CALayerDelegateP", "shadowImage"]
 - !private ["So15CALayerDelegateP", "titleTextAttributes"]
+- !private ["s7CVarArgP", "NSAttributedStringKey"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIFont"]
 - !private ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "backgroundColor"]
@@ -74,6 +79,7 @@ depends-member:
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "statusBarView"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "systemFont"]
 - !private ["s7CVarArgP", "titleTextAttributes"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -85,9 +91,11 @@ depends-member:
 - !private ["SL", "init"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "Int"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "MXSegmentedPager"]
+- !private ["13BarberShop_V230ContainerHistoryViewControllerC", "NSAttributedStringKey"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "String"]
 - !private ["13BarberShop_V230ContainerHistoryViewControllerC", "UIApplication"]
 - !private ["13BarberShop_V230ContainerHistoryViewControllerC", "UIColor"]
+- !private ["13BarberShop_V230ContainerHistoryViewControllerC", "UIFont"]
 - !private ["13BarberShop_V230ContainerHistoryViewControllerC", "UIImage"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "UIView"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "configContentPager"]
@@ -99,8 +107,10 @@ depends-member:
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "segmentedPager"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "setupClearNavigation"]
 - ["13BarberShop_V230ContainerHistoryViewControllerC", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
@@ -127,6 +137,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "statusBarView"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "systemFont"]
 - !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
@@ -137,8 +148,10 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIFont"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
@@ -165,6 +178,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "statusBarView"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "systemFont"]
 - !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
@@ -177,8 +191,10 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "subscript"]
 - !private ["SE", "white"]
+- !private ["SQ", "NSAttributedStringKey"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIColor"]
+- !private ["SQ", "UIFont"]
 - !private ["SQ", "UIImage"]
 - ["SQ", ""]
 - !private ["SQ", "backgroundColor"]
@@ -186,6 +202,8 @@ depends-member:
 - !private ["SQ", "default"]
 - !private ["SQ", "down"]
 - !private ["SQ", "fill"]
+- !private ["SQ", "font"]
+- !private ["SQ", "foregroundColor"]
 - !private ["SQ", "fullWidthStripe"]
 - !private ["SQ", "headerView"]
 - !private ["SQ", "height"]
@@ -209,6 +227,7 @@ depends-member:
 - !private ["SQ", "shared"]
 - !private ["SQ", "statusBarView"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "systemFont"]
 - !private ["SQ", "titleTextAttributes"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
@@ -231,8 +250,10 @@ depends-member:
 - !private ["So44HMSegmentedControlSelectionIndicatorLocationV", "down"]
 - !private ["So32HMSegmentedControlSelectionStyleV", "fullWidthStripe"]
 - !private ["7RxCocoa11HasDelegateP", "navigationBar"]
+- !private ["SH", "NSAttributedStringKey"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UIColor"]
+- !private ["SH", "UIFont"]
 - !private ["SH", "UIImage"]
 - ["SH", ""]
 - !private ["SH", "backgroundColor"]
@@ -240,6 +261,8 @@ depends-member:
 - !private ["SH", "default"]
 - !private ["SH", "down"]
 - !private ["SH", "fill"]
+- !private ["SH", "font"]
+- !private ["SH", "foregroundColor"]
 - !private ["SH", "fullWidthStripe"]
 - !private ["SH", "headerView"]
 - !private ["SH", "height"]
@@ -263,10 +286,13 @@ depends-member:
 - !private ["SH", "shared"]
 - !private ["SH", "statusBarView"]
 - !private ["SH", "subscript"]
+- !private ["SH", "systemFont"]
 - !private ["SH", "titleTextAttributes"]
 - !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "white"]
+- !private ["So21NSAttributedStringKeya", "font"]
+- !private ["So21NSAttributedStringKeya", "foregroundColor"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["So16MXParallaxHeaderC", "height"]
@@ -277,9 +303,11 @@ depends-member:
 - !private ["So16MXSegmentedPagerC", "segmentedControl"]
 - ["So26MXSegmentedPagerControllerC", "Int"]
 - ["So26MXSegmentedPagerControllerC", "MXSegmentedPager"]
+- !private ["So26MXSegmentedPagerControllerC", "NSAttributedStringKey"]
 - ["So26MXSegmentedPagerControllerC", "String"]
 - !private ["So26MXSegmentedPagerControllerC", "UIApplication"]
 - !private ["So26MXSegmentedPagerControllerC", "UIColor"]
+- !private ["So26MXSegmentedPagerControllerC", "UIFont"]
 - !private ["So26MXSegmentedPagerControllerC", "UIImage"]
 - ["So26MXSegmentedPagerControllerC", "UIView"]
 - ["So26MXSegmentedPagerControllerC", ""]
@@ -292,8 +320,10 @@ depends-member:
 - ["So26MXSegmentedPagerControllerC", "segmentedPager"]
 - ["So26MXSegmentedPagerControllerC", "setupClearNavigation"]
 - ["So26MXSegmentedPagerControllerC", "viewDidLoad"]
+- !private ["So36MXSegmentedPagerControllerDataSourceP", "NSAttributedStringKey"]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "UIApplication"]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "UIColor"]
+- !private ["So36MXSegmentedPagerControllerDataSourceP", "UIFont"]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "UIImage"]
 - ["So36MXSegmentedPagerControllerDataSourceP", ""]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "configContentPager"]
@@ -305,8 +335,10 @@ depends-member:
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "segmentedPager"]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "setupClearNavigation"]
 - !private ["So36MXSegmentedPagerControllerDataSourceP", "viewDidLoad"]
+- !private ["So26MXSegmentedPagerDataSourceP", "NSAttributedStringKey"]
 - !private ["So26MXSegmentedPagerDataSourceP", "UIApplication"]
 - !private ["So26MXSegmentedPagerDataSourceP", "UIColor"]
+- !private ["So26MXSegmentedPagerDataSourceP", "UIFont"]
 - !private ["So26MXSegmentedPagerDataSourceP", "UIImage"]
 - ["So26MXSegmentedPagerDataSourceP", ""]
 - !private ["So26MXSegmentedPagerDataSourceP", "configContentPager"]
@@ -318,8 +350,10 @@ depends-member:
 - !private ["So26MXSegmentedPagerDataSourceP", "segmentedPager"]
 - !private ["So26MXSegmentedPagerDataSourceP", "setupClearNavigation"]
 - !private ["So26MXSegmentedPagerDataSourceP", "viewDidLoad"]
+- !private ["So24MXSegmentedPagerDelegateP", "NSAttributedStringKey"]
 - !private ["So24MXSegmentedPagerDelegateP", "UIApplication"]
 - !private ["So24MXSegmentedPagerDelegateP", "UIColor"]
+- !private ["So24MXSegmentedPagerDelegateP", "UIFont"]
 - !private ["So24MXSegmentedPagerDelegateP", "UIImage"]
 - ["So24MXSegmentedPagerDelegateP", ""]
 - !private ["So24MXSegmentedPagerDelegateP", "configContentPager"]
@@ -334,8 +368,10 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "NSAttributedStringKey"]
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "backgroundColor"]
@@ -362,9 +398,12 @@ depends-member:
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "systemFont"]
 - !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "NSAttributedStringKey"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- !private ["So26NSExtensionRequestHandlingP", "UIFont"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "configContentPager"]
@@ -385,9 +424,11 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "white"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "MXSegmentedPager"]
+- !private ["So8NSObjectC", "NSAttributedStringKey"]
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIFont"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "backgroundColor"]
@@ -413,12 +454,15 @@ depends-member:
 - !private ["So8NSObjectC", "shadowImage"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "statusBarView"]
+- !private ["So8NSObjectC", "systemFont"]
 - !private ["So8NSObjectC", "titleTextAttributes"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "white"]
+- !private ["So8NSObjectP", "NSAttributedStringKey"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIFont"]
 - !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "backgroundColor"]
@@ -444,6 +488,7 @@ depends-member:
 - !private ["So8NSObjectP", "shadowImage"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "statusBarView"]
+- !private ["So8NSObjectP", "systemFont"]
 - !private ["So8NSObjectP", "titleTextAttributes"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
@@ -459,9 +504,13 @@ depends-member:
 - !private ["SY", "default"]
 - !private ["SY", "down"]
 - !private ["SY", "fill"]
+- !private ["SY", "font"]
+- !private ["SY", "foregroundColor"]
 - !private ["SY", "fullWidthStripe"]
+- !private ["7RxSwift18ReactiveCompatibleP", "NSAttributedStringKey"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIApplication"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
+- !private ["7RxSwift18ReactiveCompatibleP", "UIFont"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIImage"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
 - !private ["7RxSwift18ReactiveCompatibleP", "backgroundColor"]
@@ -487,6 +536,7 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "shadowImage"]
 - !private ["7RxSwift18ReactiveCompatibleP", "shared"]
 - !private ["7RxSwift18ReactiveCompatibleP", "statusBarView"]
+- !private ["7RxSwift18ReactiveCompatibleP", "systemFont"]
 - !private ["7RxSwift18ReactiveCompatibleP", "titleTextAttributes"]
 - !private ["7RxSwift18ReactiveCompatibleP", "view"]
 - !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
@@ -494,8 +544,10 @@ depends-member:
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "subscript"]
+- !private ["13BarberShop_V215StoryboardBasedP", "NSAttributedStringKey"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIApplication"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIColor"]
+- !private ["13BarberShop_V215StoryboardBasedP", "UIFont"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIImage"]
 - ["13BarberShop_V215StoryboardBasedP", ""]
 - !private ["13BarberShop_V215StoryboardBasedP", "configContentPager"]
@@ -539,8 +591,10 @@ depends-member:
 - !private ["So12UIAppearanceP", "setBackgroundImage"]
 - !private ["So12UIAppearanceP", "shadowImage"]
 - !private ["So12UIAppearanceP", "titleTextAttributes"]
+- !private ["So21UIAppearanceContainerP", "NSAttributedStringKey"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "UIFont"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
@@ -573,8 +627,10 @@ depends-member:
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "NSAttributedStringKey"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
+- !private ["So18UIContentContainerP", "UIFont"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "configContentPager"]
@@ -616,8 +672,10 @@ depends-member:
 - !private ["So13UIDynamicItemP", "setBackgroundImage"]
 - !private ["So13UIDynamicItemP", "shadowImage"]
 - !private ["So13UIDynamicItemP", "titleTextAttributes"]
+- !private ["So18UIFocusEnvironmentP", "NSAttributedStringKey"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "UIFont"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
@@ -663,14 +721,18 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "setBackgroundImage"]
 - !private ["So20UIFocusItemContainerP", "shadowImage"]
 - !private ["So20UIFocusItemContainerP", "titleTextAttributes"]
+- !private ["So6UIFontC", "init"]
+- !private ["So6UIFontC", "systemFont"]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So15UINavigationBarC", "backgroundColor"]
 - !private ["So15UINavigationBarC", "setBackgroundImage"]
 - !private ["So15UINavigationBarC", "shadowImage"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
@@ -698,9 +760,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "MXSegmentedPager"]
+- !private ["So11UIResponderC", "NSAttributedStringKey"]
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UIFont"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "backgroundColor"]
@@ -726,8 +790,10 @@ depends-member:
 - !private ["So11UIResponderC", "statusBarView"]
 - !private ["So11UIResponderC", "titleTextAttributes"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIFont"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
@@ -753,8 +819,10 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "statusBarView"]
 - !private ["So30UIResponderStandardEditActionsP", "titleTextAttributes"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "NSAttributedStringKey"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
+- !private ["So16UIStateRestoringP", "UIFont"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "configContentPager"]
@@ -767,8 +835,10 @@ depends-member:
 - !private ["So16UIStateRestoringP", "segmentedPager"]
 - !private ["So16UIStateRestoringP", "setupClearNavigation"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "NSAttributedStringKey"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "UIFont"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
@@ -792,8 +862,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "shadowImage"]
 - !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "NSAttributedStringKey"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIFont"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
@@ -832,9 +904,11 @@ depends-member:
 - !private ["So6UIViewC", "titleTextAttributes"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "MXSegmentedPager"]
+- !private ["So16UIViewControllerC", "NSAttributedStringKey"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIApplication"]
 - !private ["So16UIViewControllerC", "UIColor"]
+- !private ["So16UIViewControllerC", "UIFont"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIView"]
 - ["So16UIViewControllerC", "configContentPager"]
@@ -875,9 +949,13 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
@@ -903,14 +981,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "font"]
+- !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s20_SwiftNewtypeWrapperP", "font"]
+- !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -940,6 +1023,7 @@ depends-nominal:
 - !private "So32HMSegmentedControlSelectionStyleV"
 - !private "7RxCocoa11HasDelegateP"
 - "SH"
+- !private "So21NSAttributedStringKeya"
 - !private "s25LosslessStringConvertibleP"
 - !private "So16MXParallaxHeaderC"
 - !private "So20MXParallaxHeaderModeV"
@@ -983,6 +1067,7 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So6UIFontC"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So15UINavigationBarC"
@@ -1008,11 +1093,12 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
@@ -1022,24 +1108,24 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
@@ -1261,20 +1347,20 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Modules/module.modulemap"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "a61594d67d8dc139ce4b81ec972eb882"

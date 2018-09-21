@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ByLocationCollectionViewCell: UICollectionViewCell {
+class ByLocationCollectionCell: UICollectionViewCell {
     @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var addressLocationLabel: UILabel!
     @IBOutlet weak var phoneLocationLabel: UILabel!

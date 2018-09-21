@@ -7,16 +7,16 @@
 //
 
 import UIKit
-
+import SideMenu
 
 class SideBarMenuViewController: UIViewController {
     @IBOutlet weak var sidebarTableView: UITableView!
     
     var profile = ["image":"minea","username":"minea","email":"minea.chem@gmail.com"]
     
-    var iconContent = [UIImage(named: "avatar-user")!,UIImage(named: "home")!,UIImage(named: "calendar-white")!,UIImage(named: "award-point")!,UIImage(named: "notification-30")!,UIImage(named: "settings-white")!,UIImage(named: "order-history")!,UIImage(named: "about"),UIImage(named: "logout")!]
+    var iconContent = [UIImage(named: "avatar-user")!,UIImage(named: "home")!,UIImage(named: "calendar-white")!,UIImage(named: "award-point")!,UIImage(named: "order-history")!,UIImage(named: "settings-white")!,UIImage(named: "about"),UIImage(named: "logout")!]
     
-    var titleContent = ["profile","home","appointment","award point","notification","setting","history","about us","logout"]
+    var titleContent = ["profile","home","appointment","award point","history","setting","about us","logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +73,37 @@ extension SideBarMenuViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.layer.backgroundColor = UIColor.blue.cgColor
+    
+        switch indexPath.row {
+        case 0:
+            performSegue(withIdentifier: "", sender: self)
+            break
+        case 1:
+           // performSegue(withIdentifier: "", sender: self)
+            break
+        case 2:
+           // performSegue(withIdentifier: "", sender: self)
+            break
+        case 3:
+           // performSegue(withIdentifier: "", sender: self)
+            break
+        case 4:
+            //performSegue(withIdentifier: "", sender: self)
+            break
+        case 5:
+           // performSegue(withIdentifier: "", sender: self)
+            break
+        case 6:
+           // performSegue(withIdentifier: "", sender: self)
+            break
+        case 7:
+            UserDefaults.standard.set(false, forKey: "ISUSERLOGINNED")
+            self.dismiss(animated: true, completion: nil)
+            break
+        default:
+            print("nothing")
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

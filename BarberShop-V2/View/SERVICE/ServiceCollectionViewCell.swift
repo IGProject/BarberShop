@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ServiceCollectionViewCell: UICollectionViewCell {
+class ServiceCollectionCell: UICollectionViewCell {
     @IBOutlet weak var image_service: UIImageView!
     @IBOutlet weak var title_service: UILabel!
     @IBOutlet weak var price_service: UILabel!
     @IBOutlet weak var des_service: UILabel!
+    @IBOutlet weak var bookingBtn: RoundButton!
 }

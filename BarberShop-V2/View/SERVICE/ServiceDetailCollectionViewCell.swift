@@ -9,5 +9,5 @@
 import UIKit
 
 class ServiceDetailCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var serviceDetailImageView: UIImageView!
 }

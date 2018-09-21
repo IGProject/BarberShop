@@ -62,7 +62,7 @@
 		CE823B2020BFD23F0095D101 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B1F20BFD23F0095D101 /* ServiceCollectionViewCell.swift */; };
 		CE823B2220BFD2500095D101 /* ServiceDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2120BFD2500095D101 /* ServiceDetailCollectionViewCell.swift */; };
 		CE823B2420BFD2760095D101 /* NearestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2320BFD2760095D101 /* NearestCollectionViewCell.swift */; };
-		CE823B2620BFD28A0095D101 /* ByLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2520BFD28A0095D101 /* ByLocationCollectionViewCell.swift */; };
+		CE823B2620BFD28A0095D101 /* ByLocationCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2520BFD28A0095D101 /* ByLocationCollectionCell.swift */; };
 		CE823B2920BFD30C0095D101 /* ServicePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2820BFD30C0095D101 /* ServicePopUpViewController.swift */; };
 		CE823B2B20BFD3240095D101 /* LocationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2A20BFD3240095D101 /* LocationPopUpViewController.swift */; };
 		CE823B2D20BFD3470095D101 /* BarberPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B2C20BFD3470095D101 /* BarberPopupViewController.swift */; };
@@ -74,7 +74,7 @@
 		CE823B3B20BFD4730095D101 /* HairstyleTypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B3A20BFD4730095D101 /* HairstyleTypeCollectionCell.swift */; };
 		CE823B3D20BFD48B0095D101 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE823B3C20BFD48B0095D101 /* Product.storyboard */; };
 		CE823B3F20BFD4A90095D101 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B3E20BFD4A90095D101 /* ProductViewController.swift */; };
-		CE823B4220BFD4EA0095D101 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4120BFD4EA0095D101 /* ProductCollectionViewCell.swift */; };
+		CE823B4220BFD4EA0095D101 /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4120BFD4EA0095D101 /* ProductCollectionCell.swift */; };
 		CE823B4420BFD5180095D101 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE823B4320BFD5180095D101 /* SignIn.storyboard */; };
 		CE823B4620BFD5360095D101 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4520BFD5360095D101 /* SignInViewController.swift */; };
 		CE823B4820BFD54F0095D101 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4720BFD54F0095D101 /* SignUpViewController.swift */; };
@@ -82,8 +82,8 @@
 		CE823B4C20BFD5910095D101 /* OurTeamBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4B20BFD5910095D101 /* OurTeamBarberViewController.swift */; };
 		CE823B4E20BFD5B40095D101 /* OurTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE823B4D20BFD5B40095D101 /* OurTeam.storyboard */; };
 		CE823B5020BFD5D50095D101 /* OurTeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B4F20BFD5D50095D101 /* OurTeamDetailViewController.swift */; };
-		CE823B5320BFD5FC0095D101 /* OurTeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5220BFD5FC0095D101 /* OurTeamCollectionViewCell.swift */; };
-		CE823B5520BFD60D0095D101 /* OurTeamDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionViewCell.swift */; };
+		CE823B5320BFD5FC0095D101 /* OurTeamCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5220BFD5FC0095D101 /* OurTeamCollectionCell.swift */; };
+		CE823B5520BFD60D0095D101 /* OurTeamDetailCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionCell.swift */; };
 		CE823B5920BFD68A0095D101 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5820BFD68A0095D101 /* HomeCollectionViewCell.swift */; };
 		CE823B5B20BFD6BF0095D101 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823B5A20BFD6BF0095D101 /* SettingViewController.swift */; };
 		CE823B5D20BFD6D10095D101 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE823B5C20BFD6D10095D101 /* Setting.storyboard */; };
@@ -110,6 +110,10 @@
 		CEAC50B020CB789600CAAB64 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC50AF20CB789600CAAB64 /* StoryboardBased.swift */; };
 		CEAC50B520CB793600CAAB64 /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC50B420CB793600CAAB64 /* UIStoryboard+Storyboards.swift */; };
 		CEAC50B720CB794900CAAB64 /* UIViewController+StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC50B620CB794800CAAB64 /* UIViewController+StoryboardIdentifier.swift */; };
+		CEADC9B82151E50200010988 /* RewardPointCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9B72151E50200010988 /* RewardPointCollectionCell.swift */; };
+		CEADC9BB2152003E00010988 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9BA2152003E00010988 /* HistoryCell.swift */; };
+		CEADC9BD2152005300010988 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9BC2152005300010988 /* NotificationCell.swift */; };
+		CEADC9BF21520CC500010988 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9BE21520CC500010988 /* SettingTableViewController.swift */; };
 		CEC7CA5920C2485D008A4B81 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7CA5820C2485D008A4B81 /* HomeModel.swift */; };
 		CEC985DE20BF937200F89593 /* BookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985DD20BF937200F89593 /* BookingDetail.swift */; };
 		CEC985E020BF939200F89593 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985DF20BF939200F89593 /* ServiceModel.swift */; };
@@ -191,7 +195,7 @@
 		CE823B1F20BFD23F0095D101 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE823B2120BFD2500095D101 /* ServiceDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE823B2320BFD2760095D101 /* NearestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestCollectionViewCell.swift; sourceTree = "<group>"; };
-		CE823B2520BFD28A0095D101 /* ByLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByLocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE823B2520BFD28A0095D101 /* ByLocationCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByLocationCollectionCell.swift; sourceTree = "<group>"; };
 		CE823B2820BFD30C0095D101 /* ServicePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePopUpViewController.swift; sourceTree = "<group>"; };
 		CE823B2A20BFD3240095D101 /* LocationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPopUpViewController.swift; sourceTree = "<group>"; };
 		CE823B2C20BFD3470095D101 /* BarberPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPopupViewController.swift; sourceTree = "<group>"; };
@@ -203,7 +207,7 @@
 		CE823B3A20BFD4730095D101 /* HairstyleTypeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairstyleTypeCollectionCell.swift; sourceTree = "<group>"; };
 		CE823B3C20BFD48B0095D101 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		CE823B3E20BFD4A90095D101 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		CE823B4120BFD4EA0095D101 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE823B4120BFD4EA0095D101 /* ProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
 		CE823B4320BFD5180095D101 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		CE823B4520BFD5360095D101 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CE823B4720BFD54F0095D101 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -211,8 +215,8 @@
 		CE823B4B20BFD5910095D101 /* OurTeamBarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamBarberViewController.swift; sourceTree = "<group>"; };
 		CE823B4D20BFD5B40095D101 /* OurTeam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OurTeam.storyboard; sourceTree = "<group>"; };
 		CE823B4F20BFD5D50095D101 /* OurTeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamDetailViewController.swift; sourceTree = "<group>"; };
-		CE823B5220BFD5FC0095D101 /* OurTeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamCollectionViewCell.swift; sourceTree = "<group>"; };
-		CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE823B5220BFD5FC0095D101 /* OurTeamCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamCollectionCell.swift; sourceTree = "<group>"; };
+		CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTeamDetailCollectionCell.swift; sourceTree = "<group>"; };
 		CE823B5820BFD68A0095D101 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE823B5A20BFD6BF0095D101 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		CE823B5C20BFD6D10095D101 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -240,6 +244,10 @@
 		CEAC50AF20CB789600CAAB64 /* StoryboardBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
 		CEAC50B420CB793600CAAB64 /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		CEAC50B620CB794800CAAB64 /* UIViewController+StoryboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardIdentifier.swift"; sourceTree = "<group>"; };
+		CEADC9B72151E50200010988 /* RewardPointCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardPointCollectionCell.swift; sourceTree = "<group>"; };
+		CEADC9BA2152003E00010988 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		CEADC9BC2152005300010988 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		CEADC9BE21520CC500010988 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		CEC7CA5820C2485D008A4B81 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		CEC985DD20BF937200F89593 /* BookingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetail.swift; sourceTree = "<group>"; };
 		CEC985DF20BF939200F89593 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
@@ -402,7 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				CE823B2320BFD2760095D101 /* NearestCollectionViewCell.swift */,
-				CE823B2520BFD28A0095D101 /* ByLocationCollectionViewCell.swift */,
+				CE823B2520BFD28A0095D101 /* ByLocationCollectionCell.swift */,
 				CE4128D321467F02003B5602 /* CustomMarkerView.swift */,
 			);
 			path = LOCATION;
@@ -420,7 +428,7 @@
 		CE823B4020BFD4B80095D101 /* PRODUCT */ = {
 			isa = PBXGroup;
 			children = (
-				CE823B4120BFD4EA0095D101 /* ProductCollectionViewCell.swift */,
+				CE823B4120BFD4EA0095D101 /* ProductCollectionCell.swift */,
 			);
 			path = PRODUCT;
 			sourceTree = "<group>";
@@ -428,8 +436,8 @@
 		CE823B5120BFD5E40095D101 /* OURTEAM */ = {
 			isa = PBXGroup;
 			children = (
-				CE823B5220BFD5FC0095D101 /* OurTeamCollectionViewCell.swift */,
-				CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionViewCell.swift */,
+				CE823B5220BFD5FC0095D101 /* OurTeamCollectionCell.swift */,
+				CE823B5420BFD60D0095D101 /* OurTeamDetailCollectionCell.swift */,
 			);
 			path = OURTEAM;
 			sourceTree = "<group>";
@@ -568,6 +576,23 @@
 				CE9D2C9120D26B86009E836E /* Storyboard */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEADC9B62151E4D800010988 /* RewardPoint */ = {
+			isa = PBXGroup;
+			children = (
+				CEADC9B72151E50200010988 /* RewardPointCollectionCell.swift */,
+			);
+			path = RewardPoint;
+			sourceTree = "<group>";
+		};
+		CEADC9B92152001700010988 /* ACTIVITY */ = {
+			isa = PBXGroup;
+			children = (
+				CEADC9BA2152003E00010988 /* HistoryCell.swift */,
+				CEADC9BC2152005300010988 /* NotificationCell.swift */,
+			);
+			path = ACTIVITY;
 			sourceTree = "<group>";
 		};
 		CEDC342F20CF9D5600CE9F53 /* User */ = {
@@ -718,6 +743,8 @@
 		CEE160A820BE49E1001D0713 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEADC9B92152001700010988 /* ACTIVITY */,
+				CEADC9B62151E4D800010988 /* RewardPoint */,
 				CE823B5720BFD6790095D101 /* HOME */,
 				CEE6601E20CA2A7C0040CB9E /* BOOKING */,
 				CE823B6D20BFD8460095D101 /* APOINTMENT */,
@@ -861,6 +888,7 @@
 			isa = PBXGroup;
 			children = (
 				CE823B5A20BFD6BF0095D101 /* SettingViewController.swift */,
+				CEADC9BE21520CC500010988 /* SettingTableViewController.swift */,
 			);
 			path = SETTING;
 			sourceTree = "<group>";
@@ -1016,7 +1044,6 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
@@ -1031,8 +1058,10 @@
 				"${BUILT_PRODUCTS_DIR}/MXSegmentedPager/MXSegmentedPager.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SSSpinnerButton/SSSpinnerButton.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -1042,7 +1071,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -1057,8 +1085,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXSegmentedPager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSSpinnerButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -1102,12 +1132,13 @@
 				CE823B2020BFD23F0095D101 /* ServiceCollectionViewCell.swift in Sources */,
 				CE82AC5420EA35C600F84E36 /* LocationViewModel.swift in Sources */,
 				CEC7CA5920C2485D008A4B81 /* HomeModel.swift in Sources */,
+				CEADC9BD2152005300010988 /* NotificationCell.swift in Sources */,
 				CE39881520EA80F4001AFBD6 /* BookingViewModel.swift in Sources */,
 				CE823B3120BFD38C0095D101 /* HairStylesViewController.swift in Sources */,
 				CEC985FA20BF94FB00F89593 /* HomeViewModel.swift in Sources */,
 				CE5C221020D3A9F100672059 /* DynamicServiceTitleValue.swift in Sources */,
 				CEA3CF6120DDEA480050479E /* DynamicHomeLocationValue.swift in Sources */,
-				CE823B4220BFD4EA0095D101 /* ProductCollectionViewCell.swift in Sources */,
+				CE823B4220BFD4EA0095D101 /* ProductCollectionCell.swift in Sources */,
 				CE823B5920BFD68A0095D101 /* HomeCollectionViewCell.swift in Sources */,
 				CE823B2D20BFD3470095D101 /* BarberPopupViewController.swift in Sources */,
 				CE288AE120DD05C600CBAFD7 /* StylesHairTypeDataSource.swift in Sources */,
@@ -1129,7 +1160,7 @@
 				CEE1609520BE42F2001D0713 /* AppDelegate.swift in Sources */,
 				CE823B1620BFD1410095D101 /* ServiceViewController.swift in Sources */,
 				CE288AC820DCEF3A00CBAFD7 /* DynamicBarbersValue.swift in Sources */,
-				CE823B5320BFD5FC0095D101 /* OurTeamCollectionViewCell.swift in Sources */,
+				CE823B5320BFD5FC0095D101 /* OurTeamCollectionCell.swift in Sources */,
 				CE823B2F20BFD35B0095D101 /* DateTimePopUpViewController.swift in Sources */,
 				CE288AC320DCDA9200CBAFD7 /* ServicesDataSource.swift in Sources */,
 				CEC985E620BF93DF00F89593 /* HairStyleModel.swift in Sources */,
@@ -1145,7 +1176,7 @@
 				CEC985EC20BF947500F89593 /* SignUpViewModel.swift in Sources */,
 				CE5ACF0D214A4B960010A187 /* Result.swift in Sources */,
 				CE6F142321479D0A00F58254 /* ContentCell.swift in Sources */,
-				CE823B5520BFD60D0095D101 /* OurTeamDetailCollectionViewCell.swift in Sources */,
+				CE823B5520BFD60D0095D101 /* OurTeamDetailCollectionCell.swift in Sources */,
 				CEC985E220BF93B100F89593 /* BarberTeamsModel.swift in Sources */,
 				CEAC50B720CB794900CAAB64 /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				CE288AD920DD008100CBAFD7 /* StylesHairDataSource.swift in Sources */,
@@ -1162,6 +1193,7 @@
 				CE823B3620BFD3ED0095D101 /* HairtypeStyleViewController.swift in Sources */,
 				CE288ADF20DD05A500CBAFD7 /* StylesHairTypeViewModel.swift in Sources */,
 				CEDC343D20CFB20500CE9F53 /* register.swift in Sources */,
+				CEADC9BB2152003E00010988 /* HistoryCell.swift in Sources */,
 				CE5ACF09214A493F0010A187 /* Alert.swift in Sources */,
 				CEF777D0214F839000C0796F /* ProfileCellViewModel.swift in Sources */,
 				CE0FCA52213E257600218CCA /* Extensions.swift in Sources */,
@@ -1175,10 +1207,12 @@
 				CE6D5901214A169D00C165C9 /* SideBarMenuViewController.swift in Sources */,
 				CE823B4820BFD54F0095D101 /* SignUpViewController.swift in Sources */,
 				CE823B7A20BFDA800095D101 /* AboutUsViewController.swift in Sources */,
-				CE823B2620BFD28A0095D101 /* ByLocationCollectionViewCell.swift in Sources */,
+				CE823B2620BFD28A0095D101 /* ByLocationCollectionCell.swift in Sources */,
 				CE823B7320BFD9530095D101 /* SplashScreenViewController.swift in Sources */,
 				CEC985F420BF94C900F89593 /* ServiceViewModel.swift in Sources */,
+				CEADC9BF21520CC500010988 /* SettingTableViewController.swift in Sources */,
 				CE67E9E3214BC56000CDA520 /* FindNear.swift in Sources */,
+				CEADC9B82151E50200010988 /* RewardPointCollectionCell.swift in Sources */,
 				CE823B5B20BFD6BF0095D101 /* SettingViewController.swift in Sources */,
 				CE288AC620DCE50000CBAFD7 /* DynamicServiceValue.swift in Sources */,
 				CEA3CF5C20DDDF050050479E /* UserDefaults+Key.swift in Sources */,

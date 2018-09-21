@@ -10,7 +10,6 @@ import UIKit
 import SideMenu
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
     var iconImage = [#imageLiteral(resourceName: "barber-team"),#imageLiteral(resourceName: "map-location"),#imageLiteral(resourceName: "service"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "product"),#imageLiteral(resourceName: "booking")]
     var titleIcon = ["Barber Team","Location","Services","Style Hair","Product","Booking"]
     
@@ -25,8 +24,10 @@ class HomeViewController: UIViewController {
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
         UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+        
+        self.navigationItem.titleView = setTitle(title: "DASHBOARD", subtitle: "")
     }
     
     //MARK- Setup SideMenu
@@ -44,10 +45,44 @@ class HomeViewController: UIViewController {
         
     }
     
+    func setTitle(title:String, subtitle:String) -> UIView {
+        let titleLabel = UILabel(frame:CGRect(x: 0, y: -2, width: 0, height: 0))
+        
+        titleLabel.backgroundColor = UIColor.clear
+        titleLabel.textColor = UIColor.white
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        titleLabel.text = title
+        titleLabel.sizeToFit()
+        
+        let subtitleLabel = UILabel(frame: CGRect(x: 0, y: 18, width: 0, height: 0))
+        subtitleLabel.backgroundColor = UIColor.clear
+        subtitleLabel.textColor = UIColor.white
+        subtitleLabel.font = UIFont.systemFont(ofSize: 12)
+        subtitleLabel.text = subtitle
+        subtitleLabel.sizeToFit()
+        
+        let titleView = UIView(frame: CGRect(x: 0, y:0, width: max(titleLabel.frame.size.width, subtitleLabel.frame.size.width), height: 30))
+        titleView.addSubview(titleLabel)
+        titleView.addSubview(subtitleLabel)
+        
+        let widthDiff = subtitleLabel.frame.size.width - titleLabel.frame.size.width
+        
+        if widthDiff < 0 {
+            let newX = widthDiff / 2
+            subtitleLabel.frame.origin.x = abs(newX)
+        } else {
+            let newX = widthDiff / 2
+            titleLabel.frame.origin.x = newX
+        }
+        
+        return titleView
+    }
+
     
     @IBAction func menuTapped(_ sender: UIBarButtonItem) {
         present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
+    
 }
 
 extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegate {
@@ -71,18 +106,41 @@ extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegat
         let cell = collectionView.cellForItem(at: indexPath)
         cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
         cell?.layer.borderWidth = 2
+        
+        switch indexPath.row {
+        case 0:
+            performSegue(withIdentifier: "ourteamIdentifier", sender: self)
+            break
+        case 1:
+            performSegue(withIdentifier: "homeLocationIdentifier", sender: self)
+            break
+        case 2:
+            performSegue(withIdentifier: "serviceIdentifier", sender: self)
+            break
+        case 3:
+            performSegue(withIdentifier: "hairstyleIdentifier", sender: self)
+            break
+        case 4:
+            performSegue(withIdentifier: "productIdentifier", sender: self)
+            break
+        case 5:
+            performSegue(withIdentifier: "bookingIdentifier", sender: self)
+            break
+        default:
+            print("nothing")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.white.cgColor
+        cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
         cell?.layer.borderWidth = 0.5
     }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfColumns: CGFloat = 2
+        let numberOfColumns: CGFloat = 3
         let width = collectionView.frame.size.width
         let xInsets:CGFloat = 10
         let cellSpacing: CGFloat = 5

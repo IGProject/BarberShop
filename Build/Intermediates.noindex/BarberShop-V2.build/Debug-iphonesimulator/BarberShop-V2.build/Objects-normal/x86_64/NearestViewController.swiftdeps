@@ -50,8 +50,8 @@ depends-top-level:
 - "StringLiteralType"
 - "UIButton"
 - !private "UIColor"
+- "UIImage"
 - "UIViewController"
-- "_ImageLiteralType"
 - !private "arc4random_uniform"
 - !private "print"
 - !private "~="
@@ -104,6 +104,7 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "GMSCameraPosition"]
 - ["So25CLLocationManagerDelegateP", "GMSMarker"]
 - !private ["So25CLLocationManagerDelegateP", "UIColor"]
+- ["So25CLLocationManagerDelegateP", "UIImage"]
 - ["So25CLLocationManagerDelegateP", ""]
 - !private ["So25CLLocationManagerDelegateP", "arc4random_uniform"]
 - !private ["So25CLLocationManagerDelegateP", "customMarkerHeight"]
@@ -132,6 +133,7 @@ depends-member:
 - !private ["s7CVarArgP", "GMSCameraPosition"]
 - ["s7CVarArgP", "GMSMarker"]
 - !private ["s7CVarArgP", "UIColor"]
+- ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "animate"]
@@ -190,6 +192,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "GMSCameraPosition"]
 - ["s28CustomDebugStringConvertibleP", "GMSMarker"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
 - !private ["s28CustomDebugStringConvertibleP", "arc4random_uniform"]
@@ -259,6 +262,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "GMSCameraPosition"]
 - ["s23CustomStringConvertibleP", "GMSMarker"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
+- ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "animate"]
@@ -333,6 +337,7 @@ depends-member:
 - !private ["SQ", "GMSCameraPosition"]
 - ["SQ", "GMSMarker"]
 - !private ["SQ", "UIColor"]
+- ["SQ", "UIImage"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "animate"]
@@ -415,6 +420,7 @@ depends-member:
 - !private ["So18GMSMapViewDelegateP", "GMSCameraPosition"]
 - ["So18GMSMapViewDelegateP", "GMSMarker"]
 - !private ["So18GMSMapViewDelegateP", "UIColor"]
+- ["So18GMSMapViewDelegateP", "UIImage"]
 - ["So18GMSMapViewDelegateP", ""]
 - !private ["So18GMSMapViewDelegateP", "arc4random_uniform"]
 - !private ["So18GMSMapViewDelegateP", "customMarkerHeight"]
@@ -451,6 +457,7 @@ depends-member:
 - !private ["SH", "GMSCameraPosition"]
 - ["SH", "GMSMarker"]
 - !private ["SH", "UIColor"]
+- ["SH", "UIImage"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "animate"]
@@ -523,6 +530,7 @@ depends-member:
 - !private ["So8NSCodingP", "GMSCameraPosition"]
 - ["So8NSCodingP", "GMSMarker"]
 - !private ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "animate"]
 - !private ["So8NSCodingP", "arc4random_uniform"]
@@ -536,7 +544,7 @@ depends-member:
 - ["So8NSCodingP", "didTapMyLocationButtonForMapView"]
 - !private ["So8NSCodingP", "googleMapView"]
 - !private ["So8NSCodingP", "img"]
-- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isMyLocationEnabled"]
 - ["So8NSCodingP", "locationManager"]
@@ -571,6 +579,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "GMSCameraPosition"]
 - ["So26NSExtensionRequestHandlingP", "GMSMarker"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "arc4random_uniform"]
 - !private ["So26NSExtensionRequestHandlingP", "customMarkerHeight"]
@@ -594,7 +603,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "showPartyMarkers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "zoom"]
+- ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "white"]
+- ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So16NSMutableCopyingP", "camera"]
 - ["So8NSObjectC", "Bool"]
@@ -614,6 +625,7 @@ depends-member:
 - ["So8NSObjectC", "MyPlace"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "animate"]
 - !private ["So8NSObjectC", "arc4random_uniform"]
 - !private ["So8NSObjectC", "camera"]
@@ -666,6 +678,7 @@ depends-member:
 - !private ["So8NSObjectP", "GMSCameraPosition"]
 - ["So8NSObjectP", "GMSMarker"]
 - !private ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "animate"]
 - !private ["So8NSObjectP", "arc4random_uniform"]
@@ -707,6 +720,7 @@ depends-member:
 - !private ["So8NSObjectP", "white"]
 - !private ["So8NSObjectP", "zoom"]
 - !private ["So14NSSecureCodingP", "coordinate"]
+- ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
 - ["13BarberShop_V221NearestViewControllerC", "Bool"]
 - !private ["13BarberShop_V221NearestViewControllerC", "CGRect"]
@@ -725,6 +739,7 @@ depends-member:
 - ["13BarberShop_V221NearestViewControllerC", "MyPlace"]
 - ["13BarberShop_V221NearestViewControllerC", "UIButton"]
 - !private ["13BarberShop_V221NearestViewControllerC", "UIColor"]
+- ["13BarberShop_V221NearestViewControllerC", "UIImage"]
 - !private ["13BarberShop_V221NearestViewControllerC", "arc4random_uniform"]
 - ["13BarberShop_V221NearestViewControllerC", "chosenPlace"]
 - ["13BarberShop_V221NearestViewControllerC", "currentLocation"]
@@ -780,6 +795,7 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "GMSCameraPosition"]
 - ["7RxSwift18ReactiveCompatibleP", "GMSMarker"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
+- ["7RxSwift18ReactiveCompatibleP", "UIImage"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
 - !private ["7RxSwift18ReactiveCompatibleP", "animate"]
 - !private ["7RxSwift18ReactiveCompatibleP", "arc4random_uniform"]
@@ -834,6 +850,7 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "GMSCameraPosition"]
 - ["13BarberShop_V215StoryboardBasedP", "GMSMarker"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIColor"]
+- ["13BarberShop_V215StoryboardBasedP", "UIImage"]
 - ["13BarberShop_V215StoryboardBasedP", ""]
 - !private ["13BarberShop_V215StoryboardBasedP", "arc4random_uniform"]
 - !private ["13BarberShop_V215StoryboardBasedP", "customMarkerHeight"]
@@ -872,7 +889,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "clear"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "img"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isMyLocationEnabled"]
 - !private ["So29UIAccessibilityIdentificationP", "myLocation"]
 - !private ["So29UIAccessibilityIdentificationP", "tag"]
@@ -893,6 +910,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "GMSCameraPosition"]
 - ["So21UIAppearanceContainerP", "GMSMarker"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
+- ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "animate"]
 - !private ["So21UIAppearanceContainerP", "arc4random_uniform"]
@@ -934,6 +952,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "GMSCameraPosition"]
 - ["So18UIContentContainerP", "GMSMarker"]
 - !private ["So18UIContentContainerP", "UIColor"]
+- ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "arc4random_uniform"]
 - !private ["So18UIContentContainerP", "customMarkerHeight"]
@@ -984,6 +1003,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "GMSCameraPosition"]
 - ["So18UIFocusEnvironmentP", "GMSMarker"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
+- ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "animate"]
 - !private ["So18UIFocusEnvironmentP", "arc4random_uniform"]
@@ -1033,6 +1053,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "isMyLocationEnabled"]
 - !private ["So20UIFocusItemContainerP", "myLocation"]
 - !private ["So20UIFocusItemContainerP", "tag"]
+- ["So7UIImageC", "init"]
+- ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "CLLocationCoordinate2D"]
 - ["So30UIPasteConfigurationSupportingP", "CLLocationManager"]
@@ -1041,6 +1063,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "GMSCameraPosition"]
 - ["So30UIPasteConfigurationSupportingP", "GMSMarker"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "animate"]
 - !private ["So30UIPasteConfigurationSupportingP", "arc4random_uniform"]
@@ -1089,6 +1112,7 @@ depends-member:
 - ["So11UIResponderC", "MyPlace"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "animate"]
 - !private ["So11UIResponderC", "arc4random_uniform"]
 - !private ["So11UIResponderC", "camera"]
@@ -1132,6 +1156,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "GMSCameraPosition"]
 - ["So30UIResponderStandardEditActionsP", "GMSMarker"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "animate"]
 - !private ["So30UIResponderStandardEditActionsP", "arc4random_uniform"]
@@ -1172,6 +1197,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "GMSCameraPosition"]
 - ["So16UIStateRestoringP", "GMSMarker"]
 - !private ["So16UIStateRestoringP", "UIColor"]
+- ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "arc4random_uniform"]
 - !private ["So16UIStateRestoringP", "customMarkerHeight"]
@@ -1203,6 +1229,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "GMSCameraPosition"]
 - ["So18UITraitEnvironmentP", "GMSMarker"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
+- ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "animate"]
 - !private ["So18UITraitEnvironmentP", "arc4random_uniform"]
@@ -1242,6 +1269,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "GMSCameraPosition"]
 - ["So23UIUserActivityRestoringP", "GMSMarker"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
+- ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "animate"]
 - !private ["So23UIUserActivityRestoringP", "arc4random_uniform"]
@@ -1298,6 +1326,7 @@ depends-member:
 - ["So16UIViewControllerC", "MyPlace"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIColor"]
+- ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "arc4random_uniform"]
 - ["So16UIViewControllerC", "chosenPlace"]
@@ -1354,6 +1383,7 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
+- ["s26_ExpressibleByImageLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -1367,6 +1397,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSCameraPosition"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "GMSMarker"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random_uniform"]
@@ -1472,12 +1503,12 @@ depends-nominal:
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
+- "So14NSSecureCodingP"
 - "13BarberShop_V221NearestViewControllerC"
 - !private "Sj"
 - !private "Sq"
@@ -1494,7 +1525,7 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
-- !private "So29UIAccessibilityIdentificationP"
+- "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So8UIButtonC"
@@ -1506,6 +1537,8 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- "So7UIImageC"
+- "So39UIItemProviderPresentationSizeProvidingP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1528,6 +1561,7 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
+- "s26_ExpressibleByImageLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -1535,8 +1569,8 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
@@ -1546,24 +1580,24 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
@@ -1785,20 +1819,20 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Modules/module.modulemap"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Users/user/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f84a5f2edc0c6a1ec5e4e01710238936"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "16977e863c4f08d8c87fc0c5987c94dd"

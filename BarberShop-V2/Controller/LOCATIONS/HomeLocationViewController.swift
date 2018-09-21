@@ -17,11 +17,17 @@ class HomeLocationViewController: MXSegmentedPagerController {
         configContentPager()
     }
     
+    
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
         UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
+    }
+    
+    
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+         navigationController?.dismiss(animated: true)
     }
     
     func configContentPager(){

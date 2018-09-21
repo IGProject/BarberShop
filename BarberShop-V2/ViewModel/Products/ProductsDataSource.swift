@@ -19,7 +19,7 @@ class ProductsDataSource: GenericProductsDataSource<ProductDetails>,UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let productsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "productsCell", for: indexPath) as! ProductCollectionViewCell
+        let productsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "productsCell", for: indexPath) as! ProductCollectionCell
         
         let arrayOfProduct = self.data.value[indexPath.row]
         productsCell.rielLabel.text = arrayOfProduct.price

@@ -21,6 +21,12 @@ class HairStylesViewController: UIViewController {
         setupClearNavigation()
     }
     
+    
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+        
+         navigationController?.dismiss(animated: true)
+    }
+    
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()

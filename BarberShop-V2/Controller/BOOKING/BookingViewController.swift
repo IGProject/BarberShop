@@ -30,7 +30,23 @@ class BookingViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupPicker()
+        createtoolBar()
+        setupClearNavigation()
+    }
     
+    func setupClearNavigation() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+    }
+    
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+          navigationController?.dismiss(animated: true)
+    }
+    
+    func setupPicker(){
         //add Target
         dateTime.addTarget(self, action: #selector(valueDateChange), for: .valueChanged)
         
@@ -49,11 +65,7 @@ class BookingViewController: UIViewController{
         locationTextField.inputView = my_picker
         serviceTextField.inputView = my_picker
         barberTeamTextField.inputView = my_picker
-        
-        createtoolBar()
-        
     }
-    
     @objc func valueDateChange(sender: UIDatePicker){
         let dateTimeformatter = DateFormatter()
         dateTimeformatter.dateFormat = "dd-MMM-yyyy HH:mm"

@@ -19,7 +19,7 @@ class ServiceDatasource:GenericServiceDataSource<ServicesDetails>,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let serviceCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "serviceCell", for: indexPath) as! ServiceCollectionViewCell
+        let serviceCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "serviceCell", for: indexPath) as! ServiceCollectionCell
         
         let arrayOfService = self.data.value[indexPath.row]
         

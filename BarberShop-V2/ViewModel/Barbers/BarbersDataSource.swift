@@ -20,7 +20,7 @@ class BarbersDataSource: GenericBarbersDataSource<TeamDetails>,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let barbersCell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath) as! OurTeamCollectionViewCell
+        let barbersCell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath) as! OurTeamCollectionCell
         
         let arrayOfOurTeam = self.data.value[indexPath.row]
         barbersCell.phoneTeam.text = arrayOfOurTeam.phone

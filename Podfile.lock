@@ -46,7 +46,6 @@ PODS:
   - FirebaseInstanceID (3.2.1):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.2)
-  - FSCalendar (2.7.9)
   - GoogleAppMeasurement (5.1.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
     - GoogleUtilities/MethodSwizzler (~> 5.2.0)
@@ -117,10 +116,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - SideMenu (4.0.0)
+  - SSSpinnerButton (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -128,7 +131,6 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
-  - FSCalendar
   - GoogleMaps
   - GooglePlaces
   - GoogleSignIn
@@ -136,9 +138,11 @@ DEPENDENCIES:
   - Kingfisher (~> 4.0)
   - Material
   - MXSegmentedPager
+  - NVActivityIndicatorView
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SideMenu
+  - SSSpinnerButton
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -154,7 +158,6 @@ SPEC REPOS:
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseInstanceID
-    - FSCalendar
     - GoogleAppMeasurement
     - GoogleMaps
     - GooglePlaces
@@ -172,9 +175,11 @@ SPEC REPOS:
     - MXParallaxHeader
     - MXSegmentedPager
     - nanopb
+    - NVActivityIndicatorView
     - RxCocoa
     - RxSwift
     - SideMenu
+    - SSSpinnerButton
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -189,7 +194,6 @@ SPEC CHECKSUMS:
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 3a97432acb324b439fbed338e642f9cbb516a63d
   FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
-  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
@@ -207,10 +211,12 @@ SPEC CHECKSUMS:
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  SSSpinnerButton: 6b8215a5e927d16f149f08929e314e4ec25926b2
 
-PODFILE CHECKSUM: daa699c4148ac0cb3a2ba23d88a46642b0b4aeaf
+PODFILE CHECKSUM: ab932406394b5718ac24028d168a832335226318
 
 COCOAPODS: 1.5.0
