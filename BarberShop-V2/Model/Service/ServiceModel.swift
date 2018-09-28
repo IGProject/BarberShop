@@ -8,23 +8,25 @@
 
 import UIKit
 
-struct ServicesDetails: Codable{
-    //filed of Service
-    let id:Int?
-    let title:String?
-    let description:String?
-    let price:String?
-    let point:Int?
-    let seva_profile:String?
-    let seva_profiles: ServiceProfiles?
+struct Services: Codable {
+    struct Results: Codable {
+        let id: Int
+        let title: String
+        let description: String
+        let price: String
+        let point: Int
+        let seva_profile: String
+        let seva_profiles: [ServiceProfile]
+    }
+    
+    struct ServiceProfile: Codable {
+        struct Results:Codable {
+            let id:Int?
+            let file_name: String
+            let file_path:String?
+            let status: Bool
+        }
+    }
+    
+    let results: [Services.Results]
 }
-
-//subclass name Service Profile of Service
-struct ServiceProfiles: Codable{
-    let file_id:String?
-    let file_name:String
-    let file_path:String?
-    let status:Bool?
-}
-
-

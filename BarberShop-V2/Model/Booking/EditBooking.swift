@@ -12,8 +12,8 @@ struct EditBooking: Codable {
     let booking_id: Int
     let user_id: Int
     let work_time: String
-    let location_id:LocationDetail
-    let seva_id:ServicesDetails
-    let team_id:TeamDetails
+    let location_id:Locations
+    let seva_id:Services
+    let team_id:Teams
     let staus: Int
 }

@@ -7,7 +7,11 @@ target 'BarberShop-V2' do
   # Pods for BarberShop-V2
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Messaging'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 pod 'FBSDKLoginKit'
+pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'GoogleSignIn'
 pod 'GoogleMaps'
@@ -21,8 +25,8 @@ pod 'Kingfisher', '~> 4.0'
 pod 'SideMenu'
  pod 'JTAppleCalendar', '~> 7.0'
 pod 'MXSegmentedPager'
+pod 'PKHUD', '~> 5.0'
 pod 'Material'
-pod 'NVActivityIndicatorView'
 pod 'SSSpinnerButton'
 end
 

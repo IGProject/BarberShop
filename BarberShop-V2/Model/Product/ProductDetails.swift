@@ -8,17 +8,19 @@
 
 import UIKit
 
-struct ProductDetails: Codable {
-    let id:Int
-    let title:String?
-    let price:String?
-    let image_product: ProductImage?
-}
-
-struct ProductImage: Codable {
-    let id: Int
-    let file_name: String?
-    let file_path: String?
-    let status: Bool?
-
+struct Products: Codable {
+    struct Results: Codable {
+        let id:Int
+        let title:String
+        let price: String
+        let image_product: String
+    }
+    
+    struct ProductImage: Codable {
+        let id: Int?
+        let file_name: String
+        let file_path: String?
+        let status: Bool?
+    }
+    let results:[Products.Results]
 }

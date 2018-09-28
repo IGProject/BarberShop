@@ -97,7 +97,6 @@ extension SideBarMenuViewController: UITableViewDelegate,UITableViewDataSource {
            // performSegue(withIdentifier: "", sender: self)
             break
         case 7:
-            UserDefaults.standard.set(false, forKey: "ISUSERLOGINNED")
             self.dismiss(animated: true, completion: nil)
             break
         default:

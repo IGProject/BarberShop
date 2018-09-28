@@ -7,20 +7,30 @@
 //
 
 import UIKit
-struct TeamDetails: Codable {
-    let id: Int?
-    let username: String?
-    let phone: String?
-    let email: String?
-    let description:String?
-    let location:[LocationDetail]?
-    let team_profile: String
-    let team_image = [TeamImage]()
-}
 
-struct TeamImage: Codable {
-    let file_id:Int?
-    let file_name:String?
-    let file_path:String?
-    let status: Bool?
+struct Teams: Codable {
+    struct Results: Codable {
+        let id: Int
+        let username: String
+        let email: String
+        let description: String
+        let location: Location
+        let team_profile: String
+        let team_image: [TeamImage]
+    }
+    struct Location: Codable {
+        let id: Int
+        let address: String
+        let latitude: String
+        let longitude: String
+    }
+    
+    struct TeamImage: Codable {
+        let id:Int
+        let file_name: String
+        let file_path: String
+        let status: Bool
+    }
+    
+    let results: [Teams.Results]
 }

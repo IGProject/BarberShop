@@ -1,45 +1,37 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "StyleListModel"
-- "Shape"
-- "ShapeType"
-- "StyleProfile"
+- "StyleHair"
 provides-nominal:
-- "13BarberShop_V214StyleListModelV"
-- "13BarberShop_V25ShapeV"
-- "13BarberShop_V29ShapeTypeO"
-- "13BarberShop_V212StyleProfileV"
+- "13BarberShop_V29StyleHairV"
+- "13BarberShop_V29StyleHairV7ResultsV"
+- "13BarberShop_V29StyleHairV5ShapeV"
+- "13BarberShop_V29StyleHairV0D7ProfileV"
 provides-member:
-- ["13BarberShop_V214StyleListModelV", ""]
-- ["13BarberShop_V25ShapeV", ""]
-- ["13BarberShop_V29ShapeTypeO", ""]
-- ["13BarberShop_V212StyleProfileV", ""]
+- ["13BarberShop_V29StyleHairV", ""]
+- ["13BarberShop_V29StyleHairV7ResultsV", ""]
+- ["13BarberShop_V29StyleHairV5ShapeV", ""]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
-- !private "Array"
 - "Bool"
 - "Codable"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
-- "Shape"
-- "ShapeType"
 - "String"
-- "StringLiteralType"
-- "StyleListModel"
-- "StyleProfile"
-- !private "_findStringSwitchCase"
+- !private "StringLiteralType"
+- "StyleHair"
 - !private "~="
 depends-member:
-- ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- ["SK", "init"]
-- ["SK", "init"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s9CodingKeyP", ""]
 - ["s9CodingKeyP", "debugDescription"]
 - ["s9CodingKeyP", "description"]
@@ -48,25 +40,25 @@ depends-member:
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
 - ["s9CodingKeyP", "stringValue"]
-- ["Sl", "init"]
-- ["Sl", "init"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
@@ -74,85 +66,67 @@ depends-member:
 - ["s23CustomStringConvertibleP", "hash"]
 - ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
-- ["Se", "RawValue"]
+- ["Se", "Results"]
 - ["Se", ""]
-- ["Se", "_Default_RawValue"]
-- !private ["Se", "_findStringSwitchCase"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - ["Se", "encode"]
 - !private ["Se", "file_name"]
 - !private ["Se", "file_path"]
-- ["Se", "hash"]
-- ["Se", "hashValue"]
 - !private ["Se", "id"]
 - ["Se", "init"]
-- ["Se", "init"]
-- ["Se", "rawValue"]
+- !private ["Se", "init"]
+- !private ["Se", "results"]
 - !private ["Se", "shape"]
 - !private ["Se", "shape_name"]
 - !private ["Se", "status"]
 - !private ["Se", "style_profile"]
 - !private ["Se", "style_profiles"]
 - !private ["s7DecoderP", "container"]
-- ["SE", "RawValue"]
+- ["SE", "Results"]
 - ["SE", ""]
-- ["SE", "_Default_RawValue"]
-- !private ["SE", "_findStringSwitchCase"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - ["SE", "encode"]
 - !private ["SE", "file_name"]
 - !private ["SE", "file_path"]
-- ["SE", "hash"]
-- ["SE", "hashValue"]
 - !private ["SE", "id"]
 - ["SE", "init"]
-- ["SE", "init"]
-- ["SE", "rawValue"]
+- !private ["SE", "init"]
+- !private ["SE", "results"]
 - !private ["SE", "shape"]
 - !private ["SE", "shape_name"]
 - !private ["SE", "status"]
 - !private ["SE", "style_profile"]
 - !private ["SE", "style_profiles"]
 - !private ["s7EncoderP", "container"]
-- ["SQ", "RawValue"]
-- ["SQ", ""]
-- ["SQ", "_Default_RawValue"]
-- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - ["SQ", "debugDescription"]
 - ["SQ", "description"]
-- ["SQ", "encode"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - ["SQ", "intValue"]
-- ["SQ", "rawValue"]
 - ["SQ", "stringValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["SH", "RawValue"]
-- ["SH", ""]
-- ["SH", "_Default_RawValue"]
-- !private ["SH", "_findStringSwitchCase"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - ["SH", "debugDescription"]
 - ["SH", "description"]
-- ["SH", "encode"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
 - ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - ["SH", "intValue"]
-- ["SH", "rawValue"]
 - ["SH", "stringValue"]
 - !private ["s6HasherV", "combine"]
 - !private ["7RxCocoa16KVORepresentableP", "_getBuiltinLogicValue"]
@@ -165,105 +139,91 @@ depends-member:
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["Sm", "init"]
-- ["Sm", "init"]
-- ["SY", "RawValue"]
-- ["SY", ""]
-- ["SY", "_Default_RawValue"]
-- !private ["SY", "_findStringSwitchCase"]
-- ["SY", "encode"]
-- ["SY", "hash"]
-- ["SY", "hashValue"]
-- ["SY", "init"]
-- ["SY", "rawValue"]
-- ["ST", "init"]
-- ["ST", "init"]
-- ["13BarberShop_V25ShapeV", "Int"]
-- ["13BarberShop_V25ShapeV", "ShapeType"]
-- ["13BarberShop_V25ShapeV", "deinit"]
-- ["13BarberShop_V25ShapeV", "encode"]
-- ["13BarberShop_V25ShapeV", "id"]
-- ["13BarberShop_V25ShapeV", "init"]
-- ["13BarberShop_V25ShapeV", "shape_name"]
-- ["13BarberShop_V29ShapeTypeO", "RawValue"]
-- ["13BarberShop_V29ShapeTypeO", "_Default_RawValue"]
-- !private ["13BarberShop_V29ShapeTypeO", "_findStringSwitchCase"]
-- ["13BarberShop_V29ShapeTypeO", "circleStyle"]
-- ["13BarberShop_V29ShapeTypeO", "deinit"]
-- ["13BarberShop_V29ShapeTypeO", "diamondStyle"]
-- ["13BarberShop_V29ShapeTypeO", "encode"]
-- ["13BarberShop_V29ShapeTypeO", "hash"]
-- ["13BarberShop_V29ShapeTypeO", "hashValue"]
-- ["13BarberShop_V29ShapeTypeO", "init"]
-- ["13BarberShop_V29ShapeTypeO", "oblongStyle"]
-- ["13BarberShop_V29ShapeTypeO", "ovalStyle"]
-- ["13BarberShop_V29ShapeTypeO", "rawValue"]
-- ["13BarberShop_V29ShapeTypeO", "squareStyle"]
-- ["13BarberShop_V29ShapeTypeO", "traingleStyle"]
-- !private ["s12StaticStringV", "init"]
-- !private ["s12StaticStringV", "init"]
-- ["SS", "init"]
-- ["SS", "init"]
-- ["Sy", "init"]
-- ["Sy", "init"]
-- ["13BarberShop_V214StyleListModelV", "Int"]
-- ["13BarberShop_V214StyleListModelV", "Shape"]
-- ["13BarberShop_V214StyleListModelV", "String"]
-- ["13BarberShop_V214StyleListModelV", "StyleProfile"]
-- ["13BarberShop_V214StyleListModelV", "deinit"]
-- ["13BarberShop_V214StyleListModelV", "encode"]
-- ["13BarberShop_V214StyleListModelV", "id"]
-- ["13BarberShop_V214StyleListModelV", "init"]
-- ["13BarberShop_V214StyleListModelV", "shape"]
-- ["13BarberShop_V214StyleListModelV", "style_profile"]
-- ["13BarberShop_V214StyleListModelV", "style_profiles"]
-- ["13BarberShop_V212StyleProfileV", "Bool"]
-- ["13BarberShop_V212StyleProfileV", "Int"]
-- ["13BarberShop_V212StyleProfileV", "String"]
-- ["13BarberShop_V212StyleProfileV", "deinit"]
-- ["13BarberShop_V212StyleProfileV", "encode"]
-- ["13BarberShop_V212StyleProfileV", "file_name"]
-- ["13BarberShop_V212StyleProfileV", "file_path"]
-- ["13BarberShop_V212StyleProfileV", "id"]
-- ["13BarberShop_V212StyleProfileV", "init"]
-- ["13BarberShop_V212StyleProfileV", "status"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["9Alamofire14URLConvertibleP", "init"]
-- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "Int"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "Shape"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "String"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "StyleProfile"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "deinit"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "encode"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "id"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "init"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "shape"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "style_profile"]
+- ["13BarberShop_V29StyleHairV7ResultsV", "style_profiles"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "Int"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "String"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "deinit"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "encode"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "id"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "init"]
+- ["13BarberShop_V29StyleHairV5ShapeV", "shape_name"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- ["13BarberShop_V29StyleHairV", "Bool"]
+- ["13BarberShop_V29StyleHairV", "Codable"]
+- ["13BarberShop_V29StyleHairV", "Int"]
+- ["13BarberShop_V29StyleHairV", "Results"]
+- ["13BarberShop_V29StyleHairV", "Shape"]
+- ["13BarberShop_V29StyleHairV", "String"]
+- ["13BarberShop_V29StyleHairV", "StyleHair"]
+- ["13BarberShop_V29StyleHairV", "StyleProfile"]
+- ["13BarberShop_V29StyleHairV", "deinit"]
+- ["13BarberShop_V29StyleHairV", "encode"]
+- ["13BarberShop_V29StyleHairV", "init"]
+- ["13BarberShop_V29StyleHairV", "results"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "Bool"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "Int"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "String"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "deinit"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "encode"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "file_name"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "file_path"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "id"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "init"]
+- ["13BarberShop_V29StyleHairV0D7ProfileV", "status"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- "12FacebookCore26AppEventParameterValueTypeP"
-- "SK"
+- !private "12FacebookCore26AppEventParameterValueTypeP"
+- !private "SK"
 - !private "Sb"
-- "s7CVarArgP"
+- !private "s7CVarArgP"
 - "s9CodingKeyP"
-- "Sl"
-- "SL"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
 - !private "s7DecoderP"
@@ -271,9 +231,9 @@ depends-nominal:
 - !private "s7EncoderP"
 - "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "s6HasherV"
 - !private "7RxCocoa16KVORepresentableP"
@@ -281,29 +241,27 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
-- "Sm"
-- "SY"
-- "ST"
-- "13BarberShop_V25ShapeV"
-- "13BarberShop_V29ShapeTypeO"
-- !private "s12StaticStringV"
-- "SS"
-- "Sy"
-- "13BarberShop_V214StyleListModelV"
-- "13BarberShop_V212StyleProfileV"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
-- "9Alamofire14URLConvertibleP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sm"
+- "13BarberShop_V29StyleHairV7ResultsV"
+- !private "ST"
+- "13BarberShop_V29StyleHairV5ShapeV"
+- !private "SS"
+- !private "Sy"
+- "13BarberShop_V29StyleHairV"
+- "13BarberShop_V29StyleHairV0D7ProfileV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "9Alamofire14URLConvertibleP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
-- "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -314,6 +272,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/FacebookLogin.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
@@ -340,14 +299,18 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXParallaxHeader-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
@@ -360,7 +323,9 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
@@ -368,11 +333,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
@@ -380,16 +349,22 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
@@ -400,6 +375,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
@@ -491,6 +470,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
@@ -500,6 +480,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Headers/FacebookLogin-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
@@ -508,12 +489,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
@@ -528,22 +512,27 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Modules/module.modulemap"
@@ -567,9 +556,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "10ce683ed92399000d42d423986ed38d"
+interface-hash: "0e03eef36fcee9254ae6aeae9be1f029"

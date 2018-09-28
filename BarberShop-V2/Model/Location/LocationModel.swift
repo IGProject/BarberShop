@@ -8,21 +8,23 @@
 
 import Foundation
 
-struct LocationDetail: Codable {
-    let id: Int?
-    let address: String?
-    let phone: String?
-    let work_time:String?
-    let latitude: String?
-    let longitude: String?
-    let location_profile: String?
-    let team: [TeamDetails]?
+struct Locations: Codable {
+    struct Results: Codable {
+        let id:Int
+        let address: String
+        let phone: String
+        let work_time: String
+        let longitude: String
+        let latitude: String
+        let location_profile: String
+        let team:[Teams]
+    }
     
+    struct Teams: Codable{
+        let id: Int
+        let username: String
+        let team_profile: String
+    }
     
+    let results:[Locations.Results]
 }
-
-struct TypeLocation {
-    let type: String
-    let belonging:[String]
-}
-

@@ -1,0 +1,10 @@
+framework module SSSpinnerButton {
+  umbrella header "SSSpinnerButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SSSpinnerButton.__Swift {
+    exclude header "SSSpinnerButton-Swift.h"
+}

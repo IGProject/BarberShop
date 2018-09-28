@@ -7,24 +7,43 @@
 //
 
 import Foundation
+import FacebookCore
 
-struct UserSocialModel:Codable {
-    let username:String?
-    let email:String?
-    let token:String?
-    let user_id:String?
-    let image:String?
-    let type: UserType?
+struct FacebookUser:GraphRequestProtocol {
+    
+    var graphPath: String = "/me"
+    var parameters: [String : Any]? = ["fields":"id,email, name"]
+    var accessToken: AccessToken? = AccessToken.current
+    var httpMethod: GraphRequestHTTPMethod = .GET
+    var apiVersion: GraphAPIVersion = .defaultVersion
+    
+    struct Response: GraphResponseProtocol {
+        var username:String?
+        var email:String?
+        var token:String?
+        var user_id:String?
+        var image:String?
+        var type: UserType?
+        init(rawResponse: Any?) {
+            if let dict = rawResponse as? [String:Any]{
+                self.username = (dict["name"] as? String)!
+                self.email = (dict["email"] as? String)!
+                self.user_id = (dict["id"] as? String)!
+            }
+        }
+        
+        
+    }
 }
 
-struct UserEmailModel:Codable {
-  let f_name: String?
-  let l_name: String?
-  let sex: String?
-  let username: String?
-  let password: String?
-  let base64_image: String?
-  let type: UserType?
+struct UserEmail:Codable {
+  let f_name: String
+  let l_name: String
+  let sex: String
+  let username: String
+  let password: String
+  let base64_image: String
+  let type: UserType
 }
 
 enum UserType: Int,Codable {

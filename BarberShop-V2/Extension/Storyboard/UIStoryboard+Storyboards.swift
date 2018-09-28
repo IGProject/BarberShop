@@ -11,24 +11,24 @@ import UIKit
 extension UIStoryboard {
     /// The uniform place where we state all the storyboard we have in our application
     enum Storyboard: String {
-        case main
-        case signin
-        case signup
-        case home
-        case booking
-        case location
-        case service
-        case hairstyle
-        case product
-        case ourteam
-        case appointment
-        case setting
-        case history
-        case launchscreen
-        case aboutus
+        case Main
+        case SignIn
+        case SignUp
+        case Home
+        case Booking
+        case Location
+        case Service
+        case Hairstyle
+        case Product
+        case Ourteam
+        case Appointment
+        case Setting
+        case History
+        case Launchscreen
+        case AboutUs
         
         var filename: String {
-            return rawValue.capitalized
+            return rawValue
         }
     }
     

@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FirebaseMessaging
+import UserNotifications
 import FacebookCore
 import FBSDKLoginKit
 import GoogleSignIn
@@ -15,17 +17,43 @@ import GoogleMaps
 import GooglePlaces
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
+    
+    static let NOTIFICATION_URL = ""
+    static var DeVICEID = String()
+    static let SERVERKEY = ""
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Firebase configure
+        FirebaseApp.configure()
+        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        
+//        window?.rootViewController = UINavigationController(rootViewController: SignInViewController())
+//        
+//        if #available(iOS 10.0, *)
+//        {
+//            UNUserNotificationCenter.current().delegate = self
+//            
+//            let option: UNAuthorizationOptions = [.alert,.badge,.sound]
+//            UNUserNotificationCenter.current().requestAuthorization(options: option) { (bool, err) in
+//                
+//            }
+//        }else {
+//            let settings: UIUserNotificationSettings  = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
+//            application.registerUserNotificationSettings(settings)
+//        }
         
         //API KEY GOOGLE MAP
         GMSServices.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
         //API KEY GOOGLE PLACE
         GMSPlacesClient.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
         
+        GIDSignIn.sharedInstance().clientID = "57423766550-d80mtn23c1mmlk6n9p5bncd25e49fvcu.apps.googleusercontent.com"
         //navigation
         if #available(iOS 10.0, *) {
             UINavigationBar.appearance().barTintColor = UIColor.init(red: 38/255.0, green: 103/255.0, blue: 164/255.0, alpha: 1)
@@ -37,8 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = textAttributes
         
-        //Firebase configure
-        FirebaseApp.configure()
+        
         
         
         return true

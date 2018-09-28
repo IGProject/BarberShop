@@ -26,9 +26,11 @@ class SignUpViewController: UIViewController {
     
     
     @IBOutlet weak var rePasswordTextField: TextField!
-    
     @IBOutlet weak var rePasswordValidation: UILabel!
     
+    
+    @IBOutlet weak var imageView: RoundedImageView!
+    @IBOutlet weak var tapToChangeProfile: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,8 +38,15 @@ class SignUpViewController: UIViewController {
         setupClearNavigation()
         
         setMoveKeyboardWhenTextField()
+        setTapTochangePhoto()
     }
     
+    func setTapTochangePhoto(){
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(imageTap)
+        tapToChangeProfile.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+    }
     func setMoveKeyboardWhenTextField(){
         //Listen for keyboard events
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -109,16 +118,61 @@ class SignUpViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
-
-    @IBAction func signUpTapped(_ sender: RoundButton) {
+    
+    //Open Image Picker
+    @objc func openImagePicker(){
         
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera){
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController, animated: true)
+            }else {
+                print("Camera not available")
+            }
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController, animated: true)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true)
+    }
+   
+    
+    @IBAction func signUpToHomeTapped(_ sender: RoundButton) {
+        let storyboard:UIStoryboard = UIStoryboard(storyboard: .Home)
+        let home = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        navigationController?.pushViewController(home, animated: true)
     }
     
     @IBAction func signInTapped(_ sender: RoundButton) {
-        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "goToSignIn", sender: self)
     }
 }
 
+extension SignUpViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        imageView.image = image
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
 extension SignUpViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -26,6 +26,15 @@ PODS:
     - FirebaseAnalytics (= 5.1.1)
   - Firebase/CoreOnly (5.7.0):
     - FirebaseCore (= 5.1.2)
+  - Firebase/Database (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
+  - Firebase/Messaging (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.1.1)
+  - Firebase/Storage (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.1)
   - FirebaseAnalytics (5.1.1):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.2)
@@ -43,9 +52,20 @@ PODS:
   - FirebaseAuthInterop (1.0.0)
   - FirebaseCore (5.1.2):
     - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.2.1):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseMessaging (3.1.1):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Reachability (~> 5.2)
+    - Protobuf (~> 3.1)
+  - FirebaseStorage (3.0.1):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (5.1.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
     - GoogleUtilities/MethodSwizzler (~> 5.2.0)
@@ -98,6 +118,7 @@ PODS:
   - HMSegmentedControl (1.5.3)
   - JTAppleCalendar (7.1.5)
   - Kingfisher (4.9.0)
+  - leveldb-library (1.20)
   - Material (2.16.4):
     - Material/Core (= 2.16.4)
   - Material/Core (2.16.4):
@@ -116,9 +137,8 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - NVActivityIndicatorView (4.3.0):
-    - NVActivityIndicatorView/Presenter (= 4.3.0)
-  - NVActivityIndicatorView/Presenter (4.3.0)
+  - PKHUD (5.1.0)
+  - Protobuf (3.6.1)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
@@ -127,10 +147,14 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - FacebookCore
   - FacebookLogin
   - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Messaging
+  - Firebase/Storage
   - GoogleMaps
   - GooglePlaces
   - GoogleSignIn
@@ -138,7 +162,7 @@ DEPENDENCIES:
   - Kingfisher (~> 4.0)
   - Material
   - MXSegmentedPager
-  - NVActivityIndicatorView
+  - PKHUD (~> 5.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SideMenu
@@ -157,7 +181,10 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleMaps
     - GooglePlaces
@@ -169,13 +196,15 @@ SPEC REPOS:
     - HMSegmentedControl
     - JTAppleCalendar
     - Kingfisher
+    - leveldb-library
     - Material
     - Motion
     - MXPagerView
     - MXParallaxHeader
     - MXSegmentedPager
     - nanopb
-    - NVActivityIndicatorView
+    - PKHUD
+    - Protobuf
     - RxCocoa
     - RxSwift
     - SideMenu
@@ -193,7 +222,10 @@ SPEC CHECKSUMS:
   FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 3a97432acb324b439fbed338e642f9cbb516a63d
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
+  FirebaseMessaging: 698c94dd1e3436346c29bb9c85dcdca4c4a0c30b
+  FirebaseStorage: 43f823b96b72a08539eba21a7de043348a69d4c6
   GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
@@ -205,18 +237,20 @@ SPEC CHECKSUMS:
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   JTAppleCalendar: 2d4f974f9f3c8b4964d51ca1f6e004883c031fbe
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
   Motion: 153ba49692997888556c7a95207278a8b1f8be95
   MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   SSSpinnerButton: 6b8215a5e927d16f149f08929e314e4ec25926b2
 
-PODFILE CHECKSUM: ab932406394b5718ac24028d168a832335226318
+PODFILE CHECKSUM: f7225e35b20a08dd48b7d67bde3f441b0bc3fa1d
 
 COCOAPODS: 1.5.0

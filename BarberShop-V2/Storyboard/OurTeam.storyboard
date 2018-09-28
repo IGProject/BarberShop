@@ -45,10 +45,12 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="85"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-nn-4GV" userLabel="line">
-                                                                <rect key="frame" x="0.0" y="43" width="375" height="1"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-nn-4GV" userLabel="line">
+                                                                <rect key="frame" x="0.0" y="43" width="355" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Bz3-I6-IXE"/>
+                                                                </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="R8z-KM-f4k">
                                                                 <rect key="frame" x="30" y="5" width="295" height="30"/>
@@ -108,7 +110,10 @@
                                                         <color key="backgroundColor" red="0.0067290528680000001" green="0.33897179370000002" blue="0.60057240720000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="R8z-KM-f4k" firstAttribute="centerY" secondItem="9gO-IO-bSE" secondAttribute="centerY" constant="-22.5" id="EiA-og-0l7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZRk-nn-4GV" secondAttribute="trailing" id="Fj0-4I-zOF"/>
                                                             <constraint firstItem="WEt-J5-K4R" firstAttribute="leading" secondItem="9gO-IO-bSE" secondAttribute="leading" constant="30" id="PR1-JC-cSC"/>
+                                                            <constraint firstItem="ZRk-nn-4GV" firstAttribute="top" secondItem="R8z-KM-f4k" secondAttribute="bottom" constant="8" id="Qxd-56-Zf9"/>
+                                                            <constraint firstItem="ZRk-nn-4GV" firstAttribute="leading" secondItem="9gO-IO-bSE" secondAttribute="leading" id="aKy-sg-Lww"/>
                                                             <constraint firstItem="WEt-J5-K4R" firstAttribute="centerY" secondItem="9gO-IO-bSE" secondAttribute="centerY" constant="19.75" id="tlo-RE-LZJ"/>
                                                             <constraint firstItem="R8z-KM-f4k" firstAttribute="leading" secondItem="9gO-IO-bSE" secondAttribute="leading" constant="30" id="u0d-PK-0xV"/>
                                                             <constraint firstAttribute="trailing" secondItem="WEt-J5-K4R" secondAttribute="trailing" constant="30" id="upF-2P-bFl"/>

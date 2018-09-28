@@ -167,9 +167,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 @import Foundation;
 @import GoogleMaps;
+@import GoogleSignIn;
 @import JTAppleCalendar;
 @import MXSegmentedPager;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -214,7 +216,7 @@ SWIFT_CLASS("_TtC13BarberShop_V223ApointmentTableViewCell")
 @class UIApplication;
 
 SWIFT_CLASS("_TtC13BarberShop_V211AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
@@ -571,13 +573,6 @@ SWIFT_CLASS("_TtC13BarberShop_V221NearestViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class GMSMarker;
-
-@interface NearestViewController (SWIFT_EXTENSION(BarberShop_V2)) <GMSMapViewDelegate>
-- (BOOL)mapView:(GMSMapView * _Nonnull)mapView didTapMarker:(GMSMarker * _Nonnull)marker SWIFT_WARN_UNUSED_RESULT;
-- (void)mapView:(GMSMapView * _Nonnull)mapView didCloseInfoWindowOfMarker:(GMSMarker * _Nonnull)marker;
-@end
-
 @class CLLocationManager;
 @class CLLocation;
 
@@ -585,6 +580,13 @@ SWIFT_CLASS("_TtC13BarberShop_V221NearestViewController")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
+
+@class GMSMarker;
+
+@interface NearestViewController (SWIFT_EXTENSION(BarberShop_V2)) <GMSMapViewDelegate>
+- (BOOL)mapView:(GMSMapView * _Nonnull)mapView didTapMarker:(GMSMarker * _Nonnull)marker SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(GMSMapView * _Nonnull)mapView didCloseInfoWindowOfMarker:(GMSMarker * _Nonnull)marker;
 @end
 
 
@@ -645,13 +647,6 @@ SWIFT_CLASS("_TtC13BarberShop_V221OurTeamCollectionCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageOurTeam;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTeam;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneTeam;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC13BarberShop_V227OurTeamDetailCollectionCell")
-@interface OurTeamDetailCollectionCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -910,16 +905,18 @@ SWIFT_CLASS("_TtC13BarberShop_V211SidebarView")
 @end
 
 @class TextField;
-@class UIStoryboardSegue;
+@class SSSpinnerButton;
+@class GIDSignIn;
+@class GIDGoogleUser;
 
 SWIFT_CLASS("_TtC13BarberShop_V220SignInViewController")
-@interface SignInViewController : UIViewController
+@interface SignInViewController : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified passwordTextField;
-@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified signInButtonGroup;
+@property (nonatomic, weak) IBOutlet SSSpinnerButton * _Null_unspecified signInButtonGroup;
 - (void)viewDidLoad;
-- (IBAction)SignInTappedGroup:(UIButton * _Nonnull)sender;
-- (IBAction)unwindToOne:(UIStoryboardSegue * _Nonnull)sender;
+- (IBAction)SignInTappedGroup:(SSSpinnerButton * _Nonnull)sender;
+- (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
 - (IBAction)registerTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -943,9 +940,12 @@ SWIFT_CLASS("_TtC13BarberShop_V220SignUpViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passwordValidation;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified rePasswordTextField;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rePasswordValidation;
+@property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified tapToChangeProfile;
 - (void)viewDidLoad;
 - (void)keyboardWillChangeWithNotification:(NSNotification * _Nonnull)notification;
-- (IBAction)signUpTapped:(RoundButton * _Nonnull)sender;
+- (void)openImagePicker;
+- (IBAction)signUpToHomeTapped:(RoundButton * _Nonnull)sender;
 - (IBAction)signInTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -954,6 +954,13 @@ SWIFT_CLASS("_TtC13BarberShop_V220SignUpViewController")
 
 @interface SignUpViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImagePickerController;
+
+@interface SignUpViewController (SWIFT_EXTENSION(BarberShop_V2)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 @end
 
 

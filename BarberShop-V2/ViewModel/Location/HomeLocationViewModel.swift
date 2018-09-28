@@ -18,7 +18,7 @@ class HomeLocationViewModel {
     
     private lazy var nearByViewController: NearestViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(storyboard: .location)
+        let storyboard = UIStoryboard(storyboard: .Location)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController() as! NearestViewController
@@ -31,7 +31,7 @@ class HomeLocationViewModel {
     
     private lazy var byLocationsViewController: ByLocationViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(storyboard: .location)
+        let storyboard = UIStoryboard(storyboard: .Location)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController() as! ByLocationViewController
@@ -47,7 +47,7 @@ class HomeLocationViewModel {
     //----------------------------------------------------------------
     
     static func viewController() -> HomeLocationViewController {
-        return UIStoryboard.init(storyboard: .location).instantiateInitialViewController() as! HomeLocationViewController
+        return UIStoryboard.init(storyboard: .Location).instantiateInitialViewController() as! HomeLocationViewController
     }
     
 //    private func updateView() {

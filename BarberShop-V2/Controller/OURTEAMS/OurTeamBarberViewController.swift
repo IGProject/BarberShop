@@ -11,14 +11,15 @@ import UIKit
 class OurTeamBarberViewController: UIViewController {
     
     @IBOutlet weak var teamCollectionView: UICollectionView!
-    
+    let serviceClient = AppServerClient()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         teamCollectionView.delegate = self
         teamCollectionView.dataSource = self
-        
         setupClearNavigation()
+        
+        
     }
     
     func setupClearNavigation() {

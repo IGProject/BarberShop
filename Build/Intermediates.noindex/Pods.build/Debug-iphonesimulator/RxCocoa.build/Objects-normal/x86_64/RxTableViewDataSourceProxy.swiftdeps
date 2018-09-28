@@ -8,7 +8,6 @@ provides-member:
 - ["So11UITableViewC", ""]
 - ["7RxCocoa0A24TableViewDataSourceProxyC", ""]
 provides-dynamic-lookup:
-- "tableView"
 depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
@@ -22,6 +21,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "NSObject"
 - "RxTableViewDataSourceProxy"
+- !private "StringLiteralType"
 - "TableViewDataSourceNotSet"
 - "UITableView"
 - "UITableViewCell"
