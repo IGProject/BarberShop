@@ -11,7 +11,7 @@ import UIKit
 extension UIStoryboard {
     /// The uniform place where we state all the storyboard we have in our application
     enum Storyboard: String {
-        case Main
+        case Rewardpoint
         case SignIn
         case SignUp
         case Home

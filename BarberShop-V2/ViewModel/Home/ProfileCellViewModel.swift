@@ -6,31 +6,13 @@
 //  Copyright © 2018 minea. All rights reserved.
 //
 
+import UIKit
+import RxSwift
+import RxCocoa
+
 protocol ProfileCellViewModel {
-    var profileItem: ProfileModel{get}
-    var profileImage: String {get}
-    var userName: String {get}
-    var emailText: String {get}
+    var profileImage: Variable<String> {get}
+    var usernmae: Variable<String> {get}
+    var email: Variable <String> {get}
 }
-
-extension ProfileModel: ProfileCellViewModel {
-    var profileItem: ProfileModel {
-        return self
-    }
-    var profileImage: String {
-      return image
-    }
-    
-    var userName: String {
-        return profileItem.userName
-    }
-    
-    var emailText: String {
-        return profileItem.email
-    }
-    
-   
-    
-}
-
 

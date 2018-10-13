@@ -32,6 +32,17 @@ class AppointmentCalendarViewController: UIViewController {
         calendarView.scrollToDate(Date(),animateScroll: false)
         calendarView.selectDates([Date()])
          self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Calendar", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        
+          setupClearNavigation()
+    }
+    
+    
+    func setupClearNavigation() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+        
     }
 }
 
@@ -50,9 +61,9 @@ extension AppointmentCalendarViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ApointmentTableViewCell", for: indexPath) as! ApointmentTableViewCell
-        cell.dateLabel.text = ""
-        cell.timeLabel.text = ""
-        cell.descripLabel.text = ""
+//        cell.dateLabel.text = ""
+//        cell.timeLabel.text = ""
+//        cell.descripLabel.text = ""
         return cell
     }
 }
@@ -137,7 +148,7 @@ extension AppointmentCalendarViewController: JTAppleCalendarViewDataSource {
           startDate = calendarStartDate
           endDate = calendarEndDate
         }
-        parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: 1)
+        parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
         return parameters
     }
 }

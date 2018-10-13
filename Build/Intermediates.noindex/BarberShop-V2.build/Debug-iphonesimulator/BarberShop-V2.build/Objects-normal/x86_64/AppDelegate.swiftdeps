@@ -29,8 +29,8 @@ depends-top-level:
 - !private "GMSServices"
 - !private "IntegerLiteralType"
 - !private "NSAttributedStringKey"
-- "String"
-- "StringLiteralType"
+- !private "String"
+- !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
@@ -44,16 +44,13 @@ depends-top-level:
 - !private "||"
 depends-member:
 - ["13BarberShop_V211AppDelegateC", "Bool"]
-- ["13BarberShop_V211AppDelegateC", "DeVICEID"]
 - !private ["13BarberShop_V211AppDelegateC", "FBSDKApplicationDelegate"]
 - !private ["13BarberShop_V211AppDelegateC", "FirebaseApp"]
 - !private ["13BarberShop_V211AppDelegateC", "GIDSignIn"]
 - !private ["13BarberShop_V211AppDelegateC", "GMSPlacesClient"]
 - !private ["13BarberShop_V211AppDelegateC", "GMSServices"]
-- ["13BarberShop_V211AppDelegateC", "NOTIFICATION_URL"]
 - !private ["13BarberShop_V211AppDelegateC", "NSAttributedStringKey"]
-- ["13BarberShop_V211AppDelegateC", "SERVERKEY"]
-- ["13BarberShop_V211AppDelegateC", "String"]
+- !private ["13BarberShop_V211AppDelegateC", "String"]
 - ["13BarberShop_V211AppDelegateC", "UIApplication"]
 - ["13BarberShop_V211AppDelegateC", "UIApplicationLaunchOptionsKey"]
 - ["13BarberShop_V211AppDelegateC", "UIApplicationOpenURLOptionsKey"]
@@ -77,10 +74,10 @@ depends-member:
 - ["13BarberShop_V211AppDelegateC", "init"]
 - ["13BarberShop_V211AppDelegateC", "userNotificationCenter"]
 - ["13BarberShop_V211AppDelegateC", "window"]
-- ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- ["12FacebookCore26AppEventParameterValueTypeP", "init"]
-- ["SK", "init"]
-- ["SK", "init"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["So15CALayerDelegateP", "appearance"]
 - !private ["So15CALayerDelegateP", "barTintColor"]
 - !private ["So15CALayerDelegateP", "tintColor"]
@@ -91,7 +88,6 @@ depends-member:
 - !private ["s7CVarArgP", "GMSPlacesClient"]
 - !private ["s7CVarArgP", "GMSServices"]
 - !private ["s7CVarArgP", "NSAttributedStringKey"]
-- ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -114,8 +110,8 @@ depends-member:
 - !private ["s7CVarArgP", "clientID"]
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "handle"]
-- ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "provideAPIKey"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sharedInstance"]
@@ -126,18 +122,17 @@ depends-member:
 - ["s7CVarArgP", "userNotificationCenter"]
 - !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", "window"]
-- ["Sl", "init"]
-- ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
 - !private ["Sl", "subscript"]
-- ["SL", "init"]
-- ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "GMSPlacesClient"]
 - !private ["s28CustomDebugStringConvertibleP", "GMSServices"]
 - !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
-- ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -160,8 +155,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "clientID"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "handle"]
-- ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "provideAPIKey"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
@@ -172,13 +167,13 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", "window"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "application"]
 - !private ["s17CustomReflectableP", "clientID"]
 - !private ["s17CustomReflectableP", "handle"]
-- ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
@@ -186,7 +181,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "GMSPlacesClient"]
 - !private ["s23CustomStringConvertibleP", "GMSServices"]
 - !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
-- ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -209,8 +203,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "clientID"]
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "handle"]
-- ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "provideAPIKey"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sharedInstance"]
@@ -224,15 +218,15 @@ depends-member:
 - !private ["Se", "application"]
 - !private ["Se", "clientID"]
 - !private ["Se", "handle"]
-- ["Se", "init"]
-- ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["SD", "subscript"]
 - !private ["SE", "application"]
 - !private ["SE", "clientID"]
 - !private ["SE", "handle"]
-- ["SE", "init"]
-- ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "subscript"]
 - !private ["SQ", "FBSDKApplicationDelegate"]
 - !private ["SQ", "FirebaseApp"]
@@ -240,7 +234,6 @@ depends-member:
 - !private ["SQ", "GMSPlacesClient"]
 - !private ["SQ", "GMSServices"]
 - !private ["SQ", "NSAttributedStringKey"]
-- ["SQ", "String"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIApplicationOpenURLOptionsKey"]
 - !private ["SQ", "UIColor"]
@@ -264,8 +257,8 @@ depends-member:
 - !private ["SQ", "configure"]
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "handle"]
-- ["SQ", "init"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "lightContent"]
 - !private ["SQ", "provideAPIKey"]
 - !private ["SQ", "shared"]
@@ -279,15 +272,15 @@ depends-member:
 - !private ["SQ", "white"]
 - ["SQ", "window"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "application"]
 - !private ["s23ExpressibleByNilLiteralP", "clientID"]
 - !private ["s23ExpressibleByNilLiteralP", "handle"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s26ExpressibleByStringLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So24FBSDKApplicationDelegateC", "application"]
 - !private ["So24FBSDKApplicationDelegateC", "sharedInstance"]
 - !private ["So6FIRAppC", "configure"]
@@ -302,7 +295,6 @@ depends-member:
 - !private ["SH", "GMSPlacesClient"]
 - !private ["SH", "GMSServices"]
 - !private ["SH", "NSAttributedStringKey"]
-- ["SH", "String"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UIApplicationOpenURLOptionsKey"]
 - !private ["SH", "UIColor"]
@@ -326,8 +318,8 @@ depends-member:
 - !private ["SH", "configure"]
 - !private ["SH", "foregroundColor"]
 - !private ["SH", "handle"]
-- ["SH", "init"]
-- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
 - !private ["SH", "lightContent"]
 - !private ["SH", "provideAPIKey"]
 - !private ["SH", "shared"]
@@ -341,10 +333,10 @@ depends-member:
 - !private ["SH", "white"]
 - ["SH", "window"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
-- ["s10MirrorPathP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "appearance"]
 - !private ["So8NSCodingP", "barTintColor"]
 - !private ["So8NSCodingP", "init"]
@@ -362,16 +354,13 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - ["So8NSObjectC", "Bool"]
-- ["So8NSObjectC", "DeVICEID"]
 - !private ["So8NSObjectC", "FBSDKApplicationDelegate"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - !private ["So8NSObjectC", "GIDSignIn"]
 - !private ["So8NSObjectC", "GMSPlacesClient"]
 - !private ["So8NSObjectC", "GMSServices"]
-- ["So8NSObjectC", "NOTIFICATION_URL"]
 - !private ["So8NSObjectC", "NSAttributedStringKey"]
-- ["So8NSObjectC", "SERVERKEY"]
-- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - ["So8NSObjectC", "UIApplicationOpenURLOptionsKey"]
@@ -413,7 +402,6 @@ depends-member:
 - !private ["So8NSObjectP", "GMSPlacesClient"]
 - !private ["So8NSObjectP", "GMSServices"]
 - !private ["So8NSObjectP", "NSAttributedStringKey"]
-- ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So8NSObjectP", "UIColor"]
@@ -454,8 +442,8 @@ depends-member:
 - !private ["Sq", "application"]
 - !private ["Sq", "clientID"]
 - !private ["Sq", "handle"]
-- ["Sm", "init"]
-- ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
 - !private ["SY", "foregroundColor"]
 - !private ["SY", "lightContent"]
 - !private ["SY", "sourceApplication"]
@@ -465,7 +453,6 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "GMSPlacesClient"]
 - !private ["7RxSwift18ReactiveCompatibleP", "GMSServices"]
 - !private ["7RxSwift18ReactiveCompatibleP", "NSAttributedStringKey"]
-- ["7RxSwift18ReactiveCompatibleP", "String"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIApplication"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIApplicationOpenURLOptionsKey"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
@@ -499,17 +486,17 @@ depends-member:
 - ["7RxSwift18ReactiveCompatibleP", "userNotificationCenter"]
 - !private ["7RxSwift18ReactiveCompatibleP", "white"]
 - ["7RxSwift18ReactiveCompatibleP", "window"]
-- ["ST", "init"]
-- ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["ST", "subscript"]
-- ["SS", "init"]
-- ["SS", "init"]
-- ["Sy", "init"]
-- ["Sy", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
-- ["s20TextOutputStreamableP", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "appearance"]
 - !private ["So29UIAccessibilityIdentificationP", "barTintColor"]
 - !private ["So29UIAccessibilityIdentificationP", "tintColor"]
@@ -530,7 +517,6 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "GMSPlacesClient"]
 - !private ["So21UIApplicationDelegateP", "GMSServices"]
 - !private ["So21UIApplicationDelegateP", "NSAttributedStringKey"]
-- ["So21UIApplicationDelegateP", "String"]
 - !private ["So21UIApplicationDelegateP", "UIApplication"]
 - !private ["So21UIApplicationDelegateP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So21UIApplicationDelegateP", "UIColor"]
@@ -587,7 +573,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "GMSPlacesClient"]
 - !private ["So30UIPasteConfigurationSupportingP", "GMSServices"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
-- ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -616,16 +601,13 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "userNotificationCenter"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
-- ["So11UIResponderC", "DeVICEID"]
 - !private ["So11UIResponderC", "FBSDKApplicationDelegate"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - !private ["So11UIResponderC", "GIDSignIn"]
 - !private ["So11UIResponderC", "GMSPlacesClient"]
 - !private ["So11UIResponderC", "GMSServices"]
-- ["So11UIResponderC", "NOTIFICATION_URL"]
 - !private ["So11UIResponderC", "NSAttributedStringKey"]
-- ["So11UIResponderC", "SERVERKEY"]
-- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - ["So11UIResponderC", "UIApplicationOpenURLOptionsKey"]
@@ -662,7 +644,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "GMSPlacesClient"]
 - !private ["So30UIResponderStandardEditActionsP", "GMSServices"]
 - !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
-- ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -701,7 +682,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "GMSPlacesClient"]
 - !private ["So23UIUserActivityRestoringP", "GMSServices"]
 - !private ["So23UIUserActivityRestoringP", "NSAttributedStringKey"]
-- ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
@@ -739,7 +719,6 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "GMSPlacesClient"]
 - !private ["So32UNUserNotificationCenterDelegateP", "GMSServices"]
 - !private ["So32UNUserNotificationCenterDelegateP", "NSAttributedStringKey"]
-- ["So32UNUserNotificationCenterDelegateP", "String"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIApplication"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIColor"]
@@ -759,25 +738,25 @@ depends-member:
 - ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
 - ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
 - ["So32UNUserNotificationCenterDelegateP", "window"]
-- ["9Alamofire14URLConvertibleP", "init"]
-- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleTextAttributes"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sourceApplication"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -787,7 +766,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSPlacesClient"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSServices"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplicationOpenURLOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -825,35 +803,35 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "clientID"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
 - !private ["s21_ObjectiveCBridgeableP", "handle"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "sourceApplication"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s20_SwiftNewtypeWrapperP", "sourceApplication"]
-- ["s16_SwiftStringViewP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "13BarberShop_V211AppDelegateC"
-- "12FacebookCore26AppEventParameterValueTypeP"
-- "SK"
+- !private "12FacebookCore26AppEventParameterValueTypeP"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- "Sl"
-- "SL"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "Se"
+- !private "Se"
 - !private "SD"
-- "SE"
+- !private "SE"
 - "SQ"
 - !private "s30ExpressibleByDictionaryLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So24FBSDKApplicationDelegateC"
 - !private "So6FIRAppC"
 - !private "So9GIDSignInC"
@@ -861,8 +839,8 @@ depends-nominal:
 - !private "So11GMSServicesC"
 - "SH"
 - !private "So21NSAttributedStringKeya"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -872,14 +850,14 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So30UIApplicationOpenURLOptionsKeya"
 - !private "Sq"
-- "Sm"
+- !private "Sm"
 - !private "SY"
 - "7RxSwift18ReactiveCompatibleP"
-- "ST"
-- "SS"
-- "Sy"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -901,19 +879,19 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So32UNUserNotificationCenterDelegateP"
-- "9Alamofire14URLConvertibleP"
+- !private "9Alamofire14URLConvertibleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s21_ObjectiveCBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
-- "s16_SwiftStringViewP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -951,11 +929,9 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-umbrella.h"
@@ -975,9 +951,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
@@ -985,15 +959,11 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
@@ -1001,19 +971,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
@@ -1027,10 +993,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
@@ -1122,7 +1084,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
@@ -1141,15 +1102,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
@@ -1164,19 +1122,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules/module.modulemap"
@@ -1214,4 +1169,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "13ec9eb77f355db706366a56a97008f9"
+interface-hash: "def72a8ba94814c791e5e8e0e85dbfaa"

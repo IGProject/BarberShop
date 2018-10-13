@@ -17,9 +17,8 @@ enum Rows: String {
     case home
     case my_appointments
     case reward_points
-    case notification
+    case history
     case setting
-    case transaction_history
     case about_us
     case signOut
     case none
@@ -30,14 +29,15 @@ enum Rows: String {
         case 1: self = .home
         case 2: self = .my_appointments
         case 3: self = .reward_points
-        case 4: self = .notification
+        case 4: self = .history
         case 5: self = .setting
-        case 6: self = .transaction_history
-        case 7: self = .about_us
-        case 8: self = .signOut
+        case 6: self = .about_us
+        case 7: self = .signOut
         default: self = .none
         }
     }
 }
+
+
 
 

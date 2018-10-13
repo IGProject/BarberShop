@@ -20,7 +20,7 @@ class AppServerClient {
     typealias GetTeamsCompletion = (_ result: GetTeamsResult) -> Void
     
     func getTeams(completion: @escaping GetTeamsCompletion){
-        Alamofire.request("http://192.168.2.193:8000/team/list")
+        Alamofire.request("https://96.9.66.134/BarberShopRest/team/list")
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -57,7 +57,7 @@ extension AppServerClient {
     typealias GetStyleListsCompletion = (_ result: GetStyleListResult) -> Void
     
     func getStyleLists(completion: @escaping GetStyleListsCompletion) {
-        Alamofire.request("http://192.168.2.253:8000/style/list")
+        Alamofire.request("https://96.9.66.134/BarberShopRest/style/list")
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -95,7 +95,7 @@ extension AppServerClient {
     typealias GetLocationsCompletion = (_ result: GetLocationResult) -> Void
     
     func getLocation(completion: @escaping GetLocationsCompletion){
-        Alamofire.request("http://192.168.2.193:8000/location/list/")
+        Alamofire.request("https://96.9.66.134/BarberShopRest/location/list/")
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -132,7 +132,7 @@ extension AppServerClient {
     typealias GetProductsCompletion = (_ result: GetProductsResult) -> Void
     
     func getProducts(completion: @escaping GetProductsCompletion){
-        Alamofire.request("http://192.168.2.193:8000/product/list")
+        Alamofire.request("https://96.9.66.134/BarberShopRest/product/list")
         .validate()
             .responseJSON { response in
                 switch response.result {
@@ -171,7 +171,7 @@ extension AppServerClient {
     typealias GetFindNearsCompletion = (_ result: GetFindNearResult) -> Void
     
     func getFindNears(lat:Double,lng:Double,r:Int,completion: @escaping GetFindNearsCompletion){
-        Alamofire.request("http://192.168.2.193:8000/location/findNear?lat=\(lat)&lng=\(lng)&r=\(r)")
+        Alamofire.request("https://96.9.66.134/BarberShopRest/location/findNear?lat=\(lat)&lng=\(lng)&r=\(r)")
         .validate()
             .responseJSON { response in
                 switch response.result {
@@ -211,17 +211,15 @@ extension AppServerClient {
     typealias PostRegisterResult = EmptyResult<PostRegisterFailureReason>
     typealias PostRegisterCompletion = (_ result: PostRegisterResult) -> Void
     
-    func postRegister(useremail:UserEmail, completion: @escaping PostRegisterCompletion){
+    func postRegister(username:String,phone: String,password: String,type:Int, completion: @escaping PostRegisterCompletion){
         
-        let param = ["f_name": useremail.f_name,
-                     "l_name":useremail.l_name,
-                     "sex":useremail.sex,
-                     "username":useremail.username,
-                     "password":useremail.password,
-                     "base64_image":useremail.base64_image,
-                     "type":useremail.type.rawValue] as [String : Any]
+        let param = ["username":username,
+                     "phone":phone,
+                     "password":password,
+                     //"base64_image":base64_image,
+                     "type":type] as [String : Any]
         
-        Alamofire.request("http://192.168.2.193:8000/register_user", method: .post, parameters: param, encoding: JSONEncoding.default)
+        Alamofire.request("https://96.9.66.134/BarberShopRest/register_user", method: .post, parameters: param, encoding: JSONEncoding.default)
         .validate()
             .responseJSON { response in
                 switch response.result {
@@ -292,7 +290,7 @@ extension AppServerClient {
                       "service_id":booking.service_id,
                       "team_id":booking.team_id ] as [String : Any]
         
-        Alamofire.request("http://192.168.2.193:8000/bookItem/book", method: .post, parameters: param, encoding: JSONEncoding.default)
+        Alamofire.request("https://96.9.66.134/BarberShopRest/bookItem/book", method: .post, parameters: param, encoding: JSONEncoding.default)
         .validate()
             .responseJSON { response in
                 switch response.result {
@@ -322,7 +320,7 @@ extension AppServerClient {
     func postCancel(cancelbooking:CancelBooking,completion: @escaping PostCancelCompletion){
         let param = ["book_id":cancelbooking.booking_id,
                      "user_reason":cancelbooking.user_reason] as [String : Any]
-        Alamofire.request("http://192.168.2.193:8000/bookItem/cancel", method: .post, parameters: param, encoding: JSONEncoding.default)
+        Alamofire.request("https://96.9.66.134/BarberShopRest/bookItem/cancel/\(cancelbooking.booking_id)", method: .post, parameters: param, encoding: JSONEncoding.default)
             .validate()
             .responseJSON { response in
                 switch response.result {
@@ -361,7 +359,7 @@ extension AppServerClient {
                      "seva_id":editbooking.seva_id,
                      "team_id":editbooking.team_id] as [String : Any]
         
-        Alamofire.request("http://192.168.2.193:8000/editBooking/\(editbooking.booking_id)", method: .patch, parameters: param, encoding: JSONEncoding.default)
+        Alamofire.request("https://96.9.66.134/BarberShopRest/editBooking/\(editbooking.booking_id)", method: .post, parameters: param, encoding: JSONEncoding.default)
         .validate()
             .responseJSON { response in
                 switch response.result {

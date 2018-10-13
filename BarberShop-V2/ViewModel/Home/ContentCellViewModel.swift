@@ -6,24 +6,11 @@
 //  Copyright © 2018 minea. All rights reserved.
 //
 
-protocol ContentCellViewModel {
-    var contentItem: ContentModel {get}
-    var imageView: String {get}
-    var content: String {get}
-}
+import UIKit
+import RxSwift
+import RxCocoa
 
-extension ContentModel: ContentCellViewModel {
-    var contentItem: ContentModel {
-        return self
-    }
-    
-    var imageView: String {
-        return contentItem.image
-    }
-    
-    var content: String {
-        return contentItem.contentText
-    }
-    
-    
+protocol ContentCellViewModel {
+    var imageIcon: Variable<String> {get}
+    var title: Variable<String> {get}
 }

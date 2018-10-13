@@ -17,8 +17,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        setupClearNavigation()
-        setupSideMenu()
+       setupClearNavigation()
+       setupSideMenu()
     }
     
     func setupClearNavigation() {
@@ -27,7 +27,6 @@ class HomeViewController: UIViewController {
 //        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
         UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
         
-        self.navigationItem.titleView = setTitle(title: "DASHBOARD", subtitle: "")
     }
     
     //MARK- Setup SideMenu
@@ -45,42 +44,12 @@ class HomeViewController: UIViewController {
         
     }
     
-    func setTitle(title:String, subtitle:String) -> UIView {
-        let titleLabel = UILabel(frame:CGRect(x: 0, y: -2, width: 0, height: 0))
-        
-        titleLabel.backgroundColor = UIColor.clear
-        titleLabel.textColor = UIColor.white
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        titleLabel.text = title
-        titleLabel.sizeToFit()
-        
-        let subtitleLabel = UILabel(frame: CGRect(x: 0, y: 18, width: 0, height: 0))
-        subtitleLabel.backgroundColor = UIColor.clear
-        subtitleLabel.textColor = UIColor.white
-        subtitleLabel.font = UIFont.systemFont(ofSize: 12)
-        subtitleLabel.text = subtitle
-        subtitleLabel.sizeToFit()
-        
-        let titleView = UIView(frame: CGRect(x: 0, y:0, width: max(titleLabel.frame.size.width, subtitleLabel.frame.size.width), height: 30))
-        titleView.addSubview(titleLabel)
-        titleView.addSubview(subtitleLabel)
-        
-        let widthDiff = subtitleLabel.frame.size.width - titleLabel.frame.size.width
-        
-        if widthDiff < 0 {
-            let newX = widthDiff / 2
-            subtitleLabel.frame.origin.x = abs(newX)
-        } else {
-            let newX = widthDiff / 2
-            titleLabel.frame.origin.x = newX
-        }
-        
-        return titleView
-    }
 
+     @IBAction func unwindToVC(segue:UIStoryboardSegue) { }
+    
     
     @IBAction func menuTapped(_ sender: UIBarButtonItem) {
-        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+        present(SideMenuManager.default.menuLeftNavigationController!, animated: true)
     }
     
 }
@@ -115,7 +84,7 @@ extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegat
             performSegue(withIdentifier: "homeLocationIdentifier", sender: self)
             break
         case 2:
-            performSegue(withIdentifier: "serviceIdentifier", sender: self)
+           performSegue(withIdentifier: "serviceIdentifier", sender: self)
             break
         case 3:
             performSegue(withIdentifier: "hairstyleIdentifier", sender: self)

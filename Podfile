@@ -8,8 +8,6 @@ target 'BarberShop-V2' do
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Messaging'
-pod 'Firebase/Database'
-pod 'Firebase/Storage'
 pod 'FBSDKLoginKit'
 pod 'FacebookCore'
 pod 'FacebookLogin'

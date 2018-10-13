@@ -63,12 +63,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m66-Eg-zrb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Vq1-dU-lz1"/>
+                    <navigationItem key="navigationItem" id="Vq1-dU-lz1">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="LhZ-tf-3Yn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="ehC-nG-QVL" kind="unwind" unwindAction="unwindToVCWithSegue:" id="0Av-b7-dBw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="rewardCollectionView" destination="3no-kE-YgT" id="K9p-GQ-VTc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBU-Cu-Awd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ehC-nG-QVL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="781.60000000000002" y="195.6521739130435"/>
         </scene>

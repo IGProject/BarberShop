@@ -76,29 +76,26 @@ extension SideBarMenuViewController: UITableViewDelegate,UITableViewDataSource {
     
         switch indexPath.row {
         case 0:
-            performSegue(withIdentifier: "", sender: self)
             break
         case 1:
-           // performSegue(withIdentifier: "", sender: self)
-            break
+            let storyboard = UIStoryboard(storyboard: .Home)
+            let home = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(home, animated: true)
         case 2:
-           // performSegue(withIdentifier: "", sender: self)
-            break
+           performSegue(withIdentifier: "calendarIdentifier", sender: self)
         case 3:
-           // performSegue(withIdentifier: "", sender: self)
-            break
+            performSegue(withIdentifier: "awardIdentifier", sender: self)
         case 4:
-            //performSegue(withIdentifier: "", sender: self)
-            break
+            performSegue(withIdentifier: "historyIdentifier", sender: self)
         case 5:
-           // performSegue(withIdentifier: "", sender: self)
-            break
+           performSegue(withIdentifier: "settingIdentifier", sender: self)
         case 6:
-           // performSegue(withIdentifier: "", sender: self)
-            break
+            performSegue(withIdentifier: "aboutIdentifier", sender: self)
         case 7:
-            self.dismiss(animated: true, completion: nil)
-            break
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.window?.rootViewController?.dismiss(animated: true, completion: nil)
+                (appDelegate.window?.rootViewController as? UINavigationController)?.popToRootViewController(animated: true)
+            }
         default:
             print("nothing")
         }

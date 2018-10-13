@@ -9,38 +9,65 @@
 import UIKit
 import Material
 import Motion
+import RxSwift
+import RxCocoa
 
 class SignUpViewController: UIViewController {
-    //MARK- Outlet Connection
+    //MARK- Outlet Connection TextField
     @IBOutlet weak var usernameTextField: TextField!
-    @IBOutlet weak var usernameValidation: UILabel!
-    
     @IBOutlet weak var phoneNumberTextField: TextField!
-    @IBOutlet weak var phoneValidation: UILabel!
-    
     @IBOutlet weak var emailTextField: TextField!
-    @IBOutlet weak var emailValidation: UILabel!
-    
     @IBOutlet weak var passwordTextField: TextField!
-    @IBOutlet weak var passwordValidation: UILabel!
-    
-    
     @IBOutlet weak var rePasswordTextField: TextField!
+    
+    //MARK: ImageView
+    @IBOutlet weak var imageView: RoundedImageView!
+    
+    //MARK: Label error
+    @IBOutlet weak var usernameValidation: UILabel!
+    @IBOutlet weak var phoneValidation: UILabel!
+    @IBOutlet weak var emailValidation: UILabel!
+    @IBOutlet weak var passwordValidation: UILabel!
     @IBOutlet weak var rePasswordValidation: UILabel!
     
-    
-    @IBOutlet weak var imageView: RoundedImageView!
+    //MARK: Button Upload Image
     @IBOutlet weak var tapToChangeProfile: UIButton!
+    
+    @IBOutlet weak var signupTapped: RoundButton!
+    
+    
+    //MOdel
+    var model: RegisterModel!
+    //ViewModel
+    private var registerationViewModel:SignupViewViewModelFromUserRegister!
+    
+    //
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        model = RegisterModel()
         setupTextFieldMaterial()
         setupClearNavigation()
         
         setMoveKeyboardWhenTextField()
         setTapTochangePhoto()
+        configureBinding()
+        
+        model.username = "hello"
+        model.email = "minea.chem@gmail.com"
+        model.phone = "012303030"
+        model.phone = "11111"
+        model.base64_image = "nothing"
+        registerationViewModel = SignupViewViewModelFromUserRegister(withUser: model)
     }
     
+    private func configureBinding(){
+        //binding
+        
+       
+    }
     func setTapTochangePhoto(){
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         imageView.isUserInteractionEnabled = true
@@ -60,6 +87,7 @@ class SignUpViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
+    
     @objc func keyboardWillChange(notification: Notification) {
         guard let keyboardRect = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else {
             return
@@ -147,24 +175,23 @@ class SignUpViewController: UIViewController {
         self.present(actionSheet, animated: true)
     }
    
-    
-    @IBAction func signUpToHomeTapped(_ sender: RoundButton) {
+    @IBAction func signUpTapped(_ sender: RoundButton) {
         let storyboard:UIStoryboard = UIStoryboard(storyboard: .Home)
         let home = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         navigationController?.pushViewController(home, animated: true)
+        
     }
     
     @IBAction func signInTapped(_ sender: RoundButton) {
-        performSegue(withIdentifier: "goToSignIn", sender: self)
+        self.dismiss(animated: true)
     }
 }
+
 
 extension SignUpViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        
         imageView.image = image
         picker.dismiss(animated: true, completion: nil)
     }

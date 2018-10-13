@@ -172,7 +172,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="signUpToHomeTapped:" destination="ee5-lA-Hil" eventType="touchUpInside" id="erY-Dw-RmT"/>
+                                            <action selector="signUpTapped:" destination="ee5-lA-Hil" eventType="touchUpInside" id="YJk-qH-H1C"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lzg-TK-784">
@@ -189,7 +189,6 @@
                                                 <state key="normal" title="Sign In"/>
                                                 <connections>
                                                     <action selector="signInTapped:" destination="ee5-lA-Hil" eventType="touchUpInside" id="oZY-jO-07L"/>
-                                                    <segue destination="mB4-TH-b97" kind="presentation" identifier="goToSignIn" id="MBy-9n-I3T"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -223,6 +222,7 @@
                         <outlet property="phoneValidation" destination="oC9-tH-B2c" id="Kvo-pc-XCc"/>
                         <outlet property="rePasswordTextField" destination="n4k-KY-tK9" id="AOl-oR-FFR"/>
                         <outlet property="rePasswordValidation" destination="c5Z-2o-qYg" id="doG-uz-qRG"/>
+                        <outlet property="signupTapped" destination="bYB-oh-gd3" id="Gbb-Sm-IDl"/>
                         <outlet property="tapToChangeProfile" destination="QQd-oS-2K6" id="TEh-bb-9JN"/>
                         <outlet property="usernameTextField" destination="pTs-rW-mcG" id="1O1-nX-ykM"/>
                         <outlet property="usernameValidation" destination="OH3-9g-l3G" id="Y0Z-8R-g87"/>
@@ -231,14 +231,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyy-Sn-Qbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1723.1884057971015" y="240.48913043478262"/>
-        </scene>
-        <!--SignInViewController-->
-        <scene sceneID="YPQ-os-rRj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SignIn" referencedIdentifier="SignInViewController" id="mB4-TH-b97" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4rQ-gV-0XY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2587" y="49"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mc3-lB-rng">

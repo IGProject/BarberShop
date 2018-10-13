@@ -195,7 +195,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC13BarberShop_V221AboutUsViewController")
 @interface AboutUsViewController : UIViewController
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -510,11 +509,13 @@ SWIFT_CLASS("_TtC13BarberShop_V226HomeLocationViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC13BarberShop_V218HomeViewController")
 @interface HomeViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 - (void)viewDidLoad;
+- (IBAction)unwindToVCWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)menuTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -913,7 +914,6 @@ SWIFT_CLASS("_TtC13BarberShop_V220SignInViewController")
 @interface SignInViewController : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified passwordTextField;
-@property (nonatomic, weak) IBOutlet SSSpinnerButton * _Null_unspecified signInButtonGroup;
 - (void)viewDidLoad;
 - (IBAction)SignInTappedGroup:(SSSpinnerButton * _Nonnull)sender;
 - (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
@@ -931,21 +931,22 @@ SWIFT_CLASS("_TtC13BarberShop_V220SignInViewController")
 SWIFT_CLASS("_TtC13BarberShop_V220SignUpViewController")
 @interface SignUpViewController : UIViewController
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified usernameTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameValidation;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified phoneNumberTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneValidation;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified emailTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailValidation;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified passwordTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passwordValidation;
 @property (nonatomic, weak) IBOutlet TextField * _Null_unspecified rePasswordTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rePasswordValidation;
 @property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameValidation;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneValidation;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailValidation;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passwordValidation;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rePasswordValidation;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified tapToChangeProfile;
+@property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified signupTapped;
 - (void)viewDidLoad;
 - (void)keyboardWillChangeWithNotification:(NSNotification * _Nonnull)notification;
 - (void)openImagePicker;
-- (IBAction)signUpToHomeTapped:(RoundButton * _Nonnull)sender;
+- (IBAction)signUpTapped:(RoundButton * _Nonnull)sender;
 - (IBAction)signInTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

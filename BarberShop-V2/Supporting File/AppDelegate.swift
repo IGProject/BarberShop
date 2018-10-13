@@ -21,9 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     var window: UIWindow?
     
-    static let NOTIFICATION_URL = ""
-    static var DeVICEID = String()
-    static let SERVERKEY = ""
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         

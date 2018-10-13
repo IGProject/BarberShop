@@ -170,7 +170,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="SignInTappedGroup:" destination="15R-B8-W9J" eventType="touchUpInside" id="2lj-5N-P57"/>
+                                                    <action selector="SignInTappedGroup:" destination="15R-B8-W9J" eventType="touchUpInside" id="9K8-Ua-jC8"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="atN-N4-naS" userLabel="Register">
@@ -188,7 +188,7 @@
                                                         <state key="normal" title="Register"/>
                                                         <connections>
                                                             <action selector="registerTapped:" destination="15R-B8-W9J" eventType="touchUpInside" id="sIs-lP-fUN"/>
-                                                            <segue destination="egG-WB-Gq1" kind="presentation" identifier="goToSignUp" id="wYa-5p-gG1"/>
+                                                            <segue destination="egG-WB-Gq1" kind="presentation" identifier="" id="wYa-5p-gG1"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -248,7 +248,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="CxQ-Kb-Fby" id="p84-WG-Tcg"/>
                         <outlet property="passwordTextField" destination="X5w-aa-kP4" id="Z9X-FA-jik"/>
-                        <outlet property="signInButtonGroup" destination="Qpt-k2-UZ6" id="Pmp-sg-bOl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCl-bq-9QD" userLabel="First Responder" sceneMemberID="firstResponder"/>

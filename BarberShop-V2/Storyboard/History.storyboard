@@ -13,20 +13,28 @@
         <!--ACTIVITY-->
         <scene sceneID="x0O-SM-NcB">
             <objects>
-                <viewController id="zrr-g3-Alh" customClass="ContainerHistoryViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerHistoryViewController" id="zrr-g3-Alh" customClass="ContainerHistoryViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elo-KM-GAC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3Gf-2J-LHI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ACTIVITY" id="qq1-Me-8p2"/>
+                    <navigationItem key="navigationItem" title="ACTIVITY" id="qq1-Me-8p2">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="wTf-3c-dT3">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="EPE-0N-bhB" kind="unwind" unwindAction="unwindToVCWithSegue:" id="HB6-DB-lkR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="qRP-C3-Eei" kind="custom" identifier="mx_page_0" customClass="MXPageSegue" id="ZBP-Mc-K4I"/>
                         <segue destination="sYJ-SZ-GYB" kind="custom" identifier="mx_page_1" customClass="MXPageSegue" id="o5c-Up-XYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCc-mY-Fw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EPE-0N-bhB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="212" y="169.56521739130437"/>
         </scene>

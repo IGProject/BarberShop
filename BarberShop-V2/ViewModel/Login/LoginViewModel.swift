@@ -1,13 +1,11 @@
 //
 //  LoginViewModel.swift
 //  BarberShop-V2
-//
 //  Created by User on 5/31/18.
 //  Copyright © 2018 minea. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 import RxSwift
 import RxCocoa
 
@@ -41,6 +39,7 @@ protocol SecureFieldViewModel {
     var isSecureTextEntry: Bool {get}
 }
 
+//PasswordTextField
 class PasswordViewModel: ValidationViewModel,SecureFieldViewModel {
     var isSecureTextEntry: Bool = true
     
@@ -60,6 +59,7 @@ class PasswordViewModel: ValidationViewModel,SecureFieldViewModel {
 }
 
 
+//EmailTextField
 class EmailIdViewModel: ValidationViewModel {
     var errorMessage: String = "Please enter a valid Email Id"
     
@@ -80,7 +80,8 @@ class EmailIdViewModel: ValidationViewModel {
     }
 }
 
-class SignInViewModel {
+
+class SignInButtonViewModel {
     var model: SignInModel
     private let disposeBag = DisposeBag()
     
@@ -106,7 +107,7 @@ class SignInViewModel {
         model.password = passwordFieldViewModel.data.value
         
         //launch request
-    
+       
     }
 }
 
