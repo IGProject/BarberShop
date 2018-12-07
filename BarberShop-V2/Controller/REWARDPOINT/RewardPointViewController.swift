@@ -17,15 +17,10 @@ class RewardPointViewController: UIViewController {
         rewardCollectionView.delegate = self
         rewardCollectionView.dataSource = self
         
-        setupClearNavigation()
+        setupTitleNav()
     }
     
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
-        
+    func setupTitleNav() {
         self.navigationItem.titleView = setTitle(title: "Reward Point", subtitle: "")
     }
     

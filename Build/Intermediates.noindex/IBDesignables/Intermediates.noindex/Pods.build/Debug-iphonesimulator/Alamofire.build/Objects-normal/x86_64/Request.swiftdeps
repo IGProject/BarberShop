@@ -45,6 +45,7 @@ depends-top-level:
 - !private "!"
 - !private "!="
 - !private "+"
+- !private "+="
 - !private "..<"
 - "<<"
 - "=="
@@ -109,11 +110,13 @@ depends-member:
 - !private ["9Alamofire10AdaptErrorV", "init"]
 - !private ["s11AnyHashableV", "init"]
 - !private ["Sa", "append"]
+- !private ["Sa", "forEach"]
 - !private ["Sa", "isEmpty"]
 - !private ["Sa", "joined"]
 - !private ["Sa", "reduce"]
 - !private ["Sa", "subscript"]
 - !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "forEach"]
 - !private ["s13ArrayProtocolP", "isEmpty"]
 - !private ["s13ArrayProtocolP", "joined"]
 - !private ["s13ArrayProtocolP", "reduce"]
@@ -122,6 +125,7 @@ depends-member:
 - !private ["SK", "base64EncodedString"]
 - !private ["SK", "data"]
 - !private ["SK", "endIndex"]
+- !private ["SK", "forEach"]
 - !private ["SK", "index"]
 - !private ["SK", "init"]
 - !private ["SK", "init"]
@@ -149,6 +153,8 @@ depends-member:
 - !private ["s7CVarArgP", "downloadTask"]
 - !private ["s7CVarArgP", "endIndex"]
 - !private ["s7CVarArgP", "error"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "httpAdditionalHeaders"]
 - !private ["s7CVarArgP", "httpCookieStorage"]
 - !private ["s7CVarArgP", "httpShouldSetCookies"]
@@ -160,6 +166,7 @@ depends-member:
 - !private ["s7CVarArgP", "joined"]
 - !private ["s7CVarArgP", "lock"]
 - !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "originalRequest"]
 - !private ["s7CVarArgP", "password"]
@@ -192,11 +199,14 @@ depends-member:
 - !private ["Sl", "base64EncodedString"]
 - !private ["Sl", "data"]
 - !private ["Sl", "endIndex"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "forEach"]
 - !private ["Sl", "index"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["Sl", "isEmpty"]
 - !private ["Sl", "joined"]
+- !private ["Sl", "map"]
 - !private ["Sl", "reduce"]
 - !private ["Sl", "replacingOccurrences"]
 - !private ["Sl", "subscript"]
@@ -258,6 +268,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "endIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "endTime"]
 - !private ["s28CustomDebugStringConvertibleP", "error"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "host"]
 - !private ["s28CustomDebugStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s28CustomDebugStringConvertibleP", "httpBody"]
@@ -272,6 +284,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "joined"]
 - !private ["s28CustomDebugStringConvertibleP", "lock"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "originalRequest"]
 - !private ["s28CustomDebugStringConvertibleP", "originalTask"]
@@ -332,6 +345,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "base64EncodedString"]
 - !private ["s17CustomReflectableP", "data"]
 - !private ["s17CustomReflectableP", "endIndex"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "forEach"]
 - !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - !private ["s17CustomReflectableP", "index"]
@@ -339,6 +354,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "reduce"]
 - !private ["s17CustomReflectableP", "replacingOccurrences"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -395,6 +411,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "endIndex"]
 - !private ["s23CustomStringConvertibleP", "endTime"]
 - !private ["s23CustomStringConvertibleP", "error"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "host"]
 - !private ["s23CustomStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s23CustomStringConvertibleP", "httpBody"]
@@ -409,6 +427,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "joined"]
 - !private ["s23CustomStringConvertibleP", "lock"]
 - !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "originalRequest"]
 - !private ["s23CustomStringConvertibleP", "originalTask"]
@@ -491,18 +510,24 @@ depends-member:
 - !private ["Se", "base64EncodedString"]
 - !private ["Se", "data"]
 - !private ["Se", "endIndex"]
+- !private ["Se", "filter"]
+- !private ["Se", "forEach"]
 - !private ["Se", "host"]
 - !private ["Se", "index"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "joined"]
+- !private ["Se", "map"]
 - !private ["Se", "port"]
 - !private ["Se", "reduce"]
 - !private ["Se", "replacingOccurrences"]
 - !private ["Se", "scheme"]
 - !private ["Se", "subscript"]
 - !private ["Se", "values"]
+- !private ["SD", "filter"]
+- !private ["SD", "forEach"]
+- !private ["SD", "map"]
 - !private ["SD", "subscript"]
 - !private ["SD", "values"]
 - !private ["So18OS_dispatch_objectC", "main"]
@@ -593,12 +618,15 @@ depends-member:
 - !private ["SE", "base64EncodedString"]
 - !private ["SE", "data"]
 - !private ["SE", "endIndex"]
+- !private ["SE", "filter"]
+- !private ["SE", "forEach"]
 - !private ["SE", "host"]
 - !private ["SE", "index"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "joined"]
+- !private ["SE", "map"]
 - !private ["SE", "port"]
 - !private ["SE", "reduce"]
 - !private ["SE", "replacingOccurrences"]
@@ -642,6 +670,8 @@ depends-member:
 - !private ["SQ", "downloadTask"]
 - !private ["SQ", "endIndex"]
 - !private ["SQ", "error"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "forEach"]
 - !private ["SQ", "forSession"]
 - ["SQ", "formIntersection"]
 - ["SQ", "formSymmetricDifference"]
@@ -665,6 +695,7 @@ depends-member:
 - !private ["SQ", "joined"]
 - !private ["SQ", "lock"]
 - !private ["SQ", "main"]
+- !private ["SQ", "map"]
 - !private ["SQ", "name"]
 - !private ["SQ", "originalRequest"]
 - !private ["SQ", "password"]
@@ -716,6 +747,7 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "_Default_RawValue"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - ["s25ExpressibleByArrayLiteralP", "formIntersection"]
 - ["s25ExpressibleByArrayLiteralP", "formSymmetricDifference"]
 - ["s25ExpressibleByArrayLiteralP", "formUnion"]
@@ -738,6 +770,9 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "update"]
 - !private ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "filter"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "forEach"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "map"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "values"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
@@ -797,6 +832,8 @@ depends-member:
 - !private ["SH", "downloadTask"]
 - !private ["SH", "endIndex"]
 - !private ["SH", "error"]
+- !private ["SH", "filter"]
+- !private ["SH", "forEach"]
 - !private ["SH", "forSession"]
 - !private ["SH", "host"]
 - !private ["SH", "httpAdditionalHeaders"]
@@ -812,6 +849,7 @@ depends-member:
 - !private ["SH", "joined"]
 - !private ["SH", "lock"]
 - !private ["SH", "main"]
+- !private ["SH", "map"]
 - !private ["SH", "name"]
 - !private ["SH", "originalRequest"]
 - !private ["SH", "password"]
@@ -862,6 +900,7 @@ depends-member:
 - !private ["s10MirrorPathP", "subscript"]
 - !private ["SM", "append"]
 - !private ["SM", "base64EncodedString"]
+- !private ["SM", "forEach"]
 - !private ["SM", "isEmpty"]
 - !private ["SM", "joined"]
 - !private ["SM", "reduce"]
@@ -1078,6 +1117,7 @@ depends-member:
 - !private ["So19NSProgressReportingP", "suspend"]
 - !private ["Sk", "append"]
 - !private ["Sk", "base64EncodedString"]
+- !private ["Sk", "forEach"]
 - !private ["Sk", "isEmpty"]
 - !private ["Sk", "joined"]
 - !private ["Sk", "reduce"]
@@ -1086,6 +1126,7 @@ depends-member:
 - !private ["Sm", "base64EncodedString"]
 - !private ["Sm", "data"]
 - !private ["Sm", "endIndex"]
+- !private ["Sm", "forEach"]
 - !private ["Sm", "index"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
@@ -1240,11 +1281,14 @@ depends-member:
 - !private ["ST", "base64EncodedString"]
 - !private ["ST", "data"]
 - !private ["ST", "endIndex"]
+- !private ["ST", "filter"]
+- !private ["ST", "forEach"]
 - !private ["ST", "index"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "isEmpty"]
 - !private ["ST", "joined"]
+- !private ["ST", "map"]
 - !private ["ST", "reduce"]
 - !private ["ST", "replacingOccurrences"]
 - !private ["ST", "subscript"]
@@ -1469,6 +1513,7 @@ depends-member:
 - ["9Alamofire13UploadRequestC10UploadableO", "stream"]
 - ["9Alamofire13UploadRequestC10UploadableO", "task"]
 - !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
 - !private ["s24_DestructorSafeContainerP", "isEmpty"]
 - !private ["s24_DestructorSafeContainerP", "joined"]
 - !private ["s24_DestructorSafeContainerP", "reduce"]
@@ -1518,9 +1563,12 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "endIndex"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "reduce"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -1587,6 +1635,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "base64EncodedString"]
 - !private ["s21_ObjectiveCBridgeableP", "data"]
 - !private ["s21_ObjectiveCBridgeableP", "endIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "host"]
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
@@ -1595,6 +1645,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "joined"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "port"]
 - !private ["s21_ObjectiveCBridgeableP", "reduce"]
 - !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
@@ -1744,15 +1795,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "a7b21955ce491cb106966ee831ec2155"

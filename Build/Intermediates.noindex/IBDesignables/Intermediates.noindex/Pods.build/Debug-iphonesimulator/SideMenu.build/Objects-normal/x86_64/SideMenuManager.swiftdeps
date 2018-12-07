@@ -9,48 +9,16 @@ provides-member:
 - ["8SideMenu0aB7ManagerC", ""]
 - ["8SideMenu0aB7ManagerC0B9PushStyleO", ""]
 - ["8SideMenu0aB7ManagerC0B11PresentModeO", ""]
-- ["8SideMenu0aB7ManagerC", "menuPushStyle"]
-- ["8SideMenu0aB7ManagerC", "menuPresentMode"]
-- ["8SideMenu0aB7ManagerC", "menuAllowPushOfSameClassTwice"]
-- ["8SideMenu0aB7ManagerC", "menuWidth"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationPresentDuration"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationDismissDuration"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationCompleteGestureDuration"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationFadeStrength"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationTransformScaleFactor"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationBackgroundColor"]
-- ["8SideMenu0aB7ManagerC", "menuShadowOpacity"]
-- ["8SideMenu0aB7ManagerC", "menuShadowColor"]
-- ["8SideMenu0aB7ManagerC", "menuShadowRadius"]
-- ["8SideMenu0aB7ManagerC", "menuPresentingViewControllerUserInteractionEnabled"]
-- ["8SideMenu0aB7ManagerC", "menuParallaxStrength"]
-- ["8SideMenu0aB7ManagerC", "menuFadeStatusBar"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationOptions"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationUsingSpringWithDamping"]
-- ["8SideMenu0aB7ManagerC", "menuAnimationInitialSpringVelocity"]
-- ["8SideMenu0aB7ManagerC", "menuDismissOnPush"]
-- ["8SideMenu0aB7ManagerC", "menuAllowSubmenus"]
-- ["8SideMenu0aB7ManagerC", "menuAllowPopIfPossible"]
-- ["8SideMenu0aB7ManagerC", "menuReplaceOnPush"]
-- ["8SideMenu0aB7ManagerC", "menuBlurEffectStyle"]
-- ["8SideMenu0aB7ManagerC", "menuLeftNavigationController"]
-- ["8SideMenu0aB7ManagerC", "menuRightNavigationController"]
-- ["8SideMenu0aB7ManagerC", "menuLeftSwipeToDismissGesture"]
-- ["8SideMenu0aB7ManagerC", "menuRightSwipeToDismissGesture"]
-- ["8SideMenu0aB7ManagerC", "menuEnableSwipeGestures"]
-- ["8SideMenu0aB7ManagerC", "menuAddScreenEdgePanGesturesToPresent"]
-- ["8SideMenu0aB7ManagerC", "menuAddPanGestureToPresent"]
 provides-dynamic-lookup:
 - "appScreenRect"
 - "default"
 - "defaultManager"
 - "menuAddPanGestureToPresent"
-- "menuAllowPopIfPossible"
 - "menuAllowPushOfSameClassTwice"
-- "menuAllowSubmenus"
 - "menuAlwaysAnimate"
 - "menuAnimationBackgroundColor"
 - "menuAnimationCompleteGestureDuration"
+- "menuAnimationCompletionCurve"
 - "menuAnimationDismissDuration"
 - "menuAnimationFadeStrength"
 - "menuAnimationInitialSpringVelocity"
@@ -59,6 +27,7 @@ provides-dynamic-lookup:
 - "menuAnimationTransformScaleFactor"
 - "menuAnimationUsingSpringWithDamping"
 - "menuDismissOnPush"
+- "menuDismissWhenBackgrounded"
 - "menuEnableSwipeGestures"
 - "menuFadeStatusBar"
 - "menuLeftNavigationController"
@@ -67,7 +36,6 @@ provides-dynamic-lookup:
 - "menuPresentMode"
 - "menuPresentingViewControllerUserInteractionEnabled"
 - "menuPushStyle"
-- "menuReplaceOnPush"
 - "menuRightNavigationController"
 - "menuRightSwipeToDismissGesture"
 - "menuShadowColor"
@@ -98,10 +66,9 @@ depends-top-level:
 - "SideMenuTransition"
 - !private "String"
 - !private "StringLiteralType"
-- !private "UIAccessibilityIsReduceTransparencyEnabled"
+- !private "UIAccessibility"
 - !private "UIApplication"
-- !private "UIBlurEffect"
-- "UIBlurEffectStyle"
+- "UIBlurEffect"
 - "UIColor"
 - "UIPanGestureRecognizer"
 - "UIRectEdge"
@@ -110,7 +77,6 @@ depends-top-level:
 - !private "UITableViewController"
 - !private "UIVibrancyEffect"
 - "UIView"
-- "UIViewAnimationOptions"
 - !private "UIVisualEffectView"
 - !private "UIWindow"
 - "min"
@@ -119,6 +85,7 @@ depends-top-level:
 - !private "unsafeBitCast"
 - !private "~="
 depends-member:
+- ["So20UIViewAnimationCurveV", "easeIn"]
 - ["So22UIViewAnimationOptionsV", "curveEaseInOut"]
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
@@ -133,6 +100,8 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- ["So15CALayerDelegateP", "AnimationCurve"]
+- ["So15CALayerDelegateP", "AnimationOptions"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "autoresizingMask"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
@@ -148,10 +117,13 @@ depends-member:
 - !private ["So15CALayerDelegateP", "subviews"]
 - ["So6CGRectV", "height"]
 - ["So6CGRectV", "width"]
+- ["s7CVarArgP", "AnimationCurve"]
+- ["s7CVarArgP", "AnimationOptions"]
 - ["s7CVarArgP", "SideMenuManager"]
 - !private ["s7CVarArgP", "SideMenuTransition"]
 - !private ["s7CVarArgP", "String"]
-- !private ["s7CVarArgP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["s7CVarArgP", "Style"]
+- !private ["s7CVarArgP", "UIAccessibility"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIBlurEffect"]
 - ["s7CVarArgP", "UIColor"]
@@ -186,34 +158,12 @@ depends-member:
 - !private ["s7CVarArgP", "keyWindow"]
 - !private ["s7CVarArgP", "leftSide"]
 - !private ["s7CVarArgP", "locked"]
-- !private ["s7CVarArgP", "menuAddPanGestureToPresent"]
-- !private ["s7CVarArgP", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["s7CVarArgP", "menuAllowPushOfSameClassTwice"]
-- !private ["s7CVarArgP", "menuAnimationBackgroundColor"]
-- !private ["s7CVarArgP", "menuAnimationCompleteGestureDuration"]
-- !private ["s7CVarArgP", "menuAnimationDismissDuration"]
-- !private ["s7CVarArgP", "menuAnimationFadeStrength"]
-- !private ["s7CVarArgP", "menuAnimationInitialSpringVelocity"]
-- !private ["s7CVarArgP", "menuAnimationOptions"]
-- !private ["s7CVarArgP", "menuAnimationPresentDuration"]
-- !private ["s7CVarArgP", "menuAnimationTransformScaleFactor"]
-- !private ["s7CVarArgP", "menuAnimationUsingSpringWithDamping"]
 - !private ["s7CVarArgP", "menuBlurEffectStyle"]
-- !private ["s7CVarArgP", "menuDismissOnPush"]
 - !private ["s7CVarArgP", "menuEnableSwipeGestures"]
-- !private ["s7CVarArgP", "menuFadeStatusBar"]
 - !private ["s7CVarArgP", "menuLeftNavigationController"]
 - !private ["s7CVarArgP", "menuLeftSwipeToDismissGesture"]
-- !private ["s7CVarArgP", "menuParallaxStrength"]
-- !private ["s7CVarArgP", "menuPresentMode"]
-- !private ["s7CVarArgP", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["s7CVarArgP", "menuPushStyle"]
 - !private ["s7CVarArgP", "menuRightNavigationController"]
 - !private ["s7CVarArgP", "menuRightSwipeToDismissGesture"]
-- !private ["s7CVarArgP", "menuShadowColor"]
-- !private ["s7CVarArgP", "menuShadowOpacity"]
-- !private ["s7CVarArgP", "menuShadowRadius"]
-- !private ["s7CVarArgP", "menuWidth"]
 - ["s7CVarArgP", "min"]
 - !private ["s7CVarArgP", "modalPresentationStyle"]
 - !private ["s7CVarArgP", "originalMenuBackgroundColor"]
@@ -245,10 +195,13 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "AnimationCurve"]
+- ["s28CustomDebugStringConvertibleP", "AnimationOptions"]
 - ["s28CustomDebugStringConvertibleP", "SideMenuManager"]
 - !private ["s28CustomDebugStringConvertibleP", "SideMenuTransition"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
-- !private ["s28CustomDebugStringConvertibleP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["s28CustomDebugStringConvertibleP", "Style"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAccessibility"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBlurEffect"]
 - ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -284,34 +237,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "left"]
 - !private ["s28CustomDebugStringConvertibleP", "leftSide"]
 - !private ["s28CustomDebugStringConvertibleP", "locked"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAddPanGestureToPresent"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAllowPushOfSameClassTwice"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationBackgroundColor"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationCompleteGestureDuration"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationDismissDuration"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationFadeStrength"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationInitialSpringVelocity"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationOptions"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationPresentDuration"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationTransformScaleFactor"]
-- !private ["s28CustomDebugStringConvertibleP", "menuAnimationUsingSpringWithDamping"]
 - !private ["s28CustomDebugStringConvertibleP", "menuBlurEffectStyle"]
-- !private ["s28CustomDebugStringConvertibleP", "menuDismissOnPush"]
 - !private ["s28CustomDebugStringConvertibleP", "menuEnableSwipeGestures"]
-- !private ["s28CustomDebugStringConvertibleP", "menuFadeStatusBar"]
 - !private ["s28CustomDebugStringConvertibleP", "menuLeftNavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "menuLeftSwipeToDismissGesture"]
-- !private ["s28CustomDebugStringConvertibleP", "menuParallaxStrength"]
-- !private ["s28CustomDebugStringConvertibleP", "menuPresentMode"]
-- !private ["s28CustomDebugStringConvertibleP", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["s28CustomDebugStringConvertibleP", "menuPushStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "menuRightNavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "menuRightSwipeToDismissGesture"]
-- !private ["s28CustomDebugStringConvertibleP", "menuShadowColor"]
-- !private ["s28CustomDebugStringConvertibleP", "menuShadowOpacity"]
-- !private ["s28CustomDebugStringConvertibleP", "menuShadowRadius"]
-- !private ["s28CustomDebugStringConvertibleP", "menuWidth"]
 - ["s28CustomDebugStringConvertibleP", "min"]
 - !private ["s28CustomDebugStringConvertibleP", "modalPresentationStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "originalMenuBackgroundColor"]
@@ -357,10 +288,13 @@ depends-member:
 - !private ["s17CustomReflectableP", "separatorEffect"]
 - !private ["s17CustomReflectableP", "subscript"]
 - ["s17CustomReflectableP", "width"]
+- ["s23CustomStringConvertibleP", "AnimationCurve"]
+- ["s23CustomStringConvertibleP", "AnimationOptions"]
 - ["s23CustomStringConvertibleP", "SideMenuManager"]
 - !private ["s23CustomStringConvertibleP", "SideMenuTransition"]
 - !private ["s23CustomStringConvertibleP", "String"]
-- !private ["s23CustomStringConvertibleP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["s23CustomStringConvertibleP", "Style"]
+- !private ["s23CustomStringConvertibleP", "UIAccessibility"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIBlurEffect"]
 - ["s23CustomStringConvertibleP", "UIColor"]
@@ -395,34 +329,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "keyWindow"]
 - !private ["s23CustomStringConvertibleP", "leftSide"]
 - !private ["s23CustomStringConvertibleP", "locked"]
-- !private ["s23CustomStringConvertibleP", "menuAddPanGestureToPresent"]
-- !private ["s23CustomStringConvertibleP", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["s23CustomStringConvertibleP", "menuAllowPushOfSameClassTwice"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationBackgroundColor"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationCompleteGestureDuration"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationDismissDuration"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationFadeStrength"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationInitialSpringVelocity"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationOptions"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationPresentDuration"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationTransformScaleFactor"]
-- !private ["s23CustomStringConvertibleP", "menuAnimationUsingSpringWithDamping"]
 - !private ["s23CustomStringConvertibleP", "menuBlurEffectStyle"]
-- !private ["s23CustomStringConvertibleP", "menuDismissOnPush"]
 - !private ["s23CustomStringConvertibleP", "menuEnableSwipeGestures"]
-- !private ["s23CustomStringConvertibleP", "menuFadeStatusBar"]
 - !private ["s23CustomStringConvertibleP", "menuLeftNavigationController"]
 - !private ["s23CustomStringConvertibleP", "menuLeftSwipeToDismissGesture"]
-- !private ["s23CustomStringConvertibleP", "menuParallaxStrength"]
-- !private ["s23CustomStringConvertibleP", "menuPresentMode"]
-- !private ["s23CustomStringConvertibleP", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["s23CustomStringConvertibleP", "menuPushStyle"]
 - !private ["s23CustomStringConvertibleP", "menuRightNavigationController"]
 - !private ["s23CustomStringConvertibleP", "menuRightSwipeToDismissGesture"]
-- !private ["s23CustomStringConvertibleP", "menuShadowColor"]
-- !private ["s23CustomStringConvertibleP", "menuShadowOpacity"]
-- !private ["s23CustomStringConvertibleP", "menuShadowRadius"]
-- !private ["s23CustomStringConvertibleP", "menuWidth"]
 - ["s23CustomStringConvertibleP", "min"]
 - !private ["s23CustomStringConvertibleP", "modalPresentationStyle"]
 - !private ["s23CustomStringConvertibleP", "originalMenuBackgroundColor"]
@@ -474,11 +386,14 @@ depends-member:
 - !private ["SE", "separatorEffect"]
 - !private ["SE", "subscript"]
 - ["SE", "width"]
+- ["SQ", "AnimationCurve"]
+- ["SQ", "AnimationOptions"]
 - ["SQ", "RawValue"]
 - ["SQ", "SideMenuManager"]
 - !private ["SQ", "SideMenuTransition"]
 - !private ["SQ", "String"]
-- !private ["SQ", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["SQ", "Style"]
+- !private ["SQ", "UIAccessibility"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIBlurEffect"]
 - ["SQ", "UIColor"]
@@ -504,6 +419,7 @@ depends-member:
 - ["SQ", "curveEaseInOut"]
 - !private ["SQ", "default"]
 - ["SQ", "defaultBehavior"]
+- ["SQ", "easeIn"]
 - !private ["SQ", "edges"]
 - !private ["SQ", "flexibleHeight"]
 - !private ["SQ", "flexibleWidth"]
@@ -522,39 +438,16 @@ depends-member:
 - !private ["SQ", "left"]
 - !private ["SQ", "leftSide"]
 - !private ["SQ", "locked"]
-- !private ["SQ", "menuAddPanGestureToPresent"]
-- !private ["SQ", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["SQ", "menuAllowPushOfSameClassTwice"]
-- !private ["SQ", "menuAnimationBackgroundColor"]
-- !private ["SQ", "menuAnimationCompleteGestureDuration"]
-- !private ["SQ", "menuAnimationDismissDuration"]
-- !private ["SQ", "menuAnimationFadeStrength"]
-- !private ["SQ", "menuAnimationInitialSpringVelocity"]
-- !private ["SQ", "menuAnimationOptions"]
-- !private ["SQ", "menuAnimationPresentDuration"]
-- !private ["SQ", "menuAnimationTransformScaleFactor"]
-- !private ["SQ", "menuAnimationUsingSpringWithDamping"]
 - !private ["SQ", "menuBlurEffectStyle"]
-- !private ["SQ", "menuDismissOnPush"]
 - !private ["SQ", "menuEnableSwipeGestures"]
-- !private ["SQ", "menuFadeStatusBar"]
 - !private ["SQ", "menuLeftNavigationController"]
 - !private ["SQ", "menuLeftSwipeToDismissGesture"]
-- !private ["SQ", "menuParallaxStrength"]
-- !private ["SQ", "menuPresentMode"]
-- !private ["SQ", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["SQ", "menuPushStyle"]
 - !private ["SQ", "menuRightNavigationController"]
 - !private ["SQ", "menuRightSwipeToDismissGesture"]
-- !private ["SQ", "menuShadowColor"]
-- !private ["SQ", "menuShadowOpacity"]
-- !private ["SQ", "menuShadowRadius"]
-- !private ["SQ", "menuWidth"]
 - ["SQ", "min"]
 - !private ["SQ", "modalPresentationStyle"]
 - !private ["SQ", "originalMenuBackgroundColor"]
 - !private ["SQ", "overFullScreen"]
-- !private ["SQ", "popWhenPossible"]
 - !private ["SQ", "presentingViewController"]
 - !private ["SQ", "print"]
 - ["SQ", "rawValue"]
@@ -562,7 +455,6 @@ depends-member:
 - !private ["SQ", "removeFromSuperview"]
 - !private ["SQ", "removeGestureRecognizer"]
 - !private ["SQ", "removeMenuBlurForMenu"]
-- !private ["SQ", "replace"]
 - !private ["SQ", "right"]
 - ["SQ", "round"]
 - !private ["SQ", "separatorEffect"]
@@ -571,7 +463,6 @@ depends-member:
 - !private ["SQ", "setupNavigationController"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "sideMenuManager"]
-- !private ["SQ", "subMenu"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "subviews"]
 - !private ["SQ", "tableView"]
@@ -604,11 +495,14 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "AnimationCurve"]
+- ["SH", "AnimationOptions"]
 - ["SH", "RawValue"]
 - ["SH", "SideMenuManager"]
 - !private ["SH", "SideMenuTransition"]
 - !private ["SH", "String"]
-- !private ["SH", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["SH", "Style"]
+- !private ["SH", "UIAccessibility"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UIBlurEffect"]
 - ["SH", "UIColor"]
@@ -633,6 +527,7 @@ depends-member:
 - !private ["SH", "clear"]
 - !private ["SH", "default"]
 - ["SH", "defaultBehavior"]
+- ["SH", "easeIn"]
 - !private ["SH", "edges"]
 - !private ["SH", "frame"]
 - !private ["SH", "handleHideMenuPan"]
@@ -648,39 +543,16 @@ depends-member:
 - !private ["SH", "left"]
 - !private ["SH", "leftSide"]
 - !private ["SH", "locked"]
-- !private ["SH", "menuAddPanGestureToPresent"]
-- !private ["SH", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["SH", "menuAllowPushOfSameClassTwice"]
-- !private ["SH", "menuAnimationBackgroundColor"]
-- !private ["SH", "menuAnimationCompleteGestureDuration"]
-- !private ["SH", "menuAnimationDismissDuration"]
-- !private ["SH", "menuAnimationFadeStrength"]
-- !private ["SH", "menuAnimationInitialSpringVelocity"]
-- !private ["SH", "menuAnimationOptions"]
-- !private ["SH", "menuAnimationPresentDuration"]
-- !private ["SH", "menuAnimationTransformScaleFactor"]
-- !private ["SH", "menuAnimationUsingSpringWithDamping"]
 - !private ["SH", "menuBlurEffectStyle"]
-- !private ["SH", "menuDismissOnPush"]
 - !private ["SH", "menuEnableSwipeGestures"]
-- !private ["SH", "menuFadeStatusBar"]
 - !private ["SH", "menuLeftNavigationController"]
 - !private ["SH", "menuLeftSwipeToDismissGesture"]
-- !private ["SH", "menuParallaxStrength"]
-- !private ["SH", "menuPresentMode"]
-- !private ["SH", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["SH", "menuPushStyle"]
 - !private ["SH", "menuRightNavigationController"]
 - !private ["SH", "menuRightSwipeToDismissGesture"]
-- !private ["SH", "menuShadowColor"]
-- !private ["SH", "menuShadowOpacity"]
-- !private ["SH", "menuShadowRadius"]
-- !private ["SH", "menuWidth"]
 - ["SH", "min"]
 - !private ["SH", "modalPresentationStyle"]
 - !private ["SH", "originalMenuBackgroundColor"]
 - !private ["SH", "overFullScreen"]
-- !private ["SH", "popWhenPossible"]
 - !private ["SH", "presentingViewController"]
 - !private ["SH", "print"]
 - ["SH", "rawValue"]
@@ -688,7 +560,6 @@ depends-member:
 - !private ["SH", "removeFromSuperview"]
 - !private ["SH", "removeGestureRecognizer"]
 - !private ["SH", "removeMenuBlurForMenu"]
-- !private ["SH", "replace"]
 - !private ["SH", "right"]
 - ["SH", "round"]
 - !private ["SH", "separatorEffect"]
@@ -697,7 +568,6 @@ depends-member:
 - !private ["SH", "setupNavigationController"]
 - !private ["SH", "shared"]
 - !private ["SH", "sideMenuManager"]
-- !private ["SH", "subMenu"]
 - !private ["SH", "subscript"]
 - !private ["SH", "subviews"]
 - !private ["SH", "tableView"]
@@ -743,6 +613,9 @@ depends-member:
 - !private ["SM", "append"]
 - !private ["SM", "init"]
 - !private ["SM", "subscript"]
+- ["So8NSCodingP", "AnimationCurve"]
+- ["So8NSCodingP", "AnimationOptions"]
+- ["So8NSCodingP", "Style"]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "autoresizingMask"]
 - !private ["So8NSCodingP", "backgroundColor"]
@@ -768,6 +641,7 @@ depends-member:
 - !private ["So8NSCodingP", "topViewController"]
 - !private ["So8NSCodingP", "transitioningDelegate"]
 - !private ["So8NSCodingP", "view"]
+- ["So9NSCopyingP", "Style"]
 - ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "clear"]
 - !private ["So9NSCopyingP", "init"]
@@ -785,6 +659,8 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "clear"]
 - ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "clear"]
+- ["So8NSObjectC", "AnimationCurve"]
+- ["So8NSObjectC", "AnimationOptions"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGRect"]
@@ -796,10 +672,10 @@ depends-member:
 - ["So8NSObjectC", "SideMenuManager"]
 - ["So8NSObjectC", "SideMenuTransition"]
 - !private ["So8NSObjectC", "String"]
-- !private ["So8NSObjectC", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["So8NSObjectC", "Style"]
+- !private ["So8NSObjectC", "UIAccessibility"]
 - !private ["So8NSObjectC", "UIApplication"]
-- !private ["So8NSObjectC", "UIBlurEffect"]
-- ["So8NSObjectC", "UIBlurEffectStyle"]
+- ["So8NSObjectC", "UIBlurEffect"]
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIPanGestureRecognizer"]
 - ["So8NSObjectC", "UIRectEdge"]
@@ -808,7 +684,6 @@ depends-member:
 - !private ["So8NSObjectC", "UITableViewController"]
 - !private ["So8NSObjectC", "UIVibrancyEffect"]
 - ["So8NSObjectC", "UIView"]
-- ["So8NSObjectC", "UIViewAnimationOptions"]
 - !private ["So8NSObjectC", "UIVisualEffectView"]
 - !private ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", ""]
@@ -837,12 +712,11 @@ depends-member:
 - !private ["So8NSObjectC", "locked"]
 - ["So8NSObjectC", "menuAddPanGestureToPresent"]
 - ["So8NSObjectC", "menuAddScreenEdgePanGesturesToPresent"]
-- ["So8NSObjectC", "menuAllowPopIfPossible"]
 - ["So8NSObjectC", "menuAllowPushOfSameClassTwice"]
-- ["So8NSObjectC", "menuAllowSubmenus"]
 - ["So8NSObjectC", "menuAlwaysAnimate"]
 - ["So8NSObjectC", "menuAnimationBackgroundColor"]
 - ["So8NSObjectC", "menuAnimationCompleteGestureDuration"]
+- ["So8NSObjectC", "menuAnimationCompletionCurve"]
 - ["So8NSObjectC", "menuAnimationDismissDuration"]
 - ["So8NSObjectC", "menuAnimationFadeStrength"]
 - ["So8NSObjectC", "menuAnimationInitialSpringVelocity"]
@@ -852,6 +726,7 @@ depends-member:
 - ["So8NSObjectC", "menuAnimationUsingSpringWithDamping"]
 - ["So8NSObjectC", "menuBlurEffectStyle"]
 - ["So8NSObjectC", "menuDismissOnPush"]
+- ["So8NSObjectC", "menuDismissWhenBackgrounded"]
 - ["So8NSObjectC", "menuEnableSwipeGestures"]
 - ["So8NSObjectC", "menuFadeStatusBar"]
 - ["So8NSObjectC", "menuLeftNavigationController"]
@@ -860,7 +735,6 @@ depends-member:
 - ["So8NSObjectC", "menuPresentMode"]
 - ["So8NSObjectC", "menuPresentingViewControllerUserInteractionEnabled"]
 - ["So8NSObjectC", "menuPushStyle"]
-- ["So8NSObjectC", "menuReplaceOnPush"]
 - ["So8NSObjectC", "menuRightNavigationController"]
 - ["So8NSObjectC", "menuRightSwipeToDismissGesture"]
 - ["So8NSObjectC", "menuShadowColor"]
@@ -891,10 +765,13 @@ depends-member:
 - !private ["So8NSObjectC", "unsafeBitCast"]
 - ["So8NSObjectC", "updateMenuBlurIfNecessary"]
 - !private ["So8NSObjectC", "view"]
+- ["So8NSObjectP", "AnimationCurve"]
+- ["So8NSObjectP", "AnimationOptions"]
 - ["So8NSObjectP", "SideMenuManager"]
 - !private ["So8NSObjectP", "SideMenuTransition"]
 - !private ["So8NSObjectP", "String"]
-- !private ["So8NSObjectP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["So8NSObjectP", "Style"]
+- !private ["So8NSObjectP", "UIAccessibility"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIBlurEffect"]
 - ["So8NSObjectP", "UIColor"]
@@ -926,34 +803,12 @@ depends-member:
 - !private ["So8NSObjectP", "keyWindow"]
 - !private ["So8NSObjectP", "leftSide"]
 - !private ["So8NSObjectP", "locked"]
-- !private ["So8NSObjectP", "menuAddPanGestureToPresent"]
-- !private ["So8NSObjectP", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["So8NSObjectP", "menuAllowPushOfSameClassTwice"]
-- !private ["So8NSObjectP", "menuAnimationBackgroundColor"]
-- !private ["So8NSObjectP", "menuAnimationCompleteGestureDuration"]
-- !private ["So8NSObjectP", "menuAnimationDismissDuration"]
-- !private ["So8NSObjectP", "menuAnimationFadeStrength"]
-- !private ["So8NSObjectP", "menuAnimationInitialSpringVelocity"]
-- !private ["So8NSObjectP", "menuAnimationOptions"]
-- !private ["So8NSObjectP", "menuAnimationPresentDuration"]
-- !private ["So8NSObjectP", "menuAnimationTransformScaleFactor"]
-- !private ["So8NSObjectP", "menuAnimationUsingSpringWithDamping"]
 - !private ["So8NSObjectP", "menuBlurEffectStyle"]
-- !private ["So8NSObjectP", "menuDismissOnPush"]
 - !private ["So8NSObjectP", "menuEnableSwipeGestures"]
-- !private ["So8NSObjectP", "menuFadeStatusBar"]
 - !private ["So8NSObjectP", "menuLeftNavigationController"]
 - !private ["So8NSObjectP", "menuLeftSwipeToDismissGesture"]
-- !private ["So8NSObjectP", "menuParallaxStrength"]
-- !private ["So8NSObjectP", "menuPresentMode"]
-- !private ["So8NSObjectP", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["So8NSObjectP", "menuPushStyle"]
 - !private ["So8NSObjectP", "menuRightNavigationController"]
 - !private ["So8NSObjectP", "menuRightSwipeToDismissGesture"]
-- !private ["So8NSObjectP", "menuShadowColor"]
-- !private ["So8NSObjectP", "menuShadowOpacity"]
-- !private ["So8NSObjectP", "menuShadowRadius"]
-- !private ["So8NSObjectP", "menuWidth"]
 - ["So8NSObjectP", "min"]
 - !private ["So8NSObjectP", "modalPresentationStyle"]
 - !private ["So8NSObjectP", "originalMenuBackgroundColor"]
@@ -978,6 +833,7 @@ depends-member:
 - !private ["So8NSObjectP", "unsafeBitCast"]
 - !private ["So8NSObjectP", "updateMenuBlurIfNecessary"]
 - !private ["So8NSObjectP", "view"]
+- ["So14NSSecureCodingP", "Style"]
 - !private ["So14NSSecureCodingP", "autoresizingMask"]
 - ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "clear"]
@@ -1007,6 +863,7 @@ depends-member:
 - ["SY", "_Default_RawValue"]
 - ["SY", "curveEaseInOut"]
 - ["SY", "defaultBehavior"]
+- ["SY", "easeIn"]
 - !private ["SY", "flexibleHeight"]
 - !private ["SY", "flexibleWidth"]
 - ["SY", "hash"]
@@ -1014,11 +871,8 @@ depends-member:
 - ["SY", "init"]
 - !private ["SY", "left"]
 - !private ["SY", "overFullScreen"]
-- !private ["SY", "popWhenPossible"]
 - ["SY", "rawValue"]
-- !private ["SY", "replace"]
 - !private ["SY", "right"]
-- !private ["SY", "subMenu"]
 - !private ["SY", "unsafeBitCast"]
 - ["SY", "viewSlideOut"]
 - !private ["ST", "append"]
@@ -1041,10 +895,9 @@ depends-member:
 - ["8SideMenu0aB7ManagerC", "SideMenuManager"]
 - ["8SideMenu0aB7ManagerC", "SideMenuTransition"]
 - !private ["8SideMenu0aB7ManagerC", "String"]
-- !private ["8SideMenu0aB7ManagerC", "UIAccessibilityIsReduceTransparencyEnabled"]
+- !private ["8SideMenu0aB7ManagerC", "UIAccessibility"]
 - !private ["8SideMenu0aB7ManagerC", "UIApplication"]
-- !private ["8SideMenu0aB7ManagerC", "UIBlurEffect"]
-- ["8SideMenu0aB7ManagerC", "UIBlurEffectStyle"]
+- ["8SideMenu0aB7ManagerC", "UIBlurEffect"]
 - ["8SideMenu0aB7ManagerC", "UIColor"]
 - ["8SideMenu0aB7ManagerC", "UIPanGestureRecognizer"]
 - ["8SideMenu0aB7ManagerC", "UIRectEdge"]
@@ -1053,7 +906,6 @@ depends-member:
 - !private ["8SideMenu0aB7ManagerC", "UITableViewController"]
 - !private ["8SideMenu0aB7ManagerC", "UIVibrancyEffect"]
 - ["8SideMenu0aB7ManagerC", "UIView"]
-- ["8SideMenu0aB7ManagerC", "UIViewAnimationOptions"]
 - !private ["8SideMenu0aB7ManagerC", "UIVisualEffectView"]
 - !private ["8SideMenu0aB7ManagerC", "UIWindow"]
 - ["8SideMenu0aB7ManagerC", "appScreenRect"]
@@ -1063,12 +915,11 @@ depends-member:
 - ["8SideMenu0aB7ManagerC", "init"]
 - ["8SideMenu0aB7ManagerC", "menuAddPanGestureToPresent"]
 - ["8SideMenu0aB7ManagerC", "menuAddScreenEdgePanGesturesToPresent"]
-- ["8SideMenu0aB7ManagerC", "menuAllowPopIfPossible"]
 - ["8SideMenu0aB7ManagerC", "menuAllowPushOfSameClassTwice"]
-- ["8SideMenu0aB7ManagerC", "menuAllowSubmenus"]
 - ["8SideMenu0aB7ManagerC", "menuAlwaysAnimate"]
 - ["8SideMenu0aB7ManagerC", "menuAnimationBackgroundColor"]
 - ["8SideMenu0aB7ManagerC", "menuAnimationCompleteGestureDuration"]
+- ["8SideMenu0aB7ManagerC", "menuAnimationCompletionCurve"]
 - ["8SideMenu0aB7ManagerC", "menuAnimationDismissDuration"]
 - ["8SideMenu0aB7ManagerC", "menuAnimationFadeStrength"]
 - ["8SideMenu0aB7ManagerC", "menuAnimationInitialSpringVelocity"]
@@ -1078,6 +929,7 @@ depends-member:
 - ["8SideMenu0aB7ManagerC", "menuAnimationUsingSpringWithDamping"]
 - ["8SideMenu0aB7ManagerC", "menuBlurEffectStyle"]
 - ["8SideMenu0aB7ManagerC", "menuDismissOnPush"]
+- ["8SideMenu0aB7ManagerC", "menuDismissWhenBackgrounded"]
 - ["8SideMenu0aB7ManagerC", "menuEnableSwipeGestures"]
 - ["8SideMenu0aB7ManagerC", "menuFadeStatusBar"]
 - ["8SideMenu0aB7ManagerC", "menuLeftNavigationController"]
@@ -1086,7 +938,6 @@ depends-member:
 - ["8SideMenu0aB7ManagerC", "menuPresentMode"]
 - ["8SideMenu0aB7ManagerC", "menuPresentingViewControllerUserInteractionEnabled"]
 - ["8SideMenu0aB7ManagerC", "menuPushStyle"]
-- ["8SideMenu0aB7ManagerC", "menuReplaceOnPush"]
 - ["8SideMenu0aB7ManagerC", "menuRightNavigationController"]
 - ["8SideMenu0aB7ManagerC", "menuRightSwipeToDismissGesture"]
 - ["8SideMenu0aB7ManagerC", "menuShadowColor"]
@@ -1117,6 +968,9 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So15UIAccessibilityV", "isReduceTransparencyEnabled"]
+- ["So29UIAccessibilityIdentificationP", "AnimationCurve"]
+- ["So29UIAccessibilityIdentificationP", "AnimationOptions"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "autoresizingMask"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
@@ -1130,6 +984,8 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "removeGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "separatorEffect"]
 - !private ["So29UIAccessibilityIdentificationP", "subviews"]
+- ["So12UIAppearanceP", "AnimationCurve"]
+- ["So12UIAppearanceP", "AnimationOptions"]
 - !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "autoresizingMask"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
@@ -1143,6 +999,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "removeGestureRecognizer"]
 - !private ["So12UIAppearanceP", "separatorEffect"]
 - !private ["So12UIAppearanceP", "subviews"]
+- ["So21UIAppearanceContainerP", "AnimationCurve"]
+- ["So21UIAppearanceContainerP", "AnimationOptions"]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "autoresizingMask"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
@@ -1168,6 +1026,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So13UIApplicationC", "keyWindow"]
 - !private ["So13UIApplicationC", "shared"]
+- ["So12UIBlurEffectC", "Style"]
 - !private ["So12UIBlurEffectC", "init"]
 - ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "clear"]
@@ -1181,6 +1040,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "topViewController"]
 - !private ["So18UIContentContainerP", "transitioningDelegate"]
 - !private ["So18UIContentContainerP", "view"]
+- ["So17UICoordinateSpaceP", "AnimationCurve"]
+- ["So17UICoordinateSpaceP", "AnimationOptions"]
 - !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
 - !private ["So17UICoordinateSpaceP", "autoresizingMask"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
@@ -1197,6 +1058,8 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "backgroundView"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "separatorEffect"]
+- ["So13UIDynamicItemP", "AnimationCurve"]
+- ["So13UIDynamicItemP", "AnimationOptions"]
 - !private ["So13UIDynamicItemP", "addGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "autoresizingMask"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
@@ -1210,6 +1073,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "removeGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "separatorEffect"]
 - !private ["So13UIDynamicItemP", "subviews"]
+- ["So18UIFocusEnvironmentP", "AnimationCurve"]
+- ["So18UIFocusEnvironmentP", "AnimationOptions"]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "autoresizingMask"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
@@ -1233,6 +1098,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "topViewController"]
 - !private ["So18UIFocusEnvironmentP", "transitioningDelegate"]
 - !private ["So18UIFocusEnvironmentP", "view"]
+- ["So11UIFocusItemP", "AnimationCurve"]
+- ["So11UIFocusItemP", "AnimationOptions"]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "autoresizingMask"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
@@ -1246,6 +1113,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "removeGestureRecognizer"]
 - !private ["So11UIFocusItemP", "separatorEffect"]
 - !private ["So11UIFocusItemP", "subviews"]
+- ["So20UIFocusItemContainerP", "AnimationCurve"]
+- ["So20UIFocusItemContainerP", "AnimationOptions"]
 - !private ["So20UIFocusItemContainerP", "addGestureRecognizer"]
 - !private ["So20UIFocusItemContainerP", "autoresizingMask"]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
@@ -1282,6 +1151,8 @@ depends-member:
 - !private ["So22UIPanGestureRecognizerC", "edges"]
 - !private ["So22UIPanGestureRecognizerC", "init"]
 - !private ["So22UIPanGestureRecognizerC", "view"]
+- ["So30UIPasteConfigurationSupportingP", "AnimationCurve"]
+- ["So30UIPasteConfigurationSupportingP", "AnimationOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "autoresizingMask"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
@@ -1313,6 +1184,8 @@ depends-member:
 - !private ["So36UIPercentDrivenInteractiveTransitionC", "handlePresentMenuRightScreenEdge"]
 - !private ["So10UIRectEdgeV", "left"]
 - !private ["So10UIRectEdgeV", "right"]
+- ["So11UIResponderC", "AnimationCurve"]
+- ["So11UIResponderC", "AnimationOptions"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "autoresizingMask"]
 - !private ["So11UIResponderC", "backgroundColor"]
@@ -1338,6 +1211,8 @@ depends-member:
 - !private ["So11UIResponderC", "topViewController"]
 - !private ["So11UIResponderC", "transitioningDelegate"]
 - !private ["So11UIResponderC", "view"]
+- ["So30UIResponderStandardEditActionsP", "AnimationCurve"]
+- ["So30UIResponderStandardEditActionsP", "AnimationOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "autoresizingMask"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
@@ -1400,6 +1275,8 @@ depends-member:
 - !private ["So21UITableViewControllerC", "tableView"]
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So19UITableViewDelegateP", "tableView"]
+- ["So18UITraitEnvironmentP", "AnimationCurve"]
+- ["So18UITraitEnvironmentP", "AnimationOptions"]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "autoresizingMask"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
@@ -1423,6 +1300,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "topViewController"]
 - !private ["So18UITraitEnvironmentP", "transitioningDelegate"]
 - !private ["So18UITraitEnvironmentP", "view"]
+- ["So23UIUserActivityRestoringP", "AnimationCurve"]
+- ["So23UIUserActivityRestoringP", "AnimationOptions"]
 - !private ["So23UIUserActivityRestoringP", "addGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "autoresizingMask"]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
@@ -1449,6 +1328,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "transitioningDelegate"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So16UIVibrancyEffectC", "init"]
+- ["So6UIViewC", "AnimationCurve"]
+- ["So6UIViewC", "AnimationOptions"]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "autoresizingMask"]
 - !private ["So6UIViewC", "backgroundColor"]
@@ -1487,6 +1368,7 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "handlePresentMenuPan"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "handlePresentMenuRightScreenEdge"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "init"]
+- ["So14UIVisualEffectC", "Style"]
 - !private ["So14UIVisualEffectC", "init"]
 - !private ["So18UIVisualEffectViewC", "autoresizingMask"]
 - !private ["So18UIVisualEffectViewC", "frame"]
@@ -1494,6 +1376,8 @@ depends-member:
 - !private ["So18UIVisualEffectViewC", "removeFromSuperview"]
 - !private ["So8UIWindowC", "bounds"]
 - !private ["So8UIWindowC", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "AnimationCurve"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "AnimationOptions"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "autoresizingMask"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
@@ -1526,10 +1410,13 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AnimationCurve"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AnimationOptions"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "SideMenuManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SideMenuTransition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAccessibilityIsReduceTransparencyEnabled"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Style"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAccessibility"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBlurEffect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1561,34 +1448,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "keyWindow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftSide"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locked"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAddPanGestureToPresent"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAddScreenEdgePanGesturesToPresent"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAllowPushOfSameClassTwice"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationBackgroundColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationCompleteGestureDuration"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationDismissDuration"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationFadeStrength"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationInitialSpringVelocity"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationOptions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationPresentDuration"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationTransformScaleFactor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuAnimationUsingSpringWithDamping"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuBlurEffectStyle"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuDismissOnPush"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuEnableSwipeGestures"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuFadeStatusBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuLeftNavigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuLeftSwipeToDismissGesture"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuParallaxStrength"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuPresentMode"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuPresentingViewControllerUserInteractionEnabled"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuPushStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuRightNavigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuRightSwipeToDismissGesture"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuShadowColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuShadowOpacity"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuShadowRadius"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuWidth"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "min"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalPresentationStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "originalMenuBackgroundColor"]
@@ -1631,13 +1496,14 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- "So20UIViewAnimationCurveV"
 - "So22UIViewAnimationOptionsV"
 - !private "Sa"
 - !private "s13ArrayProtocolP"
 - !private "So18UIViewAutoresizingV"
 - !private "SK"
 - !private "Sb"
-- !private "So15CALayerDelegateP"
+- "So15CALayerDelegateP"
 - "So6CGRectV"
 - "s7CVarArgP"
 - !private "Sl"
@@ -1683,29 +1549,30 @@ depends-nominal:
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "So29UIAccessibilityIdentificationP"
-- !private "So12UIAppearanceP"
-- !private "So21UIAppearanceContainerP"
+- !private "So15UIAccessibilityV"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
 - !private "So13UIApplicationC"
-- !private "So12UIBlurEffectC"
+- "So12UIBlurEffectC"
 - "So7UIColorC"
 - !private "So18UIContentContainerP"
-- !private "So17UICoordinateSpaceP"
+- "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
-- !private "So13UIDynamicItemP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So20UIFocusItemContainerP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
 - !private "So19UIGestureRecognizerC"
 - !private "So24UIModalPresentationStyleV"
 - !private "So22UINavigationControllerC"
 - !private "So22UIPanGestureRecognizerC"
-- !private "So30UIPasteConfigurationSupportingP"
+- "So30UIPasteConfigurationSupportingP"
 - !private "So36UIPercentDrivenInteractiveTransitionC"
 - !private "So10UIRectEdgeV"
-- !private "So11UIResponderC"
-- !private "So30UIResponderStandardEditActionsP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
 - !private "So32UIScreenEdgePanGestureRecognizerC"
 - !private "So12UIScrollViewC"
 - !private "So20UIScrollViewDelegateP"
@@ -1716,18 +1583,18 @@ depends-nominal:
 - !private "So21UITableViewControllerC"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
-- !private "So18UITraitEnvironmentP"
-- !private "So23UIUserActivityRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - !private "So16UIVibrancyEffectC"
-- !private "So6UIViewC"
+- "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So37UIViewControllerAnimatedTransitioningP"
 - !private "So40UIViewControllerInteractiveTransitioningP"
 - !private "So37UIViewControllerTransitioningDelegateP"
-- !private "So14UIVisualEffectC"
+- "So14UIVisualEffectC"
 - !private "So18UIVisualEffectViewC"
 - !private "So8UIWindowC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1758,15 +1625,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/SideMenu/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SideMenu.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ec0e255ba30f54f47a94bd123626e4f0"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "533cc3fb97d647833dcf00d69d739eb6"

@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cg-LA-o81">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cg-LA-o81">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting-->
-        <scene sceneID="dPi-ZB-SIg">
-            <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="isC-eA-M8Q" customClass="SettingViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rX6-Qy-aps">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJN-uI-rn4">
-                                <rect key="frame" x="0.0" y="29" width="375" height="638"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="sJN-uI-rn4" firstAttribute="leading" secondItem="rX6-Qy-aps" secondAttribute="leading" id="HOK-Fs-GaJ"/>
-                            <constraint firstAttribute="bottom" secondItem="sJN-uI-rn4" secondAttribute="bottom" id="HQb-I1-pnK"/>
-                            <constraint firstAttribute="trailing" secondItem="sJN-uI-rn4" secondAttribute="trailing" id="Skm-f0-12V"/>
-                            <constraint firstItem="sJN-uI-rn4" firstAttribute="top" secondItem="rX6-Qy-aps" secondAttribute="top" constant="29" id="WEq-dH-hlR"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="JhC-Jw-gbB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Setting" id="wck-ey-YNN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ZC-nV-4Ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1205.5999999999999" y="198.35082458770617"/>
-        </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="mjn-Sq-AFR">
             <objects>
@@ -249,43 +221,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="urI-Ib-N1z">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="eSL-k0-UrH">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="WJI-ZL-6ts" kind="unwind" unwindAction="unwindToVCWithSegue:" id="V5f-Zt-7WU"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="o5U-XJ-Dub">
                             <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kik-vs-spz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="WJI-ZL-6ts" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1456.8" y="891.90404797601207"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5px-Ka-hKB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFs-7l-JkJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kn1-r9-HQh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0067290528680000001" green="0.33897179370000002" blue="0.60057240720000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="isC-eA-M8Q" kind="relationship" relationship="rootViewController" id="wC6-3g-f2q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WVa-2g-gGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="517.60000000000002" y="211.84407796101951"/>
+            <point key="canvasLocation" x="1239" y="794"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="49m-U1-85H">
@@ -295,7 +238,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t9e-LD-fme">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -304,7 +247,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khN-bY-1jq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517.60000000000002" y="891.90404797601207"/>
+            <point key="canvasLocation" x="514" y="794"/>
         </scene>
     </scenes>
 </document>

@@ -112,6 +112,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "downloader"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "forceRefresh"]
@@ -134,6 +135,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "default"]
 - !private ["s17CustomReflectableP", "downloader"]
 - !private ["s17CustomReflectableP", "forceRefresh"]
 - ["s17CustomReflectableP", "init"]
@@ -170,6 +172,7 @@ depends-member:
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "default"]
 - !private ["Se", "downloader"]
 - !private ["Se", "forceRefresh"]
 - ["Se", "init"]
@@ -198,6 +201,7 @@ depends-member:
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "default"]
 - !private ["SE", "downloader"]
 - !private ["SE", "forceRefresh"]
 - ["SE", "init"]
@@ -215,6 +219,7 @@ depends-member:
 - !private ["SQ", "async"]
 - !private ["SQ", "cached"]
 - !private ["SQ", "count"]
+- !private ["SQ", "default"]
 - !private ["SQ", "downloader"]
 - !private ["SQ", "forceRefresh"]
 - ["SQ", "init"]
@@ -248,6 +253,7 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "values"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "default"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -257,6 +263,7 @@ depends-member:
 - !private ["SH", "async"]
 - !private ["SH", "cached"]
 - !private ["SH", "count"]
+- !private ["SH", "default"]
 - !private ["SH", "downloader"]
 - !private ["SH", "forceRefresh"]
 - ["SH", "init"]
@@ -272,7 +279,10 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "targetCache"]
 - !private ["SH", "values"]
+- !private ["10Kingfisher10ImageCacheC", "default"]
 - !private ["10Kingfisher10ImageCacheC", "imageCachedType"]
+- !private ["10Kingfisher15ImageDownloaderC", "default"]
+- !private ["10Kingfisher23ImageDownloaderDelegateP", "default"]
 - ["10Kingfisher15ImagePrefetcherC", "ArraySlice"]
 - ["10Kingfisher15ImagePrefetcherC", "Bool"]
 - !private ["10Kingfisher15ImagePrefetcherC", "CompletionHandler"]
@@ -347,6 +357,7 @@ depends-member:
 - !private ["So9OS_objectC", "init"]
 - !private ["So9OS_objectC", "main"]
 - !private ["So9OS_objectC", "safeAsync"]
+- !private ["Sq", "default"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "downloader"]
@@ -441,6 +452,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "default"]
 - !private ["s21_ObjectiveCBridgeableP", "downloader"]
 - !private ["s21_ObjectiveCBridgeableP", "forceRefresh"]
 - ["s21_ObjectiveCBridgeableP", "init"]
@@ -479,10 +491,13 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "10Kingfisher10ImageCacheC"
+- !private "10Kingfisher15ImageDownloaderC"
+- !private "10Kingfisher23ImageDownloaderDelegateP"
 - "10Kingfisher15ImagePrefetcherC"
 - !private "10Kingfisher14ImageProcessorP"
 - !private "10Kingfisher0A10CompatibleP"
@@ -494,6 +509,7 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So9OS_objectC"
+- !private "Sq"
 - "Sk"
 - "Sm"
 - !private "10Kingfisher8ResourceP"
@@ -539,16 +555,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Kingfisher/Sources/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Kingfisher.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "f3345c936b59f72a0ff8ae89fd72701a"

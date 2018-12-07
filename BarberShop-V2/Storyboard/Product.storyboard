@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O4e-NV-Hq1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O4e-NV-Hq1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--PRODUCTS-->
         <scene sceneID="AYY-ip-BsX">
             <objects>
                 <viewController storyboardIdentifier="ProductViewController" id="Vsr-HN-FAC" customClass="ProductViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +36,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="155" height="183"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhA-4h-kTq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="130"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BZW-bv-1B0">
                                                     <rect key="frame" x="0.0" y="0.0" width="155" height="128"/>
                                                 </imageView>
@@ -53,17 +57,21 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="eBq-aD-Nd5" firstAttribute="top" secondItem="BZW-bv-1B0" secondAttribute="bottom" constant="2" id="DEg-cs-FSn"/>
                                             <constraint firstAttribute="trailing" secondItem="RJ2-rt-sK6" secondAttribute="trailing" constant="10" id="ITW-b6-Edt"/>
+                                            <constraint firstItem="FhA-4h-kTq" firstAttribute="top" secondItem="zug-40-CqA" secondAttribute="top" id="Kzb-67-i6c"/>
                                             <constraint firstItem="BZW-bv-1B0" firstAttribute="top" secondItem="zug-40-CqA" secondAttribute="top" id="MZp-yl-xDV"/>
                                             <constraint firstItem="RJ2-rt-sK6" firstAttribute="top" secondItem="eBq-aD-Nd5" secondAttribute="bottom" constant="4" id="PUF-wy-8ex"/>
+                                            <constraint firstItem="eBq-aD-Nd5" firstAttribute="top" secondItem="FhA-4h-kTq" secondAttribute="bottom" id="ScP-Sm-fL9"/>
                                             <constraint firstItem="RJ2-rt-sK6" firstAttribute="leading" secondItem="zug-40-CqA" secondAttribute="leading" constant="10" id="Tpx-nn-hJ6"/>
+                                            <constraint firstAttribute="trailing" secondItem="FhA-4h-kTq" secondAttribute="trailing" id="Z5f-cb-7f7"/>
                                             <constraint firstItem="BZW-bv-1B0" firstAttribute="leading" secondItem="zug-40-CqA" secondAttribute="leading" id="ahv-pC-Fgq"/>
                                             <constraint firstItem="BZW-bv-1B0" firstAttribute="height" secondItem="zug-40-CqA" secondAttribute="height" multiplier="0.7" id="dwv-HK-Gom"/>
                                             <constraint firstAttribute="trailing" secondItem="eBq-aD-Nd5" secondAttribute="trailing" constant="10" id="eVs-j7-J3T"/>
                                             <constraint firstItem="eBq-aD-Nd5" firstAttribute="leading" secondItem="zug-40-CqA" secondAttribute="leading" constant="10" id="eya-fd-xNf"/>
+                                            <constraint firstItem="FhA-4h-kTq" firstAttribute="leading" secondItem="zug-40-CqA" secondAttribute="leading" id="isX-aY-RtU"/>
                                             <constraint firstAttribute="trailing" secondItem="BZW-bv-1B0" secondAttribute="trailing" id="oGq-h1-lKl"/>
                                         </constraints>
                                         <connections>
@@ -84,14 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ads-5n-cNo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="ujg-Pg-RfO">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="dt7-2a-8rm">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backTapped:" destination="Vsr-HN-FAC" id="O2w-b2-nmm"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="PRODUCTS" id="ujg-Pg-RfO"/>
                     <connections>
                         <outlet property="productCollectionView" destination="zQV-cH-g26" id="uR1-He-d6e"/>
                     </connections>
@@ -100,15 +101,17 @@
             </objects>
             <point key="canvasLocation" x="900" y="180.35982008995504"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Product-->
         <scene sceneID="0le-78-9CD">
             <objects>
                 <navigationController storyboardIdentifier="ProductID" automaticallyAdjustsScrollViewInsets="NO" id="O4e-NV-Hq1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Product" id="Rgr-Hs-PNC"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rOF-rh-Dpy">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>

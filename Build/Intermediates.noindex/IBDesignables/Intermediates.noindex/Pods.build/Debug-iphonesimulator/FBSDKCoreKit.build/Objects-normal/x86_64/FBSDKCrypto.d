@@ -4,5 +4,4 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDynamicFrameworkLoader.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDynamicFrameworkLoader.h

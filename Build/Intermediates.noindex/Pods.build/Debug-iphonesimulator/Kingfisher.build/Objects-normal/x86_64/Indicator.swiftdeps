@@ -41,13 +41,11 @@ depends-top-level:
 - !private "KingfisherEmptyOptionsInfo"
 - "KingfisherOptionsInfo"
 - "UIActivityIndicatorView"
-- !private "UIActivityIndicatorViewStyle"
 - "UIView"
 - !private "max"
 depends-member:
 - ["10Kingfisher17ActivityIndicatorC", "IndicatorView"]
 - ["10Kingfisher17ActivityIndicatorC", "UIActivityIndicatorView"]
-- !private ["10Kingfisher17ActivityIndicatorC", "UIActivityIndicatorViewStyle"]
 - !private ["10Kingfisher17ActivityIndicatorC", "activityIndicatorView"]
 - !private ["10Kingfisher17ActivityIndicatorC", "animatingCount"]
 - ["10Kingfisher17ActivityIndicatorC", "deinit"]
@@ -68,6 +66,7 @@ depends-member:
 - !private ["SK", "append"]
 - !private ["SK", "preloadAllAnimationData"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "Style"]
 - !private ["So15CALayerDelegateP", "autoresizingMask"]
 - !private ["So15CALayerDelegateP", "center"]
 - !private ["So15CALayerDelegateP", "contentMode"]
@@ -80,6 +79,7 @@ depends-member:
 - !private ["So6CGRectV", "init"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "Style"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "autoresizingMask"]
@@ -96,6 +96,7 @@ depends-member:
 - !private ["Sl", "append"]
 - !private ["Sl", "preloadAllAnimationData"]
 - !private ["So17UIViewContentModeV", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "Style"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "autoresizingMask"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
@@ -120,6 +121,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "preloadAllAnimationData"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "Style"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "autoresizingMask"]
@@ -147,6 +149,7 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "preloadAllAnimationData"]
 - !private ["SE", "width"]
+- !private ["SQ", "Style"]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "append"]
 - !private ["SQ", "autoresizingMask"]
@@ -174,6 +177,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "flexibleTopMargin"]
 - !private ["s25ExpressibleByArrayLiteralP", "preloadAllAnimationData"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["SH", "Style"]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "append"]
 - !private ["SH", "autoresizingMask"]
@@ -213,7 +217,6 @@ depends-member:
 - ["10Kingfisher9IndicatorP", "IndicatorView"]
 - !private ["10Kingfisher9IndicatorP", "KingfisherEmptyOptionsInfo"]
 - !private ["10Kingfisher9IndicatorP", "UIActivityIndicatorView"]
-- !private ["10Kingfisher9IndicatorP", "UIActivityIndicatorViewStyle"]
 - ["10Kingfisher9IndicatorP", ""]
 - !private ["10Kingfisher9IndicatorP", "activityIndicatorView"]
 - !private ["10Kingfisher9IndicatorP", "animatedImageIndicatorView"]
@@ -244,6 +247,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["SM", "append"]
 - !private ["SM", "preloadAllAnimationData"]
+- !private ["So8NSCodingP", "Style"]
 - !private ["So8NSCodingP", "autoresizingMask"]
 - !private ["So8NSCodingP", "center"]
 - !private ["So8NSCodingP", "contentMode"]
@@ -256,6 +260,7 @@ depends-member:
 - !private ["So8NSCodingP", "stopAnimating"]
 - !private ["So21NSItemProviderReadingP", "size"]
 - !private ["So21NSItemProviderWritingP", "size"]
+- !private ["So8NSObjectC", "Style"]
 - !private ["So8NSObjectC", "autoresizingMask"]
 - !private ["So8NSObjectC", "center"]
 - !private ["So8NSObjectC", "contentMode"]
@@ -266,6 +271,7 @@ depends-member:
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "startAnimating"]
 - !private ["So8NSObjectC", "stopAnimating"]
+- !private ["So8NSObjectP", "Style"]
 - !private ["So8NSObjectP", "autoresizingMask"]
 - !private ["So8NSObjectP", "center"]
 - !private ["So8NSObjectP", "contentMode"]
@@ -307,6 +313,7 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "startAnimating"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "stopAnimating"]
+- !private ["So29UIAccessibilityIdentificationP", "Style"]
 - !private ["So29UIAccessibilityIdentificationP", "autoresizingMask"]
 - !private ["So29UIAccessibilityIdentificationP", "center"]
 - !private ["So29UIAccessibilityIdentificationP", "contentMode"]
@@ -317,11 +324,13 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "size"]
 - !private ["So29UIAccessibilityIdentificationP", "startAnimating"]
 - !private ["So29UIAccessibilityIdentificationP", "stopAnimating"]
+- !private ["So23UIActivityIndicatorViewC", "Style"]
 - !private ["So23UIActivityIndicatorViewC", "autoresizingMask"]
 - !private ["So23UIActivityIndicatorViewC", "init"]
 - !private ["So23UIActivityIndicatorViewC", "isHidden"]
 - !private ["So23UIActivityIndicatorViewC", "startAnimating"]
 - !private ["So23UIActivityIndicatorViewC", "stopAnimating"]
+- !private ["So12UIAppearanceP", "Style"]
 - !private ["So12UIAppearanceP", "autoresizingMask"]
 - !private ["So12UIAppearanceP", "center"]
 - !private ["So12UIAppearanceP", "contentMode"]
@@ -331,6 +340,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "isHidden"]
 - !private ["So12UIAppearanceP", "startAnimating"]
 - !private ["So12UIAppearanceP", "stopAnimating"]
+- !private ["So21UIAppearanceContainerP", "Style"]
 - !private ["So21UIAppearanceContainerP", "autoresizingMask"]
 - !private ["So21UIAppearanceContainerP", "center"]
 - !private ["So21UIAppearanceContainerP", "contentMode"]
@@ -340,6 +350,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "startAnimating"]
 - !private ["So21UIAppearanceContainerP", "stopAnimating"]
+- !private ["So17UICoordinateSpaceP", "Style"]
 - !private ["So17UICoordinateSpaceP", "autoresizingMask"]
 - !private ["So17UICoordinateSpaceP", "center"]
 - !private ["So17UICoordinateSpaceP", "contentMode"]
@@ -349,6 +360,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "isHidden"]
 - !private ["So17UICoordinateSpaceP", "startAnimating"]
 - !private ["So17UICoordinateSpaceP", "stopAnimating"]
+- !private ["So13UIDynamicItemP", "Style"]
 - !private ["So13UIDynamicItemP", "autoresizingMask"]
 - !private ["So13UIDynamicItemP", "center"]
 - !private ["So13UIDynamicItemP", "contentMode"]
@@ -358,6 +370,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "isHidden"]
 - !private ["So13UIDynamicItemP", "startAnimating"]
 - !private ["So13UIDynamicItemP", "stopAnimating"]
+- !private ["So18UIFocusEnvironmentP", "Style"]
 - !private ["So18UIFocusEnvironmentP", "autoresizingMask"]
 - !private ["So18UIFocusEnvironmentP", "center"]
 - !private ["So18UIFocusEnvironmentP", "contentMode"]
@@ -367,6 +380,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "startAnimating"]
 - !private ["So18UIFocusEnvironmentP", "stopAnimating"]
+- !private ["So11UIFocusItemP", "Style"]
 - !private ["So11UIFocusItemP", "autoresizingMask"]
 - !private ["So11UIFocusItemP", "center"]
 - !private ["So11UIFocusItemP", "contentMode"]
@@ -376,6 +390,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "isHidden"]
 - !private ["So11UIFocusItemP", "startAnimating"]
 - !private ["So11UIFocusItemP", "stopAnimating"]
+- !private ["So20UIFocusItemContainerP", "Style"]
 - !private ["So20UIFocusItemContainerP", "autoresizingMask"]
 - !private ["So20UIFocusItemContainerP", "center"]
 - !private ["So20UIFocusItemContainerP", "contentMode"]
@@ -395,6 +410,7 @@ depends-member:
 - !private ["So11UIImageViewC", "startAnimating"]
 - !private ["So11UIImageViewC", "stopAnimating"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
+- !private ["So30UIPasteConfigurationSupportingP", "Style"]
 - !private ["So30UIPasteConfigurationSupportingP", "autoresizingMask"]
 - !private ["So30UIPasteConfigurationSupportingP", "center"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
@@ -404,6 +420,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "startAnimating"]
 - !private ["So30UIPasteConfigurationSupportingP", "stopAnimating"]
+- !private ["So11UIResponderC", "Style"]
 - !private ["So11UIResponderC", "autoresizingMask"]
 - !private ["So11UIResponderC", "center"]
 - !private ["So11UIResponderC", "contentMode"]
@@ -413,6 +430,7 @@ depends-member:
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "startAnimating"]
 - !private ["So11UIResponderC", "stopAnimating"]
+- !private ["So30UIResponderStandardEditActionsP", "Style"]
 - !private ["So30UIResponderStandardEditActionsP", "autoresizingMask"]
 - !private ["So30UIResponderStandardEditActionsP", "center"]
 - !private ["So30UIResponderStandardEditActionsP", "contentMode"]
@@ -422,6 +440,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "startAnimating"]
 - !private ["So30UIResponderStandardEditActionsP", "stopAnimating"]
+- !private ["So18UITraitEnvironmentP", "Style"]
 - !private ["So18UITraitEnvironmentP", "autoresizingMask"]
 - !private ["So18UITraitEnvironmentP", "center"]
 - !private ["So18UITraitEnvironmentP", "contentMode"]
@@ -431,6 +450,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "startAnimating"]
 - !private ["So18UITraitEnvironmentP", "stopAnimating"]
+- !private ["So23UIUserActivityRestoringP", "Style"]
 - !private ["So23UIUserActivityRestoringP", "autoresizingMask"]
 - !private ["So23UIUserActivityRestoringP", "center"]
 - !private ["So23UIUserActivityRestoringP", "contentMode"]
@@ -440,6 +460,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "isHidden"]
 - !private ["So23UIUserActivityRestoringP", "startAnimating"]
 - !private ["So23UIUserActivityRestoringP", "stopAnimating"]
+- !private ["So6UIViewC", "Style"]
 - !private ["So6UIViewC", "autoresizingMask"]
 - !private ["So6UIViewC", "center"]
 - !private ["So6UIViewC", "contentMode"]
@@ -449,6 +470,7 @@ depends-member:
 - !private ["So6UIViewC", "isHidden"]
 - !private ["So6UIViewC", "startAnimating"]
 - !private ["So6UIViewC", "stopAnimating"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Style"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "autoresizingMask"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "center"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentMode"]
@@ -464,6 +486,7 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "preloadAllAnimationData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Style"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "autoresizingMask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
@@ -574,16 +597,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Kingfisher/Sources/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Kingfisher.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "e10ee968689fc44ae9f10fbedb1c1cff"

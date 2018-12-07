@@ -18,6 +18,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
+- "CGFloat"
 - !private "CGPoint"
 - "CastingPrecedence"
 - "ContainerView"
@@ -494,6 +495,7 @@ depends-member:
 - !private ["So14NSNotificationC", "Name"]
 - !private ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "Constants"]
 - ["So8NSObjectC", "ContainerView"]
@@ -543,6 +545,7 @@ depends-member:
 - !private ["So8NSObjectC", "isValid"]
 - ["So8NSObjectC", "isVisible"]
 - !private ["So8NSObjectC", "keyWindow"]
+- ["So8NSObjectC", "leadingMargin"]
 - ["So8NSObjectC", "performDelayedHide"]
 - !private ["So8NSObjectC", "removeObserver"]
 - !private ["So8NSObjectC", "scheduledTimer"]
@@ -556,6 +559,7 @@ depends-member:
 - ["So8NSObjectC", "stopAnimatingContentView"]
 - !private ["So8NSObjectC", "subviews"]
 - ["So8NSObjectC", "timerActions"]
+- ["So8NSObjectC", "trailingMargin"]
 - !private ["So8NSObjectC", "userInfo"]
 - ["So8NSObjectC", "userInteractionOnUnderlyingViewsEnabled"]
 - ["So8NSObjectC", "viewToPresentOn"]
@@ -632,6 +636,7 @@ depends-member:
 - !private ["s9OptionSetP", "flexibleWidth"]
 - !private ["5PKHUDAAC", "AnyObject"]
 - ["5PKHUDAAC", "Bool"]
+- ["5PKHUDAAC", "CGFloat"]
 - !private ["5PKHUDAAC", "CGPoint"]
 - !private ["5PKHUDAAC", "Constants"]
 - ["5PKHUDAAC", "ContainerView"]
@@ -663,6 +668,7 @@ depends-member:
 - !private ["5PKHUDAAC", "hideTimer"]
 - ["5PKHUDAAC", "init"]
 - ["5PKHUDAAC", "isVisible"]
+- ["5PKHUDAAC", "leadingMargin"]
 - ["5PKHUDAAC", "performDelayedHide"]
 - ["5PKHUDAAC", "sharedHUD"]
 - ["5PKHUDAAC", "show"]
@@ -670,6 +676,7 @@ depends-member:
 - ["5PKHUDAAC", "startAnimatingContentView"]
 - ["5PKHUDAAC", "stopAnimatingContentView"]
 - !private ["5PKHUDAAC", "timerActions"]
+- ["5PKHUDAAC", "trailingMargin"]
 - ["5PKHUDAAC", "userInteractionOnUnderlyingViewsEnabled"]
 - ["5PKHUDAAC", "viewToPresentOn"]
 - ["5PKHUDAAC", "willEnterForeground"]
@@ -1146,15 +1153,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/PKHUD/PKHUD/PKHUD.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/PKHUD/PKHUD-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/PKHUD.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e0bf969dc5f3ce08095f70f6ec16aebe"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4a02a7954953e07430996a3e401696a4"

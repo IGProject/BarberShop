@@ -1,10 +1,13 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "SpinnerType"
+- "SpinnerCompletionType"
 provides-nominal:
 - "15SSSpinnerButton11SpinnerTypeO"
+- "15SSSpinnerButton21SpinnerCompletionTypeO"
 provides-member:
 - ["15SSSpinnerButton11SpinnerTypeO", ""]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -20,6 +23,7 @@ depends-top-level:
 - "SSSpinnerAnimationDelegate"
 - !private "SSSpinnerBallClipRotate"
 - !private "SSSuccessMark"
+- "SpinnerCompletionType"
 - "SpinnerType"
 - !private "~="
 depends-member:
@@ -121,26 +125,35 @@ depends-member:
 - !private ["15SSSpinnerButton0A14BallClipRotateC", "init"]
 - !private ["15SSSpinnerButton13SSSuccessMarkC", "deinit"]
 - !private ["15SSSpinnerButton13SSSuccessMarkC", "init"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "RawValue"]
+- !private ["15SSSpinnerButton21SpinnerCompletionTypeO", "SSErrorMark"]
+- !private ["15SSSpinnerButton21SpinnerCompletionTypeO", "SSFailMark"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "SSSpinnerAnimationDelegate"]
+- !private ["15SSSpinnerButton21SpinnerCompletionTypeO", "SSSuccessMark"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "_Default_RawValue"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "animation"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "checkMark"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "deinit"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "errorMark"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "failMark"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "hash"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "hashValue"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "init"]
+- ["15SSSpinnerButton21SpinnerCompletionTypeO", "rawValue"]
 - ["15SSSpinnerButton11SpinnerTypeO", "RawValue"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "SSBallRotateChase"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "SSBallSpinFadeLoader"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "SSCircleStrokeSpin"]
-- !private ["15SSSpinnerButton11SpinnerTypeO", "SSErrorMark"]
-- !private ["15SSSpinnerButton11SpinnerTypeO", "SSFailMark"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "SSLineSpinFadeLoader"]
 - ["15SSSpinnerButton11SpinnerTypeO", "SSSpinnerAnimationDelegate"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "SSSpinnerBallClipRotate"]
-- !private ["15SSSpinnerButton11SpinnerTypeO", "SSSuccessMark"]
 - ["15SSSpinnerButton11SpinnerTypeO", "_Default_RawValue"]
 - ["15SSSpinnerButton11SpinnerTypeO", "animation"]
 - ["15SSSpinnerButton11SpinnerTypeO", "ballClipRotate"]
 - ["15SSSpinnerButton11SpinnerTypeO", "ballRotateChase"]
 - ["15SSSpinnerButton11SpinnerTypeO", "ballSpinFade"]
-- ["15SSSpinnerButton11SpinnerTypeO", "checkMark"]
 - ["15SSSpinnerButton11SpinnerTypeO", "circleStrokeSpin"]
 - ["15SSSpinnerButton11SpinnerTypeO", "deinit"]
-- ["15SSSpinnerButton11SpinnerTypeO", "errorMark"]
-- ["15SSSpinnerButton11SpinnerTypeO", "failMark"]
 - ["15SSSpinnerButton11SpinnerTypeO", "hash"]
 - ["15SSSpinnerButton11SpinnerTypeO", "hashValue"]
 - ["15SSSpinnerButton11SpinnerTypeO", "init"]
@@ -171,6 +184,7 @@ depends-nominal:
 - !private "15SSSpinnerButton0A17AnimationDelegateP"
 - !private "15SSSpinnerButton0A14BallClipRotateC"
 - !private "15SSSpinnerButton13SSSuccessMarkC"
+- "15SSSpinnerButton21SpinnerCompletionTypeO"
 - "15SSSpinnerButton11SpinnerTypeO"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -191,15 +205,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/SSSpinnerButton/SSSpinnerButton-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SSSpinnerButton.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8c111efd44edc1607b206a4c44ad83a7"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "432453ad2bb167bd53667b1acb8880bb"

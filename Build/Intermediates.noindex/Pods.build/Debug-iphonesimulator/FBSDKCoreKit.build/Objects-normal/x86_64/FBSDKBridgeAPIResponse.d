@@ -8,7 +8,6 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocolType.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPICrypto.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocol.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest+Private.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTypeUtility.h \

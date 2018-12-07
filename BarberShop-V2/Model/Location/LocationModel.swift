@@ -9,6 +9,7 @@
 import Foundation
 
 struct Locations: Codable {
+  let length:Int
     struct Results: Codable {
         let id:Int
         let address: String
@@ -19,12 +20,11 @@ struct Locations: Codable {
         let location_profile: String
         let team:[Teams]
     }
-    
     struct Teams: Codable{
         let id: Int
         let username: String
         let team_profile: String
     }
-    
-    let results:[Locations.Results]
+  
+    var results:[Locations.Results]
 }

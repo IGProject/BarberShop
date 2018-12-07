@@ -9,7 +9,10 @@ provides-dynamic-lookup:
 - "layoutSubviews"
 depends-top-level:
 - !private "*"
+- !private "+"
+- !private "-"
 - !private "/"
+- !private ">"
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - !private "CFloat"
@@ -20,8 +23,10 @@ depends-top-level:
 - "FloatLiteralType"
 - "IntegerLiteralType"
 - "NSCoder"
+- !private "PKHUD"
 - "PKHUDSquareBaseView"
 - "String"
+- "TernaryPrecedence"
 - "UIColor"
 - "UIFont"
 - "UIImage"
@@ -31,11 +36,13 @@ depends-top-level:
 - !private "ceilf"
 depends-member:
 - !private ["SB", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "CFloat"]
 - !private ["So15CALayerDelegateP", "CGFloat"]
 - ["So15CALayerDelegateP", "CGPoint"]
 - ["So15CALayerDelegateP", "CGRect"]
 - ["So15CALayerDelegateP", "CGSize"]
+- !private ["So15CALayerDelegateP", "PKHUD"]
 - !private ["So15CALayerDelegateP", "PKHUDSquareBaseView"]
 - ["So15CALayerDelegateP", "UIColor"]
 - ["So15CALayerDelegateP", "UIFont"]
@@ -76,12 +83,14 @@ depends-member:
 - ["s7CVarArgP", "CGPoint"]
 - ["s7CVarArgP", "CGRect"]
 - ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "PKHUD"]
 - !private ["s7CVarArgP", "PKHUDSquareBaseView"]
 - ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", "UIFont"]
 - ["s7CVarArgP", "UIImageView"]
 - ["s7CVarArgP", "UILabel"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addSubview"]
 - ["s7CVarArgP", "adjustsFontSizeToFitWidth"]
 - ["s7CVarArgP", "alpha"]
@@ -98,14 +107,17 @@ depends-member:
 - !private ["s7CVarArgP", "imageView"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layoutSubviews"]
+- !private ["s7CVarArgP", "leadingMargin"]
 - ["s7CVarArgP", "minimumScaleFactor"]
 - ["s7CVarArgP", "numberOfLines"]
+- !private ["s7CVarArgP", "sharedHUD"]
 - !private ["s7CVarArgP", "subtitleLabel"]
 - ["s7CVarArgP", "systemFont"]
 - !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "textAlignment"]
 - ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "titleLabel"]
+- !private ["s7CVarArgP", "trailingMargin"]
 - ["s7CVarArgP", "withAlphaComponent"]
 - !private ["SL", "init"]
 - ["So17UIViewContentModeV", "center"]
@@ -114,6 +126,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - ["s28CustomDebugStringConvertibleP", "CGRect"]
 - ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "PKHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "PKHUDSquareBaseView"]
 - ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", "UIFont"]
@@ -137,8 +150,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layoutSubviews"]
+- !private ["s28CustomDebugStringConvertibleP", "leadingMargin"]
 - ["s28CustomDebugStringConvertibleP", "minimumScaleFactor"]
 - ["s28CustomDebugStringConvertibleP", "numberOfLines"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "subtitleLabel"]
 - ["s28CustomDebugStringConvertibleP", "systemFont"]
@@ -146,14 +161,17 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textAlignment"]
 - ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "trailingMargin"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - ["s28CustomDebugStringConvertibleP", "withAlphaComponent"]
 - ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - ["s29CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "height"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
@@ -164,12 +182,14 @@ depends-member:
 - ["s23CustomStringConvertibleP", "CGPoint"]
 - ["s23CustomStringConvertibleP", "CGRect"]
 - ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "PKHUD"]
 - !private ["s23CustomStringConvertibleP", "PKHUDSquareBaseView"]
 - ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", "UIFont"]
 - ["s23CustomStringConvertibleP", "UIImageView"]
 - ["s23CustomStringConvertibleP", "UILabel"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - ["s23CustomStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - ["s23CustomStringConvertibleP", "alpha"]
@@ -186,20 +206,25 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layoutSubviews"]
+- !private ["s23CustomStringConvertibleP", "leadingMargin"]
 - ["s23CustomStringConvertibleP", "minimumScaleFactor"]
 - ["s23CustomStringConvertibleP", "numberOfLines"]
+- !private ["s23CustomStringConvertibleP", "sharedHUD"]
 - !private ["s23CustomStringConvertibleP", "subtitleLabel"]
 - ["s23CustomStringConvertibleP", "systemFont"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "textAlignment"]
 - ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
+- !private ["s23CustomStringConvertibleP", "trailingMargin"]
 - ["s23CustomStringConvertibleP", "withAlphaComponent"]
+- !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "height"]
 - ["Se", "init"]
 - !private ["Se", "size"]
 - !private ["Se", "width"]
 - ["Se", "zero"]
+- !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "height"]
 - ["SE", "init"]
 - !private ["SE", "size"]
@@ -210,12 +235,14 @@ depends-member:
 - ["SQ", "CGPoint"]
 - ["SQ", "CGRect"]
 - ["SQ", "CGSize"]
+- !private ["SQ", "PKHUD"]
 - !private ["SQ", "PKHUDSquareBaseView"]
 - ["SQ", "UIColor"]
 - ["SQ", "UIFont"]
 - ["SQ", "UIImageView"]
 - ["SQ", "UILabel"]
 - ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "addSubview"]
 - ["SQ", "adjustsFontSizeToFitWidth"]
 - ["SQ", "alpha"]
@@ -234,8 +261,10 @@ depends-member:
 - !private ["SQ", "imageView"]
 - ["SQ", "init"]
 - !private ["SQ", "layoutSubviews"]
+- !private ["SQ", "leadingMargin"]
 - ["SQ", "minimumScaleFactor"]
 - ["SQ", "numberOfLines"]
+- !private ["SQ", "sharedHUD"]
 - !private ["SQ", "size"]
 - !private ["SQ", "subtitleLabel"]
 - ["SQ", "systemFont"]
@@ -243,9 +272,11 @@ depends-member:
 - ["SQ", "textAlignment"]
 - ["SQ", "textColor"]
 - !private ["SQ", "titleLabel"]
+- !private ["SQ", "trailingMargin"]
 - !private ["SQ", "width"]
 - ["SQ", "withAlphaComponent"]
 - ["SQ", "zero"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["Sf", "init"]
@@ -255,12 +286,14 @@ depends-member:
 - ["SH", "CGPoint"]
 - ["SH", "CGRect"]
 - ["SH", "CGSize"]
+- !private ["SH", "PKHUD"]
 - !private ["SH", "PKHUDSquareBaseView"]
 - ["SH", "UIColor"]
 - ["SH", "UIFont"]
 - ["SH", "UIImageView"]
 - ["SH", "UILabel"]
 - ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "addSubview"]
 - ["SH", "adjustsFontSizeToFitWidth"]
 - ["SH", "alpha"]
@@ -278,21 +311,26 @@ depends-member:
 - !private ["SH", "imageView"]
 - ["SH", "init"]
 - !private ["SH", "layoutSubviews"]
+- !private ["SH", "leadingMargin"]
 - ["SH", "minimumScaleFactor"]
 - ["SH", "numberOfLines"]
+- !private ["SH", "sharedHUD"]
 - !private ["SH", "subtitleLabel"]
 - ["SH", "systemFont"]
 - !private ["SH", "text"]
 - ["SH", "textAlignment"]
 - ["SH", "textColor"]
 - !private ["SH", "titleLabel"]
+- !private ["SH", "trailingMargin"]
 - ["SH", "withAlphaComponent"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["So8NSCodingP", "CFloat"]
 - !private ["So8NSCodingP", "CGFloat"]
 - ["So8NSCodingP", "CGPoint"]
 - ["So8NSCodingP", "CGRect"]
 - ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "PKHUD"]
 - !private ["So8NSCodingP", "PKHUDSquareBaseView"]
 - ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", "UIFont"]
@@ -336,6 +374,7 @@ depends-member:
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "CGSize"]
 - ["So8NSObjectC", "NSCoder"]
+- !private ["So8NSObjectC", "PKHUD"]
 - !private ["So8NSObjectC", "PKHUDSquareBaseView"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIColor"]
@@ -359,20 +398,24 @@ depends-member:
 - ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "layoutSubviews"]
+- !private ["So8NSObjectC", "leadingMargin"]
 - ["So8NSObjectC", "minimumScaleFactor"]
 - ["So8NSObjectC", "numberOfLines"]
+- !private ["So8NSObjectC", "sharedHUD"]
 - ["So8NSObjectC", "subtitleLabel"]
 - ["So8NSObjectC", "systemFont"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textAlignment"]
 - ["So8NSObjectC", "textColor"]
 - ["So8NSObjectC", "titleLabel"]
+- !private ["So8NSObjectC", "trailingMargin"]
 - ["So8NSObjectC", "withAlphaComponent"]
 - !private ["So8NSObjectP", "CFloat"]
 - !private ["So8NSObjectP", "CGFloat"]
 - ["So8NSObjectP", "CGPoint"]
 - ["So8NSObjectP", "CGRect"]
 - ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "PKHUD"]
 - !private ["So8NSObjectP", "PKHUDSquareBaseView"]
 - ["So8NSObjectP", "UIColor"]
 - ["So8NSObjectP", "UIFont"]
@@ -395,25 +438,32 @@ depends-member:
 - !private ["So8NSObjectP", "imageView"]
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "layoutSubviews"]
+- !private ["So8NSObjectP", "leadingMargin"]
 - ["So8NSObjectP", "minimumScaleFactor"]
 - ["So8NSObjectP", "numberOfLines"]
+- !private ["So8NSObjectP", "sharedHUD"]
 - !private ["So8NSObjectP", "subtitleLabel"]
 - ["So8NSObjectP", "systemFont"]
 - !private ["So8NSObjectP", "text"]
 - ["So8NSObjectP", "textAlignment"]
 - ["So8NSObjectP", "textColor"]
 - !private ["So8NSObjectP", "titleLabel"]
+- !private ["So8NSObjectP", "trailingMargin"]
 - ["So8NSObjectP", "withAlphaComponent"]
 - ["So14NSSecureCodingP", "black"]
 - ["So14NSSecureCodingP", "withAlphaComponent"]
 - ["So15NSTextAlignmentV", "center"]
 - !private ["Sj", "init"]
+- !private ["5PKHUDAAC", "leadingMargin"]
+- !private ["5PKHUDAAC", "sharedHUD"]
+- !private ["5PKHUDAAC", "trailingMargin"]
 - !private ["5PKHUD19PKHUDSquareBaseViewC", "CFloat"]
 - !private ["5PKHUD19PKHUDSquareBaseViewC", "CGFloat"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "CGPoint"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "CGRect"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "CGSize"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "NSCoder"]
+- !private ["5PKHUD19PKHUDSquareBaseViewC", "PKHUD"]
 - !private ["5PKHUD19PKHUDSquareBaseViewC", "PKHUDSquareBaseView"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "String"]
 - ["5PKHUD19PKHUDSquareBaseViewC", "UIColor"]
@@ -445,6 +495,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "CGPoint"]
 - ["So29UIAccessibilityIdentificationP", "CGRect"]
 - ["So29UIAccessibilityIdentificationP", "CGSize"]
+- !private ["So29UIAccessibilityIdentificationP", "PKHUD"]
 - !private ["So29UIAccessibilityIdentificationP", "PKHUDSquareBaseView"]
 - ["So29UIAccessibilityIdentificationP", "UIColor"]
 - ["So29UIAccessibilityIdentificationP", "UIFont"]
@@ -477,6 +528,7 @@ depends-member:
 - ["So12UIAppearanceP", "CGPoint"]
 - ["So12UIAppearanceP", "CGRect"]
 - ["So12UIAppearanceP", "CGSize"]
+- !private ["So12UIAppearanceP", "PKHUD"]
 - !private ["So12UIAppearanceP", "PKHUDSquareBaseView"]
 - ["So12UIAppearanceP", "UIColor"]
 - ["So12UIAppearanceP", "UIFont"]
@@ -509,6 +561,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CGPoint"]
 - ["So21UIAppearanceContainerP", "CGRect"]
 - ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "PKHUD"]
 - !private ["So21UIAppearanceContainerP", "PKHUDSquareBaseView"]
 - ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", "UIFont"]
@@ -552,6 +605,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "CGPoint"]
 - ["So17UICoordinateSpaceP", "CGRect"]
 - ["So17UICoordinateSpaceP", "CGSize"]
+- !private ["So17UICoordinateSpaceP", "PKHUD"]
 - !private ["So17UICoordinateSpaceP", "PKHUDSquareBaseView"]
 - ["So17UICoordinateSpaceP", "UIColor"]
 - ["So17UICoordinateSpaceP", "UIFont"]
@@ -584,6 +638,7 @@ depends-member:
 - ["So13UIDynamicItemP", "CGPoint"]
 - ["So13UIDynamicItemP", "CGRect"]
 - ["So13UIDynamicItemP", "CGSize"]
+- !private ["So13UIDynamicItemP", "PKHUD"]
 - !private ["So13UIDynamicItemP", "PKHUDSquareBaseView"]
 - ["So13UIDynamicItemP", "UIColor"]
 - ["So13UIDynamicItemP", "UIFont"]
@@ -616,6 +671,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CGPoint"]
 - ["So18UIFocusEnvironmentP", "CGRect"]
 - ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "PKHUD"]
 - !private ["So18UIFocusEnvironmentP", "PKHUDSquareBaseView"]
 - ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", "UIFont"]
@@ -648,6 +704,7 @@ depends-member:
 - ["So11UIFocusItemP", "CGPoint"]
 - ["So11UIFocusItemP", "CGRect"]
 - ["So11UIFocusItemP", "CGSize"]
+- !private ["So11UIFocusItemP", "PKHUD"]
 - !private ["So11UIFocusItemP", "PKHUDSquareBaseView"]
 - ["So11UIFocusItemP", "UIColor"]
 - ["So11UIFocusItemP", "UIFont"]
@@ -680,6 +737,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", "CGPoint"]
 - ["So20UIFocusItemContainerP", "CGRect"]
 - ["So20UIFocusItemContainerP", "CGSize"]
+- !private ["So20UIFocusItemContainerP", "PKHUD"]
 - !private ["So20UIFocusItemContainerP", "PKHUDSquareBaseView"]
 - ["So20UIFocusItemContainerP", "UIColor"]
 - ["So20UIFocusItemContainerP", "UIFont"]
@@ -729,6 +787,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "PKHUD"]
 - !private ["So30UIPasteConfigurationSupportingP", "PKHUDSquareBaseView"]
 - ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", "UIFont"]
@@ -762,6 +821,7 @@ depends-member:
 - ["So11UIResponderC", "CGRect"]
 - ["So11UIResponderC", "CGSize"]
 - ["So11UIResponderC", "NSCoder"]
+- !private ["So11UIResponderC", "PKHUD"]
 - !private ["So11UIResponderC", "PKHUDSquareBaseView"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIColor"]
@@ -795,6 +855,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - ["So30UIResponderStandardEditActionsP", "CGRect"]
 - ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "PKHUD"]
 - !private ["So30UIResponderStandardEditActionsP", "PKHUDSquareBaseView"]
 - ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", "UIFont"]
@@ -827,6 +888,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CGPoint"]
 - ["So18UITraitEnvironmentP", "CGRect"]
 - ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "PKHUD"]
 - !private ["So18UITraitEnvironmentP", "PKHUDSquareBaseView"]
 - ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", "UIFont"]
@@ -859,6 +921,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "CGPoint"]
 - ["So23UIUserActivityRestoringP", "CGRect"]
 - ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "PKHUD"]
 - !private ["So23UIUserActivityRestoringP", "PKHUDSquareBaseView"]
 - ["So23UIUserActivityRestoringP", "UIColor"]
 - ["So23UIUserActivityRestoringP", "UIFont"]
@@ -892,6 +955,7 @@ depends-member:
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "CGSize"]
 - ["So6UIViewC", "NSCoder"]
+- !private ["So6UIViewC", "PKHUD"]
 - !private ["So6UIViewC", "PKHUDSquareBaseView"]
 - ["So6UIViewC", "String"]
 - ["So6UIViewC", "UIColor"]
@@ -928,6 +992,7 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "CGPoint"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "CGSize"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "PKHUD"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "PKHUDSquareBaseView"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "UIFont"]
@@ -955,6 +1020,7 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s26_ExpressibleByColorLiteralP", "black"]
@@ -965,6 +1031,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "PKHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PKHUDSquareBaseView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
@@ -987,15 +1054,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leadingMargin"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "minimumScaleFactor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfLines"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subtitleLabel"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trailingMargin"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "withAlphaComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
@@ -1003,6 +1074,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
 - !private "SB"
+- !private "Sb"
 - "So15CALayerDelegateP"
 - !private "12CoreGraphics7CGFloatV"
 - "So7CGPointV"
@@ -1018,6 +1090,7 @@ depends-nominal:
 - "Se"
 - "SE"
 - "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "Sf"
@@ -1033,6 +1106,7 @@ depends-nominal:
 - "So14NSSecureCodingP"
 - "So15NSTextAlignmentV"
 - !private "Sj"
+- !private "5PKHUDAAC"
 - "5PKHUD19PKHUDSquareBaseViewC"
 - "SY"
 - !private "s13SignedNumericP"
@@ -1060,6 +1134,7 @@ depends-nominal:
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s26_ExpressibleByColorLiteralP"
@@ -1084,15 +1159,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/PKHUD/PKHUD/PKHUD.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/PKHUD/PKHUD-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/PKHUD.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "818d66c82145ad166d0a183beaef7516"

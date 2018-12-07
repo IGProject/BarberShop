@@ -19,9 +19,12 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
    
     @IBOutlet weak var emailTextField: TextField!
     @IBOutlet weak var passwordTextField: TextField!
-     private let readPermissions: [ReadPermission] = [ .publicProfile, .email, .userFriends, .custom("user_posts") ]
+    private let readPermissions: [ReadPermission] = [ .publicProfile, .email, .userFriends, .custom("user_posts") ]
     var alertController: UIAlertController?
-    
+  
+    var signIn:SignInEmail!
+    var registerSocial:UserSocial!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +33,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
         setupTextFieldMaterial()
         setupClearNavigation()
         initGoogleSignIn()
+      
     }
   
     func initGoogleSignIn(){
@@ -71,20 +75,23 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
             case 0: //facebook
                 sender.stopAnimationWithCompletionTypeAndBackToDefaults(completionType: .none, backToDefaults: true, complete: nil)
                 
-                     let loginManager = LoginManager()
+                let loginManager = LoginManager()
                 loginManager.logIn(readPermissions: self.readPermissions, viewController: self, completion: self.didReceiveFacebookLoginResult)
                 return
+              
             case 1: //google
                sender.stopAnimationWithCompletionTypeAndBackToDefaults(completionType: .none, backToDefaults: true, complete: nil)
-                    GIDSignIn.sharedInstance()?.signIn()
-                    
-                return
+                   GIDSignIn.sharedInstance()?.signIn()
+               return
             case 2: //Sign In Gmail
                 sender.stopAnimationWithCompletionTypeAndBackToDefaults(completionType: .none, backToDefaults: true, complete: nil)
                 
+                 self.signIn = SignInEmail(username: self.emailTextField.text!, password: self.passwordTextField.text!, token: "")
+                
+                 
                 let storyboard:UIStoryboard = UIStoryboard(storyboard: .Home)
-                let home = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                self.navigationController?.pushViewController(home, animated: true)
+                let home = storyboard.instantiateViewController(withIdentifier: "CustomTabarViewController") as! MainTabarViewController
+                self.navigationController?.present(home, animated: true)
     
                 return
             default:
@@ -101,7 +108,6 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
             didLoginWithFacebook()
         case .cancelled:
             alertController = UIAlertController(title: "Login Cancelled", message: "User cancelled login", preferredStyle: .alert)
-            
         case .failed(let error):
             
             alertController = UIAlertController(title: "Login Fail", message: "User failed with error\(error)", preferredStyle: .alert)
@@ -113,26 +119,19 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
         if let error = error {
             print("\(error.localizedDescription)")
         } else {
+          
             // Perform any operations on signed in user here.
-           // let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
-            let email = user.profile.email
-            let picture = user.profile.imageURL(withDimension: 150)
-            
-            print("\(String(describing: idToken)),\n\(String(describing: fullName)),\n \(String(describing: givenName)), \n \(String(describing: familyName)) \(String(describing: email)),\n\(String(describing: picture))")
+//          let urlImage = user.profile.imageURL(withDimension: 150)
+//          registerSocial = UserSocial(username: user.profile.name, email: user.profile.email, token: user.authentication.idToken, user_id: Int(user.userID)!, image: , type: .google)
+          
+        
         }
     }
     
     func didLoginWithFacebook(){
         
     }
-    
- 
-    
-    
+  
     func googleLogin(){
         
     }
@@ -146,7 +145,9 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
 //    }
     
     @IBAction func registerTapped(_ sender: Any) {
-        
+      let storyboard:UIStoryboard = UIStoryboard(storyboard:.SignUp)
+      let signUp = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+      navigationController?.present(signUp, animated: true)
     }
     
 }

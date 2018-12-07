@@ -4,7 +4,6 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSettings+Internal.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
@@ -18,8 +17,13 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLink.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkTarget.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkNavigation.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolving.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Bolts/Bolts/Common/Bolts.h \
@@ -40,8 +44,13 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLink.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/Bolts/Bolts-umbrella.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkReturnToRefererController.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkReturnToRefererView.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKWebViewAppLinkResolver.h

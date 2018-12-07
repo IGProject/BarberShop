@@ -26,24 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         
         //Firebase configure
         FirebaseApp.configure()
-        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.makeKeyAndVisible()
-//        
-//        window?.rootViewController = UINavigationController(rootViewController: SignInViewController())
-//        
-//        if #available(iOS 10.0, *)
-//        {
-//            UNUserNotificationCenter.current().delegate = self
-//            
-//            let option: UNAuthorizationOptions = [.alert,.badge,.sound]
-//            UNUserNotificationCenter.current().requestAuthorization(options: option) { (bool, err) in
-//                
-//            }
-//        }else {
-//            let settings: UIUserNotificationSettings  = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
-//            application.registerUserNotificationSettings(settings)
-//        }
+      
         
         //API KEY GOOGLE MAP
         GMSServices.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
@@ -53,14 +36,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         GIDSignIn.sharedInstance().clientID = "57423766550-d80mtn23c1mmlk6n9p5bncd25e49fvcu.apps.googleusercontent.com"
         //navigation
         if #available(iOS 10.0, *) {
-            UINavigationBar.appearance().barTintColor = UIColor.init(red: 38/255.0, green: 103/255.0, blue: 164/255.0, alpha: 1)
+            UINavigationBar.appearance().barTintColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
         } else {
             // Fallback on earlier versions
         }
+      
         UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().tintColor = UIColor.white
         let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = textAttributes
+      
+      //
+      UINavigationController().navigationBar.setBackgroundImage(UIImage(), for: .default)
+      UINavigationController().navigationBar.shadowImage = UIImage()
+      UINavigationController().navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+      UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+      
+      //
+      UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.yellow], for: .selected)
+      UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+      
+      UITabBar.appearance().isTranslucent = false
+      UITabBar.appearance().unselectedItemTintColor = UIColor.white
+      UITabBar.appearance().barTintColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+      //UITabBar.appearance().backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+      UITabBar.appearance().shadowColor = UIColor.clear
         
         
         

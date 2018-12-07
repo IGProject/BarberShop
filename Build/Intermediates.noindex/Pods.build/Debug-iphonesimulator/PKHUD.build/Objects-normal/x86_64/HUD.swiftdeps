@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
+- "CGFloat"
 - "HUD"
 - "HUDContentType"
 - !private "PKHUD"
@@ -34,34 +35,43 @@ depends-member:
 - !private ["s7CVarArgP", "hide"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isVisible"]
+- !private ["s7CVarArgP", "leadingMargin"]
 - !private ["s7CVarArgP", "sharedHUD"]
 - !private ["s7CVarArgP", "show"]
+- !private ["s7CVarArgP", "trailingMargin"]
 - !private ["s7CVarArgP", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "contentView"]
 - !private ["s28CustomDebugStringConvertibleP", "dimsBackground"]
 - !private ["s28CustomDebugStringConvertibleP", "hide"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "leadingMargin"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedHUD"]
 - !private ["s28CustomDebugStringConvertibleP", "show"]
+- !private ["s28CustomDebugStringConvertibleP", "trailingMargin"]
 - !private ["s28CustomDebugStringConvertibleP", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["s23CustomStringConvertibleP", "contentView"]
 - !private ["s23CustomStringConvertibleP", "dimsBackground"]
 - !private ["s23CustomStringConvertibleP", "hide"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isVisible"]
+- !private ["s23CustomStringConvertibleP", "leadingMargin"]
 - !private ["s23CustomStringConvertibleP", "sharedHUD"]
 - !private ["s23CustomStringConvertibleP", "show"]
+- !private ["s23CustomStringConvertibleP", "trailingMargin"]
 - !private ["s23CustomStringConvertibleP", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["SQ", "contentView"]
 - !private ["SQ", "dimsBackground"]
 - !private ["SQ", "hide"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isVisible"]
+- !private ["SQ", "leadingMargin"]
 - !private ["SQ", "sharedHUD"]
 - !private ["SQ", "show"]
+- !private ["SQ", "trailingMargin"]
 - !private ["SQ", "userInteractionOnUnderlyingViewsEnabled"]
 - ["5PKHUD3HUDC", "Bool"]
+- ["5PKHUD3HUDC", "CGFloat"]
 - !private ["5PKHUD3HUDC", "HUD"]
 - ["5PKHUD3HUDC", "HUDContentType"]
 - !private ["5PKHUD3HUDC", "PKHUD"]
@@ -82,7 +92,9 @@ depends-member:
 - ["5PKHUD3HUDC", "hide"]
 - ["5PKHUD3HUDC", "init"]
 - ["5PKHUD3HUDC", "isVisible"]
+- ["5PKHUD3HUDC", "leadingMargin"]
 - ["5PKHUD3HUDC", "show"]
+- ["5PKHUD3HUDC", "trailingMargin"]
 - ["5PKHUD14HUDContentTypeO", "String"]
 - ["5PKHUD14HUDContentTypeO", "UIImage"]
 - ["5PKHUD14HUDContentTypeO", "UIView"]
@@ -104,8 +116,10 @@ depends-member:
 - !private ["SH", "hide"]
 - !private ["SH", "init"]
 - !private ["SH", "isVisible"]
+- !private ["SH", "leadingMargin"]
 - !private ["SH", "sharedHUD"]
 - !private ["SH", "show"]
+- !private ["SH", "trailingMargin"]
 - !private ["SH", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSObjectC", "contentView"]
@@ -113,23 +127,29 @@ depends-member:
 - !private ["So8NSObjectC", "hide"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isVisible"]
+- !private ["So8NSObjectC", "leadingMargin"]
 - !private ["So8NSObjectC", "sharedHUD"]
 - !private ["So8NSObjectC", "show"]
+- !private ["So8NSObjectC", "trailingMargin"]
 - !private ["So8NSObjectC", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["So8NSObjectP", "contentView"]
 - !private ["So8NSObjectP", "dimsBackground"]
 - !private ["So8NSObjectP", "hide"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "isVisible"]
+- !private ["So8NSObjectP", "leadingMargin"]
 - !private ["So8NSObjectP", "sharedHUD"]
 - !private ["So8NSObjectP", "show"]
+- !private ["So8NSObjectP", "trailingMargin"]
 - !private ["So8NSObjectP", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["5PKHUDAAC", "contentView"]
 - !private ["5PKHUDAAC", "dimsBackground"]
 - !private ["5PKHUDAAC", "hide"]
 - !private ["5PKHUDAAC", "isVisible"]
+- !private ["5PKHUDAAC", "leadingMargin"]
 - !private ["5PKHUDAAC", "sharedHUD"]
 - !private ["5PKHUDAAC", "show"]
+- !private ["5PKHUDAAC", "trailingMargin"]
 - !private ["5PKHUDAAC", "userInteractionOnUnderlyingViewsEnabled"]
 - !private ["5PKHUD14PKHUDAnimatingP", "init"]
 - !private ["5PKHUD14PKHUDErrorViewC", "deinit"]
@@ -166,8 +186,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hide"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "leadingMargin"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedHUD"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trailingMargin"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInteractionOnUnderlyingViewsEnabled"]
 depends-nominal:
 - !private "So15CALayerDelegateP"
@@ -224,15 +246,15 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/PKHUD/PKHUD/PKHUD.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/PKHUD/PKHUD-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/PKHUD.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a62fdc46f4705dec97323d22e4f75209"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "dda2a9a6e0e1b5d2cd1fac86db8f95e1"

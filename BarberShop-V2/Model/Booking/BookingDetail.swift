@@ -12,8 +12,8 @@ import Foundation
 struct BookingDetail: Codable {
     let user_id: Int
     let work_time: String
-    let location_id:Locations
-    let service_id:Services
-    let team_id:Teams
+    let location_id:Int
+    let service_id:Int
+    let team_id:Int
 }
 

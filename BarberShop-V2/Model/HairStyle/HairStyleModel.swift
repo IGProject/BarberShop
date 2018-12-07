@@ -9,6 +9,7 @@
 import UIKit
 
 struct StyleHair: Codable {
+  var length: Int
     struct Results:Codable {
         let id:Int
         let shape: Shape
@@ -25,7 +26,7 @@ struct StyleHair: Codable {
         let file_path: String
         let status: Bool
     }
-    let results:[StyleHair.Results]
+    var results:[StyleHair.Results]
 }
 
 

@@ -7,21 +7,53 @@
 //
 
 import UIKit
-
+import Alamofire
 class HairStylesViewController: UIViewController {
     
     @IBOutlet weak var hairStyleCollectionView: UICollectionView!
-    
-    var imageHair = [UIImage(named: "1-style"),UIImage(named: "2-style"),UIImage(named: "3-style"),UIImage(named: "4-style"),UIImage(named: "5-style"),UIImage(named: "6-style")]
-    var titleHair = ["ROUND","SQUARE","OBLONG","DIAMOND","TRAINGULAR","OVAL"]
+  
+  var itemsHairStyle = StyleHair(length:0,results:[])
+  var listHairStyleDataSource = ListHairStyleDataSource()
     override func viewDidLoad() {
         super.viewDidLoad()
-         hairStyleCollectionView.delegate = self
-        hairStyleCollectionView.dataSource = self
-        setupClearNavigation()
+      
+       setupCollectionView()
+      setupDataStyleList()
+      setupClearNavigation()
     }
-    
-    
+  
+  private func setupCollectionView(){
+    hairStyleCollectionView.delegate = self
+    hairStyleCollectionView.dataSource = listHairStyleDataSource
+  }
+  
+  private func render(){
+    let hairStyles = itemsHairStyle.results.map { return $0}
+    listHairStyleDataSource.listStyleHair.results = hairStyles
+    hairStyleCollectionView.reloadData()
+  }
+  
+  private func setupDataStyleList(){
+    let styleTypeEndPoint = URL(string: Domains.BaseURL + "/style/list")!
+    Alamofire.request(styleTypeEndPoint).validate().responseJSON {
+      switch $0.result {
+      case .success(_):
+        let jsonData = $0.data
+        do {
+          let jsonDecoder = JSONDecoder()
+          let hairStyleResponse = try jsonDecoder.decode(StyleHair.self, from: jsonData!)
+          self.itemsHairStyle = StyleHair(length: hairStyleResponse.length, results:   hairStyleResponse.results)
+            self.render()
+        }catch let eror {
+          print(eror.localizedDescription)
+        }
+      case .failure(let error):
+        print("error:\(error.localizedDescription)")
+        
+      }
+    }
+  }
+  
     @IBAction func backTapped(_ sender: UIBarButtonItem) {
         
          navigationController?.dismiss(animated: true)
@@ -35,29 +67,20 @@ class HairStylesViewController: UIViewController {
     }
 }
 
-extension HairStylesViewController: UICollectionViewDelegate,UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return titleHair.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let hairstyleCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HairstyleCollectionCell", for: indexPath) as! HairstyleCollectionCell
-    
-        hairstyleCell.imageStyleHair.image = imageHair[indexPath.row]
-        hairstyleCell.shapeNameLabel.text = titleHair[indexPath.row]
-        
-        hairstyleCell.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
-        hairstyleCell.layer.cornerRadius = 5
-        hairstyleCell.layer.borderWidth = 0.5
-        return hairstyleCell
-    }
-
-    
+extension HairStylesViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
         cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
         cell?.layer.borderWidth = 2
+      
+      let hairTypeDetails = itemsHairStyle.results[indexPath.item]
+      let storyBoard: UIStoryboard = UIStoryboard(name: "Hairstyle", bundle: nil)
+      let hairDetail = storyBoard.instantiateViewController(withIdentifier: "HairTypeStyleViewController") as! HairTypeStyleViewController
+      hairDetail.navigationItem.title = hairTypeDetails.shape.shape_name
+      hairDetail.navigationController?.navigationBar.isTranslucent = false
+      
+      hairDetail.imageStyleTypeString = hairTypeDetails.style_profiles.map({ $0.file_path})
+      navigationController?.pushViewController(hairDetail, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

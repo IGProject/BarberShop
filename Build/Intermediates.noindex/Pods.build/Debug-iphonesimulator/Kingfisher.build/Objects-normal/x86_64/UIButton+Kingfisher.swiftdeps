@@ -30,7 +30,7 @@ depends-top-level:
 - "Resource"
 - "RetrieveImageTask"
 - "UIButton"
-- "UIControlState"
+- "UIControl"
 - "UIImage"
 - "URL"
 - "Void"
@@ -45,8 +45,10 @@ depends-member:
 - !private ["s13ArrayProtocolP", "keepCurrentImageWhileLoading"]
 - !private ["SK", "keepCurrentImageWhileLoading"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- ["So15CALayerDelegateP", "State"]
 - !private ["So15CALayerDelegateP", "setBackgroundImage"]
 - !private ["So15CALayerDelegateP", "setImage"]
+- ["s7CVarArgP", "State"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "keepCurrentImageWhileLoading"]
@@ -57,6 +59,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["10Kingfisher9CacheTypeO", "none"]
 - !private ["Sl", "keepCurrentImageWhileLoading"]
+- ["s28CustomDebugStringConvertibleP", "State"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "keepCurrentImageWhileLoading"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
@@ -69,6 +72,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "keepCurrentImageWhileLoading"]
 - !private ["s17CustomReflectableP", "subscript"]
+- ["s23CustomStringConvertibleP", "State"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "keepCurrentImageWhileLoading"]
@@ -86,6 +90,7 @@ depends-member:
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "keepCurrentImageWhileLoading"]
 - !private ["SQ", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["SQ", "State"]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "init"]
 - !private ["SQ", "keepCurrentImageWhileLoading"]
@@ -105,6 +110,7 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["SH", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["SH", "State"]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "init"]
 - !private ["SH", "keepCurrentImageWhileLoading"]
@@ -125,7 +131,7 @@ depends-member:
 - ["10KingfisherAAC", "Resource"]
 - ["10KingfisherAAC", "RetrieveImageTask"]
 - ["10KingfisherAAC", "UIButton"]
-- ["10KingfisherAAC", "UIControlState"]
+- ["10KingfisherAAC", "UIControl"]
 - ["10KingfisherAAC", "UIImage"]
 - ["10KingfisherAAC", "URL"]
 - !private ["10KingfisherAAC", "backgroundImageTask"]
@@ -158,6 +164,7 @@ depends-member:
 - !private ["10Kingfisher0A7ManagerC", "shared"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["SM", "keepCurrentImageWhileLoading"]
+- ["So8NSCodingP", "State"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "setBackgroundImage"]
 - !private ["So8NSCodingP", "setImage"]
@@ -173,12 +180,14 @@ depends-member:
 - !private ["So19NSMutableDictionaryC", "init"]
 - !private ["So19NSMutableDictionaryC", "subscript"]
 - !private ["So8NSNumberC", "init"]
+- ["So8NSObjectC", "State"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "safeAsync"]
 - !private ["So8NSObjectC", "setBackgroundImage"]
 - !private ["So8NSObjectC", "setImage"]
 - !private ["So8NSObjectC", "subscript"]
+- ["So8NSObjectP", "State"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "safeAsync"]
@@ -205,40 +214,56 @@ depends-member:
 - !private ["So14UIControlStateV", "rawValue"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setBackgroundImage"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
+- ["So29UIAccessibilityIdentificationP", "State"]
 - !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
 - !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- ["So12UIAppearanceP", "State"]
 - !private ["So12UIAppearanceP", "setBackgroundImage"]
 - !private ["So12UIAppearanceP", "setImage"]
+- ["So21UIAppearanceContainerP", "State"]
 - !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
 - !private ["So21UIAppearanceContainerP", "setImage"]
 - !private ["So8UIButtonC", "setBackgroundImage"]
 - !private ["So8UIButtonC", "setImage"]
+- ["So9UIControlC", "State"]
 - !private ["So9UIControlC", "setBackgroundImage"]
 - !private ["So9UIControlC", "setImage"]
+- ["So17UICoordinateSpaceP", "State"]
 - !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
 - !private ["So17UICoordinateSpaceP", "setImage"]
+- ["So13UIDynamicItemP", "State"]
 - !private ["So13UIDynamicItemP", "setBackgroundImage"]
 - !private ["So13UIDynamicItemP", "setImage"]
+- ["So18UIFocusEnvironmentP", "State"]
 - !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
 - !private ["So18UIFocusEnvironmentP", "setImage"]
+- ["So11UIFocusItemP", "State"]
 - !private ["So11UIFocusItemP", "setBackgroundImage"]
 - !private ["So11UIFocusItemP", "setImage"]
+- ["So20UIFocusItemContainerP", "State"]
 - !private ["So20UIFocusItemContainerP", "setBackgroundImage"]
 - !private ["So20UIFocusItemContainerP", "setImage"]
+- ["So30UIPasteConfigurationSupportingP", "State"]
 - !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- ["So11UIResponderC", "State"]
 - !private ["So11UIResponderC", "setBackgroundImage"]
 - !private ["So11UIResponderC", "setImage"]
+- ["So30UIResponderStandardEditActionsP", "State"]
 - !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
 - !private ["So30UIResponderStandardEditActionsP", "setImage"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setBackgroundImage"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- ["So18UITraitEnvironmentP", "State"]
 - !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
 - !private ["So18UITraitEnvironmentP", "setImage"]
+- ["So23UIUserActivityRestoringP", "State"]
 - !private ["So23UIUserActivityRestoringP", "setBackgroundImage"]
 - !private ["So23UIUserActivityRestoringP", "setImage"]
+- ["So6UIViewC", "State"]
 - !private ["So6UIViewC", "setBackgroundImage"]
 - !private ["So6UIViewC", "setImage"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "State"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
 - !private ["s24_DestructorSafeContainerP", "keepCurrentImageWhileLoading"]
@@ -246,6 +271,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "keepCurrentImageWhileLoading"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "State"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAsync"]
@@ -260,39 +286,39 @@ depends-nominal:
 - !private "s13ArrayProtocolP"
 - !private "SK"
 - !private "Sb"
-- !private "So15CALayerDelegateP"
-- !private "s7CVarArgP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
 - !private "10Kingfisher9CacheTypeO"
 - !private "Sl"
-- !private "s28CustomDebugStringConvertibleP"
+- "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
+- "s23CustomStringConvertibleP"
 - !private "Se"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
 - !private "SE"
-- !private "SQ"
+- "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "SH"
+- "SH"
 - "10KingfisherAAC"
 - !private "10Kingfisher0A10CompatibleP"
 - !private "10Kingfisher0A7ManagerC"
 - !private "s25LosslessStringConvertibleP"
 - !private "SM"
-- !private "So8NSCodingP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So12NSDictionaryC"
 - !private "So17NSFastEnumerationP"
 - !private "So16NSMutableCopyingP"
 - !private "So19NSMutableDictionaryC"
 - !private "So8NSNumberC"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
+- "So8NSObjectC"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So7NSValueC"
 - !private "So9OS_objectC"
@@ -306,28 +332,28 @@ depends-nominal:
 - !private "s10SetAlgebraP"
 - !private "So14UIControlStateV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
-- !private "So29UIAccessibilityIdentificationP"
-- !private "So12UIAppearanceP"
-- !private "So21UIAppearanceContainerP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
 - !private "So8UIButtonC"
-- !private "So9UIControlC"
-- !private "So17UICoordinateSpaceP"
-- !private "So13UIDynamicItemP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So20UIFocusItemContainerP"
-- !private "So30UIPasteConfigurationSupportingP"
-- !private "So11UIResponderC"
-- !private "So30UIResponderStandardEditActionsP"
+- "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
-- !private "So18UITraitEnvironmentP"
-- !private "So23UIUserActivityRestoringP"
-- !private "So6UIViewC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "So22objc_AssociationPolicyV"
 depends-dynamic-lookup:
@@ -351,16 +377,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Kingfisher/Sources/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Kingfisher.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c15097b59063375e1fa83b76b26246b5"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "46cb6e9438245a02a3f73b6f40a16c9c"

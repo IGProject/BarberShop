@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/PKHUD/PKHUD-dummy.m \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/PKHUD.build/module.modulemap \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/PKHUD/PKHUD-prefix.pch

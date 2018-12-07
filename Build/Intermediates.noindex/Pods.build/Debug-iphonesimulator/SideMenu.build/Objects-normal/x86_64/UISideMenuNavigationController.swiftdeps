@@ -49,13 +49,13 @@ depends-top-level:
 - "FloatLiteralType"
 - "IntegerLiteralType"
 - "NSCoder"
-- !private "NSNotification"
 - !private "NotificationCenter"
 - "SideMenuManager"
 - "SideMenuTransition"
 - "String"
 - !private "StringLiteralType"
 - "TernaryPrecedence"
+- !private "UIApplication"
 - "UIColor"
 - "UINavigationController"
 - "UISideMenuNavigationController"
@@ -107,12 +107,11 @@ depends-member:
 - !private ["So13CATransactionC", "commit"]
 - !private ["So13CATransactionC", "setCompletionBlock"]
 - !private ["s7CVarArgP", "CATransaction"]
-- !private ["s7CVarArgP", "NSNotification"]
-- !private ["s7CVarArgP", "Name"]
 - !private ["s7CVarArgP", "NotificationCenter"]
 - ["s7CVarArgP", "SideMenuManager"]
 - !private ["s7CVarArgP", "SideMenuTransition"]
 - !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
@@ -190,6 +189,7 @@ depends-member:
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "viewWillTransition"]
+- !private ["s7CVarArgP", "willChangeStatusBarFrameNotification"]
 - !private ["s7CVarArgP", "window"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
@@ -202,12 +202,11 @@ depends-member:
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CATransaction"]
-- !private ["s28CustomDebugStringConvertibleP", "NSNotification"]
-- !private ["s28CustomDebugStringConvertibleP", "Name"]
 - !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
 - ["s28CustomDebugStringConvertibleP", "SideMenuManager"]
 - !private ["s28CustomDebugStringConvertibleP", "SideMenuTransition"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "activeDelegate"]
@@ -284,6 +283,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillTransition"]
+- !private ["s28CustomDebugStringConvertibleP", "willChangeStatusBarFrameNotification"]
 - !private ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -304,12 +304,11 @@ depends-member:
 - !private ["s17CustomReflectableP", "transition"]
 - !private ["s17CustomReflectableP", "window"]
 - !private ["s23CustomStringConvertibleP", "CATransaction"]
-- !private ["s23CustomStringConvertibleP", "NSNotification"]
-- !private ["s23CustomStringConvertibleP", "Name"]
 - !private ["s23CustomStringConvertibleP", "NotificationCenter"]
 - ["s23CustomStringConvertibleP", "SideMenuManager"]
 - !private ["s23CustomStringConvertibleP", "SideMenuTransition"]
 - !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -387,6 +386,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewWillTransition"]
+- !private ["s23CustomStringConvertibleP", "willChangeStatusBarFrameNotification"]
 - !private ["s23CustomStringConvertibleP", "window"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
@@ -419,13 +419,11 @@ depends-member:
 - !private ["SE", "transition"]
 - !private ["SE", "window"]
 - !private ["SQ", "CATransaction"]
-- !private ["SQ", "NSNotification"]
-- !private ["SQ", "Name"]
 - !private ["SQ", "NotificationCenter"]
 - ["SQ", "SideMenuManager"]
 - !private ["SQ", "SideMenuTransition"]
 - !private ["SQ", "String"]
-- !private ["SQ", "UIApplicationWillChangeStatusBarFrame"]
+- !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIView"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
@@ -513,6 +511,7 @@ depends-member:
 - !private ["SQ", "viewWillAppear"]
 - !private ["SQ", "viewWillDisappear"]
 - !private ["SQ", "viewWillTransition"]
+- !private ["SQ", "willChangeStatusBarFrameNotification"]
 - !private ["SQ", "window"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -534,13 +533,11 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "CATransaction"]
-- !private ["SH", "NSNotification"]
-- !private ["SH", "Name"]
 - !private ["SH", "NotificationCenter"]
 - ["SH", "SideMenuManager"]
 - !private ["SH", "SideMenuTransition"]
 - !private ["SH", "String"]
-- !private ["SH", "UIApplicationWillChangeStatusBarFrame"]
+- !private ["SH", "UIApplication"]
 - !private ["SH", "UIView"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
@@ -628,6 +625,7 @@ depends-member:
 - !private ["SH", "viewWillAppear"]
 - !private ["SH", "viewWillDisappear"]
 - !private ["SH", "viewWillTransition"]
+- !private ["SH", "willChangeStatusBarFrameNotification"]
 - !private ["SH", "window"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -652,12 +650,11 @@ depends-member:
 - !private ["SM", "last"]
 - !private ["SM", "reversed"]
 - !private ["So8NSCodingP", "CATransaction"]
-- !private ["So8NSCodingP", "NSNotification"]
-- !private ["So8NSCodingP", "Name"]
 - !private ["So8NSCodingP", "NotificationCenter"]
 - ["So8NSCodingP", "SideMenuManager"]
 - !private ["So8NSCodingP", "SideMenuTransition"]
 - !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIView"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "activeDelegate"]
@@ -705,13 +702,12 @@ depends-member:
 - !private ["So8NSCodingP", "viewWillDisappear"]
 - !private ["So8NSCodingP", "viewWillTransition"]
 - !private ["So8NSCodingP", "window"]
-- !private ["So9NSCopyingP", "Name"]
 - !private ["So26NSExtensionRequestHandlingP", "CATransaction"]
-- !private ["So26NSExtensionRequestHandlingP", "NSNotification"]
 - !private ["So26NSExtensionRequestHandlingP", "NotificationCenter"]
 - ["So26NSExtensionRequestHandlingP", "SideMenuManager"]
 - !private ["So26NSExtensionRequestHandlingP", "SideMenuTransition"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
+- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "activeDelegate"]
@@ -749,19 +745,17 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillTransition"]
-- !private ["So14NSNotificationC", "Name"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Bundle"]
 - !private ["So8NSObjectC", "CATransaction"]
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGSize"]
 - ["So8NSObjectC", "NSCoder"]
-- !private ["So8NSObjectC", "NSNotification"]
-- !private ["So8NSObjectC", "Name"]
 - !private ["So8NSObjectC", "NotificationCenter"]
 - ["So8NSObjectC", "SideMenuManager"]
 - ["So8NSObjectC", "SideMenuTransition"]
 - ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UISideMenuNavigationControllerDelegate"]
@@ -840,14 +834,14 @@ depends-member:
 - ["So8NSObjectC", "viewWillAppear"]
 - ["So8NSObjectC", "viewWillDisappear"]
 - ["So8NSObjectC", "viewWillTransition"]
+- !private ["So8NSObjectC", "willChangeStatusBarFrameNotification"]
 - !private ["So8NSObjectC", "window"]
 - !private ["So8NSObjectP", "CATransaction"]
-- !private ["So8NSObjectP", "NSNotification"]
-- !private ["So8NSObjectP", "Name"]
 - !private ["So8NSObjectP", "NotificationCenter"]
 - ["So8NSObjectP", "SideMenuManager"]
 - !private ["So8NSObjectP", "SideMenuTransition"]
 - !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIView"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "activeDelegate"]
@@ -917,8 +911,8 @@ depends-member:
 - !private ["So8NSObjectP", "viewWillAppear"]
 - !private ["So8NSObjectP", "viewWillDisappear"]
 - !private ["So8NSObjectP", "viewWillTransition"]
+- !private ["So8NSObjectP", "willChangeStatusBarFrameNotification"]
 - !private ["So8NSObjectP", "window"]
-- !private ["So18NSNotificationNamea", "UIApplicationWillChangeStatusBarFrame"]
 - !private ["So20NSNotificationCenterC", "addObserver"]
 - !private ["So20NSNotificationCenterC", "default"]
 - !private ["So20NSNotificationCenterC", "removeObserver"]
@@ -942,7 +936,6 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "last"]
 - !private ["Sm", "reversed"]
-- !private ["SY", "UIApplicationWillChangeStatusBarFrame"]
 - ["SY", "defaultBehavior"]
 - ["SY", "menuDissolveIn"]
 - ["SY", "menuSlideIn"]
@@ -1012,11 +1005,11 @@ depends-member:
 - !private ["So12UIAppearanceP", "superview"]
 - !private ["So12UIAppearanceP", "window"]
 - !private ["So21UIAppearanceContainerP", "CATransaction"]
-- !private ["So21UIAppearanceContainerP", "NSNotification"]
 - !private ["So21UIAppearanceContainerP", "NotificationCenter"]
 - ["So21UIAppearanceContainerP", "SideMenuManager"]
 - !private ["So21UIAppearanceContainerP", "SideMenuTransition"]
 - !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "activeDelegate"]
@@ -1063,12 +1056,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
 - !private ["So21UIAppearanceContainerP", "viewWillTransition"]
 - !private ["So21UIAppearanceContainerP", "window"]
+- !private ["So13UIApplicationC", "willChangeStatusBarFrameNotification"]
 - !private ["So18UIContentContainerP", "CATransaction"]
-- !private ["So18UIContentContainerP", "NSNotification"]
 - !private ["So18UIContentContainerP", "NotificationCenter"]
 - ["So18UIContentContainerP", "SideMenuManager"]
 - !private ["So18UIContentContainerP", "SideMenuTransition"]
 - !private ["So18UIContentContainerP", "String"]
+- !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIView"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "activeDelegate"]
@@ -1129,11 +1123,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "superview"]
 - !private ["So13UIDynamicItemP", "window"]
 - !private ["So18UIFocusEnvironmentP", "CATransaction"]
-- !private ["So18UIFocusEnvironmentP", "NSNotification"]
 - !private ["So18UIFocusEnvironmentP", "NotificationCenter"]
 - ["So18UIFocusEnvironmentP", "SideMenuManager"]
 - !private ["So18UIFocusEnvironmentP", "SideMenuTransition"]
 - !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "activeDelegate"]
@@ -1208,11 +1202,11 @@ depends-member:
 - ["So22UINavigationControllerC", "CGFloat"]
 - ["So22UINavigationControllerC", "CGSize"]
 - ["So22UINavigationControllerC", "NSCoder"]
-- !private ["So22UINavigationControllerC", "NSNotification"]
 - !private ["So22UINavigationControllerC", "NotificationCenter"]
 - ["So22UINavigationControllerC", "SideMenuManager"]
 - ["So22UINavigationControllerC", "SideMenuTransition"]
 - ["So22UINavigationControllerC", "String"]
+- !private ["So22UINavigationControllerC", "UIApplication"]
 - ["So22UINavigationControllerC", "UIColor"]
 - !private ["So22UINavigationControllerC", "UINavigationController"]
 - ["So22UINavigationControllerC", "UISideMenuNavigationControllerDelegate"]
@@ -1258,11 +1252,11 @@ depends-member:
 - ["So22UINavigationControllerC", "viewWillTransition"]
 - !private ["So16UINavigationItemC", "hidesBackButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "CATransaction"]
-- !private ["So30UIPasteConfigurationSupportingP", "NSNotification"]
 - !private ["So30UIPasteConfigurationSupportingP", "NotificationCenter"]
 - ["So30UIPasteConfigurationSupportingP", "SideMenuManager"]
 - !private ["So30UIPasteConfigurationSupportingP", "SideMenuTransition"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "activeDelegate"]
@@ -1308,6 +1302,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillTransition"]
+- !private ["So30UIPasteConfigurationSupportingP", "willChangeStatusBarFrameNotification"]
 - !private ["So30UIPasteConfigurationSupportingP", "window"]
 - !private ["So36UIPercentDrivenInteractiveTransitionC", "handleNotification"]
 - !private ["So36UIPercentDrivenInteractiveTransitionC", "hideMenuComplete"]
@@ -1321,11 +1316,11 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "CGSize"]
 - ["So11UIResponderC", "NSCoder"]
-- !private ["So11UIResponderC", "NSNotification"]
 - !private ["So11UIResponderC", "NotificationCenter"]
 - ["So11UIResponderC", "SideMenuManager"]
 - ["So11UIResponderC", "SideMenuTransition"]
 - ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UISideMenuNavigationControllerDelegate"]
@@ -1380,13 +1375,14 @@ depends-member:
 - ["So11UIResponderC", "viewWillAppear"]
 - ["So11UIResponderC", "viewWillDisappear"]
 - ["So11UIResponderC", "viewWillTransition"]
+- !private ["So11UIResponderC", "willChangeStatusBarFrameNotification"]
 - !private ["So11UIResponderC", "window"]
 - !private ["So30UIResponderStandardEditActionsP", "CATransaction"]
-- !private ["So30UIResponderStandardEditActionsP", "NSNotification"]
 - !private ["So30UIResponderStandardEditActionsP", "NotificationCenter"]
 - ["So30UIResponderStandardEditActionsP", "SideMenuManager"]
 - !private ["So30UIResponderStandardEditActionsP", "SideMenuTransition"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "activeDelegate"]
@@ -1432,6 +1428,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillTransition"]
+- !private ["So30UIResponderStandardEditActionsP", "willChangeStatusBarFrameNotification"]
 - !private ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So12UIScrollViewC", "deselectRow"]
 - !private ["So12UIScrollViewC", "indexPathsForSelectedRows"]
@@ -1443,11 +1440,11 @@ depends-member:
 - ["8SideMenu06UISideB20NavigationControllerC", "CGFloat"]
 - ["8SideMenu06UISideB20NavigationControllerC", "CGSize"]
 - ["8SideMenu06UISideB20NavigationControllerC", "NSCoder"]
-- !private ["8SideMenu06UISideB20NavigationControllerC", "NSNotification"]
 - !private ["8SideMenu06UISideB20NavigationControllerC", "NotificationCenter"]
 - ["8SideMenu06UISideB20NavigationControllerC", "SideMenuManager"]
 - ["8SideMenu06UISideB20NavigationControllerC", "SideMenuTransition"]
 - ["8SideMenu06UISideB20NavigationControllerC", "String"]
+- !private ["8SideMenu06UISideB20NavigationControllerC", "UIApplication"]
 - ["8SideMenu06UISideB20NavigationControllerC", "UIColor"]
 - !private ["8SideMenu06UISideB20NavigationControllerC", "UINavigationController"]
 - ["8SideMenu06UISideB20NavigationControllerC", "UISideMenuNavigationControllerDelegate"]
@@ -1498,11 +1495,11 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "deselectRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathsForSelectedRows"]
 - !private ["So16UIStateRestoringP", "CATransaction"]
-- !private ["So16UIStateRestoringP", "NSNotification"]
 - !private ["So16UIStateRestoringP", "NotificationCenter"]
 - ["So16UIStateRestoringP", "SideMenuManager"]
 - !private ["So16UIStateRestoringP", "SideMenuTransition"]
 - !private ["So16UIStateRestoringP", "String"]
+- !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIView"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "activeDelegate"]
@@ -1551,11 +1548,11 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "clearsSelectionOnViewWillAppear"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "CATransaction"]
-- !private ["So18UITraitEnvironmentP", "NSNotification"]
 - !private ["So18UITraitEnvironmentP", "NotificationCenter"]
 - ["So18UITraitEnvironmentP", "SideMenuManager"]
 - !private ["So18UITraitEnvironmentP", "SideMenuTransition"]
 - !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "activeDelegate"]
@@ -1603,11 +1600,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewWillTransition"]
 - !private ["So18UITraitEnvironmentP", "window"]
 - !private ["So23UIUserActivityRestoringP", "CATransaction"]
-- !private ["So23UIUserActivityRestoringP", "NSNotification"]
 - !private ["So23UIUserActivityRestoringP", "NotificationCenter"]
 - ["So23UIUserActivityRestoringP", "SideMenuManager"]
 - !private ["So23UIUserActivityRestoringP", "SideMenuTransition"]
 - !private ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIView"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "activeDelegate"]
@@ -1653,6 +1650,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
 - !private ["So23UIUserActivityRestoringP", "viewWillTransition"]
+- !private ["So23UIUserActivityRestoringP", "willChangeStatusBarFrameNotification"]
 - !private ["So23UIUserActivityRestoringP", "window"]
 - !private ["So6UIViewC", "animate"]
 - !private ["So6UIViewC", "areAnimationsEnabled"]
@@ -1670,11 +1668,11 @@ depends-member:
 - ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "CGSize"]
 - ["So16UIViewControllerC", "NSCoder"]
-- !private ["So16UIViewControllerC", "NSNotification"]
 - !private ["So16UIViewControllerC", "NotificationCenter"]
 - ["So16UIViewControllerC", "SideMenuManager"]
 - ["So16UIViewControllerC", "SideMenuTransition"]
 - ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIApplication"]
 - ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UISideMenuNavigationControllerDelegate"]
@@ -1768,8 +1766,6 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "UIApplicationWillChangeStatusBarFrame"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
@@ -1777,12 +1773,11 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CATransaction"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSNotification"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "SideMenuManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SideMenuTransition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "activeDelegate"]
@@ -1852,8 +1847,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillTransition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willChangeStatusBarFrameNotification"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
-- !private ["s21_ObjectiveCBridgeableP", "UIApplicationWillChangeStatusBarFrame"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -1869,7 +1864,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "reversed"]
 - !private ["s21_ObjectiveCBridgeableP", "transition"]
 - !private ["s21_ObjectiveCBridgeableP", "window"]
-- !private ["s20_SwiftNewtypeWrapperP", "UIApplicationWillChangeStatusBarFrame"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -1902,12 +1896,9 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - !private "SM"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So14NSNotificationC"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So18NSNotificationNamea"
 - !private "So20NSNotificationCenterC"
 - !private "Sq"
 - !private "Sk"
@@ -1924,6 +1915,7 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
@@ -1971,7 +1963,6 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1990,15 +1981,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/SideMenu/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SideMenu.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ef63b1ac46f6a6883dc8d6b2d2e89efd"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "9e4f4eae6408af3b0d0e56081b126f15"

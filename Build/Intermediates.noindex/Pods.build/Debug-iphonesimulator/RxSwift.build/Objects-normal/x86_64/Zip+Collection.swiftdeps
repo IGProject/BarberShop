@@ -7,12 +7,12 @@ provides-member:
 - ["7RxSwift14ObservableTypeP", "zip"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "+="
 - !private "-"
 - !private "..<"
 - !private "<"
 - !private "=="
-- !private ">"
 - !private "AnyObserver"
 - !private "Array"
 - "AssignmentPrecedence"
@@ -53,6 +53,7 @@ depends-member:
 - !private ["s13ArrayProtocolP", "dispose"]
 - !private ["s13ArrayProtocolP", "enqueue"]
 - !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "isEmpty"]
 - !private ["s13ArrayProtocolP", "reserveCapacity"]
 - !private ["s13ArrayProtocolP", "setDisposable"]
 - !private ["s13ArrayProtocolP", "subscript"]
@@ -60,6 +61,7 @@ depends-member:
 - !private ["s10ArraySliceV", "dequeue"]
 - !private ["s10ArraySliceV", "dispose"]
 - !private ["s10ArraySliceV", "enqueue"]
+- !private ["s10ArraySliceV", "isEmpty"]
 - !private ["s10ArraySliceV", "setDisposable"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
@@ -67,6 +69,7 @@ depends-member:
 - !private ["SK", "dispose"]
 - !private ["SK", "enqueue"]
 - !private ["SK", "init"]
+- !private ["SK", "isEmpty"]
 - !private ["SK", "reserveCapacity"]
 - !private ["SK", "setDisposable"]
 - !private ["SK", "subscript"]
@@ -104,6 +107,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "error"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "lock"]
 - ["s28CustomDebugStringConvertibleP", "next"]
 - !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
@@ -120,6 +124,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "enqueue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "reserveCapacity"]
 - !private ["s17CustomReflectableP", "setDisposable"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -131,6 +136,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "enqueue"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "lock"]
 - !private ["s23CustomStringConvertibleP", "reserveCapacity"]
 - !private ["s23CustomStringConvertibleP", "setDisposable"]
@@ -181,6 +187,7 @@ depends-member:
 - !private ["SQ", "dispose"]
 - !private ["SQ", "enqueue"]
 - ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
 - !private ["SQ", "lock"]
 - !private ["SQ", "reserveCapacity"]
 - !private ["SQ", "setDisposable"]
@@ -198,6 +205,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "dispose"]
 - !private ["s25ExpressibleByArrayLiteralP", "enqueue"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
 - !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
 - !private ["s25ExpressibleByArrayLiteralP", "setDisposable"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -217,6 +225,7 @@ depends-member:
 - !private ["SH", "dispose"]
 - !private ["SH", "enqueue"]
 - ["SH", "init"]
+- !private ["SH", "isEmpty"]
 - !private ["SH", "lock"]
 - !private ["SH", "reserveCapacity"]
 - !private ["SH", "setDisposable"]
@@ -237,6 +246,7 @@ depends-member:
 - !private ["SM", "dispose"]
 - !private ["SM", "enqueue"]
 - !private ["SM", "init"]
+- !private ["SM", "isEmpty"]
 - !private ["SM", "reserveCapacity"]
 - !private ["SM", "setDisposable"]
 - !private ["SM", "subscript"]
@@ -321,12 +331,14 @@ depends-member:
 - !private ["7RxSwift5QueueV", "dequeue"]
 - !private ["7RxSwift5QueueV", "enqueue"]
 - !private ["7RxSwift5QueueV", "init"]
+- !private ["7RxSwift5QueueV", "isEmpty"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "dequeue"]
 - !private ["Sk", "dispose"]
 - !private ["Sk", "enqueue"]
 - !private ["Sk", "init"]
+- !private ["Sk", "isEmpty"]
 - !private ["Sk", "reserveCapacity"]
 - !private ["Sk", "setDisposable"]
 - !private ["Sk", "subscript"]
@@ -336,6 +348,7 @@ depends-member:
 - !private ["Sm", "dispose"]
 - !private ["Sm", "enqueue"]
 - !private ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
 - !private ["Sm", "reserveCapacity"]
 - !private ["Sm", "setDisposable"]
 - !private ["Sm", "subscript"]
@@ -400,6 +413,7 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "dispose"]
 - !private ["s24_DestructorSafeContainerP", "enqueue"]
 - !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
 - !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
 - !private ["s24_DestructorSafeContainerP", "setDisposable"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
@@ -511,17 +525,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxAtomic/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/RxAtomic/RxAtomic/include/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxAtomic.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "75a09e3ed61edf32cbfca295a40c6b4c"

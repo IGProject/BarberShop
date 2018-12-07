@@ -1,182 +1,685 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ServiceBookingCellDelegate"
 - "ServiceCollectionCell"
 provides-nominal:
+- "13BarberShop_V226ServiceBookingCellDelegateP"
 - "13BarberShop_V221ServiceCollectionCellC"
 provides-member:
+- ["13BarberShop_V226ServiceBookingCellDelegateP", ""]
 - ["13BarberShop_V221ServiceCollectionCellC", ""]
 provides-dynamic-lookup:
+- "ServiceBookingTapped"
 - "bookingBtn"
 - "des_service"
 - "image_service"
 - "price_service"
 - "title_service"
 depends-top-level:
+- "AssignmentPrecedence"
+- "ConfigurableCell"
+- "Domains"
 - "RoundButton"
+- "ServiceBookingCellDelegate"
 - "ServiceCollectionCell"
+- "Services"
 - "UICollectionViewCell"
 - "UIImageView"
 - "UILabel"
+- "URL"
 depends-member:
+- ["So15CALayerDelegateP", "DataType"]
+- ["So15CALayerDelegateP", "Domains"]
+- ["So15CALayerDelegateP", "URL"]
 - ["So15CALayerDelegateP", ""]
+- ["So15CALayerDelegateP", "_Default_DataType"]
+- ["So15CALayerDelegateP", "configure"]
+- !private ["So15CALayerDelegateP", "dataService"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "des_service"]
+- !private ["So15CALayerDelegateP", "image_service"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "kf"]
+- !private ["So15CALayerDelegateP", "price_service"]
+- !private ["So15CALayerDelegateP", "serviceEndPoint"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "title_service"]
+- ["s7CVarArgP", "DataType"]
+- ["s7CVarArgP", "Domains"]
+- ["s7CVarArgP", "URL"]
 - ["s7CVarArgP", ""]
+- ["s7CVarArgP", "_Default_DataType"]
+- ["s7CVarArgP", "configure"]
+- !private ["s7CVarArgP", "dataService"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "des_service"]
+- !private ["s7CVarArgP", "image_service"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "kf"]
+- !private ["s7CVarArgP", "price_service"]
+- !private ["s7CVarArgP", "serviceEndPoint"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "title_service"]
+- ["13BarberShop_V216ConfigurableCellP", "DataType"]
+- ["13BarberShop_V216ConfigurableCellP", "Domains"]
+- ["13BarberShop_V216ConfigurableCellP", "URL"]
+- ["13BarberShop_V216ConfigurableCellP", ""]
+- ["13BarberShop_V216ConfigurableCellP", "_Default_DataType"]
+- ["13BarberShop_V216ConfigurableCellP", "configure"]
+- !private ["13BarberShop_V216ConfigurableCellP", "dataService"]
+- !private ["13BarberShop_V216ConfigurableCellP", "delegate"]
+- !private ["13BarberShop_V216ConfigurableCellP", "des_service"]
+- !private ["13BarberShop_V216ConfigurableCellP", "image_service"]
+- !private ["13BarberShop_V216ConfigurableCellP", "price_service"]
+- !private ["13BarberShop_V216ConfigurableCellP", "serviceEndPoint"]
+- !private ["13BarberShop_V216ConfigurableCellP", "title_service"]
+- ["s28CustomDebugStringConvertibleP", "DataType"]
+- ["s28CustomDebugStringConvertibleP", "Domains"]
+- ["s28CustomDebugStringConvertibleP", "URL"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_DataType"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- ["s28CustomDebugStringConvertibleP", "configure"]
+- !private ["s28CustomDebugStringConvertibleP", "dataService"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "des_service"]
+- !private ["s28CustomDebugStringConvertibleP", "image_service"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "kf"]
+- !private ["s28CustomDebugStringConvertibleP", "price_service"]
+- !private ["s28CustomDebugStringConvertibleP", "serviceEndPoint"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "title_service"]
+- !private ["s29CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "kf"]
+- !private ["s17CustomReflectableP", "text"]
+- ["s23CustomStringConvertibleP", "DataType"]
+- ["s23CustomStringConvertibleP", "Domains"]
+- ["s23CustomStringConvertibleP", "URL"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_DataType"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- ["s23CustomStringConvertibleP", "configure"]
+- !private ["s23CustomStringConvertibleP", "dataService"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "des_service"]
+- !private ["s23CustomStringConvertibleP", "image_service"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "kf"]
+- !private ["s23CustomStringConvertibleP", "price_service"]
+- !private ["s23CustomStringConvertibleP", "serviceEndPoint"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "title_service"]
+- ["Se", "Results"]
+- !private ["Se", "appendingPathComponent"]
+- !private ["Se", "description"]
+- ["Se", "init"]
+- !private ["Se", "kf"]
+- !private ["Se", "price"]
+- !private ["Se", "seva_profile"]
+- !private ["Se", "text"]
+- !private ["Se", "title"]
+- ["13BarberShop_V27DomainsV", "BaseURL"]
+- ["SE", "Results"]
+- !private ["SE", "appendingPathComponent"]
+- !private ["SE", "description"]
+- ["SE", "init"]
+- !private ["SE", "kf"]
+- !private ["SE", "price"]
+- !private ["SE", "seva_profile"]
+- !private ["SE", "text"]
+- !private ["SE", "title"]
+- ["SQ", "DataType"]
+- ["SQ", "Domains"]
+- ["SQ", "URL"]
 - ["SQ", ""]
+- ["SQ", "_Default_DataType"]
+- !private ["SQ", "appendingPathComponent"]
+- ["SQ", "configure"]
+- !private ["SQ", "dataService"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "des_service"]
+- !private ["SQ", "image_service"]
+- ["SQ", "init"]
 - !private ["SQ", "init"]
-- !private ["SQ", "init"]
+- !private ["SQ", "kf"]
+- !private ["SQ", "price_service"]
+- !private ["SQ", "serviceEndPoint"]
+- !private ["SQ", "text"]
+- !private ["SQ", "title_service"]
+- !private ["s23ExpressibleByNilLiteralP", "kf"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- ["SH", "DataType"]
+- ["SH", "Domains"]
+- ["SH", "URL"]
 - ["SH", ""]
+- ["SH", "_Default_DataType"]
+- !private ["SH", "appendingPathComponent"]
+- ["SH", "configure"]
+- !private ["SH", "dataService"]
+- !private ["SH", "delegate"]
+- !private ["SH", "des_service"]
+- !private ["SH", "image_service"]
+- ["SH", "init"]
 - !private ["SH", "init"]
-- !private ["SH", "init"]
+- !private ["SH", "kf"]
+- !private ["SH", "price_service"]
+- !private ["SH", "serviceEndPoint"]
+- !private ["SH", "text"]
+- !private ["SH", "title_service"]
+- !private ["10KingfisherAAC", "setImage"]
+- !private ["10Kingfisher0A10CompatibleP", "kf"]
+- ["So8NSCodingP", "DataType"]
+- ["So8NSCodingP", "Domains"]
+- ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", ""]
+- ["So8NSCodingP", "_Default_DataType"]
+- ["So8NSCodingP", "configure"]
+- !private ["So8NSCodingP", "dataService"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "des_service"]
+- !private ["So8NSCodingP", "image_service"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "kf"]
+- !private ["So8NSCodingP", "price_service"]
+- !private ["So8NSCodingP", "serviceEndPoint"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "title_service"]
+- ["So8NSObjectC", "DataType"]
+- ["So8NSObjectC", "Domains"]
 - ["So8NSObjectC", "RoundButton"]
+- ["So8NSObjectC", "ServiceBookingCellDelegate"]
+- ["So8NSObjectC", "ServiceBookingTapped"]
+- ["So8NSObjectC", "Services"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "_Default_DataType"]
 - ["So8NSObjectC", "bookingBtn"]
+- ["So8NSObjectC", "configure"]
+- ["So8NSObjectC", "dataService"]
+- ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "des_service"]
 - ["So8NSObjectC", "image_service"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "kf"]
 - ["So8NSObjectC", "price_service"]
+- ["So8NSObjectC", "serviceEndPoint"]
+- !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "title_service"]
+- ["So8NSObjectP", "DataType"]
+- ["So8NSObjectP", "Domains"]
+- ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", ""]
+- ["So8NSObjectP", "_Default_DataType"]
+- ["So8NSObjectP", "configure"]
+- !private ["So8NSObjectP", "dataService"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "des_service"]
+- !private ["So8NSObjectP", "image_service"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "kf"]
+- !private ["So8NSObjectP", "price_service"]
+- !private ["So8NSObjectP", "serviceEndPoint"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "title_service"]
+- !private ["Sq", "kf"]
+- !private ["Sq", "text"]
+- !private ["13BarberShop_V212OptionalTypeP", "kf"]
+- !private ["13BarberShop_V212OptionalTypeP", "text"]
+- ["7RxSwift18ReactiveCompatibleP", "DataType"]
+- ["7RxSwift18ReactiveCompatibleP", "Domains"]
+- ["7RxSwift18ReactiveCompatibleP", "URL"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
+- ["7RxSwift18ReactiveCompatibleP", "_Default_DataType"]
+- ["7RxSwift18ReactiveCompatibleP", "configure"]
+- !private ["7RxSwift18ReactiveCompatibleP", "dataService"]
+- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
+- !private ["7RxSwift18ReactiveCompatibleP", "des_service"]
+- !private ["7RxSwift18ReactiveCompatibleP", "image_service"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
+- !private ["7RxSwift18ReactiveCompatibleP", "kf"]
+- !private ["7RxSwift18ReactiveCompatibleP", "price_service"]
+- !private ["7RxSwift18ReactiveCompatibleP", "serviceEndPoint"]
+- !private ["7RxSwift18ReactiveCompatibleP", "text"]
+- !private ["7RxSwift18ReactiveCompatibleP", "title_service"]
+- !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Kingfisher8ResourceP", "appendingPathComponent"]
+- ["10Kingfisher8ResourceP", "init"]
+- !private ["13BarberShop_V28ServicesV7ResultsV", "description"]
+- !private ["13BarberShop_V28ServicesV7ResultsV", "price"]
+- !private ["13BarberShop_V28ServicesV7ResultsV", "seva_profile"]
+- !private ["13BarberShop_V28ServicesV7ResultsV", "title"]
+- ["13BarberShop_V226ServiceBookingCellDelegateP", "ServiceCollectionCell"]
+- ["13BarberShop_V226ServiceBookingCellDelegateP", "Services"]
+- ["13BarberShop_V226ServiceBookingCellDelegateP", "didTapServiceBooking"]
+- ["13BarberShop_V221ServiceCollectionCellC", "DataType"]
+- ["13BarberShop_V221ServiceCollectionCellC", "Domains"]
 - ["13BarberShop_V221ServiceCollectionCellC", "RoundButton"]
+- ["13BarberShop_V221ServiceCollectionCellC", "ServiceBookingCellDelegate"]
+- ["13BarberShop_V221ServiceCollectionCellC", "ServiceBookingTapped"]
+- ["13BarberShop_V221ServiceCollectionCellC", "Services"]
 - ["13BarberShop_V221ServiceCollectionCellC", "UIImageView"]
 - ["13BarberShop_V221ServiceCollectionCellC", "UILabel"]
+- ["13BarberShop_V221ServiceCollectionCellC", "URL"]
+- ["13BarberShop_V221ServiceCollectionCellC", "_Default_DataType"]
 - ["13BarberShop_V221ServiceCollectionCellC", "bookingBtn"]
+- ["13BarberShop_V221ServiceCollectionCellC", "configure"]
+- ["13BarberShop_V221ServiceCollectionCellC", "dataService"]
+- ["13BarberShop_V221ServiceCollectionCellC", "deinit"]
+- ["13BarberShop_V221ServiceCollectionCellC", "delegate"]
 - ["13BarberShop_V221ServiceCollectionCellC", "des_service"]
 - ["13BarberShop_V221ServiceCollectionCellC", "image_service"]
 - ["13BarberShop_V221ServiceCollectionCellC", "init"]
 - ["13BarberShop_V221ServiceCollectionCellC", "price_service"]
+- ["13BarberShop_V221ServiceCollectionCellC", "serviceEndPoint"]
 - ["13BarberShop_V221ServiceCollectionCellC", "title_service"]
+- ["13BarberShop_V28ServicesV", "Results"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "kf"]
+- ["So29UIAccessibilityIdentificationP", "DataType"]
+- ["So29UIAccessibilityIdentificationP", "Domains"]
+- ["So29UIAccessibilityIdentificationP", "URL"]
 - ["So29UIAccessibilityIdentificationP", ""]
+- ["So29UIAccessibilityIdentificationP", "_Default_DataType"]
+- ["So29UIAccessibilityIdentificationP", "configure"]
+- !private ["So29UIAccessibilityIdentificationP", "dataService"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "des_service"]
+- !private ["So29UIAccessibilityIdentificationP", "image_service"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "kf"]
+- !private ["So29UIAccessibilityIdentificationP", "price_service"]
+- !private ["So29UIAccessibilityIdentificationP", "serviceEndPoint"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "title_service"]
+- ["So12UIAppearanceP", "DataType"]
+- ["So12UIAppearanceP", "Domains"]
+- ["So12UIAppearanceP", "URL"]
 - ["So12UIAppearanceP", ""]
+- ["So12UIAppearanceP", "_Default_DataType"]
+- ["So12UIAppearanceP", "configure"]
+- !private ["So12UIAppearanceP", "dataService"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "des_service"]
+- !private ["So12UIAppearanceP", "image_service"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "kf"]
+- !private ["So12UIAppearanceP", "price_service"]
+- !private ["So12UIAppearanceP", "serviceEndPoint"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "title_service"]
+- ["So21UIAppearanceContainerP", "DataType"]
+- ["So21UIAppearanceContainerP", "Domains"]
+- ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", ""]
+- ["So21UIAppearanceContainerP", "_Default_DataType"]
+- ["So21UIAppearanceContainerP", "configure"]
+- !private ["So21UIAppearanceContainerP", "dataService"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "des_service"]
+- !private ["So21UIAppearanceContainerP", "image_service"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "kf"]
+- !private ["So21UIAppearanceContainerP", "price_service"]
+- !private ["So21UIAppearanceContainerP", "serviceEndPoint"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "title_service"]
+- ["So24UICollectionReusableViewC", "DataType"]
+- ["So24UICollectionReusableViewC", "Domains"]
 - ["So24UICollectionReusableViewC", "RoundButton"]
+- ["So24UICollectionReusableViewC", "ServiceBookingCellDelegate"]
+- ["So24UICollectionReusableViewC", "ServiceBookingTapped"]
+- ["So24UICollectionReusableViewC", "Services"]
 - ["So24UICollectionReusableViewC", "UIImageView"]
 - ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "URL"]
+- ["So24UICollectionReusableViewC", "_Default_DataType"]
 - ["So24UICollectionReusableViewC", "bookingBtn"]
+- ["So24UICollectionReusableViewC", "configure"]
+- ["So24UICollectionReusableViewC", "dataService"]
+- ["So24UICollectionReusableViewC", "delegate"]
 - ["So24UICollectionReusableViewC", "des_service"]
 - ["So24UICollectionReusableViewC", "image_service"]
 - ["So24UICollectionReusableViewC", "init"]
 - !private ["So24UICollectionReusableViewC", "init"]
 - ["So24UICollectionReusableViewC", "price_service"]
+- ["So24UICollectionReusableViewC", "serviceEndPoint"]
 - ["So24UICollectionReusableViewC", "title_service"]
+- ["So20UICollectionViewCellC", "DataType"]
+- ["So20UICollectionViewCellC", "Domains"]
 - ["So20UICollectionViewCellC", "RoundButton"]
+- ["So20UICollectionViewCellC", "ServiceBookingCellDelegate"]
+- ["So20UICollectionViewCellC", "ServiceBookingTapped"]
+- ["So20UICollectionViewCellC", "Services"]
 - ["So20UICollectionViewCellC", "UIImageView"]
 - ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", "URL"]
 - ["So20UICollectionViewCellC", ""]
+- ["So20UICollectionViewCellC", "_Default_DataType"]
 - ["So20UICollectionViewCellC", "bookingBtn"]
+- ["So20UICollectionViewCellC", "configure"]
+- ["So20UICollectionViewCellC", "dataService"]
+- ["So20UICollectionViewCellC", "delegate"]
 - ["So20UICollectionViewCellC", "des_service"]
 - ["So20UICollectionViewCellC", "image_service"]
 - ["So20UICollectionViewCellC", "init"]
 - !private ["So20UICollectionViewCellC", "init"]
 - ["So20UICollectionViewCellC", "price_service"]
+- ["So20UICollectionViewCellC", "serviceEndPoint"]
 - ["So20UICollectionViewCellC", "title_service"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- ["So17UICoordinateSpaceP", "DataType"]
+- ["So17UICoordinateSpaceP", "Domains"]
+- ["So17UICoordinateSpaceP", "URL"]
 - ["So17UICoordinateSpaceP", ""]
+- ["So17UICoordinateSpaceP", "_Default_DataType"]
+- ["So17UICoordinateSpaceP", "configure"]
+- !private ["So17UICoordinateSpaceP", "dataService"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "des_service"]
+- !private ["So17UICoordinateSpaceP", "image_service"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "kf"]
+- !private ["So17UICoordinateSpaceP", "price_service"]
+- !private ["So17UICoordinateSpaceP", "serviceEndPoint"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "title_service"]
+- ["So13UIDynamicItemP", "DataType"]
+- ["So13UIDynamicItemP", "Domains"]
+- ["So13UIDynamicItemP", "URL"]
 - ["So13UIDynamicItemP", ""]
+- ["So13UIDynamicItemP", "_Default_DataType"]
+- ["So13UIDynamicItemP", "configure"]
+- !private ["So13UIDynamicItemP", "dataService"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "des_service"]
+- !private ["So13UIDynamicItemP", "image_service"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "kf"]
+- !private ["So13UIDynamicItemP", "price_service"]
+- !private ["So13UIDynamicItemP", "serviceEndPoint"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "title_service"]
+- ["So18UIFocusEnvironmentP", "DataType"]
+- ["So18UIFocusEnvironmentP", "Domains"]
+- ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", ""]
+- ["So18UIFocusEnvironmentP", "_Default_DataType"]
+- ["So18UIFocusEnvironmentP", "configure"]
+- !private ["So18UIFocusEnvironmentP", "dataService"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "des_service"]
+- !private ["So18UIFocusEnvironmentP", "image_service"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "kf"]
+- !private ["So18UIFocusEnvironmentP", "price_service"]
+- !private ["So18UIFocusEnvironmentP", "serviceEndPoint"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "title_service"]
+- ["So11UIFocusItemP", "DataType"]
+- ["So11UIFocusItemP", "Domains"]
+- ["So11UIFocusItemP", "URL"]
 - ["So11UIFocusItemP", ""]
+- ["So11UIFocusItemP", "_Default_DataType"]
+- ["So11UIFocusItemP", "configure"]
+- !private ["So11UIFocusItemP", "dataService"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "des_service"]
+- !private ["So11UIFocusItemP", "image_service"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "kf"]
+- !private ["So11UIFocusItemP", "price_service"]
+- !private ["So11UIFocusItemP", "serviceEndPoint"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "title_service"]
+- ["So20UIFocusItemContainerP", "DataType"]
+- ["So20UIFocusItemContainerP", "Domains"]
+- ["So20UIFocusItemContainerP", "URL"]
 - ["So20UIFocusItemContainerP", ""]
+- ["So20UIFocusItemContainerP", "_Default_DataType"]
+- ["So20UIFocusItemContainerP", "configure"]
+- !private ["So20UIFocusItemContainerP", "dataService"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "des_service"]
+- !private ["So20UIFocusItemContainerP", "image_service"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "kf"]
+- !private ["So20UIFocusItemContainerP", "price_service"]
+- !private ["So20UIFocusItemContainerP", "serviceEndPoint"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "title_service"]
+- !private ["So11UIImageViewC", "kf"]
+- !private ["So7UILabelC", "text"]
+- ["So30UIPasteConfigurationSupportingP", "DataType"]
+- ["So30UIPasteConfigurationSupportingP", "Domains"]
+- ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So30UIPasteConfigurationSupportingP", "_Default_DataType"]
+- ["So30UIPasteConfigurationSupportingP", "configure"]
+- !private ["So30UIPasteConfigurationSupportingP", "dataService"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "des_service"]
+- !private ["So30UIPasteConfigurationSupportingP", "image_service"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "kf"]
+- !private ["So30UIPasteConfigurationSupportingP", "price_service"]
+- !private ["So30UIPasteConfigurationSupportingP", "serviceEndPoint"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "title_service"]
+- ["So11UIResponderC", "DataType"]
+- ["So11UIResponderC", "Domains"]
 - ["So11UIResponderC", "RoundButton"]
+- ["So11UIResponderC", "ServiceBookingCellDelegate"]
+- ["So11UIResponderC", "ServiceBookingTapped"]
+- ["So11UIResponderC", "Services"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "_Default_DataType"]
 - ["So11UIResponderC", "bookingBtn"]
+- ["So11UIResponderC", "configure"]
+- ["So11UIResponderC", "dataService"]
+- ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "des_service"]
 - ["So11UIResponderC", "image_service"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "kf"]
 - ["So11UIResponderC", "price_service"]
+- ["So11UIResponderC", "serviceEndPoint"]
+- !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "title_service"]
+- ["So30UIResponderStandardEditActionsP", "DataType"]
+- ["So30UIResponderStandardEditActionsP", "Domains"]
+- ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- ["So30UIResponderStandardEditActionsP", "_Default_DataType"]
+- ["So30UIResponderStandardEditActionsP", "configure"]
+- !private ["So30UIResponderStandardEditActionsP", "dataService"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "des_service"]
+- !private ["So30UIResponderStandardEditActionsP", "image_service"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "kf"]
+- !private ["So30UIResponderStandardEditActionsP", "price_service"]
+- !private ["So30UIResponderStandardEditActionsP", "serviceEndPoint"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "title_service"]
+- ["So18UITraitEnvironmentP", "DataType"]
+- ["So18UITraitEnvironmentP", "Domains"]
+- ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", ""]
+- ["So18UITraitEnvironmentP", "_Default_DataType"]
+- ["So18UITraitEnvironmentP", "configure"]
+- !private ["So18UITraitEnvironmentP", "dataService"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "des_service"]
+- !private ["So18UITraitEnvironmentP", "image_service"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "kf"]
+- !private ["So18UITraitEnvironmentP", "price_service"]
+- !private ["So18UITraitEnvironmentP", "serviceEndPoint"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "title_service"]
+- ["So23UIUserActivityRestoringP", "DataType"]
+- ["So23UIUserActivityRestoringP", "Domains"]
+- ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", ""]
+- ["So23UIUserActivityRestoringP", "_Default_DataType"]
+- ["So23UIUserActivityRestoringP", "configure"]
+- !private ["So23UIUserActivityRestoringP", "dataService"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "des_service"]
+- !private ["So23UIUserActivityRestoringP", "image_service"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "kf"]
+- !private ["So23UIUserActivityRestoringP", "price_service"]
+- !private ["So23UIUserActivityRestoringP", "serviceEndPoint"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "title_service"]
+- ["So6UIViewC", "DataType"]
+- ["So6UIViewC", "Domains"]
 - ["So6UIViewC", "RoundButton"]
+- ["So6UIViewC", "ServiceBookingCellDelegate"]
+- ["So6UIViewC", "ServiceBookingTapped"]
+- ["So6UIViewC", "Services"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "URL"]
+- ["So6UIViewC", "_Default_DataType"]
 - ["So6UIViewC", "bookingBtn"]
+- ["So6UIViewC", "configure"]
+- ["So6UIViewC", "dataService"]
+- ["So6UIViewC", "delegate"]
 - ["So6UIViewC", "des_service"]
 - ["So6UIViewC", "image_service"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "kf"]
 - ["So6UIViewC", "price_service"]
+- ["So6UIViewC", "serviceEndPoint"]
+- !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "title_service"]
+- !private ["10Foundation3URLV", "appendingPathComponent"]
+- ["10Foundation3URLV", "init"]
+- !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "DataType"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "Domains"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "URL"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "_Default_DataType"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "configure"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataService"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "des_service"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image_service"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "kf"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "price_service"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "serviceEndPoint"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "title_service"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "DataType"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Domains"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "_Default_DataType"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "des_service"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image_service"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kf"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "price_service"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceEndPoint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title_service"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "kf"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
 depends-nominal:
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
+- "13BarberShop_V216ConfigurableCellP"
 - "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "Se"
+- "13BarberShop_V27DomainsV"
+- "SE"
 - "SQ"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
+- !private "10KingfisherAAC"
+- !private "10Kingfisher0A10CompatibleP"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sq"
+- !private "13BarberShop_V212OptionalTypeP"
 - "7RxSwift18ReactiveCompatibleP"
+- "10Foundation20ReferenceConvertibleP"
+- "10Kingfisher8ResourceP"
+- !private "13BarberShop_V28ServicesV7ResultsV"
+- "13BarberShop_V226ServiceBookingCellDelegateP"
 - "13BarberShop_V221ServiceCollectionCellC"
+- "13BarberShop_V28ServicesV"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So24UICollectionReusableViewC"
 - "So20UICollectionViewCellC"
+- !private "So30UIContentSizeCategoryAdjustingP"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- "10Foundation3URLV"
+- "9Alamofire14URLConvertibleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s34_ExpressibleByFileReferenceLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -189,8 +692,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
@@ -212,8 +717,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -227,8 +734,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXParallaxHeader-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
@@ -239,6 +748,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
@@ -257,7 +767,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
@@ -269,6 +778,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
@@ -277,6 +787,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -291,6 +802,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
@@ -321,9 +833,11 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPagerController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXScrollViewController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerViewController.h"
@@ -333,6 +847,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
@@ -372,6 +887,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
@@ -380,8 +896,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -393,6 +911,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
@@ -404,6 +923,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
@@ -413,6 +933,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -428,6 +949,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
@@ -437,21 +959,22 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c7ef4c223f50b1ec5afdf710dfe23399"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "676da55665a2c00066cb4e38c10fa70c"

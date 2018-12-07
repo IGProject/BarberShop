@@ -6,7 +6,6 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppEvents.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsDeviceInfo.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h \

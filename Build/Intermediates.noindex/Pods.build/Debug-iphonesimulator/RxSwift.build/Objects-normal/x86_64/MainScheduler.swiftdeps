@@ -12,8 +12,6 @@ depends-top-level:
 - !private "=="
 - !private "??"
 - "AssignmentPrecedence"
-- !private "AtomicDecrement"
-- !private "AtomicIncrement"
 - "AtomicInt"
 - "DispatchQueue"
 - "Disposable"
@@ -26,6 +24,9 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "rxFatalError"
 depends-member:
+- !private ["So9AtomicInta", "decrement"]
+- !private ["So9AtomicInta", "increment"]
+- ["So9AtomicInta", "init"]
 - !private ["SK", "init"]
 - !private ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -93,8 +94,7 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "isMain"]
 - ["SH", "main"]
-- !private ["7RxSwift22ImmediateSchedulerTypeP", "AtomicDecrement"]
-- !private ["7RxSwift22ImmediateSchedulerTypeP", "AtomicIncrement"]
+- ["7RxSwift22ImmediateSchedulerTypeP", "AtomicInt"]
 - ["7RxSwift22ImmediateSchedulerTypeP", "DispatchQueue"]
 - ["7RxSwift22ImmediateSchedulerTypeP", "MainScheduler"]
 - ["7RxSwift22ImmediateSchedulerTypeP", "SerialDispatchQueueScheduler"]
@@ -107,8 +107,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["7RxSwift13MainSchedulerC", "AtomicDecrement"]
-- !private ["7RxSwift13MainSchedulerC", "AtomicIncrement"]
 - ["7RxSwift13MainSchedulerC", "AtomicInt"]
 - ["7RxSwift13MainSchedulerC", "DispatchQueue"]
 - ["7RxSwift13MainSchedulerC", "Disposable"]
@@ -118,7 +116,6 @@ depends-member:
 - ["7RxSwift13MainSchedulerC", "String"]
 - !private ["7RxSwift13MainSchedulerC", "_mainQueue"]
 - ["7RxSwift13MainSchedulerC", "asyncInstance"]
-- ["7RxSwift13MainSchedulerC", "deinit"]
 - ["7RxSwift13MainSchedulerC", "ensureExecutingOnScheduler"]
 - ["7RxSwift13MainSchedulerC", "init"]
 - ["7RxSwift13MainSchedulerC", "instance"]
@@ -141,8 +138,7 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "async"]
 - !private ["7RxSwift18ReactiveCompatibleP", "isMain"]
 - ["7RxSwift18ReactiveCompatibleP", "main"]
-- !private ["7RxSwift13SchedulerTypeP", "AtomicDecrement"]
-- !private ["7RxSwift13SchedulerTypeP", "AtomicIncrement"]
+- ["7RxSwift13SchedulerTypeP", "AtomicInt"]
 - ["7RxSwift13SchedulerTypeP", "DispatchQueue"]
 - ["7RxSwift13SchedulerTypeP", "MainScheduler"]
 - ["7RxSwift13SchedulerTypeP", "SerialDispatchQueueScheduler"]
@@ -154,8 +150,6 @@ depends-member:
 - !private ["7RxSwift13SchedulerTypeP", "rxFatalError"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
-- !private ["7RxSwift28SerialDispatchQueueSchedulerC", "AtomicDecrement"]
-- !private ["7RxSwift28SerialDispatchQueueSchedulerC", "AtomicIncrement"]
 - ["7RxSwift28SerialDispatchQueueSchedulerC", "AtomicInt"]
 - ["7RxSwift28SerialDispatchQueueSchedulerC", "DispatchQueue"]
 - ["7RxSwift28SerialDispatchQueueSchedulerC", "Disposable"]
@@ -205,6 +199,7 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- "So9AtomicInta"
 - !private "SK"
 - !private "Sb"
 - "s7CVarArgP"
@@ -269,17 +264,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxAtomic/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/RxAtomic/RxAtomic/include/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2f7baca7ec564ae6b94dea2a14db660c"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxAtomic.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "969917ee9578fd9b65583ac3417ae6db"

@@ -9,7 +9,7 @@
 import UIKit
 import JTAppleCalendar
 
-class AppointmentCalendarViewController: UIViewController {
+class ApointmentCalendarViewController: UIViewController {
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var tableViewData: UITableView!
@@ -31,22 +31,22 @@ class AppointmentCalendarViewController: UIViewController {
         
         calendarView.scrollToDate(Date(),animateScroll: false)
         calendarView.selectDates([Date()])
-         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Calendar", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-        
-          setupClearNavigation()
-    }
-    
-    
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
+      
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Calendar", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
     }
+  @IBAction func unwindToBooking(segue:UIStoryboardSegue) {}
+  
+  @IBAction func addBookingTapped(_ sender: RoundButton) {
+    let storyboard: UIStoryboard = UIStoryboard(storyboard: .Booking)
+    let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
+    navigationController?.present(booking, animated: true)
+  }
+  
+  
 }
 
-extension AppointmentCalendarViewController: UITableViewDelegate, UITableViewDataSource {
+extension ApointmentCalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -61,14 +61,20 @@ extension AppointmentCalendarViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ApointmentTableViewCell", for: indexPath) as! ApointmentTableViewCell
-//        cell.dateLabel.text = ""
-//        cell.timeLabel.text = ""
-//        cell.descripLabel.text = ""
         return cell
     }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let cell = tableView.cellForRow(at: indexPath)
+    cell?.selectionStyle = .none
+    
+    let storyboard:UIStoryboard = UIStoryboard(storyboard: .Apointment)
+    let apointmentDetail = storyboard.instantiateViewController(withIdentifier: "AppointmentDetailTableViewController") as! ApointmentDetailTableViewController
+     navigationController?.pushViewController(apointmentDetail, animated: true)
+  }
 }
 
-extension AppointmentCalendarViewController {
+extension ApointmentCalendarViewController {
     
     func fullDayPredicate(for date: Date) -> NSPredicate {
         var calendar = Calendar.current
@@ -83,11 +89,11 @@ extension AppointmentCalendarViewController {
     }
 }
 
-extension AppointmentCalendarViewController {
+extension ApointmentCalendarViewController {
     
     func handleCellSelected(view: JTAppleCell?, cellState: CellState) {
         guard let validCell = view as? CalendarDayCell else { return }
-        if validCell.isSelected {
+        if cellState.isSelected {
             validCell.selectedView.isHidden = false
         } else {
             validCell.selectedView.isHidden = true
@@ -107,7 +113,7 @@ extension AppointmentCalendarViewController {
         }
         
         
-        if validCell.isSelected {
+        if cellState.isSelected {
             validCell.dateLabel.textColor = selectedMonthColor
         } else {
             if cellState.dateBelongsTo == .thisMonth {
@@ -126,34 +132,34 @@ extension AppointmentCalendarViewController {
     
     func setupViewsFromCalendar(from visibleDates: DateSegmentInfo ) {
         guard let date = visibleDates.monthDates.first?.date else { return }
-        
         formatter.dateFormat = "MMMM"
         title = formatter.string(from: date).uppercased()
     }
 }
 
-extension AppointmentCalendarViewController: JTAppleCalendarViewDataSource {
+extension ApointmentCalendarViewController: JTAppleCalendarViewDataSource {
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        formatter.dateFormat = "yyyy MM dd"
+        formatter.dateFormat = "MMM dd yyyy"
+        //formatter.dateFormat = ""
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         
         var parameters: ConfigurationParameters
         var startDate = Date()
         var endDate = Date()
-       if let calendarStartDate = formatter.date(from: "2018 01 01"),
-        let calendarEndDate = formatter.date(from: "2018 12 31") {
-        
+       if let calendarStartDate = formatter.date(from: "01 01 2018"),
+        let calendarEndDate = formatter.date(from: "12 31 2018") {
           startDate = calendarStartDate
           endDate = calendarEndDate
         }
+      
         parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
         return parameters
     }
 }
 
-extension AppointmentCalendarViewController: JTAppleCalendarViewDelegate {
+extension ApointmentCalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         
     }

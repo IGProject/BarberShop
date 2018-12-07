@@ -4,7 +4,6 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV1.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocol.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocolType.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest.h \

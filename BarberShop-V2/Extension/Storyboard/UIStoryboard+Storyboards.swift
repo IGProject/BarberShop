@@ -21,7 +21,7 @@ extension UIStoryboard {
         case Hairstyle
         case Product
         case Ourteam
-        case Appointment
+        case Apointment
         case Setting
         case History
         case Launchscreen

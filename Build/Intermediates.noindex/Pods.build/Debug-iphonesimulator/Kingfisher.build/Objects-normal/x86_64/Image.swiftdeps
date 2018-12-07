@@ -129,11 +129,9 @@ depends-top-level:
 - !private "UIGraphicsEndImageContext"
 - !private "UIGraphicsGetCurrentContext"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIImageJPEGRepresentation"
-- !private "UIImagePNGRepresentation"
 - "UIRectCorner"
 - !private "UIRectFill"
-- "UIViewContentMode"
+- "UIView"
 - !private "UInt32"
 - "UInt8"
 - "Void"
@@ -186,6 +184,7 @@ depends-member:
 - !private ["SB", "truncatingRemainder"]
 - !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- ["So15CALayerDelegateP", "ContentMode"]
 - !private ["So11CGBlendModeV", "destinationIn"]
 - !private ["So11CGBlendModeV", "sourceAtop"]
 - !private ["So12CGContextRefa", "addPath"]
@@ -235,6 +234,7 @@ depends-member:
 - ["10Kingfisher11CGSizeProxyV", "init"]
 - ["10Kingfisher11CGSizeProxyV", "resize"]
 - !private ["10Kingfisher11CGSizeProxyV", "round"]
+- ["s7CVarArgP", "ContentMode"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "animatedImage"]
 - !private ["s7CVarArgP", "append"]
@@ -253,8 +253,10 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEven"]
+- !private ["s7CVarArgP", "jpegData"]
 - !private ["s7CVarArgP", "kf"]
 - !private ["s7CVarArgP", "pi"]
+- !private ["s7CVarArgP", "pngData"]
 - !private ["s7CVarArgP", "scale"]
 - !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "setFill"]
@@ -293,6 +295,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSizeProxy"]
 - ["s28CustomDebugStringConvertibleP", "CompatibleType"]
+- ["s28CustomDebugStringConvertibleP", "ContentMode"]
 - !private ["s28CustomDebugStringConvertibleP", "DataProxy"]
 - !private ["s28CustomDebugStringConvertibleP", "animatedImage"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
@@ -313,10 +316,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "intersection"]
 - !private ["s28CustomDebugStringConvertibleP", "isEven"]
+- !private ["s28CustomDebugStringConvertibleP", "jpegData"]
 - ["s28CustomDebugStringConvertibleP", "kf"]
 - !private ["s28CustomDebugStringConvertibleP", "lowerBound"]
 - !private ["s28CustomDebugStringConvertibleP", "origin"]
 - !private ["s28CustomDebugStringConvertibleP", "pi"]
+- !private ["s28CustomDebugStringConvertibleP", "pngData"]
 - !private ["s28CustomDebugStringConvertibleP", "scale"]
 - !private ["s28CustomDebugStringConvertibleP", "scaled"]
 - !private ["s28CustomDebugStringConvertibleP", "set"]
@@ -379,6 +384,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "y"]
 - !private ["s17CustomReflectableP", "zero"]
 - ["s23CustomStringConvertibleP", "CompatibleType"]
+- ["s23CustomStringConvertibleP", "ContentMode"]
 - !private ["s23CustomStringConvertibleP", "DataProxy"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "animatedImage"]
@@ -398,9 +404,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEven"]
+- !private ["s23CustomStringConvertibleP", "jpegData"]
 - ["s23CustomStringConvertibleP", "kf"]
 - !private ["s23CustomStringConvertibleP", "lowerBound"]
 - !private ["s23CustomStringConvertibleP", "pi"]
+- !private ["s23CustomStringConvertibleP", "pngData"]
 - !private ["s23CustomStringConvertibleP", "scale"]
 - !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "setFill"]
@@ -479,6 +487,7 @@ depends-member:
 - !private ["SQ", "CGSizeProxy"]
 - ["SQ", "ClosedRange"]
 - ["SQ", "CompatibleType"]
+- ["SQ", "ContentMode"]
 - !private ["SQ", "DataProxy"]
 - ["SQ", "GIF"]
 - ["SQ", "JPEG"]
@@ -522,6 +531,7 @@ depends-member:
 - !private ["SQ", "insert"]
 - !private ["SQ", "intersection"]
 - !private ["SQ", "isEven"]
+- !private ["SQ", "jpegData"]
 - ["SQ", "kf"]
 - !private ["SQ", "lowerBound"]
 - !private ["SQ", "makeImage"]
@@ -529,6 +539,7 @@ depends-member:
 - !private ["SQ", "min"]
 - !private ["SQ", "origin"]
 - !private ["SQ", "pi"]
+- !private ["SQ", "pngData"]
 - !private ["SQ", "scale"]
 - ["SQ", "scaleAspectFill"]
 - ["SQ", "scaleAspectFit"]
@@ -603,6 +614,7 @@ depends-member:
 - !private ["SF", "pi"]
 - !private ["SF", "truncatingRemainder"]
 - ["SH", "CompatibleType"]
+- ["SH", "ContentMode"]
 - !private ["SH", "DataProxy"]
 - ["SH", "GIF"]
 - ["SH", "JPEG"]
@@ -639,10 +651,12 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "isEven"]
+- !private ["SH", "jpegData"]
 - ["SH", "kf"]
 - !private ["SH", "lowerBound"]
 - !private ["SH", "makeImage"]
 - !private ["SH", "pi"]
+- !private ["SH", "pngData"]
 - !private ["SH", "scale"]
 - ["SH", "scaleAspectFill"]
 - ["SH", "scaleAspectFit"]
@@ -705,10 +719,8 @@ depends-member:
 - !private ["10KingfisherAAC", "UIGraphicsEndImageContext"]
 - !private ["10KingfisherAAC", "UIGraphicsGetCurrentContext"]
 - !private ["10KingfisherAAC", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["10KingfisherAAC", "UIImageJPEGRepresentation"]
-- !private ["10KingfisherAAC", "UIImagePNGRepresentation"]
 - !private ["10KingfisherAAC", "UIRectFill"]
-- ["10KingfisherAAC", "UIViewContentMode"]
+- ["10KingfisherAAC", "UIView"]
 - !private ["10KingfisherAAC", "UInt32"]
 - ["10KingfisherAAC", "adjusted"]
 - ["10KingfisherAAC", "animated"]
@@ -772,7 +784,9 @@ depends-member:
 - !private ["10Kingfisher0A10CompatibleP", "images"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
+- !private ["10Kingfisher0A10CompatibleP", "jpegData"]
 - ["10Kingfisher0A10CompatibleP", "kf"]
+- !private ["10Kingfisher0A10CompatibleP", "pngData"]
 - !private ["10Kingfisher0A10CompatibleP", "scale"]
 - !private ["10Kingfisher0A10CompatibleP", "size"]
 - !private ["10Kingfisher0A10CompatibleP", "width"]
@@ -792,6 +806,7 @@ depends-member:
 - !private ["SM", "init"]
 - ["SM", "kf"]
 - !private ["SM", "subscript"]
+- ["So8NSCodingP", "ContentMode"]
 - !private ["So8NSCodingP", "animatedImage"]
 - !private ["So8NSCodingP", "cgImage"]
 - !private ["So8NSCodingP", "cgPath"]
@@ -803,7 +818,9 @@ depends-member:
 - !private ["So8NSCodingP", "imageOrientation"]
 - !private ["So8NSCodingP", "images"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "jpegData"]
 - !private ["So8NSCodingP", "kf"]
+- !private ["So8NSCodingP", "pngData"]
 - !private ["So8NSCodingP", "scale"]
 - !private ["So8NSCodingP", "set"]
 - !private ["So8NSCodingP", "setFill"]
@@ -827,7 +844,9 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "imageOrientation"]
 - !private ["So21NSItemProviderReadingP", "images"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "jpegData"]
 - !private ["So21NSItemProviderReadingP", "kf"]
+- !private ["So21NSItemProviderReadingP", "pngData"]
 - !private ["So21NSItemProviderReadingP", "scale"]
 - !private ["So21NSItemProviderReadingP", "set"]
 - !private ["So21NSItemProviderReadingP", "setFill"]
@@ -839,7 +858,9 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "imageOrientation"]
 - !private ["So21NSItemProviderWritingP", "images"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "jpegData"]
 - !private ["So21NSItemProviderWritingP", "kf"]
+- !private ["So21NSItemProviderWritingP", "pngData"]
 - !private ["So21NSItemProviderWritingP", "scale"]
 - !private ["So21NSItemProviderWritingP", "set"]
 - !private ["So21NSItemProviderWritingP", "setFill"]
@@ -847,6 +868,7 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "getBytes"]
 - !private ["So16NSMutableCopyingP", "subscript"]
 - !private ["So8NSNumberC", "doubleValue"]
+- ["So8NSObjectC", "ContentMode"]
 - !private ["So8NSObjectC", "animatedImage"]
 - !private ["So8NSObjectC", "cgImage"]
 - !private ["So8NSObjectC", "cgPath"]
@@ -858,12 +880,15 @@ depends-member:
 - !private ["So8NSObjectC", "imageOrientation"]
 - !private ["So8NSObjectC", "images"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "jpegData"]
 - !private ["So8NSObjectC", "kf"]
+- !private ["So8NSObjectC", "pngData"]
 - !private ["So8NSObjectC", "scale"]
 - !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setFill"]
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "subscript"]
+- ["So8NSObjectP", "ContentMode"]
 - !private ["So8NSObjectP", "animatedImage"]
 - !private ["So8NSObjectP", "cgImage"]
 - !private ["So8NSObjectP", "cgPath"]
@@ -875,7 +900,9 @@ depends-member:
 - !private ["So8NSObjectP", "imageOrientation"]
 - !private ["So8NSObjectP", "images"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "jpegData"]
 - !private ["So8NSObjectP", "kf"]
+- !private ["So8NSObjectP", "pngData"]
 - !private ["So8NSObjectP", "scale"]
 - !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "setFill"]
@@ -892,7 +919,9 @@ depends-member:
 - !private ["So14NSSecureCodingP", "imageOrientation"]
 - !private ["So14NSSecureCodingP", "images"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "jpegData"]
 - !private ["So14NSSecureCodingP", "kf"]
+- !private ["So14NSSecureCodingP", "pngData"]
 - !private ["So14NSSecureCodingP", "scale"]
 - !private ["So14NSSecureCodingP", "set"]
 - !private ["So14NSSecureCodingP", "setFill"]
@@ -923,7 +952,9 @@ depends-member:
 - !private ["10Kingfisher11PlaceholderP", "imageOrientation"]
 - !private ["10Kingfisher11PlaceholderP", "images"]
 - !private ["10Kingfisher11PlaceholderP", "init"]
+- !private ["10Kingfisher11PlaceholderP", "jpegData"]
 - !private ["10Kingfisher11PlaceholderP", "kf"]
+- !private ["10Kingfisher11PlaceholderP", "pngData"]
 - !private ["10Kingfisher11PlaceholderP", "scale"]
 - !private ["10Kingfisher11PlaceholderP", "size"]
 - ["Sk", "CompatibleType"]
@@ -1014,6 +1045,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- ["So29UIAccessibilityIdentificationP", "ContentMode"]
 - !private ["So29UIAccessibilityIdentificationP", "animatedImage"]
 - !private ["So29UIAccessibilityIdentificationP", "cgImage"]
 - !private ["So29UIAccessibilityIdentificationP", "draw"]
@@ -1021,14 +1053,23 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "imageOrientation"]
 - !private ["So29UIAccessibilityIdentificationP", "images"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "jpegData"]
 - !private ["So29UIAccessibilityIdentificationP", "kf"]
+- !private ["So29UIAccessibilityIdentificationP", "pngData"]
 - !private ["So29UIAccessibilityIdentificationP", "scale"]
 - !private ["So29UIAccessibilityIdentificationP", "size"]
+- ["So12UIAppearanceP", "ContentMode"]
+- ["So21UIAppearanceContainerP", "ContentMode"]
 - !private ["So12UIBezierPathC", "cgPath"]
 - !private ["So12UIBezierPathC", "fill"]
 - !private ["So12UIBezierPathC", "init"]
 - !private ["So7UIColorC", "set"]
 - !private ["So7UIColorC", "setFill"]
+- ["So17UICoordinateSpaceP", "ContentMode"]
+- ["So13UIDynamicItemP", "ContentMode"]
+- ["So18UIFocusEnvironmentP", "ContentMode"]
+- ["So11UIFocusItemP", "ContentMode"]
+- ["So20UIFocusItemContainerP", "ContentMode"]
 - !private ["So7UIImageC", "animatedImage"]
 - !private ["So7UIImageC", "cgImage"]
 - !private ["So7UIImageC", "deinit"]
@@ -1037,7 +1078,9 @@ depends-member:
 - !private ["So7UIImageC", "imageOrientation"]
 - !private ["So7UIImageC", "images"]
 - !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "jpegData"]
 - !private ["So7UIImageC", "kf"]
+- !private ["So7UIImageC", "pngData"]
 - !private ["So7UIImageC", "scale"]
 - !private ["So7UIImageC", "size"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "animatedImage"]
@@ -1047,14 +1090,22 @@ depends-member:
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "imageOrientation"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "images"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "jpegData"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "kf"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "pngData"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "scale"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
+- ["So30UIPasteConfigurationSupportingP", "ContentMode"]
 - !private ["So12UIRectCornerV", "bottomLeft"]
 - !private ["So12UIRectCornerV", "bottomRight"]
 - !private ["So12UIRectCornerV", "insert"]
 - !private ["So12UIRectCornerV", "topLeft"]
 - !private ["So12UIRectCornerV", "topRight"]
+- ["So11UIResponderC", "ContentMode"]
+- ["So30UIResponderStandardEditActionsP", "ContentMode"]
+- ["So18UITraitEnvironmentP", "ContentMode"]
+- ["So23UIUserActivityRestoringP", "ContentMode"]
+- ["So6UIViewC", "ContentMode"]
 - !private ["Su", "init"]
 - !private ["s6UInt32V", "init"]
 - !private ["SU", "init"]
@@ -1082,6 +1133,7 @@ depends-member:
 - !private ["s22_CVarArgPassedAsDoubleP", "isEven"]
 - !private ["s22_CVarArgPassedAsDoubleP", "pi"]
 - !private ["s22_CVarArgPassedAsDoubleP", "truncatingRemainder"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "ContentMode"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "init"]
@@ -1114,7 +1166,9 @@ depends-member:
 - !private ["s26_ExpressibleByImageLiteralP", "imageOrientation"]
 - !private ["s26_ExpressibleByImageLiteralP", "images"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "jpegData"]
 - !private ["s26_ExpressibleByImageLiteralP", "kf"]
+- !private ["s26_ExpressibleByImageLiteralP", "pngData"]
 - !private ["s26_ExpressibleByImageLiteralP", "scale"]
 - !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
@@ -1129,6 +1183,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "pi"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "truncatingRemainder"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ContentMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animatedImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgPath"]
@@ -1140,7 +1195,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageOrientation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "images"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "jpegData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "kf"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pngData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scale"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setFill"]
@@ -1184,6 +1241,7 @@ depends-nominal:
 - !private "SB"
 - !private "Sz"
 - !private "Sb"
+- "So15CALayerDelegateP"
 - !private "So11CGBlendModeV"
 - !private "So12CGContextRefa"
 - !private "12CoreGraphics7CGFloatV"
@@ -1192,7 +1250,7 @@ depends-nominal:
 - "So6CGRectV"
 - "So6CGSizeV"
 - "10Kingfisher11CGSizeProxyV"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
 - !private "SN"
 - "Sl"
 - "SL"
@@ -1233,7 +1291,7 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
-- !private "So8NSCodingP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So6NSDataC"
 - !private "So12NSDictionaryC"
@@ -1242,8 +1300,8 @@ depends-nominal:
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - !private "So8NSNumberC"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
+- "So8NSObjectC"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So7NSValueC"
 - !private "Sj"
@@ -1267,12 +1325,25 @@ depends-nominal:
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "So29UIAccessibilityIdentificationP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
 - !private "So12UIBezierPathC"
 - !private "So7UIColorC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
+- "So30UIPasteConfigurationSupportingP"
 - !private "So12UIRectCornerV"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
 - !private "Su"
 - !private "s6UInt32V"
 - !private "SU"
@@ -1280,6 +1351,7 @@ depends-nominal:
 - !private "14CoreFoundation9_CFObjectP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1292,7 +1364,7 @@ depends-nominal:
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 - !private "So22objc_AssociationPolicyV"
@@ -1318,16 +1390,16 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Kingfisher/Sources/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Kingfisher.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "128940dda43dd55a9ced8e50484bcab3"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4529de8c465694bb3dce22b372d94235"

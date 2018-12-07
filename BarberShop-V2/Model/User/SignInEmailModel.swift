@@ -7,8 +7,8 @@
 //
 
 import Foundation
-struct SignInEmailModel: Codable {
+struct SignInEmail: Codable {
     var username: String?
-    var pass: String?
+    var password: String?
     var token: String?
 }

@@ -7,45 +7,76 @@
 //
 
 import UIKit
-
+import Kingfisher
 class ServiceDetailViewController: UIViewController {
+  
+  //MARK: Outlet Connection
     @IBOutlet weak var title_service: UILabel!
     @IBOutlet weak var price_service: UILabel!
     @IBOutlet weak var point_service: UILabel!
     @IBOutlet weak var des_service: UILabel!
-    
-    
-    @IBOutlet weak var serviceDetailCollectionView: UICollectionView!
+    @IBOutlet weak var navigationTitle: UINavigationItem!
+  
+  @IBOutlet weak var navigationBar: UINavigationBar!
+  @IBOutlet weak var serviceDetailCollectionView: UICollectionView!
+  
+  //MARK: Properties
+  var titleServiceString:String!
+  var priceServiceString:String!
+  var pointServiceString:String!
+  var desServiceString:String!
+  
+  var imageDetail = [String]()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        serviceDetailCollectionView.delegate = self
-        serviceDetailCollectionView.dataSource = self
+      
+      setupClearNavigation()
+      setCollection()
+      setupViewService()
     }
+  
+  private func setupClearNavigation() {
+    navigationBar.setBackgroundImage(UIImage(), for: .default)
+    navigationBar.shadowImage = UIImage()
+    navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+  }
+  private func setCollection(){
+    serviceDetailCollectionView.delegate = self
+    serviceDetailCollectionView.dataSource = self
+    
+  }
+  
+  private func setupViewService(){
+    navigationTitle.title = titleServiceString
+    title_service.text = titleServiceString
+    price_service.text = priceServiceString
+    point_service.text = pointServiceString
+    des_service.text = desServiceString
+  }
+  
+  @IBAction func serviceBookingTapped(_ sender: RoundButton) {
+    let storyboard:UIStoryboard = UIStoryboard(storyboard: .Booking)
+    let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
+    
+    self.present(booking, animated: true)
+  }
+  
 }
 
-extension ServiceDetailViewController: UICollectionViewDelegate,UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let albumCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServiceDetailCollectionViewCell", for: indexPath) as! ServiceDetailCollectionViewCell
-        albumCell.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
-        albumCell.layer.cornerRadius = 5
-        albumCell.layer.borderWidth = 0.5
-        return albumCell
-    }
-    
+
+extension ServiceDetailViewController: UICollectionViewDelegate {
+  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
+        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
         cell?.layer.borderWidth = 2
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
+        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
         cell?.layer.borderWidth = 0.5
     }
 }

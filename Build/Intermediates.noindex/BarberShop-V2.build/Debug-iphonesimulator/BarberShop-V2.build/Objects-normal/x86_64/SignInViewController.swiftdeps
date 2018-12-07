@@ -26,15 +26,16 @@ depends-top-level:
 - "GIDSignIn"
 - "GIDSignInDelegate"
 - "GIDSignInUIDelegate"
-- !private "HomeViewController"
 - !private "IntegerLiteralType"
 - !private "LoginManager"
 - "LoginResult"
+- !private "MainTabarViewController"
 - "ReadPermission"
 - "SSSpinnerButton"
+- "SignInEmail"
 - "SignInViewController"
+- !private "SignUpViewController"
 - !private "SpinnerType"
-- !private "String"
 - "StringLiteralType"
 - "TextField"
 - !private "Timer"
@@ -45,7 +46,7 @@ depends-top-level:
 - "UITextField"
 - "UITextFieldDelegate"
 - "UIViewController"
-- !private "UnicodeScalarType"
+- "UserSocial"
 - !private "print"
 - !private "~="
 depends-member:
@@ -69,14 +70,15 @@ depends-member:
 - !private ["So15CALayerDelegateP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So15CALayerDelegateP", "superview"]
 - !private ["So15CALayerDelegateP", "tag"]
+- !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "viewWithTag"]
 - !private ["So15CALayerDelegateP", "visibilityIconOff"]
 - !private ["So15CALayerDelegateP", "visibilityIconOn"]
 - !private ["s7CVarArgP", "GIDSignIn"]
 - !private ["s7CVarArgP", "LoginManager"]
+- !private ["s7CVarArgP", "SignInEmail"]
 - !private ["s7CVarArgP", "SpinnerType"]
-- !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "Timer"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -85,32 +87,24 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "alertController"]
-- !private ["s7CVarArgP", "authentication"]
 - !private ["s7CVarArgP", "becomeFirstResponder"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "didLoginWithFacebook"]
 - !private ["s7CVarArgP", "didReceiveFacebookLoginResult"]
 - !private ["s7CVarArgP", "dividerActiveColor"]
 - !private ["s7CVarArgP", "dividerNormalColor"]
-- !private ["s7CVarArgP", "email"]
 - !private ["s7CVarArgP", "emailTextField"]
-- !private ["s7CVarArgP", "familyName"]
-- !private ["s7CVarArgP", "givenName"]
-- !private ["s7CVarArgP", "idToken"]
-- !private ["s7CVarArgP", "imageURL"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "initGoogleSignIn"]
 - !private ["s7CVarArgP", "instantiateViewController"]
-- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "navigationBar"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "passwordTextField"]
 - !private ["s7CVarArgP", "placeholderActiveColor"]
 - !private ["s7CVarArgP", "placeholderNormalColor"]
+- !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
-- !private ["s7CVarArgP", "profile"]
-- !private ["s7CVarArgP", "pushViewController"]
 - !private ["s7CVarArgP", "readPermissions"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
 - !private ["s7CVarArgP", "scheduledTimer"]
@@ -127,6 +121,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "superview"]
 - !private ["s7CVarArgP", "tag"]
+- !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textColor"]
 - ["s7CVarArgP", "textField"]
 - ["s7CVarArgP", "textFieldDidBeginEditing"]
@@ -149,8 +144,8 @@ depends-member:
 - !private ["15SSSpinnerButton14CompletionTypeO", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "LoginManager"]
+- !private ["s28CustomDebugStringConvertibleP", "SignInEmail"]
 - !private ["s28CustomDebugStringConvertibleP", "SpinnerType"]
-- !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "Timer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -158,32 +153,24 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "alertController"]
-- !private ["s28CustomDebugStringConvertibleP", "authentication"]
 - !private ["s28CustomDebugStringConvertibleP", "becomeFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "didLoginWithFacebook"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveFacebookLoginResult"]
 - !private ["s28CustomDebugStringConvertibleP", "dividerActiveColor"]
 - !private ["s28CustomDebugStringConvertibleP", "dividerNormalColor"]
-- !private ["s28CustomDebugStringConvertibleP", "email"]
 - !private ["s28CustomDebugStringConvertibleP", "emailTextField"]
-- !private ["s28CustomDebugStringConvertibleP", "familyName"]
-- !private ["s28CustomDebugStringConvertibleP", "givenName"]
-- !private ["s28CustomDebugStringConvertibleP", "idToken"]
-- !private ["s28CustomDebugStringConvertibleP", "imageURL"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "initGoogleSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
-- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "passwordTextField"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholderActiveColor"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholderNormalColor"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
-- !private ["s28CustomDebugStringConvertibleP", "profile"]
-- !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "readPermissions"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
@@ -200,6 +187,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "superview"]
 - !private ["s28CustomDebugStringConvertibleP", "tag"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - ["s28CustomDebugStringConvertibleP", "textField"]
 - ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
@@ -218,31 +206,24 @@ depends-member:
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "authentication"]
 - !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "dividerActiveColor"]
 - !private ["s17CustomReflectableP", "dividerNormalColor"]
-- !private ["s17CustomReflectableP", "email"]
-- !private ["s17CustomReflectableP", "familyName"]
-- !private ["s17CustomReflectableP", "givenName"]
-- !private ["s17CustomReflectableP", "idToken"]
-- !private ["s17CustomReflectableP", "imageURL"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "name"]
 - !private ["s17CustomReflectableP", "placeholderActiveColor"]
 - !private ["s17CustomReflectableP", "placeholderNormalColor"]
-- !private ["s17CustomReflectableP", "profile"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "tag"]
+- !private ["s17CustomReflectableP", "text"]
 - !private ["s17CustomReflectableP", "textColor"]
 - !private ["s17CustomReflectableP", "uiDelegate"]
 - !private ["s17CustomReflectableP", "visibilityIconOff"]
 - !private ["s17CustomReflectableP", "visibilityIconOn"]
 - !private ["s23CustomStringConvertibleP", "GIDSignIn"]
 - !private ["s23CustomStringConvertibleP", "LoginManager"]
+- !private ["s23CustomStringConvertibleP", "SignInEmail"]
 - !private ["s23CustomStringConvertibleP", "SpinnerType"]
-- !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "Timer"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -251,32 +232,24 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "alertController"]
-- !private ["s23CustomStringConvertibleP", "authentication"]
 - !private ["s23CustomStringConvertibleP", "becomeFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "didLoginWithFacebook"]
 - !private ["s23CustomStringConvertibleP", "didReceiveFacebookLoginResult"]
 - !private ["s23CustomStringConvertibleP", "dividerActiveColor"]
 - !private ["s23CustomStringConvertibleP", "dividerNormalColor"]
-- !private ["s23CustomStringConvertibleP", "email"]
 - !private ["s23CustomStringConvertibleP", "emailTextField"]
-- !private ["s23CustomStringConvertibleP", "familyName"]
-- !private ["s23CustomStringConvertibleP", "givenName"]
-- !private ["s23CustomStringConvertibleP", "idToken"]
-- !private ["s23CustomStringConvertibleP", "imageURL"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "initGoogleSignIn"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
-- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "navigationBar"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "passwordTextField"]
 - !private ["s23CustomStringConvertibleP", "placeholderActiveColor"]
 - !private ["s23CustomStringConvertibleP", "placeholderNormalColor"]
+- !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
-- !private ["s23CustomStringConvertibleP", "profile"]
-- !private ["s23CustomStringConvertibleP", "pushViewController"]
 - !private ["s23CustomStringConvertibleP", "readPermissions"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "scheduledTimer"]
@@ -293,6 +266,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "superview"]
 - !private ["s23CustomStringConvertibleP", "tag"]
+- !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - ["s23CustomStringConvertibleP", "textField"]
 - ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
@@ -308,45 +282,31 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "visibilityIconOn"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["Se", "_getBuiltinLogicValue"]
-- !private ["Se", "authentication"]
 - !private ["Se", "delegate"]
 - !private ["Se", "dividerActiveColor"]
 - !private ["Se", "dividerNormalColor"]
-- !private ["Se", "email"]
-- !private ["Se", "familyName"]
-- !private ["Se", "givenName"]
-- !private ["Se", "idToken"]
-- !private ["Se", "imageURL"]
 - ["Se", "init"]
 - ["Se", "init"]
-- !private ["Se", "name"]
 - !private ["Se", "placeholderActiveColor"]
 - !private ["Se", "placeholderNormalColor"]
-- !private ["Se", "profile"]
 - !private ["Se", "subscript"]
 - !private ["Se", "tag"]
+- !private ["Se", "text"]
 - !private ["Se", "textColor"]
 - !private ["Se", "uiDelegate"]
 - !private ["Se", "visibilityIconOff"]
 - !private ["Se", "visibilityIconOn"]
 - !private ["SE", "_getBuiltinLogicValue"]
-- !private ["SE", "authentication"]
 - !private ["SE", "delegate"]
 - !private ["SE", "dividerActiveColor"]
 - !private ["SE", "dividerNormalColor"]
-- !private ["SE", "email"]
-- !private ["SE", "familyName"]
-- !private ["SE", "givenName"]
-- !private ["SE", "idToken"]
-- !private ["SE", "imageURL"]
 - ["SE", "init"]
 - ["SE", "init"]
-- !private ["SE", "name"]
 - !private ["SE", "placeholderActiveColor"]
 - !private ["SE", "placeholderNormalColor"]
-- !private ["SE", "profile"]
 - !private ["SE", "subscript"]
 - !private ["SE", "tag"]
+- !private ["SE", "text"]
 - !private ["SE", "textColor"]
 - !private ["SE", "uiDelegate"]
 - !private ["SE", "visibilityIconOff"]
@@ -354,8 +314,9 @@ depends-member:
 - !private ["SQ", "GIDSignIn"]
 - !private ["SQ", "Home"]
 - !private ["SQ", "LoginManager"]
+- !private ["SQ", "SignInEmail"]
+- !private ["SQ", "SignUp"]
 - !private ["SQ", "SpinnerType"]
-- !private ["SQ", "String"]
 - !private ["SQ", "Timer"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIColor"]
@@ -365,7 +326,6 @@ depends-member:
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "alert"]
 - !private ["SQ", "alertController"]
-- !private ["SQ", "authentication"]
 - !private ["SQ", "ballRotateChase"]
 - !private ["SQ", "becomeFirstResponder"]
 - !private ["SQ", "default"]
@@ -374,26 +334,19 @@ depends-member:
 - !private ["SQ", "didReceiveFacebookLoginResult"]
 - !private ["SQ", "dividerActiveColor"]
 - !private ["SQ", "dividerNormalColor"]
-- !private ["SQ", "email"]
 - !private ["SQ", "emailTextField"]
-- !private ["SQ", "familyName"]
-- !private ["SQ", "givenName"]
-- !private ["SQ", "idToken"]
-- !private ["SQ", "imageURL"]
 - ["SQ", "init"]
 - ["SQ", "init"]
 - !private ["SQ", "initGoogleSignIn"]
 - !private ["SQ", "instantiateViewController"]
-- !private ["SQ", "name"]
 - !private ["SQ", "navigationBar"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "none"]
 - !private ["SQ", "passwordTextField"]
 - !private ["SQ", "placeholderActiveColor"]
 - !private ["SQ", "placeholderNormalColor"]
+- !private ["SQ", "present"]
 - !private ["SQ", "print"]
-- !private ["SQ", "profile"]
-- !private ["SQ", "pushViewController"]
 - !private ["SQ", "readPermissions"]
 - !private ["SQ", "resignFirstResponder"]
 - !private ["SQ", "scheduledTimer"]
@@ -410,6 +363,7 @@ depends-member:
 - !private ["SQ", "subscript"]
 - !private ["SQ", "superview"]
 - !private ["SQ", "tag"]
+- !private ["SQ", "text"]
 - !private ["SQ", "textColor"]
 - ["SQ", "textField"]
 - ["SQ", "textFieldDidBeginEditing"]
@@ -429,20 +383,13 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "authentication"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "dividerActiveColor"]
 - !private ["s23ExpressibleByNilLiteralP", "dividerNormalColor"]
-- !private ["s23ExpressibleByNilLiteralP", "email"]
-- !private ["s23ExpressibleByNilLiteralP", "familyName"]
-- !private ["s23ExpressibleByNilLiteralP", "givenName"]
-- !private ["s23ExpressibleByNilLiteralP", "idToken"]
-- !private ["s23ExpressibleByNilLiteralP", "imageURL"]
-- !private ["s23ExpressibleByNilLiteralP", "name"]
 - !private ["s23ExpressibleByNilLiteralP", "placeholderActiveColor"]
 - !private ["s23ExpressibleByNilLiteralP", "placeholderNormalColor"]
-- !private ["s23ExpressibleByNilLiteralP", "profile"]
 - !private ["s23ExpressibleByNilLiteralP", "tag"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s23ExpressibleByNilLiteralP", "textColor"]
 - !private ["s23ExpressibleByNilLiteralP", "uiDelegate"]
 - !private ["s23ExpressibleByNilLiteralP", "visibilityIconOff"]
@@ -451,22 +398,14 @@ depends-member:
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["So17GIDAuthenticationC", "idToken"]
-- !private ["So13GIDGoogleUserC", "authentication"]
-- !private ["So13GIDGoogleUserC", "profile"]
-- !private ["So14GIDProfileDataC", "email"]
-- !private ["So14GIDProfileDataC", "familyName"]
-- !private ["So14GIDProfileDataC", "givenName"]
-- !private ["So14GIDProfileDataC", "imageURL"]
-- !private ["So14GIDProfileDataC", "name"]
 - !private ["So9GIDSignInC", "delegate"]
 - !private ["So9GIDSignInC", "sharedInstance"]
 - !private ["So9GIDSignInC", "signIn"]
 - !private ["So9GIDSignInC", "uiDelegate"]
 - !private ["So17GIDSignInDelegateP", "GIDSignIn"]
 - !private ["So17GIDSignInDelegateP", "LoginManager"]
+- !private ["So17GIDSignInDelegateP", "SignInEmail"]
 - !private ["So17GIDSignInDelegateP", "SpinnerType"]
-- !private ["So17GIDSignInDelegateP", "String"]
 - !private ["So17GIDSignInDelegateP", "Timer"]
 - !private ["So17GIDSignInDelegateP", "UIAlertController"]
 - !private ["So17GIDSignInDelegateP", "UIColor"]
@@ -496,8 +435,8 @@ depends-member:
 - ["So17GIDSignInDelegateP", "textFieldShouldReturn"]
 - !private ["So19GIDSignInUIDelegateP", "GIDSignIn"]
 - !private ["So19GIDSignInUIDelegateP", "LoginManager"]
+- !private ["So19GIDSignInUIDelegateP", "SignInEmail"]
 - !private ["So19GIDSignInUIDelegateP", "SpinnerType"]
-- !private ["So19GIDSignInUIDelegateP", "String"]
 - !private ["So19GIDSignInUIDelegateP", "Timer"]
 - !private ["So19GIDSignInUIDelegateP", "UIAlertController"]
 - !private ["So19GIDSignInUIDelegateP", "UIColor"]
@@ -526,12 +465,13 @@ depends-member:
 - ["So19GIDSignInUIDelegateP", "textFieldShouldEndEditing"]
 - ["So19GIDSignInUIDelegateP", "textFieldShouldReturn"]
 - !private ["7RxCocoa11HasDelegateP", "navigationBar"]
-- !private ["7RxCocoa11HasDelegateP", "pushViewController"]
+- !private ["7RxCocoa11HasDelegateP", "present"]
 - !private ["SH", "GIDSignIn"]
 - !private ["SH", "Home"]
 - !private ["SH", "LoginManager"]
+- !private ["SH", "SignInEmail"]
+- !private ["SH", "SignUp"]
 - !private ["SH", "SpinnerType"]
-- !private ["SH", "String"]
 - !private ["SH", "Timer"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIColor"]
@@ -541,7 +481,6 @@ depends-member:
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "alert"]
 - !private ["SH", "alertController"]
-- !private ["SH", "authentication"]
 - !private ["SH", "ballRotateChase"]
 - !private ["SH", "becomeFirstResponder"]
 - !private ["SH", "default"]
@@ -550,26 +489,19 @@ depends-member:
 - !private ["SH", "didReceiveFacebookLoginResult"]
 - !private ["SH", "dividerActiveColor"]
 - !private ["SH", "dividerNormalColor"]
-- !private ["SH", "email"]
 - !private ["SH", "emailTextField"]
-- !private ["SH", "familyName"]
-- !private ["SH", "givenName"]
-- !private ["SH", "idToken"]
-- !private ["SH", "imageURL"]
 - ["SH", "init"]
 - ["SH", "init"]
 - !private ["SH", "initGoogleSignIn"]
 - !private ["SH", "instantiateViewController"]
-- !private ["SH", "name"]
 - !private ["SH", "navigationBar"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "none"]
 - !private ["SH", "passwordTextField"]
 - !private ["SH", "placeholderActiveColor"]
 - !private ["SH", "placeholderNormalColor"]
+- !private ["SH", "present"]
 - !private ["SH", "print"]
-- !private ["SH", "profile"]
-- !private ["SH", "pushViewController"]
 - !private ["SH", "readPermissions"]
 - !private ["SH", "resignFirstResponder"]
 - !private ["SH", "scheduledTimer"]
@@ -586,6 +518,7 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "superview"]
 - !private ["SH", "tag"]
+- !private ["SH", "text"]
 - !private ["SH", "textColor"]
 - ["SH", "textField"]
 - ["SH", "textFieldDidBeginEditing"]
@@ -601,6 +534,11 @@ depends-member:
 - !private ["SH", "visibilityIconOn"]
 - !private ["SH", "white"]
 - !private ["7RxCocoa16KVORepresentableP", "_getBuiltinLogicValue"]
+- ["10Kingfisher0A10CompatibleP", "init"]
+- ["10Kingfisher0A10CompatibleP", "init"]
+- !private ["10Kingfisher0A10CompatibleP", "startAnimate"]
+- !private ["10Kingfisher0A10CompatibleP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
+- !private ["10Kingfisher0A10CompatibleP", "tag"]
 - !private ["13FacebookLogin0B7ManagerC", "init"]
 - !private ["13FacebookLogin0B7ManagerC", "logIn"]
 - ["13FacebookLogin0B6ResultO", "cancelled"]
@@ -614,8 +552,8 @@ depends-member:
 - !private ["SM", "subscript"]
 - !private ["So8NSCodingP", "GIDSignIn"]
 - !private ["So8NSCodingP", "LoginManager"]
+- !private ["So8NSCodingP", "SignInEmail"]
 - !private ["So8NSCodingP", "SpinnerType"]
-- !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "Timer"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -623,30 +561,22 @@ depends-member:
 - !private ["So8NSCodingP", "UIStoryboard"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "alertController"]
-- !private ["So8NSCodingP", "authentication"]
 - !private ["So8NSCodingP", "becomeFirstResponder"]
 - !private ["So8NSCodingP", "didLoginWithFacebook"]
 - !private ["So8NSCodingP", "didReceiveFacebookLoginResult"]
 - !private ["So8NSCodingP", "dividerActiveColor"]
 - !private ["So8NSCodingP", "dividerNormalColor"]
-- !private ["So8NSCodingP", "email"]
 - !private ["So8NSCodingP", "emailTextField"]
-- !private ["So8NSCodingP", "familyName"]
-- !private ["So8NSCodingP", "givenName"]
-- !private ["So8NSCodingP", "idToken"]
-- !private ["So8NSCodingP", "imageURL"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "initGoogleSignIn"]
-- !private ["So8NSCodingP", "name"]
 - !private ["So8NSCodingP", "navigationBar"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "passwordTextField"]
 - !private ["So8NSCodingP", "placeholderActiveColor"]
 - !private ["So8NSCodingP", "placeholderNormalColor"]
+- !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
-- !private ["So8NSCodingP", "profile"]
-- !private ["So8NSCodingP", "pushViewController"]
 - !private ["So8NSCodingP", "readPermissions"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "setBackgroundImage"]
@@ -660,6 +590,7 @@ depends-member:
 - !private ["So8NSCodingP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So8NSCodingP", "superview"]
 - !private ["So8NSCodingP", "tag"]
+- !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "textColor"]
 - ["So8NSCodingP", "textField"]
 - ["So8NSCodingP", "textFieldDidBeginEditing"]
@@ -678,8 +609,8 @@ depends-member:
 - !private ["So9NSCopyingP", "white"]
 - !private ["So26NSExtensionRequestHandlingP", "GIDSignIn"]
 - !private ["So26NSExtensionRequestHandlingP", "LoginManager"]
+- !private ["So26NSExtensionRequestHandlingP", "SignInEmail"]
 - !private ["So26NSExtensionRequestHandlingP", "SpinnerType"]
-- !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "Timer"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
@@ -696,8 +627,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "passwordTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
-- !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "readPermissions"]
 - !private ["So26NSExtensionRequestHandlingP", "setupClearNavigation"]
 - !private ["So26NSExtensionRequestHandlingP", "setupTextFieldMaterial"]
@@ -722,14 +653,15 @@ depends-member:
 - ["So8NSObjectC", "Error"]
 - ["So8NSObjectC", "GIDGoogleUser"]
 - ["So8NSObjectC", "GIDSignIn"]
-- !private ["So8NSObjectC", "HomeViewController"]
 - !private ["So8NSObjectC", "LoginManager"]
 - ["So8NSObjectC", "LoginResult"]
+- !private ["So8NSObjectC", "MainTabarViewController"]
 - ["So8NSObjectC", "ReadPermission"]
 - ["So8NSObjectC", "SSSpinnerButton"]
+- ["So8NSObjectC", "SignInEmail"]
 - ["So8NSObjectC", "SignInTappedGroup"]
+- !private ["So8NSObjectC", "SignUpViewController"]
 - !private ["So8NSObjectC", "SpinnerType"]
-- !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "TextField"]
 - !private ["So8NSObjectC", "Timer"]
 - ["So8NSObjectC", "UIAlertController"]
@@ -737,36 +669,30 @@ depends-member:
 - !private ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UserSocial"]
 - ["So8NSObjectC", "alertController"]
-- !private ["So8NSObjectC", "authentication"]
 - !private ["So8NSObjectC", "becomeFirstResponder"]
 - !private ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "didLoginWithFacebook"]
 - ["So8NSObjectC", "didReceiveFacebookLoginResult"]
 - !private ["So8NSObjectC", "dividerActiveColor"]
 - !private ["So8NSObjectC", "dividerNormalColor"]
-- !private ["So8NSObjectC", "email"]
 - ["So8NSObjectC", "emailTextField"]
-- !private ["So8NSObjectC", "familyName"]
-- !private ["So8NSObjectC", "givenName"]
 - ["So8NSObjectC", "gmailLogin"]
 - ["So8NSObjectC", "googleLogin"]
-- !private ["So8NSObjectC", "idToken"]
-- !private ["So8NSObjectC", "imageURL"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "initGoogleSignIn"]
 - !private ["So8NSObjectC", "instantiateViewController"]
-- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "navigationBar"]
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "passwordTextField"]
 - !private ["So8NSObjectC", "placeholderActiveColor"]
 - !private ["So8NSObjectC", "placeholderNormalColor"]
+- !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
-- !private ["So8NSObjectC", "profile"]
-- !private ["So8NSObjectC", "pushViewController"]
 - ["So8NSObjectC", "readPermissions"]
+- ["So8NSObjectC", "registerSocial"]
 - ["So8NSObjectC", "registerTapped"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "scheduledTimer"]
@@ -782,6 +708,7 @@ depends-member:
 - !private ["So8NSObjectC", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So8NSObjectC", "superview"]
 - !private ["So8NSObjectC", "tag"]
+- !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "textColor"]
 - ["So8NSObjectC", "textField"]
 - ["So8NSObjectC", "textFieldDidBeginEditing"]
@@ -798,8 +725,8 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "GIDSignIn"]
 - !private ["So8NSObjectP", "LoginManager"]
+- !private ["So8NSObjectP", "SignInEmail"]
 - !private ["So8NSObjectP", "SpinnerType"]
-- !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "Timer"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIColor"]
@@ -807,32 +734,24 @@ depends-member:
 - !private ["So8NSObjectP", "UIStoryboard"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "alertController"]
-- !private ["So8NSObjectP", "authentication"]
 - !private ["So8NSObjectP", "becomeFirstResponder"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "didLoginWithFacebook"]
 - !private ["So8NSObjectP", "didReceiveFacebookLoginResult"]
 - !private ["So8NSObjectP", "dividerActiveColor"]
 - !private ["So8NSObjectP", "dividerNormalColor"]
-- !private ["So8NSObjectP", "email"]
 - !private ["So8NSObjectP", "emailTextField"]
-- !private ["So8NSObjectP", "familyName"]
-- !private ["So8NSObjectP", "givenName"]
-- !private ["So8NSObjectP", "idToken"]
-- !private ["So8NSObjectP", "imageURL"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "initGoogleSignIn"]
 - !private ["So8NSObjectP", "instantiateViewController"]
-- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "navigationBar"]
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "passwordTextField"]
 - !private ["So8NSObjectP", "placeholderActiveColor"]
 - !private ["So8NSObjectP", "placeholderNormalColor"]
+- !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
-- !private ["So8NSObjectP", "profile"]
-- !private ["So8NSObjectP", "pushViewController"]
 - !private ["So8NSObjectP", "readPermissions"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
 - !private ["So8NSObjectP", "scheduledTimer"]
@@ -848,6 +767,7 @@ depends-member:
 - !private ["So8NSObjectP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So8NSObjectP", "superview"]
 - !private ["So8NSObjectP", "tag"]
+- !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "textColor"]
 - ["So8NSObjectP", "textField"]
 - ["So8NSObjectP", "textFieldDidBeginEditing"]
@@ -865,40 +785,46 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["Sq", "authentication"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "dividerActiveColor"]
 - !private ["Sq", "dividerNormalColor"]
-- !private ["Sq", "email"]
-- !private ["Sq", "familyName"]
-- !private ["Sq", "givenName"]
-- !private ["Sq", "idToken"]
-- !private ["Sq", "imageURL"]
-- !private ["Sq", "name"]
 - !private ["Sq", "placeholderActiveColor"]
 - !private ["Sq", "placeholderNormalColor"]
-- !private ["Sq", "profile"]
 - !private ["Sq", "tag"]
+- !private ["Sq", "text"]
 - !private ["Sq", "textColor"]
 - !private ["Sq", "uiDelegate"]
 - !private ["Sq", "visibilityIconOff"]
 - !private ["Sq", "visibilityIconOn"]
+- !private ["13BarberShop_V212OptionalTypeP", "delegate"]
+- !private ["13BarberShop_V212OptionalTypeP", "dividerActiveColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "dividerNormalColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "placeholderActiveColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "placeholderNormalColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "tag"]
+- !private ["13BarberShop_V212OptionalTypeP", "text"]
+- !private ["13BarberShop_V212OptionalTypeP", "textColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "uiDelegate"]
+- !private ["13BarberShop_V212OptionalTypeP", "visibilityIconOff"]
+- !private ["13BarberShop_V212OptionalTypeP", "visibilityIconOn"]
 - ["12FacebookCore23PermissionRepresentableP", "custom"]
 - ["12FacebookCore23PermissionRepresentableP", "email"]
 - ["12FacebookCore23PermissionRepresentableP", "publicProfile"]
 - ["12FacebookCore23PermissionRepresentableP", "userFriends"]
+- !private ["10Kingfisher11PlaceholderP", "init"]
 - !private ["Sk", "subscript"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "Home"]
+- !private ["SY", "SignUp"]
 - !private ["SY", "alert"]
 - !private ["SY", "ballRotateChase"]
 - !private ["SY", "default"]
 - !private ["7RxSwift18ReactiveCompatibleP", "GIDSignIn"]
 - !private ["7RxSwift18ReactiveCompatibleP", "LoginManager"]
+- !private ["7RxSwift18ReactiveCompatibleP", "SignInEmail"]
 - !private ["7RxSwift18ReactiveCompatibleP", "SpinnerType"]
-- !private ["7RxSwift18ReactiveCompatibleP", "String"]
 - !private ["7RxSwift18ReactiveCompatibleP", "Timer"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIAlertController"]
 - !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
@@ -906,32 +832,24 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "UIStoryboard"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
 - !private ["7RxSwift18ReactiveCompatibleP", "alertController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "authentication"]
 - !private ["7RxSwift18ReactiveCompatibleP", "becomeFirstResponder"]
 - !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
 - !private ["7RxSwift18ReactiveCompatibleP", "didLoginWithFacebook"]
 - !private ["7RxSwift18ReactiveCompatibleP", "didReceiveFacebookLoginResult"]
 - !private ["7RxSwift18ReactiveCompatibleP", "dividerActiveColor"]
 - !private ["7RxSwift18ReactiveCompatibleP", "dividerNormalColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "email"]
 - !private ["7RxSwift18ReactiveCompatibleP", "emailTextField"]
-- !private ["7RxSwift18ReactiveCompatibleP", "familyName"]
-- !private ["7RxSwift18ReactiveCompatibleP", "givenName"]
-- !private ["7RxSwift18ReactiveCompatibleP", "idToken"]
-- !private ["7RxSwift18ReactiveCompatibleP", "imageURL"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "initGoogleSignIn"]
 - !private ["7RxSwift18ReactiveCompatibleP", "instantiateViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "name"]
 - !private ["7RxSwift18ReactiveCompatibleP", "navigationBar"]
 - !private ["7RxSwift18ReactiveCompatibleP", "navigationController"]
 - !private ["7RxSwift18ReactiveCompatibleP", "passwordTextField"]
 - !private ["7RxSwift18ReactiveCompatibleP", "placeholderActiveColor"]
 - !private ["7RxSwift18ReactiveCompatibleP", "placeholderNormalColor"]
+- !private ["7RxSwift18ReactiveCompatibleP", "present"]
 - !private ["7RxSwift18ReactiveCompatibleP", "print"]
-- !private ["7RxSwift18ReactiveCompatibleP", "profile"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pushViewController"]
 - !private ["7RxSwift18ReactiveCompatibleP", "readPermissions"]
 - !private ["7RxSwift18ReactiveCompatibleP", "resignFirstResponder"]
 - !private ["7RxSwift18ReactiveCompatibleP", "scheduledTimer"]
@@ -947,6 +865,7 @@ depends-member:
 - !private ["7RxSwift18ReactiveCompatibleP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["7RxSwift18ReactiveCompatibleP", "superview"]
 - !private ["7RxSwift18ReactiveCompatibleP", "tag"]
+- !private ["7RxSwift18ReactiveCompatibleP", "text"]
 - !private ["7RxSwift18ReactiveCompatibleP", "textColor"]
 - ["7RxSwift18ReactiveCompatibleP", "textField"]
 - ["7RxSwift18ReactiveCompatibleP", "textFieldDidBeginEditing"]
@@ -971,18 +890,21 @@ depends-member:
 - ["ST", "init"]
 - ["ST", "init"]
 - !private ["ST", "subscript"]
+- !private ["13BarberShop_V211SignInEmailV", "deinit"]
+- !private ["13BarberShop_V211SignInEmailV", "init"]
 - ["13BarberShop_V220SignInViewControllerC", "Bool"]
 - ["13BarberShop_V220SignInViewControllerC", "Error"]
 - ["13BarberShop_V220SignInViewControllerC", "GIDGoogleUser"]
 - ["13BarberShop_V220SignInViewControllerC", "GIDSignIn"]
-- !private ["13BarberShop_V220SignInViewControllerC", "HomeViewController"]
 - !private ["13BarberShop_V220SignInViewControllerC", "LoginManager"]
 - ["13BarberShop_V220SignInViewControllerC", "LoginResult"]
+- !private ["13BarberShop_V220SignInViewControllerC", "MainTabarViewController"]
 - ["13BarberShop_V220SignInViewControllerC", "ReadPermission"]
 - ["13BarberShop_V220SignInViewControllerC", "SSSpinnerButton"]
+- ["13BarberShop_V220SignInViewControllerC", "SignInEmail"]
 - ["13BarberShop_V220SignInViewControllerC", "SignInTappedGroup"]
+- !private ["13BarberShop_V220SignInViewControllerC", "SignUpViewController"]
 - !private ["13BarberShop_V220SignInViewControllerC", "SpinnerType"]
-- !private ["13BarberShop_V220SignInViewControllerC", "String"]
 - ["13BarberShop_V220SignInViewControllerC", "TextField"]
 - !private ["13BarberShop_V220SignInViewControllerC", "Timer"]
 - ["13BarberShop_V220SignInViewControllerC", "UIAlertController"]
@@ -990,6 +912,7 @@ depends-member:
 - !private ["13BarberShop_V220SignInViewControllerC", "UIImage"]
 - !private ["13BarberShop_V220SignInViewControllerC", "UIStoryboard"]
 - ["13BarberShop_V220SignInViewControllerC", "UITextField"]
+- ["13BarberShop_V220SignInViewControllerC", "UserSocial"]
 - ["13BarberShop_V220SignInViewControllerC", "alertController"]
 - ["13BarberShop_V220SignInViewControllerC", "deinit"]
 - ["13BarberShop_V220SignInViewControllerC", "didLoginWithFacebook"]
@@ -1003,6 +926,7 @@ depends-member:
 - ["13BarberShop_V220SignInViewControllerC", "passwordTextField"]
 - !private ["13BarberShop_V220SignInViewControllerC", "print"]
 - !private ["13BarberShop_V220SignInViewControllerC", "readPermissions"]
+- ["13BarberShop_V220SignInViewControllerC", "registerSocial"]
 - ["13BarberShop_V220SignInViewControllerC", "registerTapped"]
 - ["13BarberShop_V220SignInViewControllerC", "setupClearNavigation"]
 - ["13BarberShop_V220SignInViewControllerC", "setupTextFieldMaterial"]
@@ -1019,10 +943,11 @@ depends-member:
 - ["13BarberShop_V220SignInViewControllerC", "viewDidLoad"]
 - !private ["15SSSpinnerButton11SpinnerTypeO", "ballRotateChase"]
 - !private ["So12UIStoryboardC13BarberShop_V2E10StoryboardO", "Home"]
+- !private ["So12UIStoryboardC13BarberShop_V2E10StoryboardO", "SignUp"]
 - !private ["13BarberShop_V215StoryboardBasedP", "GIDSignIn"]
 - !private ["13BarberShop_V215StoryboardBasedP", "LoginManager"]
+- !private ["13BarberShop_V215StoryboardBasedP", "SignInEmail"]
 - !private ["13BarberShop_V215StoryboardBasedP", "SpinnerType"]
-- !private ["13BarberShop_V215StoryboardBasedP", "String"]
 - !private ["13BarberShop_V215StoryboardBasedP", "Timer"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIAlertController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIColor"]
@@ -1039,8 +964,8 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "navigationBar"]
 - !private ["13BarberShop_V215StoryboardBasedP", "navigationController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "passwordTextField"]
+- !private ["13BarberShop_V215StoryboardBasedP", "present"]
 - !private ["13BarberShop_V215StoryboardBasedP", "print"]
-- !private ["13BarberShop_V215StoryboardBasedP", "pushViewController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "readPermissions"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setupClearNavigation"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setupTextFieldMaterial"]
@@ -1065,6 +990,7 @@ depends-member:
 - !private ["8Material9TextFieldC", "placeholderActiveColor"]
 - !private ["8Material9TextFieldC", "placeholderNormalColor"]
 - !private ["8Material9TextFieldC", "tag"]
+- !private ["8Material9TextFieldC", "text"]
 - !private ["8Material9TextFieldC", "textColor"]
 - !private ["8Material9TextFieldC", "visibilityIconOff"]
 - !private ["8Material9TextFieldC", "visibilityIconOn"]
@@ -1089,6 +1015,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So29UIAccessibilityIdentificationP", "superview"]
 - !private ["So29UIAccessibilityIdentificationP", "tag"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So29UIAccessibilityIdentificationP", "viewWithTag"]
 - !private ["So29UIAccessibilityIdentificationP", "visibilityIconOff"]
@@ -1106,14 +1033,15 @@ depends-member:
 - !private ["So12UIAppearanceP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So12UIAppearanceP", "superview"]
 - !private ["So12UIAppearanceP", "tag"]
+- !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "viewWithTag"]
 - !private ["So12UIAppearanceP", "visibilityIconOff"]
 - !private ["So12UIAppearanceP", "visibilityIconOn"]
 - !private ["So21UIAppearanceContainerP", "GIDSignIn"]
 - !private ["So21UIAppearanceContainerP", "LoginManager"]
+- !private ["So21UIAppearanceContainerP", "SignInEmail"]
 - !private ["So21UIAppearanceContainerP", "SpinnerType"]
-- !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "Timer"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -1135,8 +1063,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "passwordTextField"]
 - !private ["So21UIAppearanceContainerP", "placeholderActiveColor"]
 - !private ["So21UIAppearanceContainerP", "placeholderNormalColor"]
+- !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
-- !private ["So21UIAppearanceContainerP", "pushViewController"]
 - !private ["So21UIAppearanceContainerP", "readPermissions"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
@@ -1150,6 +1078,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So21UIAppearanceContainerP", "superview"]
 - !private ["So21UIAppearanceContainerP", "tag"]
+- !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "textColor"]
 - ["So21UIAppearanceContainerP", "textField"]
 - ["So21UIAppearanceContainerP", "textFieldDidBeginEditing"]
@@ -1173,8 +1102,8 @@ depends-member:
 - !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "GIDSignIn"]
 - !private ["So18UIContentContainerP", "LoginManager"]
+- !private ["So18UIContentContainerP", "SignInEmail"]
 - !private ["So18UIContentContainerP", "SpinnerType"]
-- !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "Timer"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIColor"]
@@ -1191,8 +1120,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "navigationBar"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "passwordTextField"]
+- !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
-- !private ["So18UIContentContainerP", "pushViewController"]
 - !private ["So18UIContentContainerP", "readPermissions"]
 - !private ["So18UIContentContainerP", "setupClearNavigation"]
 - !private ["So18UIContentContainerP", "setupTextFieldMaterial"]
@@ -1215,6 +1144,7 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "superview"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "tag"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "visibilityIconOff"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "visibilityIconOn"]
@@ -1228,6 +1158,7 @@ depends-member:
 - !private ["So9UIControlC", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So9UIControlC", "superview"]
 - !private ["So9UIControlC", "tag"]
+- !private ["So9UIControlC", "text"]
 - !private ["So9UIControlC", "textColor"]
 - !private ["So9UIControlC", "visibilityIconOff"]
 - !private ["So9UIControlC", "visibilityIconOn"]
@@ -1243,6 +1174,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So17UICoordinateSpaceP", "superview"]
 - !private ["So17UICoordinateSpaceP", "tag"]
+- !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "viewWithTag"]
 - !private ["So17UICoordinateSpaceP", "visibilityIconOff"]
@@ -1259,14 +1191,15 @@ depends-member:
 - !private ["So13UIDynamicItemP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So13UIDynamicItemP", "superview"]
 - !private ["So13UIDynamicItemP", "tag"]
+- !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "viewWithTag"]
 - !private ["So13UIDynamicItemP", "visibilityIconOff"]
 - !private ["So13UIDynamicItemP", "visibilityIconOn"]
 - !private ["So18UIFocusEnvironmentP", "GIDSignIn"]
 - !private ["So18UIFocusEnvironmentP", "LoginManager"]
+- !private ["So18UIFocusEnvironmentP", "SignInEmail"]
 - !private ["So18UIFocusEnvironmentP", "SpinnerType"]
-- !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "Timer"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -1288,8 +1221,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "passwordTextField"]
 - !private ["So18UIFocusEnvironmentP", "placeholderActiveColor"]
 - !private ["So18UIFocusEnvironmentP", "placeholderNormalColor"]
+- !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
-- !private ["So18UIFocusEnvironmentP", "pushViewController"]
 - !private ["So18UIFocusEnvironmentP", "readPermissions"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
@@ -1303,6 +1236,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So18UIFocusEnvironmentP", "superview"]
 - !private ["So18UIFocusEnvironmentP", "tag"]
+- !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "textColor"]
 - ["So18UIFocusEnvironmentP", "textField"]
 - ["So18UIFocusEnvironmentP", "textFieldDidBeginEditing"]
@@ -1327,6 +1261,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So11UIFocusItemP", "superview"]
 - !private ["So11UIFocusItemP", "tag"]
+- !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "textColor"]
 - !private ["So11UIFocusItemP", "viewWithTag"]
 - !private ["So11UIFocusItemP", "visibilityIconOff"]
@@ -1343,6 +1278,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So20UIFocusItemContainerP", "superview"]
 - !private ["So20UIFocusItemContainerP", "tag"]
+- !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "textColor"]
 - !private ["So20UIFocusItemContainerP", "viewWithTag"]
 - !private ["So20UIFocusItemContainerP", "visibilityIconOff"]
@@ -1357,17 +1293,18 @@ depends-member:
 - !private ["So10UIKeyInputP", "resignFirstResponder"]
 - !private ["So10UIKeyInputP", "superview"]
 - !private ["So10UIKeyInputP", "tag"]
+- !private ["So10UIKeyInputP", "text"]
 - !private ["So10UIKeyInputP", "textColor"]
 - !private ["So10UIKeyInputP", "visibilityIconOff"]
 - !private ["So10UIKeyInputP", "visibilityIconOn"]
 - !private ["So15UINavigationBarC", "setBackgroundImage"]
 - !private ["So15UINavigationBarC", "shadowImage"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
-- !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So22UINavigationControllerC", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
 - !private ["So30UIPasteConfigurationSupportingP", "LoginManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "SignInEmail"]
 - !private ["So30UIPasteConfigurationSupportingP", "SpinnerType"]
-- !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "Timer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -1389,8 +1326,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "passwordTextField"]
 - !private ["So30UIPasteConfigurationSupportingP", "placeholderActiveColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "placeholderNormalColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
-- !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "readPermissions"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
@@ -1404,6 +1341,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "superview"]
 - !private ["So30UIPasteConfigurationSupportingP", "tag"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "textColor"]
 - ["So30UIPasteConfigurationSupportingP", "textField"]
 - ["So30UIPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
@@ -1420,14 +1358,15 @@ depends-member:
 - ["So11UIResponderC", "Error"]
 - ["So11UIResponderC", "GIDGoogleUser"]
 - ["So11UIResponderC", "GIDSignIn"]
-- !private ["So11UIResponderC", "HomeViewController"]
 - !private ["So11UIResponderC", "LoginManager"]
 - ["So11UIResponderC", "LoginResult"]
+- !private ["So11UIResponderC", "MainTabarViewController"]
 - ["So11UIResponderC", "ReadPermission"]
 - ["So11UIResponderC", "SSSpinnerButton"]
+- ["So11UIResponderC", "SignInEmail"]
 - ["So11UIResponderC", "SignInTappedGroup"]
+- !private ["So11UIResponderC", "SignUpViewController"]
 - !private ["So11UIResponderC", "SpinnerType"]
-- !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "TextField"]
 - !private ["So11UIResponderC", "Timer"]
 - ["So11UIResponderC", "UIAlertController"]
@@ -1435,6 +1374,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UserSocial"]
 - ["So11UIResponderC", "alertController"]
 - !private ["So11UIResponderC", "becomeFirstResponder"]
 - ["So11UIResponderC", "didLoginWithFacebook"]
@@ -1452,9 +1392,10 @@ depends-member:
 - ["So11UIResponderC", "passwordTextField"]
 - !private ["So11UIResponderC", "placeholderActiveColor"]
 - !private ["So11UIResponderC", "placeholderNormalColor"]
+- !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
-- !private ["So11UIResponderC", "pushViewController"]
 - ["So11UIResponderC", "readPermissions"]
+- ["So11UIResponderC", "registerSocial"]
 - ["So11UIResponderC", "registerTapped"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - !private ["So11UIResponderC", "setBackgroundImage"]
@@ -1468,6 +1409,7 @@ depends-member:
 - !private ["So11UIResponderC", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So11UIResponderC", "superview"]
 - !private ["So11UIResponderC", "tag"]
+- !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "textColor"]
 - ["So11UIResponderC", "textField"]
 - ["So11UIResponderC", "textFieldDidBeginEditing"]
@@ -1482,8 +1424,8 @@ depends-member:
 - !private ["So11UIResponderC", "visibilityIconOn"]
 - !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
 - !private ["So30UIResponderStandardEditActionsP", "LoginManager"]
+- !private ["So30UIResponderStandardEditActionsP", "SignInEmail"]
 - !private ["So30UIResponderStandardEditActionsP", "SpinnerType"]
-- !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "Timer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -1505,8 +1447,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "passwordTextField"]
 - !private ["So30UIResponderStandardEditActionsP", "placeholderActiveColor"]
 - !private ["So30UIResponderStandardEditActionsP", "placeholderNormalColor"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
-- !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "readPermissions"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
@@ -1520,6 +1462,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So30UIResponderStandardEditActionsP", "superview"]
 - !private ["So30UIResponderStandardEditActionsP", "tag"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - ["So30UIResponderStandardEditActionsP", "textField"]
 - ["So30UIResponderStandardEditActionsP", "textFieldDidBeginEditing"]
@@ -1538,8 +1481,8 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "tag"]
 - !private ["So16UIStateRestoringP", "GIDSignIn"]
 - !private ["So16UIStateRestoringP", "LoginManager"]
+- !private ["So16UIStateRestoringP", "SignInEmail"]
 - !private ["So16UIStateRestoringP", "SpinnerType"]
-- !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "Timer"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIColor"]
@@ -1556,8 +1499,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "navigationBar"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "passwordTextField"]
+- !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
-- !private ["So16UIStateRestoringP", "pushViewController"]
 - !private ["So16UIStateRestoringP", "readPermissions"]
 - !private ["So16UIStateRestoringP", "setupClearNavigation"]
 - !private ["So16UIStateRestoringP", "setupTextFieldMaterial"]
@@ -1582,6 +1525,7 @@ depends-member:
 - !private ["So15UITextDraggableP", "resignFirstResponder"]
 - !private ["So15UITextDraggableP", "superview"]
 - !private ["So15UITextDraggableP", "tag"]
+- !private ["So15UITextDraggableP", "text"]
 - !private ["So15UITextDraggableP", "textColor"]
 - !private ["So15UITextDraggableP", "visibilityIconOff"]
 - !private ["So15UITextDraggableP", "visibilityIconOn"]
@@ -1593,6 +1537,7 @@ depends-member:
 - !private ["So15UITextDroppableP", "resignFirstResponder"]
 - !private ["So15UITextDroppableP", "superview"]
 - !private ["So15UITextDroppableP", "tag"]
+- !private ["So15UITextDroppableP", "text"]
 - !private ["So15UITextDroppableP", "textColor"]
 - !private ["So15UITextDroppableP", "visibilityIconOff"]
 - !private ["So15UITextDroppableP", "visibilityIconOn"]
@@ -1604,13 +1549,14 @@ depends-member:
 - !private ["So11UITextFieldC", "resignFirstResponder"]
 - !private ["So11UITextFieldC", "superview"]
 - !private ["So11UITextFieldC", "tag"]
+- !private ["So11UITextFieldC", "text"]
 - !private ["So11UITextFieldC", "textColor"]
 - !private ["So11UITextFieldC", "visibilityIconOff"]
 - !private ["So11UITextFieldC", "visibilityIconOn"]
 - !private ["So19UITextFieldDelegateP", "GIDSignIn"]
 - !private ["So19UITextFieldDelegateP", "LoginManager"]
+- !private ["So19UITextFieldDelegateP", "SignInEmail"]
 - !private ["So19UITextFieldDelegateP", "SpinnerType"]
-- !private ["So19UITextFieldDelegateP", "String"]
 - !private ["So19UITextFieldDelegateP", "Timer"]
 - !private ["So19UITextFieldDelegateP", "UIAlertController"]
 - !private ["So19UITextFieldDelegateP", "UIColor"]
@@ -1646,6 +1592,7 @@ depends-member:
 - !private ["So11UITextInputP", "resignFirstResponder"]
 - !private ["So11UITextInputP", "superview"]
 - !private ["So11UITextInputP", "tag"]
+- !private ["So11UITextInputP", "text"]
 - !private ["So11UITextInputP", "textColor"]
 - !private ["So11UITextInputP", "visibilityIconOff"]
 - !private ["So11UITextInputP", "visibilityIconOn"]
@@ -1657,6 +1604,7 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "resignFirstResponder"]
 - !private ["So17UITextInputTraitsP", "superview"]
 - !private ["So17UITextInputTraitsP", "tag"]
+- !private ["So17UITextInputTraitsP", "text"]
 - !private ["So17UITextInputTraitsP", "textColor"]
 - !private ["So17UITextInputTraitsP", "visibilityIconOff"]
 - !private ["So17UITextInputTraitsP", "visibilityIconOn"]
@@ -1668,13 +1616,14 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So34UITextPasteConfigurationSupportingP", "superview"]
 - !private ["So34UITextPasteConfigurationSupportingP", "tag"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "textColor"]
 - !private ["So34UITextPasteConfigurationSupportingP", "visibilityIconOff"]
 - !private ["So34UITextPasteConfigurationSupportingP", "visibilityIconOn"]
 - !private ["So18UITraitEnvironmentP", "GIDSignIn"]
 - !private ["So18UITraitEnvironmentP", "LoginManager"]
+- !private ["So18UITraitEnvironmentP", "SignInEmail"]
 - !private ["So18UITraitEnvironmentP", "SpinnerType"]
-- !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "Timer"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -1696,8 +1645,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "passwordTextField"]
 - !private ["So18UITraitEnvironmentP", "placeholderActiveColor"]
 - !private ["So18UITraitEnvironmentP", "placeholderNormalColor"]
+- !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
-- !private ["So18UITraitEnvironmentP", "pushViewController"]
 - !private ["So18UITraitEnvironmentP", "readPermissions"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
@@ -1711,6 +1660,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So18UITraitEnvironmentP", "superview"]
 - !private ["So18UITraitEnvironmentP", "tag"]
+- !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - ["So18UITraitEnvironmentP", "textField"]
 - ["So18UITraitEnvironmentP", "textFieldDidBeginEditing"]
@@ -1725,8 +1675,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "visibilityIconOn"]
 - !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
 - !private ["So23UIUserActivityRestoringP", "LoginManager"]
+- !private ["So23UIUserActivityRestoringP", "SignInEmail"]
 - !private ["So23UIUserActivityRestoringP", "SpinnerType"]
-- !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "Timer"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
@@ -1748,8 +1698,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "passwordTextField"]
 - !private ["So23UIUserActivityRestoringP", "placeholderActiveColor"]
 - !private ["So23UIUserActivityRestoringP", "placeholderNormalColor"]
+- !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
-- !private ["So23UIUserActivityRestoringP", "pushViewController"]
 - !private ["So23UIUserActivityRestoringP", "readPermissions"]
 - !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "setBackgroundImage"]
@@ -1763,6 +1713,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So23UIUserActivityRestoringP", "superview"]
 - !private ["So23UIUserActivityRestoringP", "tag"]
+- !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "textColor"]
 - ["So23UIUserActivityRestoringP", "textField"]
 - ["So23UIUserActivityRestoringP", "textFieldDidBeginEditing"]
@@ -1787,6 +1738,7 @@ depends-member:
 - !private ["So6UIViewC", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["So6UIViewC", "superview"]
 - !private ["So6UIViewC", "tag"]
+- !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "viewWithTag"]
 - !private ["So6UIViewC", "visibilityIconOff"]
@@ -1795,14 +1747,15 @@ depends-member:
 - ["So16UIViewControllerC", "Error"]
 - ["So16UIViewControllerC", "GIDGoogleUser"]
 - ["So16UIViewControllerC", "GIDSignIn"]
-- !private ["So16UIViewControllerC", "HomeViewController"]
 - !private ["So16UIViewControllerC", "LoginManager"]
 - ["So16UIViewControllerC", "LoginResult"]
+- !private ["So16UIViewControllerC", "MainTabarViewController"]
 - ["So16UIViewControllerC", "ReadPermission"]
 - ["So16UIViewControllerC", "SSSpinnerButton"]
+- ["So16UIViewControllerC", "SignInEmail"]
 - ["So16UIViewControllerC", "SignInTappedGroup"]
+- !private ["So16UIViewControllerC", "SignUpViewController"]
 - !private ["So16UIViewControllerC", "SpinnerType"]
-- !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "TextField"]
 - !private ["So16UIViewControllerC", "Timer"]
 - ["So16UIViewControllerC", "UIAlertController"]
@@ -1810,6 +1763,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIImage"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", "UserSocial"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "alertController"]
 - ["So16UIViewControllerC", "didLoginWithFacebook"]
@@ -1823,9 +1777,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "passwordTextField"]
+- !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
-- !private ["So16UIViewControllerC", "pushViewController"]
 - ["So16UIViewControllerC", "readPermissions"]
+- ["So16UIViewControllerC", "registerSocial"]
 - ["So16UIViewControllerC", "registerTapped"]
 - ["So16UIViewControllerC", "setupClearNavigation"]
 - ["So16UIViewControllerC", "setupTextFieldMaterial"]
@@ -1854,6 +1809,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "superview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "viewWithTag"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "visibilityIconOff"]
@@ -1877,8 +1833,8 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SignInEmail"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SpinnerType"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Timer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1886,32 +1842,24 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "alertController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "authentication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "becomeFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didLoginWithFacebook"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveFacebookLoginResult"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dividerActiveColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dividerNormalColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emailTextField"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "familyName"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "givenName"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "idToken"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "initGoogleSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "passwordTextField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholderActiveColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholderNormalColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "profile"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "readPermissions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
@@ -1927,6 +1875,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stopAnimationWithCompletionTypeAndBackToDefaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidBeginEditing"]
@@ -1942,23 +1891,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "visibilityIconOn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "authentication"]
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "dividerActiveColor"]
 - !private ["s21_ObjectiveCBridgeableP", "dividerNormalColor"]
-- !private ["s21_ObjectiveCBridgeableP", "email"]
-- !private ["s21_ObjectiveCBridgeableP", "familyName"]
-- !private ["s21_ObjectiveCBridgeableP", "givenName"]
-- !private ["s21_ObjectiveCBridgeableP", "idToken"]
-- !private ["s21_ObjectiveCBridgeableP", "imageURL"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "name"]
 - !private ["s21_ObjectiveCBridgeableP", "placeholderActiveColor"]
 - !private ["s21_ObjectiveCBridgeableP", "placeholderNormalColor"]
-- !private ["s21_ObjectiveCBridgeableP", "profile"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "tag"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s21_ObjectiveCBridgeableP", "textColor"]
 - !private ["s21_ObjectiveCBridgeableP", "uiDelegate"]
 - !private ["s21_ObjectiveCBridgeableP", "visibilityIconOff"]
@@ -1990,15 +1932,13 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So17GIDAuthenticationC"
-- !private "So13GIDGoogleUserC"
-- !private "So14GIDProfileDataC"
 - !private "So9GIDSignInC"
 - "So17GIDSignInDelegateP"
 - "So19GIDSignInUIDelegateP"
 - !private "7RxCocoa11HasDelegateP"
 - "SH"
 - !private "7RxCocoa16KVORepresentableP"
+- "10Kingfisher0A10CompatibleP"
 - !private "13FacebookLogin0B7ManagerC"
 - "13FacebookLogin0B6ResultO"
 - "s25LosslessStringConvertibleP"
@@ -2013,7 +1953,9 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
+- !private "13BarberShop_V212OptionalTypeP"
 - "12FacebookCore23PermissionRepresentableP"
+- !private "10Kingfisher11PlaceholderP"
 - !private "Sk"
 - "Sm"
 - !private "SY"
@@ -2021,6 +1963,7 @@ depends-nominal:
 - "12FacebookCore14ReadPermissionO"
 - !private "15SSSpinnerButtonAAC"
 - "ST"
+- !private "13BarberShop_V211SignInEmailV"
 - "13BarberShop_V220SignInViewControllerC"
 - !private "15SSSpinnerButton11SpinnerTypeO"
 - !private "So12UIStoryboardC13BarberShop_V2E10StoryboardO"
@@ -2098,8 +2041,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Modules/Motion.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
@@ -2121,8 +2066,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -2136,8 +2083,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXParallaxHeader-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
@@ -2148,6 +2097,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
@@ -2166,7 +2116,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
@@ -2178,6 +2127,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
@@ -2186,6 +2136,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -2200,6 +2151,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
@@ -2230,9 +2182,11 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPagerController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Headers/MXScrollViewController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerViewController.h"
@@ -2242,6 +2196,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
@@ -2281,6 +2236,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
@@ -2289,8 +2245,10 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Motion/Motion.framework/Headers/Motion-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -2302,6 +2260,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
@@ -2313,6 +2272,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
@@ -2322,6 +2282,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -2337,6 +2298,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXParallaxHeader/MXParallaxHeader.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
@@ -2346,21 +2308,22 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9cc8c6c6bb736ff7ac14d3abc8e339f1"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "147447f3de7d5509c75e6e2983df4ce8"

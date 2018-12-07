@@ -20,7 +20,9 @@ depends-top-level:
 - !private "CAAnimationGroup"
 - !private "CABasicAnimation"
 - "CALayer"
+- !private "CAMediaTimingFillMode"
 - !private "CAMediaTimingFunction"
+- !private "CAMediaTimingFunctionName"
 - !private "CGFloat"
 - !private "CGPoint"
 - "CGRect"
@@ -35,8 +37,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - "UIColor"
 - "UInt"
-- !private "kCAFillModeForwards"
-- !private "kCAMediaTimingFunctionLinear"
 - !private "max"
 - !private "min"
 depends-member:
@@ -98,7 +98,9 @@ depends-member:
 - !private ["So13CAMediaTimingP", "repeatCount"]
 - !private ["So13CAMediaTimingP", "timingFunction"]
 - !private ["So13CAMediaTimingP", "toValue"]
+- !private ["So21CAMediaTimingFillModea", "forwards"]
 - !private ["So21CAMediaTimingFunctionC", "init"]
+- !private ["So25CAMediaTimingFunctionNamea", "linear"]
 - !private ["So19CAPropertyAnimationC", "beginTime"]
 - !private ["So19CAPropertyAnimationC", "byValue"]
 - !private ["So19CAPropertyAnimationC", "duration"]
@@ -221,6 +223,7 @@ depends-member:
 - !private ["SQ", "byValue"]
 - !private ["SQ", "duration"]
 - !private ["SQ", "fillMode"]
+- !private ["SQ", "forwards"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "fromValue"]
 - !private ["SQ", "height"]
@@ -229,6 +232,7 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "isRemovedOnCompletion"]
 - !private ["SQ", "layerWith"]
+- !private ["SQ", "linear"]
 - !private ["SQ", "pi"]
 - !private ["SQ", "repeatCount"]
 - !private ["SQ", "stroke"]
@@ -263,6 +267,7 @@ depends-member:
 - !private ["SH", "byValue"]
 - !private ["SH", "duration"]
 - !private ["SH", "fillMode"]
+- !private ["SH", "forwards"]
 - !private ["SH", "frame"]
 - !private ["SH", "fromValue"]
 - !private ["SH", "infinity"]
@@ -270,6 +275,7 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "isRemovedOnCompletion"]
 - !private ["SH", "layerWith"]
+- !private ["SH", "linear"]
 - !private ["SH", "pi"]
 - !private ["SH", "repeatCount"]
 - !private ["SH", "stroke"]
@@ -354,10 +360,14 @@ depends-member:
 - !private ["Sj", "pi"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
+- !private ["SY", "forwards"]
+- !private ["SY", "linear"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CAAnimationGroup"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CABasicAnimation"]
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "CALayer"]
+- !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CAMediaTimingFillMode"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CAMediaTimingFunction"]
+- !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CAMediaTimingFunctionName"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CGFloat"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "CGPoint"]
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "CGRect"]
@@ -369,14 +379,14 @@ depends-member:
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "UInt"]
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "deinit"]
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "init"]
-- !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "kCAFillModeForwards"]
-- !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "kCAMediaTimingFunctionLinear"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "max"]
 - !private ["15SSSpinnerButton18SSCircleStrokeSpinC", "min"]
 - ["15SSSpinnerButton18SSCircleStrokeSpinC", "setupSpinnerAnimation"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CAAnimationGroup"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CABasicAnimation"]
+- !private ["15SSSpinnerButton0A17AnimationDelegateP", "CAMediaTimingFillMode"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CAMediaTimingFunction"]
+- !private ["15SSSpinnerButton0A17AnimationDelegateP", "CAMediaTimingFunctionName"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CGFloat"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CGPoint"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "CGRect"]
@@ -384,8 +394,6 @@ depends-member:
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "Float"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "SpinnerShape"]
 - ["15SSSpinnerButton0A17AnimationDelegateP", ""]
-- !private ["15SSSpinnerButton0A17AnimationDelegateP", "kCAFillModeForwards"]
-- !private ["15SSSpinnerButton0A17AnimationDelegateP", "kCAMediaTimingFunctionLinear"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "max"]
 - !private ["15SSSpinnerButton0A17AnimationDelegateP", "min"]
 - ["15SSSpinnerButton0A17AnimationDelegateP", "setupSpinnerAnimation"]
@@ -428,7 +436,9 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forwards"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "infinity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "linear"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "pi"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
@@ -445,14 +455,18 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timingFunction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "forwards"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "infinity"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "linear"]
 - !private ["s21_ObjectiveCBridgeableP", "pi"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s20_SwiftNewtypeWrapperP", "forwards"]
+- !private ["s20_SwiftNewtypeWrapperP", "linear"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -465,7 +479,9 @@ depends-nominal:
 - !private "So16CABasicAnimationC"
 - !private "So7CALayerC"
 - !private "So13CAMediaTimingP"
+- !private "So21CAMediaTimingFillModea"
 - !private "So21CAMediaTimingFunctionC"
+- !private "So25CAMediaTimingFunctionNamea"
 - !private "So19CAPropertyAnimationC"
 - !private "12CoreGraphics7CGFloatV"
 - !private "So7CGPointV"
@@ -499,6 +515,7 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "Sj"
 - !private "Sm"
+- !private "SY"
 - "15SSSpinnerButton18SSCircleStrokeSpinC"
 - "15SSSpinnerButton0A17AnimationDelegateP"
 - !private "ST"
@@ -522,6 +539,7 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -540,15 +558,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/SSSpinnerButton/SSSpinnerButton-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SSSpinnerButton.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "c24f1bbcaea5b56c1d184f3baac87bf9"

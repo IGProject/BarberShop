@@ -9,9 +9,11 @@
 import UIKit
 
 struct Teams: Codable {
+  var length: Int
     struct Results: Codable {
         let id: Int
         let username: String
+        let phone: String
         let email: String
         let description: String
         let location: Location
@@ -31,8 +33,7 @@ struct Teams: Codable {
         let file_path: String
         let status: Bool
     }
-    
-    let results: [Teams.Results]
+    var results: [Teams.Results]
 }
 
 

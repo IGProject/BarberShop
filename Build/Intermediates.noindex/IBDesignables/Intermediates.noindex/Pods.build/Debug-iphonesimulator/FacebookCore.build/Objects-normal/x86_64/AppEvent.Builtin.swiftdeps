@@ -75,6 +75,7 @@ depends-member:
 - !private ["12FacebookCore12AppEventNameO", "spentCredits"]
 - !private ["12FacebookCore12AppEventNameO", "unlockedAchievement"]
 - !private ["12FacebookCore12AppEventNameO", "viewedContent"]
+- !private ["12FacebookCore21AppEventParameterNameO", "content"]
 - !private ["12FacebookCore21AppEventParameterNameO", "contentId"]
 - !private ["12FacebookCore21AppEventParameterNameO", "contentType"]
 - !private ["12FacebookCore21AppEventParameterNameO", "currency"]
@@ -215,6 +216,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addedToWishlist"]
 - !private ["s23CustomStringConvertibleP", "completedRegistration"]
 - !private ["s23CustomStringConvertibleP", "completedTutorial"]
+- !private ["s23CustomStringConvertibleP", "content"]
 - !private ["s23CustomStringConvertibleP", "contentId"]
 - !private ["s23CustomStringConvertibleP", "contentType"]
 - !private ["s23CustomStringConvertibleP", "currency"]
@@ -277,6 +279,7 @@ depends-member:
 - !private ["SQ", "addedToWishlist"]
 - !private ["SQ", "completedRegistration"]
 - !private ["SQ", "completedTutorial"]
+- !private ["SQ", "content"]
 - !private ["SQ", "contentId"]
 - !private ["SQ", "contentType"]
 - !private ["SQ", "currency"]
@@ -307,6 +310,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addedToWishlist"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "completedRegistration"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "completedTutorial"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "content"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contentId"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contentType"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "currency"]
@@ -334,6 +338,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "addedToWishlist"]
 - !private ["s26ExpressibleByStringLiteralP", "completedRegistration"]
 - !private ["s26ExpressibleByStringLiteralP", "completedTutorial"]
+- !private ["s26ExpressibleByStringLiteralP", "content"]
 - !private ["s26ExpressibleByStringLiteralP", "contentId"]
 - !private ["s26ExpressibleByStringLiteralP", "contentType"]
 - !private ["s26ExpressibleByStringLiteralP", "currency"]
@@ -358,6 +363,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "addedToWishlist"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "completedRegistration"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "completedTutorial"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "content"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "contentId"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "contentType"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "currency"]
@@ -384,6 +390,7 @@ depends-member:
 - !private ["SH", "addedToWishlist"]
 - !private ["SH", "completedRegistration"]
 - !private ["SH", "completedTutorial"]
+- !private ["SH", "content"]
 - !private ["SH", "contentId"]
 - !private ["SH", "contentType"]
 - !private ["SH", "currency"]
@@ -462,6 +469,7 @@ depends-member:
 - !private ["SY", "addedToWishlist"]
 - !private ["SY", "completedRegistration"]
 - !private ["SY", "completedTutorial"]
+- !private ["SY", "content"]
 - !private ["SY", "contentId"]
 - !private ["SY", "contentType"]
 - !private ["SY", "currency"]
@@ -732,6 +740,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFURL.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/Bolts/Bolts-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-umbrella.h"
@@ -739,23 +748,27 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUserDataStore.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkResolving.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolving.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkNavigation.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererController.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkReturnToRefererController.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFWebViewAppLinkResolver.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphErrorRecoveryProcessor.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/Common/BFExecutor.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h"
@@ -764,27 +777,30 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkTarget.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestDataAttachment.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Bolts/Bolts/iOS/BFAppLinkReturnToRefererView.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkReturnToRefererView.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FacebookCore.build/unextended-module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Bolts.build/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FBSDKCoreKit.build/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2b6eb017928f310fc54572ed463f4e94"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ba4bcdfdb4990585175d5466daeb5402"

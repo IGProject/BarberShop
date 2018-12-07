@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
-class ServiceDetailCollectionViewCell: UICollectionViewCell {
+class ServiceDetailCollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var serviceDetailImageView: UIImageView!
 }

@@ -13,18 +13,15 @@ class ContainerHistoryViewController: MXSegmentedPagerController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupClearNavigation()
         configContentPager()
+      setupClearNavigation()
     }
-
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
-    }
-    
+  func setupClearNavigation() {
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+  }
     func configContentPager(){
         if #available(iOS 11.0, *) {
         } else {
@@ -38,7 +35,7 @@ class ContainerHistoryViewController: MXSegmentedPagerController {
         segmentedPager.segmentedControl.selectionIndicatorHeight = 2
         segmentedPager.segmentedControl.selectionIndicatorColor = .white
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
-        segmentedPager.segmentedControl.backgroundColor = UIColor.init(red: 2/255, green: 86/255, blue: 153/255, alpha: 1.0)
+        segmentedPager.segmentedControl.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
         segmentedPager.segmentedControl.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor(displayP3Red: 142/255, green: 174/255, blue: 204/255, alpha: 1),NSAttributedStringKey.font : UIFont(name: "Helvetica Neue", size: 14) ??
             UIFont.systemFont(ofSize: 14)]
 

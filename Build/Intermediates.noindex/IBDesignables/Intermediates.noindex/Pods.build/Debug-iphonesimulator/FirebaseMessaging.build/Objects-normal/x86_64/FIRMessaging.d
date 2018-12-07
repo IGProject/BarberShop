@@ -3,6 +3,8 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseMessaging.build/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessaging.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessaging_Private.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingAnalytics.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Headers/Public/FirebaseAnalyticsInterop/FIRAnalyticsInterop.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConstants.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingContextManagerService.h \
@@ -28,6 +30,12 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentRegistrant.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRCoreConfigurable.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRDependency.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \

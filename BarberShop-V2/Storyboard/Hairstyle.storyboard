@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DfG-ms-KrB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DfG-ms-KrB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,7 +47,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="7X6-39-KYe" firstAttribute="leading" secondItem="5Uw-vO-LS1" secondAttribute="leading" constant="10" id="1QA-Yt-ych"/>
                                             <constraint firstAttribute="trailing" secondItem="BLA-zn-vxv" secondAttribute="trailing" id="1kV-dg-bq1"/>
@@ -75,14 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hgM-4M-vsG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HAIRSTYLE" id="Dmk-7u-SY5">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="C80-T9-SrJ">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backTapped:" destination="AXO-oN-4Qg" id="sHQ-Cj-kyB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="HAIRSTYLE" id="Dmk-7u-SY5"/>
                     <connections>
                         <outlet property="hairStyleCollectionView" destination="lNK-k4-NSb" id="hsc-Lp-yq5"/>
                     </connections>
@@ -91,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="816.79999999999995" y="232.53373313343329"/>
         </scene>
-        <!--Hairtype Style View Controller-->
+        <!--HAIR STYLE-->
         <scene sceneID="XgO-kD-A8W">
             <objects>
-                <viewController storyboardIdentifier="HairtypeStyleViewController" id="a49-Sr-qGv" customClass="HairtypeStyleViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HairTypeStyleViewController" id="a49-Sr-qGv" customClass="HairTypeStyleViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vHd-8O-Cp4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +137,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1iN-vv-AqR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gVI-ws-RKC"/>
+                    <navigationItem key="navigationItem" title="HAIR STYLE" id="gVI-ws-RKC"/>
                     <connections>
                         <outlet property="styleTypeCollectionView" destination="Ohp-zV-ksF" id="rVp-z8-URK"/>
                     </connections>
@@ -153,15 +146,17 @@
             </objects>
             <point key="canvasLocation" x="2477.5999999999999" y="232.53373313343329"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--STYLE-->
         <scene sceneID="HBZ-sj-R27">
             <objects>
                 <navigationController storyboardIdentifier="HairStyleID" automaticallyAdjustsScrollViewInsets="NO" id="DfG-ms-KrB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="STYLE" image="hair-salon" id="kct-Kx-08u"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Edm-Vl-oqu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -183,7 +178,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mwe-Ai-6DD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431372550000003" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -195,4 +193,7 @@
             <point key="canvasLocation" x="1749.5999999999999" y="232.53373313343329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hair-salon" width="19.200000762939453" height="19.200000762939453"/>
+    </resources>
 </document>

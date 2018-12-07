@@ -9,6 +9,7 @@
 import UIKit
 
 struct Services: Codable {
+  var length:Int
     struct Results: Codable {
         let id: Int
         let title: String
@@ -18,15 +19,12 @@ struct Services: Codable {
         let seva_profile: String
         let seva_profiles: [ServiceProfile]
     }
-    
     struct ServiceProfile: Codable {
-        struct Results:Codable {
             let id:Int?
             let file_name: String
             let file_path:String?
             let status: Bool
-        }
     }
     
-    let results: [Services.Results]
+    var results: [Services.Results]
 }

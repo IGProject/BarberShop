@@ -7,35 +7,46 @@ provides-member:
 - ["7RxSwift10DisposableP", ""]
 - ["7RxSwift10DisposeBagC", ""]
 - ["7RxSwift10DisposableP", "disposed"]
+- ["7RxSwift10DisposeBagC", "init"]
+- ["7RxSwift10DisposeBagC", "init"]
+- ["7RxSwift10DisposeBagC", "insert"]
+- ["7RxSwift10DisposeBagC", "insert"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+="
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
 - "Disposable"
 - "DisposeBag"
 - "DisposeBase"
 - "SpinLock"
 depends-member:
 - !private ["Sa", "append"]
+- !private ["Sa", "forEach"]
 - ["Sa", "init"]
 - !private ["Sa", "removeAll"]
 - !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "forEach"]
 - ["s13ArrayProtocolP", "init"]
 - !private ["s13ArrayProtocolP", "removeAll"]
 - !private ["SK", "append"]
+- !private ["SK", "forEach"]
 - ["SK", "init"]
 - !private ["SK", "removeAll"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "forEach"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lock"]
 - !private ["s7CVarArgP", "removeAll"]
 - !private ["s7CVarArgP", "unlock"]
 - !private ["Sl", "append"]
+- !private ["Sl", "forEach"]
 - ["Sl", "init"]
 - !private ["Sl", "removeAll"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lock"]
 - !private ["s28CustomDebugStringConvertibleP", "removeAll"]
@@ -43,16 +54,19 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "forEach"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "removeAll"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lock"]
 - !private ["s23CustomStringConvertibleP", "removeAll"]
 - !private ["s23CustomStringConvertibleP", "unlock"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
+- !private ["Se", "forEach"]
 - ["Se", "init"]
 - !private ["Se", "removeAll"]
 - ["7RxSwift10DisposableP", "DisposeBag"]
@@ -82,20 +96,24 @@ depends-member:
 - ["7RxSwift11DisposeBaseC", "insert"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
+- !private ["SE", "forEach"]
 - ["SE", "init"]
 - !private ["SE", "removeAll"]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "append"]
+- !private ["SQ", "forEach"]
 - ["SQ", "init"]
 - !private ["SQ", "lock"]
 - !private ["SQ", "removeAll"]
 - !private ["SQ", "unlock"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "append"]
+- !private ["SH", "forEach"]
 - ["SH", "init"]
 - !private ["SH", "lock"]
 - !private ["SH", "removeAll"]
@@ -105,6 +123,7 @@ depends-member:
 - !private ["7RxSwift4LockP", "unlock"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["SM", "append"]
+- !private ["SM", "forEach"]
 - ["SM", "init"]
 - !private ["SM", "removeAll"]
 - ["So9NSLockingP", "init"]
@@ -121,22 +140,27 @@ depends-member:
 - !private ["So15NSRecursiveLockC", "lock"]
 - !private ["So15NSRecursiveLockC", "unlock"]
 - !private ["Sk", "append"]
+- !private ["Sk", "forEach"]
 - ["Sk", "init"]
 - !private ["Sk", "removeAll"]
 - !private ["Sm", "append"]
+- !private ["Sm", "forEach"]
 - ["Sm", "init"]
 - !private ["Sm", "removeAll"]
 - ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "lock"]
 - !private ["7RxSwift18ReactiveCompatibleP", "unlock"]
 - !private ["ST", "append"]
+- !private ["ST", "forEach"]
 - ["ST", "init"]
 - !private ["ST", "removeAll"]
 - !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "forEach"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -144,6 +168,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 depends-nominal:
@@ -197,17 +222,20 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxAtomic/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Target Support Files/RxSwift/RxSwift-umbrella.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/RxAtomic/RxAtomic/include/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxSwift.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "85c3138ba9e79f2185ed51e1181e6503"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/RxAtomic.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "77e134158aa98a41cd99f3fa3bb4716c"

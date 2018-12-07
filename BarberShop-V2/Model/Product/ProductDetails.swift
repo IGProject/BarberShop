@@ -9,6 +9,7 @@
 import UIKit
 
 struct Products: Codable {
+  var length: Int
     struct Results: Codable {
         let id:Int
         let title:String
@@ -22,5 +23,5 @@ struct Products: Codable {
         let file_path: String?
         let status: Bool?
     }
-    let results:[Products.Results]
+    var results:[Products.Results]
 }
