@@ -55,14 +55,15 @@ class ByLocationViewController: UIViewController {
 extension ByLocationViewController: LocationBookingCellDelegate{
 
   func didTapLocationBooking(_ T: ByLocationCollectionCell,_ data:Locations.Results,_ team: Locations.Results) {
-    let storyboard:UIStoryboard = UIStoryboard(storyboard: .Booking)
-    let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
-    booking.locationAddress = data.address
-    booking.locationId = data.id
-    booking.teamName = team.team.count == 0 ? "": team.team[0].username
-    booking.teamId = team.team.count == 0 ? 0: team.team[0].id
+   
+      let storyboard:UIStoryboard = UIStoryboard(storyboard: .Booking)
+      let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
+      booking.locationAddress = data.address
+      booking.locationId = data.id
+      booking.teamName = team.team.count == 0 ? "": team.team[0].username
+      booking.teamId = team.team.count == 0 ? 0: team.team[0].id
+      navigationController?.pushViewController(booking, animated: true)
     
-    navigationController?.present(booking, animated: true)
   }
 }
 
@@ -90,7 +91,7 @@ extension ByLocationViewController: UICollectionViewDelegate {
     locationDetail.timeString = itemsLocation.work_time
     locationDetail.imageString = itemsLocation.location_profile
 
-    navigationController?.present(locationDetail, animated: true)
+    navigationController?.pushViewController(locationDetail, animated: true)
   }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

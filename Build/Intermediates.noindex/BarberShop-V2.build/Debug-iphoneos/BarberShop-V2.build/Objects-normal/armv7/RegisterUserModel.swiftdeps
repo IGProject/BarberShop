@@ -74,6 +74,7 @@ depends-member:
 - !private ["Se", "password"]
 - !private ["Se", "phone"]
 - !private ["Se", "rawValue"]
+- !private ["Se", "token"]
 - !private ["Se", "type"]
 - !private ["Se", "username"]
 - !private ["s7DecoderP", "container"]
@@ -88,6 +89,7 @@ depends-member:
 - !private ["SE", "password"]
 - !private ["SE", "phone"]
 - !private ["SE", "rawValue"]
+- !private ["SE", "token"]
 - !private ["SE", "type"]
 - !private ["SE", "username"]
 - !private ["s7EncoderP", "container"]
@@ -155,6 +157,7 @@ depends-member:
 - ["13BarberShop_V26SignUpV", "init"]
 - ["13BarberShop_V26SignUpV", "password"]
 - ["13BarberShop_V26SignUpV", "phone"]
+- ["13BarberShop_V26SignUpV", "token"]
 - ["13BarberShop_V26SignUpV", "type"]
 - ["13BarberShop_V26SignUpV", "username"]
 - !private ["SS", "init"]
@@ -168,7 +171,7 @@ depends-member:
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - ["13BarberShop_V28UserTypeO", "RawValue"]
-- !private ["13BarberShop_V28UserTypeO", "deinit"]
+- ["13BarberShop_V28UserTypeO", "deinit"]
 - !private ["13BarberShop_V28UserTypeO", "rawValue"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -532,4 +535,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "95d4938ca6dbbcf187d0676ef5867b28"
+interface-hash: "d58810431976ea99179e31caf3de5788"

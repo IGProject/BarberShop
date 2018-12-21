@@ -15,7 +15,11 @@ protocol TeamBookingCellDelegate {
 
 class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
   
-    @IBOutlet weak var imageOurTeam: UIImageView!
+  @IBOutlet weak var imageOurTeam: UIImageView!{
+    didSet{
+      imageOurTeam.image = #imageLiteral(resourceName: "4-style")
+    }
+  }
     @IBOutlet weak var usernameTeam: UILabel!
     @IBOutlet weak var phoneTeam: UILabel!
     @IBOutlet weak var bookingBtn: RoundButton!

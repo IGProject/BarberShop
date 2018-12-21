@@ -13,16 +13,18 @@ struct SignUp:Codable {
     var username: String
     var email: String
     var phone: String
+    var token: String
     var password: String
     var base64_image: String?
     var type: UserType.RawValue
 
 
   
-  init(username:String,email:String,phone:String,password:String,base64_image:String,type: UserType) {
+  init(username:String,email:String,phone:String,token:String,password:String,base64_image:String,type: UserType) {
     self.username = username
     self.email = email
     self.phone = phone
+    self.token = token
     self.password = password
     self.base64_image = base64_image
     self.type = type.rawValue

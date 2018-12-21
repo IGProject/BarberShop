@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import CoreGraphics;
 @import CoreLocation;
+@import FirebaseMessaging;
 @import Foundation;
 @import GoogleMaps;
 @import GoogleSignIn;
@@ -200,42 +201,19 @@ SWIFT_CLASS("_TtC13BarberShop_V221AboutUsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-
-SWIFT_CLASS("_TtC13BarberShop_V223ApointmentTableViewCell")
-@interface ApointmentTableViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descripLabel;
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIWindow;
-@class UIApplication;
-
-SWIFT_CLASS("_TtC13BarberShop_V211AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
-@property (nonatomic, strong) UIWindow * _Nullable window;
-- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class JTAppleCalendarView;
 @class UITableView;
+@class UIStoryboardSegue;
+@class RoundButton;
 
-SWIFT_CLASS("_TtC13BarberShop_V233AppointmentCalendarViewController")
-@interface AppointmentCalendarViewController : UIViewController
+SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
+@interface ApointmentCalendarViewController : UIViewController
 @property (nonatomic, weak) IBOutlet JTAppleCalendarView * _Null_unspecified calendarView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableViewData;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (IBAction)addBookingTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -245,9 +223,17 @@ SWIFT_CLASS("_TtC13BarberShop_V233AppointmentCalendarViewController")
 
 
 
+@interface ApointmentCalendarViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDelegate>
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
 
 
-@interface AppointmentCalendarViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDataSource, UITableViewDelegate>
+
+
+
+@class UITableViewCell;
+
+@interface ApointmentCalendarViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDataSource>
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -256,11 +242,98 @@ SWIFT_CLASS("_TtC13BarberShop_V233AppointmentCalendarViewController")
 
 
 
-@class UITextField;
-@class UINavigationBar;
-@class RoundedImageView;
-@class RoundButton;
+@class UILabel;
+@class UITextView;
 @class UIBarButtonItem;
+
+SWIFT_CLASS("_TtC13BarberShop_V235ApointmentDetailTableViewController")
+@interface ApointmentDetailTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified teamName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified reasonTextView;
+- (void)viewDidLoad;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)updateTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)cancelTapped:(RoundButton * _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BarberShop_V223ApointmentTableViewCell")
+@interface ApointmentTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified teamNameLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIWindow;
+@class UIApplication;
+@class UIApplicationShortcutItem;
+
+SWIFT_CLASS("_TtC13BarberShop_V211AppDelegate")
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow * _Nullable window;
+- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo;
+- (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
+- (void)application:(UIApplication * _Nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
+- (void)application:(UIApplication * _Nonnull)application performActionForShortcutItem:(UIApplicationShortcutItem * _Nonnull)shortcutItem completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
+- (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
+- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
+- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
+- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
+- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
+- (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FIRMessaging;
+@class FIRMessagingRemoteMessage;
+
+@interface AppDelegate (SWIFT_EXTENSION(BarberShop_V2)) <FIRMessagingDelegate>
+/// iOS10 含以上的版本用來接收 firebase token 的 delegate
+/// \param messaging _
+///
+/// \param fcmToken _
+///
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveRegistrationToken:(NSString * _Nonnull)fcmToken;
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
+@end
+
+@class UNUserNotificationCenter;
+@class UNNotification;
+@class UNNotificationResponse;
+
+SWIFT_AVAILABILITY(ios,introduced=10)
+@interface AppDelegate (SWIFT_EXTENSION(BarberShop_V2)) <UNUserNotificationCenterDelegate>
+/// App 在前景時，推播送出時即會觸發的 delegate
+/// \param center _
+///
+/// \param notification _
+///
+/// \param completionHandler 
+///
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+/// App 在關掉的狀態下或 App 在背景或前景的狀態下，點擊推播訊息時所會觸發的 delegate
+/// \param center _
+///
+/// \param response _
+///
+/// \param completionHandler _
+///
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+@end
+
+@class UITextField;
+@class RoundedImageView;
 @class UIDatePicker;
 
 SWIFT_CLASS("_TtC13BarberShop_V221BookingViewController") SWIFT_AVAILABILITY(ios,introduced=10.0)
@@ -269,12 +342,13 @@ SWIFT_CLASS("_TtC13BarberShop_V221BookingViewController") SWIFT_AVAILABILITY(ios
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified locationTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified serviceTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified barberTeamTextField;
-@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified bookingbtn;
 @property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 - (void)viewDidLoad;
-- (IBAction)confirmBookingTapped:(RoundButton * _Nonnull)sender;
+- (IBAction)updateBookingTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)confirmBookingTapped:(RoundButton * _Nonnull)sender;
 - (void)valueDateChangeWithSender:(UIDatePicker * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=10.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=10.0);
@@ -318,7 +392,6 @@ SWIFT_CLASS("_TtC13BarberShop_V224ByLocationCollectionCell")
 @end
 
 @class UICollectionView;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC13BarberShop_V224ByLocationViewController")
 @interface ByLocationViewController : UIViewController
@@ -329,13 +402,13 @@ SWIFT_CLASS("_TtC13BarberShop_V224ByLocationViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
 @class UICollectionViewLayout;
 
 @interface ByLocationViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 @interface ByLocationViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDataSource>
@@ -557,14 +630,6 @@ SWIFT_CLASS("_TtC13BarberShop_V225ListRewardPointDataSource")
 @end
 
 
-SWIFT_CLASS("_TtC13BarberShop_V231ListTransitionHistoryDataSource")
-@interface ListTransitionHistoryDataSource : NSObject <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC13BarberShop_V223MainTabarViewController")
 @interface MainTabarViewController : UITabBarController
 - (void)viewDidLoad;
@@ -572,6 +637,7 @@ SWIFT_CLASS("_TtC13BarberShop_V223MainTabarViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UINavigationBar;
 @class GMSMapView;
 @class UINavigationItem;
 @class UIButton;
@@ -586,6 +652,7 @@ SWIFT_CLASS("_TtC13BarberShop_V225MapLocationViewController")
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified googleMapView;
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified mapItemTitle;
 - (void)viewDidLoad;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)BookingLocationTapped:(RoundButton * _Nonnull)sender;
 - (IBAction)collectionMapDestinationTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -597,7 +664,6 @@ SWIFT_CLASS("_TtC13BarberShop_V223MoreTableViewController")
 @interface MoreTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
 - (void)viewDidLoad;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -623,13 +689,6 @@ SWIFT_CLASS("_TtC13BarberShop_V221NearestViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class GMSMarker;
-
-@interface NearestViewController (SWIFT_EXTENSION(BarberShop_V2)) <GMSMapViewDelegate>
-- (BOOL)mapView:(GMSMapView * _Nonnull)mapView didTapMarker:(GMSMarker * _Nonnull)marker SWIFT_WARN_UNUSED_RESULT;
-- (void)mapView:(GMSMapView * _Nonnull)mapView didCloseInfoWindowOfMarker:(GMSMarker * _Nonnull)marker;
-@end
-
 @class CLLocationManager;
 @class CLLocation;
 
@@ -637,6 +696,13 @@ SWIFT_CLASS("_TtC13BarberShop_V221NearestViewController")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
+
+@class GMSMarker;
+
+@interface NearestViewController (SWIFT_EXTENSION(BarberShop_V2)) <GMSMapViewDelegate>
+- (BOOL)mapView:(GMSMapView * _Nonnull)mapView didTapMarker:(GMSMarker * _Nonnull)marker SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(GMSMapView * _Nonnull)mapView didCloseInfoWindowOfMarker:(GMSMarker * _Nonnull)marker;
 @end
 
 
@@ -817,6 +883,15 @@ SWIFT_CLASS("_TtC13BarberShop_V225RewardPointViewController")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
+
+SWIFT_CLASS("_TtC13BarberShop_V218RootViewController")
+@interface RootViewController : UIViewController
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 @class UITouch;
 @class UIEvent;
 
@@ -889,6 +964,7 @@ SWIFT_CLASS("_TtC13BarberShop_V227ServiceDetailViewController")
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified serviceDetailCollectionView;
 - (void)viewDidLoad;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)serviceBookingTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -923,11 +999,11 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceViewController")
 @end
 
 
+
+
 @interface ServiceViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 @interface ServiceViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDataSource>
@@ -941,10 +1017,22 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceViewController")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
+@class UISlider;
+@class UISwitch;
 
 SWIFT_CLASS("_TtC13BarberShop_V226SettingTableViewController")
 @interface SettingTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified beforeSlider;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified beforeLabel;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified laterSlider;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified laterLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified changeLanguages;
 - (void)viewDidLoad;
+- (IBAction)apointmentSwitch:(UISwitch * _Nonnull)sender;
+- (IBAction)changebeforeSlider:(UISlider * _Nonnull)sender;
+- (IBAction)RemainderSwitch:(UISwitch * _Nonnull)sender;
+- (IBAction)changeLaterSlider:(UISlider * _Nonnull)sender;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -999,6 +1087,7 @@ SWIFT_CLASS("_TtC13BarberShop_V220SignInViewController")
 - (void)viewDidLoad;
 - (IBAction)SignInTappedGroup:(SSSpinnerButton * _Nonnull)sender;
 - (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
+- (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)registerTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -1059,7 +1148,9 @@ SWIFT_CLASS("_TtC13BarberShop_V231TransitionHistoryViewController")
 @end
 
 
-@interface TransitionHistoryViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDelegate>
+@interface TransitionHistoryViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
@@ -1075,6 +1166,15 @@ SWIFT_CLASS("_TtC13BarberShop_V231TransitionHistoryViewController")
 
 
 
+
+
+SWIFT_CLASS("_TtC13BarberShop_V227UpdateBookingViewController")
+@interface UpdateBookingViewController : UIViewController
+- (void)viewDidLoad;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC13BarberShop_V210Validation")

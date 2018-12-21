@@ -8,8 +8,8 @@
 
 import UIKit
 import Firebase
-import FirebaseMessaging
 import UserNotifications
+import FirebaseMessaging
 import FacebookCore
 import FBSDKLoginKit
 import GoogleSignIn
@@ -17,15 +17,42 @@ import GoogleMaps
 import GooglePlaces
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+  let gcmMessageIDKey = "gcm.message_id"
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+      
+      
+       setupRootViewController()
         //Firebase configure
         FirebaseApp.configure()
+      // [START set_messaging_delegate]
+      Messaging.messaging().delegate = self
+      // [END set_messaging_delegate]
+      // Register for remote notifications. This shows a permission dialog on first run, to
+      // show the dialog at a more appropriate time move this registration accordingly.
+      // [START register_for_notifications]
+      if #available(iOS 10.0, *) {
+        UNUserNotificationCenter.current().delegate = self
+        
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { granted, error in
+          if granted {
+            print("allow...")
+          } else {
+            print("not allow...")
+          }
+        })
+      } else {
+        let settings: UIUserNotificationSettings =
+          UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        application.registerUserNotificationSettings(settings)
+      }
+      
+      application.registerForRemoteNotifications()
       
         
         //API KEY GOOGLE MAP
@@ -62,12 +89,97 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
       //UITabBar.appearance().backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
       UITabBar.appearance().shadowColor = UIColor.clear
         
-        
-        
-        
+      
         return true
     }
+  
+  
+  // [START receive_message]
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+    // If you are receiving a notification message while your app is in the background,
+    // this callback will not be fired till the user taps on the notification launching the application.
+    // TODO: Handle data of notification
+    // With swizzling disabled you must let Messaging know about the message, for Analytics
+    // Messaging.messaging().appDidReceiveMessage(userInfo)
+    // Print message ID.
+    if let messageID = userInfo[gcmMessageIDKey] {
+      print("Message ID: \(messageID)")
+    }
+    
+    // Print full message.
+    print(userInfo)
+  }
+  
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                   fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    // If you are receiving a notification message while your app is in the background,
+    // this callback will not be fired till the user taps on the notification launching the application.
+    // TODO: Handle data of notification
+    // With swizzling disabled you must let Messaging know about the message, for Analytics
+    // Messaging.messaging().appDidReceiveMessage(userInfo)
+    // Print message ID.
+    if let messageID = userInfo[gcmMessageIDKey] {
+      print("Message ID: \(messageID)")
+    }
+    
+    // Print full message.
+    print(userInfo)
+    
+    completionHandler(UIBackgroundFetchResult.newData)
+  }
+  // [END receive_message]
+  func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    print("Unable to register for remote notifications: \(error.localizedDescription)")
+  }
+  
+  // This function is added here only for debugging purposes, and can be removed if swizzling is enabled.
+  // If swizzling is disabled then this function must be implemented so that the APNs token can be paired to
+  // the FCM registration token.
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    InstanceID.instanceID().instanceID { (result, error) in
+      if let error = error {
+        print("Error fetching remote instange ID: \(error)")
+      } else if let result = result {
+        print("Remote instance ID token: \(result.token)")
+      }
+    }
+    
+    
+    // With swizzling disabled you must set the APNs token here.
+    // Messaging.messaging().apnsToken = deviceToken
+  }
 
+  func setupRootViewController(){
+    window = UIWindow()
+    let rootViewController: UIViewController
+    
+    if UserDefaults.standard.bool(forKey: SignInKeys.SignedIn.rawValue) != true {
+      let storyboard:UIStoryboard = UIStoryboard(storyboard: .SignIn)
+      let signIn = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+       rootViewController = signIn
+    } else if UserDefaults.standard.bool(forKey: SignInKeys.SignedIn.rawValue) == true {
+
+      let storyboard:UIStoryboard = UIStoryboard(storyboard: .Home)
+      let home = storyboard.instantiateViewController(withIdentifier: "CustomTabarViewController") as! MainTabarViewController
+      rootViewController = home
+    
+    }else {
+      let storyboard:UIStoryboard = UIStoryboard(storyboard: .SignUp)
+      let signUp = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+      
+      rootViewController = signUp
+    }
+    let navigationRoot = UINavigationController(rootViewController: rootViewController)
+    navigationRoot.isNavigationBarHidden = true
+    window?.rootViewController = navigationRoot
+    window?.makeKeyAndVisible()
+  }
+  
+  // MARK: Shortcuts
+  func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    completionHandler(Deeplinker.handleShortcut(item: shortcutItem))
+  }
+  
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
         //Google Sign In
@@ -96,13 +208,113 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+      //Handle any deeplink
+      // Deeplinker.checkDeepLink()
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+
+// [START ios_10_message_handling]
+
+@available(iOS 10, *)
+extension AppDelegate: UNUserNotificationCenterDelegate {
+  
+  /// App 在前景時，推播送出時即會觸發的 delegate
+  ///
+  /// - Parameters:
+  ///   - center: _
+  ///   - notification: _
+  ///   - completionHandler:
+  func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+    
+    // 印出後台送出的推播訊息(JOSN 格式)
+    let userInfo = notification.request.content.userInfo
+    print("userInfo: \(userInfo)")
+    
+    // 可設定要收到什麼樣式的推播訊息，至少要打開 alert，不然會收不到推播訊息
+    completionHandler([.badge, .sound, .alert])
+  }
+  
+  /// App 在關掉的狀態下或 App 在背景或前景的狀態下，點擊推播訊息時所會觸發的 delegate
+  ///
+  /// - Parameters:
+  ///   - center: _
+  ///   - response: _
+  ///   - completionHandler: _
+  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    
+    // 印出後台送出的推播訊息(JOSN 格式)
+    let userInfo = response.notification.request.content.userInfo
+    print("userInfo: \(userInfo)")
+    
+    completionHandler()
+  }
+}
+  
+  
+//@available(iOS 10, *)
+//extension AppDelegate : UNUserNotificationCenterDelegate {
+//
+//  // Receive displayed notifications for iOS 10 devices.
+//  func userNotificationCenter(_ center: UNUserNotificationCenter,
+//                              willPresent notification: UNNotification,
+//                              withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//    let userInfo = notification.request.content.userInfo
+//
+//    // With swizzling disabled you must let Messaging know about the message, for Analytics
+//    // Messaging.messaging().appDidReceiveMessage(userInfo)
+//    // Print message ID.
+//    if let messageID = userInfo[gcmMessageIDKey] {
+//      print("Message ID: \(messageID)")
+//    }
+//
+//    // Print full message.
+//    print(userInfo)
+//
+//    // Change this to your preferred presentation option
+//    completionHandler([])
+//  }
+//
+//  func userNotificationCenter(_ center: UNUserNotificationCenter,
+//                              didReceive response: UNNotificationResponse,
+//                              withCompletionHandler completionHandler: @escaping () -> Void) {
+//    let userInfo = response.notification.request.content.userInfo
+//    // Print message ID.
+//    if let messageID = userInfo[gcmMessageIDKey] {
+//      print("Message ID: \(messageID)")
+//    }
+//
+//    // Print full message.
+//    print(userInfo)
+//
+//    completionHandler()
+//  }
+//}
+// [END ios_10_message_handling]
+
+extension AppDelegate: MessagingDelegate {
+  
+  
+  /// iOS10 含以上的版本用來接收 firebase token 的 delegate
+  ///
+  /// - Parameters:
+  ///   - messaging: _
+  ///   - fcmToken: _
+  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+    
+    print("Firebase registration token: \(fcmToken)")
+    
+    let dataDict:[String: String] = ["token": fcmToken]
+    NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+    
+  }
+  
+  func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+    print("Received data message: \(remoteMessage.appData)")
+  }
+}

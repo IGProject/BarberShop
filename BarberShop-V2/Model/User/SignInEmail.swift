@@ -12,6 +12,12 @@ struct SignInEmail: Codable {
     var password: String
     var token: String
   
+  enum PassCodingKeys:String,CodingKey{
+    case username
+    case password = "pass"
+    case token
+  }
+  
   init(username: String,password:String,token:String) {
     self.username = username
     self.password = password

@@ -12,6 +12,7 @@ class RewardPointViewController: UIViewController {
     @IBOutlet weak var rewardCollectionView: UICollectionView!
     
     var rewardPoint = [#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point")]
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         rewardCollectionView.delegate = self

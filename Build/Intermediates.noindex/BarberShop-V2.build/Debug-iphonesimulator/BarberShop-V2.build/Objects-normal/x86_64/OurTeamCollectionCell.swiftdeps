@@ -20,13 +20,19 @@ depends-top-level:
 - "Domains"
 - "OurTeamCollectionCell"
 - "RoundButton"
+- !private "StringLiteralType"
 - "TeamBookingCellDelegate"
 - "Teams"
 - "UICollectionViewCell"
 - "UIImageView"
 - "UILabel"
 - "URL"
+- !private "_ImageLiteralType"
 depends-member:
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
 - ["So15CALayerDelegateP", "DataType"]
 - ["So15CALayerDelegateP", "Domains"]
 - ["So15CALayerDelegateP", "URL"]
@@ -35,6 +41,7 @@ depends-member:
 - ["So15CALayerDelegateP", "configure"]
 - !private ["So15CALayerDelegateP", "dataItem"]
 - !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "image"]
 - !private ["So15CALayerDelegateP", "imageOurTeam"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
@@ -51,6 +58,7 @@ depends-member:
 - ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "dataItem"]
 - !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imageOurTeam"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
@@ -59,6 +67,10 @@ depends-member:
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "url"]
 - !private ["s7CVarArgP", "usernameTeam"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - ["13BarberShop_V216ConfigurableCellP", "DataType"]
 - ["13BarberShop_V216ConfigurableCellP", "Domains"]
 - ["13BarberShop_V216ConfigurableCellP", "URL"]
@@ -80,6 +92,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "dataItem"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imageOurTeam"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -90,6 +103,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "usernameTeam"]
 - !private ["s29CustomPlaygroundQuickLookableP", "appendingPathComponent"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "image"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "kf"]
 - !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", "DataType"]
@@ -101,6 +118,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "dataItem"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imageOurTeam"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -111,7 +129,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "usernameTeam"]
 - ["Se", "Results"]
 - !private ["Se", "appendingPathComponent"]
+- !private ["Se", "image"]
 - ["Se", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "kf"]
 - !private ["Se", "phone"]
 - !private ["Se", "team_profile"]
@@ -120,7 +140,9 @@ depends-member:
 - ["13BarberShop_V27DomainsV", "BaseURL"]
 - ["SE", "Results"]
 - !private ["SE", "appendingPathComponent"]
+- !private ["SE", "image"]
 - ["SE", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "kf"]
 - !private ["SE", "phone"]
 - !private ["SE", "team_profile"]
@@ -135,6 +157,7 @@ depends-member:
 - ["SQ", "configure"]
 - !private ["SQ", "dataItem"]
 - !private ["SQ", "delegate"]
+- !private ["SQ", "image"]
 - !private ["SQ", "imageOurTeam"]
 - ["SQ", "init"]
 - !private ["SQ", "init"]
@@ -143,8 +166,15 @@ depends-member:
 - !private ["SQ", "text"]
 - !private ["SQ", "url"]
 - !private ["SQ", "usernameTeam"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "kf"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", "DataType"]
 - ["SH", "Domains"]
 - ["SH", "URL"]
@@ -154,6 +184,7 @@ depends-member:
 - ["SH", "configure"]
 - !private ["SH", "dataItem"]
 - !private ["SH", "delegate"]
+- !private ["SH", "image"]
 - !private ["SH", "imageOurTeam"]
 - ["SH", "init"]
 - !private ["SH", "init"]
@@ -163,7 +194,14 @@ depends-member:
 - !private ["SH", "url"]
 - !private ["SH", "usernameTeam"]
 - !private ["10KingfisherAAC", "setImage"]
+- !private ["10Kingfisher0A10CompatibleP", "image"]
+- !private ["10Kingfisher0A10CompatibleP", "init"]
+- !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "kf"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "DataType"]
 - ["So8NSCodingP", "Domains"]
 - ["So8NSCodingP", "URL"]
@@ -172,6 +210,7 @@ depends-member:
 - ["So8NSCodingP", "configure"]
 - !private ["So8NSCodingP", "dataItem"]
 - !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageOurTeam"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
@@ -194,6 +233,7 @@ depends-member:
 - ["So8NSObjectC", "configure"]
 - ["So8NSObjectC", "dataItem"]
 - ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imageOurTeam"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -210,6 +250,7 @@ depends-member:
 - ["So8NSObjectP", "configure"]
 - !private ["So8NSObjectP", "dataItem"]
 - !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "image"]
 - !private ["So8NSObjectP", "imageOurTeam"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
@@ -218,8 +259,10 @@ depends-member:
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "url"]
 - !private ["So8NSObjectP", "usernameTeam"]
+- !private ["Sq", "image"]
 - !private ["Sq", "kf"]
 - !private ["Sq", "text"]
+- !private ["13BarberShop_V212OptionalTypeP", "image"]
 - !private ["13BarberShop_V212OptionalTypeP", "kf"]
 - !private ["13BarberShop_V212OptionalTypeP", "text"]
 - ["13BarberShop_V221OurTeamCollectionCellC", "BookingTeamTapped"]
@@ -242,6 +285,8 @@ depends-member:
 - ["13BarberShop_V221OurTeamCollectionCellC", "phoneTeam"]
 - ["13BarberShop_V221OurTeamCollectionCellC", "url"]
 - ["13BarberShop_V221OurTeamCollectionCellC", "usernameTeam"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
 - ["7RxSwift18ReactiveCompatibleP", "DataType"]
 - ["7RxSwift18ReactiveCompatibleP", "Domains"]
 - ["7RxSwift18ReactiveCompatibleP", "URL"]
@@ -250,6 +295,7 @@ depends-member:
 - ["7RxSwift18ReactiveCompatibleP", "configure"]
 - !private ["7RxSwift18ReactiveCompatibleP", "dataItem"]
 - !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
+- !private ["7RxSwift18ReactiveCompatibleP", "image"]
 - !private ["7RxSwift18ReactiveCompatibleP", "imageOurTeam"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
@@ -265,10 +311,21 @@ depends-member:
 - !private ["13BarberShop_V25TeamsV7ResultsV", "phone"]
 - !private ["13BarberShop_V25TeamsV7ResultsV", "team_profile"]
 - !private ["13BarberShop_V25TeamsV7ResultsV", "username"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
 - ["13BarberShop_V223TeamBookingCellDelegateP", "OurTeamCollectionCell"]
 - ["13BarberShop_V223TeamBookingCellDelegateP", "Teams"]
 - ["13BarberShop_V223TeamBookingCellDelegateP", "didTapTeamBooking"]
 - ["13BarberShop_V25TeamsV", "Results"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "kf"]
 - ["So29UIAccessibilityIdentificationP", "DataType"]
 - ["So29UIAccessibilityIdentificationP", "Domains"]
@@ -278,6 +335,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "configure"]
 - !private ["So29UIAccessibilityIdentificationP", "dataItem"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "imageOurTeam"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -294,6 +352,7 @@ depends-member:
 - ["So12UIAppearanceP", "configure"]
 - !private ["So12UIAppearanceP", "dataItem"]
 - !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "image"]
 - !private ["So12UIAppearanceP", "imageOurTeam"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
@@ -310,6 +369,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "configure"]
 - !private ["So21UIAppearanceContainerP", "dataItem"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imageOurTeam"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -368,6 +428,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "configure"]
 - !private ["So17UICoordinateSpaceP", "dataItem"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "image"]
 - !private ["So17UICoordinateSpaceP", "imageOurTeam"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -384,6 +445,7 @@ depends-member:
 - ["So13UIDynamicItemP", "configure"]
 - !private ["So13UIDynamicItemP", "dataItem"]
 - !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "image"]
 - !private ["So13UIDynamicItemP", "imageOurTeam"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
@@ -400,6 +462,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "configure"]
 - !private ["So18UIFocusEnvironmentP", "dataItem"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imageOurTeam"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -416,6 +479,7 @@ depends-member:
 - ["So11UIFocusItemP", "configure"]
 - !private ["So11UIFocusItemP", "dataItem"]
 - !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "image"]
 - !private ["So11UIFocusItemP", "imageOurTeam"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
@@ -432,6 +496,7 @@ depends-member:
 - ["So20UIFocusItemContainerP", "configure"]
 - !private ["So20UIFocusItemContainerP", "dataItem"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "image"]
 - !private ["So20UIFocusItemContainerP", "imageOurTeam"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
@@ -440,6 +505,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "url"]
 - !private ["So20UIFocusItemContainerP", "usernameTeam"]
+- !private ["So11UIImageViewC", "image"]
 - !private ["So11UIImageViewC", "kf"]
 - !private ["So7UILabelC", "text"]
 - ["So30UIPasteConfigurationSupportingP", "DataType"]
@@ -450,6 +516,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "configure"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageOurTeam"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -472,6 +539,7 @@ depends-member:
 - ["So11UIResponderC", "configure"]
 - ["So11UIResponderC", "dataItem"]
 - ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imageOurTeam"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -488,6 +556,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "configure"]
 - !private ["So30UIResponderStandardEditActionsP", "dataItem"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imageOurTeam"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -504,6 +573,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "configure"]
 - !private ["So18UITraitEnvironmentP", "dataItem"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageOurTeam"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -520,6 +590,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "configure"]
 - !private ["So23UIUserActivityRestoringP", "dataItem"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "image"]
 - !private ["So23UIUserActivityRestoringP", "imageOurTeam"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -542,6 +613,7 @@ depends-member:
 - ["So6UIViewC", "configure"]
 - ["So6UIViewC", "dataItem"]
 - ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "image"]
 - ["So6UIViewC", "imageOurTeam"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
@@ -554,6 +626,7 @@ depends-member:
 - ["10Foundation3URLV", "init"]
 - !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
 - ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "DataType"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "Domains"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "URL"]
@@ -562,6 +635,7 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "configure"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataItem"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageOurTeam"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -570,8 +644,18 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "url"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "usernameTeam"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
 - ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DataType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Domains"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
@@ -580,6 +664,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageOurTeam"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -589,12 +674,20 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameTeam"]
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "kf"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "12FacebookCore26AppEventParameterValueTypeP"
+- !private "SK"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
 - "13BarberShop_V216ConfigurableCellP"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
@@ -604,22 +697,33 @@ depends-nominal:
 - "13BarberShop_V27DomainsV"
 - "SE"
 - "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "10KingfisherAAC"
 - !private "10Kingfisher0A10CompatibleP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sq"
 - !private "13BarberShop_V212OptionalTypeP"
 - "13BarberShop_V221OurTeamCollectionCellC"
+- !private "Sm"
 - "7RxSwift18ReactiveCompatibleP"
 - "10Foundation20ReferenceConvertibleP"
 - "10Kingfisher8ResourceP"
 - !private "13BarberShop_V25TeamsV7ResultsV"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
 - "13BarberShop_V223TeamBookingCellDelegateP"
 - "13BarberShop_V25TeamsV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -643,9 +747,15 @@ depends-nominal:
 - "10Foundation3URLV"
 - "9Alamofire14URLConvertibleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -943,4 +1053,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2de6ed1c0154b6ac4f68d7926f0a921c"
+interface-hash: "114475d2e1a3cc7f164f9e8148f3695d"

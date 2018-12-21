@@ -9,20 +9,24 @@
 import Foundation
 
 enum UserType: Int,Codable {
-    case admin
-    case email
-    case facebook
-    case google
+    case admin = 1
+    case email = 2
+    case facebook = 3
+    case google = 4
     
-    static func get(from: Int) -> UserType {
-        if from == email.rawValue {
-            return .email
-        }else if from == facebook.rawValue {
-            return .facebook
-        }else if from == google.rawValue {
-            return .google
-        }
+    static func get(from: Int) -> UserType? {
+      switch from {
+      case admin.rawValue:
         return .admin
+      case email.rawValue:
+        return .email
+      case facebook.rawValue:
+        return .facebook
+      case google.rawValue:
+        return .google
+      default:
+        return nil
+      }
     }
 }
 

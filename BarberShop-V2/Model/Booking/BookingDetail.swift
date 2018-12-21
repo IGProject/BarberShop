@@ -15,5 +15,13 @@ struct BookingDetail: Codable {
     let location_id:Int
     let service_id:Int
     let team_id:Int
+  
+  init(user_id:Int,work_time:String,location_id:Int,service_id:Int,team_id:Int) {
+    self.user_id = user_id
+    self.work_time = work_time
+    self.location_id = location_id
+    self.service_id = service_id
+    self.team_id = team_id
+  }
 }
 

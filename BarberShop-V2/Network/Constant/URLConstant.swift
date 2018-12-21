@@ -14,11 +14,12 @@ struct Domains {
   
   private struct Routes {
      static let api = ":8090"
-    //static let api = "/BarberShopRest"
+   // static let api = "/BarberShopRest"
   }
    static let Domain = Domains.Dev
    static let Route = Routes.api
    static let BaseURL = Domain + Route
+   static var date = Date()
   
   
   enum HTTPHeaderField: String {

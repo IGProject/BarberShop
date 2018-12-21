@@ -17,13 +17,16 @@ class OurTeamBarberViewController: UIViewController{
   //MARK: Instance Properties
   
   var itemsTeam = Teams(length:0,results:[])
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setCollection()
         setupListTeam()
         setupClearNavigation()
     }
  
+  
   private func setCollection(){
     teamCollectionView.delegate = self
     teamCollectionView.dataSource = self
@@ -36,7 +39,6 @@ class OurTeamBarberViewController: UIViewController{
   
   private func getItemTeam(teamsEndPoint:URL!){
     Alamofire.request(teamsEndPoint).validate().responseJSON { (response) in
-      print("team:",response)
       switch response.result {
       case .success(_):
         let json = response.data
@@ -83,7 +85,7 @@ extension OurTeamBarberViewController: TeamBookingCellDelegate {
     booking.teamId = data.id
     booking.locationAddress = data.location.address
     booking.locationId = data.location.id
-    self.navigationController?.present(booking, animated: true)
+    self.navigationController?.pushViewController(booking, animated: true)
   }
 }
 
@@ -103,6 +105,7 @@ extension OurTeamBarberViewController: UICollectionViewDelegate{
   func detailCollectionCell(itemTeams:Teams.Results){
     let storyBoard: UIStoryboard = UIStoryboard(name: "OurTeam", bundle: nil)
     let teamDetail = storyBoard.instantiateViewController(withIdentifier: "OurTeamDetailViewController") as! OurTeamDetailViewController
+    
     teamDetail.imageTeamString = itemTeams.team_profile
     teamDetail.descriptionString = itemTeams.description
     teamDetail.emailString = itemTeams.email
@@ -111,7 +114,7 @@ extension OurTeamBarberViewController: UICollectionViewDelegate{
     teamDetail.latitude = Double(itemTeams.location.latitude)
     teamDetail.longtitude = Double(itemTeams.location.longitude)
     teamDetail.locationName = itemTeams.location.address
-   navigationController?.present(teamDetail, animated: true)
+   navigationController?.pushViewController(teamDetail, animated: true)
   }
   
   func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

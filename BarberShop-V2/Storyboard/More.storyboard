@@ -34,23 +34,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-xa-hiW">
-                                                    <rect key="frame" x="94" y="37.666666666666671" width="187" height="169.66666666666663"/>
+                                                    <rect key="frame" x="128.66666666666666" y="51.666666666666671" width="118" height="141.33333333333331"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minea" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-aY-wNi" customClass="RoundedImageView" customModule="BarberShop_V2" customModuleProvider="target">
-                                                            <rect key="frame" x="34.666666666666657" y="0.0" width="118" height="113"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="118" height="113"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="113" id="b0j-Zw-zLg"/>
                                                                 <constraint firstAttribute="width" constant="118" id="q5z-e5-bQt"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chem Minea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-O1-v3e">
-                                                            <rect key="frame" x="45.666666666666657" y="120.99999999999999" width="96" height="20.333333333333329"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minea.chem@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujz-01-W3X">
-                                                            <rect key="frame" x="0.0" y="149.33333333333334" width="187" height="20.333333333333343"/>
+                                                            <rect key="frame" x="11" y="120.99999999999999" width="96" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -313,7 +307,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="MORE" id="ssj-tH-K6W"/>
                     <connections>
-                        <outlet property="emailLabel" destination="Ujz-01-W3X" id="2ci-16-IOt"/>
                         <outlet property="imageProfile" destination="XQc-aY-wNi" id="Ir3-s1-rrS"/>
                         <outlet property="usernameLabel" destination="TUa-O1-v3e" id="raP-o7-Tzo"/>
                     </connections>

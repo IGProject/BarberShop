@@ -14,7 +14,7 @@ protocol StyleHairBookingCellDelegate {
 
 class HairstyleCollectionCell: UICollectionViewCell,ConfigurableCell {
     
-    @IBOutlet weak var imageStyleHair: UIImageView!
+  @IBOutlet weak var imageStyleHair: UIImageView!
     @IBOutlet weak var shapeNameLabel: UILabel!
   
   var dataStyleHair:StyleHair.Results? = nil

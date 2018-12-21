@@ -38,6 +38,7 @@ class MapLocationViewController: UIViewController {
       getLocationDetail()
     }
   
+  
   func getLocationDetail(){
     let url = URL(string: Domains.BaseURL)!
     let urlLocation = url.appendingPathComponent(imageString)
@@ -49,9 +50,9 @@ class MapLocationViewController: UIViewController {
   
   func setupClearNavigation() {
     mapItemTitle.title = address
-    navigationBar.setBackgroundImage(UIImage(), for: .default)
-    navigationBar.shadowImage = UIImage()
-    navigationBar.backgroundColor = .clear
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.backgroundColor = .clear
     UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
   }
   
@@ -68,10 +69,17 @@ class MapLocationViewController: UIViewController {
       
       
     }
+  
+  
     
+  @IBAction func backTapped(_ sender: UIBarButtonItem) {
+    navigationController?.popViewController(animated: true)
+  }
+  
   @IBAction func BookingLocationTapped(_ sender: RoundButton) {
     
   }
+  
   
   @IBAction func collectionMapDestinationTapped(_ sender: UIButton) {
         switch sender.tag {

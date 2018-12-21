@@ -75,7 +75,7 @@ extension ServiceViewController: ServiceBookingCellDelegate {
     let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
     booking.serviceTitle = data.title
     booking.serviceId = data.id
-    navigationController?.present(booking, animated: true)
+    navigationController?.pushViewController(booking, animated: true)
   }
   
   
@@ -86,12 +86,13 @@ extension ServiceViewController: UICollectionViewDelegate{
         let cell = collectionView.cellForItem(at: indexPath)
         cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
         cell?.layer.borderWidth = 2
+      
       serviceDetailCollectionCell(detailService: itemsService.results[indexPath.row])
     }
   
   func serviceDetailCollectionCell(detailService:Services.Results){
     
-    let storyBoard: UIStoryboard = UIStoryboard(name: "Service", bundle: nil)
+    let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Service)
     let serviceDetail = storyBoard.instantiateViewController(withIdentifier: "ServiceDetailViewController") as! ServiceDetailViewController
     
     serviceDetail.titleServiceString = detailService.title
@@ -99,7 +100,8 @@ extension ServiceViewController: UICollectionViewDelegate{
     serviceDetail.pointServiceString = String(detailService.point)
     serviceDetail.desServiceString = detailService.description
     serviceDetail.imageDetail = detailService.seva_profiles.map({ return $0.file_path!})
-    navigationController?.present(serviceDetail, animated: true)
+    
+    navigationController?.pushViewController(serviceDetail, animated: true)
   }
   
  

@@ -8,16 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- "AssignmentPrecedence"
+- "Bool"
 - "Codable"
 - "EditBooking"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
-- "Locations"
-- "Services"
 - "String"
 - !private "StringLiteralType"
-- "Teams"
 - !private "~="
 depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
@@ -73,23 +72,22 @@ depends-member:
 - !private ["Se", "init"]
 - !private ["Se", "location_id"]
 - !private ["Se", "seva_id"]
-- !private ["Se", "staus"]
+- !private ["Se", "status"]
 - !private ["Se", "team_id"]
 - !private ["Se", "user_id"]
 - !private ["Se", "work_time"]
 - !private ["s7DecoderP", "container"]
+- ["13BarberShop_V211EditBookingV", "Bool"]
+- !private ["13BarberShop_V211EditBookingV", "CodingKeys"]
 - ["13BarberShop_V211EditBookingV", "Int"]
-- ["13BarberShop_V211EditBookingV", "Locations"]
-- ["13BarberShop_V211EditBookingV", "Services"]
 - ["13BarberShop_V211EditBookingV", "String"]
-- ["13BarberShop_V211EditBookingV", "Teams"]
 - ["13BarberShop_V211EditBookingV", "booking_id"]
 - ["13BarberShop_V211EditBookingV", "deinit"]
 - ["13BarberShop_V211EditBookingV", "encode"]
 - ["13BarberShop_V211EditBookingV", "init"]
 - ["13BarberShop_V211EditBookingV", "location_id"]
 - ["13BarberShop_V211EditBookingV", "seva_id"]
-- ["13BarberShop_V211EditBookingV", "staus"]
+- ["13BarberShop_V211EditBookingV", "status"]
 - ["13BarberShop_V211EditBookingV", "team_id"]
 - ["13BarberShop_V211EditBookingV", "user_id"]
 - ["13BarberShop_V211EditBookingV", "work_time"]
@@ -101,7 +99,7 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "location_id"]
 - !private ["SE", "seva_id"]
-- !private ["SE", "staus"]
+- !private ["SE", "status"]
 - !private ["SE", "team_id"]
 - !private ["SE", "user_id"]
 - !private ["SE", "work_time"]
@@ -141,7 +139,6 @@ depends-member:
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
-- ["13BarberShop_V29LocationsV", "deinit"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -151,12 +148,10 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
-- ["13BarberShop_V28ServicesV", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["Sy", "init"]
-- ["13BarberShop_V25TeamsV", "deinit"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
@@ -209,15 +204,12 @@ depends-nominal:
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
 - !private "10Kingfisher0A10CompatibleP"
-- "13BarberShop_V29LocationsV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "Sm"
 - !private "ST"
-- "13BarberShop_V28ServicesV"
 - !private "SS"
 - !private "Sy"
-- "13BarberShop_V25TeamsV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "9Alamofire14URLConvertibleP"
@@ -526,4 +518,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c0167f843e7d4aff7d5423a1804c3cfc"
+interface-hash: "1c228aab7a0929209b5fbc4c2fe4029f"

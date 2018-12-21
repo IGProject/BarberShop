@@ -37,9 +37,9 @@ class ServiceDetailViewController: UIViewController {
     }
   
   private func setupClearNavigation() {
-    navigationBar.setBackgroundImage(UIImage(), for: .default)
-    navigationBar.shadowImage = UIImage()
-    navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+     self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
     UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
   }
   private func setCollection(){
@@ -56,11 +56,15 @@ class ServiceDetailViewController: UIViewController {
     des_service.text = desServiceString
   }
   
+  @IBAction func backTapped(_ sender: UIBarButtonItem) {
+    navigationController?.popViewController(animated: true)
+  }
+  
   @IBAction func serviceBookingTapped(_ sender: RoundButton) {
     let storyboard:UIStoryboard = UIStoryboard(storyboard: .Booking)
     let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
-    
-    self.present(booking, animated: true)
+   booking.serviceTitle = titleServiceString
+  self.navigationController?.pushViewController(booking, animated: true)
   }
   
 }

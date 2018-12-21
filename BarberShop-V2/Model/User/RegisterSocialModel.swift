@@ -12,11 +12,11 @@ struct UserSocial: Codable {
     var username:String
     var email:String
     var token:String
-    var user_id:Int
+    var user_id:String
     var image:String
     var type: UserType.RawValue
   
-  init(username:String,email:String,token:String,user_id:Int,image:String,type:UserType) {
+  init(username:String,email:String,token:String,user_id:String,image:String,type:UserType) {
        self.username = username
        self.email = email
        self.token = token

@@ -21,17 +21,17 @@
                             <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man-haircut" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-qE-LdC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-sp-DCv" userLabel="logo">
-                                <rect key="frame" x="140" y="34" width="95" height="120.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-sp-DCv" userLabel="logo">
+                                <rect key="frame" x="140" y="35" width="95" height="134.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eex-Kt-IKg">
-                                        <rect key="frame" x="20" y="0.0" width="55" height="20.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="55" height="44.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbershop" translatesAutoresizingMaskIntoConstraints="NO" id="1Rj-WU-drA">
-                                        <rect key="frame" x="0.0" y="30.5" width="95" height="90"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="95" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1Rj-WU-drA" secondAttribute="height" multiplier="1:1" constant="5" id="KFq-sm-Dji"/>
                                             <constraint firstAttribute="height" constant="90" id="dqb-7B-jg9"/>
@@ -206,7 +206,7 @@
                             <constraint firstItem="pIS-sp-DCv" firstAttribute="centerX" secondItem="WfY-In-sVt" secondAttribute="centerX" id="ANM-oW-DLM"/>
                             <constraint firstItem="Sfr-Ut-ow2" firstAttribute="top" secondItem="PCV-gp-4ya" secondAttribute="bottom" constant="21" id="Eo4-VW-fDn"/>
                             <constraint firstItem="tsy-qE-LdC" firstAttribute="top" secondItem="WfY-In-sVt" secondAttribute="top" id="NJQ-GY-lcb"/>
-                            <constraint firstItem="pIS-sp-DCv" firstAttribute="top" secondItem="WfY-In-sVt" secondAttribute="top" constant="34" id="Pjs-Fw-ehY"/>
+                            <constraint firstItem="pIS-sp-DCv" firstAttribute="top" secondItem="WfY-In-sVt" secondAttribute="top" constant="35" id="Pjs-Fw-ehY"/>
                             <constraint firstAttribute="trailing" secondItem="tsy-qE-LdC" secondAttribute="trailing" id="Qjb-HF-AxZ"/>
                             <constraint firstAttribute="trailing" secondItem="wlJ-K1-uf2" secondAttribute="trailing" constant="30" id="RGj-ot-yW4"/>
                             <constraint firstItem="Sfr-Ut-ow2" firstAttribute="centerX" secondItem="WfY-In-sVt" secondAttribute="centerX" id="Uvl-cE-E7O"/>
@@ -215,7 +215,7 @@
                             <constraint firstItem="PCV-gp-4ya" firstAttribute="top" secondItem="WfY-In-sVt" secondAttribute="top" constant="193" id="kGn-RV-NzT"/>
                             <constraint firstItem="wlJ-K1-uf2" firstAttribute="top" secondItem="Sfr-Ut-ow2" secondAttribute="bottom" constant="24.5" id="qrk-aR-HjK"/>
                             <constraint firstItem="PCV-gp-4ya" firstAttribute="centerX" secondItem="WfY-In-sVt" secondAttribute="centerX" id="sbT-1j-KoG"/>
-                            <constraint firstItem="PCV-gp-4ya" firstAttribute="top" secondItem="pIS-sp-DCv" secondAttribute="bottom" constant="38.5" id="xeM-n0-6QW"/>
+                            <constraint firstItem="PCV-gp-4ya" firstAttribute="top" secondItem="pIS-sp-DCv" secondAttribute="bottom" constant="23.5" id="xeM-n0-6QW"/>
                             <constraint firstItem="wlJ-K1-uf2" firstAttribute="leading" secondItem="WfY-In-sVt" secondAttribute="leading" constant="30" id="xqa-HJ-nPq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2a8-Mu-ioG"/>

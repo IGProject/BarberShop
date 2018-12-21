@@ -11,16 +11,16 @@ import Material
 import Alamofire
 import Motion
 import SSSpinnerButton
-
+import Firebase
 
 enum UserKeys: String {
   case userId
-  case token
   case usernameText
   case emailText
   case phoneText
   case passwordText
   case userProfile
+  case type
 }
 
 class SignUpViewController: UIViewController {
@@ -44,6 +44,8 @@ class SignUpViewController: UIViewController {
   
   //MARK:Declare Object
   var registerResponse = RegisterResponse(booking: [], response: "", userToken: "", notificationCount: 0, userProfile: [], message: "")
+  
+ 
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -185,30 +187,37 @@ class SignUpViewController: UIViewController {
       self.createObjectForPost(sender: sender)
     }
       private func createObjectForPost(sender: SSSpinnerButton){
-        
-        //MARK: UserDefault
-        self.userDefault.set(usernameTextField.text!, forKey: UserKeys.usernameText.rawValue)
-        self.userDefault.set(emailTextField.text!, forKey: UserKeys.emailText.rawValue)
-        self.userDefault.set(phoneNumberTextField.text!, forKey: UserKeys.phoneText.rawValue)
-        self.userDefault.set(passwordTextField.text!, forKey: UserKeys.passwordText.rawValue)
-        
         //1.Create model Object
-        signUpModel = SignUp(username: usernameTextField.text!, email: emailTextField.text!, phone: phoneNumberTextField.text!, password: passwordTextField.text!, base64_image: imageString, type: .email)
-        
-        //2.MARK: create UserEndPoint
-        let userEndPoint = URL(string: Domains.BaseURL + "/user/register")
-        
-        //3.MARK: Create Param for post Resgister
-        let param:[String:Any] = [  "username":signUpModel.username,
-                                    "email":signUpModel.email,
-                                    "phone":signUpModel.phone,
-                                    "base64_image":signUpModel.base64_image!,
-                                    "password":signUpModel.password,
-                                    "type":signUpModel.type
-        ]
-        
-        //4.MARK:Access service api with Alamofire
-        registerUser(endPoint: userEndPoint!, param: param,sender:sender)
+        InstanceID.instanceID().instanceID { (result, error) in
+          if let error = error {
+            print("Error fetching remote instange ID: \(error)")
+          } else if let result = result {
+           
+            if self.usernameTextField.text != "" && self.passwordTextField.text != "" && self.phoneNumberTextField.text != "" && self.emailTextField.text != "" {
+              
+              //MARK:Model
+              self.signUpModel = SignUp(username: self.usernameTextField.text!, email: self.emailTextField.text!, phone: self.phoneNumberTextField.text!, token: result.token, password: self.passwordTextField.text!, base64_image:self.imageString, type: .email)
+              
+              //2.MARK: create UserEndPoint
+              let userEndPoint = URL(string: Domains.BaseURL + "/user/register")
+              
+              //3.MARK: Create Param for post Resgister
+              let param:[String:Any] = [  "username":self.signUpModel.username,
+                                          "email":self.signUpModel.email,
+                                          "token":self.signUpModel.token,
+                                          "phone":self.signUpModel.phone,
+                                          "base64_image":self.signUpModel.base64_image!,
+                                          "password":self.signUpModel.password,
+                                          "type":self.signUpModel.type
+              ]
+              
+              //4.MARK:Access service api with Alamofire
+              self.registerUser(endPoint: userEndPoint!, param: param,sender:sender)
+  
+          }
+          }
+        }
+       
       }
   
    private func registerUser(endPoint:URL,param:Parameters,sender:SSSpinnerButton){
@@ -223,16 +232,21 @@ class SignUpViewController: UIViewController {
               //MARK: RegisterResponse
               self.registerResponse = RegisterResponse(booking: registerResponse.booking, response: registerResponse.response, userToken: registerResponse.userToken, notificationCount: registerResponse.notificationCount, userProfile: registerResponse.userProfile, message: registerResponse.message)
               
-              //MARK: UserProfile Response
-            self.userDefault.set(registerResponse.userProfile.map({ $0.profileImage}), forKey: UserKeys.userProfile.rawValue)
-            self.userDefault.set(registerResponse.userProfile.map({$0.id}), forKey: UserKeys.userId.rawValue)
-            self.userDefault.set(registerResponse.userToken, forKey: UserKeys.token.rawValue)
+              //MARK: UserDefault
+              self.userDefault.set(self.registerResponse.userProfile[0].profileImage, forKey: UserKeys.userProfile.rawValue)
+              
+              self.userDefault.set(self.registerResponse.userProfile[0].username, forKey: UserKeys.usernameText.rawValue)
+              
+              self.userDefault.set(self.registerResponse.userProfile[0].id, forKey: UserKeys.userId.rawValue)
               
             
              let alertMessage = UIAlertController(title: "Success", message: registerResponse.message, preferredStyle: .alert)
               let alertAction = UIAlertAction(title: "Wow", style: .default, handler: { (action) in
+                
                 self.gotoHomeScreen(sender: sender)
+                
               })
+              
               alertMessage.addAction(alertAction)
               self.present(alertMessage, animated: true)
               
@@ -264,12 +278,17 @@ class SignUpViewController: UIViewController {
   }
   
   private func gotoHomeScreen(sender:SSSpinnerButton) {
+    
     sender.startAnimate(spinnerType: .circleStrokeSpin, spinnercolor: UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1), spinnerSize: 20, complete: nil)
     Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (_) in
+      
        sender.stopAnimationWithCompletionTypeAndBackToDefaults(completionType: .none, backToDefaults: true, complete: nil)
+      
       let storyboard:UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
       let home = storyboard.instantiateViewController(withIdentifier: "CustomTabarViewController") as! MainTabarViewController
       self.present(home, animated: true)
+      
+       self.userDefault.set(true, forKey: SignInKeys.SignedIn.rawValue)
       
     }
    

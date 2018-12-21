@@ -158,6 +158,7 @@
                                                 <state key="normal" title="Sign In"/>
                                                 <connections>
                                                     <action selector="signInTapped:" destination="ee5-lA-Hil" eventType="touchUpInside" id="oZY-jO-07L"/>
+                                                    <segue destination="JXQ-k0-d4y" kind="unwind" unwindAction="unwindToBookingWithSegue:" id="fBa-l0-ltf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -193,6 +194,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyy-Sn-Qbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JXQ-k0-d4y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1723.1884057971015" y="240.48913043478262"/>
         </scene>
@@ -205,6 +207,10 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

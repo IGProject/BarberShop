@@ -14,7 +14,10 @@ depends-top-level:
 - "+"
 - "=="
 - !private "Array"
+- "Date"
 - "Domains"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "String"
 - "StringLiteralType"
 - !private "_findStringSwitchCase"
@@ -52,11 +55,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["10Foundation4DateV", "init"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - ["Se", "init"]
 - ["Se", "init"]
 - ["13BarberShop_V27DomainsV", "BaseURL"]
 - ["13BarberShop_V27DomainsV", "ContentType"]
+- ["13BarberShop_V27DomainsV", "Date"]
 - ["13BarberShop_V27DomainsV", "Dev"]
 - ["13BarberShop_V27DomainsV", "Domain"]
 - ["13BarberShop_V27DomainsV", "Domains"]
@@ -65,6 +70,7 @@ depends-member:
 - ["13BarberShop_V27DomainsV", "Routes"]
 - ["13BarberShop_V27DomainsV", "String"]
 - !private ["13BarberShop_V27DomainsV", "_findStringSwitchCase"]
+- ["13BarberShop_V27DomainsV", "date"]
 - ["13BarberShop_V27DomainsV", "init"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - ["SE", "init"]
@@ -127,6 +133,7 @@ depends-member:
 - ["SY", "hashValue"]
 - ["SY", "init"]
 - ["SY", "rawValue"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
 - ["ST", "init"]
 - ["ST", "init"]
 - !private ["s12StaticStringV", "init"]
@@ -169,6 +176,7 @@ depends-nominal:
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "10Foundation4DateV"
 - "Se"
 - "13BarberShop_V27DomainsV"
 - "SE"
@@ -186,6 +194,7 @@ depends-nominal:
 - "s10MirrorPathP"
 - "Sm"
 - "SY"
+- "10Foundation20ReferenceConvertibleP"
 - "ST"
 - !private "s12StaticStringV"
 - "SS"
@@ -498,4 +507,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "872004959ff7e883312cb30e5bf87adc"
+interface-hash: "661da326d046b4fb0aea635705f3b14f"

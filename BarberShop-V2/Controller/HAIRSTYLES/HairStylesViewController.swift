@@ -74,7 +74,7 @@ extension HairStylesViewController: UICollectionViewDelegate{
         cell?.layer.borderWidth = 2
       
       let hairTypeDetails = itemsHairStyle.results[indexPath.item]
-      let storyBoard: UIStoryboard = UIStoryboard(name: "Hairstyle", bundle: nil)
+      let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Hairstyle)
       let hairDetail = storyBoard.instantiateViewController(withIdentifier: "HairTypeStyleViewController") as! HairTypeStyleViewController
       hairDetail.navigationItem.title = hairTypeDetails.shape.shape_name
       hairDetail.navigationController?.navigationBar.isTranslucent = false

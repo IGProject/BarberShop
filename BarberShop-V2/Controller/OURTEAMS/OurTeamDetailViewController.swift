@@ -20,7 +20,7 @@ class OurTeamDetailViewController: UIViewController {
     @IBOutlet weak var imageTeam: UIImageView!
     @IBOutlet weak var googleMapView: GMSMapView!
     @IBOutlet weak var navigationBar: UINavigationBar!
-  @IBOutlet weak var navigationItemTitle: UINavigationItem!
+    @IBOutlet weak var navigationItemTitle: UINavigationItem!
   
   
   //MARK: Properties
@@ -44,7 +44,7 @@ class OurTeamDetailViewController: UIViewController {
     }
   
   @IBAction func backItemTapped(_ sender: UIBarButtonItem) {
-      navigationController?.dismiss(animated: true)
+      navigationController?.popViewController(animated: true)
   }
   
   private func setupViews(){
@@ -68,9 +68,9 @@ class OurTeamDetailViewController: UIViewController {
   }
   
   private func setupClearNavigation() {
-    navigationBar.setBackgroundImage(UIImage(), for: .default)
-    navigationBar.shadowImage = UIImage()
-    navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController?.navigationBar.shadowImage  = UIImage()
+    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
     UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
   }
   
@@ -82,7 +82,7 @@ class OurTeamDetailViewController: UIViewController {
     let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
     booking.teamName = usernameString
     booking.locationAddress = locationName
-   self.navigationController?.present(booking, animated: true)
+   self.navigationController?.pushViewController(booking, animated: true)
   }
   
 }
