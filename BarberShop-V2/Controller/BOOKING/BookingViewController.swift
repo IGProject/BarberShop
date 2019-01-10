@@ -68,6 +68,21 @@ class BookingViewController: UIViewController{
     setupServicetitle()
     setupTeamName()
     checkButton()
+    setTextField()
+  }
+  
+  func setTextField(){
+    dateTimeTextField.placeholder = LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.dateTimeTF.rawValue, comment: "")
+    
+    locationTextField.placeholder = LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.locationTF.rawValue, comment: "")
+    
+    serviceTextField.placeholder = LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.serviceTF.rawValue, comment: "")
+    
+    barberTeamTextField.placeholder = LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.teamTF.rawValue, comment: "")
+    
+    bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.confirmBtnBooking.rawValue, comment: ""), for: .normal)
+    bookingBtn.fontSize = 15
+    
   }
   
   func checkButton(){
@@ -137,19 +152,25 @@ class BookingViewController: UIViewController{
   private func setupProfileImage(){
     let urlImage = userDefault.object(forKey: UserKeys.userProfile.rawValue) as! String
     let username = userDefault.object(forKey: UserKeys.usernameText.rawValue) as! String
-    let type = userDefault.object(forKey: UserKeys.type.rawValue) as! Int
+    let type = userDefault.object(forKey: UserKeys.type.rawValue) as? Int
+   // guard let type = userDefault.object(forKey: UserKeys.type.rawValue) as? Int else { return }
+    
+
     
     let url = URL(string: Domains.BaseURL)!
     let urlImg = URL(string: urlImage)!
-    switch type {
-    case 3,4:
-      imageProfile.kf.setImage(with: urlImg)
-  
-    default:
-      
-      let urlProfile = url.appendingPathComponent(urlImage)
-      imageProfile.kf.setImage(with: urlProfile)
+    
+    if type != nil {
+      switch type {
+      case 3,4:
+        imageProfile.kf.setImage(with: urlImg)
+      default:
+        let urlProfile = url.appendingPathComponent(urlImage)
+        imageProfile.kf.setImage(with: urlProfile)
+      }
     }
+   
+    
     
     nameLabel.text = username
     
@@ -218,7 +239,7 @@ class BookingViewController: UIViewController{
                               "work_time":booking.work_time,
                               "user_id":booking.user_id,
                               "service_id":booking.service_id,
-                              "location_id":booking.location_id,
+"location_id":booking.location_id,
                               ]
     postBookingBarberShop(bookingEndPoint: bookingEndPoint,param:param)
   }
@@ -293,9 +314,12 @@ class BookingViewController: UIViewController{
   }
   
   @objc func valueDateChange(sender: UIDatePicker){
-    dateTimeformatter.dateFormat = "dd-MMM-yyyy HH:mm"
-    dateTimeTextField.text = "\(dateTimeformatter.string(from: sender.date))"
-    dateTimeString = dateTimeformatter.string(from: sender.date)
+
+  dateTimeformatter.dateFormat = "dd-MMM-yyyy HH:mm"
+    dateTimeformatter.locale = Locale(identifier: "en_US_POSIX")
+     dateTimeString = dateTimeformatter.string(from: sender.date)
+    dateTimeTextField.text = dateTimeString
+   
   }
 }
 
@@ -406,6 +430,7 @@ extension BookingViewController: UIPickerViewDelegate,UIPickerViewDataSource{
     serviceTextField.inputAccessoryView = toolbar
     barberTeamTextField.inputAccessoryView = toolbar
     
+    dateTimeTextField.text = dateTimeString
     locationTextField.text = locationAddress
     serviceTextField.text = serviceTitle
     barberTeamTextField.text = teamName

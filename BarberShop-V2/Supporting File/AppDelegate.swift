@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
-      
        setupRootViewController()
         //Firebase configure
         FirebaseApp.configure()
@@ -54,13 +53,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
       application.registerForRemoteNotifications()
       
-        
-        //API KEY GOOGLE MAP
-        GMSServices.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
-        //API KEY GOOGLE PLACE
-        GMSPlacesClient.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
-        
-        GIDSignIn.sharedInstance().clientID = "57423766550-d80mtn23c1mmlk6n9p5bncd25e49fvcu.apps.googleusercontent.com"
+      //API KEY GOOGLE MAP
+        GMSServices.provideAPIKey("AIzaSyBAJT70EGYSF-iYBwxoZHwWm1aMoVz-c9g")
+     // API KEY GOOGLE PLACE
+        GMSPlacesClient.provideAPIKey("AIzaSyBAJT70EGYSF-iYBwxoZHwWm1aMoVz-c9g")
+
+       GIDSignIn.sharedInstance().clientID = "586884728274-u9gstmscu1q98sc163cvju7p2ahqodht.apps.googleusercontent.com"
+//
+//        GMSServices.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
+//       // API KEY GOOGLE PLACE
+//        GMSPlacesClient.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
+//
+//        GIDSignIn.sharedInstance().clientID = "57423766550-d80mtn23c1mmlk6n9p5bncd25e49fvcu.apps.googleusercontent.com"
         //navigation
         if #available(iOS 10.0, *) {
             UINavigationBar.appearance().barTintColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
@@ -86,9 +90,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       UITabBar.appearance().isTranslucent = false
       UITabBar.appearance().unselectedItemTintColor = UIColor.white
       UITabBar.appearance().barTintColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+      
       //UITabBar.appearance().backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
       UITabBar.appearance().shadowColor = UIColor.clear
-        
+      
+      
+      Messaging.messaging().connect { (error) in
+        if error != nil {
+          print("error\(error)")
+        }else {
+          print("connect")
+        }
+      }
       
         return true
     }
@@ -177,7 +190,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   // MARK: Shortcuts
   func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
-    completionHandler(Deeplinker.handleShortcut(item: shortcutItem))
+   
   }
   
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
@@ -257,44 +270,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 }
   
   
-//@available(iOS 10, *)
-//extension AppDelegate : UNUserNotificationCenterDelegate {
-//
-//  // Receive displayed notifications for iOS 10 devices.
-//  func userNotificationCenter(_ center: UNUserNotificationCenter,
-//                              willPresent notification: UNNotification,
-//                              withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-//    let userInfo = notification.request.content.userInfo
-//
-//    // With swizzling disabled you must let Messaging know about the message, for Analytics
-//    // Messaging.messaging().appDidReceiveMessage(userInfo)
-//    // Print message ID.
-//    if let messageID = userInfo[gcmMessageIDKey] {
-//      print("Message ID: \(messageID)")
-//    }
-//
-//    // Print full message.
-//    print(userInfo)
-//
-//    // Change this to your preferred presentation option
-//    completionHandler([])
-//  }
-//
-//  func userNotificationCenter(_ center: UNUserNotificationCenter,
-//                              didReceive response: UNNotificationResponse,
-//                              withCompletionHandler completionHandler: @escaping () -> Void) {
-//    let userInfo = response.notification.request.content.userInfo
-//    // Print message ID.
-//    if let messageID = userInfo[gcmMessageIDKey] {
-//      print("Message ID: \(messageID)")
-//    }
-//
-//    // Print full message.
-//    print(userInfo)
-//
-//    completionHandler()
-//  }
-//}
+
 // [END ios_10_message_handling]
 
 extension AppDelegate: MessagingDelegate {
@@ -312,9 +288,11 @@ extension AppDelegate: MessagingDelegate {
     let dataDict:[String: String] = ["token": fcmToken]
     NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
     
+    
   }
   
   func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
     print("Received data message: \(remoteMessage.appData)")
+    print("message:\(messaging)")
   }
 }

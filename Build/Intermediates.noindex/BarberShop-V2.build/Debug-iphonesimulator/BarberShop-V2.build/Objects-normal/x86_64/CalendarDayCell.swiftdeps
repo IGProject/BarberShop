@@ -7,148 +7,257 @@ provides-member:
 - ["13BarberShop_V215CalendarDayCellC", ""]
 provides-dynamic-lookup:
 - "dateLabel"
+- "dotLabel"
 - "selectedView"
 depends-top-level:
+- "AssignmentPrecedence"
 - "CalendarDayCell"
 - "JTAppleCell"
 - "UILabel"
 - "UIView"
 depends-member:
 - ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "dateLabel"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "dateLabel"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "red"]
 - ["13BarberShop_V215CalendarDayCellC", "UILabel"]
 - ["13BarberShop_V215CalendarDayCellC", "UIView"]
+- ["13BarberShop_V215CalendarDayCellC", "config"]
 - ["13BarberShop_V215CalendarDayCellC", "dateLabel"]
-- ["13BarberShop_V215CalendarDayCellC", "deinit"]
+- ["13BarberShop_V215CalendarDayCellC", "dotLabel"]
 - ["13BarberShop_V215CalendarDayCellC", "init"]
 - ["13BarberShop_V215CalendarDayCellC", "selectedView"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "dateLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- !private ["s17CustomReflectableP", "red"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "dateLabel"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "red"]
+- !private ["Se", "backgroundColor"]
+- !private ["Se", "red"]
+- !private ["SE", "backgroundColor"]
+- !private ["SE", "red"]
 - ["SQ", ""]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "dateLabel"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "red"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- !private ["s23ExpressibleByNilLiteralP", "red"]
 - ["SH", ""]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "dateLabel"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "red"]
 - ["15JTAppleCalendar0A4CellC", "UILabel"]
 - ["15JTAppleCalendar0A4CellC", "UIView"]
 - ["15JTAppleCalendar0A4CellC", ""]
+- ["15JTAppleCalendar0A4CellC", "config"]
 - ["15JTAppleCalendar0A4CellC", "dateLabel"]
+- ["15JTAppleCalendar0A4CellC", "dotLabel"]
 - ["15JTAppleCalendar0A4CellC", "init"]
 - !private ["15JTAppleCalendar0A4CellC", "init"]
 - ["15JTAppleCalendar0A4CellC", "selectedView"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "dateLabel"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "red"]
+- !private ["So9NSCopyingP", "red"]
+- !private ["So21NSItemProviderReadingP", "red"]
+- !private ["So21NSItemProviderWritingP", "red"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- ["So8NSObjectC", "config"]
 - ["So8NSObjectC", "dateLabel"]
+- ["So8NSObjectC", "dotLabel"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "red"]
 - ["So8NSObjectC", "selectedView"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "dateLabel"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "red"]
+- !private ["So14NSSecureCodingP", "red"]
+- !private ["Sq", "backgroundColor"]
+- !private ["Sq", "red"]
+- !private ["13BarberShop_V212OptionalTypeP", "backgroundColor"]
+- !private ["13BarberShop_V212OptionalTypeP", "red"]
 - ["7RxSwift18ReactiveCompatibleP", ""]
+- !private ["7RxSwift18ReactiveCompatibleP", "backgroundColor"]
+- !private ["7RxSwift18ReactiveCompatibleP", "dateLabel"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
 - !private ["7RxSwift18ReactiveCompatibleP", "init"]
+- !private ["7RxSwift18ReactiveCompatibleP", "red"]
 - ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "dateLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "dateLabel"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "dateLabel"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - ["So24UICollectionReusableViewC", "UILabel"]
 - ["So24UICollectionReusableViewC", "UIView"]
+- ["So24UICollectionReusableViewC", "config"]
 - ["So24UICollectionReusableViewC", "dateLabel"]
+- ["So24UICollectionReusableViewC", "dotLabel"]
 - ["So24UICollectionReusableViewC", "init"]
 - !private ["So24UICollectionReusableViewC", "init"]
 - ["So24UICollectionReusableViewC", "selectedView"]
 - ["So20UICollectionViewCellC", "UILabel"]
 - ["So20UICollectionViewCellC", "UIView"]
+- ["So20UICollectionViewCellC", "config"]
 - ["So20UICollectionViewCellC", "dateLabel"]
+- ["So20UICollectionViewCellC", "dotLabel"]
 - ["So20UICollectionViewCellC", "init"]
 - !private ["So20UICollectionViewCellC", "init"]
 - ["So20UICollectionViewCellC", "selectedView"]
+- !private ["So7UIColorC", "red"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "backgroundColor"]
 - ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "dateLabel"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "dateLabel"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "dateLabel"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "dateLabel"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
 - ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "dateLabel"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So7UILabelC", "backgroundColor"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "dateLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "config"]
 - ["So11UIResponderC", "dateLabel"]
+- ["So11UIResponderC", "dotLabel"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "selectedView"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "dateLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "dateLabel"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "dateLabel"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "UIView"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So6UIViewC", "config"]
 - ["So6UIViewC", "dateLabel"]
+- ["So6UIViewC", "dotLabel"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
 - ["So6UIViewC", "selectedView"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dateLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+- !private ["s21_ObjectiveCBridgeableP", "red"]
 depends-nominal:
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "13BarberShop_V215CalendarDayCellC"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "15JTAppleCalendar0A4CellC"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "13BarberShop_V212OptionalTypeP"
 - "7RxSwift18ReactiveCompatibleP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So24UICollectionReusableViewC"
 - "So20UICollectionViewCellC"
+- !private "So7UIColorC"
+- !private "So30UIContentSizeCategoryAdjustingP"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -156,7 +265,9 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -454,4 +565,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3669a5a48a62e9517caa9d771eaa8100"
+interface-hash: "026f4cf76e177ed1b55c93a5f68487e1"

@@ -221,8 +221,6 @@ SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
 
 
 
-
-
 @interface ApointmentCalendarViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
@@ -239,6 +237,8 @@ SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -295,6 +295,19 @@ SWIFT_CLASS("_TtC13BarberShop_V211AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FIRMessaging;
+@class FIRMessagingRemoteMessage;
+
+@interface AppDelegate (SWIFT_EXTENSION(BarberShop_V2)) <FIRMessagingDelegate>
+/// iOS10 含以上的版本用來接收 firebase token 的 delegate
+/// \param messaging _
+///
+/// \param fcmToken _
+///
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveRegistrationToken:(NSString * _Nonnull)fcmToken;
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
+@end
+
 @class UNUserNotificationCenter;
 @class UNNotification;
 @class UNNotificationResponse;
@@ -317,19 +330,6 @@ SWIFT_AVAILABILITY(ios,introduced=10)
 /// \param completionHandler _
 ///
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
-@end
-
-@class FIRMessaging;
-@class FIRMessagingRemoteMessage;
-
-@interface AppDelegate (SWIFT_EXTENSION(BarberShop_V2)) <FIRMessagingDelegate>
-/// iOS10 含以上的版本用來接收 firebase token 的 delegate
-/// \param messaging _
-///
-/// \param fcmToken _
-///
-- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveRegistrationToken:(NSString * _Nonnull)fcmToken;
-- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
 @end
 
 @class UITextField;
@@ -385,6 +385,10 @@ SWIFT_CLASS("_TtC13BarberShop_V224ByLocationCollectionCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneLocationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLocationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified teamNameLocation;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified addressTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeTitleLabel;
 @property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified teamStack;
 @property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified bookingBtn;
 - (IBAction)LocationBookingTapped:(RoundButton * _Nonnull)sender;
@@ -429,6 +433,7 @@ SWIFT_CLASS("_TtC13BarberShop_V215CalendarDayCell")
 @interface CalendarDayCell : JTAppleCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified selectedView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dotLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -465,7 +470,8 @@ SWIFT_CLASS("_TtC13BarberShop_V226CustomNavigationController")
 @interface CustomNavigationController : UINavigationController
 - (void)viewDidLoad;
 - (void)someAction;
-- (void)notificatinAlert;
+- (void)searchAction;
+- (void)alertAction;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -552,6 +558,15 @@ SWIFT_CLASS("_TtC13BarberShop_V223HairstyleCollectionCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageStyleHair;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shapeNameLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BarberShop_V219HeaderTableViewCell")
+@interface HeaderTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -643,9 +658,18 @@ SWIFT_CLASS("_TtC13BarberShop_V225ListRewardPointDataSource")
 @end
 
 
+SWIFT_CLASS("_TtC13BarberShop_V218LocalizationSystem")
+@interface LocalizationSystem : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITabBar;
+@class UITabBarItem;
+
 SWIFT_CLASS("_TtC13BarberShop_V223MainTabarViewController")
 @interface MainTabarViewController : UITabBarController
 - (void)viewDidLoad;
+- (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -673,11 +697,31 @@ SWIFT_CLASS("_TtC13BarberShop_V225MapLocationViewController")
 @end
 
 
+SWIFT_CLASS("_TtC13BarberShop_V217MoreTableViewCell")
+@interface MoreTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleMoreLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified iconMoreImage;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13BarberShop_V223MoreTableViewController")
 @interface MoreTableViewController : UITableViewController
-@property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified apointmentLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified awardpointLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified historyLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hairstyleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified productLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified settingLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified aboutUsLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified logoutLabel;
 - (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -728,11 +772,12 @@ SWIFT_CLASS("_TtC13BarberShop_V214NetworkManager")
 
 SWIFT_CLASS("_TtC13BarberShop_V216NotificationCell")
 @interface NotificationCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified bodyLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified typeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified teamNameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified serviceLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified teamProfileImg;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -800,6 +845,8 @@ SWIFT_CLASS("_TtC13BarberShop_V221OurTeamCollectionCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageOurTeam;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTeam;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneTeam;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneTitleLabel;
 @property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified bookingBtn;
 - (IBAction)BookingTeamTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -815,8 +862,11 @@ SWIFT_CLASS("_TtC13BarberShop_V227OurTeamDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageTeam;
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified googleMapView;
-@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationItemTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified phoneNumTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionTitleLabel;
 - (void)viewDidLoad;
 - (IBAction)backItemTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
@@ -896,15 +946,6 @@ SWIFT_CLASS("_TtC13BarberShop_V225RewardPointViewController")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-
-SWIFT_CLASS("_TtC13BarberShop_V218RootViewController")
-@interface RootViewController : UIViewController
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
 @class UITouch;
 @class UIEvent;
 
@@ -953,6 +994,10 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceCollectionCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified price_service;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified des_service;
 @property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified bookingBtn;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified serviceTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descripTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pricesTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified currencyLabel;
 - (IBAction)ServiceBookingTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -974,6 +1019,10 @@ SWIFT_CLASS("_TtC13BarberShop_V227ServiceDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified point_service;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified des_service;
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleServiceLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descripTitleLabel;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified serviceDetailCollectionView;
 - (void)viewDidLoad;
@@ -1035,17 +1084,30 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceViewController")
 
 SWIFT_CLASS("_TtC13BarberShop_V226SettingTableViewController")
 @interface SettingTableViewController : UITableViewController
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified beforeSlider;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveItemTitle;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified apointmentTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified remainderTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified beforeLabel;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified laterSlider;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified minuteBeforeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified laterLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified changeLanguages;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dayLatersLabel;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified beforeSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified laterSlider;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified apointmentSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified remainderSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified languageSwitch;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified englishBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified khmerBtn;
 - (void)viewDidLoad;
+- (IBAction)changeLanguageTapped:(UIButton * _Nonnull)sender;
 - (IBAction)apointmentSwitch:(UISwitch * _Nonnull)sender;
-- (IBAction)changebeforeSlider:(UISlider * _Nonnull)sender;
 - (IBAction)RemainderSwitch:(UISwitch * _Nonnull)sender;
+- (IBAction)languageSwitch:(UISwitch * _Nonnull)sender;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)saveSetting:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)changebeforeSlider:(UISlider * _Nonnull)sender;
 - (IBAction)changeLaterSlider:(UISlider * _Nonnull)sender;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

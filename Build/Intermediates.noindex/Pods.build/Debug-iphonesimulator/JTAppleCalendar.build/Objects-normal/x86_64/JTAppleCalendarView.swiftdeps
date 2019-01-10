@@ -17,6 +17,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
 - !private "&&"
+- !private "+="
 - !private "-"
 - !private "<="
 - !private "=="
@@ -205,6 +206,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "contentSize"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "dateComponents"]
+- !private ["s28CustomDebugStringConvertibleP", "day"]
 - !private ["s28CustomDebugStringConvertibleP", "decelerationRate"]
 - !private ["s28CustomDebugStringConvertibleP", "decelerationRateMatchingScrollingMode"]
 - !private ["s28CustomDebugStringConvertibleP", "elementKindSectionHeader"]
@@ -257,6 +259,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "dateComponents"]
+- !private ["s17CustomReflectableP", "day"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "horizontal"]
 - ["s17CustomReflectableP", "init"]
@@ -291,6 +294,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "contentSize"]
 - !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "dateComponents"]
+- !private ["s23CustomStringConvertibleP", "day"]
 - !private ["s23CustomStringConvertibleP", "decelerationRate"]
 - !private ["s23CustomStringConvertibleP", "decelerationRateMatchingScrollingMode"]
 - !private ["s23CustomStringConvertibleP", "elementKindSectionHeader"]
@@ -321,6 +325,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "theData"]
 - !private ["s23CustomStringConvertibleP", "thereAreHeaders"]
 - !private ["s23CustomStringConvertibleP", "transform"]
+- !private ["10Foundation14DateComponentsV", "day"]
 - !private ["So28UIScrollViewDecelerationRatea", "fast"]
 - !private ["So28UIScrollViewDecelerationRatea", "init"]
 - !private ["So28UIScrollViewDecelerationRatea", "normal"]
@@ -329,6 +334,7 @@ depends-member:
 - !private ["Se", "a"]
 - !private ["Se", "date"]
 - !private ["Se", "dateComponents"]
+- !private ["Se", "day"]
 - !private ["Se", "height"]
 - !private ["Se", "horizontal"]
 - ["Se", "init"]
@@ -347,6 +353,7 @@ depends-member:
 - !private ["SE", "a"]
 - !private ["SE", "date"]
 - !private ["SE", "dateComponents"]
+- !private ["SE", "day"]
 - !private ["SE", "height"]
 - !private ["SE", "horizontal"]
 - ["SE", "init"]
@@ -592,7 +599,7 @@ depends-member:
 - ["15JTAppleCalendar0aB4ViewC", "dateGenerator"]
 - !private ["15JTAppleCalendar0aB4ViewC", "decelerationRate"]
 - ["15JTAppleCalendar0aB4ViewC", "decelerationRateMatchingScrollingMode"]
-- ["15JTAppleCalendar0aB4ViewC", "deinit"]
+- !private ["15JTAppleCalendar0aB4ViewC", "deinit"]
 - ["15JTAppleCalendar0aB4ViewC", "didEndScollCount"]
 - ["15JTAppleCalendar0aB4ViewC", "endOfMonthCache"]
 - ["15JTAppleCalendar0aB4ViewC", "endScrollTargetLocation"]
@@ -826,6 +833,7 @@ depends-member:
 - !private ["SY", "vertical"]
 - !private ["10Foundation20ReferenceConvertibleP", "date"]
 - !private ["10Foundation20ReferenceConvertibleP", "dateComponents"]
+- !private ["10Foundation20ReferenceConvertibleP", "day"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
 - !private ["So31UICollectionViewScrollDirectionV", "horizontal"]
@@ -1978,10 +1986,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
 - !private ["10Foundation14_MutableBoxingP", "date"]
 - !private ["10Foundation14_MutableBoxingP", "dateComponents"]
+- !private ["10Foundation14_MutableBoxingP", "day"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "a"]
 - !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "dateComponents"]
+- !private ["s21_ObjectiveCBridgeableP", "day"]
 - !private ["s21_ObjectiveCBridgeableP", "fast"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "horizontal"]
@@ -2027,6 +2037,7 @@ depends-nominal:
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation14DateComponentsV"
 - !private "So28UIScrollViewDecelerationRatea"
 - "Se"
 - "SE"

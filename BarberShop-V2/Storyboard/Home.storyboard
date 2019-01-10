@@ -245,6 +245,16 @@
             </objects>
             <point key="canvasLocation" x="317" y="885"/>
         </scene>
+        <!--bookingNav-->
+        <scene sceneID="bHW-69-fLM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Booking" referencedIdentifier="bookingNav" id="Dde-Fj-wvr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yNF-h0-Ggf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LL6-Ug-Kjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="988"/>
+        </scene>
         <!--ServiceID-->
         <scene sceneID="fMo-BD-AcC">
             <objects>
@@ -263,7 +273,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ser-E9-mAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="995"/>
+            <point key="canvasLocation" x="343" y="1240"/>
         </scene>
         <!--BookingID-->
         <scene sceneID="tEz-1J-Rrp">
@@ -480,11 +490,11 @@
                         <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IB2-BK-zkF" kind="relationship" relationship="viewControllers" id="7sx-Hs-qPT"/>
-                        <segue destination="xyv-uu-VKS" kind="relationship" relationship="viewControllers" id="iHy-Rb-WGL"/>
-                        <segue destination="Icr-IT-65T" kind="relationship" relationship="viewControllers" id="rBD-bh-qun"/>
-                        <segue destination="oxM-7E-VOk" kind="relationship" relationship="viewControllers" id="Z6r-PU-tta"/>
-                        <segue destination="NDP-5L-YmJ" kind="relationship" relationship="viewControllers" id="qe3-Ek-MWA"/>
+                        <segue destination="IB2-BK-zkF" kind="relationship" relationship="viewControllers" id="kNb-hH-tmB"/>
+                        <segue destination="xyv-uu-VKS" kind="relationship" relationship="viewControllers" id="I8d-0D-FlV"/>
+                        <segue destination="Icr-IT-65T" kind="relationship" relationship="viewControllers" id="0bm-aM-5Xo"/>
+                        <segue destination="Dde-Fj-wvr" kind="relationship" relationship="viewControllers" id="9vT-1X-zrL"/>
+                        <segue destination="NDP-5L-YmJ" kind="relationship" relationship="viewControllers" id="inh-Pf-gwL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ay3-qj-MAa" userLabel="First Responder" sceneMemberID="firstResponder"/>

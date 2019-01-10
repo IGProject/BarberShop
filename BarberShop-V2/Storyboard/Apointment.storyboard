@@ -114,16 +114,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxE-RG-QwG">
+                                                    <rect key="frame" x="61" y="74" width="3.3333333333333286" height="12"/>
+                                                    <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="1va-Z1-4fn" firstAttribute="centerX" secondItem="4RF-43-m0a" secondAttribute="centerX" id="H4G-Gt-Oz2"/>
+                                            <constraint firstItem="HxE-RG-QwG" firstAttribute="centerX" secondItem="4RF-43-m0a" secondAttribute="centerX" constant="1" id="IKZ-DX-kXE"/>
+                                            <constraint firstItem="HxE-RG-QwG" firstAttribute="centerY" secondItem="4RF-43-m0a" secondAttribute="centerY" constant="23" id="S1i-Rh-7gh"/>
                                             <constraint firstItem="sFs-yB-16r" firstAttribute="centerY" secondItem="4RF-43-m0a" secondAttribute="centerY" id="SpH-P6-WRg"/>
                                             <constraint firstItem="sFs-yB-16r" firstAttribute="centerX" secondItem="4RF-43-m0a" secondAttribute="centerX" id="VFr-0e-eOF"/>
                                             <constraint firstItem="1va-Z1-4fn" firstAttribute="centerY" secondItem="4RF-43-m0a" secondAttribute="centerY" id="iIf-0q-PHU"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="dateLabel" destination="1va-Z1-4fn" id="vTb-YU-cXr"/>
+                                            <outlet property="dotLabel" destination="HxE-RG-QwG" id="eyj-Cc-bMm"/>
                                             <outlet property="selectedView" destination="sFs-yB-16r" id="Gao-on-f14"/>
                                         </connections>
                                     </collectionViewCell>
@@ -330,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8a6-Ub-snP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492.75362318840581" y="159.78260869565219"/>
+            <point key="canvasLocation" x="492" y="159.60591133004928"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OvA-Qs-v08">
@@ -532,7 +542,6 @@
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="lsZ-gR-0PM">
                                                             <rect key="frame" x="5" y="5" width="305" height="101"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>

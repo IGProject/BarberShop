@@ -7,16 +7,19 @@
 //
 
 import UIKit
-
+import Kingfisher
 class NotificationCell: UITableViewCell,ConfigurableCell {
 
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var teamNameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var serviceLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var bodyLabel: UILabel!
+  @IBOutlet weak var typeLabel: UILabel!
+  @IBOutlet weak var teamNameLabel: UILabel!
+  @IBOutlet weak var dateLabel: UILabel!
+  @IBOutlet weak var teamProfileImg: UIImageView!
   
-  func configure(data: Booking) {
+  
+  
+  func configure(data: NotificationAlertResponse) {
     
     let dateFormate = DateFormatter()
     dateFormate.dateFormat = "dd"
@@ -27,15 +30,22 @@ class NotificationCell: UITableViewCell,ConfigurableCell {
     let dateStringFormatter = DateFormatter()
     dateStringFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
     
-    let dateString = dateStringFormatter.date(from: data.workTime)
-    let timeWorking = timeFormate.string(from: dateString!)
+    let url = URL(string: Domains.BaseURL)!
     
-    timeLabel.text = timeWorking
-    teamNameLabel.text = data.team.team
-    locationLabel.text = data.location.location
-    serviceLabel.text = data.service.service
-    statusLabel.text = data.statusNote
+    titleLabel.text = data.results[0].title
+    bodyLabel.text = data.results[0].body
+    typeLabel.text = data.results[0].type
+   // teamNameLabel.text = data.results[0].actionTeamBy.username
+    let urlImage = url.appendingPathComponent(data.results[0].actionTeamBy.teamProfile)
     
+    teamProfileImg.kf.setImage(with: urlImage)
+   // let dateString = dateStringFormatter.date(from: data.results[0].createdAt)
+//
+//    let timeWorking = timeFormate.string(from: dateString!)
+//
+ //   dateLabel.text = data.results[0].createdAt.trimmingCharacters(in: .illegalCharacters)
+
+//    
     
   }
    

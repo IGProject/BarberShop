@@ -24,13 +24,16 @@ class ApointmentTableViewCell: UITableViewCell,ConfigurableCell {
     
     let dateStringFormatter = DateFormatter()
     dateStringFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
+    dateStringFormatter.locale = Locale(identifier: "en_US_POSIX")
     
-    let dateString = dateStringFormatter.date(from: data.workTime)
-    let dateWorking = dateFormate.string(from: dateString!)
-    let timeWorking = timeFormate.string(from: dateString!)
+    if let dateString = dateStringFormatter.date(from: data.workTime ?? ""){
+      let dateWorking = dateFormate.string(from: dateString)
+      let timeWorking = timeFormate.string(from: dateString)
+      
+      dateLabel.text = dateWorking
+      timeLabel.text = timeWorking
+    }
     
-    dateLabel.text = dateWorking
-    timeLabel.text = timeWorking
     statusLabel.text = data.statusNote
     teamNameLabel.text = data.team.team
   }

@@ -323,6 +323,7 @@ extension SignUpViewController: UIImagePickerControllerDelegate,UINavigationCont
       
       //Crop Image
       let resizeImage = imageOrigin.crop(toWidth: 150.0, toHeight: 150.0)
+    
     // convert image to Data
       guard let imageData:Data = UIImageJPEGRepresentation( resizeImage!, 1.0) else { return }
     

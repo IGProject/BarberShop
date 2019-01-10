@@ -12,14 +12,14 @@ import Alamofire
 class NotificationsViewController: UIViewController {
     @IBOutlet weak var notificationTableView: UITableView!
   
-    var notificationItem = [Booking]()
+    var notificationItem = NotificationAlertResponse(count: 0, results: [])
     var userdefault = UserDefaults.standard
 
   
     override func viewDidLoad() {
         super.viewDidLoad()
+       setupTableView()
         setupNotificationItem()
-        setupTableView()
     }
   
   func setupNotificationItem(){
@@ -34,13 +34,15 @@ class NotificationsViewController: UIViewController {
   }
   
   func postNotification(notiEndPoint:URL,param:[String:Any]){
-    Alamofire.request(notiEndPoint, method: .post, parameters: param).validate().responseJSON {
+    Alamofire.request(notiEndPoint, method: .get, parameters: param).validate().responseJSON {
       switch $0.result {
       case .success(_):
         let dataJson = $0.data!
         do{
-          let notificationResponse = try JSONDecoder().decode(ApointmentResponse.self, from: dataJson)
-          self.notificationItem = notificationResponse.booking
+          let notificationResponse = try JSONDecoder().decode(NotificationAlertResponse.self, from: dataJson)
+          
+          self.notificationItem = NotificationAlertResponse(count: notificationResponse.count, results: notificationResponse.results)
+          
           self.notificationTableView.reloadData()
         }catch let err{
           print("err:\(err.localizedDescription)")
@@ -59,12 +61,13 @@ class NotificationsViewController: UIViewController {
 
 extension NotificationsViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notificationItem.count
+      return notificationItem.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let notificationCell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationCell
-      notificationCell.configure(data: notificationItem[indexPath.row])
+      
+        notificationCell.configure(data: notificationItem)
         return notificationCell
     }
     

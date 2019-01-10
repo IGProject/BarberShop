@@ -21,6 +21,12 @@ class ByLocationCollectionCell: UICollectionViewCell,ConfigurableCell {
     @IBOutlet weak var timeLocationLabel: UILabel!
     @IBOutlet weak var teamNameLocation: UILabel!
   
+  
+  @IBOutlet weak var nameTitleLabel: UILabel!
+  @IBOutlet weak var addressTitleLabel: UILabel!
+  @IBOutlet weak var phoneTitleLabel: UILabel!
+  @IBOutlet weak var timeTitleLabel: UILabel!
+  
   @IBOutlet weak var teamStack: UIStackView!
   
   @IBOutlet weak var bookingBtn: RoundButton!
@@ -47,7 +53,16 @@ class ByLocationCollectionCell: UICollectionViewCell,ConfigurableCell {
     }
     self.teamNameLocation.text = dataByLocation.team.count == 0 ? "": dataByLocation.team[0].username
     
+    self.nameTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.nameLb.rawValue, comment: "")
     
+    self.addressTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.addressLb.rawValue, comment: "")
+    
+    self.phoneTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.phoneLb.rawValue, comment: "")
+    
+    self.timeTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.timeLb.rawValue, comment: "")
+    
+    self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key:byLocation.bookingBtn.rawValue, comment: ""), for: .normal)
+    self.bookingBtn.fontSize = 15
   }
     
   @IBAction func LocationBookingTapped(_ sender: RoundButton) {

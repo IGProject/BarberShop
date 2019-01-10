@@ -39,20 +39,28 @@ extension ApointmentCalendarViewController: UITableViewDelegate {
     cell?.selectionStyle = .none
     
     let apointmentDidSelect = apointment[indexPath.row]
-    let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Apointment)
-    let apointmentDetail = storyBoard.instantiateViewController(withIdentifier: "ApointmentDetailTableViewController") as! ApointmentDetailTableViewController
-     apointmentDetail.teamNameString = apointmentDidSelect.team.team
-     apointmentDetail.dateString = apointmentDidSelect.workTime
-     apointmentDetail.locationString = apointmentDidSelect.location.location
-     apointmentDetail.serviceString = apointmentDidSelect.service.service
-     apointmentDetail.statusString = apointmentDidSelect.statusNote
-     apointmentDetail.bookId = apointmentDidSelect.id
-     apointmentDetail.locationId = apointmentDidSelect.location.id
-     apointmentDetail.serviceId = apointmentDidSelect.service.id
-     apointmentDetail.teamId = apointmentDidSelect.team.id
-     
+    if apointmentDidSelect.status {
+      print(apointmentDidSelect.statusNote)
+      let alertController = UIAlertController(title: "Alert Message", message: apointmentDidSelect.statusNote, preferredStyle: .alert)
+      alertController.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+      self.present(alertController, animated: true)
+    }else {
+      let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Apointment)
+      let apointmentDetail = storyBoard.instantiateViewController(withIdentifier: "ApointmentDetailTableViewController") as! ApointmentDetailTableViewController
+      apointmentDetail.teamNameString = apointmentDidSelect.team.team
+      apointmentDetail.dateString = apointmentDidSelect.workTime
+      apointmentDetail.locationString = apointmentDidSelect.location.location
+      apointmentDetail.serviceString = apointmentDidSelect.service.service
+      apointmentDetail.statusString = apointmentDidSelect.statusNote
+      apointmentDetail.bookId = apointmentDidSelect.id
+      apointmentDetail.locationId = apointmentDidSelect.location.id
+      apointmentDetail.serviceId = apointmentDidSelect.service.id
+      apointmentDetail.teamId = apointmentDidSelect.team.id
+      
+      self.navigationController?.pushViewController(apointmentDetail, animated: true)
+    }
     
-     self.navigationController?.pushViewController(apointmentDetail, animated: true)
+   
   
     
   }

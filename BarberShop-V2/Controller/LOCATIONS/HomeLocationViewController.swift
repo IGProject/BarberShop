@@ -10,7 +10,7 @@ import UIKit
 import MXSegmentedPager
 class HomeLocationViewController: MXSegmentedPagerController {
       @IBOutlet var headerView: UIView!
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         setupClearNavigation()
@@ -46,7 +46,8 @@ class HomeLocationViewController: MXSegmentedPagerController {
     }
     
     override func segmentedPager(_ segmentedPager: MXSegmentedPager, titleForSectionAt index: Int) -> String {
-        return ["By Location","Nearest"][index]
+      
+        return [LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.byLocation.rawValue, comment: ""),LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.nearest.rawValue, comment: "")][index]
     }
 }
 

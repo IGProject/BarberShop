@@ -15,6 +15,7 @@ enum ImageFormat {
 
 extension String {
   
+  //MARK:convertImage
   func convertImageToBase64String(format:ImageFormat,image:UIImage) -> String? {
     var imageData:Data?
     switch format {
@@ -23,4 +24,13 @@ extension String {
     }
     return imageData?.base64EncodedString()
   }
+  
+  //MARK:localizableString
+  func localizableString(loc:String) -> String {
+    let path = Bundle.main.path(forResource: loc, ofType: "lproj")!
+    let bundle = Bundle(path: path)
+    return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+  }
+  
+  
 }

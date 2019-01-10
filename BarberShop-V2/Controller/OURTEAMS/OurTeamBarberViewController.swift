@@ -12,7 +12,12 @@ import Alamofire
 
 
 class OurTeamBarberViewController: UIViewController{
-    @IBOutlet weak var teamCollectionView: UICollectionView!
+  @IBOutlet weak var teamCollectionView: UICollectionView!{
+    didSet{
+      teamCollectionView.delegate = self
+      teamCollectionView.dataSource = self
+    }
+  }
   
   //MARK: Instance Properties
   
@@ -21,13 +26,13 @@ class OurTeamBarberViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setCollection()
+      // setCollection()
         setupListTeam()
         setupClearNavigation()
     }
  
-  
-  private func setCollection(){
+ 
+   func setCollection(){
     teamCollectionView.delegate = self
     teamCollectionView.dataSource = self
   }
@@ -47,7 +52,7 @@ class OurTeamBarberViewController: UIViewController{
         let jsonDecoder = JSONDecoder()
           let teamsResponse = try jsonDecoder.decode(Teams.self, from: json!)
           self.itemsTeam = Teams(length: teamsResponse.length, results: teamsResponse.results)
-      self.teamCollectionView.reloadData()
+       self.teamCollectionView.reloadData()
         
           
         }catch let err {

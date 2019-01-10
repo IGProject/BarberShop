@@ -17,7 +17,7 @@ struct BookingResponse: Codable {
 
 struct Booking: Codable {
   let id: Int
-  let workTime: String
+  let workTime: String!
   let status: Bool
   let statusNote: String
   let team: Team

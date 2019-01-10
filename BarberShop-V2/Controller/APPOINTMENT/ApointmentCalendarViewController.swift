@@ -15,6 +15,7 @@ class ApointmentCalendarViewController: UIViewController {
     @IBOutlet weak var tableViewData: UITableView!
     let userDefault = UserDefaults.standard
     let formatter = DateFormatter()
+  var dateFutureString:String!
   
     var bookingItems = [Booking]()
     var apointment = [Booking]()
@@ -32,7 +33,7 @@ class ApointmentCalendarViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    print("reload data\(Domains.date)")
+    
       setupCalendarView()
       setupApointment()
       tableViewData.reloadData()
@@ -61,6 +62,9 @@ class ApointmentCalendarViewController: UIViewController {
   @IBAction func addBookingTapped(_ sender: RoundButton) {
     let storyboard: UIStoryboard = UIStoryboard(storyboard: .Booking)
     let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
+    
+   booking.dateTimeString = dateFutureString
+  
     navigationController?.pushViewController(booking, animated: true)
   }
   

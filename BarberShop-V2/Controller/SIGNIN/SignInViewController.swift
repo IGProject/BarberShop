@@ -27,7 +27,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
   //MARK:create Object
   var signInResponse = SignInResponse(booking: [], response: "", userToken: "", userProfile:[], notificationCount: 0)
   
-  var userSocailRespone = UserSocialResponse.init(response: false, notificationCount: 0, userData:UserData(id: 0, userID: "", username: "", image: "", token: "", email: "", type: 0, userToken: ""))
+  var userSocailRespone = UserSocialResponse(response: false, notificationCount: 0, userData:UserData(id: 0, userID: "", username: "", image: "", token: "", email: "", type: 0, userToken: ""))
   
     private let readPermissions: [ReadPermission] = [ .publicProfile, .email, .userFriends, .custom("user_posts") ]
   
@@ -96,7 +96,6 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
                 
                 loginManager.logIn(readPermissions: self.readPermissions, viewController: self, completion: self.didReceiveFacebookLoginResult)
                 return
-              
             case 1:
               //google
                sender.stopAnimationWithCompletionTypeAndBackToDefaults(completionType: .none, backToDefaults: true, complete: nil)
@@ -208,6 +207,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
             self.facebookUser = UserSocial(username: response.dictionaryValue!["name"]! as! String, email: response.dictionaryValue!["email"]! as! String, token: result.token, user_id: response.dictionaryValue!["id"]! as! String, image: imgURLString.absoluteString , type: .facebook)
 
             let param:[String:Any] = [
+           
               "username":self.facebookUser.username,
               "email":self.facebookUser.email,
               "token":self.facebookUser.token,
@@ -299,7 +299,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
   }
   
   private func postUserGoogle(endPoint:URL,param:[String:Any]){
-    Alamofire.request(endPoint, method: .post, parameters: param).validate(statusCode: 200..<600).responseJSON { response in
+    Alamofire.request(endPoint, method: .post, parameters: param).validate().responseJSON { response in
       switch response.result {
       case .success(_):
         
@@ -317,6 +317,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
           
           self.userDefault.set(self.userSocailRespone.userData.id, forKey: UserKeys.userId.rawValue)
           
+          self.userDefault.set(self.userSocailRespone.userData.type, forKey: UserKeys.type.rawValue)
           let storyboard:UIStoryboard = UIStoryboard(storyboard: .Home)
           let home = storyboard.instantiateViewController(withIdentifier: "CustomTabarViewController") as! MainTabarViewController
           self.navigationController?.present(home, animated: true)

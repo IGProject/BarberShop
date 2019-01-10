@@ -9,19 +9,20 @@
 import Foundation
 struct Domains {
   
-  static let Dev = "http://192.168.2.247"
-  //static let Dev = "http://96.9.66.134:154"
+  //static let Dev = "http://192.168.2.247"
+  static let Dev = "http://96.9.66.134:154"
   
   private struct Routes {
-     static let api = ":8090"
-   // static let api = "/BarberShopRest"
+    // static let api = ":8090"
+    static let api = "/BarberShopRest"
   }
+  
    static let Domain = Domains.Dev
    static let Route = Routes.api
    static let BaseURL = Domain + Route
-   static var date = Date()
   
   
+
   enum HTTPHeaderField: String {
     case authentication = "Authorization"
     case contentType = "Content-Type"

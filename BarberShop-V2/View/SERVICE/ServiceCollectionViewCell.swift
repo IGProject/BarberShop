@@ -20,6 +20,12 @@ class ServiceCollectionCell: UICollectionViewCell,ConfigurableCell {
     @IBOutlet weak var des_service: UILabel!
     @IBOutlet weak var bookingBtn: RoundButton!
   
+  
+  @IBOutlet weak var serviceTitleLabel: UILabel!
+  @IBOutlet weak var descripTitleLabel: UILabel!
+  @IBOutlet weak var pricesTitleLabel: UILabel!
+  @IBOutlet weak var currencyLabel: UILabel!
+  
   var dataService:Services.Results? = nil
   var delegate: ServiceBookingCellDelegate?
   
@@ -32,6 +38,17 @@ class ServiceCollectionCell: UICollectionViewCell,ConfigurableCell {
     self.price_service.text = services.price
     self.des_service.text = services.description
     self.dataService = services
+    
+    self.serviceTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.serviceLb.rawValue, comment: "")
+    
+    self.descripTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.descriptLb.rawValue, comment: "")
+    
+    self.pricesTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.pricesLb.rawValue, comment: "")
+    
+    self.currencyLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.dollarLb.rawValue, comment: "")
+    
+    self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.bookingBtn.rawValue, comment: ""), for: .normal)
+    self.bookingBtn.fontSize = 15
   }
   
   @IBAction func ServiceBookingTapped(_ sender: RoundButton) {

@@ -20,7 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="O62-0a-Mn3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="64v-kg-jsB">
                                     <size key="itemSize" width="375" height="284"/>
@@ -159,6 +159,8 @@
                                             <outlet property="bookingBtn" destination="gXb-5m-b9m" id="dt2-hB-eN0"/>
                                             <outlet property="imageOurTeam" destination="pT7-fM-6HZ" id="tHH-VU-Ud5"/>
                                             <outlet property="phoneTeam" destination="ncG-qL-1oV" id="ZSQ-pB-NL3"/>
+                                            <outlet property="phoneTitleLabel" destination="6ca-uZ-VUs" id="SuW-Rv-JKV"/>
+                                            <outlet property="userTitleLabel" destination="AIy-Ua-X0s" id="G5b-Bw-3Q3"/>
                                             <outlet property="usernameTeam" destination="bp7-zt-dTI" id="7Tn-M2-wkj"/>
                                         </connections>
                                     </collectionViewCell>
@@ -371,12 +373,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionLabel" destination="HJA-i4-Au3" id="lWB-Yz-GzJ"/>
+                        <outlet property="descriptionTitleLabel" destination="K3C-AI-vA2" id="gGv-dO-S3o"/>
                         <outlet property="emailLabel" destination="4af-MX-lEG" id="66L-Jm-Vvk"/>
+                        <outlet property="emailTitleLabel" destination="46E-hM-G8H" id="H5A-OF-idO"/>
                         <outlet property="googleMapView" destination="2Xi-IJ-TO7" id="C3Q-Ul-7hM"/>
                         <outlet property="imageTeam" destination="Koz-m0-0z0" id="ivp-sR-h33"/>
                         <outlet property="navigationItemTitle" destination="bhx-kz-QDD" id="bnu-Ds-UcN"/>
+                        <outlet property="phoneNumTitleLabel" destination="NUA-z4-k0m" id="C64-Pd-DEs"/>
                         <outlet property="phoneNumberLabel" destination="CUC-Hb-0nz" id="eAg-q4-Siq"/>
                         <outlet property="usernameLabel" destination="2Lq-WC-lSG" id="vdM-ab-S3U"/>
+                        <outlet property="usernameTitleLabel" destination="nLS-0W-YAb" id="ktH-Ys-KOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Au-sF-ICs" userLabel="First Responder" sceneMemberID="firstResponder"/>

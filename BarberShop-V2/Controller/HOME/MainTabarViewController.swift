@@ -9,14 +9,19 @@
 import UIKit
 
 class MainTabarViewController: UITabBarController {
-
-  var tabBarIteam = UITabBarItem()
   
     override func viewDidLoad() {
         super.viewDidLoad()
       
-    
+      setupTabar()
     }
 
+  override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+    self.title = item.title
+  }
+  
+  func setupTabar(){
+    
+  }
  
 }

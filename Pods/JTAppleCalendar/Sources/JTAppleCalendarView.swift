@@ -125,7 +125,8 @@ open class JTAppleCalendarView: UICollectionView {
         anchorDate = nil
         
         // Ensure date is within valid boundary
-        let components = calendar.dateComponents([.year, .month, .day], from: date)
+      var components = calendar.dateComponents([.year, .month, .day], from: date)
+        components.day! += 1
         let firstDayOfDate = calendar.date(from: components)!
         if !((firstDayOfDate >= startOfMonthCache!) && (firstDayOfDate <= endOfMonthCache!)) { return retval }
         

@@ -15,14 +15,13 @@ protocol TeamBookingCellDelegate {
 
 class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
   
-  @IBOutlet weak var imageOurTeam: UIImageView!{
-    didSet{
-      imageOurTeam.image = #imageLiteral(resourceName: "4-style")
-    }
-  }
+    @IBOutlet weak var imageOurTeam: UIImageView!
     @IBOutlet weak var usernameTeam: UILabel!
     @IBOutlet weak var phoneTeam: UILabel!
-    @IBOutlet weak var bookingBtn: RoundButton!
+    @IBOutlet weak var userTitleLabel: UILabel!
+  @IBOutlet weak var phoneTitleLabel: UILabel!
+  @IBOutlet weak var bookingBtn: RoundButton!
+  
   var dataItem:Teams.Results? = nil
   var delegate: TeamBookingCellDelegate?
   
@@ -34,6 +33,14 @@ class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
     self.usernameTeam.text = team.username
     self.phoneTeam.text = team.phone
     dataItem = team
+    
+    //Title
+    self.userTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeam.userNameLb.rawValue, comment: "")
+    self.phoneTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeam.phoneNumLb.rawValue, comment: "")
+    
+    self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeam.bookBtnTeam.rawValue, comment: ""), for: .normal)
+    self.bookingBtn.fontSize = 15
+    
   }
   
   @IBAction func BookingTeamTapped(_ sender: RoundButton) {

@@ -19,9 +19,12 @@ class OurTeamDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var imageTeam: UIImageView!
     @IBOutlet weak var googleMapView: GMSMapView!
-    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var navigationItemTitle: UINavigationItem!
   
+  @IBOutlet weak var usernameTitleLabel: UILabel!
+  @IBOutlet weak var phoneNumTitleLabel: UILabel!
+  @IBOutlet weak var emailTitleLabel: UILabel!
+  @IBOutlet weak var descriptionTitleLabel: UILabel!
   
   //MARK: Properties
   var usernameString:String!
@@ -38,17 +41,32 @@ class OurTeamDetailViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
       setupViews()
+      setupTitleViews()
       setupGoogleMap()
       setupClearNavigation()
     }
+  
+  
+  private func setupTitleViews(){
+    self.usernameTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.usernameLb.rawValue, comment: "")
+    
+    self.phoneNumTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.phoneNumLb.rawValue, comment: "")
+    
+    self.emailTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.emailLb.rawValue, comment: "")
+    
+    self.descriptionTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.descriptLb.rawValue, comment: "")
+  }
   
   @IBAction func backItemTapped(_ sender: UIBarButtonItem) {
       navigationController?.popViewController(animated: true)
   }
   
   private func setupViews(){
-    navigationItemTitle.title = usernameString
+    
+    navigationItemTitle.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.navigaTeamDetail.rawValue, comment: "")
+    
     usernameLabel.text = usernameString
     phoneNumberLabel.text = phoneString
     emailLabel.text = emailString

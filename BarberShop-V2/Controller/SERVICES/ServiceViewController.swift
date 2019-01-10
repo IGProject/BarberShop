@@ -13,6 +13,7 @@ class ServiceViewController: UIViewController {
   //MARK: Outlet Connection
   @IBOutlet weak var serviceCollectionView: UICollectionView!
   
+  
   //MARK: Properties
   var itemServices = [Services.Results]()
   var itemsService = Services(length:0,results:[])

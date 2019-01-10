@@ -17,6 +17,11 @@ class ServiceDetailViewController: UIViewController {
     @IBOutlet weak var des_service: UILabel!
     @IBOutlet weak var navigationTitle: UINavigationItem!
   
+  @IBOutlet weak var titleServiceLabel: UILabel!
+  @IBOutlet weak var priceTitleLabel: UILabel!
+  @IBOutlet weak var pointTitleLabel: UILabel!
+  @IBOutlet weak var descripTitleLabel: UILabel!
+  
   @IBOutlet weak var navigationBar: UINavigationBar!
   @IBOutlet weak var serviceDetailCollectionView: UICollectionView!
   
@@ -36,6 +41,29 @@ class ServiceDetailViewController: UIViewController {
       setupViewService()
     }
   
+  private func setupViewService(){
+    
+    navigationTitle.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.titleLb.rawValue, comment: "")
+    
+    title_service.text = titleServiceString
+    
+    price_service.text = priceServiceString
+    
+    point_service.text = pointServiceString
+    
+    des_service.text = desServiceString
+    
+    titleServiceLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.titleLb.rawValue, comment: "")
+    
+    priceTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.pricesLb.rawValue, comment: "")
+    
+    pointTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.pointLb.rawValue, comment: "")
+    
+    descripTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.descriptLb.rawValue, comment: "")
+    
+    
+  }
+  
   private func setupClearNavigation() {
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -48,13 +76,7 @@ class ServiceDetailViewController: UIViewController {
     
   }
   
-  private func setupViewService(){
-    navigationTitle.title = titleServiceString
-    title_service.text = titleServiceString
-    price_service.text = priceServiceString
-    point_service.text = pointServiceString
-    des_service.text = desServiceString
-  }
+ 
   
   @IBAction func backTapped(_ sender: UIBarButtonItem) {
     navigationController?.popViewController(animated: true)
