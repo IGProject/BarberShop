@@ -16,6 +16,12 @@ class HistoryCell: UITableViewCell,ConfigurableCell{
     @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
   
+  
+  @IBOutlet weak var worktimeTitleLb: UILabel!
+  @IBOutlet weak var teamTitleLb: UILabel!
+  @IBOutlet weak var locationTitleLb: UILabel!
+  @IBOutlet weak var serviceTitleLb: UILabel!
+  
   func configure(data: Booking) {
     
     let timeFormate = DateFormatter()
@@ -35,6 +41,15 @@ class HistoryCell: UITableViewCell,ConfigurableCell{
     locationLabel.text = data.location.location
     serviceLabel.text = data.service.service
     statusLabel.text = data.statusNote
+    
+    //Label Title
+    worktimeTitleLb.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: HistoryTable.worktimeTitle.rawValue, comment: "")
+    
+    teamTitleLb.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: HistoryTable.teamTitle.rawValue, comment: "")
+    
+    locationTitleLb.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: HistoryTable.locationTitle.rawValue, comment: "")
+    
+    serviceTitleLb.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: HistoryTable.serviceTitle.rawValue, comment: "")
     
   }
 }

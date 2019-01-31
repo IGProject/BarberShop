@@ -21,7 +21,7 @@ class ProductViewController: UIViewController {
 
        setupCollectionView()
        getDataProduct()
-       setupClearNavigation()
+      // setupClearNavigation()
     }
   private func setupCollectionView(){
     productCollectionView.delegate = self
@@ -55,17 +55,17 @@ class ProductViewController: UIViewController {
     }
   }
   
-  func setupClearNavigation() {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-  }
-    
-    @IBAction func backTapped(_ sender: UIBarButtonItem) {
-        
-         navigationController?.dismiss(animated: true)
-    }
+//  func setupClearNavigation() {
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//  }
+  
+//    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+//
+//         navigationController?.dismiss(animated: true)
+//    }
 }
 
 extension ProductViewController: UICollectionViewDelegate{
@@ -87,7 +87,7 @@ extension ProductViewController: UICollectionViewDelegate{
 
 extension ProductViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfColumns: CGFloat = 2
+      let numberOfColumns: CGFloat = 2
         let width = collectionView.frame.size.width
         let xInsets:CGFloat = 10
         let cellSpacing: CGFloat = 5

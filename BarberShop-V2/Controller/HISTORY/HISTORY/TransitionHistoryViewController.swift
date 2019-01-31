@@ -11,8 +11,9 @@ import Alamofire
 
 class TransitionHistoryViewController: UIViewController {
     @IBOutlet weak var historyTableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
   
-   var transitionItem = [Booking]()
+  var transitionItem = [Booking]()
    var userdefault = UserDefaults.standard
   
     
@@ -21,13 +22,25 @@ class TransitionHistoryViewController: UIViewController {
       
       setupTransitionItem()
       setupTableView()
+      setNavigationBackground()
     }
+  
+  func setNavigationBackground(){
+    navigationBar.setBackgroundImage(UIImage(), for: .default)
+    navigationBar.shadowImage = UIImage()
+    navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+  }
   
   func setupTableView(){
     historyTableView.delegate = self
     historyTableView.dataSource = self
   }
   
+  
+  @IBAction func backTapped(_ sender: UIBarButtonItem) {
+     self.dismiss(animated: true)
+  }
   func setupTransitionItem(){
     let userId = self.userdefault.object(forKey: UserKeys.userId.rawValue) as? Int
     let notificationEndPoint = URL(string: Domains.BaseURL + "/bookItem/tranHistory")!

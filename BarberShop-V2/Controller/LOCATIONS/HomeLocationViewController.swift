@@ -13,18 +13,18 @@ class HomeLocationViewController: MXSegmentedPagerController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupClearNavigation()
+      //  setupClearNavigation()
         configContentPager()
     }
     
     
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    }
-    
+//    func setupClearNavigation() {
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.backgroundColor = .white
+//        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//    }
+//    
     
     
     func configContentPager(){
@@ -36,12 +36,13 @@ class HomeLocationViewController: MXSegmentedPagerController {
             segmentedPager.parallaxHeader.height = 63
             
         }
+        
         segmentedPager.segmentedControl.selectionStyle = .fullWidthStripe
         segmentedPager.segmentedControl.selectionIndicatorHeight = 2
         segmentedPager.segmentedControl.selectionIndicatorColor = .white
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
-        segmentedPager.segmentedControl.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-        segmentedPager.segmentedControl.titleTextAttributes = [kCTForegroundColorAttributeName : UIColor(displayP3Red: 142/255, green: 174/255, blue: 204/255, alpha: 1)]
+        segmentedPager.segmentedControl.backgroundColor = UIColor(red: 0/255, green: 105/255, blue: 92/255, alpha: 1.0)
+        segmentedPager.segmentedControl.titleTextAttributes = [kCTForegroundColorAttributeName : UIColor.white]
         segmentedPager.segmentedControl.selectedTitleTextAttributes = [kCTForegroundColorAttributeName : UIColor.white]
     }
     

@@ -35,7 +35,7 @@ class MapLocationViewController: UIViewController {
         super.viewDidLoad()
         setupGoogleMapMarkerInit()
         setupClearNavigation()
-      getLocationDetail()
+         getLocationDetail()
     }
   
   
@@ -52,7 +52,7 @@ class MapLocationViewController: UIViewController {
     mapItemTitle.title = address
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.backgroundColor = .clear
+    self.navigationController?.navigationBar.backgroundColor = .white
     UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
   }
   

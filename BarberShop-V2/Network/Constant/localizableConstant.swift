@@ -91,6 +91,15 @@ enum ApointmentBarber:String {
  case statusLb = "statusApointmentKey"
  case teamLb = "teamApointmentKey"
   case timeLb = "timeApointmentKey"
+  
+ case mondeyKey = "mondayKey"
+ case tuesdayKey = "tuesdayKey"
+ case wednesdayKey = "wednesdayKey"
+ case thursdayKey = "thursdayKey"
+ case fridayKey = "fridayKey"
+ case satursdayKey = "satursdayKey"
+ case sundayKey = "sundayKey"
+  
 }
 
 enum ApointmentDetail:String {
@@ -121,4 +130,18 @@ case beforeLb = "beforeLbKey"
 case laterLb = "laterLbKey"
 case navTitle = "navTitleKey"
 case saveItemTitle = "saveItemTitleKey"
+case notificationTitle = "notificationTitleKey"
+}
+
+enum HistoryTable:String {
+  case historyTitle = "historyTitleLbKey"
+  case notificationTitle = "notificationTitleLbKey"
+  case worktimeTitle = "worktimeTitleLbKey"
+  case teamTitle = "teamTitleLbKey"
+  case locationTitle = "locationTitleLbKey"
+  case serviceTitle = "serviceTitleLbKey"
+  case titleLb = "titleLbKey"
+  case bodyLb = "bodyLbKey"
+  case typeLb = "typeLbKey"
+
 }

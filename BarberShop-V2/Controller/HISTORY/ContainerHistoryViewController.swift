@@ -15,6 +15,7 @@ class ContainerHistoryViewController: MXSegmentedPagerController {
         super.viewDidLoad()
         configContentPager()
       setupClearNavigation()
+    
     }
   func setupClearNavigation() {
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -43,6 +44,6 @@ class ContainerHistoryViewController: MXSegmentedPagerController {
     }
     
     override func segmentedPager(_ segmentedPager: MXSegmentedPager, titleForSectionAt index: Int) -> String {
-        return ["Transition History","Notification"][index]
+        return ["Service","Product","Hair Style"][index]
     }
 }

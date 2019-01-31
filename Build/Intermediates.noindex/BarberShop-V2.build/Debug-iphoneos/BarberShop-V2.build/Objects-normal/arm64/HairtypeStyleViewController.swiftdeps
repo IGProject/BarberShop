@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["13BarberShop_V227HairTypeStyleViewControllerC", ""]
 provides-dynamic-lookup:
+- "backTapped"
 - "collectionView"
 - "styleTypeCollectionView"
 - "viewDidLoad"
@@ -14,6 +15,7 @@ depends-top-level:
 - !private "-"
 - !private "/"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - !private "CGFloat"
 - "CGSize"
 - !private "FloatLiteralType"
@@ -22,6 +24,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "ListHairTypeDataSource"
 - "String"
+- "UIBarButtonItem"
 - "UICollectionView"
 - "UICollectionViewDelegate"
 - "UICollectionViewDelegateFlowLayout"
@@ -72,6 +75,8 @@ depends-member:
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "listHairTypeDataSource"]
 - !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "render"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
@@ -117,6 +122,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "listHairTypeDataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "render"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -172,6 +179,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "listHairTypeDataSource"]
 - !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "render"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -229,6 +238,8 @@ depends-member:
 - !private ["SQ", "layer"]
 - !private ["SQ", "listHairTypeDataSource"]
 - !private ["SQ", "map"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "popViewController"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "render"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
@@ -262,9 +273,11 @@ depends-member:
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "IndexPath"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "ListHairTypeDataSource"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "String"]
+- ["13BarberShop_V227HairTypeStyleViewControllerC", "UIBarButtonItem"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "UICollectionView"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "UICollectionViewLayout"]
 - !private ["13BarberShop_V227HairTypeStyleViewControllerC", "UIColor"]
+- ["13BarberShop_V227HairTypeStyleViewControllerC", "backTapped"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "collectionView"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "deinit"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "imageStyleTypeString"]
@@ -272,6 +285,7 @@ depends-member:
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "init"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "listHairTypeDataSource"]
+- !private ["13BarberShop_V227HairTypeStyleViewControllerC", "navigationController"]
 - !private ["13BarberShop_V227HairTypeStyleViewControllerC", "render"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "scrollViewDidEndDecelerating"]
@@ -291,21 +305,6 @@ depends-member:
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "viewDidLoad"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "viewForZooming"]
 - ["13BarberShop_V227HairTypeStyleViewControllerC", "viewForZoomingInScrollView"]
-- !private ["7RxCocoa13HasDataSourceP", "cellForItem"]
-- !private ["7RxCocoa13HasDataSourceP", "dataSource"]
-- !private ["7RxCocoa13HasDataSourceP", "delegate"]
-- !private ["7RxCocoa13HasDataSourceP", "frame"]
-- !private ["7RxCocoa13HasDataSourceP", "reloadData"]
-- !private ["7RxCocoa11HasDelegateP", "cellForItem"]
-- !private ["7RxCocoa11HasDelegateP", "dataSource"]
-- !private ["7RxCocoa11HasDelegateP", "delegate"]
-- !private ["7RxCocoa11HasDelegateP", "frame"]
-- !private ["7RxCocoa11HasDelegateP", "reloadData"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "cellForItem"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "dataSource"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "delegate"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "frame"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "reloadData"]
 - !private ["SH", "CGSize"]
 - ["SH", "ListHairTypeDataSource"]
 - ["SH", "String"]
@@ -328,6 +327,8 @@ depends-member:
 - !private ["SH", "layer"]
 - !private ["SH", "listHairTypeDataSource"]
 - !private ["SH", "map"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "popViewController"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "render"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
@@ -349,9 +350,6 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "white"]
-- !private ["7RxCocoa16KVORepresentableP", "init"]
-- !private ["7RxCocoa16KVORepresentableP", "size"]
-- !private ["7RxCocoa16KVORepresentableP", "width"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "width"]
 - !private ["13BarberShop_V222ListHairTypeDataSourceC", "deinit"]
@@ -379,6 +377,8 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "listHairTypeDataSource"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "render"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -415,6 +415,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "listHairTypeDataSource"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "popViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "render"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -445,9 +447,11 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "ListHairTypeDataSource"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UICollectionView"]
 - ["So8NSObjectC", "UICollectionViewLayout"]
 - !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "backTapped"]
 - !private ["So8NSObjectC", "borderColor"]
 - !private ["So8NSObjectC", "borderWidth"]
 - !private ["So8NSObjectC", "cellForItem"]
@@ -464,6 +468,8 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "listHairTypeDataSource"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "popViewController"]
 - !private ["So8NSObjectC", "reloadData"]
 - ["So8NSObjectC", "render"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
@@ -506,6 +512,8 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "listHairTypeDataSource"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "render"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
@@ -535,55 +543,10 @@ depends-member:
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "reloadData"]
-- !private ["13BarberShop_V212OptionalTypeP", "dataSource"]
-- !private ["13BarberShop_V212OptionalTypeP", "delegate"]
-- !private ["13BarberShop_V212OptionalTypeP", "reloadData"]
 - ["Sk", "init"]
 - !private ["Sk", "map"]
 - ["Sm", "init"]
 - !private ["Sm", "map"]
-- !private ["7RxSwift18ReactiveCompatibleP", "CGSize"]
-- ["7RxSwift18ReactiveCompatibleP", "ListHairTypeDataSource"]
-- ["7RxSwift18ReactiveCompatibleP", "String"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderWidth"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cellForItem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cgColor"]
-- ["7RxSwift18ReactiveCompatibleP", "collectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dataSource"]
-- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "frame"]
-- !private ["7RxSwift18ReactiveCompatibleP", "hairTypeString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "imageStyleTypeString"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedView"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "layer"]
-- !private ["7RxSwift18ReactiveCompatibleP", "listHairTypeDataSource"]
-- !private ["7RxSwift18ReactiveCompatibleP", "reloadData"]
-- !private ["7RxSwift18ReactiveCompatibleP", "render"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidChangeAdjustedContentInset"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndScrollingAnimation"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScroll"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidZoom"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewShouldScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillEndDragging"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "styleTypeCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZoomingInScrollView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "white"]
 - ["ST", "init"]
 - !private ["ST", "map"]
 - !private ["13BarberShop_V215StoryboardBasedP", "CGSize"]
@@ -598,6 +561,8 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "init"]
 - !private ["13BarberShop_V215StoryboardBasedP", "init"]
 - !private ["13BarberShop_V215StoryboardBasedP", "listHairTypeDataSource"]
+- !private ["13BarberShop_V215StoryboardBasedP", "navigationController"]
+- !private ["13BarberShop_V215StoryboardBasedP", "popViewController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "render"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewDidChangeAdjustedContentInset"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewDidEndDecelerating"]
@@ -646,6 +611,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "listHairTypeDataSource"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "popViewController"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "render"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
@@ -685,6 +652,7 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "listHairTypeDataSource"]
+- !private ["So24UICollectionViewDelegateP", "navigationController"]
 - !private ["So24UICollectionViewDelegateP", "render"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So24UICollectionViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -713,6 +681,7 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "listHairTypeDataSource"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "render"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewDidEndDecelerating"]
@@ -746,6 +715,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "listHairTypeDataSource"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "popViewController"]
 - !private ["So18UIContentContainerP", "render"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -799,6 +770,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "listHairTypeDataSource"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "popViewController"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "render"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -836,6 +809,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
 - !private ["So30UIFocusItemScrollableContainerP", "frame"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
+- !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - ["So30UIPasteConfigurationSupportingP", "ListHairTypeDataSource"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
@@ -853,6 +827,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "listHairTypeDataSource"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "render"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -878,9 +854,11 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "ListHairTypeDataSource"]
 - ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UICollectionView"]
 - ["So11UIResponderC", "UICollectionViewLayout"]
 - !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "backTapped"]
 - !private ["So11UIResponderC", "cellForItem"]
 - ["So11UIResponderC", "collectionView"]
 - !private ["So11UIResponderC", "dataSource"]
@@ -893,6 +871,8 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "listHairTypeDataSource"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "popViewController"]
 - !private ["So11UIResponderC", "reloadData"]
 - ["So11UIResponderC", "render"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
@@ -930,6 +910,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "listHairTypeDataSource"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "popViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "render"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
@@ -965,6 +947,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "listHairTypeDataSource"]
+- !private ["So20UIScrollViewDelegateP", "navigationController"]
 - !private ["So20UIScrollViewDelegateP", "render"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
@@ -1000,6 +983,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "listHairTypeDataSource"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "popViewController"]
 - !private ["So16UIStateRestoringP", "render"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -1036,6 +1021,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "listHairTypeDataSource"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "popViewController"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - !private ["So18UITraitEnvironmentP", "render"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1073,6 +1060,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "listHairTypeDataSource"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "popViewController"]
 - !private ["So23UIUserActivityRestoringP", "reloadData"]
 - !private ["So23UIUserActivityRestoringP", "render"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1104,10 +1093,12 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "ListHairTypeDataSource"]
 - ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UICollectionView"]
 - ["So16UIViewControllerC", "UICollectionViewLayout"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "backTapped"]
 - ["So16UIViewControllerC", "collectionView"]
 - ["So16UIViewControllerC", "imageStyleTypeString"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
@@ -1115,6 +1106,8 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "listHairTypeDataSource"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "popViewController"]
 - ["So16UIViewControllerC", "render"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1168,6 +1161,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "listHairTypeDataSource"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "render"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1218,11 +1213,7 @@ depends-nominal:
 - "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "13BarberShop_V227HairTypeStyleViewControllerC"
-- !private "7RxCocoa13HasDataSourceP"
-- !private "7RxCocoa11HasDelegateP"
-- !private "7RxCocoa21HasPrefetchDataSourceP"
 - "SH"
-- !private "7RxCocoa16KVORepresentableP"
 - !private "10Kingfisher0A10CompatibleP"
 - "13BarberShop_V222ListHairTypeDataSourceC"
 - "SM"
@@ -1235,10 +1226,8 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
 - "Sk"
 - "Sm"
-- "7RxSwift18ReactiveCompatibleP"
 - "ST"
 - "13BarberShop_V215StoryboardBasedP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1259,6 +1248,7 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
+- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1280,7 +1270,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
@@ -1289,7 +1278,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/arm64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -1314,9 +1302,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -1332,34 +1317,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -1384,6 +1364,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -1392,6 +1373,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -1422,6 +1404,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -1444,12 +1427,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -1477,6 +1460,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -1484,7 +1468,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
@@ -1493,7 +1476,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -1525,11 +1507,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -1550,7 +1529,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/module.modulemap"
@@ -1573,4 +1551,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0402fab2e0a3756428a6b0a7ae09b724"
+interface-hash: "9776c678b527b2475a7657794292686e"

@@ -62,6 +62,8 @@ extension ByLocationViewController: LocationBookingCellDelegate{
       booking.locationId = data.id
       booking.teamName = team.team.count == 0 ? "": team.team[0].username
       booking.teamId = team.team.count == 0 ? 0: team.team[0].id
+    
+      booking.hidesBottomBarWhenPushed = true
       navigationController?.pushViewController(booking, animated: true)
     
   }

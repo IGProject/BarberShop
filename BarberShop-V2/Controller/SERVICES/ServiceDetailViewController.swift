@@ -36,7 +36,7 @@ class ServiceDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      setupClearNavigation()
+    //  setupClearNavigation()
       setCollection()
       setupViewService()
     }
@@ -64,12 +64,12 @@ class ServiceDetailViewController: UIViewController {
     
   }
   
-  private func setupClearNavigation() {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-     self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-  }
+  //private func setupClearNavigation() {
+   // self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+   // self.navigationController?.navigationBar.shadowImage = UIImage()
+    // self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+   // UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+  //}
   private func setCollection(){
     serviceDetailCollectionView.delegate = self
     serviceDetailCollectionView.dataSource = self
@@ -109,7 +109,7 @@ extension ServiceDetailViewController: UICollectionViewDelegate {
 
 extension ServiceDetailViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfColumns: CGFloat = 2
+      let numberOfColumns: CGFloat = CGFloat(imageDetail.count)
         let width = collectionView.frame.size.width
         let xInsets:CGFloat = 10
         let cellSpacing: CGFloat = 5

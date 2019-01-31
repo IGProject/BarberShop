@@ -7,10 +7,7 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
-protocol ContentCellViewModel {
-    var imageIcon: Variable<String> {get}
-    var title: Variable<String> {get}
-}
+
+
+

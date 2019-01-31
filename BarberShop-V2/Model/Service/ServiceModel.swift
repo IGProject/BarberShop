@@ -20,9 +20,9 @@ struct Services: Codable {
         let seva_profiles: [ServiceProfile]
     }
     struct ServiceProfile: Codable {
-            let id:Int?
+            let id:Int
             let file_name: String
-            let file_path:String?
+            let file_path:String
             let status: Bool
     }
     

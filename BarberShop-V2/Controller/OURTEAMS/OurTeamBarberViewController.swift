@@ -10,14 +10,9 @@ import UIKit
 import Alamofire
 
 
-
 class OurTeamBarberViewController: UIViewController{
-  @IBOutlet weak var teamCollectionView: UICollectionView!{
-    didSet{
-      teamCollectionView.delegate = self
-      teamCollectionView.dataSource = self
-    }
-  }
+  @IBOutlet weak var teamCollectionView: UICollectionView!
+  
   
   //MARK: Instance Properties
   
@@ -26,12 +21,14 @@ class OurTeamBarberViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      // setCollection()
+    
+        setCollection()
         setupListTeam()
-        setupClearNavigation()
+       // setupClearNavigation()
     }
  
- 
+
+  
    func setCollection(){
     teamCollectionView.delegate = self
     teamCollectionView.dataSource = self
@@ -53,7 +50,6 @@ class OurTeamBarberViewController: UIViewController{
           let teamsResponse = try jsonDecoder.decode(Teams.self, from: json!)
           self.itemsTeam = Teams(length: teamsResponse.length, results: teamsResponse.results)
        self.teamCollectionView.reloadData()
-        
           
         }catch let err {
           print(err)
@@ -67,12 +63,12 @@ class OurTeamBarberViewController: UIViewController{
   
   @IBAction func unwindToBooking(segue:UIStoryboardSegue) {}
   
-  func setupClearNavigation() {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-  }
+//  func setupClearNavigation() {
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = .white
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//  }
   
   
     @IBAction func backTapped(_ sender: UIBarButtonItem) {
@@ -90,6 +86,7 @@ extension OurTeamBarberViewController: TeamBookingCellDelegate {
     booking.teamId = data.id
     booking.locationAddress = data.location.address
     booking.locationId = data.location.id
+    booking.hidesBottomBarWhenPushed = true
     self.navigationController?.pushViewController(booking, animated: true)
   }
 }
@@ -119,6 +116,8 @@ extension OurTeamBarberViewController: UICollectionViewDelegate{
     teamDetail.latitude = Double(itemTeams.location.latitude)
     teamDetail.longtitude = Double(itemTeams.location.longitude)
     teamDetail.locationName = itemTeams.location.address
+    
+    teamDetail.hidesBottomBarWhenPushed = true
    navigationController?.pushViewController(teamDetail, animated: true)
   }
   

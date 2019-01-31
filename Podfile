@@ -15,8 +15,6 @@ pod 'GoogleSignIn'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 
-pod 'RxSwift',    '~> 4.0'
-pod 'RxCocoa',    '~> 4.0'
 pod 'Alamofire', '~> 4.7'
 pod 'ReachabilitySwift'
 pod 'Kingfisher', '~> 4.0'
@@ -27,6 +25,7 @@ pod 'MXSegmentedPager'
 pod 'PKHUD', '~> 5.0'
 pod 'Material'
 pod 'SSSpinnerButton'
+
 end
 
 post_install do |installer|

@@ -23,7 +23,7 @@ class ServiceViewController: UIViewController {
 
          setCollection()
          setupCollectionData()
-         setupClearNavigation()
+        // setupClearNavigation()
     }
   
   private func setCollection(){
@@ -62,12 +62,13 @@ class ServiceViewController: UIViewController {
     @IBAction func backTapped(_ sender: UIBarButtonItem) {
          navigationController?.dismiss(animated: true)
     }
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    }
+  
+//    func setupClearNavigation() {
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.backgroundColor = .white
+//        UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//    }
 }
 
 extension ServiceViewController: ServiceBookingCellDelegate {
@@ -76,6 +77,8 @@ extension ServiceViewController: ServiceBookingCellDelegate {
     let booking = storyboard.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
     booking.serviceTitle = data.title
     booking.serviceId = data.id
+    
+    booking.hidesBottomBarWhenPushed = true
     navigationController?.pushViewController(booking, animated: true)
   }
   
@@ -100,8 +103,8 @@ extension ServiceViewController: UICollectionViewDelegate{
     serviceDetail.priceServiceString = detailService.price
     serviceDetail.pointServiceString = String(detailService.point)
     serviceDetail.desServiceString = detailService.description
-    serviceDetail.imageDetail = detailService.seva_profiles.map({ return $0.file_path!})
-    
+    serviceDetail.imageDetail = detailService.seva_profiles.map({ return $0.file_path})
+    serviceDetail.hidesBottomBarWhenPushed = true
     navigationController?.pushViewController(serviceDetail, animated: true)
   }
   

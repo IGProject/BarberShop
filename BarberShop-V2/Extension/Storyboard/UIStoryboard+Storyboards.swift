@@ -23,9 +23,11 @@ extension UIStoryboard {
         case Ourteam
         case Apointment
         case Setting
+        case More
         case History
         case Launchscreen
         case AboutUs
+    
         
         var filename: String {
             return rawValue

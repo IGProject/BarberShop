@@ -17,10 +17,17 @@ class HairStylesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-       setupCollectionView()
+      setupCollectionView()
       setupDataStyleList()
-      setupClearNavigation()
+     // setupClearNavigation()
     }
+  
+//  func setupClearNavigation() {
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//  }
   
   private func setupCollectionView(){
     hairStyleCollectionView.delegate = self
@@ -58,13 +65,7 @@ class HairStylesViewController: UIViewController {
         
          navigationController?.dismiss(animated: true)
     }
-    
-    func setupClearNavigation() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
-    }
+  
 }
 
 extension HairStylesViewController: UICollectionViewDelegate{
@@ -76,10 +77,12 @@ extension HairStylesViewController: UICollectionViewDelegate{
       let hairTypeDetails = itemsHairStyle.results[indexPath.item]
       let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Hairstyle)
       let hairDetail = storyBoard.instantiateViewController(withIdentifier: "HairTypeStyleViewController") as! HairTypeStyleViewController
+      
       hairDetail.navigationItem.title = hairTypeDetails.shape.shape_name
       hairDetail.navigationController?.navigationBar.isTranslucent = false
-      
       hairDetail.imageStyleTypeString = hairTypeDetails.style_profiles.map({ $0.file_path})
+      
+      hairDetail.hidesBottomBarWhenPushed = true
       navigationController?.pushViewController(hairDetail, animated: true)
     }
     

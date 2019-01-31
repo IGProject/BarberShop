@@ -20,18 +20,21 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - !private "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
 - !private "UIStoryboard"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
-- !private "print"
 depends-member:
 - !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "ApointmentDetailTableViewController"]
 - !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "ApointmentTableViewCell"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "CGFloat"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "IndexPath"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "Int"]
+- !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "UIAlertAction"]
+- !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "UIAlertController"]
 - !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "UIStoryboard"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "UITableView"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "UITableViewCell"]
@@ -42,7 +45,7 @@ depends-member:
 - !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "navigationController"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "numberOfSections"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "numberOfSectionsInTableView"]
-- !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "print"]
+- !private ["13BarberShop_V232ApointmentCalendarViewControllerC", "present"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "scrollViewDidEndDecelerating"]
 - ["13BarberShop_V232ApointmentCalendarViewControllerC", "scrollViewDidEndDragging"]
@@ -95,8 +98,11 @@ depends-member:
 - !private ["So15CALayerDelegateP", "configure"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "selectionStyle"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "apointment"]
 - !private ["s7CVarArgP", "bookId"]
 - !private ["s7CVarArgP", "cellForRow"]
@@ -114,7 +120,7 @@ depends-member:
 - !private ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
-- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "pushViewController"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
@@ -150,7 +156,10 @@ depends-member:
 - !private ["SL", "init"]
 - !private ["SL", "row"]
 - !private ["13BarberShop_V216ConfigurableCellP", "configure"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "apointment"]
 - !private ["s28CustomDebugStringConvertibleP", "bookId"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForRow"]
@@ -168,7 +177,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -205,8 +214,11 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "apointment"]
 - !private ["s23CustomStringConvertibleP", "bookId"]
 - !private ["s23CustomStringConvertibleP", "cellForRow"]
@@ -224,7 +236,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
-- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "pushViewController"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -279,14 +291,19 @@ depends-member:
 - !private ["SE", "team"]
 - !private ["SE", "workTime"]
 - !private ["SQ", "Apointment"]
+- !private ["SQ", "UIAlertAction"]
+- !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "addAction"]
+- !private ["SQ", "alert"]
 - !private ["SQ", "apointment"]
 - !private ["SQ", "bookId"]
 - !private ["SQ", "cellForRow"]
 - !private ["SQ", "configure"]
 - !private ["SQ", "count"]
 - !private ["SQ", "dateString"]
+- !private ["SQ", "default"]
 - !private ["SQ", "dequeueReusableCell"]
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInTableView"]
@@ -299,7 +316,7 @@ depends-member:
 - !private ["SQ", "none"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
-- !private ["SQ", "print"]
+- !private ["SQ", "present"]
 - !private ["SQ", "pushViewController"]
 - !private ["SQ", "row"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
@@ -337,22 +354,20 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["7RxCocoa13HasDataSourceP", "cellForRow"]
-- !private ["7RxCocoa13HasDataSourceP", "dequeueReusableCell"]
-- !private ["7RxCocoa11HasDelegateP", "cellForRow"]
-- !private ["7RxCocoa11HasDelegateP", "dequeueReusableCell"]
-- !private ["7RxCocoa11HasDelegateP", "pushViewController"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "cellForRow"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "dequeueReusableCell"]
 - !private ["SH", "Apointment"]
+- !private ["SH", "UIAlertAction"]
+- !private ["SH", "UIAlertController"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "addAction"]
+- !private ["SH", "alert"]
 - !private ["SH", "apointment"]
 - !private ["SH", "bookId"]
 - !private ["SH", "cellForRow"]
 - !private ["SH", "configure"]
 - !private ["SH", "count"]
 - !private ["SH", "dateString"]
+- !private ["SH", "default"]
 - !private ["SH", "dequeueReusableCell"]
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInTableView"]
@@ -365,7 +380,7 @@ depends-member:
 - !private ["SH", "none"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
-- !private ["SH", "print"]
+- !private ["SH", "present"]
 - !private ["SH", "pushViewController"]
 - !private ["SH", "row"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
@@ -394,6 +409,8 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["15JTAppleCalendar0aB14ViewDataSourceP", "UIAlertAction"]
+- !private ["15JTAppleCalendar0aB14ViewDataSourceP", "UIAlertController"]
 - !private ["15JTAppleCalendar0aB14ViewDataSourceP", "UIStoryboard"]
 - !private ["15JTAppleCalendar0aB14ViewDataSourceP", "apointment"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "indexPathForPreferredFocusedView"]
@@ -401,7 +418,7 @@ depends-member:
 - !private ["15JTAppleCalendar0aB14ViewDataSourceP", "navigationController"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "numberOfSections"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "numberOfSectionsInTableView"]
-- !private ["15JTAppleCalendar0aB14ViewDataSourceP", "print"]
+- !private ["15JTAppleCalendar0aB14ViewDataSourceP", "present"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "scrollViewDidEndDragging"]
@@ -420,6 +437,8 @@ depends-member:
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "tableView"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "viewForZooming"]
 - ["15JTAppleCalendar0aB14ViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["15JTAppleCalendar0aB12ViewDelegateP", "UIAlertAction"]
+- !private ["15JTAppleCalendar0aB12ViewDelegateP", "UIAlertController"]
 - !private ["15JTAppleCalendar0aB12ViewDelegateP", "UIStoryboard"]
 - !private ["15JTAppleCalendar0aB12ViewDelegateP", "apointment"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "indexPathForPreferredFocusedView"]
@@ -427,7 +446,7 @@ depends-member:
 - !private ["15JTAppleCalendar0aB12ViewDelegateP", "navigationController"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "numberOfSections"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["15JTAppleCalendar0aB12ViewDelegateP", "print"]
+- !private ["15JTAppleCalendar0aB12ViewDelegateP", "present"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "scrollViewDidEndDragging"]
@@ -446,7 +465,6 @@ depends-member:
 - ["15JTAppleCalendar0aB12ViewDelegateP", "tableView"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "viewForZooming"]
 - ["15JTAppleCalendar0aB12ViewDelegateP", "viewForZoomingInScrollView"]
-- !private ["7RxCocoa16KVORepresentableP", "_getBuiltinLogicValue"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["13BarberShop_V28LocationV", "id"]
@@ -459,7 +477,10 @@ depends-member:
 - !private ["SM", "count"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIStoryboard"]
+- !private ["So8NSCodingP", "addAction"]
 - !private ["So8NSCodingP", "apointment"]
 - !private ["So8NSCodingP", "bookId"]
 - !private ["So8NSCodingP", "cellForRow"]
@@ -468,12 +489,13 @@ depends-member:
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "locationId"]
 - !private ["So8NSCodingP", "locationString"]
 - !private ["So8NSCodingP", "navigationController"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
-- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "pushViewController"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
@@ -499,18 +521,23 @@ depends-member:
 - !private ["So8NSCodingP", "teamNameString"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "apointment"]
 - !private ["So26NSExtensionRequestHandlingP", "bookId"]
 - !private ["So26NSExtensionRequestHandlingP", "dateString"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "locationId"]
 - !private ["So26NSExtensionRequestHandlingP", "locationString"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -540,9 +567,12 @@ depends-member:
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "apointment"]
 - !private ["So8NSObjectC", "bookId"]
 - !private ["So8NSObjectC", "cellForRow"]
@@ -558,7 +588,7 @@ depends-member:
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
-- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "pushViewController"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
@@ -584,7 +614,10 @@ depends-member:
 - !private ["So8NSObjectC", "teamNameString"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "UIAlertAction"]
+- !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIStoryboard"]
+- !private ["So8NSObjectP", "addAction"]
 - !private ["So8NSObjectP", "apointment"]
 - !private ["So8NSObjectP", "bookId"]
 - !private ["So8NSObjectP", "cellForRow"]
@@ -600,7 +633,7 @@ depends-member:
 - !private ["So8NSObjectP", "navigationController"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
-- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "pushViewController"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
@@ -634,49 +667,9 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "Apointment"]
+- !private ["SY", "alert"]
+- !private ["SY", "default"]
 - !private ["SY", "none"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIStoryboard"]
-- !private ["7RxSwift18ReactiveCompatibleP", "apointment"]
-- !private ["7RxSwift18ReactiveCompatibleP", "bookId"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cellForRow"]
-- !private ["7RxSwift18ReactiveCompatibleP", "configure"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dateString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dequeueReusableCell"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedView"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "instantiateViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "locationId"]
-- !private ["7RxSwift18ReactiveCompatibleP", "locationString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationController"]
-- ["7RxSwift18ReactiveCompatibleP", "numberOfSections"]
-- ["7RxSwift18ReactiveCompatibleP", "numberOfSectionsInTableView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "print"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pushViewController"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidChangeAdjustedContentInset"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndScrollingAnimation"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScroll"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidZoom"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewShouldScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillEndDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "sectionIndexTitles"]
-- ["7RxSwift18ReactiveCompatibleP", "sectionIndexTitlesForTableView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "selectionStyle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "serviceId"]
-- !private ["7RxSwift18ReactiveCompatibleP", "serviceString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusString"]
-- ["7RxSwift18ReactiveCompatibleP", "tableView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "teamId"]
-- !private ["7RxSwift18ReactiveCompatibleP", "teamNameString"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZoomingInScrollView"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["So29UITableViewCellSelectionStyleV", "none"]
 - !private ["ST", "count"]
@@ -687,18 +680,22 @@ depends-member:
 - !private ["13BarberShop_V27ServiceV", "id"]
 - !private ["13BarberShop_V27ServiceV", "service"]
 - !private ["So12UIStoryboardC13BarberShop_V2E10StoryboardO", "Apointment"]
+- !private ["13BarberShop_V215StoryboardBasedP", "UIAlertAction"]
+- !private ["13BarberShop_V215StoryboardBasedP", "UIAlertController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIStoryboard"]
+- !private ["13BarberShop_V215StoryboardBasedP", "addAction"]
 - !private ["13BarberShop_V215StoryboardBasedP", "apointment"]
 - !private ["13BarberShop_V215StoryboardBasedP", "bookId"]
 - !private ["13BarberShop_V215StoryboardBasedP", "dateString"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedView"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["13BarberShop_V215StoryboardBasedP", "init"]
 - !private ["13BarberShop_V215StoryboardBasedP", "locationId"]
 - !private ["13BarberShop_V215StoryboardBasedP", "locationString"]
 - !private ["13BarberShop_V215StoryboardBasedP", "navigationController"]
 - ["13BarberShop_V215StoryboardBasedP", "numberOfSections"]
 - ["13BarberShop_V215StoryboardBasedP", "numberOfSectionsInTableView"]
-- !private ["13BarberShop_V215StoryboardBasedP", "print"]
+- !private ["13BarberShop_V215StoryboardBasedP", "present"]
 - !private ["13BarberShop_V215StoryboardBasedP", "pushViewController"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewDidChangeAdjustedContentInset"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewDidEndDecelerating"]
@@ -727,6 +724,8 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["Sy", "init"]
+- !private ["So22UIAlertControllerStyleV", "alert"]
+- !private ["So18UIAlertActionStyleV", "default"]
 - !private ["13BarberShop_V24TeamV", "id"]
 - !private ["13BarberShop_V24TeamV", "team"]
 - !private ["s16TextOutputStreamP", "init"]
@@ -737,11 +736,17 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "configure"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "selectionStyle"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
 - !private ["So12UIAppearanceP", "cellForRow"]
 - !private ["So12UIAppearanceP", "configure"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "selectionStyle"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "apointment"]
 - !private ["So21UIAppearanceContainerP", "bookId"]
 - !private ["So21UIAppearanceContainerP", "cellForRow"]
@@ -750,12 +755,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "locationId"]
 - !private ["So21UIAppearanceContainerP", "locationString"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
-- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "pushViewController"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
@@ -781,18 +787,22 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "teamNameString"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
+- !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "apointment"]
 - !private ["So18UIContentContainerP", "bookId"]
 - !private ["So18UIContentContainerP", "dateString"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "locationId"]
 - !private ["So18UIContentContainerP", "locationString"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
-- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "pushViewController"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -827,7 +837,10 @@ depends-member:
 - !private ["So13UIDynamicItemP", "configure"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "selectionStyle"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "apointment"]
 - !private ["So18UIFocusEnvironmentP", "bookId"]
 - !private ["So18UIFocusEnvironmentP", "cellForRow"]
@@ -836,12 +849,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "locationId"]
 - !private ["So18UIFocusEnvironmentP", "locationString"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
-- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "pushViewController"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
@@ -880,7 +894,10 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "configure"]
 - !private ["So27UIGestureRecognizerDelegateP", "selectionStyle"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "apointment"]
 - !private ["So30UIPasteConfigurationSupportingP", "bookId"]
 - !private ["So30UIPasteConfigurationSupportingP", "cellForRow"]
@@ -889,12 +906,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationId"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationString"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
@@ -925,9 +943,12 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "addAction"]
 - !private ["So11UIResponderC", "apointment"]
 - !private ["So11UIResponderC", "bookId"]
 - !private ["So11UIResponderC", "cellForRow"]
@@ -936,12 +957,13 @@ depends-member:
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "locationId"]
 - !private ["So11UIResponderC", "locationString"]
 - !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
-- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "pushViewController"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
@@ -967,7 +989,10 @@ depends-member:
 - !private ["So11UIResponderC", "teamNameString"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "apointment"]
 - !private ["So30UIResponderStandardEditActionsP", "bookId"]
 - !private ["So30UIResponderStandardEditActionsP", "cellForRow"]
@@ -976,12 +1001,13 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "locationId"]
 - !private ["So30UIResponderStandardEditActionsP", "locationString"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
@@ -1009,6 +1035,8 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So12UIScrollViewC", "cellForRow"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
+- !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "apointment"]
@@ -1021,7 +1049,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So20UIScrollViewDelegateP", "print"]
+- !private ["So20UIScrollViewDelegateP", "present"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -1045,20 +1073,26 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "teamNameString"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "cellForRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
+- !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "apointment"]
 - !private ["So16UIStateRestoringP", "bookId"]
 - !private ["So16UIStateRestoringP", "dateString"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "locationId"]
 - !private ["So16UIStateRestoringP", "locationString"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
-- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "pushViewController"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -1098,6 +1132,8 @@ depends-member:
 - !private ["So21UITableViewControllerC", "statusString"]
 - !private ["So21UITableViewControllerC", "teamId"]
 - !private ["So21UITableViewControllerC", "teamNameString"]
+- !private ["So21UITableViewDataSourceP", "UIAlertAction"]
+- !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "apointment"]
@@ -1110,7 +1146,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "navigationController"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
-- !private ["So21UITableViewDataSourceP", "print"]
+- !private ["So21UITableViewDataSourceP", "present"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDragging"]
@@ -1134,6 +1170,8 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "teamNameString"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["So19UITableViewDelegateP", "UIAlertAction"]
+- !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "apointment"]
@@ -1146,7 +1184,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "navigationController"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So19UITableViewDelegateP", "print"]
+- !private ["So19UITableViewDelegateP", "present"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDragging"]
@@ -1170,7 +1208,19 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "teamNameString"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So18UITextViewDelegateP", "bookId"]
+- !private ["So18UITextViewDelegateP", "dateString"]
+- !private ["So18UITextViewDelegateP", "locationId"]
+- !private ["So18UITextViewDelegateP", "locationString"]
+- !private ["So18UITextViewDelegateP", "serviceId"]
+- !private ["So18UITextViewDelegateP", "serviceString"]
+- !private ["So18UITextViewDelegateP", "statusString"]
+- !private ["So18UITextViewDelegateP", "teamId"]
+- !private ["So18UITextViewDelegateP", "teamNameString"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "apointment"]
 - !private ["So18UITraitEnvironmentP", "bookId"]
 - !private ["So18UITraitEnvironmentP", "cellForRow"]
@@ -1179,12 +1229,13 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "locationId"]
 - !private ["So18UITraitEnvironmentP", "locationString"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
-- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "pushViewController"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
@@ -1210,7 +1261,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "teamNameString"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
+- !private ["So23UIUserActivityRestoringP", "addAction"]
 - !private ["So23UIUserActivityRestoringP", "apointment"]
 - !private ["So23UIUserActivityRestoringP", "bookId"]
 - !private ["So23UIUserActivityRestoringP", "cellForRow"]
@@ -1219,12 +1273,13 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "locationId"]
 - !private ["So23UIUserActivityRestoringP", "locationString"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
-- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "pushViewController"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
@@ -1259,20 +1314,24 @@ depends-member:
 - ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- !private ["So16UIViewControllerC", "addAction"]
 - !private ["So16UIViewControllerC", "apointment"]
 - !private ["So16UIViewControllerC", "bookId"]
 - !private ["So16UIViewControllerC", "dateString"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "locationId"]
 - !private ["So16UIViewControllerC", "locationString"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
-- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "pushViewController"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1318,7 +1377,10 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "apointment"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bookId"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForRow"]
@@ -1334,7 +1396,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
@@ -1395,27 +1457,23 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "7RxCocoa13HasDataSourceP"
-- !private "7RxCocoa11HasDelegateP"
-- !private "7RxCocoa21HasPrefetchDataSourceP"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - "15JTAppleCalendar0aB14ViewDataSourceP"
 - "15JTAppleCalendar0aB12ViewDelegateP"
-- !private "7RxCocoa16KVORepresentableP"
 - !private "10Kingfisher0A10CompatibleP"
 - !private "13BarberShop_V28LocationV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
-- "7RxSwift18ReactiveCompatibleP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "So29UITableViewCellSelectionStyleV"
 - !private "ST"
@@ -1424,10 +1482,14 @@ depends-nominal:
 - "13BarberShop_V215StoryboardBasedP"
 - !private "SS"
 - !private "Sy"
+- !private "So22UIAlertControllerStyleV"
+- !private "So18UIAlertActionStyleV"
 - !private "13BarberShop_V24TeamV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "So17UIAlertControllerC"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
@@ -1453,6 +1515,7 @@ depends-nominal:
 - !private "So21UITableViewControllerC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
+- !private "So18UITextViewDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
@@ -1474,7 +1537,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
@@ -1483,7 +1545,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/arm64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -1508,9 +1569,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -1526,34 +1584,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -1578,6 +1631,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -1586,6 +1640,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -1616,6 +1671,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -1638,12 +1694,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -1671,6 +1727,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -1678,7 +1735,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
@@ -1687,7 +1743,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -1719,11 +1774,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -1744,7 +1796,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/module.modulemap"

@@ -33,8 +33,7 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponent.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentContainer.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentType.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRComponentRegistrant.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRCoreConfigurable.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRLibrary.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseCore/Firebase/Core/Private/FIRDependency.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \

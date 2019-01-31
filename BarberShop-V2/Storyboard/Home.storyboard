@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZEF-Wk-raj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fme-Z1-Mdb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -141,15 +141,11 @@
                     <navigationItem key="navigationItem" id="oR4-5n-1v5"/>
                     <connections>
                         <outlet property="sidebarTableView" destination="hJH-y7-hx2" id="XFJ-0w-J6j"/>
-                        <segue destination="5bp-bL-4bP" kind="show" identifier="awardIdentifier" id="hb5-bc-lbU"/>
-                        <segue destination="M6x-6w-8zH" kind="show" identifier="historyIdentifier" id="fd5-IT-Gzc"/>
-                        <segue destination="8yt-ZP-9kH" kind="show" identifier="settingIdentifier" id="JQw-uG-QR0"/>
-                        <segue destination="6cc-QN-54Y" kind="show" identifier="aboutIdentifier" id="JcB-Oo-kzl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bT-RU-zfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142" y="-960"/>
+            <point key="canvasLocation" x="1292" y="-1277"/>
         </scene>
         <!--RewardPointViewController-->
         <scene sceneID="usH-9z-s1P">
@@ -184,48 +180,6 @@
             <point key="canvasLocation" x="2362" y="-903"/>
         </scene>
         <!--OurteamStoryBoard-->
-        <scene sceneID="enD-4O-1h5">
-            <objects>
-                <viewControllerPlaceholder storyboardName="OurTeam" referencedIdentifier="OurteamStoryBoard" id="D2N-6l-IV2" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="sQk-UD-eVt"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fJ7-9E-Kux" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="999" y="-450"/>
-        </scene>
-        <!--HomeLocationID-->
-        <scene sceneID="DfR-gZ-f3F">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Location" referencedIdentifier="HomeLocationID" id="Q8l-ze-wO3" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6dS-mH-8IR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1058" y="-379"/>
-        </scene>
-        <!--ServiceID-->
-        <scene sceneID="tHG-B8-Gy8">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Service" referencedIdentifier="ServiceID" id="XDd-H9-ItG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7cM-L1-J35" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1156" y="-307"/>
-        </scene>
-        <!--ProductID-->
-        <scene sceneID="psN-fw-EBj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Product" referencedIdentifier="ProductID" id="Bp8-Pw-yf4" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nfV-Xw-5o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1154" y="7"/>
-        </scene>
-        <!--HairStyleID-->
-        <scene sceneID="Qna-DK-SYi">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Hairstyle" referencedIdentifier="HairStyleID" id="uVb-R8-FQK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aWk-gi-9Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1150" y="-87"/>
-        </scene>
-        <!--OurteamStoryBoard-->
         <scene sceneID="S36-mN-MKG">
             <objects>
                 <viewControllerPlaceholder storyboardName="OurTeam" referencedIdentifier="OurteamStoryBoard" id="IB2-BK-zkF" sceneMemberID="viewController">
@@ -233,7 +187,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXv-FS-CQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="695"/>
+            <point key="canvasLocation" x="-2227" y="1092"/>
         </scene>
         <!--HomeLocationID-->
         <scene sceneID="itc-2Y-l8b">
@@ -243,7 +197,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atc-XE-n1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="885"/>
+            <point key="canvasLocation" x="-2245" y="1235"/>
         </scene>
         <!--bookingNav-->
         <scene sceneID="bHW-69-fLM">
@@ -253,47 +207,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LL6-Ug-Kjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="988"/>
+            <point key="canvasLocation" x="-2267" y="1294"/>
         </scene>
-        <!--ServiceID-->
+        <!--messageID-->
         <scene sceneID="fMo-BD-AcC">
             <objects>
-                <viewControllerPlaceholder storyboardName="Service" referencedIdentifier="ServiceID" id="xyv-uu-VKS" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Service" referencedIdentifier="messageID" id="xyv-uu-VKS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="LMQ-6l-Tfj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubn-1W-IpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="771"/>
-        </scene>
-        <!--messageID-->
-        <scene sceneID="Ndd-cB-74Y">
-            <objects>
-                <viewControllerPlaceholder storyboardName="History" referencedIdentifier="messageID" id="oxM-7E-VOk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5Iy-MU-Wcf"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ser-E9-mAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="343" y="1240"/>
-        </scene>
-        <!--BookingID-->
-        <scene sceneID="tEz-1J-Rrp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Booking" referencedIdentifier="BookingID" id="Kqj-IW-21Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oI1-sP-CqA"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qGy-cC-MHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-98" y="1643"/>
-        </scene>
-        <!--HairStyleID-->
-        <scene sceneID="kVD-AE-RFG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Hairstyle" referencedIdentifier="HairStyleID" id="N1M-Ic-QWB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rLu-Vf-pCa"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gJx-6E-P4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="292" y="1397"/>
+            <point key="canvasLocation" x="-2278" y="1159"/>
         </scene>
         <!--moreStoryboardID-->
         <scene sceneID="TmX-Ja-BG9">
@@ -303,17 +227,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qz-ZF-YKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="1097"/>
-        </scene>
-        <!--ProductID-->
-        <scene sceneID="6tk-Bl-ukD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Product" referencedIdentifier="ProductID" id="zO1-9e-YGE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Xdw-aO-yBN"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EoV-ZY-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1303" y="1708"/>
+            <point key="canvasLocation" x="-2254" y="1366"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ckv-Ru-2YO">
@@ -466,12 +380,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="LeI-Uk-JGA" id="T9D-fi-DLU"/>
-                        <segue destination="Hth-0U-M1c" kind="presentation" identifier="NavigationCustom" id="pYm-Uh-Ych"/>
-                        <segue destination="D2N-6l-IV2" kind="presentation" identifier="ourteamIdentifier" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="g5M-6a-DL4"/>
-                        <segue destination="Q8l-ze-wO3" kind="presentation" identifier="homeLocationIdentifier" modalTransitionStyle="coverVertical" id="zb2-eh-Lfg"/>
-                        <segue destination="XDd-H9-ItG" kind="presentation" identifier="serviceIdentifier" modalTransitionStyle="coverVertical" id="VbE-Xx-OE2"/>
-                        <segue destination="Bp8-Pw-yf4" kind="presentation" identifier="productIdentifier" modalTransitionStyle="coverVertical" id="IUc-CC-RxN"/>
-                        <segue destination="uVb-R8-FQK" kind="presentation" identifier="hairstyleIdentifier" modalTransitionStyle="coverVertical" id="4f1-BY-uIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5O-ju-KYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -483,23 +391,24 @@
             <objects>
                 <tabBarController storyboardIdentifier="CustomTabarViewController" id="ZEF-Wk-raj" customClass="MainTabarViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hSd-7j-yFX">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="hSd-7j-yFX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" name="unemphasizedSelectedTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IB2-BK-zkF" kind="relationship" relationship="viewControllers" id="kNb-hH-tmB"/>
-                        <segue destination="xyv-uu-VKS" kind="relationship" relationship="viewControllers" id="I8d-0D-FlV"/>
-                        <segue destination="Icr-IT-65T" kind="relationship" relationship="viewControllers" id="0bm-aM-5Xo"/>
-                        <segue destination="Dde-Fj-wvr" kind="relationship" relationship="viewControllers" id="9vT-1X-zrL"/>
-                        <segue destination="NDP-5L-YmJ" kind="relationship" relationship="viewControllers" id="inh-Pf-gwL"/>
+                        <segue destination="qNc-KU-CC9" kind="showDetail" identifier="NetworkUnavailable" id="OSl-hm-QNy"/>
+                        <segue destination="IB2-BK-zkF" kind="relationship" relationship="viewControllers" id="M1Z-Ba-heP"/>
+                        <segue destination="xyv-uu-VKS" kind="relationship" relationship="viewControllers" id="N4V-Ko-P7g"/>
+                        <segue destination="Icr-IT-65T" kind="relationship" relationship="viewControllers" id="7BU-hF-NE0"/>
+                        <segue destination="Dde-Fj-wvr" kind="relationship" relationship="viewControllers" id="5gu-Tr-VXb"/>
+                        <segue destination="NDP-5L-YmJ" kind="relationship" relationship="viewControllers" id="xXn-Jr-bFv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ay3-qj-MAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1303" y="1189"/>
+            <point key="canvasLocation" x="-3302" y="1379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="blb-3n-AFy">
@@ -552,13 +461,108 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qk-r9-7Ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-920.68965517241384"/>
+            <point key="canvasLocation" x="1369" y="-935"/>
+        </scene>
+        <!--Offline View Controller-->
+        <scene sceneID="RfO-0C-1dd">
+            <objects>
+                <viewController storyboardIdentifier="OfflineViewController" id="qNc-KU-CC9" customClass="OfflineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3TK-X5-GsR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-i6-TyO">
+                                <rect key="frame" x="67.5" y="255" width="240" height="157"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-Pb-sJX">
+                                        <rect key="frame" x="45" y="0.0" width="150" height="145"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="145" id="33t-Hg-jUm"/>
+                                            <constraint firstAttribute="width" constant="150" id="e3c-o3-tED"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are offline, connect to the internet" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44s-yz-e0S">
+                                        <rect key="frame" x="0.0" y="123" width="240" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="bg9-79-WR4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.51433295759999997" green="0.54734961000000004" blue="0.56930343380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="44s-yz-e0S" secondAttribute="bottom" id="0bW-N2-rDf"/>
+                                    <constraint firstItem="44s-yz-e0S" firstAttribute="leading" secondItem="FU9-i6-TyO" secondAttribute="leading" id="0z2-vL-A6r"/>
+                                    <constraint firstItem="LO7-Pb-sJX" firstAttribute="centerX" secondItem="FU9-i6-TyO" secondAttribute="centerX" id="64u-oY-XRF"/>
+                                    <constraint firstAttribute="trailing" secondItem="LO7-Pb-sJX" secondAttribute="trailing" constant="45" id="Gr2-s3-8vr"/>
+                                    <constraint firstItem="44s-yz-e0S" firstAttribute="centerX" secondItem="LO7-Pb-sJX" secondAttribute="centerX" id="Ptu-rM-1YN"/>
+                                    <constraint firstItem="LO7-Pb-sJX" firstAttribute="top" secondItem="FU9-i6-TyO" secondAttribute="top" id="Qek-mF-rHI"/>
+                                    <constraint firstAttribute="height" constant="157" id="VbC-d3-Mfo"/>
+                                    <constraint firstAttribute="width" constant="240" id="aLx-Oz-Btw"/>
+                                    <constraint firstItem="LO7-Pb-sJX" firstAttribute="leading" secondItem="FU9-i6-TyO" secondAttribute="leading" constant="45" id="tOq-fJ-91t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FU9-i6-TyO" firstAttribute="centerX" secondItem="3TK-X5-GsR" secondAttribute="centerX" id="vO5-Ku-jpn"/>
+                            <constraint firstItem="FU9-i6-TyO" firstAttribute="centerY" secondItem="3TK-X5-GsR" secondAttribute="centerY" id="zcF-Xi-62e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eiN-xn-YVB"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZEF-Wk-raj" kind="showDetail" identifier="MainController" id="Qcy-my-agl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZr-At-ydb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3382" y="544"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="UCO-Ag-6AB">
+            <objects>
+                <viewController id="fme-Z1-Mdb" customClass="LaunchViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFn-Br-3xv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbershop" translatesAutoresizingMaskIntoConstraints="NO" id="HaB-XQ-LnA">
+                                <rect key="frame" x="67" y="222" width="241" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="IBi-yU-QcE"/>
+                                    <constraint firstAttribute="height" constant="223" id="khS-DP-iV2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.043137254899999998" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HaB-XQ-LnA" firstAttribute="centerX" secondItem="PFn-Br-3xv" secondAttribute="centerX" id="nca-aW-jY6"/>
+                            <constraint firstItem="HaB-XQ-LnA" firstAttribute="centerY" secondItem="PFn-Br-3xv" secondAttribute="centerY" id="rCY-6b-pq9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uim-HB-bK5"/>
+                    </view>
+                    <connections>
+                        <segue destination="qNc-KU-CC9" kind="showDetail" identifier="NetworkUnavailable" id="FXG-EN-NAd"/>
+                        <segue destination="ZEF-Wk-raj" kind="show" identifier="MainController" id="wC0-ID-qnd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRg-XK-qVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4596" y="1131"/>
         </scene>
     </scenes>
     <resources>
+        <image name="barbershop" width="241.5" height="223.5"/>
         <image name="booking" width="102.40000152587891" height="102.40000152587891"/>
         <image name="home" width="25.600000381469727" height="25.600000381469727"/>
         <image name="man-haircut" width="512" height="250"/>
         <image name="minea" width="2048" height="2047"/>
+        <image name="offline" width="150" height="145"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OSl-hm-QNy"/>
+        <segue reference="wC0-ID-qnd"/>
+    </inferredMetricsTieBreakers>
 </document>

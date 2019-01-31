@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-class ApointmentDetailTableViewController: UITableViewController {
+class ApointmentDetailTableViewController: UITableViewController{
   @IBOutlet weak var teamName: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var locationLabel: UILabel!
@@ -36,13 +36,19 @@ class ApointmentDetailTableViewController: UITableViewController {
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    
+     setTextViewDelegate()
+    setupTextLabel()
+    }
+  
+  func setTextViewDelegate(){
+    reasonTextView.delegate = self
+  }
+  func setupTextLabel(){
     teamName.text = teamNameString
     dateLabel.text = dateString
     locationLabel.text = locationString
     statusLabel.text = statusString
-    }
-  
+  }
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let cell = tableView.cellForRow(at: indexPath)
     cell?.selectionStyle = .none
@@ -81,6 +87,7 @@ class ApointmentDetailTableViewController: UITableViewController {
       
       let param:[String:Any] = ["book_id": cancelBooking.book_id,
                                 "user_reason": cancelBooking.user_reason]
+      
        postCancelBooking(endpoint:cancelEndPoint,param:param)
     }
   
@@ -91,11 +98,26 @@ class ApointmentDetailTableViewController: UITableViewController {
       switch $0.result {
       case .success(_):
         do{
-          let cancelResponse = try JSONDecoder().decode(BookingResponse.self, from: $0.data!)
-          self.bookingResponse = BookingResponse(reason: cancelResponse.reason, booking: cancelResponse.booking, response: cancelResponse.response)
+          let cancelResponse = try JSONDecoder().decode(BookingResponse.self,
+                                                        from: $0.data!)
+          
+          self.bookingResponse = BookingResponse(reason: cancelResponse.reason,
+                                                 booking: cancelResponse.booking,
+                                                 response: cancelResponse.response)
 
               if cancelResponse.response == true {
-                self.navigationController?.popViewController(animated: true)
+                 let alertCancel = UIAlertController(title: "Warnning",
+                                                     message:cancelResponse.reason,
+                                                     preferredStyle: .alert)
+                alertCancel.addAction(UIAlertAction(title: "Done",
+                                                    style: .default,
+                                                    handler: { (actionCancel) in
+                        
+                  self.navigationController?.popViewController(animated: true)
+                                                      
+                }))
+              self.present(alertCancel, animated: true)
+  
               }else {
                 print("false")
           }
@@ -107,4 +129,21 @@ class ApointmentDetailTableViewController: UITableViewController {
       }
     }
   }
+}
+
+extension ApointmentDetailTableViewController:
+UITextViewDelegate {
+  
+  /* Updated for Swift 4 */
+  func textView(_ textView: UITextView,
+                shouldChangeTextIn range: NSRange,
+                replacementText text: String) -> Bool {
+    
+    if(text == "\n") {
+      textView.resignFirstResponder()
+      return false
+    }
+    return true
+  }
+
 }

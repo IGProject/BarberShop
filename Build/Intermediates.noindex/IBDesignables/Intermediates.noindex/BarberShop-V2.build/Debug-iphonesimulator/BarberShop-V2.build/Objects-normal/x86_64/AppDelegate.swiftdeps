@@ -19,6 +19,7 @@ depends-top-level:
 - !private "!="
 - !private "/"
 - !private "=="
+- !private "??"
 - "AnyHashable"
 - "AppDelegate"
 - !private "Array"
@@ -36,6 +37,7 @@ depends-top-level:
 - !private "GMSPlacesClient"
 - !private "GMSServices"
 - !private "InstanceID"
+- "Int"
 - !private "IntegerLiteralType"
 - !private "MainTabarViewController"
 - "Messaging"
@@ -43,7 +45,9 @@ depends-top-level:
 - "MessagingRemoteMessage"
 - !private "NSAttributedStringKey"
 - !private "Notification"
+- "NotificationAlert"
 - !private "NotificationCenter"
+- "Notifications"
 - !private "SignInKeys"
 - !private "SignInViewController"
 - !private "SignUpViewController"
@@ -72,7 +76,7 @@ depends-top-level:
 - "UNUserNotificationCenter"
 - "UNUserNotificationCenterDelegate"
 - "URL"
-- !private "UserDefaults"
+- "UserDefaults"
 - "Void"
 - !private "print"
 - !private "||"
@@ -87,12 +91,15 @@ depends-member:
 - !private ["13BarberShop_V211AppDelegateC", "GMSPlacesClient"]
 - !private ["13BarberShop_V211AppDelegateC", "GMSServices"]
 - !private ["13BarberShop_V211AppDelegateC", "InstanceID"]
+- ["13BarberShop_V211AppDelegateC", "Int"]
 - !private ["13BarberShop_V211AppDelegateC", "MainTabarViewController"]
 - ["13BarberShop_V211AppDelegateC", "Messaging"]
 - ["13BarberShop_V211AppDelegateC", "MessagingRemoteMessage"]
 - !private ["13BarberShop_V211AppDelegateC", "NSAttributedStringKey"]
 - !private ["13BarberShop_V211AppDelegateC", "Notification"]
+- ["13BarberShop_V211AppDelegateC", "NotificationAlert"]
 - !private ["13BarberShop_V211AppDelegateC", "NotificationCenter"]
+- ["13BarberShop_V211AppDelegateC", "Notifications"]
 - !private ["13BarberShop_V211AppDelegateC", "SignInKeys"]
 - !private ["13BarberShop_V211AppDelegateC", "SignInViewController"]
 - !private ["13BarberShop_V211AppDelegateC", "SignUpViewController"]
@@ -117,8 +124,9 @@ depends-member:
 - ["13BarberShop_V211AppDelegateC", "UNNotificationResponse"]
 - ["13BarberShop_V211AppDelegateC", "UNUserNotificationCenter"]
 - ["13BarberShop_V211AppDelegateC", "URL"]
-- !private ["13BarberShop_V211AppDelegateC", "UserDefaults"]
+- ["13BarberShop_V211AppDelegateC", "UserDefaults"]
 - ["13BarberShop_V211AppDelegateC", "Void"]
+- ["13BarberShop_V211AppDelegateC", "alertNotification"]
 - ["13BarberShop_V211AppDelegateC", "application"]
 - ["13BarberShop_V211AppDelegateC", "applicationDidBecomeActive"]
 - ["13BarberShop_V211AppDelegateC", "applicationDidEnterBackground"]
@@ -131,10 +139,13 @@ depends-member:
 - ["13BarberShop_V211AppDelegateC", "applicationWillEnterForeground"]
 - ["13BarberShop_V211AppDelegateC", "applicationWillResignActive"]
 - ["13BarberShop_V211AppDelegateC", "applicationWillTerminate"]
+- ["13BarberShop_V211AppDelegateC", "countNotificaton"]
 - ["13BarberShop_V211AppDelegateC", "deinit"]
 - ["13BarberShop_V211AppDelegateC", "gcmMessageIDKey"]
 - ["13BarberShop_V211AppDelegateC", "init"]
 - ["13BarberShop_V211AppDelegateC", "messaging"]
+- ["13BarberShop_V211AppDelegateC", "notificationAlert"]
+- ["13BarberShop_V211AppDelegateC", "notifications"]
 - !private ["13BarberShop_V211AppDelegateC", "print"]
 - ["13BarberShop_V211AppDelegateC", "setupRootViewController"]
 - ["13BarberShop_V211AppDelegateC", "userNotificationCenter"]
@@ -166,8 +177,11 @@ depends-member:
 - !private ["s7CVarArgP", "Messaging"]
 - !private ["s7CVarArgP", "NSAttributedStringKey"]
 - !private ["s7CVarArgP", "Notification"]
+- ["s7CVarArgP", "NotificationAlert"]
 - !private ["s7CVarArgP", "NotificationCenter"]
+- ["s7CVarArgP", "Notifications"]
 - !private ["s7CVarArgP", "SignInKeys"]
+- !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s7CVarArgP", "UIBackgroundFetchResult"]
@@ -181,7 +195,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIUserNotificationSettings"]
 - !private ["s7CVarArgP", "UIWindow"]
 - !private ["s7CVarArgP", "UNUserNotificationCenter"]
-- !private ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "appData"]
@@ -191,6 +205,7 @@ depends-member:
 - ["s7CVarArgP", "applicationDidEnterBackground"]
 - ["s7CVarArgP", "applicationDidFinishLaunching"]
 - ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "applicationIconBadgeNumber"]
 - ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
 - ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
@@ -204,8 +219,8 @@ depends-member:
 - !private ["s7CVarArgP", "clear"]
 - !private ["s7CVarArgP", "clientID"]
 - !private ["s7CVarArgP", "configure"]
-- !private ["s7CVarArgP", "connect"]
 - !private ["s7CVarArgP", "content"]
+- !private ["s7CVarArgP", "countNotificaton"]
 - !private ["s7CVarArgP", "current"]
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "delegate"]
@@ -236,7 +251,8 @@ depends-member:
 - !private ["s7CVarArgP", "shadowImage"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sharedInstance"]
-- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "shouldEstablishDirectChannel"]
+- ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "statusBarStyle"]
 - !private ["s7CVarArgP", "statusBarView"]
 - !private ["s7CVarArgP", "subscript"]
@@ -244,8 +260,10 @@ depends-member:
 - !private ["s7CVarArgP", "titleTextAttributes"]
 - !private ["s7CVarArgP", "token"]
 - !private ["s7CVarArgP", "unselectedItemTintColor"]
+- !private ["s7CVarArgP", "useMessagingDelegateForDirectChannel"]
 - !private ["s7CVarArgP", "userInfo"]
 - ["s7CVarArgP", "userNotificationCenter"]
+- ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", "window"]
 - !private ["s7CVarArgP", "yellow"]
@@ -264,8 +282,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
 - !private ["s28CustomDebugStringConvertibleP", "Name"]
 - !private ["s28CustomDebugStringConvertibleP", "Notification"]
+- ["s28CustomDebugStringConvertibleP", "NotificationAlert"]
 - !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- ["s28CustomDebugStringConvertibleP", "Notifications"]
 - !private ["s28CustomDebugStringConvertibleP", "SignInKeys"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBackgroundFetchResult"]
@@ -279,7 +300,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIUserNotificationSettings"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - !private ["s28CustomDebugStringConvertibleP", "UNUserNotificationCenter"]
-- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "appData"]
 - !private ["s28CustomDebugStringConvertibleP", "appearance"]
@@ -288,6 +309,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "applicationIconBadgeNumber"]
 - ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
 - ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
@@ -301,8 +323,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "clear"]
 - !private ["s28CustomDebugStringConvertibleP", "clientID"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
-- !private ["s28CustomDebugStringConvertibleP", "connect"]
 - !private ["s28CustomDebugStringConvertibleP", "content"]
+- !private ["s28CustomDebugStringConvertibleP", "countNotificaton"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -333,7 +355,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
-- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "shouldEstablishDirectChannel"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "statusBarStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "statusBarView"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -341,8 +364,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
 - !private ["s28CustomDebugStringConvertibleP", "token"]
 - !private ["s28CustomDebugStringConvertibleP", "unselectedItemTintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "useMessagingDelegateForDirectChannel"]
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
+- ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s28CustomDebugStringConvertibleP", "yellow"]
@@ -357,6 +382,7 @@ depends-member:
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "white"]
 - !private ["s23CustomStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - !private ["s23CustomStringConvertibleP", "GIDSignIn"]
@@ -367,8 +393,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
 - !private ["s23CustomStringConvertibleP", "Name"]
 - !private ["s23CustomStringConvertibleP", "Notification"]
+- ["s23CustomStringConvertibleP", "NotificationAlert"]
 - !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- ["s23CustomStringConvertibleP", "Notifications"]
 - !private ["s23CustomStringConvertibleP", "SignInKeys"]
+- !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "UIBackgroundFetchResult"]
@@ -382,7 +411,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIUserNotificationSettings"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - !private ["s23CustomStringConvertibleP", "UNUserNotificationCenter"]
-- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "appData"]
@@ -392,6 +421,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
 - ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
 - ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "applicationIconBadgeNumber"]
 - ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
 - ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
@@ -405,8 +435,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "clear"]
 - !private ["s23CustomStringConvertibleP", "clientID"]
 - !private ["s23CustomStringConvertibleP", "configure"]
-- !private ["s23CustomStringConvertibleP", "connect"]
 - !private ["s23CustomStringConvertibleP", "content"]
+- !private ["s23CustomStringConvertibleP", "countNotificaton"]
 - !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -437,7 +467,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shadowImage"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sharedInstance"]
-- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "shouldEstablishDirectChannel"]
+- ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "statusBarStyle"]
 - !private ["s23CustomStringConvertibleP", "statusBarView"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -445,8 +476,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
 - !private ["s23CustomStringConvertibleP", "token"]
 - !private ["s23CustomStringConvertibleP", "unselectedItemTintColor"]
+- !private ["s23CustomStringConvertibleP", "useMessagingDelegateForDirectChannel"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - ["s23CustomStringConvertibleP", "userNotificationCenter"]
+- ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - ["s23CustomStringConvertibleP", "window"]
 - !private ["s23CustomStringConvertibleP", "yellow"]
@@ -457,6 +490,7 @@ depends-member:
 - ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "subscript"]
+- !private ["Se", "white"]
 - !private ["SD", "subscript"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "application"]
@@ -465,6 +499,7 @@ depends-member:
 - ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "subscript"]
+- !private ["SE", "white"]
 - !private ["SQ", "FBSDKApplicationDelegate"]
 - !private ["SQ", "FirebaseApp"]
 - !private ["SQ", "GIDSignIn"]
@@ -476,11 +511,14 @@ depends-member:
 - !private ["SQ", "NSAttributedStringKey"]
 - !private ["SQ", "Name"]
 - !private ["SQ", "Notification"]
+- ["SQ", "NotificationAlert"]
 - !private ["SQ", "NotificationCenter"]
+- ["SQ", "Notifications"]
 - !private ["SQ", "SignIn"]
 - !private ["SQ", "SignInKeys"]
 - !private ["SQ", "SignUp"]
 - !private ["SQ", "SignedIn"]
+- !private ["SQ", "String"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIApplicationOpenURLOptionsKey"]
 - !private ["SQ", "UIBackgroundFetchResult"]
@@ -494,7 +532,7 @@ depends-member:
 - !private ["SQ", "UIUserNotificationSettings"]
 - !private ["SQ", "UIWindow"]
 - !private ["SQ", "UNUserNotificationCenter"]
-- !private ["SQ", "UserDefaults"]
+- ["SQ", "UserDefaults"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
 - !private ["SQ", "alert"]
@@ -505,6 +543,7 @@ depends-member:
 - ["SQ", "applicationDidEnterBackground"]
 - ["SQ", "applicationDidFinishLaunching"]
 - ["SQ", "applicationDidReceiveMemoryWarning"]
+- !private ["SQ", "applicationIconBadgeNumber"]
 - ["SQ", "applicationProtectedDataDidBecomeAvailable"]
 - ["SQ", "applicationProtectedDataWillBecomeUnavailable"]
 - ["SQ", "applicationShouldRequestHealthAuthorization"]
@@ -519,8 +558,9 @@ depends-member:
 - !private ["SQ", "clear"]
 - !private ["SQ", "clientID"]
 - !private ["SQ", "configure"]
-- !private ["SQ", "connect"]
 - !private ["SQ", "content"]
+- ["SQ", "countNotification"]
+- !private ["SQ", "countNotificaton"]
 - !private ["SQ", "current"]
 - !private ["SQ", "default"]
 - !private ["SQ", "delegate"]
@@ -543,7 +583,7 @@ depends-member:
 - !private ["SQ", "post"]
 - !private ["SQ", "print"]
 - !private ["SQ", "provideAPIKey"]
-- !private ["SQ", "rawValue"]
+- ["SQ", "rawValue"]
 - !private ["SQ", "registerForRemoteNotifications"]
 - !private ["SQ", "registerUserNotificationSettings"]
 - !private ["SQ", "request"]
@@ -557,9 +597,10 @@ depends-member:
 - !private ["SQ", "shadowImage"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "sharedInstance"]
+- !private ["SQ", "shouldEstablishDirectChannel"]
 - !private ["SQ", "sound"]
 - !private ["SQ", "sourceApplication"]
-- !private ["SQ", "standard"]
+- ["SQ", "standard"]
 - !private ["SQ", "statusBarStyle"]
 - !private ["SQ", "statusBarView"]
 - !private ["SQ", "subscript"]
@@ -567,8 +608,10 @@ depends-member:
 - !private ["SQ", "titleTextAttributes"]
 - !private ["SQ", "token"]
 - !private ["SQ", "unselectedItemTintColor"]
+- !private ["SQ", "useMessagingDelegateForDirectChannel"]
 - !private ["SQ", "userInfo"]
 - ["SQ", "userNotificationCenter"]
+- ["SQ", "value"]
 - !private ["SQ", "white"]
 - ["SQ", "window"]
 - !private ["SQ", "yellow"]
@@ -585,6 +628,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "application"]
 - !private ["s23ExpressibleByNilLiteralP", "clientID"]
 - !private ["s23ExpressibleByNilLiteralP", "handle"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -597,14 +641,6 @@ depends-member:
 - !private ["So9GIDSignInC", "sharedInstance"]
 - !private ["So15GMSPlacesClientC", "provideAPIKey"]
 - !private ["So11GMSServicesC", "provideAPIKey"]
-- !private ["7RxCocoa11HasDelegateP", "appearance"]
-- !private ["7RxCocoa11HasDelegateP", "barTintColor"]
-- !private ["7RxCocoa11HasDelegateP", "init"]
-- !private ["7RxCocoa11HasDelegateP", "isNavigationBarHidden"]
-- !private ["7RxCocoa11HasDelegateP", "isTranslucent"]
-- !private ["7RxCocoa11HasDelegateP", "navigationBar"]
-- !private ["7RxCocoa11HasDelegateP", "shadowColor"]
-- !private ["7RxCocoa11HasDelegateP", "unselectedItemTintColor"]
 - !private ["SH", "FBSDKApplicationDelegate"]
 - !private ["SH", "FirebaseApp"]
 - !private ["SH", "GIDSignIn"]
@@ -616,11 +652,14 @@ depends-member:
 - !private ["SH", "NSAttributedStringKey"]
 - !private ["SH", "Name"]
 - !private ["SH", "Notification"]
+- ["SH", "NotificationAlert"]
 - !private ["SH", "NotificationCenter"]
+- ["SH", "Notifications"]
 - !private ["SH", "SignIn"]
 - !private ["SH", "SignInKeys"]
 - !private ["SH", "SignUp"]
 - !private ["SH", "SignedIn"]
+- !private ["SH", "String"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UIApplicationOpenURLOptionsKey"]
 - !private ["SH", "UIBackgroundFetchResult"]
@@ -634,7 +673,7 @@ depends-member:
 - !private ["SH", "UIUserNotificationSettings"]
 - !private ["SH", "UIWindow"]
 - !private ["SH", "UNUserNotificationCenter"]
-- !private ["SH", "UserDefaults"]
+- ["SH", "UserDefaults"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
 - !private ["SH", "appData"]
@@ -644,6 +683,7 @@ depends-member:
 - ["SH", "applicationDidEnterBackground"]
 - ["SH", "applicationDidFinishLaunching"]
 - ["SH", "applicationDidReceiveMemoryWarning"]
+- !private ["SH", "applicationIconBadgeNumber"]
 - ["SH", "applicationProtectedDataDidBecomeAvailable"]
 - ["SH", "applicationProtectedDataWillBecomeUnavailable"]
 - ["SH", "applicationShouldRequestHealthAuthorization"]
@@ -657,8 +697,9 @@ depends-member:
 - !private ["SH", "clear"]
 - !private ["SH", "clientID"]
 - !private ["SH", "configure"]
-- !private ["SH", "connect"]
 - !private ["SH", "content"]
+- ["SH", "countNotification"]
+- !private ["SH", "countNotificaton"]
 - !private ["SH", "current"]
 - !private ["SH", "default"]
 - !private ["SH", "delegate"]
@@ -680,7 +721,7 @@ depends-member:
 - !private ["SH", "post"]
 - !private ["SH", "print"]
 - !private ["SH", "provideAPIKey"]
-- !private ["SH", "rawValue"]
+- ["SH", "rawValue"]
 - !private ["SH", "registerForRemoteNotifications"]
 - !private ["SH", "registerUserNotificationSettings"]
 - !private ["SH", "request"]
@@ -693,8 +734,9 @@ depends-member:
 - !private ["SH", "shadowImage"]
 - !private ["SH", "shared"]
 - !private ["SH", "sharedInstance"]
+- !private ["SH", "shouldEstablishDirectChannel"]
 - !private ["SH", "sourceApplication"]
-- !private ["SH", "standard"]
+- ["SH", "standard"]
 - !private ["SH", "statusBarStyle"]
 - !private ["SH", "statusBarView"]
 - !private ["SH", "subscript"]
@@ -702,15 +744,17 @@ depends-member:
 - !private ["SH", "titleTextAttributes"]
 - !private ["SH", "token"]
 - !private ["SH", "unselectedItemTintColor"]
+- !private ["SH", "useMessagingDelegateForDirectChannel"]
 - !private ["SH", "userInfo"]
 - ["SH", "userNotificationCenter"]
+- ["SH", "value"]
 - !private ["SH", "white"]
 - ["SH", "window"]
 - !private ["SH", "yellow"]
 - !private ["So13FIRInstanceIDC", "instanceID"]
 - !private ["So19FIRInstanceIDResultC", "token"]
-- !private ["7RxCocoa16KVORepresentableP", "_getBuiltinLogicValue"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
+- !private ["10Kingfisher0A10CompatibleP", "applicationIconBadgeNumber"]
 - ["10Kingfisher0A10CompatibleP", "init"]
 - ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "registerForRemoteNotifications"]
@@ -721,9 +765,10 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
-- !private ["So12FIRMessagingC", "connect"]
 - !private ["So12FIRMessagingC", "delegate"]
 - !private ["So12FIRMessagingC", "messaging"]
+- !private ["So12FIRMessagingC", "shouldEstablishDirectChannel"]
+- !private ["So12FIRMessagingC", "useMessagingDelegateForDirectChannel"]
 - !private ["So20FIRMessagingDelegateP", "FBSDKApplicationDelegate"]
 - !private ["So20FIRMessagingDelegateP", "FirebaseApp"]
 - !private ["So20FIRMessagingDelegateP", "GIDSignIn"]
@@ -733,8 +778,11 @@ depends-member:
 - !private ["So20FIRMessagingDelegateP", "Messaging"]
 - !private ["So20FIRMessagingDelegateP", "NSAttributedStringKey"]
 - !private ["So20FIRMessagingDelegateP", "Notification"]
+- ["So20FIRMessagingDelegateP", "NotificationAlert"]
 - !private ["So20FIRMessagingDelegateP", "NotificationCenter"]
+- ["So20FIRMessagingDelegateP", "Notifications"]
 - !private ["So20FIRMessagingDelegateP", "SignInKeys"]
+- !private ["So20FIRMessagingDelegateP", "String"]
 - !private ["So20FIRMessagingDelegateP", "UIApplication"]
 - !private ["So20FIRMessagingDelegateP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So20FIRMessagingDelegateP", "UIBackgroundFetchResult"]
@@ -748,7 +796,7 @@ depends-member:
 - !private ["So20FIRMessagingDelegateP", "UIUserNotificationSettings"]
 - !private ["So20FIRMessagingDelegateP", "UIWindow"]
 - !private ["So20FIRMessagingDelegateP", "UNUserNotificationCenter"]
-- !private ["So20FIRMessagingDelegateP", "UserDefaults"]
+- ["So20FIRMessagingDelegateP", "UserDefaults"]
 - ["So20FIRMessagingDelegateP", ""]
 - ["So20FIRMessagingDelegateP", "application"]
 - ["So20FIRMessagingDelegateP", "applicationDidBecomeActive"]
@@ -762,6 +810,7 @@ depends-member:
 - ["So20FIRMessagingDelegateP", "applicationWillEnterForeground"]
 - ["So20FIRMessagingDelegateP", "applicationWillResignActive"]
 - ["So20FIRMessagingDelegateP", "applicationWillTerminate"]
+- !private ["So20FIRMessagingDelegateP", "countNotificaton"]
 - !private ["So20FIRMessagingDelegateP", "gcmMessageIDKey"]
 - ["So20FIRMessagingDelegateP", "messaging"]
 - !private ["So20FIRMessagingDelegateP", "print"]
@@ -825,12 +874,15 @@ depends-member:
 - !private ["So8NSObjectC", "GMSPlacesClient"]
 - !private ["So8NSObjectC", "GMSServices"]
 - !private ["So8NSObjectC", "InstanceID"]
+- ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "MainTabarViewController"]
 - ["So8NSObjectC", "Messaging"]
 - ["So8NSObjectC", "MessagingRemoteMessage"]
 - !private ["So8NSObjectC", "NSAttributedStringKey"]
 - !private ["So8NSObjectC", "Notification"]
+- ["So8NSObjectC", "NotificationAlert"]
 - !private ["So8NSObjectC", "NotificationCenter"]
+- ["So8NSObjectC", "Notifications"]
 - !private ["So8NSObjectC", "SignInKeys"]
 - !private ["So8NSObjectC", "SignInViewController"]
 - !private ["So8NSObjectC", "SignUpViewController"]
@@ -855,8 +907,9 @@ depends-member:
 - ["So8NSObjectC", "UNNotificationResponse"]
 - ["So8NSObjectC", "UNUserNotificationCenter"]
 - ["So8NSObjectC", "URL"]
-- !private ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", "UserDefaults"]
 - ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "alertNotification"]
 - !private ["So8NSObjectC", "appData"]
 - !private ["So8NSObjectC", "appearance"]
 - ["So8NSObjectC", "application"]
@@ -864,6 +917,7 @@ depends-member:
 - ["So8NSObjectC", "applicationDidEnterBackground"]
 - ["So8NSObjectC", "applicationDidFinishLaunching"]
 - ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "applicationIconBadgeNumber"]
 - ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
 - ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
@@ -877,8 +931,8 @@ depends-member:
 - !private ["So8NSObjectC", "clear"]
 - !private ["So8NSObjectC", "clientID"]
 - !private ["So8NSObjectC", "configure"]
-- !private ["So8NSObjectC", "connect"]
 - !private ["So8NSObjectC", "content"]
+- ["So8NSObjectC", "countNotificaton"]
 - !private ["So8NSObjectC", "current"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "delegate"]
@@ -894,6 +948,8 @@ depends-member:
 - ["So8NSObjectC", "messaging"]
 - !private ["So8NSObjectC", "navigationBar"]
 - !private ["So8NSObjectC", "notification"]
+- ["So8NSObjectC", "notificationAlert"]
+- ["So8NSObjectC", "notifications"]
 - !private ["So8NSObjectC", "post"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "provideAPIKey"]
@@ -909,15 +965,18 @@ depends-member:
 - !private ["So8NSObjectC", "shadowImage"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "sharedInstance"]
-- !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "shouldEstablishDirectChannel"]
+- ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "statusBarStyle"]
 - !private ["So8NSObjectC", "statusBarView"]
 - !private ["So8NSObjectC", "tintColor"]
 - !private ["So8NSObjectC", "titleTextAttributes"]
 - !private ["So8NSObjectC", "token"]
 - !private ["So8NSObjectC", "unselectedItemTintColor"]
+- !private ["So8NSObjectC", "useMessagingDelegateForDirectChannel"]
 - !private ["So8NSObjectC", "userInfo"]
 - ["So8NSObjectC", "userNotificationCenter"]
+- ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "white"]
 - ["So8NSObjectC", "window"]
 - !private ["So8NSObjectC", "yellow"]
@@ -930,8 +989,11 @@ depends-member:
 - !private ["So8NSObjectP", "Messaging"]
 - !private ["So8NSObjectP", "NSAttributedStringKey"]
 - !private ["So8NSObjectP", "Notification"]
+- ["So8NSObjectP", "NotificationAlert"]
 - !private ["So8NSObjectP", "NotificationCenter"]
+- ["So8NSObjectP", "Notifications"]
 - !private ["So8NSObjectP", "SignInKeys"]
+- !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So8NSObjectP", "UIBackgroundFetchResult"]
@@ -945,7 +1007,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIUserNotificationSettings"]
 - !private ["So8NSObjectP", "UIWindow"]
 - !private ["So8NSObjectP", "UNUserNotificationCenter"]
-- !private ["So8NSObjectP", "UserDefaults"]
+- ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "appData"]
 - !private ["So8NSObjectP", "appearance"]
@@ -954,6 +1016,7 @@ depends-member:
 - ["So8NSObjectP", "applicationDidEnterBackground"]
 - ["So8NSObjectP", "applicationDidFinishLaunching"]
 - ["So8NSObjectP", "applicationDidReceiveMemoryWarning"]
+- !private ["So8NSObjectP", "applicationIconBadgeNumber"]
 - ["So8NSObjectP", "applicationProtectedDataDidBecomeAvailable"]
 - ["So8NSObjectP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So8NSObjectP", "applicationShouldRequestHealthAuthorization"]
@@ -967,14 +1030,14 @@ depends-member:
 - !private ["So8NSObjectP", "clear"]
 - !private ["So8NSObjectP", "clientID"]
 - !private ["So8NSObjectP", "configure"]
-- !private ["So8NSObjectP", "connect"]
 - !private ["So8NSObjectP", "content"]
+- !private ["So8NSObjectP", "countNotificaton"]
 - !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "default"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "gcmMessageIDKey"]
 - !private ["So8NSObjectP", "handle"]
-- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instanceID"]
 - !private ["So8NSObjectP", "instantiateViewController"]
@@ -999,15 +1062,18 @@ depends-member:
 - !private ["So8NSObjectP", "shadowImage"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "sharedInstance"]
-- !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "shouldEstablishDirectChannel"]
+- ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "statusBarStyle"]
 - !private ["So8NSObjectP", "statusBarView"]
 - !private ["So8NSObjectP", "tintColor"]
 - !private ["So8NSObjectP", "titleTextAttributes"]
 - !private ["So8NSObjectP", "token"]
 - !private ["So8NSObjectP", "unselectedItemTintColor"]
+- !private ["So8NSObjectP", "useMessagingDelegateForDirectChannel"]
 - !private ["So8NSObjectP", "userInfo"]
 - ["So8NSObjectP", "userNotificationCenter"]
+- ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "white"]
 - ["So8NSObjectP", "window"]
 - !private ["So8NSObjectP", "yellow"]
@@ -1021,8 +1087,12 @@ depends-member:
 - !private ["So14NSSecureCodingP", "yellow"]
 - !private ["So18NSNotificationNamea", "init"]
 - !private ["10Foundation12NotificationV", "Name"]
+- ["13BarberShop_V217NotificationAlertO", "countNotification"]
+- ["13BarberShop_V217NotificationAlertO", "deinit"]
+- ["13BarberShop_V217NotificationAlertO", "rawValue"]
 - !private ["So20NSNotificationCenterC", "default"]
 - !private ["So20NSNotificationCenterC", "post"]
+- ["13BarberShop_V213NotificationsC", "init"]
 - !private ["So30UIApplicationOpenURLOptionsKeya", "sourceApplication"]
 - !private ["s9OptionSetP", "alert"]
 - !private ["s9OptionSetP", "badge"]
@@ -1032,9 +1102,7 @@ depends-member:
 - !private ["Sq", "application"]
 - !private ["Sq", "clientID"]
 - !private ["Sq", "handle"]
-- !private ["13BarberShop_V212OptionalTypeP", "application"]
-- !private ["13BarberShop_V212OptionalTypeP", "clientID"]
-- !private ["13BarberShop_V212OptionalTypeP", "handle"]
+- !private ["Sq", "white"]
 - !private ["10Kingfisher11PlaceholderP", "init"]
 - ["Sm", "init"]
 - ["Sm", "init"]
@@ -1044,106 +1112,17 @@ depends-member:
 - !private ["SY", "SignedIn"]
 - !private ["SY", "alert"]
 - !private ["SY", "badge"]
+- ["SY", "countNotification"]
 - !private ["SY", "default"]
 - !private ["SY", "foregroundColor"]
 - !private ["SY", "init"]
 - !private ["SY", "lightContent"]
 - !private ["SY", "newData"]
 - !private ["SY", "normal"]
-- !private ["SY", "rawValue"]
+- ["SY", "rawValue"]
 - !private ["SY", "selected"]
 - !private ["SY", "sound"]
 - !private ["SY", "sourceApplication"]
-- !private ["7RxSwift18ReactiveCompatibleP", "FBSDKApplicationDelegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "FirebaseApp"]
-- !private ["7RxSwift18ReactiveCompatibleP", "GIDSignIn"]
-- !private ["7RxSwift18ReactiveCompatibleP", "GMSPlacesClient"]
-- !private ["7RxSwift18ReactiveCompatibleP", "GMSServices"]
-- !private ["7RxSwift18ReactiveCompatibleP", "InstanceID"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Messaging"]
-- !private ["7RxSwift18ReactiveCompatibleP", "NSAttributedStringKey"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Notification"]
-- !private ["7RxSwift18ReactiveCompatibleP", "NotificationCenter"]
-- !private ["7RxSwift18ReactiveCompatibleP", "SignInKeys"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIApplication"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIApplicationOpenURLOptionsKey"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIBackgroundFetchResult"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UINavigationBar"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UINavigationController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIStoryboard"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UITabBar"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UITabBarItem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIUserNotificationSettings"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIWindow"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UNUserNotificationCenter"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UserDefaults"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "appData"]
-- !private ["7RxSwift18ReactiveCompatibleP", "appearance"]
-- ["7RxSwift18ReactiveCompatibleP", "application"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationDidBecomeActive"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationDidEnterBackground"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationDidFinishLaunching"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationDidReceiveMemoryWarning"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationProtectedDataDidBecomeAvailable"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationProtectedDataWillBecomeUnavailable"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationShouldRequestHealthAuthorization"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationSignificantTimeChange"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationWillEnterForeground"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationWillResignActive"]
-- ["7RxSwift18ReactiveCompatibleP", "applicationWillTerminate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "backgroundColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "barTintColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "bool"]
-- !private ["7RxSwift18ReactiveCompatibleP", "clear"]
-- !private ["7RxSwift18ReactiveCompatibleP", "clientID"]
-- !private ["7RxSwift18ReactiveCompatibleP", "configure"]
-- !private ["7RxSwift18ReactiveCompatibleP", "connect"]
-- !private ["7RxSwift18ReactiveCompatibleP", "content"]
-- !private ["7RxSwift18ReactiveCompatibleP", "current"]
-- !private ["7RxSwift18ReactiveCompatibleP", "default"]
-- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "gcmMessageIDKey"]
-- !private ["7RxSwift18ReactiveCompatibleP", "handle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "instanceID"]
-- !private ["7RxSwift18ReactiveCompatibleP", "instantiateViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "isNavigationBarHidden"]
-- !private ["7RxSwift18ReactiveCompatibleP", "isTranslucent"]
-- !private ["7RxSwift18ReactiveCompatibleP", "makeKeyAndVisible"]
-- ["7RxSwift18ReactiveCompatibleP", "messaging"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationBar"]
-- !private ["7RxSwift18ReactiveCompatibleP", "notification"]
-- !private ["7RxSwift18ReactiveCompatibleP", "post"]
-- !private ["7RxSwift18ReactiveCompatibleP", "print"]
-- !private ["7RxSwift18ReactiveCompatibleP", "provideAPIKey"]
-- !private ["7RxSwift18ReactiveCompatibleP", "registerForRemoteNotifications"]
-- !private ["7RxSwift18ReactiveCompatibleP", "registerUserNotificationSettings"]
-- !private ["7RxSwift18ReactiveCompatibleP", "request"]
-- !private ["7RxSwift18ReactiveCompatibleP", "requestAuthorization"]
-- !private ["7RxSwift18ReactiveCompatibleP", "rootViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setBackgroundImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setTitleTextAttributes"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupRootViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shadowColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shadowImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shared"]
-- !private ["7RxSwift18ReactiveCompatibleP", "sharedInstance"]
-- !private ["7RxSwift18ReactiveCompatibleP", "standard"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusBarStyle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusBarView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "tintColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "titleTextAttributes"]
-- !private ["7RxSwift18ReactiveCompatibleP", "token"]
-- !private ["7RxSwift18ReactiveCompatibleP", "unselectedItemTintColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "userInfo"]
-- ["7RxSwift18ReactiveCompatibleP", "userNotificationCenter"]
-- !private ["7RxSwift18ReactiveCompatibleP", "white"]
-- ["7RxSwift18ReactiveCompatibleP", "window"]
-- !private ["7RxSwift18ReactiveCompatibleP", "yellow"]
 - !private ["10Foundation20ReferenceConvertibleP", "Name"]
 - ["ST", "init"]
 - ["ST", "init"]
@@ -1215,6 +1194,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "tintColor"]
 - !private ["So21UIAppearanceContainerP", "titleTextAttributes"]
 - !private ["So21UIAppearanceContainerP", "unselectedItemTintColor"]
+- !private ["So13UIApplicationC", "applicationIconBadgeNumber"]
 - !private ["So13UIApplicationC", "registerForRemoteNotifications"]
 - !private ["So13UIApplicationC", "registerUserNotificationSettings"]
 - !private ["So13UIApplicationC", "shared"]
@@ -1229,8 +1209,11 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "Messaging"]
 - !private ["So21UIApplicationDelegateP", "NSAttributedStringKey"]
 - !private ["So21UIApplicationDelegateP", "Notification"]
+- ["So21UIApplicationDelegateP", "NotificationAlert"]
 - !private ["So21UIApplicationDelegateP", "NotificationCenter"]
+- ["So21UIApplicationDelegateP", "Notifications"]
 - !private ["So21UIApplicationDelegateP", "SignInKeys"]
+- !private ["So21UIApplicationDelegateP", "String"]
 - !private ["So21UIApplicationDelegateP", "UIApplication"]
 - !private ["So21UIApplicationDelegateP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So21UIApplicationDelegateP", "UIBackgroundFetchResult"]
@@ -1244,7 +1227,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "UIUserNotificationSettings"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
 - !private ["So21UIApplicationDelegateP", "UNUserNotificationCenter"]
-- !private ["So21UIApplicationDelegateP", "UserDefaults"]
+- ["So21UIApplicationDelegateP", "UserDefaults"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -1258,6 +1241,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "countNotificaton"]
 - !private ["So21UIApplicationDelegateP", "gcmMessageIDKey"]
 - ["So21UIApplicationDelegateP", "messaging"]
 - !private ["So21UIApplicationDelegateP", "print"]
@@ -1370,8 +1354,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Messaging"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "Notification"]
+- ["So30UIPasteConfigurationSupportingP", "NotificationAlert"]
 - !private ["So30UIPasteConfigurationSupportingP", "NotificationCenter"]
+- ["So30UIPasteConfigurationSupportingP", "Notifications"]
 - !private ["So30UIPasteConfigurationSupportingP", "SignInKeys"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBackgroundFetchResult"]
@@ -1385,7 +1372,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIUserNotificationSettings"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNUserNotificationCenter"]
-- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "appearance"]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -1393,6 +1380,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "applicationIconBadgeNumber"]
 - ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
 - ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
@@ -1402,6 +1390,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "barTintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "countNotificaton"]
 - !private ["So30UIPasteConfigurationSupportingP", "gcmMessageIDKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -1436,12 +1425,15 @@ depends-member:
 - !private ["So11UIResponderC", "GMSPlacesClient"]
 - !private ["So11UIResponderC", "GMSServices"]
 - !private ["So11UIResponderC", "InstanceID"]
+- ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "MainTabarViewController"]
 - ["So11UIResponderC", "Messaging"]
 - ["So11UIResponderC", "MessagingRemoteMessage"]
 - !private ["So11UIResponderC", "NSAttributedStringKey"]
 - !private ["So11UIResponderC", "Notification"]
+- ["So11UIResponderC", "NotificationAlert"]
 - !private ["So11UIResponderC", "NotificationCenter"]
+- ["So11UIResponderC", "Notifications"]
 - !private ["So11UIResponderC", "SignInKeys"]
 - !private ["So11UIResponderC", "SignInViewController"]
 - !private ["So11UIResponderC", "SignUpViewController"]
@@ -1466,15 +1458,17 @@ depends-member:
 - ["So11UIResponderC", "UNNotificationResponse"]
 - ["So11UIResponderC", "UNUserNotificationCenter"]
 - ["So11UIResponderC", "URL"]
-- !private ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", "UserDefaults"]
 - ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", ""]
+- ["So11UIResponderC", "alertNotification"]
 - !private ["So11UIResponderC", "appearance"]
 - ["So11UIResponderC", "application"]
 - ["So11UIResponderC", "applicationDidBecomeActive"]
 - ["So11UIResponderC", "applicationDidEnterBackground"]
 - ["So11UIResponderC", "applicationDidFinishLaunching"]
 - ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "applicationIconBadgeNumber"]
 - ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
 - ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
@@ -1484,6 +1478,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "barTintColor"]
+- ["So11UIResponderC", "countNotificaton"]
 - ["So11UIResponderC", "gcmMessageIDKey"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -1492,6 +1487,8 @@ depends-member:
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - ["So11UIResponderC", "messaging"]
 - !private ["So11UIResponderC", "navigationBar"]
+- ["So11UIResponderC", "notificationAlert"]
+- ["So11UIResponderC", "notifications"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "registerForRemoteNotifications"]
 - !private ["So11UIResponderC", "registerUserNotificationSettings"]
@@ -1517,8 +1514,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Messaging"]
 - !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
 - !private ["So30UIResponderStandardEditActionsP", "Notification"]
+- ["So30UIResponderStandardEditActionsP", "NotificationAlert"]
 - !private ["So30UIResponderStandardEditActionsP", "NotificationCenter"]
+- ["So30UIResponderStandardEditActionsP", "Notifications"]
 - !private ["So30UIResponderStandardEditActionsP", "SignInKeys"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBackgroundFetchResult"]
@@ -1532,7 +1532,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIUserNotificationSettings"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - !private ["So30UIResponderStandardEditActionsP", "UNUserNotificationCenter"]
-- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "appearance"]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -1540,6 +1540,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "applicationIconBadgeNumber"]
 - ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
 - ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
@@ -1549,6 +1550,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "barTintColor"]
+- !private ["So30UIResponderStandardEditActionsP", "countNotificaton"]
 - !private ["So30UIResponderStandardEditActionsP", "gcmMessageIDKey"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -1616,8 +1618,11 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Messaging"]
 - !private ["So23UIUserActivityRestoringP", "NSAttributedStringKey"]
 - !private ["So23UIUserActivityRestoringP", "Notification"]
+- ["So23UIUserActivityRestoringP", "NotificationAlert"]
 - !private ["So23UIUserActivityRestoringP", "NotificationCenter"]
+- ["So23UIUserActivityRestoringP", "Notifications"]
 - !private ["So23UIUserActivityRestoringP", "SignInKeys"]
+- !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "UIBackgroundFetchResult"]
@@ -1631,7 +1636,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIUserNotificationSettings"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - !private ["So23UIUserActivityRestoringP", "UNUserNotificationCenter"]
-- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
+- ["So23UIUserActivityRestoringP", "UserDefaults"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "appearance"]
 - ["So23UIUserActivityRestoringP", "application"]
@@ -1639,6 +1644,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationDidEnterBackground"]
 - ["So23UIUserActivityRestoringP", "applicationDidFinishLaunching"]
 - ["So23UIUserActivityRestoringP", "applicationDidReceiveMemoryWarning"]
+- !private ["So23UIUserActivityRestoringP", "applicationIconBadgeNumber"]
 - ["So23UIUserActivityRestoringP", "applicationProtectedDataDidBecomeAvailable"]
 - ["So23UIUserActivityRestoringP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["So23UIUserActivityRestoringP", "applicationShouldRequestHealthAuthorization"]
@@ -1648,6 +1654,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "barTintColor"]
+- !private ["So23UIUserActivityRestoringP", "countNotificaton"]
 - !private ["So23UIUserActivityRestoringP", "gcmMessageIDKey"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -1717,8 +1724,11 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "Messaging"]
 - !private ["So32UNUserNotificationCenterDelegateP", "NSAttributedStringKey"]
 - !private ["So32UNUserNotificationCenterDelegateP", "Notification"]
+- ["So32UNUserNotificationCenterDelegateP", "NotificationAlert"]
 - !private ["So32UNUserNotificationCenterDelegateP", "NotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", "Notifications"]
 - !private ["So32UNUserNotificationCenterDelegateP", "SignInKeys"]
+- !private ["So32UNUserNotificationCenterDelegateP", "String"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIApplication"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIApplicationOpenURLOptionsKey"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIBackgroundFetchResult"]
@@ -1732,7 +1742,7 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "UIUserNotificationSettings"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UIWindow"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UNUserNotificationCenter"]
-- !private ["So32UNUserNotificationCenterDelegateP", "UserDefaults"]
+- ["So32UNUserNotificationCenterDelegateP", "UserDefaults"]
 - ["So32UNUserNotificationCenterDelegateP", ""]
 - ["So32UNUserNotificationCenterDelegateP", "application"]
 - ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
@@ -1746,7 +1756,9 @@ depends-member:
 - ["So32UNUserNotificationCenterDelegateP", "applicationWillEnterForeground"]
 - ["So32UNUserNotificationCenterDelegateP", "applicationWillResignActive"]
 - ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
+- !private ["So32UNUserNotificationCenterDelegateP", "countNotificaton"]
 - !private ["So32UNUserNotificationCenterDelegateP", "gcmMessageIDKey"]
+- ["So32UNUserNotificationCenterDelegateP", "init"]
 - ["So32UNUserNotificationCenterDelegateP", "messaging"]
 - !private ["So32UNUserNotificationCenterDelegateP", "print"]
 - !private ["So32UNUserNotificationCenterDelegateP", "setupRootViewController"]
@@ -1755,7 +1767,8 @@ depends-member:
 - ["9Alamofire14URLConvertibleP", "init"]
 - ["9Alamofire14URLConvertibleP", "init"]
 - !private ["So14NSUserDefaultsC", "bool"]
-- !private ["So14NSUserDefaultsC", "standard"]
+- ["So14NSUserDefaultsC", "standard"]
+- ["So14NSUserDefaultsC", "value"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
@@ -1798,8 +1811,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Messaging"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Notification"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "NotificationAlert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Notifications"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SignInKeys"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplicationOpenURLOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBackgroundFetchResult"]
@@ -1813,7 +1829,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIUserNotificationSettings"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNUserNotificationCenter"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
@@ -1822,6 +1838,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "applicationIconBadgeNumber"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
@@ -1835,14 +1852,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clientID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "connect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "content"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "countNotificaton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "gcmMessageIDKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instanceID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
@@ -1867,15 +1884,18 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shouldEstablishDirectChannel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "token"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "unselectedItemTintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "useMessagingDelegateForDirectChannel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "userNotificationCenter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yellow"]
@@ -1889,6 +1909,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "sourceApplication"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s20_SwiftNewtypeWrapperP", "init"]
 - !private ["s20_SwiftNewtypeWrapperP", "sourceApplication"]
@@ -1924,11 +1945,9 @@ depends-nominal:
 - !private "So9GIDSignInC"
 - !private "So15GMSPlacesClientC"
 - !private "So11GMSServicesC"
-- !private "7RxCocoa11HasDelegateP"
 - "SH"
 - !private "So13FIRInstanceIDC"
 - !private "So19FIRInstanceIDResultC"
-- !private "7RxCocoa16KVORepresentableP"
 - !private "So21NSAttributedStringKeya"
 - "10Kingfisher0A10CompatibleP"
 - "s25LosslessStringConvertibleP"
@@ -1947,15 +1966,15 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So18NSNotificationNamea"
 - !private "10Foundation12NotificationV"
+- "13BarberShop_V217NotificationAlertO"
 - !private "So20NSNotificationCenterC"
+- "13BarberShop_V213NotificationsC"
 - !private "So30UIApplicationOpenURLOptionsKeya"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
 - !private "10Kingfisher11PlaceholderP"
 - "Sm"
-- !private "SY"
-- "7RxSwift18ReactiveCompatibleP"
+- "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
 - !private "s10SetAlgebraP"
@@ -2012,7 +2031,7 @@ depends-nominal:
 - !private "So24UNUserNotificationCenterC"
 - "So32UNUserNotificationCenterDelegateP"
 - "9Alamofire14URLConvertibleP"
-- !private "So14NSUserDefaultsC"
+- "So14NSUserDefaultsC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -2031,7 +2050,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
@@ -2040,7 +2058,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/x86_64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -2065,9 +2082,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -2083,34 +2097,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -2135,6 +2144,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -2143,6 +2153,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -2173,6 +2184,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -2195,12 +2207,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -2228,6 +2240,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -2235,7 +2248,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
@@ -2244,7 +2256,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -2276,11 +2287,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -2301,7 +2309,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
@@ -2324,4 +2331,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "be6ae1e1c1ce7b30f014b5be7d962f82"
+interface-hash: "13822b6748d8ce1f09adb89b4e7509e2"

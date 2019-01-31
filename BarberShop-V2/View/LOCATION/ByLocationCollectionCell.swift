@@ -62,7 +62,6 @@ class ByLocationCollectionCell: UICollectionViewCell,ConfigurableCell {
     self.timeTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: byLocation.timeLb.rawValue, comment: "")
     
     self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key:byLocation.bookingBtn.rawValue, comment: ""), for: .normal)
-    self.bookingBtn.fontSize = 15
   }
     
   @IBAction func LocationBookingTapped(_ sender: RoundButton) {

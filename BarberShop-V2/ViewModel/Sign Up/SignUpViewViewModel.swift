@@ -6,7 +6,7 @@
 //  Copyright © 2018 minea. All rights reserved.
 //
 
-import RxSwift
+
 
 //class SignUpViewViewModel:ViewModelProtocol {
 //  

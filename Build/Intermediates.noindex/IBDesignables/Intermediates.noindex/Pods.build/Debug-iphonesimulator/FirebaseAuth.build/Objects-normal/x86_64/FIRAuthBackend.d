@@ -2,6 +2,12 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.m \
   /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthGlobalWorkQueue.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuth.h \
@@ -16,6 +22,7 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGameCenterAuthProvider.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h \
@@ -37,6 +44,8 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRDeleteAccountResponse.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoRequest.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetAccountInfoResponse.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterRequest.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSignInWithGameCenterResponse.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeRequest.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigRequest.h \
@@ -64,10 +73,4 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberRequest.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthOperationType.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberResponse.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/../AuthProviders/Phone/FIRPhoneAuthCredential_Internal.h

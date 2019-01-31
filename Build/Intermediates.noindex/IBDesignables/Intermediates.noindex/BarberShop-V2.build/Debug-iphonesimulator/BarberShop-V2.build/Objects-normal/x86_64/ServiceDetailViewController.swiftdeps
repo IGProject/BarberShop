@@ -40,14 +40,12 @@ depends-top-level:
 - "ServiceDetailViewController"
 - "String"
 - !private "StringLiteralType"
-- !private "UIApplication"
 - "UIBarButtonItem"
 - "UICollectionView"
 - "UICollectionViewDelegate"
 - "UICollectionViewDelegateFlowLayout"
 - "UICollectionViewLayout"
 - !private "UIColor"
-- !private "UIImage"
 - "UILabel"
 - "UINavigationBar"
 - "UINavigationItem"
@@ -56,50 +54,52 @@ depends-top-level:
 depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- !private ["Sa", "count"]
 - ["Sa", "init"]
+- !private ["s13ArrayProtocolP", "count"]
 - ["s13ArrayProtocolP", "init"]
+- !private ["SK", "count"]
 - ["SK", "init"]
 - !private ["SK", "init"]
+- !private ["SB", "init"]
 - !private ["13BarberShop_V221BookingViewControllerC", "serviceTitle"]
 - !private ["So19CAAnimationDelegateP", "borderColor"]
 - !private ["So19CAAnimationDelegateP", "borderWidth"]
 - !private ["So7CALayerC", "borderColor"]
 - !private ["So7CALayerC", "borderWidth"]
-- !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "cellForItem"]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "layer"]
-- !private ["So15CALayerDelegateP", "setBackgroundImage"]
-- !private ["So15CALayerDelegateP", "shadowImage"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
 - !private ["So6CGRectV", "size"]
 - !private ["So6CGSizeV", "init"]
 - !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "LocalizationSystem"]
 - !private ["s7CVarArgP", "ServiceDetail"]
 - ["s7CVarArgP", "String"]
-- !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "borderColor"]
 - !private ["s7CVarArgP", "borderWidth"]
 - !private ["s7CVarArgP", "cellForItem"]
 - !private ["s7CVarArgP", "cgColor"]
 - ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "desServiceString"]
 - !private ["s7CVarArgP", "des_service"]
 - !private ["s7CVarArgP", "descripTitleLabel"]
 - !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "imageDetail"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s7CVarArgP", "init"]
@@ -107,7 +107,6 @@ depends-member:
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "localizedStringForKey"]
-- !private ["s7CVarArgP", "navigationBar"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "navigationTitle"]
 - !private ["s7CVarArgP", "pointServiceString"]
@@ -133,14 +132,9 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - !private ["s7CVarArgP", "serviceDetailCollectionView"]
 - !private ["s7CVarArgP", "serviceTitle"]
-- !private ["s7CVarArgP", "setBackgroundImage"]
 - !private ["s7CVarArgP", "setCollection"]
-- !private ["s7CVarArgP", "setupClearNavigation"]
 - !private ["s7CVarArgP", "setupViewService"]
-- !private ["s7CVarArgP", "shadowImage"]
-- !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sharedInstance"]
-- !private ["s7CVarArgP", "statusBarView"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "titleServiceLabel"]
@@ -149,31 +143,32 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
+- !private ["Sl", "count"]
 - ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "LocalizationSystem"]
 - !private ["s28CustomDebugStringConvertibleP", "ServiceDetail"]
 - ["s28CustomDebugStringConvertibleP", "String"]
-- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForItem"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "desServiceString"]
 - !private ["s28CustomDebugStringConvertibleP", "des_service"]
 - !private ["s28CustomDebugStringConvertibleP", "descripTitleLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "imageDetail"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -181,7 +176,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "localizedStringForKey"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "pointServiceString"]
@@ -207,15 +201,10 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s28CustomDebugStringConvertibleP", "serviceDetailCollectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "serviceTitle"]
-- !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
 - !private ["s28CustomDebugStringConvertibleP", "setCollection"]
-- !private ["s28CustomDebugStringConvertibleP", "setupClearNavigation"]
 - !private ["s28CustomDebugStringConvertibleP", "setupViewService"]
-- !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
-- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
-- !private ["s28CustomDebugStringConvertibleP", "statusBarView"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "titleServiceLabel"]
@@ -229,6 +218,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "dataSource"]
 - !private ["s17CustomReflectableP", "delegate"]
 - ["s17CustomReflectableP", "init"]
@@ -237,27 +227,27 @@ depends-member:
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s17CustomReflectableP", "title"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "LocalizationSystem"]
 - !private ["s23CustomStringConvertibleP", "ServiceDetail"]
 - ["s23CustomStringConvertibleP", "String"]
-- !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
-- !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "borderColor"]
 - !private ["s23CustomStringConvertibleP", "borderWidth"]
 - !private ["s23CustomStringConvertibleP", "cellForItem"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
 - ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "desServiceString"]
 - !private ["s23CustomStringConvertibleP", "des_service"]
 - !private ["s23CustomStringConvertibleP", "descripTitleLabel"]
 - !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "imageDetail"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -265,7 +255,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "localizedStringForKey"]
-- !private ["s23CustomStringConvertibleP", "navigationBar"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "navigationTitle"]
 - !private ["s23CustomStringConvertibleP", "pointServiceString"]
@@ -291,14 +280,9 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s23CustomStringConvertibleP", "serviceDetailCollectionView"]
 - !private ["s23CustomStringConvertibleP", "serviceTitle"]
-- !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
 - !private ["s23CustomStringConvertibleP", "setCollection"]
-- !private ["s23CustomStringConvertibleP", "setupClearNavigation"]
 - !private ["s23CustomStringConvertibleP", "setupViewService"]
-- !private ["s23CustomStringConvertibleP", "shadowImage"]
-- !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sharedInstance"]
-- !private ["s23CustomStringConvertibleP", "statusBarView"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "titleServiceLabel"]
@@ -307,6 +291,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["Se", "count"]
 - !private ["Se", "dataSource"]
 - !private ["Se", "delegate"]
 - ["Se", "init"]
@@ -315,6 +300,7 @@ depends-member:
 - !private ["Se", "text"]
 - !private ["Se", "title"]
 - !private ["Se", "width"]
+- !private ["SE", "count"]
 - !private ["SE", "dataSource"]
 - !private ["SE", "delegate"]
 - ["SE", "init"]
@@ -324,29 +310,28 @@ depends-member:
 - !private ["SE", "title"]
 - !private ["SE", "width"]
 - !private ["SQ", "Booking"]
+- !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGSize"]
 - !private ["SQ", "LocalizationSystem"]
 - !private ["SQ", "ServiceDetail"]
 - ["SQ", "String"]
-- !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIColor"]
-- !private ["SQ", "UIImage"]
 - !private ["SQ", "UIStoryboard"]
 - ["SQ", ""]
-- !private ["SQ", "backgroundColor"]
 - !private ["SQ", "borderColor"]
 - !private ["SQ", "borderWidth"]
 - !private ["SQ", "cellForItem"]
 - !private ["SQ", "cgColor"]
 - ["SQ", "collectionView"]
+- !private ["SQ", "count"]
 - !private ["SQ", "dataSource"]
-- !private ["SQ", "default"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "desServiceString"]
 - !private ["SQ", "des_service"]
 - !private ["SQ", "descripTitleLabel"]
 - !private ["SQ", "descriptLb"]
 - !private ["SQ", "frame"]
+- !private ["SQ", "imageDetail"]
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["SQ", "init"]
@@ -354,7 +339,6 @@ depends-member:
 - !private ["SQ", "instantiateViewController"]
 - !private ["SQ", "layer"]
 - !private ["SQ", "localizedStringForKey"]
-- !private ["SQ", "navigationBar"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "navigationTitle"]
 - !private ["SQ", "pointLb"]
@@ -383,15 +367,10 @@ depends-member:
 - ["SQ", "scrollViewWillEndDragging"]
 - !private ["SQ", "serviceDetailCollectionView"]
 - !private ["SQ", "serviceTitle"]
-- !private ["SQ", "setBackgroundImage"]
 - !private ["SQ", "setCollection"]
-- !private ["SQ", "setupClearNavigation"]
 - !private ["SQ", "setupViewService"]
-- !private ["SQ", "shadowImage"]
-- !private ["SQ", "shared"]
 - !private ["SQ", "sharedInstance"]
 - !private ["SQ", "size"]
-- !private ["SQ", "statusBarView"]
 - !private ["SQ", "text"]
 - !private ["SQ", "title"]
 - !private ["SQ", "titleLb"]
@@ -402,9 +381,12 @@ depends-member:
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
 - !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -413,45 +395,30 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["7RxCocoa13HasDataSourceP", "cellForItem"]
-- !private ["7RxCocoa13HasDataSourceP", "dataSource"]
-- !private ["7RxCocoa13HasDataSourceP", "delegate"]
-- !private ["7RxCocoa13HasDataSourceP", "frame"]
-- !private ["7RxCocoa11HasDelegateP", "cellForItem"]
-- !private ["7RxCocoa11HasDelegateP", "dataSource"]
-- !private ["7RxCocoa11HasDelegateP", "delegate"]
-- !private ["7RxCocoa11HasDelegateP", "frame"]
-- !private ["7RxCocoa11HasDelegateP", "navigationBar"]
-- !private ["7RxCocoa11HasDelegateP", "popViewController"]
-- !private ["7RxCocoa11HasDelegateP", "pushViewController"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "cellForItem"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "dataSource"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "delegate"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "frame"]
+- !private ["SF", "init"]
 - !private ["SH", "Booking"]
+- !private ["SH", "CGFloat"]
 - !private ["SH", "CGSize"]
 - !private ["SH", "LocalizationSystem"]
 - !private ["SH", "ServiceDetail"]
 - ["SH", "String"]
-- !private ["SH", "UIApplication"]
 - !private ["SH", "UIColor"]
-- !private ["SH", "UIImage"]
 - !private ["SH", "UIStoryboard"]
 - ["SH", ""]
-- !private ["SH", "backgroundColor"]
 - !private ["SH", "borderColor"]
 - !private ["SH", "borderWidth"]
 - !private ["SH", "cellForItem"]
 - !private ["SH", "cgColor"]
 - ["SH", "collectionView"]
+- !private ["SH", "count"]
 - !private ["SH", "dataSource"]
-- !private ["SH", "default"]
 - !private ["SH", "delegate"]
 - !private ["SH", "desServiceString"]
 - !private ["SH", "des_service"]
 - !private ["SH", "descripTitleLabel"]
 - !private ["SH", "descriptLb"]
 - !private ["SH", "frame"]
+- !private ["SH", "imageDetail"]
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["SH", "init"]
@@ -459,7 +426,6 @@ depends-member:
 - !private ["SH", "instantiateViewController"]
 - !private ["SH", "layer"]
 - !private ["SH", "localizedStringForKey"]
-- !private ["SH", "navigationBar"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "navigationTitle"]
 - !private ["SH", "pointLb"]
@@ -488,14 +454,9 @@ depends-member:
 - ["SH", "scrollViewWillEndDragging"]
 - !private ["SH", "serviceDetailCollectionView"]
 - !private ["SH", "serviceTitle"]
-- !private ["SH", "setBackgroundImage"]
 - !private ["SH", "setCollection"]
-- !private ["SH", "setupClearNavigation"]
 - !private ["SH", "setupViewService"]
-- !private ["SH", "shadowImage"]
-- !private ["SH", "shared"]
 - !private ["SH", "sharedInstance"]
-- !private ["SH", "statusBarView"]
 - !private ["SH", "text"]
 - !private ["SH", "title"]
 - !private ["SH", "titleLb"]
@@ -505,13 +466,8 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
-- !private ["7RxCocoa16KVORepresentableP", "init"]
-- !private ["7RxCocoa16KVORepresentableP", "size"]
-- !private ["7RxCocoa16KVORepresentableP", "width"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
-- !private ["10Kingfisher0A10CompatibleP", "shared"]
-- !private ["10Kingfisher0A10CompatibleP", "statusBarView"]
 - !private ["10Kingfisher0A10CompatibleP", "width"]
 - !private ["13BarberShop_V218LocalizationSystemC", "localizedStringForKey"]
 - !private ["13BarberShop_V218LocalizationSystemC", "sharedInstance"]
@@ -519,17 +475,16 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
 - ["SM", "init"]
+- !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "LocalizationSystem"]
 - !private ["So8NSCodingP", "ServiceDetail"]
 - ["So8NSCodingP", "String"]
-- !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "borderColor"]
 - !private ["So8NSCodingP", "borderWidth"]
 - !private ["So8NSCodingP", "cellForItem"]
@@ -541,12 +496,12 @@ depends-member:
 - !private ["So8NSCodingP", "des_service"]
 - !private ["So8NSCodingP", "descripTitleLabel"]
 - !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "imageDetail"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
-- !private ["So8NSCodingP", "navigationBar"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "navigationTitle"]
 - !private ["So8NSCodingP", "pointServiceString"]
@@ -572,11 +527,8 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
 - !private ["So8NSCodingP", "serviceDetailCollectionView"]
 - !private ["So8NSCodingP", "serviceTitle"]
-- !private ["So8NSCodingP", "setBackgroundImage"]
 - !private ["So8NSCodingP", "setCollection"]
-- !private ["So8NSCodingP", "setupClearNavigation"]
 - !private ["So8NSCodingP", "setupViewService"]
-- !private ["So8NSCodingP", "shadowImage"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "titleServiceLabel"]
@@ -587,24 +539,23 @@ depends-member:
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
 - !private ["So26NSExtensionRequestHandlingP", "LocalizationSystem"]
 - !private ["So26NSExtensionRequestHandlingP", "ServiceDetail"]
 - ["So26NSExtensionRequestHandlingP", "String"]
-- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
-- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - ["So26NSExtensionRequestHandlingP", "collectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "desServiceString"]
 - !private ["So26NSExtensionRequestHandlingP", "des_service"]
 - !private ["So26NSExtensionRequestHandlingP", "descripTitleLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "imageDetail"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationTitle"]
 - !private ["So26NSExtensionRequestHandlingP", "pointServiceString"]
@@ -631,7 +582,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "serviceDetailCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "serviceTitle"]
 - !private ["So26NSExtensionRequestHandlingP", "setCollection"]
-- !private ["So26NSExtensionRequestHandlingP", "setupClearNavigation"]
 - !private ["So26NSExtensionRequestHandlingP", "setupViewService"]
 - !private ["So26NSExtensionRequestHandlingP", "titleServiceLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "titleServiceString"]
@@ -651,18 +601,15 @@ depends-member:
 - ["So8NSObjectC", "RoundButton"]
 - !private ["So8NSObjectC", "ServiceDetail"]
 - ["So8NSObjectC", "String"]
-- !private ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UICollectionView"]
 - ["So8NSObjectC", "UICollectionViewLayout"]
 - !private ["So8NSObjectC", "UIColor"]
-- !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UINavigationBar"]
 - ["So8NSObjectC", "UINavigationItem"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "backTapped"]
-- !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "borderColor"]
 - !private ["So8NSObjectC", "borderWidth"]
 - !private ["So8NSObjectC", "cellForItem"]
@@ -709,14 +656,9 @@ depends-member:
 - ["So8NSObjectC", "serviceBookingTapped"]
 - ["So8NSObjectC", "serviceDetailCollectionView"]
 - !private ["So8NSObjectC", "serviceTitle"]
-- !private ["So8NSObjectC", "setBackgroundImage"]
 - ["So8NSObjectC", "setCollection"]
-- ["So8NSObjectC", "setupClearNavigation"]
 - ["So8NSObjectC", "setupViewService"]
-- !private ["So8NSObjectC", "shadowImage"]
-- !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "sharedInstance"]
-- !private ["So8NSObjectC", "statusBarView"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "titleServiceLabel"]
@@ -725,16 +667,14 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectP", "CGFloat"]
 - !private ["So8NSObjectP", "CGSize"]
 - !private ["So8NSObjectP", "LocalizationSystem"]
 - !private ["So8NSObjectP", "ServiceDetail"]
 - ["So8NSObjectP", "String"]
-- !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIColor"]
-- !private ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "borderColor"]
 - !private ["So8NSObjectP", "borderWidth"]
 - !private ["So8NSObjectP", "cellForItem"]
@@ -746,6 +686,7 @@ depends-member:
 - !private ["So8NSObjectP", "des_service"]
 - !private ["So8NSObjectP", "descripTitleLabel"]
 - !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "imageDetail"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So8NSObjectP", "init"]
@@ -753,7 +694,6 @@ depends-member:
 - !private ["So8NSObjectP", "instantiateViewController"]
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "localizedStringForKey"]
-- !private ["So8NSObjectP", "navigationBar"]
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "navigationTitle"]
 - !private ["So8NSObjectP", "pointServiceString"]
@@ -779,14 +719,9 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - !private ["So8NSObjectP", "serviceDetailCollectionView"]
 - !private ["So8NSObjectP", "serviceTitle"]
-- !private ["So8NSObjectP", "setBackgroundImage"]
 - !private ["So8NSObjectP", "setCollection"]
-- !private ["So8NSObjectP", "setupClearNavigation"]
 - !private ["So8NSObjectP", "setupViewService"]
-- !private ["So8NSObjectP", "shadowImage"]
-- !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "sharedInstance"]
-- !private ["So8NSObjectP", "statusBarView"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "titleServiceLabel"]
@@ -799,95 +734,23 @@ depends-member:
 - !private ["So14NSSecureCodingP", "borderWidth"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["Sj", "init"]
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "text"]
 - !private ["Sq", "title"]
-- !private ["13BarberShop_V212OptionalTypeP", "dataSource"]
-- !private ["13BarberShop_V212OptionalTypeP", "delegate"]
-- !private ["13BarberShop_V212OptionalTypeP", "text"]
-- !private ["13BarberShop_V212OptionalTypeP", "title"]
-- !private ["10Kingfisher11PlaceholderP", "init"]
+- !private ["Sk", "count"]
 - ["Sk", "init"]
+- !private ["Sm", "count"]
 - ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["SY", "Booking"]
-- !private ["SY", "default"]
 - !private ["SY", "descriptLb"]
 - !private ["SY", "pointLb"]
 - !private ["SY", "pricesLb"]
 - !private ["SY", "rawValue"]
 - !private ["SY", "titleLb"]
-- !private ["7RxSwift18ReactiveCompatibleP", "CGSize"]
-- !private ["7RxSwift18ReactiveCompatibleP", "LocalizationSystem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "ServiceDetail"]
-- ["7RxSwift18ReactiveCompatibleP", "String"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIApplication"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIStoryboard"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "backgroundColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderWidth"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cellForItem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cgColor"]
-- ["7RxSwift18ReactiveCompatibleP", "collectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dataSource"]
-- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "desServiceString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "des_service"]
-- !private ["7RxSwift18ReactiveCompatibleP", "descripTitleLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "frame"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedView"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedViewInCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "instantiateViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "layer"]
-- !private ["7RxSwift18ReactiveCompatibleP", "localizedStringForKey"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationBar"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationTitle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pointServiceString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pointTitleLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "point_service"]
-- !private ["7RxSwift18ReactiveCompatibleP", "popViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "priceServiceString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "priceTitleLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "price_service"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pushViewController"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidChangeAdjustedContentInset"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndScrollingAnimation"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScroll"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidZoom"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewShouldScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillEndDragging"]
-- !private ["7RxSwift18ReactiveCompatibleP", "serviceDetailCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "serviceTitle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setBackgroundImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setCollection"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupClearNavigation"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupViewService"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shadowImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shared"]
-- !private ["7RxSwift18ReactiveCompatibleP", "sharedInstance"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusBarView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "text"]
-- !private ["7RxSwift18ReactiveCompatibleP", "title"]
-- !private ["7RxSwift18ReactiveCompatibleP", "titleServiceLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "titleServiceString"]
-- !private ["7RxSwift18ReactiveCompatibleP", "title_service"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZoomingInScrollView"]
+- !private ["ST", "count"]
 - ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["13BarberShop_V213ServiceDetailO", "deinit"]
@@ -904,12 +767,10 @@ depends-member:
 - ["13BarberShop_V227ServiceDetailViewControllerC", "RoundButton"]
 - !private ["13BarberShop_V227ServiceDetailViewControllerC", "ServiceDetail"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "String"]
-- !private ["13BarberShop_V227ServiceDetailViewControllerC", "UIApplication"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UIBarButtonItem"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UICollectionView"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UICollectionViewLayout"]
 - !private ["13BarberShop_V227ServiceDetailViewControllerC", "UIColor"]
-- !private ["13BarberShop_V227ServiceDetailViewControllerC", "UIImage"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UILabel"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UINavigationBar"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "UINavigationItem"]
@@ -949,7 +810,6 @@ depends-member:
 - ["13BarberShop_V227ServiceDetailViewControllerC", "serviceBookingTapped"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "serviceDetailCollectionView"]
 - !private ["13BarberShop_V227ServiceDetailViewControllerC", "setCollection"]
-- !private ["13BarberShop_V227ServiceDetailViewControllerC", "setupClearNavigation"]
 - !private ["13BarberShop_V227ServiceDetailViewControllerC", "setupViewService"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "titleServiceLabel"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "titleServiceString"]
@@ -957,25 +817,25 @@ depends-member:
 - ["13BarberShop_V227ServiceDetailViewControllerC", "viewDidLoad"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "viewForZooming"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "viewForZoomingInScrollView"]
+- !private ["s13SignedNumericP", "init"]
 - !private ["So12UIStoryboardC13BarberShop_V2E10StoryboardO", "Booking"]
+- !private ["13BarberShop_V215StoryboardBasedP", "CGFloat"]
 - !private ["13BarberShop_V215StoryboardBasedP", "CGSize"]
 - !private ["13BarberShop_V215StoryboardBasedP", "LocalizationSystem"]
 - !private ["13BarberShop_V215StoryboardBasedP", "ServiceDetail"]
 - ["13BarberShop_V215StoryboardBasedP", "String"]
-- !private ["13BarberShop_V215StoryboardBasedP", "UIApplication"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIColor"]
-- !private ["13BarberShop_V215StoryboardBasedP", "UIImage"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIStoryboard"]
 - ["13BarberShop_V215StoryboardBasedP", ""]
 - ["13BarberShop_V215StoryboardBasedP", "collectionView"]
 - !private ["13BarberShop_V215StoryboardBasedP", "desServiceString"]
 - !private ["13BarberShop_V215StoryboardBasedP", "des_service"]
 - !private ["13BarberShop_V215StoryboardBasedP", "descripTitleLabel"]
+- !private ["13BarberShop_V215StoryboardBasedP", "imageDetail"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedView"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["13BarberShop_V215StoryboardBasedP", "init"]
 - !private ["13BarberShop_V215StoryboardBasedP", "init"]
-- !private ["13BarberShop_V215StoryboardBasedP", "navigationBar"]
 - !private ["13BarberShop_V215StoryboardBasedP", "navigationController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "navigationTitle"]
 - !private ["13BarberShop_V215StoryboardBasedP", "pointServiceString"]
@@ -1002,7 +862,6 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "serviceDetailCollectionView"]
 - !private ["13BarberShop_V215StoryboardBasedP", "serviceTitle"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setCollection"]
-- !private ["13BarberShop_V215StoryboardBasedP", "setupClearNavigation"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setupViewService"]
 - !private ["13BarberShop_V215StoryboardBasedP", "titleServiceLabel"]
 - !private ["13BarberShop_V215StoryboardBasedP", "titleServiceString"]
@@ -1010,6 +869,7 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "viewDidLoad"]
 - ["13BarberShop_V215StoryboardBasedP", "viewForZooming"]
 - ["13BarberShop_V215StoryboardBasedP", "viewForZoomingInScrollView"]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
@@ -1018,35 +878,26 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForItem"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
-- !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
-- !private ["So29UIAccessibilityIdentificationP", "shadowImage"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
-- !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "cellForItem"]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "layer"]
-- !private ["So12UIAppearanceP", "setBackgroundImage"]
-- !private ["So12UIAppearanceP", "shadowImage"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "LocalizationSystem"]
 - !private ["So21UIAppearanceContainerP", "ServiceDetail"]
 - ["So21UIAppearanceContainerP", "String"]
-- !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
-- !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "cellForItem"]
 - ["So21UIAppearanceContainerP", "collectionView"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
@@ -1055,12 +906,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "des_service"]
 - !private ["So21UIAppearanceContainerP", "descripTitleLabel"]
 - !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "imageDetail"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
-- !private ["So21UIAppearanceContainerP", "navigationBar"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "navigationTitle"]
 - !private ["So21UIAppearanceContainerP", "pointServiceString"]
@@ -1086,11 +937,8 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - !private ["So21UIAppearanceContainerP", "serviceDetailCollectionView"]
 - !private ["So21UIAppearanceContainerP", "serviceTitle"]
-- !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
 - !private ["So21UIAppearanceContainerP", "setCollection"]
-- !private ["So21UIAppearanceContainerP", "setupClearNavigation"]
 - !private ["So21UIAppearanceContainerP", "setupViewService"]
-- !private ["So21UIAppearanceContainerP", "shadowImage"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "titleServiceLabel"]
 - !private ["So21UIAppearanceContainerP", "titleServiceString"]
@@ -1098,30 +946,24 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
-- !private ["So13UIApplicationC", "shared"]
-- !private ["So13UIApplicationC", "statusBarView"]
-- !private ["So12UIBarMetricsV", "default"]
-- !private ["So16UIBarPositioningP", "backgroundColor"]
-- !private ["So16UIBarPositioningP", "setBackgroundImage"]
-- !private ["So16UIBarPositioningP", "shadowImage"]
 - !private ["So24UICollectionReusableViewC", "layer"]
 - !private ["So16UICollectionViewC", "cellForItem"]
 - !private ["So16UICollectionViewC", "dataSource"]
 - !private ["So16UICollectionViewC", "delegate"]
 - !private ["So16UICollectionViewC", "frame"]
 - !private ["So20UICollectionViewCellC", "layer"]
+- !private ["So26UICollectionViewDataSourceP", "CGFloat"]
 - !private ["So26UICollectionViewDataSourceP", "CGSize"]
 - !private ["So26UICollectionViewDataSourceP", "LocalizationSystem"]
 - !private ["So26UICollectionViewDataSourceP", "ServiceDetail"]
 - ["So26UICollectionViewDataSourceP", "String"]
-- !private ["So26UICollectionViewDataSourceP", "UIApplication"]
 - !private ["So26UICollectionViewDataSourceP", "UIColor"]
-- !private ["So26UICollectionViewDataSourceP", "UIImage"]
 - !private ["So26UICollectionViewDataSourceP", "UIStoryboard"]
 - ["So26UICollectionViewDataSourceP", "collectionView"]
 - !private ["So26UICollectionViewDataSourceP", "desServiceString"]
 - !private ["So26UICollectionViewDataSourceP", "des_service"]
 - !private ["So26UICollectionViewDataSourceP", "descripTitleLabel"]
+- !private ["So26UICollectionViewDataSourceP", "imageDetail"]
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So26UICollectionViewDataSourceP", "navigationController"]
@@ -1147,26 +989,25 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "scrollViewWillEndDragging"]
 - !private ["So26UICollectionViewDataSourceP", "serviceDetailCollectionView"]
 - !private ["So26UICollectionViewDataSourceP", "setCollection"]
-- !private ["So26UICollectionViewDataSourceP", "setupClearNavigation"]
 - !private ["So26UICollectionViewDataSourceP", "setupViewService"]
 - !private ["So26UICollectionViewDataSourceP", "titleServiceLabel"]
 - !private ["So26UICollectionViewDataSourceP", "titleServiceString"]
 - !private ["So26UICollectionViewDataSourceP", "title_service"]
 - ["So26UICollectionViewDataSourceP", "viewForZooming"]
 - ["So26UICollectionViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["So24UICollectionViewDelegateP", "CGFloat"]
 - !private ["So24UICollectionViewDelegateP", "CGSize"]
 - !private ["So24UICollectionViewDelegateP", "LocalizationSystem"]
 - !private ["So24UICollectionViewDelegateP", "ServiceDetail"]
 - ["So24UICollectionViewDelegateP", "String"]
-- !private ["So24UICollectionViewDelegateP", "UIApplication"]
 - !private ["So24UICollectionViewDelegateP", "UIColor"]
-- !private ["So24UICollectionViewDelegateP", "UIImage"]
 - !private ["So24UICollectionViewDelegateP", "UIStoryboard"]
 - ["So24UICollectionViewDelegateP", ""]
 - ["So24UICollectionViewDelegateP", "collectionView"]
 - !private ["So24UICollectionViewDelegateP", "desServiceString"]
 - !private ["So24UICollectionViewDelegateP", "des_service"]
 - !private ["So24UICollectionViewDelegateP", "descripTitleLabel"]
+- !private ["So24UICollectionViewDelegateP", "imageDetail"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "navigationController"]
@@ -1192,26 +1033,25 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So24UICollectionViewDelegateP", "serviceDetailCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "setCollection"]
-- !private ["So24UICollectionViewDelegateP", "setupClearNavigation"]
 - !private ["So24UICollectionViewDelegateP", "setupViewService"]
 - !private ["So24UICollectionViewDelegateP", "titleServiceLabel"]
 - !private ["So24UICollectionViewDelegateP", "titleServiceString"]
 - !private ["So24UICollectionViewDelegateP", "title_service"]
 - ["So24UICollectionViewDelegateP", "viewForZooming"]
 - ["So24UICollectionViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "CGFloat"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "LocalizationSystem"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "ServiceDetail"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "String"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIApplication"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIColor"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIImage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIStoryboard"]
 - ["So34UICollectionViewDelegateFlowLayoutP", ""]
 - ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "desServiceString"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "des_service"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "descripTitleLabel"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "imageDetail"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
@@ -1237,7 +1077,6 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewWillEndDragging"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "serviceDetailCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "setCollection"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "setupClearNavigation"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "setupViewService"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "titleServiceLabel"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "titleServiceString"]
@@ -1246,24 +1085,23 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "viewForZoomingInScrollView"]
 - !private ["So7UIColorC", "cgColor"]
 - !private ["So7UIColorC", "init"]
+- !private ["So18UIContentContainerP", "CGFloat"]
 - !private ["So18UIContentContainerP", "CGSize"]
 - !private ["So18UIContentContainerP", "LocalizationSystem"]
 - !private ["So18UIContentContainerP", "ServiceDetail"]
 - ["So18UIContentContainerP", "String"]
-- !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
-- !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - ["So18UIContentContainerP", ""]
 - ["So18UIContentContainerP", "collectionView"]
 - !private ["So18UIContentContainerP", "desServiceString"]
 - !private ["So18UIContentContainerP", "des_service"]
 - !private ["So18UIContentContainerP", "descripTitleLabel"]
+- !private ["So18UIContentContainerP", "imageDetail"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "init"]
-- !private ["So18UIContentContainerP", "navigationBar"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "navigationTitle"]
 - !private ["So18UIContentContainerP", "pointServiceString"]
@@ -1290,7 +1128,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "serviceDetailCollectionView"]
 - !private ["So18UIContentContainerP", "serviceTitle"]
 - !private ["So18UIContentContainerP", "setCollection"]
-- !private ["So18UIContentContainerP", "setupClearNavigation"]
 - !private ["So18UIContentContainerP", "setupViewService"]
 - !private ["So18UIContentContainerP", "titleServiceLabel"]
 - !private ["So18UIContentContainerP", "titleServiceString"]
@@ -1299,38 +1136,30 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
-- !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "cellForItem"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "layer"]
-- !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
-- !private ["So17UICoordinateSpaceP", "shadowImage"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So23UIDataSourceTranslatingP", "cellForItem"]
 - !private ["So23UIDataSourceTranslatingP", "dataSource"]
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
 - !private ["So23UIDataSourceTranslatingP", "frame"]
-- !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "cellForItem"]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "layer"]
-- !private ["So13UIDynamicItemP", "setBackgroundImage"]
-- !private ["So13UIDynamicItemP", "shadowImage"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "LocalizationSystem"]
 - !private ["So18UIFocusEnvironmentP", "ServiceDetail"]
 - ["So18UIFocusEnvironmentP", "String"]
-- !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
-- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "cellForItem"]
 - ["So18UIFocusEnvironmentP", "collectionView"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
@@ -1339,12 +1168,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "des_service"]
 - !private ["So18UIFocusEnvironmentP", "descripTitleLabel"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "imageDetail"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
-- !private ["So18UIFocusEnvironmentP", "navigationBar"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "navigationTitle"]
 - !private ["So18UIFocusEnvironmentP", "pointServiceString"]
@@ -1370,11 +1199,8 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UIFocusEnvironmentP", "serviceDetailCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "serviceTitle"]
-- !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
 - !private ["So18UIFocusEnvironmentP", "setCollection"]
-- !private ["So18UIFocusEnvironmentP", "setupClearNavigation"]
 - !private ["So18UIFocusEnvironmentP", "setupViewService"]
-- !private ["So18UIFocusEnvironmentP", "shadowImage"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "titleServiceLabel"]
 - !private ["So18UIFocusEnvironmentP", "titleServiceString"]
@@ -1382,48 +1208,34 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
-- !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "cellForItem"]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "layer"]
-- !private ["So11UIFocusItemP", "setBackgroundImage"]
-- !private ["So11UIFocusItemP", "shadowImage"]
 - !private ["So11UIFocusItemP", "text"]
-- !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "cellForItem"]
 - !private ["So20UIFocusItemContainerP", "dataSource"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
 - !private ["So20UIFocusItemContainerP", "frame"]
 - !private ["So20UIFocusItemContainerP", "layer"]
-- !private ["So20UIFocusItemContainerP", "setBackgroundImage"]
-- !private ["So20UIFocusItemContainerP", "shadowImage"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So30UIFocusItemScrollableContainerP", "cellForItem"]
 - !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
 - !private ["So30UIFocusItemScrollableContainerP", "frame"]
-- !private ["So7UIImageC", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
-- !private ["So15UINavigationBarC", "backgroundColor"]
-- !private ["So15UINavigationBarC", "setBackgroundImage"]
-- !private ["So15UINavigationBarC", "shadowImage"]
-- !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
 - !private ["So16UINavigationItemC", "title"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "LocalizationSystem"]
 - !private ["So30UIPasteConfigurationSupportingP", "ServiceDetail"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "cellForItem"]
 - ["So30UIPasteConfigurationSupportingP", "collectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
@@ -1432,12 +1244,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "des_service"]
 - !private ["So30UIPasteConfigurationSupportingP", "descripTitleLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "imageDetail"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "pointServiceString"]
@@ -1463,13 +1275,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - !private ["So30UIPasteConfigurationSupportingP", "serviceDetailCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "serviceTitle"]
-- !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "setCollection"]
-- !private ["So30UIPasteConfigurationSupportingP", "setupClearNavigation"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupViewService"]
-- !private ["So30UIPasteConfigurationSupportingP", "shadowImage"]
-- !private ["So30UIPasteConfigurationSupportingP", "shared"]
-- !private ["So30UIPasteConfigurationSupportingP", "statusBarView"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleServiceLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleServiceString"]
@@ -1487,18 +1294,15 @@ depends-member:
 - ["So11UIResponderC", "RoundButton"]
 - !private ["So11UIResponderC", "ServiceDetail"]
 - ["So11UIResponderC", "String"]
-- !private ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UICollectionView"]
 - ["So11UIResponderC", "UICollectionViewLayout"]
 - !private ["So11UIResponderC", "UIColor"]
-- !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UINavigationBar"]
 - ["So11UIResponderC", "UINavigationItem"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "backTapped"]
-- !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "cellForItem"]
 - ["So11UIResponderC", "collectionView"]
 - !private ["So11UIResponderC", "dataSource"]
@@ -1540,13 +1344,8 @@ depends-member:
 - ["So11UIResponderC", "serviceBookingTapped"]
 - ["So11UIResponderC", "serviceDetailCollectionView"]
 - !private ["So11UIResponderC", "serviceTitle"]
-- !private ["So11UIResponderC", "setBackgroundImage"]
 - ["So11UIResponderC", "setCollection"]
-- ["So11UIResponderC", "setupClearNavigation"]
 - ["So11UIResponderC", "setupViewService"]
-- !private ["So11UIResponderC", "shadowImage"]
-- !private ["So11UIResponderC", "shared"]
-- !private ["So11UIResponderC", "statusBarView"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "titleServiceLabel"]
 - ["So11UIResponderC", "titleServiceString"]
@@ -1554,16 +1353,14 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "LocalizationSystem"]
 - !private ["So30UIResponderStandardEditActionsP", "ServiceDetail"]
 - ["So30UIResponderStandardEditActionsP", "String"]
-- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
-- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "cellForItem"]
 - ["So30UIResponderStandardEditActionsP", "collectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
@@ -1572,12 +1369,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "des_service"]
 - !private ["So30UIResponderStandardEditActionsP", "descripTitleLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "imageDetail"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "pointServiceString"]
@@ -1603,13 +1400,8 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - !private ["So30UIResponderStandardEditActionsP", "serviceDetailCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "serviceTitle"]
-- !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
 - !private ["So30UIResponderStandardEditActionsP", "setCollection"]
-- !private ["So30UIResponderStandardEditActionsP", "setupClearNavigation"]
 - !private ["So30UIResponderStandardEditActionsP", "setupViewService"]
-- !private ["So30UIResponderStandardEditActionsP", "shadowImage"]
-- !private ["So30UIResponderStandardEditActionsP", "shared"]
-- !private ["So30UIResponderStandardEditActionsP", "statusBarView"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "titleServiceLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "titleServiceString"]
@@ -1621,19 +1413,19 @@ depends-member:
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "frame"]
+- !private ["So20UIScrollViewDelegateP", "CGFloat"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - !private ["So20UIScrollViewDelegateP", "LocalizationSystem"]
 - !private ["So20UIScrollViewDelegateP", "ServiceDetail"]
 - ["So20UIScrollViewDelegateP", "String"]
-- !private ["So20UIScrollViewDelegateP", "UIApplication"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
-- !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - ["So20UIScrollViewDelegateP", ""]
 - ["So20UIScrollViewDelegateP", "collectionView"]
 - !private ["So20UIScrollViewDelegateP", "desServiceString"]
 - !private ["So20UIScrollViewDelegateP", "des_service"]
 - !private ["So20UIScrollViewDelegateP", "descripTitleLabel"]
+- !private ["So20UIScrollViewDelegateP", "imageDetail"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
@@ -1659,7 +1451,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So20UIScrollViewDelegateP", "serviceDetailCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "setCollection"]
-- !private ["So20UIScrollViewDelegateP", "setupClearNavigation"]
 - !private ["So20UIScrollViewDelegateP", "setupViewService"]
 - !private ["So20UIScrollViewDelegateP", "titleServiceLabel"]
 - !private ["So20UIScrollViewDelegateP", "titleServiceString"]
@@ -1670,24 +1461,23 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
+- !private ["So16UIStateRestoringP", "CGFloat"]
 - !private ["So16UIStateRestoringP", "CGSize"]
 - !private ["So16UIStateRestoringP", "LocalizationSystem"]
 - !private ["So16UIStateRestoringP", "ServiceDetail"]
 - ["So16UIStateRestoringP", "String"]
-- !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
-- !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - ["So16UIStateRestoringP", ""]
 - ["So16UIStateRestoringP", "collectionView"]
 - !private ["So16UIStateRestoringP", "desServiceString"]
 - !private ["So16UIStateRestoringP", "des_service"]
 - !private ["So16UIStateRestoringP", "descripTitleLabel"]
+- !private ["So16UIStateRestoringP", "imageDetail"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
-- !private ["So16UIStateRestoringP", "navigationBar"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "navigationTitle"]
 - !private ["So16UIStateRestoringP", "pointServiceString"]
@@ -1714,7 +1504,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "serviceDetailCollectionView"]
 - !private ["So16UIStateRestoringP", "serviceTitle"]
 - !private ["So16UIStateRestoringP", "setCollection"]
-- !private ["So16UIStateRestoringP", "setupClearNavigation"]
 - !private ["So16UIStateRestoringP", "setupViewService"]
 - !private ["So16UIStateRestoringP", "titleServiceLabel"]
 - !private ["So16UIStateRestoringP", "titleServiceString"]
@@ -1725,16 +1514,14 @@ depends-member:
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So19UITextFieldDelegateP", "serviceTitle"]
+- !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "LocalizationSystem"]
 - !private ["So18UITraitEnvironmentP", "ServiceDetail"]
 - ["So18UITraitEnvironmentP", "String"]
-- !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
-- !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "cellForItem"]
 - ["So18UITraitEnvironmentP", "collectionView"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
@@ -1743,12 +1530,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "des_service"]
 - !private ["So18UITraitEnvironmentP", "descripTitleLabel"]
 - !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "imageDetail"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
-- !private ["So18UITraitEnvironmentP", "navigationBar"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "navigationTitle"]
 - !private ["So18UITraitEnvironmentP", "pointServiceString"]
@@ -1774,11 +1561,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UITraitEnvironmentP", "serviceDetailCollectionView"]
 - !private ["So18UITraitEnvironmentP", "serviceTitle"]
-- !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
 - !private ["So18UITraitEnvironmentP", "setCollection"]
-- !private ["So18UITraitEnvironmentP", "setupClearNavigation"]
 - !private ["So18UITraitEnvironmentP", "setupViewService"]
-- !private ["So18UITraitEnvironmentP", "shadowImage"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "titleServiceLabel"]
 - !private ["So18UITraitEnvironmentP", "titleServiceString"]
@@ -1786,16 +1570,14 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
 - !private ["So23UIUserActivityRestoringP", "CGSize"]
 - !private ["So23UIUserActivityRestoringP", "LocalizationSystem"]
 - !private ["So23UIUserActivityRestoringP", "ServiceDetail"]
 - ["So23UIUserActivityRestoringP", "String"]
-- !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
-- !private ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "cellForItem"]
 - ["So23UIUserActivityRestoringP", "collectionView"]
 - !private ["So23UIUserActivityRestoringP", "dataSource"]
@@ -1804,12 +1586,12 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "des_service"]
 - !private ["So23UIUserActivityRestoringP", "descripTitleLabel"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "imageDetail"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
-- !private ["So23UIUserActivityRestoringP", "navigationBar"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - !private ["So23UIUserActivityRestoringP", "navigationTitle"]
 - !private ["So23UIUserActivityRestoringP", "pointServiceString"]
@@ -1835,13 +1617,8 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
 - !private ["So23UIUserActivityRestoringP", "serviceDetailCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "serviceTitle"]
-- !private ["So23UIUserActivityRestoringP", "setBackgroundImage"]
 - !private ["So23UIUserActivityRestoringP", "setCollection"]
-- !private ["So23UIUserActivityRestoringP", "setupClearNavigation"]
 - !private ["So23UIUserActivityRestoringP", "setupViewService"]
-- !private ["So23UIUserActivityRestoringP", "shadowImage"]
-- !private ["So23UIUserActivityRestoringP", "shared"]
-- !private ["So23UIUserActivityRestoringP", "statusBarView"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "titleServiceLabel"]
 - !private ["So23UIUserActivityRestoringP", "titleServiceString"]
@@ -1849,14 +1626,11 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
-- !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "cellForItem"]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "layer"]
-- !private ["So6UIViewC", "setBackgroundImage"]
-- !private ["So6UIViewC", "shadowImage"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "BookingViewController"]
 - !private ["So16UIViewControllerC", "CGFloat"]
@@ -1866,12 +1640,10 @@ depends-member:
 - ["So16UIViewControllerC", "RoundButton"]
 - !private ["So16UIViewControllerC", "ServiceDetail"]
 - ["So16UIViewControllerC", "String"]
-- !private ["So16UIViewControllerC", "UIApplication"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UICollectionView"]
 - ["So16UIViewControllerC", "UICollectionViewLayout"]
 - !private ["So16UIViewControllerC", "UIColor"]
-- !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UINavigationBar"]
 - ["So16UIViewControllerC", "UINavigationItem"]
@@ -1915,7 +1687,6 @@ depends-member:
 - ["So16UIViewControllerC", "serviceDetailCollectionView"]
 - !private ["So16UIViewControllerC", "serviceTitle"]
 - ["So16UIViewControllerC", "setCollection"]
-- ["So16UIViewControllerC", "setupClearNavigation"]
 - ["So16UIViewControllerC", "setupViewService"]
 - ["So16UIViewControllerC", "titleServiceLabel"]
 - ["So16UIViewControllerC", "titleServiceString"]
@@ -1925,15 +1696,15 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cellForItem"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "shadowImage"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -1945,20 +1716,18 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalizationSystem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ServiceDetail"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForItem"]
@@ -1970,6 +1739,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "des_service"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descripTitleLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageDetail"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -1977,7 +1747,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedStringForKey"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pointServiceString"]
@@ -2003,14 +1772,9 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceDetailCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceTitle"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setCollection"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupClearNavigation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupViewService"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleServiceLabel"]
@@ -2019,6 +1783,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "dataSource"]
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - ["s21_ObjectiveCBridgeableP", "init"]
@@ -2034,11 +1799,13 @@ depends-nominal:
 - "Sa"
 - "s13ArrayProtocolP"
 - "SK"
+- !private "SB"
 - !private "13BarberShop_V221BookingViewControllerC"
 - !private "So19CAAnimationDelegateP"
 - !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
+- !private "12CoreGraphics7CGFloatV"
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
 - "s7CVarArgP"
@@ -2053,14 +1820,13 @@ depends-nominal:
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "7RxCocoa13HasDataSourceP"
-- !private "7RxCocoa11HasDelegateP"
-- !private "7RxCocoa21HasPrefetchDataSourceP"
+- !private "SF"
 - "SH"
-- !private "7RxCocoa16KVORepresentableP"
 - !private "10Kingfisher0A10CompatibleP"
 - !private "13BarberShop_V218LocalizationSystemC"
 - !private "s25LosslessStringConvertibleP"
@@ -2074,18 +1840,18 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
-- !private "10Kingfisher11PlaceholderP"
 - "Sk"
 - "Sm"
 - !private "SY"
-- "7RxSwift18ReactiveCompatibleP"
 - "ST"
 - !private "13BarberShop_V213ServiceDetailO"
 - "13BarberShop_V227ServiceDetailViewControllerC"
+- !private "s13SignedNumericP"
 - !private "So12UIStoryboardC13BarberShop_V2E10StoryboardO"
 - "13BarberShop_V215StoryboardBasedP"
+- !private "Sx"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
@@ -2093,9 +1859,6 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So13UIApplicationC"
-- !private "So12UIBarMetricsV"
-- !private "So16UIBarPositioningP"
 - !private "So24UICollectionReusableViewC"
 - !private "So16UICollectionViewC"
 - !private "So20UICollectionViewCellC"
@@ -2112,10 +1875,7 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
-- !private "So7UIImageC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So7UILabelC"
-- !private "So15UINavigationBarC"
 - !private "So22UINavigationControllerC"
 - !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
@@ -2134,6 +1894,8 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "9Alamofire14URLConvertibleP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -2141,7 +1903,6 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -2151,7 +1912,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Modules/Material.swiftmodule/x86_64.swiftmodule"
@@ -2160,7 +1920,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/x86_64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/x86_64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -2185,9 +1944,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -2203,34 +1959,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -2255,6 +2006,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -2263,6 +2015,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -2293,6 +2046,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -2315,12 +2069,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -2348,6 +2102,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -2355,7 +2110,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
@@ -2364,7 +2118,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -2396,11 +2149,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -2421,7 +2171,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/SideMenu/SideMenu.framework/Modules/module.modulemap"
@@ -2444,4 +2193,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b66a7c4de3a40eb3b564d177681ed55b"
+interface-hash: "13251c4e71d1b5c9cc2502fc58da620b"

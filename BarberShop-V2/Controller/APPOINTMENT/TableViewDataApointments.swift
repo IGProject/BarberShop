@@ -18,15 +18,17 @@ extension ApointmentCalendarViewController:UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
     return apointment.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cellApointment = tableView.dequeueReusableCell(withIdentifier: "ApointmentTableViewCell", for: indexPath) as! ApointmentTableViewCell
+    let cellApointment = tableView.dequeueReusableCell(withIdentifier: "ApointmentTableViewCell",
+                                                       for: indexPath) as! ApointmentTableViewCell
     
-    cellApointment.configure(data: apointment[indexPath.row])
-   
+    cellApointment.configure(data:apointment[indexPath.row])
+    
     return cellApointment
   }
   
@@ -39,12 +41,13 @@ extension ApointmentCalendarViewController: UITableViewDelegate {
     cell?.selectionStyle = .none
     
     let apointmentDidSelect = apointment[indexPath.row]
-    if apointmentDidSelect.status {
-      print(apointmentDidSelect.statusNote)
+    if apointmentDidSelect.status { // if status equal true
       let alertController = UIAlertController(title: "Alert Message", message: apointmentDidSelect.statusNote, preferredStyle: .alert)
       alertController.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
       self.present(alertController, animated: true)
+      
     }else {
+      
       let storyBoard: UIStoryboard = UIStoryboard(storyboard: .Apointment)
       let apointmentDetail = storyBoard.instantiateViewController(withIdentifier: "ApointmentDetailTableViewController") as! ApointmentDetailTableViewController
       apointmentDetail.teamNameString = apointmentDidSelect.team.team

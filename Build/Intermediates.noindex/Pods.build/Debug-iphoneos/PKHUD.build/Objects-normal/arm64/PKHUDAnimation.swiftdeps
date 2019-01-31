@@ -42,6 +42,7 @@ depends-member:
 - ["So11CAAnimationC", "repeatCount"]
 - ["So11CAAnimationC", "toValue"]
 - ["So11CAAnimationC", "values"]
+- ["So26CAAnimationCalculationModea", "discrete"]
 - ["So16CABasicAnimationC", "duration"]
 - ["So16CABasicAnimationC", "fromValue"]
 - ["So16CABasicAnimationC", "init"]
@@ -118,6 +119,7 @@ depends-member:
 - ["SE", "init"]
 - ["SE", "pi"]
 - ["SQ", "calculationMode"]
+- ["SQ", "discrete"]
 - ["SQ", "duration"]
 - ["SQ", "fromValue"]
 - ["SQ", "init"]
@@ -143,6 +145,7 @@ depends-member:
 - ["SF", "init"]
 - ["SF", "pi"]
 - ["SH", "calculationMode"]
+- ["SH", "discrete"]
 - ["SH", "duration"]
 - ["SH", "fromValue"]
 - ["SH", "init"]
@@ -212,6 +215,7 @@ depends-member:
 - ["5PKHUD14PKHUDAnimationC", "init"]
 - ["Sm", "init"]
 - ["Sm", "init"]
+- ["SY", "discrete"]
 - ["ST", "init"]
 - ["ST", "init"]
 - ["s13SignedNumericP", "init"]
@@ -244,6 +248,7 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "discrete"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "pi"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "calculationMode"]
@@ -254,9 +259,11 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "repeatCount"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "toValue"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "values"]
+- ["s21_ObjectiveCBridgeableP", "discrete"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "pi"]
+- ["s20_SwiftNewtypeWrapperP", "discrete"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -264,6 +271,7 @@ depends-nominal:
 - "SB"
 - "So8CAActionP"
 - "So11CAAnimationC"
+- "So26CAAnimationCalculationModea"
 - "So16CABasicAnimationC"
 - "So19CAKeyframeAnimationC"
 - "So13CAMediaTimingP"
@@ -300,6 +308,7 @@ depends-nominal:
 - "Sj"
 - "5PKHUD14PKHUDAnimationC"
 - "Sm"
+- "SY"
 - "ST"
 - "s13SignedNumericP"
 - "Sx"
@@ -319,6 +328,7 @@ depends-nominal:
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
+- "s20_SwiftNewtypeWrapperP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

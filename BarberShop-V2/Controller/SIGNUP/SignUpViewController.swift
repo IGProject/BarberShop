@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
   
   //MARK:Properties Model
     var signUpModel: SignUp!
-    var imageString: String!
+    var imageString: String?
   
   //MARK:Declare Object
   var registerResponse = RegisterResponse(booking: [], response: "", userToken: "", notificationCount: 0, userProfile: [], message: "")
@@ -192,11 +192,12 @@ class SignUpViewController: UIViewController {
           if let error = error {
             print("Error fetching remote instange ID: \(error)")
           } else if let result = result {
-           
-            if self.usernameTextField.text != "" && self.passwordTextField.text != "" && self.phoneNumberTextField.text != "" && self.emailTextField.text != "" {
-              
-              //MARK:Model
-              self.signUpModel = SignUp(username: self.usernameTextField.text!, email: self.emailTextField.text!, phone: self.phoneNumberTextField.text!, token: result.token, password: self.passwordTextField.text!, base64_image:self.imageString, type: .email)
+    
+            if self.usernameTextField.text != "" && self.passwordTextField.text != "" && self.phoneNumberTextField.text != "" && self.emailTextField.text != "" && self.imageView.image != nil && self.imageString != "" {
+             //MARK:Model
+              self.signUpModel = SignUp(username: self.usernameTextField.text!, email: self.emailTextField.text!, phone: self.phoneNumberTextField.text!,
+              token: result.token, password: self.passwordTextField.text!,
+              base64_image:self.imageString ?? "", type: .email)
               
               //2.MARK: create UserEndPoint
               let userEndPoint = URL(string: Domains.BaseURL + "/user/register")
@@ -210,11 +211,32 @@ class SignUpViewController: UIViewController {
                                           "password":self.signUpModel.password,
                                           "type":self.signUpModel.type
               ]
-              
               //4.MARK:Access service api with Alamofire
               self.registerUser(endPoint: userEndPoint!, param: param,sender:sender)
   
-          }
+            }else if self.usernameTextField.text == ""{
+              print("please enter usename")
+              self.usernameTextField.becomeFirstResponder()
+              
+            }else if self.phoneNumberTextField.text == "" {
+              print("please enter phone number")
+              self.phoneNumberTextField.becomeFirstResponder()
+              
+            }else if self.emailTextField.text == ""{
+              print("please enter email ")
+              self.emailTextField.becomeFirstResponder()
+              
+            }else if self.passwordTextField.text == "" {
+              print("please enter password")
+              self.passwordTextField.becomeFirstResponder()
+              
+            }else if self.rePasswordTextField.text == "" {
+              print("please enter confirm password")
+              self.rePasswordTextField.becomeFirstResponder()
+            }else if self.imageString == nil {
+              print("please upload image")
+              self.imageView.becomeFirstResponder()
+            }
           }
         }
        
@@ -226,21 +248,35 @@ class SignUpViewController: UIViewController {
       case .success(_):
             let dataJson = response.data
             do{
+              
               let jsonDecoder = JSONDecoder()
               let registerResponse =  try jsonDecoder.decode(RegisterResponse.self, from: dataJson!)
       
               //MARK: RegisterResponse
+              
               self.registerResponse = RegisterResponse(booking: registerResponse.booking, response: registerResponse.response, userToken: registerResponse.userToken, notificationCount: registerResponse.notificationCount, userProfile: registerResponse.userProfile, message: registerResponse.message)
               
+            }catch let error {
+              print("error:\(error.localizedDescription)")
+            }
               //MARK: UserDefault
+            if self.registerResponse.response == "false"{
+              let alertRegister = UIAlertController(title: "Alert Message", message: self.registerResponse.message, preferredStyle: .alert)
+              alertRegister.addAction(UIAlertAction(title: "Done", style: .default, handler: { (_) in
+                self.usernameTextField.becomeFirstResponder()
+              }))
+              
+              self.present(alertRegister, animated: true)
+             
+            }else {
               self.userDefault.set(self.registerResponse.userProfile[0].profileImage, forKey: UserKeys.userProfile.rawValue)
               
               self.userDefault.set(self.registerResponse.userProfile[0].username, forKey: UserKeys.usernameText.rawValue)
               
               self.userDefault.set(self.registerResponse.userProfile[0].id, forKey: UserKeys.userId.rawValue)
               
-            
-             let alertMessage = UIAlertController(title: "Success", message: registerResponse.message, preferredStyle: .alert)
+              
+              let alertMessage = UIAlertController(title: "Success", message: self.registerResponse.message, preferredStyle: .alert)
               let alertAction = UIAlertAction(title: "Wow", style: .default, handler: { (action) in
                 
                 self.gotoHomeScreen(sender: sender)
@@ -249,10 +285,10 @@ class SignUpViewController: UIViewController {
               
               alertMessage.addAction(alertAction)
               self.present(alertMessage, animated: true)
-              
-            }catch let error {
-              print("error:\(error.localizedDescription)")
             }
+            
+              
+            
         break
       case .failure(let error):
         print(error.localizedDescription)

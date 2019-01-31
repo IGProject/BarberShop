@@ -7,17 +7,23 @@ provides-member:
 - ["13BarberShop_V211HistoryCellC", ""]
 provides-dynamic-lookup:
 - "locationLabel"
+- "locationTitleLb"
 - "serviceLabel"
+- "serviceTitleLb"
 - "statusLabel"
 - "teamNameLabel"
+- "teamTitleLb"
 - "timeLabel"
+- "worktimeTitleLb"
 depends-top-level:
 - "AssignmentPrecedence"
 - "Booking"
 - "ConfigurableCell"
 - !private "DateFormatter"
 - "HistoryCell"
+- !private "HistoryTable"
 - !private "Locale"
+- !private "LocalizationSystem"
 - !private "StringLiteralType"
 - "UILabel"
 - "UITableViewCell"
@@ -33,21 +39,29 @@ depends-member:
 - !private ["13BarberShop_V27BookingV", "workTime"]
 - ["So15CALayerDelegateP", "DataType"]
 - !private ["So15CALayerDelegateP", "DateFormatter"]
+- !private ["So15CALayerDelegateP", "HistoryTable"]
 - !private ["So15CALayerDelegateP", "Locale"]
+- !private ["So15CALayerDelegateP", "LocalizationSystem"]
 - ["So15CALayerDelegateP", ""]
 - ["So15CALayerDelegateP", "_Default_DataType"]
 - ["So15CALayerDelegateP", "configure"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "locationLabel"]
+- !private ["So15CALayerDelegateP", "locationTitleLb"]
 - !private ["So15CALayerDelegateP", "serviceLabel"]
+- !private ["So15CALayerDelegateP", "serviceTitleLb"]
 - !private ["So15CALayerDelegateP", "statusLabel"]
 - !private ["So15CALayerDelegateP", "teamNameLabel"]
+- !private ["So15CALayerDelegateP", "teamTitleLb"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "timeLabel"]
+- !private ["So15CALayerDelegateP", "worktimeTitleLb"]
 - ["s7CVarArgP", "DataType"]
 - !private ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "HistoryTable"]
 - !private ["s7CVarArgP", "Locale"]
+- !private ["s7CVarArgP", "LocalizationSystem"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "_Default_DataType"]
 - ["s7CVarArgP", "configure"]
@@ -56,31 +70,45 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "locale"]
+- !private ["s7CVarArgP", "localizedStringForKey"]
 - !private ["s7CVarArgP", "locationLabel"]
+- !private ["s7CVarArgP", "locationTitleLb"]
 - !private ["s7CVarArgP", "serviceLabel"]
+- !private ["s7CVarArgP", "serviceTitleLb"]
+- !private ["s7CVarArgP", "sharedInstance"]
 - !private ["s7CVarArgP", "statusLabel"]
 - !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "teamNameLabel"]
+- !private ["s7CVarArgP", "teamTitleLb"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "timeLabel"]
+- !private ["s7CVarArgP", "worktimeTitleLb"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - ["13BarberShop_V216ConfigurableCellP", "DataType"]
 - !private ["13BarberShop_V216ConfigurableCellP", "DateFormatter"]
+- !private ["13BarberShop_V216ConfigurableCellP", "HistoryTable"]
 - !private ["13BarberShop_V216ConfigurableCellP", "Locale"]
+- !private ["13BarberShop_V216ConfigurableCellP", "LocalizationSystem"]
 - ["13BarberShop_V216ConfigurableCellP", ""]
 - ["13BarberShop_V216ConfigurableCellP", "_Default_DataType"]
 - ["13BarberShop_V216ConfigurableCellP", "configure"]
 - !private ["13BarberShop_V216ConfigurableCellP", "locationLabel"]
+- !private ["13BarberShop_V216ConfigurableCellP", "locationTitleLb"]
 - !private ["13BarberShop_V216ConfigurableCellP", "serviceLabel"]
+- !private ["13BarberShop_V216ConfigurableCellP", "serviceTitleLb"]
 - !private ["13BarberShop_V216ConfigurableCellP", "statusLabel"]
 - !private ["13BarberShop_V216ConfigurableCellP", "teamNameLabel"]
+- !private ["13BarberShop_V216ConfigurableCellP", "teamTitleLb"]
 - !private ["13BarberShop_V216ConfigurableCellP", "timeLabel"]
+- !private ["13BarberShop_V216ConfigurableCellP", "worktimeTitleLb"]
 - ["s28CustomDebugStringConvertibleP", "DataType"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "HistoryTable"]
 - !private ["s28CustomDebugStringConvertibleP", "Locale"]
+- !private ["s28CustomDebugStringConvertibleP", "LocalizationSystem"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_Default_DataType"]
 - ["s28CustomDebugStringConvertibleP", "configure"]
@@ -89,13 +117,19 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "locale"]
+- !private ["s28CustomDebugStringConvertibleP", "localizedStringForKey"]
 - !private ["s28CustomDebugStringConvertibleP", "locationLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "locationTitleLb"]
 - !private ["s28CustomDebugStringConvertibleP", "serviceLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "serviceTitleLb"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "statusLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "teamNameLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "teamTitleLb"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "worktimeTitleLb"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
@@ -103,7 +137,9 @@ depends-member:
 - !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", "DataType"]
 - !private ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "HistoryTable"]
 - !private ["s23CustomStringConvertibleP", "Locale"]
+- !private ["s23CustomStringConvertibleP", "LocalizationSystem"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_Default_DataType"]
 - ["s23CustomStringConvertibleP", "configure"]
@@ -112,13 +148,19 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "locale"]
+- !private ["s23CustomStringConvertibleP", "localizedStringForKey"]
 - !private ["s23CustomStringConvertibleP", "locationLabel"]
+- !private ["s23CustomStringConvertibleP", "locationTitleLb"]
 - !private ["s23CustomStringConvertibleP", "serviceLabel"]
+- !private ["s23CustomStringConvertibleP", "serviceTitleLb"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
 - !private ["s23CustomStringConvertibleP", "statusLabel"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "teamNameLabel"]
+- !private ["s23CustomStringConvertibleP", "teamTitleLb"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "timeLabel"]
+- !private ["s23CustomStringConvertibleP", "worktimeTitleLb"]
 - !private ["So15NSDateFormatterC", "date"]
 - !private ["So15NSDateFormatterC", "dateFormat"]
 - !private ["So15NSDateFormatterC", "init"]
@@ -142,7 +184,9 @@ depends-member:
 - !private ["SE", "workTime"]
 - ["SQ", "DataType"]
 - !private ["SQ", "DateFormatter"]
+- !private ["SQ", "HistoryTable"]
 - !private ["SQ", "Locale"]
+- !private ["SQ", "LocalizationSystem"]
 - ["SQ", ""]
 - ["SQ", "_Default_DataType"]
 - ["SQ", "configure"]
@@ -151,13 +195,24 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "locale"]
+- !private ["SQ", "localizedStringForKey"]
 - !private ["SQ", "locationLabel"]
+- !private ["SQ", "locationTitle"]
+- !private ["SQ", "locationTitleLb"]
+- !private ["SQ", "rawValue"]
 - !private ["SQ", "serviceLabel"]
+- !private ["SQ", "serviceTitle"]
+- !private ["SQ", "serviceTitleLb"]
+- !private ["SQ", "sharedInstance"]
 - !private ["SQ", "statusLabel"]
 - !private ["SQ", "string"]
 - !private ["SQ", "teamNameLabel"]
+- !private ["SQ", "teamTitle"]
+- !private ["SQ", "teamTitleLb"]
 - !private ["SQ", "text"]
 - !private ["SQ", "timeLabel"]
+- !private ["SQ", "worktimeTitle"]
+- !private ["SQ", "worktimeTitleLb"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -172,7 +227,9 @@ depends-member:
 - !private ["So11NSFormatterC", "string"]
 - ["SH", "DataType"]
 - !private ["SH", "DateFormatter"]
+- !private ["SH", "HistoryTable"]
 - !private ["SH", "Locale"]
+- !private ["SH", "LocalizationSystem"]
 - ["SH", ""]
 - ["SH", "_Default_DataType"]
 - ["SH", "configure"]
@@ -181,30 +238,55 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "locale"]
+- !private ["SH", "localizedStringForKey"]
 - !private ["SH", "locationLabel"]
+- !private ["SH", "locationTitle"]
+- !private ["SH", "locationTitleLb"]
+- !private ["SH", "rawValue"]
 - !private ["SH", "serviceLabel"]
+- !private ["SH", "serviceTitle"]
+- !private ["SH", "serviceTitleLb"]
+- !private ["SH", "sharedInstance"]
 - !private ["SH", "statusLabel"]
 - !private ["SH", "string"]
 - !private ["SH", "teamNameLabel"]
+- !private ["SH", "teamTitle"]
+- !private ["SH", "teamTitleLb"]
 - !private ["SH", "text"]
 - !private ["SH", "timeLabel"]
+- !private ["SH", "worktimeTitle"]
+- !private ["SH", "worktimeTitleLb"]
 - ["13BarberShop_V211HistoryCellC", "Booking"]
 - ["13BarberShop_V211HistoryCellC", "DataType"]
 - !private ["13BarberShop_V211HistoryCellC", "DateFormatter"]
+- !private ["13BarberShop_V211HistoryCellC", "HistoryTable"]
 - !private ["13BarberShop_V211HistoryCellC", "Locale"]
+- !private ["13BarberShop_V211HistoryCellC", "LocalizationSystem"]
 - ["13BarberShop_V211HistoryCellC", "UILabel"]
 - ["13BarberShop_V211HistoryCellC", "_Default_DataType"]
 - ["13BarberShop_V211HistoryCellC", "configure"]
 - ["13BarberShop_V211HistoryCellC", "deinit"]
 - ["13BarberShop_V211HistoryCellC", "init"]
 - ["13BarberShop_V211HistoryCellC", "locationLabel"]
+- ["13BarberShop_V211HistoryCellC", "locationTitleLb"]
 - ["13BarberShop_V211HistoryCellC", "serviceLabel"]
+- ["13BarberShop_V211HistoryCellC", "serviceTitleLb"]
 - ["13BarberShop_V211HistoryCellC", "statusLabel"]
 - ["13BarberShop_V211HistoryCellC", "teamNameLabel"]
+- ["13BarberShop_V211HistoryCellC", "teamTitleLb"]
 - ["13BarberShop_V211HistoryCellC", "timeLabel"]
+- ["13BarberShop_V211HistoryCellC", "worktimeTitleLb"]
+- !private ["13BarberShop_V212HistoryTableO", "deinit"]
+- !private ["13BarberShop_V212HistoryTableO", "locationTitle"]
+- !private ["13BarberShop_V212HistoryTableO", "rawValue"]
+- !private ["13BarberShop_V212HistoryTableO", "serviceTitle"]
+- !private ["13BarberShop_V212HistoryTableO", "teamTitle"]
+- !private ["13BarberShop_V212HistoryTableO", "worktimeTitle"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Foundation6LocaleV", "init"]
+- !private ["13BarberShop_V218LocalizationSystemC", "localizedStringForKey"]
+- !private ["13BarberShop_V218LocalizationSystemC", "sharedInstance"]
 - !private ["13BarberShop_V28LocationV", "location"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -212,7 +294,9 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "DataType"]
 - !private ["So8NSCodingP", "DateFormatter"]
+- !private ["So8NSCodingP", "HistoryTable"]
 - !private ["So8NSCodingP", "Locale"]
+- !private ["So8NSCodingP", "LocalizationSystem"]
 - ["So8NSCodingP", ""]
 - ["So8NSCodingP", "_Default_DataType"]
 - ["So8NSCodingP", "configure"]
@@ -222,12 +306,16 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "locale"]
 - !private ["So8NSCodingP", "locationLabel"]
+- !private ["So8NSCodingP", "locationTitleLb"]
 - !private ["So8NSCodingP", "serviceLabel"]
+- !private ["So8NSCodingP", "serviceTitleLb"]
 - !private ["So8NSCodingP", "statusLabel"]
 - !private ["So8NSCodingP", "string"]
 - !private ["So8NSCodingP", "teamNameLabel"]
+- !private ["So8NSCodingP", "teamTitleLb"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "timeLabel"]
+- !private ["So8NSCodingP", "worktimeTitleLb"]
 - !private ["So9NSCopyingP", "date"]
 - !private ["So9NSCopyingP", "dateFormat"]
 - !private ["So9NSCopyingP", "init"]
@@ -236,7 +324,9 @@ depends-member:
 - ["So8NSObjectC", "Booking"]
 - ["So8NSObjectC", "DataType"]
 - !private ["So8NSObjectC", "DateFormatter"]
+- !private ["So8NSObjectC", "HistoryTable"]
 - !private ["So8NSObjectC", "Locale"]
+- !private ["So8NSObjectC", "LocalizationSystem"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "_Default_DataType"]
 - ["So8NSObjectC", "configure"]
@@ -245,16 +335,24 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "locale"]
+- !private ["So8NSObjectC", "localizedStringForKey"]
 - ["So8NSObjectC", "locationLabel"]
+- ["So8NSObjectC", "locationTitleLb"]
 - ["So8NSObjectC", "serviceLabel"]
+- ["So8NSObjectC", "serviceTitleLb"]
+- !private ["So8NSObjectC", "sharedInstance"]
 - ["So8NSObjectC", "statusLabel"]
 - !private ["So8NSObjectC", "string"]
 - ["So8NSObjectC", "teamNameLabel"]
+- ["So8NSObjectC", "teamTitleLb"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "timeLabel"]
+- ["So8NSObjectC", "worktimeTitleLb"]
 - ["So8NSObjectP", "DataType"]
 - !private ["So8NSObjectP", "DateFormatter"]
+- !private ["So8NSObjectP", "HistoryTable"]
 - !private ["So8NSObjectP", "Locale"]
+- !private ["So8NSObjectP", "LocalizationSystem"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "_Default_DataType"]
 - ["So8NSObjectP", "configure"]
@@ -263,35 +361,27 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "locale"]
+- !private ["So8NSObjectP", "localizedStringForKey"]
 - !private ["So8NSObjectP", "locationLabel"]
+- !private ["So8NSObjectP", "locationTitleLb"]
 - !private ["So8NSObjectP", "serviceLabel"]
+- !private ["So8NSObjectP", "serviceTitleLb"]
+- !private ["So8NSObjectP", "sharedInstance"]
 - !private ["So8NSObjectP", "statusLabel"]
 - !private ["So8NSObjectP", "string"]
 - !private ["So8NSObjectP", "teamNameLabel"]
+- !private ["So8NSObjectP", "teamTitleLb"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "timeLabel"]
+- !private ["So8NSObjectP", "worktimeTitleLb"]
 - !private ["Sq", "text"]
-- !private ["13BarberShop_V212OptionalTypeP", "text"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
-- ["7RxSwift18ReactiveCompatibleP", "DataType"]
-- !private ["7RxSwift18ReactiveCompatibleP", "DateFormatter"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Locale"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- ["7RxSwift18ReactiveCompatibleP", "_Default_DataType"]
-- ["7RxSwift18ReactiveCompatibleP", "configure"]
-- !private ["7RxSwift18ReactiveCompatibleP", "date"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dateFormat"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "locale"]
-- !private ["7RxSwift18ReactiveCompatibleP", "locationLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "serviceLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "string"]
-- !private ["7RxSwift18ReactiveCompatibleP", "teamNameLabel"]
-- !private ["7RxSwift18ReactiveCompatibleP", "text"]
-- !private ["7RxSwift18ReactiveCompatibleP", "timeLabel"]
+- !private ["SY", "locationTitle"]
+- !private ["SY", "rawValue"]
+- !private ["SY", "serviceTitle"]
+- !private ["SY", "teamTitle"]
+- !private ["SY", "worktimeTitle"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
@@ -307,178 +397,252 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - ["So29UIAccessibilityIdentificationP", "DataType"]
 - !private ["So29UIAccessibilityIdentificationP", "DateFormatter"]
+- !private ["So29UIAccessibilityIdentificationP", "HistoryTable"]
 - !private ["So29UIAccessibilityIdentificationP", "Locale"]
+- !private ["So29UIAccessibilityIdentificationP", "LocalizationSystem"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - ["So29UIAccessibilityIdentificationP", "_Default_DataType"]
 - ["So29UIAccessibilityIdentificationP", "configure"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "locationLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "locationTitleLb"]
 - !private ["So29UIAccessibilityIdentificationP", "serviceLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "serviceTitleLb"]
 - !private ["So29UIAccessibilityIdentificationP", "statusLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "teamNameLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "teamTitleLb"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "timeLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "worktimeTitleLb"]
 - ["So12UIAppearanceP", "DataType"]
 - !private ["So12UIAppearanceP", "DateFormatter"]
+- !private ["So12UIAppearanceP", "HistoryTable"]
 - !private ["So12UIAppearanceP", "Locale"]
+- !private ["So12UIAppearanceP", "LocalizationSystem"]
 - ["So12UIAppearanceP", ""]
 - ["So12UIAppearanceP", "_Default_DataType"]
 - ["So12UIAppearanceP", "configure"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "locationLabel"]
+- !private ["So12UIAppearanceP", "locationTitleLb"]
 - !private ["So12UIAppearanceP", "serviceLabel"]
+- !private ["So12UIAppearanceP", "serviceTitleLb"]
 - !private ["So12UIAppearanceP", "statusLabel"]
 - !private ["So12UIAppearanceP", "teamNameLabel"]
+- !private ["So12UIAppearanceP", "teamTitleLb"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "timeLabel"]
+- !private ["So12UIAppearanceP", "worktimeTitleLb"]
 - ["So21UIAppearanceContainerP", "DataType"]
 - !private ["So21UIAppearanceContainerP", "DateFormatter"]
+- !private ["So21UIAppearanceContainerP", "HistoryTable"]
 - !private ["So21UIAppearanceContainerP", "Locale"]
+- !private ["So21UIAppearanceContainerP", "LocalizationSystem"]
 - ["So21UIAppearanceContainerP", ""]
 - ["So21UIAppearanceContainerP", "_Default_DataType"]
 - ["So21UIAppearanceContainerP", "configure"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "locationLabel"]
+- !private ["So21UIAppearanceContainerP", "locationTitleLb"]
 - !private ["So21UIAppearanceContainerP", "serviceLabel"]
+- !private ["So21UIAppearanceContainerP", "serviceTitleLb"]
 - !private ["So21UIAppearanceContainerP", "statusLabel"]
 - !private ["So21UIAppearanceContainerP", "teamNameLabel"]
+- !private ["So21UIAppearanceContainerP", "teamTitleLb"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "timeLabel"]
+- !private ["So21UIAppearanceContainerP", "worktimeTitleLb"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So17UICoordinateSpaceP", "DataType"]
 - !private ["So17UICoordinateSpaceP", "DateFormatter"]
+- !private ["So17UICoordinateSpaceP", "HistoryTable"]
 - !private ["So17UICoordinateSpaceP", "Locale"]
+- !private ["So17UICoordinateSpaceP", "LocalizationSystem"]
 - ["So17UICoordinateSpaceP", ""]
 - ["So17UICoordinateSpaceP", "_Default_DataType"]
 - ["So17UICoordinateSpaceP", "configure"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "locationLabel"]
+- !private ["So17UICoordinateSpaceP", "locationTitleLb"]
 - !private ["So17UICoordinateSpaceP", "serviceLabel"]
+- !private ["So17UICoordinateSpaceP", "serviceTitleLb"]
 - !private ["So17UICoordinateSpaceP", "statusLabel"]
 - !private ["So17UICoordinateSpaceP", "teamNameLabel"]
+- !private ["So17UICoordinateSpaceP", "teamTitleLb"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "timeLabel"]
+- !private ["So17UICoordinateSpaceP", "worktimeTitleLb"]
 - ["So13UIDynamicItemP", "DataType"]
 - !private ["So13UIDynamicItemP", "DateFormatter"]
+- !private ["So13UIDynamicItemP", "HistoryTable"]
 - !private ["So13UIDynamicItemP", "Locale"]
+- !private ["So13UIDynamicItemP", "LocalizationSystem"]
 - ["So13UIDynamicItemP", ""]
 - ["So13UIDynamicItemP", "_Default_DataType"]
 - ["So13UIDynamicItemP", "configure"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "locationLabel"]
+- !private ["So13UIDynamicItemP", "locationTitleLb"]
 - !private ["So13UIDynamicItemP", "serviceLabel"]
+- !private ["So13UIDynamicItemP", "serviceTitleLb"]
 - !private ["So13UIDynamicItemP", "statusLabel"]
 - !private ["So13UIDynamicItemP", "teamNameLabel"]
+- !private ["So13UIDynamicItemP", "teamTitleLb"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "timeLabel"]
+- !private ["So13UIDynamicItemP", "worktimeTitleLb"]
 - ["So18UIFocusEnvironmentP", "DataType"]
 - !private ["So18UIFocusEnvironmentP", "DateFormatter"]
+- !private ["So18UIFocusEnvironmentP", "HistoryTable"]
 - !private ["So18UIFocusEnvironmentP", "Locale"]
+- !private ["So18UIFocusEnvironmentP", "LocalizationSystem"]
 - ["So18UIFocusEnvironmentP", ""]
 - ["So18UIFocusEnvironmentP", "_Default_DataType"]
 - ["So18UIFocusEnvironmentP", "configure"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "locationLabel"]
+- !private ["So18UIFocusEnvironmentP", "locationTitleLb"]
 - !private ["So18UIFocusEnvironmentP", "serviceLabel"]
+- !private ["So18UIFocusEnvironmentP", "serviceTitleLb"]
 - !private ["So18UIFocusEnvironmentP", "statusLabel"]
 - !private ["So18UIFocusEnvironmentP", "teamNameLabel"]
+- !private ["So18UIFocusEnvironmentP", "teamTitleLb"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "timeLabel"]
+- !private ["So18UIFocusEnvironmentP", "worktimeTitleLb"]
 - ["So11UIFocusItemP", "DataType"]
 - !private ["So11UIFocusItemP", "DateFormatter"]
+- !private ["So11UIFocusItemP", "HistoryTable"]
 - !private ["So11UIFocusItemP", "Locale"]
+- !private ["So11UIFocusItemP", "LocalizationSystem"]
 - ["So11UIFocusItemP", ""]
 - ["So11UIFocusItemP", "_Default_DataType"]
 - ["So11UIFocusItemP", "configure"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "locationLabel"]
+- !private ["So11UIFocusItemP", "locationTitleLb"]
 - !private ["So11UIFocusItemP", "serviceLabel"]
+- !private ["So11UIFocusItemP", "serviceTitleLb"]
 - !private ["So11UIFocusItemP", "statusLabel"]
 - !private ["So11UIFocusItemP", "teamNameLabel"]
+- !private ["So11UIFocusItemP", "teamTitleLb"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "timeLabel"]
+- !private ["So11UIFocusItemP", "worktimeTitleLb"]
 - ["So20UIFocusItemContainerP", "DataType"]
 - !private ["So20UIFocusItemContainerP", "DateFormatter"]
+- !private ["So20UIFocusItemContainerP", "HistoryTable"]
 - !private ["So20UIFocusItemContainerP", "Locale"]
+- !private ["So20UIFocusItemContainerP", "LocalizationSystem"]
 - ["So20UIFocusItemContainerP", ""]
 - ["So20UIFocusItemContainerP", "_Default_DataType"]
 - ["So20UIFocusItemContainerP", "configure"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "locationLabel"]
+- !private ["So20UIFocusItemContainerP", "locationTitleLb"]
 - !private ["So20UIFocusItemContainerP", "serviceLabel"]
+- !private ["So20UIFocusItemContainerP", "serviceTitleLb"]
 - !private ["So20UIFocusItemContainerP", "statusLabel"]
 - !private ["So20UIFocusItemContainerP", "teamNameLabel"]
+- !private ["So20UIFocusItemContainerP", "teamTitleLb"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "timeLabel"]
+- !private ["So20UIFocusItemContainerP", "worktimeTitleLb"]
 - ["So27UIGestureRecognizerDelegateP", "DataType"]
 - !private ["So27UIGestureRecognizerDelegateP", "DateFormatter"]
+- !private ["So27UIGestureRecognizerDelegateP", "HistoryTable"]
 - !private ["So27UIGestureRecognizerDelegateP", "Locale"]
+- !private ["So27UIGestureRecognizerDelegateP", "LocalizationSystem"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - ["So27UIGestureRecognizerDelegateP", "_Default_DataType"]
 - ["So27UIGestureRecognizerDelegateP", "configure"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "locationLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "locationTitleLb"]
 - !private ["So27UIGestureRecognizerDelegateP", "serviceLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "serviceTitleLb"]
 - !private ["So27UIGestureRecognizerDelegateP", "statusLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "teamNameLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "teamTitleLb"]
 - !private ["So27UIGestureRecognizerDelegateP", "timeLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "worktimeTitleLb"]
 - !private ["So7UILabelC", "text"]
 - ["So30UIPasteConfigurationSupportingP", "DataType"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
+- !private ["So30UIPasteConfigurationSupportingP", "HistoryTable"]
 - !private ["So30UIPasteConfigurationSupportingP", "Locale"]
+- !private ["So30UIPasteConfigurationSupportingP", "LocalizationSystem"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "_Default_DataType"]
 - ["So30UIPasteConfigurationSupportingP", "configure"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "locationTitleLb"]
 - !private ["So30UIPasteConfigurationSupportingP", "serviceLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "serviceTitleLb"]
 - !private ["So30UIPasteConfigurationSupportingP", "statusLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "teamNameLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "teamTitleLb"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "timeLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "worktimeTitleLb"]
 - ["So11UIResponderC", "Booking"]
 - ["So11UIResponderC", "DataType"]
 - !private ["So11UIResponderC", "DateFormatter"]
+- !private ["So11UIResponderC", "HistoryTable"]
 - !private ["So11UIResponderC", "Locale"]
+- !private ["So11UIResponderC", "LocalizationSystem"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "_Default_DataType"]
 - ["So11UIResponderC", "configure"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "locationLabel"]
+- ["So11UIResponderC", "locationTitleLb"]
 - ["So11UIResponderC", "serviceLabel"]
+- ["So11UIResponderC", "serviceTitleLb"]
 - ["So11UIResponderC", "statusLabel"]
 - ["So11UIResponderC", "teamNameLabel"]
+- ["So11UIResponderC", "teamTitleLb"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "timeLabel"]
+- ["So11UIResponderC", "worktimeTitleLb"]
 - ["So30UIResponderStandardEditActionsP", "DataType"]
 - !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
+- !private ["So30UIResponderStandardEditActionsP", "HistoryTable"]
 - !private ["So30UIResponderStandardEditActionsP", "Locale"]
+- !private ["So30UIResponderStandardEditActionsP", "LocalizationSystem"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "_Default_DataType"]
 - ["So30UIResponderStandardEditActionsP", "configure"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "locationLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "locationTitleLb"]
 - !private ["So30UIResponderStandardEditActionsP", "serviceLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "serviceTitleLb"]
 - !private ["So30UIResponderStandardEditActionsP", "statusLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "teamNameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "teamTitleLb"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "timeLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "worktimeTitleLb"]
 - ["So15UITableViewCellC", "Booking"]
 - ["So15UITableViewCellC", "DataType"]
 - !private ["So15UITableViewCellC", "DateFormatter"]
+- !private ["So15UITableViewCellC", "HistoryTable"]
 - !private ["So15UITableViewCellC", "Locale"]
+- !private ["So15UITableViewCellC", "LocalizationSystem"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "_Default_DataType"]
@@ -486,69 +650,97 @@ depends-member:
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "locationLabel"]
+- ["So15UITableViewCellC", "locationTitleLb"]
 - ["So15UITableViewCellC", "serviceLabel"]
+- ["So15UITableViewCellC", "serviceTitleLb"]
 - ["So15UITableViewCellC", "statusLabel"]
 - ["So15UITableViewCellC", "teamNameLabel"]
+- ["So15UITableViewCellC", "teamTitleLb"]
 - ["So15UITableViewCellC", "timeLabel"]
+- ["So15UITableViewCellC", "worktimeTitleLb"]
 - ["So18UITraitEnvironmentP", "DataType"]
 - !private ["So18UITraitEnvironmentP", "DateFormatter"]
+- !private ["So18UITraitEnvironmentP", "HistoryTable"]
 - !private ["So18UITraitEnvironmentP", "Locale"]
+- !private ["So18UITraitEnvironmentP", "LocalizationSystem"]
 - ["So18UITraitEnvironmentP", ""]
 - ["So18UITraitEnvironmentP", "_Default_DataType"]
 - ["So18UITraitEnvironmentP", "configure"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "locationLabel"]
+- !private ["So18UITraitEnvironmentP", "locationTitleLb"]
 - !private ["So18UITraitEnvironmentP", "serviceLabel"]
+- !private ["So18UITraitEnvironmentP", "serviceTitleLb"]
 - !private ["So18UITraitEnvironmentP", "statusLabel"]
 - !private ["So18UITraitEnvironmentP", "teamNameLabel"]
+- !private ["So18UITraitEnvironmentP", "teamTitleLb"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "timeLabel"]
+- !private ["So18UITraitEnvironmentP", "worktimeTitleLb"]
 - ["So23UIUserActivityRestoringP", "DataType"]
 - !private ["So23UIUserActivityRestoringP", "DateFormatter"]
+- !private ["So23UIUserActivityRestoringP", "HistoryTable"]
 - !private ["So23UIUserActivityRestoringP", "Locale"]
+- !private ["So23UIUserActivityRestoringP", "LocalizationSystem"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "_Default_DataType"]
 - ["So23UIUserActivityRestoringP", "configure"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "locationLabel"]
+- !private ["So23UIUserActivityRestoringP", "locationTitleLb"]
 - !private ["So23UIUserActivityRestoringP", "serviceLabel"]
+- !private ["So23UIUserActivityRestoringP", "serviceTitleLb"]
 - !private ["So23UIUserActivityRestoringP", "statusLabel"]
 - !private ["So23UIUserActivityRestoringP", "teamNameLabel"]
+- !private ["So23UIUserActivityRestoringP", "teamTitleLb"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "timeLabel"]
+- !private ["So23UIUserActivityRestoringP", "worktimeTitleLb"]
 - ["So6UIViewC", "Booking"]
 - ["So6UIViewC", "DataType"]
 - !private ["So6UIViewC", "DateFormatter"]
+- !private ["So6UIViewC", "HistoryTable"]
 - !private ["So6UIViewC", "Locale"]
+- !private ["So6UIViewC", "LocalizationSystem"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "_Default_DataType"]
 - ["So6UIViewC", "configure"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
 - ["So6UIViewC", "locationLabel"]
+- ["So6UIViewC", "locationTitleLb"]
 - ["So6UIViewC", "serviceLabel"]
+- ["So6UIViewC", "serviceTitleLb"]
 - ["So6UIViewC", "statusLabel"]
 - ["So6UIViewC", "teamNameLabel"]
+- ["So6UIViewC", "teamTitleLb"]
 - !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "timeLabel"]
+- ["So6UIViewC", "worktimeTitleLb"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "DataType"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DateFormatter"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "HistoryTable"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Locale"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "LocalizationSystem"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "_Default_DataType"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "configure"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "locationLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "locationTitleLb"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "serviceLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "serviceTitleLb"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "statusLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "teamNameLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "teamTitleLb"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "worktimeTitleLb"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -561,7 +753,9 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DataType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HistoryTable"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalizationSystem"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "_Default_DataType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
@@ -570,13 +764,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedStringForKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "locationTitleLb"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "serviceTitleLb"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "teamNameLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "teamTitleLb"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "worktimeTitleLb"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
@@ -606,8 +806,10 @@ depends-nominal:
 - !private "So11NSFormatterC"
 - "SH"
 - "13BarberShop_V211HistoryCellC"
+- !private "13BarberShop_V212HistoryTableO"
 - !private "10Kingfisher0A10CompatibleP"
 - !private "10Foundation6LocaleV"
+- !private "13BarberShop_V218LocalizationSystemC"
 - !private "13BarberShop_V28LocationV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -616,9 +818,8 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
 - !private "Sm"
-- "7RxSwift18ReactiveCompatibleP"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "13BarberShop_V27ServiceV"
@@ -659,7 +860,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
@@ -668,7 +868,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/arm64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -693,9 +892,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -711,34 +907,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -763,6 +954,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -771,6 +963,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -801,6 +994,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -823,12 +1017,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -856,6 +1050,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -863,7 +1058,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
@@ -872,7 +1066,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -904,11 +1097,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -929,7 +1119,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/module.modulemap"
@@ -952,4 +1141,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9b304b2a4d5a813e76a449ce8131a83c"
+interface-hash: "c642c90107dfdc70b2ea36fdeac4745b"

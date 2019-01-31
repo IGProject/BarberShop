@@ -48,7 +48,7 @@ class ServiceCollectionCell: UICollectionViewCell,ConfigurableCell {
     self.currencyLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.dollarLb.rawValue, comment: "")
     
     self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceBarber.bookingBtn.rawValue, comment: ""), for: .normal)
-    self.bookingBtn.fontSize = 15
+
   }
   
   @IBAction func ServiceBookingTapped(_ sender: RoundButton) {

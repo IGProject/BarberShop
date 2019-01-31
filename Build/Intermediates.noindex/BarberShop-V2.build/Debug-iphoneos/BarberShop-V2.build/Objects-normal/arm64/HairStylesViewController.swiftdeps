@@ -29,16 +29,13 @@ depends-top-level:
 - "IntegerLiteralType"
 - !private "JSONDecoder"
 - "ListHairStyleDataSource"
-- !private "StringLiteralType"
 - "StyleHair"
-- !private "UIApplication"
 - "UIBarButtonItem"
 - "UICollectionView"
 - "UICollectionViewDelegate"
 - "UICollectionViewDelegateFlowLayout"
 - "UICollectionViewLayout"
 - !private "UIColor"
-- !private "UIImage"
 - !private "UIStoryboard"
 - "UIViewController"
 - !private "URL"
@@ -59,7 +56,6 @@ depends-member:
 - !private ["So19CAAnimationDelegateP", "borderWidth"]
 - !private ["So7CALayerC", "borderColor"]
 - !private ["So7CALayerC", "borderWidth"]
-- !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "cellForItem"]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
@@ -67,8 +63,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "isTranslucent"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "reloadData"]
-- !private ["So15CALayerDelegateP", "setBackgroundImage"]
-- !private ["So15CALayerDelegateP", "shadowImage"]
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["So6CGRectV", "size"]
@@ -80,13 +74,10 @@ depends-member:
 - !private ["s7CVarArgP", "JSONDecoder"]
 - ["s7CVarArgP", "ListHairStyleDataSource"]
 - ["s7CVarArgP", "StyleHair"]
-- !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "URL"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "borderColor"]
 - !private ["s7CVarArgP", "borderWidth"]
 - !private ["s7CVarArgP", "cellForItem"]
@@ -97,6 +88,7 @@ depends-member:
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "hairStyleCollectionView"]
+- !private ["s7CVarArgP", "hidesBottomBarWhenPushed"]
 - !private ["s7CVarArgP", "imageStyleTypeString"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -129,13 +121,8 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillBeginDragging"]
 - ["s7CVarArgP", "scrollViewWillBeginZooming"]
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
-- !private ["s7CVarArgP", "setBackgroundImage"]
-- !private ["s7CVarArgP", "setupClearNavigation"]
 - !private ["s7CVarArgP", "setupCollectionView"]
 - !private ["s7CVarArgP", "setupDataStyleList"]
-- !private ["s7CVarArgP", "shadowImage"]
-- !private ["s7CVarArgP", "shared"]
-- !private ["s7CVarArgP", "statusBarView"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -156,13 +143,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
 - ["s28CustomDebugStringConvertibleP", "ListHairStyleDataSource"]
 - ["s28CustomDebugStringConvertibleP", "StyleHair"]
-- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForItem"]
@@ -175,6 +159,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "failure"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "hairStyleCollectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "hidesBottomBarWhenPushed"]
 - !private ["s28CustomDebugStringConvertibleP", "imageStyleTypeString"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -210,14 +195,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDragging"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginZooming"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
-- !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
-- !private ["s28CustomDebugStringConvertibleP", "setupClearNavigation"]
 - !private ["s28CustomDebugStringConvertibleP", "setupCollectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "setupDataStyleList"]
-- !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
-- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
-- !private ["s28CustomDebugStringConvertibleP", "statusBarView"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "success"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
@@ -247,13 +227,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "JSONDecoder"]
 - ["s23CustomStringConvertibleP", "ListHairStyleDataSource"]
 - ["s23CustomStringConvertibleP", "StyleHair"]
-- !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
-- !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "URL"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "borderColor"]
 - !private ["s23CustomStringConvertibleP", "borderWidth"]
 - !private ["s23CustomStringConvertibleP", "cellForItem"]
@@ -266,6 +243,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "failure"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "hairStyleCollectionView"]
+- !private ["s23CustomStringConvertibleP", "hidesBottomBarWhenPushed"]
 - !private ["s23CustomStringConvertibleP", "imageStyleTypeString"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -301,13 +279,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillBeginDragging"]
 - ["s23CustomStringConvertibleP", "scrollViewWillBeginZooming"]
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
-- !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
-- !private ["s23CustomStringConvertibleP", "setupClearNavigation"]
 - !private ["s23CustomStringConvertibleP", "setupCollectionView"]
 - !private ["s23CustomStringConvertibleP", "setupDataStyleList"]
-- !private ["s23CustomStringConvertibleP", "shadowImage"]
-- !private ["s23CustomStringConvertibleP", "shared"]
-- !private ["s23CustomStringConvertibleP", "statusBarView"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "success"]
 - !private ["s23CustomStringConvertibleP", "title"]
@@ -360,24 +333,21 @@ depends-member:
 - !private ["SQ", "JSONDecoder"]
 - ["SQ", "ListHairStyleDataSource"]
 - ["SQ", "StyleHair"]
-- !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIColor"]
-- !private ["SQ", "UIImage"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "URL"]
 - ["SQ", ""]
-- !private ["SQ", "backgroundColor"]
 - !private ["SQ", "borderColor"]
 - !private ["SQ", "borderWidth"]
 - !private ["SQ", "cellForItem"]
 - !private ["SQ", "cgColor"]
 - ["SQ", "collectionView"]
 - !private ["SQ", "dataSource"]
-- !private ["SQ", "default"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dismiss"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "hairStyleCollectionView"]
+- !private ["SQ", "hidesBottomBarWhenPushed"]
 - !private ["SQ", "imageStyleTypeString"]
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -411,14 +381,9 @@ depends-member:
 - ["SQ", "scrollViewWillBeginDragging"]
 - ["SQ", "scrollViewWillBeginZooming"]
 - ["SQ", "scrollViewWillEndDragging"]
-- !private ["SQ", "setBackgroundImage"]
-- !private ["SQ", "setupClearNavigation"]
 - !private ["SQ", "setupCollectionView"]
 - !private ["SQ", "setupDataStyleList"]
-- !private ["SQ", "shadowImage"]
-- !private ["SQ", "shared"]
 - !private ["SQ", "size"]
-- !private ["SQ", "statusBarView"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "title"]
 - !private ["SQ", "viewDidLoad"]
@@ -448,12 +413,10 @@ depends-member:
 - !private ["13BarberShop_V224HairStylesViewControllerC", "JSONDecoder"]
 - ["13BarberShop_V224HairStylesViewControllerC", "ListHairStyleDataSource"]
 - ["13BarberShop_V224HairStylesViewControllerC", "StyleHair"]
-- !private ["13BarberShop_V224HairStylesViewControllerC", "UIApplication"]
 - ["13BarberShop_V224HairStylesViewControllerC", "UIBarButtonItem"]
 - ["13BarberShop_V224HairStylesViewControllerC", "UICollectionView"]
 - ["13BarberShop_V224HairStylesViewControllerC", "UICollectionViewLayout"]
 - !private ["13BarberShop_V224HairStylesViewControllerC", "UIColor"]
-- !private ["13BarberShop_V224HairStylesViewControllerC", "UIImage"]
 - !private ["13BarberShop_V224HairStylesViewControllerC", "UIStoryboard"]
 - !private ["13BarberShop_V224HairStylesViewControllerC", "URL"]
 - ["13BarberShop_V224HairStylesViewControllerC", "backTapped"]
@@ -481,33 +444,15 @@ depends-member:
 - ["13BarberShop_V224HairStylesViewControllerC", "scrollViewWillBeginDragging"]
 - ["13BarberShop_V224HairStylesViewControllerC", "scrollViewWillBeginZooming"]
 - ["13BarberShop_V224HairStylesViewControllerC", "scrollViewWillEndDragging"]
-- ["13BarberShop_V224HairStylesViewControllerC", "setupClearNavigation"]
 - !private ["13BarberShop_V224HairStylesViewControllerC", "setupCollectionView"]
 - !private ["13BarberShop_V224HairStylesViewControllerC", "setupDataStyleList"]
 - ["13BarberShop_V224HairStylesViewControllerC", "viewDidLoad"]
 - ["13BarberShop_V224HairStylesViewControllerC", "viewForZooming"]
 - ["13BarberShop_V224HairStylesViewControllerC", "viewForZoomingInScrollView"]
+- !private ["13BarberShop_V227HairTypeStyleViewControllerC", "hidesBottomBarWhenPushed"]
 - !private ["13BarberShop_V227HairTypeStyleViewControllerC", "imageStyleTypeString"]
 - !private ["13BarberShop_V227HairTypeStyleViewControllerC", "navigationController"]
 - !private ["13BarberShop_V227HairTypeStyleViewControllerC", "navigationItem"]
-- !private ["7RxCocoa13HasDataSourceP", "cellForItem"]
-- !private ["7RxCocoa13HasDataSourceP", "dataSource"]
-- !private ["7RxCocoa13HasDataSourceP", "delegate"]
-- !private ["7RxCocoa13HasDataSourceP", "frame"]
-- !private ["7RxCocoa13HasDataSourceP", "reloadData"]
-- !private ["7RxCocoa11HasDelegateP", "cellForItem"]
-- !private ["7RxCocoa11HasDelegateP", "dataSource"]
-- !private ["7RxCocoa11HasDelegateP", "delegate"]
-- !private ["7RxCocoa11HasDelegateP", "dismiss"]
-- !private ["7RxCocoa11HasDelegateP", "frame"]
-- !private ["7RxCocoa11HasDelegateP", "navigationBar"]
-- !private ["7RxCocoa11HasDelegateP", "pushViewController"]
-- !private ["7RxCocoa11HasDelegateP", "reloadData"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "cellForItem"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "dataSource"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "delegate"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "frame"]
-- !private ["7RxCocoa21HasPrefetchDataSourceP", "reloadData"]
 - !private ["SH", "Alamofire"]
 - !private ["SH", "CGSize"]
 - !private ["SH", "Domains"]
@@ -515,24 +460,21 @@ depends-member:
 - !private ["SH", "JSONDecoder"]
 - ["SH", "ListHairStyleDataSource"]
 - ["SH", "StyleHair"]
-- !private ["SH", "UIApplication"]
 - !private ["SH", "UIColor"]
-- !private ["SH", "UIImage"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "URL"]
 - ["SH", ""]
-- !private ["SH", "backgroundColor"]
 - !private ["SH", "borderColor"]
 - !private ["SH", "borderWidth"]
 - !private ["SH", "cellForItem"]
 - !private ["SH", "cgColor"]
 - ["SH", "collectionView"]
 - !private ["SH", "dataSource"]
-- !private ["SH", "default"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dismiss"]
 - !private ["SH", "frame"]
 - !private ["SH", "hairStyleCollectionView"]
+- !private ["SH", "hidesBottomBarWhenPushed"]
 - !private ["SH", "imageStyleTypeString"]
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -566,13 +508,8 @@ depends-member:
 - ["SH", "scrollViewWillBeginDragging"]
 - ["SH", "scrollViewWillBeginZooming"]
 - ["SH", "scrollViewWillEndDragging"]
-- !private ["SH", "setBackgroundImage"]
-- !private ["SH", "setupClearNavigation"]
 - !private ["SH", "setupCollectionView"]
 - !private ["SH", "setupDataStyleList"]
-- !private ["SH", "shadowImage"]
-- !private ["SH", "shared"]
-- !private ["SH", "statusBarView"]
 - !private ["SH", "subscript"]
 - !private ["SH", "title"]
 - !private ["SH", "viewDidLoad"]
@@ -582,13 +519,8 @@ depends-member:
 - !private ["10Foundation9IndexPathV", "item"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
-- !private ["7RxCocoa16KVORepresentableP", "init"]
-- !private ["7RxCocoa16KVORepresentableP", "size"]
-- !private ["7RxCocoa16KVORepresentableP", "width"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
 - !private ["10Kingfisher0A10CompatibleP", "init"]
-- !private ["10Kingfisher0A10CompatibleP", "shared"]
-- !private ["10Kingfisher0A10CompatibleP", "statusBarView"]
 - !private ["10Kingfisher0A10CompatibleP", "width"]
 - !private ["13BarberShop_V223ListHairStyleDataSourceC", "deinit"]
 - ["13BarberShop_V223ListHairStyleDataSourceC", "init"]
@@ -606,13 +538,10 @@ depends-member:
 - !private ["So8NSCodingP", "JSONDecoder"]
 - ["So8NSCodingP", "ListHairStyleDataSource"]
 - ["So8NSCodingP", "StyleHair"]
-- !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "borderColor"]
 - !private ["So8NSCodingP", "borderWidth"]
 - !private ["So8NSCodingP", "cellForItem"]
@@ -623,6 +552,7 @@ depends-member:
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "hairStyleCollectionView"]
+- !private ["So8NSCodingP", "hidesBottomBarWhenPushed"]
 - !private ["So8NSCodingP", "imageStyleTypeString"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -652,11 +582,8 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillBeginDragging"]
 - ["So8NSCodingP", "scrollViewWillBeginZooming"]
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
-- !private ["So8NSCodingP", "setBackgroundImage"]
-- !private ["So8NSCodingP", "setupClearNavigation"]
 - !private ["So8NSCodingP", "setupCollectionView"]
 - !private ["So8NSCodingP", "setupDataStyleList"]
-- !private ["So8NSCodingP", "shadowImage"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
@@ -672,15 +599,14 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "JSONDecoder"]
 - ["So26NSExtensionRequestHandlingP", "ListHairStyleDataSource"]
 - ["So26NSExtensionRequestHandlingP", "StyleHair"]
-- !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
-- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - ["So26NSExtensionRequestHandlingP", "collectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "hairStyleCollectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "hidesBottomBarWhenPushed"]
 - !private ["So26NSExtensionRequestHandlingP", "imageStyleTypeString"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -707,7 +633,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginDragging"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginZooming"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
-- !private ["So26NSExtensionRequestHandlingP", "setupClearNavigation"]
 - !private ["So26NSExtensionRequestHandlingP", "setupCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "setupDataStyleList"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -730,16 +655,13 @@ depends-member:
 - !private ["So8NSObjectC", "JSONDecoder"]
 - ["So8NSObjectC", "ListHairStyleDataSource"]
 - ["So8NSObjectC", "StyleHair"]
-- !private ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UICollectionView"]
 - ["So8NSObjectC", "UICollectionViewLayout"]
 - !private ["So8NSObjectC", "UIColor"]
-- !private ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - !private ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", "backTapped"]
-- !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "borderColor"]
 - !private ["So8NSObjectC", "borderWidth"]
 - !private ["So8NSObjectC", "cellForItem"]
@@ -750,6 +672,7 @@ depends-member:
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "hairStyleCollectionView"]
+- !private ["So8NSObjectC", "hidesBottomBarWhenPushed"]
 - !private ["So8NSObjectC", "imageStyleTypeString"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -781,13 +704,8 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillBeginDragging"]
 - ["So8NSObjectC", "scrollViewWillBeginZooming"]
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
-- !private ["So8NSObjectC", "setBackgroundImage"]
-- ["So8NSObjectC", "setupClearNavigation"]
 - ["So8NSObjectC", "setupCollectionView"]
 - ["So8NSObjectC", "setupDataStyleList"]
-- !private ["So8NSObjectC", "shadowImage"]
-- !private ["So8NSObjectC", "shared"]
-- !private ["So8NSObjectC", "statusBarView"]
 - !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
@@ -799,13 +717,10 @@ depends-member:
 - !private ["So8NSObjectP", "JSONDecoder"]
 - ["So8NSObjectP", "ListHairStyleDataSource"]
 - ["So8NSObjectP", "StyleHair"]
-- !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIColor"]
-- !private ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "borderColor"]
 - !private ["So8NSObjectP", "borderWidth"]
 - !private ["So8NSObjectP", "cellForItem"]
@@ -816,6 +731,7 @@ depends-member:
 - !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "hairStyleCollectionView"]
+- !private ["So8NSObjectP", "hidesBottomBarWhenPushed"]
 - !private ["So8NSObjectP", "imageStyleTypeString"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -847,13 +763,8 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillBeginDragging"]
 - ["So8NSObjectP", "scrollViewWillBeginZooming"]
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
-- !private ["So8NSObjectP", "setBackgroundImage"]
-- !private ["So8NSObjectP", "setupClearNavigation"]
 - !private ["So8NSObjectP", "setupCollectionView"]
 - !private ["So8NSObjectP", "setupDataStyleList"]
-- !private ["So8NSObjectP", "shadowImage"]
-- !private ["So8NSObjectP", "shared"]
-- !private ["So8NSObjectP", "statusBarView"]
 - !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - ["So8NSObjectP", "viewForZooming"]
@@ -868,10 +779,6 @@ depends-member:
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "reloadData"]
-- !private ["13BarberShop_V212OptionalTypeP", "dataSource"]
-- !private ["13BarberShop_V212OptionalTypeP", "delegate"]
-- !private ["13BarberShop_V212OptionalTypeP", "reloadData"]
-- !private ["10Kingfisher11PlaceholderP", "init"]
 - !private ["Sk", "item"]
 - !private ["Sk", "map"]
 - !private ["Sk", "subscript"]
@@ -880,73 +787,6 @@ depends-member:
 - !private ["Sm", "map"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "Hairstyle"]
-- !private ["SY", "default"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Alamofire"]
-- !private ["7RxSwift18ReactiveCompatibleP", "CGSize"]
-- !private ["7RxSwift18ReactiveCompatibleP", "Domains"]
-- !private ["7RxSwift18ReactiveCompatibleP", "JSONDecoder"]
-- ["7RxSwift18ReactiveCompatibleP", "ListHairStyleDataSource"]
-- ["7RxSwift18ReactiveCompatibleP", "StyleHair"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIApplication"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "UIStoryboard"]
-- !private ["7RxSwift18ReactiveCompatibleP", "URL"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "backgroundColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderColor"]
-- !private ["7RxSwift18ReactiveCompatibleP", "borderWidth"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cellForItem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "cgColor"]
-- ["7RxSwift18ReactiveCompatibleP", "collectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dataSource"]
-- !private ["7RxSwift18ReactiveCompatibleP", "delegate"]
-- !private ["7RxSwift18ReactiveCompatibleP", "dismiss"]
-- !private ["7RxSwift18ReactiveCompatibleP", "frame"]
-- !private ["7RxSwift18ReactiveCompatibleP", "hairStyleCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "imageStyleTypeString"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedView"]
-- ["7RxSwift18ReactiveCompatibleP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "instantiateViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "isTranslucent"]
-- !private ["7RxSwift18ReactiveCompatibleP", "itemsHairStyle"]
-- !private ["7RxSwift18ReactiveCompatibleP", "layer"]
-- !private ["7RxSwift18ReactiveCompatibleP", "listHairStyleDataSource"]
-- !private ["7RxSwift18ReactiveCompatibleP", "listStyleHair"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationBar"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationItem"]
-- !private ["7RxSwift18ReactiveCompatibleP", "print"]
-- !private ["7RxSwift18ReactiveCompatibleP", "pushViewController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "reloadData"]
-- !private ["7RxSwift18ReactiveCompatibleP", "render"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidChangeAdjustedContentInset"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndScrollingAnimation"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidEndZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScroll"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewDidZoom"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewShouldScrollToTop"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDecelerating"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginDragging"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillBeginZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "scrollViewWillEndDragging"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setBackgroundImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupClearNavigation"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupCollectionView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setupDataStyleList"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shadowImage"]
-- !private ["7RxSwift18ReactiveCompatibleP", "shared"]
-- !private ["7RxSwift18ReactiveCompatibleP", "statusBarView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "title"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZooming"]
-- ["7RxSwift18ReactiveCompatibleP", "viewForZoomingInScrollView"]
-- !private ["7RxSwift18ReactiveCompatibleP", "white"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "item"]
 - !private ["9Alamofire7RequestC", "responseJSON"]
@@ -971,15 +811,14 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "JSONDecoder"]
 - ["13BarberShop_V215StoryboardBasedP", "ListHairStyleDataSource"]
 - ["13BarberShop_V215StoryboardBasedP", "StyleHair"]
-- !private ["13BarberShop_V215StoryboardBasedP", "UIApplication"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIColor"]
-- !private ["13BarberShop_V215StoryboardBasedP", "UIImage"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIStoryboard"]
 - !private ["13BarberShop_V215StoryboardBasedP", "URL"]
 - ["13BarberShop_V215StoryboardBasedP", ""]
 - ["13BarberShop_V215StoryboardBasedP", "collectionView"]
 - !private ["13BarberShop_V215StoryboardBasedP", "dismiss"]
 - !private ["13BarberShop_V215StoryboardBasedP", "hairStyleCollectionView"]
+- !private ["13BarberShop_V215StoryboardBasedP", "hidesBottomBarWhenPushed"]
 - !private ["13BarberShop_V215StoryboardBasedP", "imageStyleTypeString"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedView"]
 - ["13BarberShop_V215StoryboardBasedP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1006,7 +845,6 @@ depends-member:
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewWillBeginDragging"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewWillBeginZooming"]
 - ["13BarberShop_V215StoryboardBasedP", "scrollViewWillEndDragging"]
-- !private ["13BarberShop_V215StoryboardBasedP", "setupClearNavigation"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setupCollectionView"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setupDataStyleList"]
 - !private ["13BarberShop_V215StoryboardBasedP", "viewDidLoad"]
@@ -1025,18 +863,13 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForItem"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isTranslucent"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
-- !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
-- !private ["So29UIAccessibilityIdentificationP", "shadowImage"]
-- !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "cellForItem"]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
@@ -1044,21 +877,16 @@ depends-member:
 - !private ["So12UIAppearanceP", "isTranslucent"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "reloadData"]
-- !private ["So12UIAppearanceP", "setBackgroundImage"]
-- !private ["So12UIAppearanceP", "shadowImage"]
 - !private ["So21UIAppearanceContainerP", "Alamofire"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "Domains"]
 - !private ["So21UIAppearanceContainerP", "JSONDecoder"]
 - ["So21UIAppearanceContainerP", "ListHairStyleDataSource"]
 - ["So21UIAppearanceContainerP", "StyleHair"]
-- !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
-- !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "cellForItem"]
 - ["So21UIAppearanceContainerP", "collectionView"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
@@ -1066,6 +894,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "hairStyleCollectionView"]
+- !private ["So21UIAppearanceContainerP", "hidesBottomBarWhenPushed"]
 - !private ["So21UIAppearanceContainerP", "imageStyleTypeString"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1095,21 +924,12 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillBeginDragging"]
 - ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
-- !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
-- !private ["So21UIAppearanceContainerP", "setupClearNavigation"]
 - !private ["So21UIAppearanceContainerP", "setupCollectionView"]
 - !private ["So21UIAppearanceContainerP", "setupDataStyleList"]
-- !private ["So21UIAppearanceContainerP", "shadowImage"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
-- !private ["So13UIApplicationC", "shared"]
-- !private ["So13UIApplicationC", "statusBarView"]
-- !private ["So12UIBarMetricsV", "default"]
-- !private ["So16UIBarPositioningP", "backgroundColor"]
 - !private ["So16UIBarPositioningP", "isTranslucent"]
-- !private ["So16UIBarPositioningP", "setBackgroundImage"]
-- !private ["So16UIBarPositioningP", "shadowImage"]
 - !private ["So24UICollectionReusableViewC", "layer"]
 - !private ["So16UICollectionViewC", "cellForItem"]
 - !private ["So16UICollectionViewC", "dataSource"]
@@ -1125,14 +945,13 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "JSONDecoder"]
 - ["So24UICollectionViewDelegateP", "ListHairStyleDataSource"]
 - ["So24UICollectionViewDelegateP", "StyleHair"]
-- !private ["So24UICollectionViewDelegateP", "UIApplication"]
 - !private ["So24UICollectionViewDelegateP", "UIColor"]
-- !private ["So24UICollectionViewDelegateP", "UIImage"]
 - !private ["So24UICollectionViewDelegateP", "UIStoryboard"]
 - !private ["So24UICollectionViewDelegateP", "URL"]
 - ["So24UICollectionViewDelegateP", ""]
 - ["So24UICollectionViewDelegateP", "collectionView"]
 - !private ["So24UICollectionViewDelegateP", "hairStyleCollectionView"]
+- !private ["So24UICollectionViewDelegateP", "hidesBottomBarWhenPushed"]
 - !private ["So24UICollectionViewDelegateP", "imageStyleTypeString"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1155,7 +974,6 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "scrollViewWillBeginDragging"]
 - ["So24UICollectionViewDelegateP", "scrollViewWillBeginZooming"]
 - ["So24UICollectionViewDelegateP", "scrollViewWillEndDragging"]
-- !private ["So24UICollectionViewDelegateP", "setupClearNavigation"]
 - !private ["So24UICollectionViewDelegateP", "setupCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "setupDataStyleList"]
 - ["So24UICollectionViewDelegateP", "viewForZooming"]
@@ -1166,14 +984,13 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "JSONDecoder"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "ListHairStyleDataSource"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "StyleHair"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIApplication"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIColor"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIImage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "UIStoryboard"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "URL"]
 - ["So34UICollectionViewDelegateFlowLayoutP", ""]
 - ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "hairStyleCollectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "hidesBottomBarWhenPushed"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "imageStyleTypeString"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1196,7 +1013,6 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewWillBeginDragging"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewWillBeginZooming"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "scrollViewWillEndDragging"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "setupClearNavigation"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "setupCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "setupDataStyleList"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "viewForZooming"]
@@ -1211,15 +1027,14 @@ depends-member:
 - !private ["So18UIContentContainerP", "JSONDecoder"]
 - ["So18UIContentContainerP", "ListHairStyleDataSource"]
 - ["So18UIContentContainerP", "StyleHair"]
-- !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
-- !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "URL"]
 - ["So18UIContentContainerP", ""]
 - ["So18UIContentContainerP", "collectionView"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "hairStyleCollectionView"]
+- !private ["So18UIContentContainerP", "hidesBottomBarWhenPushed"]
 - !private ["So18UIContentContainerP", "imageStyleTypeString"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1246,13 +1061,11 @@ depends-member:
 - ["So18UIContentContainerP", "scrollViewWillBeginDragging"]
 - ["So18UIContentContainerP", "scrollViewWillBeginZooming"]
 - ["So18UIContentContainerP", "scrollViewWillEndDragging"]
-- !private ["So18UIContentContainerP", "setupClearNavigation"]
 - !private ["So18UIContentContainerP", "setupCollectionView"]
 - !private ["So18UIContentContainerP", "setupDataStyleList"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
-- !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "cellForItem"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
@@ -1260,14 +1073,11 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "isTranslucent"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
-- !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
-- !private ["So17UICoordinateSpaceP", "shadowImage"]
 - !private ["So23UIDataSourceTranslatingP", "cellForItem"]
 - !private ["So23UIDataSourceTranslatingP", "dataSource"]
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
 - !private ["So23UIDataSourceTranslatingP", "frame"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
-- !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "cellForItem"]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
@@ -1275,21 +1085,16 @@ depends-member:
 - !private ["So13UIDynamicItemP", "isTranslucent"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "reloadData"]
-- !private ["So13UIDynamicItemP", "setBackgroundImage"]
-- !private ["So13UIDynamicItemP", "shadowImage"]
 - !private ["So18UIFocusEnvironmentP", "Alamofire"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "Domains"]
 - !private ["So18UIFocusEnvironmentP", "JSONDecoder"]
 - ["So18UIFocusEnvironmentP", "ListHairStyleDataSource"]
 - ["So18UIFocusEnvironmentP", "StyleHair"]
-- !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
-- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "cellForItem"]
 - ["So18UIFocusEnvironmentP", "collectionView"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
@@ -1297,6 +1102,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "hairStyleCollectionView"]
+- !private ["So18UIFocusEnvironmentP", "hidesBottomBarWhenPushed"]
 - !private ["So18UIFocusEnvironmentP", "imageStyleTypeString"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1326,15 +1132,11 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillBeginDragging"]
 - ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
-- !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
-- !private ["So18UIFocusEnvironmentP", "setupClearNavigation"]
 - !private ["So18UIFocusEnvironmentP", "setupCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "setupDataStyleList"]
-- !private ["So18UIFocusEnvironmentP", "shadowImage"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
-- !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "cellForItem"]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "delegate"]
@@ -1342,9 +1144,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "isTranslucent"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "reloadData"]
-- !private ["So11UIFocusItemP", "setBackgroundImage"]
-- !private ["So11UIFocusItemP", "shadowImage"]
-- !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "cellForItem"]
 - !private ["So20UIFocusItemContainerP", "dataSource"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
@@ -1352,19 +1151,12 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "isTranslucent"]
 - !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
-- !private ["So20UIFocusItemContainerP", "setBackgroundImage"]
-- !private ["So20UIFocusItemContainerP", "shadowImage"]
 - !private ["So30UIFocusItemScrollableContainerP", "cellForItem"]
 - !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
 - !private ["So30UIFocusItemScrollableContainerP", "frame"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
-- !private ["So7UIImageC", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So15UINavigationBarC", "backgroundColor"]
 - !private ["So15UINavigationBarC", "isTranslucent"]
-- !private ["So15UINavigationBarC", "setBackgroundImage"]
-- !private ["So15UINavigationBarC", "shadowImage"]
 - !private ["So22UINavigationControllerC", "dismiss"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
@@ -1375,13 +1167,10 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "JSONDecoder"]
 - ["So30UIPasteConfigurationSupportingP", "ListHairStyleDataSource"]
 - ["So30UIPasteConfigurationSupportingP", "StyleHair"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "cellForItem"]
 - ["So30UIPasteConfigurationSupportingP", "collectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
@@ -1389,6 +1178,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "hairStyleCollectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "hidesBottomBarWhenPushed"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageStyleTypeString"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1418,13 +1208,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDragging"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
-- !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
-- !private ["So30UIPasteConfigurationSupportingP", "setupClearNavigation"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupDataStyleList"]
-- !private ["So30UIPasteConfigurationSupportingP", "shadowImage"]
-- !private ["So30UIPasteConfigurationSupportingP", "shared"]
-- !private ["So30UIPasteConfigurationSupportingP", "statusBarView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
@@ -1437,16 +1222,13 @@ depends-member:
 - !private ["So11UIResponderC", "JSONDecoder"]
 - ["So11UIResponderC", "ListHairStyleDataSource"]
 - ["So11UIResponderC", "StyleHair"]
-- !private ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UICollectionView"]
 - ["So11UIResponderC", "UICollectionViewLayout"]
 - !private ["So11UIResponderC", "UIColor"]
-- !private ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - !private ["So11UIResponderC", "URL"]
 - ["So11UIResponderC", "backTapped"]
-- !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "cellForItem"]
 - ["So11UIResponderC", "collectionView"]
 - !private ["So11UIResponderC", "dataSource"]
@@ -1454,6 +1236,7 @@ depends-member:
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "hairStyleCollectionView"]
+- !private ["So11UIResponderC", "hidesBottomBarWhenPushed"]
 - !private ["So11UIResponderC", "imageStyleTypeString"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1483,13 +1266,8 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillBeginDragging"]
 - ["So11UIResponderC", "scrollViewWillBeginZooming"]
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
-- !private ["So11UIResponderC", "setBackgroundImage"]
-- ["So11UIResponderC", "setupClearNavigation"]
 - ["So11UIResponderC", "setupCollectionView"]
 - ["So11UIResponderC", "setupDataStyleList"]
-- !private ["So11UIResponderC", "shadowImage"]
-- !private ["So11UIResponderC", "shared"]
-- !private ["So11UIResponderC", "statusBarView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
@@ -1499,13 +1277,10 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "JSONDecoder"]
 - ["So30UIResponderStandardEditActionsP", "ListHairStyleDataSource"]
 - ["So30UIResponderStandardEditActionsP", "StyleHair"]
-- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
-- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "cellForItem"]
 - ["So30UIResponderStandardEditActionsP", "collectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
@@ -1513,6 +1288,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "hairStyleCollectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "hidesBottomBarWhenPushed"]
 - !private ["So30UIResponderStandardEditActionsP", "imageStyleTypeString"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1542,13 +1318,8 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDragging"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
-- !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
-- !private ["So30UIResponderStandardEditActionsP", "setupClearNavigation"]
 - !private ["So30UIResponderStandardEditActionsP", "setupCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "setupDataStyleList"]
-- !private ["So30UIResponderStandardEditActionsP", "shadowImage"]
-- !private ["So30UIResponderStandardEditActionsP", "shared"]
-- !private ["So30UIResponderStandardEditActionsP", "statusBarView"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
@@ -1563,14 +1334,13 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "JSONDecoder"]
 - ["So20UIScrollViewDelegateP", "ListHairStyleDataSource"]
 - ["So20UIScrollViewDelegateP", "StyleHair"]
-- !private ["So20UIScrollViewDelegateP", "UIApplication"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
-- !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - !private ["So20UIScrollViewDelegateP", "URL"]
 - ["So20UIScrollViewDelegateP", ""]
 - ["So20UIScrollViewDelegateP", "collectionView"]
 - !private ["So20UIScrollViewDelegateP", "hairStyleCollectionView"]
+- !private ["So20UIScrollViewDelegateP", "hidesBottomBarWhenPushed"]
 - !private ["So20UIScrollViewDelegateP", "imageStyleTypeString"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1593,7 +1363,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillBeginDragging"]
 - ["So20UIScrollViewDelegateP", "scrollViewWillBeginZooming"]
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
-- !private ["So20UIScrollViewDelegateP", "setupClearNavigation"]
 - !private ["So20UIScrollViewDelegateP", "setupCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "setupDataStyleList"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
@@ -1609,15 +1378,14 @@ depends-member:
 - !private ["So16UIStateRestoringP", "JSONDecoder"]
 - ["So16UIStateRestoringP", "ListHairStyleDataSource"]
 - ["So16UIStateRestoringP", "StyleHair"]
-- !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
-- !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "URL"]
 - ["So16UIStateRestoringP", ""]
 - ["So16UIStateRestoringP", "collectionView"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "hairStyleCollectionView"]
+- !private ["So16UIStateRestoringP", "hidesBottomBarWhenPushed"]
 - !private ["So16UIStateRestoringP", "imageStyleTypeString"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1644,7 +1412,6 @@ depends-member:
 - ["So16UIStateRestoringP", "scrollViewWillBeginDragging"]
 - ["So16UIStateRestoringP", "scrollViewWillBeginZooming"]
 - ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
-- !private ["So16UIStateRestoringP", "setupClearNavigation"]
 - !private ["So16UIStateRestoringP", "setupCollectionView"]
 - !private ["So16UIStateRestoringP", "setupDataStyleList"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -1658,13 +1425,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "JSONDecoder"]
 - ["So18UITraitEnvironmentP", "ListHairStyleDataSource"]
 - ["So18UITraitEnvironmentP", "StyleHair"]
-- !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
-- !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "cellForItem"]
 - ["So18UITraitEnvironmentP", "collectionView"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
@@ -1672,6 +1436,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "hairStyleCollectionView"]
+- !private ["So18UITraitEnvironmentP", "hidesBottomBarWhenPushed"]
 - !private ["So18UITraitEnvironmentP", "imageStyleTypeString"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1701,11 +1466,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillBeginDragging"]
 - ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
-- !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
-- !private ["So18UITraitEnvironmentP", "setupClearNavigation"]
 - !private ["So18UITraitEnvironmentP", "setupCollectionView"]
 - !private ["So18UITraitEnvironmentP", "setupDataStyleList"]
-- !private ["So18UITraitEnvironmentP", "shadowImage"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
@@ -1715,13 +1477,10 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "JSONDecoder"]
 - ["So23UIUserActivityRestoringP", "ListHairStyleDataSource"]
 - ["So23UIUserActivityRestoringP", "StyleHair"]
-- !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
-- !private ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "cellForItem"]
 - ["So23UIUserActivityRestoringP", "collectionView"]
 - !private ["So23UIUserActivityRestoringP", "dataSource"]
@@ -1729,6 +1488,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "hairStyleCollectionView"]
+- !private ["So23UIUserActivityRestoringP", "hidesBottomBarWhenPushed"]
 - !private ["So23UIUserActivityRestoringP", "imageStyleTypeString"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1758,17 +1518,11 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "scrollViewWillBeginDragging"]
 - ["So23UIUserActivityRestoringP", "scrollViewWillBeginZooming"]
 - ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
-- !private ["So23UIUserActivityRestoringP", "setBackgroundImage"]
-- !private ["So23UIUserActivityRestoringP", "setupClearNavigation"]
 - !private ["So23UIUserActivityRestoringP", "setupCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "setupDataStyleList"]
-- !private ["So23UIUserActivityRestoringP", "shadowImage"]
-- !private ["So23UIUserActivityRestoringP", "shared"]
-- !private ["So23UIUserActivityRestoringP", "statusBarView"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
-- !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "cellForItem"]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "delegate"]
@@ -1776,8 +1530,6 @@ depends-member:
 - !private ["So6UIViewC", "isTranslucent"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "reloadData"]
-- !private ["So6UIViewC", "setBackgroundImage"]
-- !private ["So6UIViewC", "shadowImage"]
 - !private ["So16UIViewControllerC", "Alamofire"]
 - !private ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "CGSize"]
@@ -1787,12 +1539,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "JSONDecoder"]
 - ["So16UIViewControllerC", "ListHairStyleDataSource"]
 - ["So16UIViewControllerC", "StyleHair"]
-- !private ["So16UIViewControllerC", "UIApplication"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UICollectionView"]
 - ["So16UIViewControllerC", "UICollectionViewLayout"]
 - !private ["So16UIViewControllerC", "UIColor"]
-- !private ["So16UIViewControllerC", "UIImage"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - !private ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", ""]
@@ -1800,6 +1550,7 @@ depends-member:
 - ["So16UIViewControllerC", "collectionView"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "hairStyleCollectionView"]
+- !private ["So16UIViewControllerC", "hidesBottomBarWhenPushed"]
 - !private ["So16UIViewControllerC", "imageStyleTypeString"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1826,7 +1577,6 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillBeginDragging"]
 - ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
-- ["So16UIViewControllerC", "setupClearNavigation"]
 - ["So16UIViewControllerC", "setupCollectionView"]
 - ["So16UIViewControllerC", "setupDataStyleList"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1835,7 +1585,6 @@ depends-member:
 - !private ["10Foundation3URLV", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cellForItem"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
@@ -1843,8 +1592,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isTranslucent"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "shadowImage"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -1860,7 +1607,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
@@ -1871,13 +1617,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ListHairStyleDataSource"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "StyleHair"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForItem"]
@@ -1888,6 +1631,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hairStyleCollectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hidesBottomBarWhenPushed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageStyleTypeString"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1919,13 +1663,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setupClearNavigation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupDataStyleList"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
@@ -1975,13 +1714,9 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "13BarberShop_V224HairStylesViewControllerC"
 - !private "13BarberShop_V227HairTypeStyleViewControllerC"
-- !private "7RxCocoa13HasDataSourceP"
-- !private "7RxCocoa11HasDelegateP"
-- !private "7RxCocoa21HasPrefetchDataSourceP"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "10Foundation11JSONDecoderC"
-- !private "7RxCocoa16KVORepresentableP"
 - !private "10Kingfisher0A10CompatibleP"
 - "13BarberShop_V223ListHairStyleDataSourceC"
 - !private "s25LosslessStringConvertibleP"
@@ -1996,12 +1731,9 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
-- !private "10Kingfisher11PlaceholderP"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
-- "7RxSwift18ReactiveCompatibleP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "9Alamofire7RequestC"
 - !private "10Kingfisher8ResourceP"
@@ -2021,8 +1753,6 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So13UIApplicationC"
-- !private "So12UIBarMetricsV"
 - !private "So16UIBarPositioningP"
 - !private "So24UICollectionReusableViewC"
 - !private "So16UICollectionViewC"
@@ -2039,8 +1769,6 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
-- !private "So7UIImageC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So15UINavigationBarC"
 - !private "So22UINavigationControllerC"
 - !private "So16UINavigationItemC"
@@ -2066,7 +1794,6 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
-- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -2076,7 +1803,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
@@ -2085,7 +1811,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/arm64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -2110,9 +1835,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -2128,34 +1850,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -2180,6 +1897,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -2188,6 +1906,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -2218,6 +1937,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -2240,12 +1960,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -2273,6 +1993,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -2280,7 +2001,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
@@ -2289,7 +2009,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -2321,11 +2040,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -2346,7 +2062,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/module.modulemap"
@@ -2369,4 +2084,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b8a90ab05088d376bb9a9e7bb4b90e8d"
+interface-hash: "a9959c055446d9309f9297b795114511"

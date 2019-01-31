@@ -10,12 +10,11 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarDayCell: JTAppleCell {
+  
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var selectedView: UIView!
-  @IBOutlet weak var dotLabel: UILabel!
+    @IBOutlet weak var dotImage: UIImageView!
   
-  func config(){
-    dateLabel.backgroundColor = .red
-  }
+  
   
 }

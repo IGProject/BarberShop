@@ -23,6 +23,7 @@ dependencies: \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuth_Internal.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthURLPresenter.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthNotificationManager.h \
   /Users/user/Desktop/App\ to\ do/BarberShop/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \

@@ -9,6 +9,10 @@
 import UIKit
 import Alamofire
 
+enum ApointmentBooking:String{
+  case dateTimeBooking
+  case responseDateTime
+}
 extension ApointmentCalendarViewController {
   
   func setupApointment(){
@@ -25,7 +29,13 @@ extension ApointmentCalendarViewController {
         let jsonData = response.data
         do{
           let apointmentResponse = try JSONDecoder().decode(ApointmentResponse.self, from: jsonData!)
+          
            self.bookingItems  =  apointmentResponse.booking
+          
+          
+          self.userDefault.set(self.bookingItems.map({$0.status}), forKey: ApointmentBooking.responseDateTime.rawValue)
+          
+          self.userDefault.set(self.bookingItems.map({$0.workTime}), forKey: ApointmentBooking.dateTimeBooking.rawValue)
           
         }catch let err {
           print("error:", err.localizedDescription)

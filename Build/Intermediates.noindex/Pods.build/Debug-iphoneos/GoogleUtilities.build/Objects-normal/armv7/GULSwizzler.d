@@ -1,8 +1,0 @@
-dependencies: \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/GULSwizzler.m \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/GoogleUtilities.build/module.modulemap \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/Target\ Support\ Files/GoogleUtilities/GoogleUtilities-prefix.pch \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/Logger/Private/GULLogger.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GULLoggerLevel.h \
-  /Users/user/Desktop/App\ to\ do/BarberShop/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/../Common/GULLoggerCodes.h

@@ -7,12 +7,5 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
-protocol ProfileCellViewModel {
-    var profileImage: Variable<String> {get}
-    var usernmae: Variable<String> {get}
-    var email: Variable <String> {get}
-}
 

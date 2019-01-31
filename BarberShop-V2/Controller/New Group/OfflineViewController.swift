@@ -11,14 +11,18 @@ import UIKit
 class OfflineViewController: UIViewController {
 
   let network = NetworkManager.sharedInstance
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
       network.reachability.whenReachable = { reachability in
+        self.showMainController()
       }
     }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+     // network.reachability.allowsCellularConnection = true
     navigationController?.setNavigationBarHidden(true, animated: animated)
   }
   

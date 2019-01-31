@@ -37,6 +37,7 @@ depends-member:
 - !private ["s7CVarArgP", "reachability"]
 - !private ["s7CVarArgP", "setNavigationBarHidden"]
 - ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "showMainController"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
@@ -57,6 +58,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "reachability"]
 - !private ["s28CustomDebugStringConvertibleP", "setNavigationBarHidden"]
 - ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "showMainController"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
@@ -79,6 +81,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "reachability"]
 - !private ["s23CustomStringConvertibleP", "setNavigationBarHidden"]
 - ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "showMainController"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
@@ -105,6 +108,7 @@ depends-member:
 - !private ["SQ", "reachability"]
 - !private ["SQ", "setNavigationBarHidden"]
 - ["SQ", "sharedInstance"]
+- !private ["SQ", "showMainController"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
 - !private ["SQ", "viewWillDisappear"]
@@ -116,7 +120,6 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["7RxCocoa11HasDelegateP", "setNavigationBarHidden"]
 - !private ["SH", "DispatchQueue"]
 - ["SH", "NetworkManager"]
 - ["SH", ""]
@@ -130,6 +133,7 @@ depends-member:
 - !private ["SH", "reachability"]
 - !private ["SH", "setNavigationBarHidden"]
 - ["SH", "sharedInstance"]
+- !private ["SH", "showMainController"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "viewWillAppear"]
 - !private ["SH", "viewWillDisappear"]
@@ -149,6 +153,7 @@ depends-member:
 - !private ["So8NSCodingP", "network"]
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "setNavigationBarHidden"]
+- !private ["So8NSCodingP", "showMainController"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So8NSCodingP", "viewWillDisappear"]
@@ -161,6 +166,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "network"]
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "setNavigationBarHidden"]
+- !private ["So26NSExtensionRequestHandlingP", "showMainController"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
@@ -195,6 +201,7 @@ depends-member:
 - !private ["So8NSObjectP", "reachability"]
 - !private ["So8NSObjectP", "setNavigationBarHidden"]
 - ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "showMainController"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWillAppear"]
 - !private ["So8NSObjectP", "viewWillDisappear"]
@@ -215,26 +222,9 @@ depends-member:
 - ["13BarberShop_V221OfflineViewControllerC", "viewWillAppear"]
 - ["13BarberShop_V221OfflineViewControllerC", "viewWillDisappear"]
 - !private ["Sq", "whenReachable"]
-- !private ["13BarberShop_V212OptionalTypeP", "whenReachable"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["12ReachabilityAAC", "whenReachable"]
-- !private ["7RxSwift18ReactiveCompatibleP", "DispatchQueue"]
-- ["7RxSwift18ReactiveCompatibleP", "NetworkManager"]
-- ["7RxSwift18ReactiveCompatibleP", ""]
-- !private ["7RxSwift18ReactiveCompatibleP", "async"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "init"]
-- !private ["7RxSwift18ReactiveCompatibleP", "main"]
-- !private ["7RxSwift18ReactiveCompatibleP", "navigationController"]
-- !private ["7RxSwift18ReactiveCompatibleP", "network"]
-- !private ["7RxSwift18ReactiveCompatibleP", "performSegue"]
-- !private ["7RxSwift18ReactiveCompatibleP", "reachability"]
-- !private ["7RxSwift18ReactiveCompatibleP", "setNavigationBarHidden"]
-- ["7RxSwift18ReactiveCompatibleP", "sharedInstance"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewDidLoad"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewWillAppear"]
-- !private ["7RxSwift18ReactiveCompatibleP", "viewWillDisappear"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["13BarberShop_V215StoryboardBasedP", "DispatchQueue"]
@@ -246,6 +236,7 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "network"]
 - !private ["13BarberShop_V215StoryboardBasedP", "performSegue"]
 - !private ["13BarberShop_V215StoryboardBasedP", "setNavigationBarHidden"]
+- !private ["13BarberShop_V215StoryboardBasedP", "showMainController"]
 - !private ["13BarberShop_V215StoryboardBasedP", "viewDidLoad"]
 - !private ["13BarberShop_V215StoryboardBasedP", "viewWillAppear"]
 - !private ["13BarberShop_V215StoryboardBasedP", "viewWillDisappear"]
@@ -266,6 +257,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "network"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "setNavigationBarHidden"]
+- !private ["So21UIAppearanceContainerP", "showMainController"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
@@ -278,6 +270,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "network"]
 - !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "setNavigationBarHidden"]
+- !private ["So18UIContentContainerP", "showMainController"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So18UIContentContainerP", "viewWillDisappear"]
@@ -290,6 +283,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "network"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UIFocusEnvironmentP", "showMainController"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
@@ -303,6 +297,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "network"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "setNavigationBarHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "showMainController"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
@@ -329,6 +324,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "network"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "setNavigationBarHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "showMainController"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
@@ -341,6 +337,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "network"]
 - !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "setNavigationBarHidden"]
+- !private ["So16UIStateRestoringP", "showMainController"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So16UIStateRestoringP", "viewWillDisappear"]
@@ -353,6 +350,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "network"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UITraitEnvironmentP", "showMainController"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
@@ -365,6 +363,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "network"]
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
 - !private ["So23UIUserActivityRestoringP", "setNavigationBarHidden"]
+- !private ["So23UIUserActivityRestoringP", "showMainController"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
@@ -408,6 +407,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reachability"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBarHidden"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showMainController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
@@ -435,7 +435,6 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "7RxCocoa11HasDelegateP"
 - "SH"
 - !private "10Kingfisher0A10CompatibleP"
 - !private "s25LosslessStringConvertibleP"
@@ -448,10 +447,8 @@ depends-nominal:
 - !private "So9OS_objectC"
 - "13BarberShop_V221OfflineViewControllerC"
 - !private "Sq"
-- !private "13BarberShop_V212OptionalTypeP"
 - !private "Sm"
 - !private "12ReachabilityAAC"
-- "7RxSwift18ReactiveCompatibleP"
 - !private "ST"
 - "13BarberShop_V215StoryboardBasedP"
 - !private "SS"
@@ -482,7 +479,6 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/RxCocoa.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/FacebookCore.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
@@ -491,7 +487,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Modules/SSSpinnerButton.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/arm64.swiftmodule"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/RxSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/SideMenu.swiftmodule/arm64.swiftmodule"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Modules/Reachability.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -516,9 +511,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFURL.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RX.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-umbrella.h"
@@ -534,34 +526,29 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXPagerView/MXPagerView.framework/Headers/MXPagerView-umbrella.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Headers/RxAtomic.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFGeneric.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlusCode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXObjCRuntime.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoaRuntime.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
@@ -586,6 +573,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLink.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceFieldMask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTask.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
@@ -594,6 +582,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/HMSegmentedControl/HMSegmentedControl.framework/Headers/HMSegmentedControl.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteSessionToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
@@ -624,6 +613,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/MXSegmentedPager/MXSegmentedPager.framework/Headers/MXSegmentedPager.h"
@@ -646,12 +636,12 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXKVOObserver.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h"
@@ -679,6 +669,7 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
+- "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSOpeningHours.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
@@ -686,7 +677,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/RxCocoa-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Headers/FacebookCore-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
@@ -695,7 +685,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SSSpinnerButton/SSSpinnerButton.framework/Headers/SSSpinnerButton-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Headers/RxSwift-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Headers/SideMenu-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/ReachabilitySwift/Reachability.framework/Headers/Reachability-Swift.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
@@ -727,11 +716,8 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Headers/_RXDelegateProxy.h"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxCocoa/RxCocoa.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxAtomic/RxAtomic.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FacebookCore/FacebookCore.framework/Modules/module.modulemap"
@@ -752,7 +738,6 @@ depends-external:
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Modules/module.modulemap"
-- "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/RxSwift/RxSwift.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/user/Desktop/App to do/BarberShop/Build/Products/Debug-iphoneos/SideMenu/SideMenu.framework/Modules/module.modulemap"

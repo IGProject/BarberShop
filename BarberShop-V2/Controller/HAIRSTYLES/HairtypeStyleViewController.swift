@@ -20,8 +20,20 @@ class HairTypeStyleViewController: UIViewController {
         super.viewDidLoad()
       
        setupCollectionView()
+     //  setupClearNavigation()
        render()
     }
+  
+//  private func setupClearNavigation() {
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage  = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//  }
+  
+  @IBAction func backTapped(_ sender: UIBarButtonItem) {
+    self.navigationController?.popViewController(animated: true)
+  }
   
   private func setupCollectionView(){
     styleTypeCollectionView.delegate = self

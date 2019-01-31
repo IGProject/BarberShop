@@ -57,18 +57,31 @@ class BookingViewController: UIViewController{
   //hold current array
   var current_arr: [String] = []
   var active_textField: UITextField!
-  
+  let date = Date()
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupPicker()
     createtoolBar()
-    setupClearNavigation()
+    //setupClearNavigation()
     setupProfileImage()
     setupServicetitle()
     setupTeamName()
     checkButton()
     setTextField()
+    
+  
+    setDefaultDate()
+  }
+  
+  func setDefaultDate(){
+    let defaultDateFormatter = DateFormatter()
+    defaultDateFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
+    defaultDateFormatter.locale = Locale(identifier: "en_US_POSIX")
+    if dateTimeString == nil {
+      dateTimeString = defaultDateFormatter.string(from: Date())
+      dateTimeTextField.text = dateTimeString
+    }
   }
   
   func setTextField(){
@@ -81,7 +94,6 @@ class BookingViewController: UIViewController{
     barberTeamTextField.placeholder = LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.teamTF.rawValue, comment: "")
     
     bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: BookingBarber.confirmBtnBooking.rawValue, comment: ""), for: .normal)
-    bookingBtn.fontSize = 15
     
   }
   
@@ -103,7 +115,7 @@ class BookingViewController: UIViewController{
   
   func updateBooking(){
     let updateBookingEndPoint = URL(string: Domains.BaseURL + "/bookItem/update")!
-   
+    
     editBooking = EditBooking(booking_id: getBookingId!, user_id: userId!, work_time: dateTimeString!, location_id: locationId!, seva_id: serviceId!, team_id: teamId!, status: false)
     
     let param:[String:Any] = ["booking_id":editBooking.booking_id,
@@ -128,9 +140,17 @@ class BookingViewController: UIViewController{
           self.responseBooking = BookingResponse(reason: updateBookingResponse.reason, booking: updateBookingResponse.booking, response: updateBookingResponse.response)
           
           if updateBookingResponse.response {
-    
-           self.navigationController?.popToRootViewController(animated: true)
-            
+            let messageAlert = UIAlertController(title: "Message Alert", message: updateBookingResponse.reason, preferredStyle: .alert)
+            messageAlert.addAction(UIAlertAction(title: "Done", style: .default, handler: { (_) in
+              self.navigationController?.popViewController(animated: true)
+            }))
+            self.present(messageAlert, animated: true)
+          }else {
+            let messageNot = UIAlertController(title: "Message Alert", message: updateBookingResponse.reason, preferredStyle: .alert)
+            messageNot.addAction(UIAlertAction(title: "Cancel", style: .default, handler: {(_) in
+              self.navigationController?.popViewController(animated: true)
+            }))
+            self.present(messageNot, animated: true)
           }
           
         }catch let error {
@@ -188,6 +208,7 @@ class BookingViewController: UIViewController{
           let jsonDecoder = JSONDecoder()
           let serviceResponse = try jsonDecoder.decode(Services.self, from: jsonData!)
           self.servicesBooking =  Services(length:serviceResponse.length ,results:serviceResponse.results)
+          
         }catch let err {
           print("err:\(err)")
         }
@@ -210,6 +231,7 @@ class BookingViewController: UIViewController{
           let teamResponse = try jsonDecoder.decode(Teams.self, from: jsonData!)
           
           self.teamsBooking = Teams(length:teamResponse.length,results:teamResponse.results)
+          
         }catch let err {
           print("err:\(err)")
         }
@@ -219,11 +241,12 @@ class BookingViewController: UIViewController{
     }
   }
   
-  func setupClearNavigation() {
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage  = UIImage()
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-  }
+//  func setupClearNavigation() {
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage  = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = .white
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+  //}
   
   
   @IBAction func confirmBookingTapped(_ sender: RoundButton) {
@@ -232,33 +255,39 @@ class BookingViewController: UIViewController{
   
   private func confirmBooking(){
     userId = userDefault.object(forKey: UserKeys.userId.rawValue) as? Int
-    let booking = BookingDetail(user_id: userId!, work_time: dateTimeString!, location_id: teamId!, service_id: serviceId!, team_id: serviceId!)
+    
+    guard userId != nil else {return}
+    guard dateTimeString != nil else { return}
+    guard locationId != nil else {return}
+    guard serviceId != nil else {return}
+    guard teamId != nil else {return}
+    
+  
+    let booking = BookingDetail(user_id: userId, work_time: dateTimeString!, location_id: locationId, service_id: serviceId!, team_id: teamId!)
     
     let bookingEndPoint = URL(string: Domains.BaseURL + "/bookItem/book")!
     let param:[String:Any] = ["team_id":booking.team_id,
                               "work_time":booking.work_time,
                               "user_id":booking.user_id,
                               "service_id":booking.service_id,
-"location_id":booking.location_id,
+                              "location_id":booking.location_id
                               ]
     postBookingBarberShop(bookingEndPoint: bookingEndPoint,param:param)
   }
   
   private func postBookingBarberShop(bookingEndPoint:URL,param:[String:Any]){
-    Alamofire.request(bookingEndPoint, method: .post, parameters: param, encoding: JSONEncoding.default).responseJSON {
+  
+    Alamofire.request(bookingEndPoint, method: .post, parameters: param).responseJSON {
       switch $0.result {
       case .success(_):
         let jsonData = $0.data
         do{
-      
           let bookingResponse = try JSONDecoder().decode(BookingResponse.self, from: jsonData!)
           self.responseBooking = BookingResponse(reason: bookingResponse.reason,
                                                  booking: bookingResponse.booking,
                                                  response: bookingResponse.response)
           
-          
-          if self.responseBooking.response == true {
-            
+          if self.responseBooking.response {
             let alertMessage = UIAlertController(title: "Booking",
                                                  message: bookingResponse.reason,
                                                  preferredStyle: .alert)
@@ -268,15 +297,17 @@ class BookingViewController: UIViewController{
                                        handler: { (action) in
                                         
               let storyboard:UIStoryboard = UIStoryboard(storyboard: .Apointment)
-                                        
               let apointmentVC = storyboard.instantiateViewController(withIdentifier: "ApointmentCalendarViewController") as! ApointmentCalendarViewController
-                                        
               apointmentVC.userId = self.userId
-                            
-              
-              self.navigationController?.pushViewController(apointmentVC, animated: true)
+              self.navigationController?.popViewController(animated: true)
             })
+            
             alertMessage.addAction(action)
+            self.present(alertMessage, animated: true)
+          }else {
+            let alertMessage = UIAlertController(title: "Message", message: self.responseBooking.reason, preferredStyle: .alert)
+            alertMessage.addAction(UIAlertAction(title: "Message", style: .default, handler: nil))
+            
             self.present(alertMessage, animated: true)
           }
           
@@ -314,12 +345,10 @@ class BookingViewController: UIViewController{
   }
   
   @objc func valueDateChange(sender: UIDatePicker){
-
-  dateTimeformatter.dateFormat = "dd-MMM-yyyy HH:mm"
+    dateTimeformatter.dateFormat = "dd-MMM-yyyy HH:mm"
     dateTimeformatter.locale = Locale(identifier: "en_US_POSIX")
-     dateTimeString = dateTimeformatter.string(from: sender.date)
+    dateTimeString = dateTimeformatter.string(from: sender.date)
     dateTimeTextField.text = dateTimeString
-   
   }
 }
 
@@ -376,22 +405,22 @@ extension BookingViewController: UIPickerViewDelegate,UIPickerViewDataSource{
   }
   
   func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-    
-    let locationAddress = teamsBooking.results[row].location.address
-    let addressString = NSAttributedString(string: locationAddress, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
-    
-    let teamName = teamsBooking.results[row].username
-    let teamNameString = NSAttributedString(string: teamName, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
-    
-    let serviceTitle = servicesBooking.results[row].title
-    let serviceTitleString = NSAttributedString(string: serviceTitle, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
-    
+ 
     if active_textField == locationTextField {
+      let locationAddress = teamsBooking.results[row].location.address
+      let addressString = NSAttributedString(string: locationAddress, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
       return addressString
+      
     }else if active_textField == barberTeamTextField {
+      let teamName = teamsBooking.results[row].username
+      let teamNameString = NSAttributedString(string: teamName, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
       return teamNameString
+      
     }else if active_textField == serviceTextField {
+      let serviceTitle = servicesBooking.results[row].title
+      let serviceTitleString = NSAttributedString(string: serviceTitle, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
       return serviceTitleString
+  
     }
     
     return nil
@@ -403,10 +432,11 @@ extension BookingViewController: UIPickerViewDelegate,UIPickerViewDataSource{
     if active_textField == locationTextField {
       locationTextField.text = teamsBooking.results[row].location.address
       locationId = teamsBooking.results[row].location.id
+      
     }else if active_textField == barberTeamTextField {
       barberTeamTextField.text = teamsBooking.results[row].username
       teamId = teamsBooking.results[row].id
-      
+  
     }else if active_textField == serviceTextField {
       serviceTextField.text = servicesBooking.results[row].title
       serviceId = servicesBooking.results[row].id
@@ -430,15 +460,15 @@ extension BookingViewController: UIPickerViewDelegate,UIPickerViewDataSource{
     serviceTextField.inputAccessoryView = toolbar
     barberTeamTextField.inputAccessoryView = toolbar
     
+    
     dateTimeTextField.text = dateTimeString
     locationTextField.text = locationAddress
     serviceTextField.text = serviceTitle
     barberTeamTextField.text = teamName
-    
   }
   
   @objc func doneClick(){
-    active_textField.resignFirstResponder()
+  active_textField.resignFirstResponder()
   }
   @objc func cancelClick(){
     active_textField.text = ""

@@ -11,6 +11,13 @@ import UIKit
 extension Date {
   
   
+  var millisecondsSince1970:Int {
+    return Int((self.timeIntervalSince1970 * 60 * 60 * 24 * 1000).rounded())
+  }
+  
+  init(milliseconds:Int) {
+    self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / (60 * 60 * 24 * 1000))
+  }
   
     func year() -> Int
     {
