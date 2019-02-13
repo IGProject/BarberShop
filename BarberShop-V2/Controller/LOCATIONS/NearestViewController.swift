@@ -32,7 +32,7 @@ class NearestViewController: UIViewController {
     
     var zoom: Float = 15
     
-     let previewDemoData = [(title: "The Polar Junction", img: UIImage(named: "6-style")!, price: 10), (title: "The Nifty Lounge", img: UIImage(named: "6-style")!, price: 8), (title: "The Lunar Petal", img: UIImage(named: "6-style")!, price: 12)]
+     let previewDemoData = [(title: "The Polar Junction", img: UIImage(named: "minea")!, price: 10), (title: "The Nifty Lounge", img: UIImage(named: "minea")!, price: 8), (title: "The Lunar Petal", img: UIImage(named: "minea")!, price: 12)]
     
     override func viewDidLoad() {
         super.viewDidLoad()

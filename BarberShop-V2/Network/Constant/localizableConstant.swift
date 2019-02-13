@@ -59,6 +59,7 @@ enum ServiceBarber:String {
 }
 
 enum ServiceDetail:String {
+  case navigationBarKey = "navigatServiceDetailTitleKey"
   case titleLb = "titleServDetailKey"
   case pricesLb = "priceServDetailKey"
   case pointLb = "pointServDetailKey"
@@ -126,6 +127,7 @@ enum MoreTable:String {
 enum SettingTable:String {
 case apointmentTitle = "apointmentTitleLbKey"
 case remainderTitleLb = "remainderTitleLbKey"
+case languageTitleLb =  "languageTitleLbKey"
 case beforeLb = "beforeLbKey"
 case laterLb = "laterLbKey"
 case navTitle = "navTitleKey"
@@ -144,4 +146,29 @@ enum HistoryTable:String {
   case bodyLb = "bodyLbKey"
   case typeLb = "typeLbKey"
 
+}
+
+enum ProductCollection:String {
+  case productLbKey = "productTitleLbKey"
+}
+
+enum HairStyleCollection:String {
+  case haireStyleLbKey = "hairStyleTitleLbKey"
+}
+
+enum NotificationTable:String {
+  case notificationTitle = "notificationTitleKey"
+}
+
+enum Loading:String {
+  case loadingTitleKey = "loadingTitleKey"
+  case pointTitleKey = "pointTitleKey"
+}
+
+enum BarberTitleKey:String {
+  case teamTitleBarKey = "teamTitleBarKey"
+  case serviceTitleBarKey = "serviceTitleBarKey"
+  case locationTitleBarKey = "locationTitleBarKey"
+  case bookingTitleBarKey = "bookingTitleBarKey"
+  case moreTitleBarKey = "moreTitleBarKey"
 }

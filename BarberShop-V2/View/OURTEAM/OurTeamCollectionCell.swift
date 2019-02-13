@@ -15,7 +15,8 @@ protocol TeamBookingCellDelegate {
 
 class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
   
-    @IBOutlet weak var imageOurTeam: UIImageView!
+  @IBOutlet weak var imageOurTeam: UIImageView!
+  
     @IBOutlet weak var usernameTeam: UILabel!
     @IBOutlet weak var phoneTeam: UILabel!
     @IBOutlet weak var userTitleLabel: UILabel!
@@ -28,10 +29,16 @@ class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
   let url = URL(string: Domains.BaseURL)!
   
   func configure(data team: Teams.Results) {
-    let imageUrl = url.appendingPathComponent(team.team_profile)
-    self.imageOurTeam.kf.setImage(with: imageUrl)
-    self.usernameTeam.text = team.username
-    self.phoneTeam.text = team.phone
+    
+    imageOurTeam.contentMode = .scaleAspectFill
+    imageOurTeam.frame = CGRect(x: 0, y: 0, width: imageOurTeam.bounds.size.width, height: imageOurTeam.bounds.size.height)
+    
+      let imageUrl = url.appendingPathComponent(team.team_profile)
+      let teamImage = #imageLiteral(resourceName: "not_image")
+      self.imageOurTeam.kf.setImage(with: imageUrl, placeholder:teamImage)
+      self.usernameTeam.text = team.username
+      self.phoneTeam.text = team.phone
+    
     dataItem = team
     
     //Title
@@ -39,7 +46,6 @@ class OurTeamCollectionCell: UICollectionViewCell,ConfigurableCell {
     self.phoneTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeam.phoneNumLb.rawValue, comment: "")
     
     self.bookingBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeam.bookBtnTeam.rawValue, comment: ""), for: .normal)
-    self.bookingBtn.fontSize = 15
     
   }
   

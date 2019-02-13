@@ -10,11 +10,23 @@ import UIKit
 import Kingfisher
 import Alamofire
 
-class CustomNavigationController: UINavigationController {
+protocol getBudgeNotification {
+  func getValueBudge(value:Int)
+}
+
+class CustomNavigationController: UINavigationController,NotificationListener {
   
+  @IBOutlet weak var teamTitleTabar: UITabBarItem!
+  @IBOutlet weak var serviceTitleTabar: UITabBarItem!
+  @IBOutlet weak var locationTitleTabar: UITabBarItem!
+  @IBOutlet weak var bookingTitleTabar: UITabBarItem!
+  @IBOutlet weak var moreTitleTabar: UITabBarItem!
+  
+  
+  var delegates: getBudgeNotification?
   lazy var notification:UIButton = {
     let notification = UIButton()
-    notification.setImage(#imageLiteral(resourceName: "notification-30"), for: .normal)
+    notification.setImage(#imageLiteral(resourceName: "notification-white-30"), for: .normal)
     notification.isUserInteractionEnabled = true
     notification.addTarget(self, action: #selector(self.notificationAlert), for: .touchUpInside)
     notification.translatesAutoresizingMaskIntoConstraints = false
@@ -37,6 +49,8 @@ class CustomNavigationController: UINavigationController {
     return countLabel
   }()
   
+
+  
   lazy var profile:UIImageView = {
     let profile = UIImageView()
   profile.contentMode = .scaleAspectFill
@@ -47,47 +61,81 @@ class CustomNavigationController: UINavigationController {
     return profile
   }()
   
-  override func viewWillAppear(_ animated: Bool) {
-    var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.countNotification.rawValue) as? Int {
-      didSet{
-        countLabel.text = "\(String(describing: countNotificaton ?? 0))"
-      }
+  let countNotificaton = UserDefaults.standard.value(forKey: "budge") as? Int ?? 0
+  let changecountNotificaton = UserDefaults.standard.value(forKey: "budges") as? Int ?? 0
+  
+
+  
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    self.tabBarController?.tabBar.items?[0].title = LocalizationSystem.sharedInstance.localizedStringForKey(key: BarberTitleKey.teamTitleBarKey.rawValue, comment: "")
+    self.tabBarController?.tabBar.items?[1].title = LocalizationSystem.sharedInstance.localizedStringForKey(key: BarberTitleKey.serviceTitleBarKey.rawValue, comment: "")
+    self.tabBarController?.tabBar.items?[2].title = LocalizationSystem.sharedInstance.localizedStringForKey(key: BarberTitleKey.locationTitleBarKey.rawValue, comment: "")
+    self.tabBarController?.tabBar.items?[3].title = LocalizationSystem.sharedInstance.localizedStringForKey(key: BarberTitleKey.bookingTitleBarKey.rawValue, comment: "")
+    self.tabBarController?.tabBar.items?[4].title = LocalizationSystem.sharedInstance.localizedStringForKey(key: BarberTitleKey.moreTitleBarKey.rawValue, comment: "")
+    
+    
+    if countNotificaton > 0{
+      countLabel.text = " \(String(describing: countNotificaton))  "
+    }else {
+      countLabel.text = ""
     }
     
-   countLabel.text = "\(String(describing: countNotificaton ?? 0))"
+    print("count:\(countNotificaton)")
   }
+
+  
+  
+ 
   override func viewDidLoad() {
         super.viewDidLoad()
-
+     (UIApplication.shared.delegate as! AppDelegate).mNotCallback = self
      setupNavView()
-   
+    
     }
   
+  
+  func onNotificationLoad(value: Int) {
+    if value > 0{
+      countLabel.text = String(" \(value)  ")
+    }else {
+      countLabel.text = ""
+    }
+    print("value:\(value)")
+    UserDefaults.standard.set(value, forKey:"budge")
+  }
   
   func setupNavView(){
   
     navigationBar.setBackgroundImage(UIImage(), for: .default)
     navigationBar.shadowImage = UIImage()
-   navigationBar.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1.0)
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 0/255, green: 105/255, blue: 92/255, alpha: 1.0)
+    navigationBar.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
+    UIApplication.shared.statusBarView?.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
     
     countLabel.textAlignment = .center
     
     let navView = UIView()
     let imageUrl = UserDefaults.standard.object(forKey: UserKeys.userProfile.rawValue) as? String
+    let imageUrlEmail = UserDefaults.standard.object(forKey: UserKeys.userProfileEmail.rawValue) as? String
     let type = UserDefaults.standard.object(forKey: UserKeys.type.rawValue) as? Int
     
-    
-     let urlImage = URL(string: imageUrl!)!
+    print("urlIMage:\(imageUrl ?? "")")
+    print("urlIMageSocial:\(String(describing: imageUrlEmail ?? ""))")
     let url = URL(string: Domains.BaseURL)!
+
+    let urlProfile = url.appendingPathComponent(imageUrlEmail ?? "")
+    profile.kf.setImage(with: urlProfile,placeholder: #imageLiteral(resourceName: "avatar-user"))
     
     if  type != nil {
       switch type {
       case 3,4:
-        profile.kf.setImage(with: urlImage)
+        let urlImage = URL(string: imageUrl ?? "")
+        profile.kf.setImage(with: urlImage,placeholder: #imageLiteral(resourceName: "avatar-user"))
+        print("urlIMageSocial:\(String(describing: urlImage))")
       default:
-        let urlProfile = url.appendingPathComponent(imageUrl!)
-        profile.kf.setImage(with: urlProfile)
+        print("urlImage")
       }
     }
     
@@ -105,7 +153,7 @@ class CustomNavigationController: UINavigationController {
     countLabel.topAnchor.constraint(equalTo: navView.topAnchor.self, constant: -4).isActive = true
     countLabel.leftAnchor.constraint(equalTo: notification.rightAnchor.self, constant: -15).isActive = true
     
-  //  countLabel.widthAnchor.constraint(equalToConstant: 16).isActive = true
+   // countLabel.widthAnchor.constraint(equalToConstant: 16).isActive = true
     //countLabel.heightAnchor.constraint(equalToConstant: 16).isActive = true
     
     profile.topAnchor.constraint(equalTo: navView.topAnchor).isActive = true
@@ -127,6 +175,7 @@ class CustomNavigationController: UINavigationController {
   @objc func notificationAlert(){
     let storyboard:UIStoryboard = UIStoryboard(storyboard: .History)
     let history = storyboard.instantiateViewController(withIdentifier: "NotificationsViewController") as! NotificationsViewController
+    
     self.present(history, animated: true)
   }
   

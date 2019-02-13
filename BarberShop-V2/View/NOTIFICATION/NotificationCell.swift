@@ -8,7 +8,7 @@
 
 import UIKit
 import Kingfisher
-class NotificationCell: UITableViewCell,ConfigurableCell {
+class NotificationCell: UITableViewCell{
 
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var bodyLabel: UILabel!
@@ -21,28 +21,17 @@ class NotificationCell: UITableViewCell,ConfigurableCell {
   @IBOutlet weak var bodyLb: UILabel!
   @IBOutlet weak var typeLb: UILabel!
   
-  
-  
-  
-  func configure(data: NotificationAlertResponse) {
+  func configure(data:Result) {
     
-    let dateFormate = DateFormatter()
-    dateFormate.dateFormat = "dd"
-    
-    let timeFormate = DateFormatter()
-    timeFormate.dateFormat = "HH:mm a"
-    
-    let dateStringFormatter = DateFormatter()
-    dateStringFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
     
     let url = URL(string: Domains.BaseURL)!
-    
-    titleLabel.text = data.results[0].title
-    bodyLabel.text = data.results[0].body
-    typeLabel.text = data.results[0].type
-    
-    let urlImage = url.appendingPathComponent(data.results[0].actionTeamBy.teamProfile)
-    
+
+    titleLabel.text = data.title
+    bodyLabel.text = data.body
+    typeLabel.text = data.type
+
+    let urlImage = url.appendingPathComponent(data.actionTeamBy.teamProfile)
+
     teamProfileImg.kf.setImage(with: urlImage)
  
     titleLb.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: HistoryTable.titleLb.rawValue, comment: "")

@@ -16,17 +16,23 @@ class HeaderTableViewCell: UITableViewCell {
   func configureHeader(){
     let username = UserDefaults.standard.object(forKey: UserKeys.usernameText.rawValue) as? String
     let imageUrl = UserDefaults.standard.object(forKey: UserKeys.userProfile.rawValue) as? String
+    let imageUrlEmail = UserDefaults.standard.object(forKey: UserKeys.userProfileEmail.rawValue) as? String
     let type = UserDefaults.standard.object(forKey: UserKeys.type.rawValue) as? Int
     
-    let urlImage = URL(string: imageUrl!)!
+  
+    
     let url = URL(string: Domains.BaseURL)!
+    let urlProfile = url.appendingPathComponent(imageUrlEmail ?? "")
+    imageProfile.kf.setImage(with: urlProfile,placeholder: #imageLiteral(resourceName: "avatar-user"))
+    
     if  type != nil {
       switch type {
       case 3,4:
-        imageProfile.kf.setImage(with: urlImage)
+        let urlImage = URL(string: imageUrl ?? "")
+        imageProfile.kf.setImage(with: urlImage,placeholder: #imageLiteral(resourceName: "avatar-user"))
+        print("urlIMageSocial:\(String(describing: urlImage))")
       default:
-        let urlProfile = url.appendingPathComponent(imageUrl!)
-        imageProfile.kf.setImage(with: urlProfile)
+         print("nothings")
       }
     }
     usernameLabel.text = username

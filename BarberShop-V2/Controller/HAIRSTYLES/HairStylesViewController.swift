@@ -11,33 +11,56 @@ import Alamofire
 class HairStylesViewController: UIViewController {
     
     @IBOutlet weak var hairStyleCollectionView: UICollectionView!
-  
+  private let refreshControl = UIRefreshControl()
   var itemsHairStyle = StyleHair(length:0,results:[])
   var listHairStyleDataSource = ListHairStyleDataSource()
+  
+ 
+  
+  override func viewDidAppear(_ animated: Bool) {
+    self.setupCollectionView()
+    self.setupDataStyleList()
+  }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      setupCollectionView()
-      setupDataStyleList()
-     // setupClearNavigation()
+
     }
-  
-//  func setupClearNavigation() {
-//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//    self.navigationController?.navigationBar.shadowImage = UIImage()
-//    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-//  }
   
   private func setupCollectionView(){
     hairStyleCollectionView.delegate = self
     hairStyleCollectionView.dataSource = listHairStyleDataSource
+    
+    let strokeTextAttributes = [
+      NSAttributedStringKey.foregroundColor : COlorCustom.hexStringToUIColor(hex:"#00695C"),
+      NSAttributedStringKey.strokeWidth : -2.0,
+      NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18)
+      ] as [NSAttributedStringKey : Any]
+    
+    refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+    refreshControl.attributedTitle = NSAttributedString(string: "Fetching Hair Styles Data ...", attributes: strokeTextAttributes)
+    
+    //Add Refresh Control to Table View
+    if #available(iOS 10.0, *){
+      hairStyleCollectionView.refreshControl = refreshControl
+    }else {
+      hairStyleCollectionView.addSubview(refreshControl)
+    }
+    
+    //Configure Refresh Controll
+    refreshControl.addTarget(self, action: #selector(refreshHairStyleData), for: .valueChanged)
+    
+  }
+  @objc private func refreshHairStyleData(_ sender:Any){
+    //Fetch Team Data
+    self.setupDataStyleList()
   }
   
   private func render(){
     let hairStyles = itemsHairStyle.results.map { return $0}
     listHairStyleDataSource.listStyleHair.results = hairStyles
     hairStyleCollectionView.reloadData()
+    refreshControl.endRefreshing()
   }
   
   private func setupDataStyleList(){
@@ -60,6 +83,7 @@ class HairStylesViewController: UIViewController {
       }
     }
   }
+  
   
     @IBAction func backTapped(_ sender: UIBarButtonItem) {
         

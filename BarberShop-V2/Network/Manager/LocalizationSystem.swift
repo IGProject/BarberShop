@@ -50,6 +50,11 @@ class LocalizationSystem: NSObject {
     }
   }
   
+//  func localized(langCode: String) -> String {
+//    let path = Bundle.main.path(forResource: langCode, ofType: "lproj")
+//    let bundle = Bundle(path: path!)
+//    return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+//  }
   //MARK:- resetLocalization
   
   func resetLocalization(){

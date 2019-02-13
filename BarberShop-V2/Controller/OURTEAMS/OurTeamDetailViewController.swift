@@ -26,6 +26,17 @@ class OurTeamDetailViewController: UIViewController {
   @IBOutlet weak var emailTitleLabel: UILabel!
   @IBOutlet weak var descriptionTitleLabel: UILabel!
   
+  /// View which contains the loading text and the spinner
+  let loadingView = UIView()
+  
+  /// Spinner shown during load the TableView
+  let spinner = UIActivityIndicatorView()
+  
+  /// Text shown during load the TableView
+  let loadingLabel = UILabel()
+  //MARK: Instance Properties
+  
+  
   //MARK: Properties
   var usernameString:String!
   var phoneString:String!
@@ -47,7 +58,7 @@ class OurTeamDetailViewController: UIViewController {
       setupGoogleMap()
       //setupClearNavigation()
     }
-  
+
   
   private func setupTitleViews(){
     self.usernameTitleLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: OurTeamDetail.usernameLb.rawValue, comment: "")
@@ -71,8 +82,14 @@ class OurTeamDetailViewController: UIViewController {
     phoneNumberLabel.text = phoneString
     emailLabel.text = emailString
     descriptionLabel.text = descriptionString
+    
+    
     let urlImage = teamEndPoint?.appendingPathComponent(imageTeamString)
-    imageTeam.kf.setImage(with: urlImage)
+    let teamDetailImage = #imageLiteral(resourceName: "not_image")
+    imageTeam.kf.setImage(with: urlImage, placeholder: teamDetailImage)
+    
+    //imageTeam.frame = CGect(x: 0, y: 0, width: imageTeam.bounds.size.width, height: imageTeam.bounds.size.height)
+   // imageTeam.contentMode = .scaleAspectFill
   }
   
   private func setupGoogleMap(){

@@ -22,7 +22,8 @@ class HairstyleCollectionCell: UICollectionViewCell,ConfigurableCell {
   
   func configure(data styleHair: StyleHair.Results) {
     let urlImage = url.appendingPathComponent(styleHair.style_profile)
-    self.imageStyleHair.kf.setImage(with: urlImage)
+    
+    self.imageStyleHair.kf.setImage(with: urlImage,placeholder:#imageLiteral(resourceName: "no_images_services"))
     self.shapeNameLabel.text = styleHair.shape.shape_name
     self.dataStyleHair = styleHair
   }

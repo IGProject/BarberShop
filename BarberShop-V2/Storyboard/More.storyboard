@@ -1,145 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hHa-fd-cxt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kOd-UB-3sm">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--More Table View Controller-->
-        <scene sceneID="YeQ-jp-izp">
+        <!--More View Controller-->
+        <scene sceneID="B2K-i6-3UI">
             <objects>
-                <tableViewController storyboardIdentifier="MoreTableViewController" id="NgC-aK-Egl" customClass="MoreTableViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1qs-rJ-md1">
+                <viewController id="cux-rL-nAh" customClass="MoreViewController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nm8-z0-Dnf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="pN2-5n-epc">
-                            <rect key="frame" x="0.0" y="317" width="375" height="5"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderTableViewCell" rowHeight="245" id="rHs-3c-smd" customClass="HeaderTableViewCell" customModule="BarberShop_V2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="245"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rHs-3c-smd" id="ajN-X4-c9i">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="244.66666666666666"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-xa-hiW">
-                                            <rect key="frame" x="128.66666666666666" y="51.666666666666671" width="118" height="141.33333333333331"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hat-Tz-1Gy">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="234" id="Wme-T3-Zb4" customClass="HeaderCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="234"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wme-T3-Zb4" id="8Cg-We-ZzV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minea" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-aY-wNi" customClass="RoundedImageView" customModule="BarberShop_V2" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="113"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="113" id="b0j-Zw-zLg"/>
-                                                        <constraint firstAttribute="width" constant="118" id="q5z-e5-bQt"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chem Minea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-O1-v3e">
-                                                    <rect key="frame" x="11" y="120.99999999999999" width="96" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Tz-qO-qc2">
+                                                    <rect key="frame" x="128.66666666666666" y="46.333333333333329" width="118" height="141.33333333333337"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="enF-1t-sqi" customClass="RoundedImageView" customModule="BarberShop_V2" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="118" height="113"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="113" id="MeV-bD-7jf"/>
+                                                                <constraint firstAttribute="width" constant="118" id="tDz-XF-WPL"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chem Minea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq6-Xb-X01">
+                                                            <rect key="frame" x="11" y="120.99999999999999" width="96" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="4A6-xa-hiW" firstAttribute="centerY" secondItem="ajN-X4-c9i" secondAttribute="centerY" id="DoW-IR-tCq"/>
-                                        <constraint firstItem="4A6-xa-hiW" firstAttribute="centerX" secondItem="ajN-X4-c9i" secondAttribute="centerX" id="xjT-0Q-8dY"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.41176470588235292" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="imageProfile" destination="XQc-aY-wNi" id="6j7-Ny-KsM"/>
-                                    <outlet property="usernameLabel" destination="TUa-O1-v3e" id="Nc0-qq-244"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreTableViewCell" id="OBq-tq-2eN" customClass="MoreTableViewCell" customModule="BarberShop_V2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="273" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OBq-tq-2eN" id="liF-CL-bVj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-U2-6GF">
-                                            <rect key="frame" x="16" y="12" width="343" height="20"/>
+                                            <constraints>
+                                                <constraint firstItem="5Tz-qO-qc2" firstAttribute="centerX" secondItem="8Cg-We-ZzV" secondAttribute="centerX" id="2zw-B1-7PE"/>
+                                                <constraint firstItem="5Tz-qO-qc2" firstAttribute="centerY" secondItem="8Cg-We-ZzV" secondAttribute="centerY" id="Bl9-Zp-aax"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageProfile" destination="enF-1t-sqi" id="P8Y-1M-rNA"/>
+                                            <outlet property="usernameLabel" destination="uq6-Xb-X01" id="hX7-wu-9cm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreContentCell" id="Qzf-cQ-h1z" customClass="MoreContentCell" customModule="BarberShop_V2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="262" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qzf-cQ-h1z" id="n1T-zc-qES">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-white" translatesAutoresizingMaskIntoConstraints="NO" id="nU9-YR-0YG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoe-Hj-89U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="43.666666666666664"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="fq1-ZS-OBq"/>
-                                                        <constraint firstAttribute="width" constant="20" id="ykL-bf-PHh"/>
+                                                        <constraint firstAttribute="width" constant="43" id="C2O-Ze-HSC"/>
                                                     </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-5M-mWw">
-                                                    <rect key="frame" x="28" y="0.0" width="315" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.042255729440000001" green="0.13142612579999999" blue="0.22277653219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmc-wb-Gpy" userLabel="line">
+                                                    <rect key="frame" x="0.0" y="42.666666666666664" width="375" height="1"/>
+                                                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="9aU-8J-HLM"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEH-Wu-qJg">
+                                                    <rect key="frame" x="12" y="12" width="347" height="20"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-white" translatesAutoresizingMaskIntoConstraints="NO" id="WNA-Gt-l3m">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="2sp-NO-nqa"/>
+                                                                <constraint firstAttribute="height" constant="20" id="ILI-OG-mmp"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mF-PP-Zw3">
+                                                            <rect key="frame" x="37" y="0.0" width="310" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="8qy-U2-6GF" firstAttribute="leading" secondItem="liF-CL-bVj" secondAttribute="leading" constant="16" id="2Yt-jx-xSq"/>
-                                        <constraint firstItem="8qy-U2-6GF" firstAttribute="centerY" secondItem="liF-CL-bVj" secondAttribute="centerY" id="3md-0e-mcp"/>
-                                        <constraint firstAttribute="trailing" secondItem="8qy-U2-6GF" secondAttribute="trailing" constant="16" id="KyX-un-sle"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="iconMoreImage" destination="nU9-YR-0YG" id="oK7-zp-XmR"/>
-                                    <outlet property="titleMoreLabel" destination="hnE-5M-mWw" id="56U-3D-9Rh"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="NgC-aK-Egl" id="7f8-e2-Amd"/>
-                            <outlet property="delegate" destination="NgC-aK-Egl" id="erf-GU-tif"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="ssj-tH-K6W"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5MS-ET-kaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bEH-Wu-qJg" secondAttribute="trailing" constant="16" id="6J2-Hm-Q9n"/>
+                                                <constraint firstItem="Hmc-wb-Gpy" firstAttribute="centerX" secondItem="n1T-zc-qES" secondAttribute="centerX" id="DNY-Fr-ri6"/>
+                                                <constraint firstItem="bEH-Wu-qJg" firstAttribute="centerY" secondItem="n1T-zc-qES" secondAttribute="centerY" id="TcQ-TY-vuK"/>
+                                                <constraint firstItem="Eoe-Hj-89U" firstAttribute="leading" secondItem="n1T-zc-qES" secondAttribute="leading" id="kDW-pG-9kt"/>
+                                                <constraint firstAttribute="bottom" secondItem="Eoe-Hj-89U" secondAttribute="bottom" id="rN6-12-or3"/>
+                                                <constraint firstItem="Hmc-wb-Gpy" firstAttribute="leading" secondItem="n1T-zc-qES" secondAttribute="leading" id="tFg-7g-Ijw"/>
+                                                <constraint firstItem="bEH-Wu-qJg" firstAttribute="leading" secondItem="n1T-zc-qES" secondAttribute="leading" constant="12" id="vwD-wv-Oga"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hmc-wb-Gpy" secondAttribute="bottom" id="x7y-HJ-gt2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hmc-wb-Gpy" secondAttribute="trailing" id="xLN-hM-gxA"/>
+                                                <constraint firstItem="Eoe-Hj-89U" firstAttribute="top" secondItem="n1T-zc-qES" secondAttribute="top" id="xNp-eD-1Gk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="iconMoreImage" destination="WNA-Gt-l3m" id="vzx-zi-VJW"/>
+                                            <outlet property="titleMoreLabel" destination="8mF-PP-Zw3" id="wjX-z2-CZl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hat-Tz-1Gy" firstAttribute="leading" secondItem="u5h-ny-TIe" secondAttribute="leading" id="DXU-fJ-f77"/>
+                            <constraint firstItem="u5h-ny-TIe" firstAttribute="trailing" secondItem="hat-Tz-1Gy" secondAttribute="trailing" id="LgI-hh-jE6"/>
+                            <constraint firstItem="u5h-ny-TIe" firstAttribute="bottom" secondItem="hat-Tz-1Gy" secondAttribute="bottom" id="OJm-BC-r9p"/>
+                            <constraint firstItem="hat-Tz-1Gy" firstAttribute="top" secondItem="u5h-ny-TIe" secondAttribute="top" id="e7t-wO-Hw7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u5h-ny-TIe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ofl-sc-uau"/>
+                    <connections>
+                        <outlet property="moreTableView" destination="hat-Tz-1Gy" id="pyC-3x-dj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sig-cV-Okc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="70.935960591133011"/>
+            <point key="canvasLocation" x="2941.5999999999999" y="68.7192118226601"/>
         </scene>
         <!--MORE-->
-        <scene sceneID="abE-s4-ltD">
+        <scene sceneID="1P6-Dd-4lU">
             <objects>
-                <navigationController storyboardIdentifier="moreStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="hHa-fd-cxt" customClass="CustomNavigationController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MORE" image="list" id="m5P-Ff-aJv"/>
+                <navigationController storyboardIdentifier="MoreContentNavigation" automaticallyAdjustsScrollViewInsets="NO" id="kOd-UB-3sm" customClass="CustomNavigationController" customModule="BarberShop_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MORE" image="list" id="e4j-of-xXc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fnV-RT-606">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gtu-tF-frQ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
+                        <color key="barTintColor" red="0.0" green="0.41176470590000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NgC-aK-Egl" kind="relationship" relationship="rootViewController" id="5AW-dQ-psG"/>
+                        <segue destination="cux-rL-nAh" kind="relationship" relationship="rootViewController" id="1f1-KO-S5Z"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M0J-qL-S7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ak-So-BQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400.80000000000001" y="71.514242878560722"/>
+            <point key="canvasLocation" x="2210.4000000000001" y="68.7192118226601"/>
         </scene>
     </scenes>
     <resources>
         <image name="calendar-white" width="51.200000762939453" height="51.200000762939453"/>
         <image name="list" width="19.200000762939453" height="19.200000762939453"/>
-        <image name="minea" width="2048" height="2047"/>
     </resources>
 </document>

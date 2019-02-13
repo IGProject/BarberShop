@@ -20,6 +20,7 @@ enum UserKeys: String {
   case phoneText
   case passwordText
   case userProfile
+  case userProfileEmail
   case type
 }
 
@@ -37,7 +38,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signupTapped:SSSpinnerButton!
   
     let userDefault = UserDefaults.standard
-  
   //MARK:Properties Model
     var signUpModel: SignUp!
     var imageString: String?
@@ -150,6 +150,8 @@ class SignUpViewController: UIViewController {
     func setupClearNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+      self.navigationController?.navigationBar.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
+      UIApplication.shared.statusBarView?.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
     }
   
 
@@ -192,56 +194,68 @@ class SignUpViewController: UIViewController {
           if let error = error {
             print("Error fetching remote instange ID: \(error)")
           } else if let result = result {
-    
-            if self.usernameTextField.text != "" && self.passwordTextField.text != "" && self.phoneNumberTextField.text != "" && self.emailTextField.text != "" && self.imageView.image != nil && self.imageString != "" {
-             //MARK:Model
-              self.signUpModel = SignUp(username: self.usernameTextField.text!, email: self.emailTextField.text!, phone: self.phoneNumberTextField.text!,
-              token: result.token, password: self.passwordTextField.text!,
-              base64_image:self.imageString ?? "", type: .email)
-              
-              //2.MARK: create UserEndPoint
-              let userEndPoint = URL(string: Domains.BaseURL + "/user/register")
-              
-              //3.MARK: Create Param for post Resgister
-              let param:[String:Any] = [  "username":self.signUpModel.username,
-                                          "email":self.signUpModel.email,
-                                          "token":self.signUpModel.token,
-                                          "phone":self.signUpModel.phone,
-                                          "base64_image":self.signUpModel.base64_image!,
-                                          "password":self.signUpModel.password,
-                                          "type":self.signUpModel.type
-              ]
-              //4.MARK:Access service api with Alamofire
-              self.registerUser(endPoint: userEndPoint!, param: param,sender:sender)
-  
-            }else if self.usernameTextField.text == ""{
-              print("please enter usename")
-              self.usernameTextField.becomeFirstResponder()
-              
-            }else if self.phoneNumberTextField.text == "" {
-              print("please enter phone number")
-              self.phoneNumberTextField.becomeFirstResponder()
-              
-            }else if self.emailTextField.text == ""{
-              print("please enter email ")
-              self.emailTextField.becomeFirstResponder()
-              
-            }else if self.passwordTextField.text == "" {
-              print("please enter password")
-              self.passwordTextField.becomeFirstResponder()
-              
-            }else if self.rePasswordTextField.text == "" {
-              print("please enter confirm password")
-              self.rePasswordTextField.becomeFirstResponder()
-            }else if self.imageString == nil {
-              print("please upload image")
-              self.imageView.becomeFirstResponder()
-            }
+            self.setupBooking(result: result, sender: sender)
           }
         }
-       
       }
   
+  
+  private func setupBooking(result:InstanceIDResult,sender:SSSpinnerButton){
+    var password = false
+    var empty = false
+    //MARK: -Check Username ,phone number.....
+     if self.imageString == "" {
+      AlertController.imageUploadEmpty(on: self)
+      self.imageView.becomeFirstResponder()
+     }else if self.usernameTextField.text == ""{
+        AlertController.usernameEmpty(on: self)
+        self.usernameTextField.becomeFirstResponder()
+      }else if self.phoneNumberTextField.text == "" {
+        AlertController.phoneNumEmpty(on: self)
+        self.phoneNumberTextField.becomeFirstResponder()
+      }else if self.emailTextField.text == ""{
+        AlertController.emailEmpty(on: self)
+        self.emailTextField.becomeFirstResponder()
+      }else if self.passwordTextField.text == "" {
+        empty = false
+        AlertController.passwordEmpty(on: self)
+        self.passwordTextField.becomeFirstResponder()
+      }else if self.rePasswordTextField.text == ""{
+        empty = false
+        AlertController.repasswordEmpty(on: self)
+        self.rePasswordTextField.becomeFirstResponder()
+      }else if self.passwordTextField.text != self.rePasswordTextField.text {
+        password = false
+        AlertController.notMatchEmpty(on: self)
+        self.rePasswordTextField.becomeFirstResponder()
+      }else {
+      //MARK:Model
+      self.signUpModel = SignUp(username: self.usernameTextField.text!,
+                                email: self.emailTextField.text!,
+                                phone: self.phoneNumberTextField.text!,
+                                token: result.token,
+                                password: self.passwordTextField.text!,
+                                base64_image:self.imageString!,
+                                type: .email)
+      
+      //2.MARK: create UserEndPoint
+      let userEndPoint = URL(string: Domains.BaseURL + "/user/register")
+      
+      //3.MARK: Create Param for post Resgister
+      let param:[String:Any] = [  "username":self.signUpModel.username,
+                                  "email":self.signUpModel.email,
+                                  "token":self.signUpModel.token,
+                                  "phone":self.signUpModel.phone,
+                                  "base64_image":self.signUpModel.base64_image!,
+                                  "password":self.signUpModel.password,
+                                  "type":self.signUpModel.type
+      ]
+      //4.MARK:Access service api with Alamofire
+      self.registerUser(endPoint: userEndPoint!, param: param,sender:sender)
+    }
+  }
+  
+  //////////////////////////
    private func registerUser(endPoint:URL,param:Parameters,sender:SSSpinnerButton){
     Alamofire.request(endPoint, method: .post, parameters: param, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
       switch response.result {
@@ -251,11 +265,12 @@ class SignUpViewController: UIViewController {
               
               let jsonDecoder = JSONDecoder()
               let registerResponse =  try jsonDecoder.decode(RegisterResponse.self, from: dataJson!)
-      
               //MARK: RegisterResponse
-              
-              self.registerResponse = RegisterResponse(booking: registerResponse.booking, response: registerResponse.response, userToken: registerResponse.userToken, notificationCount: registerResponse.notificationCount, userProfile: registerResponse.userProfile, message: registerResponse.message)
-              
+              self.registerResponse = RegisterResponse(booking: registerResponse.booking,
+                                                       response: registerResponse.response,
+                                                       userToken: registerResponse.userToken, notificationCount: registerResponse.notificationCount,
+                                                       userProfile: registerResponse.userProfile,
+                                                       message: registerResponse.message)
             }catch let error {
               print("error:\(error.localizedDescription)")
             }
@@ -377,7 +392,7 @@ extension SignUpViewController: UIImagePickerControllerDelegate,UINavigationCont
 }
 
 extension SignUpViewController: UITextFieldDelegate {
-
+  
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Try to find next responder
         if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {

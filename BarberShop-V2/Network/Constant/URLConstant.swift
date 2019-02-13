@@ -18,10 +18,11 @@ struct Domains {
     static let api = "/BarberShopRest"
   }
   
-   static let Domain = Domains.Dev
+   static var Domain = Domains.Dev
    static let Route = Routes.api
-   static let BaseURL = Domain + Route
+   static var BaseURL = Domain + Route
   
+  static let notificationLanguage = "SMP_NOTI_USER_CHANGE_THEME"
  
   
   

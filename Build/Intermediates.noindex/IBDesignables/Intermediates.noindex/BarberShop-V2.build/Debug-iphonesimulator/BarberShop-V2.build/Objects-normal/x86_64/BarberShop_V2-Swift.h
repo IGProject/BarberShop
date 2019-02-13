@@ -204,6 +204,7 @@ SWIFT_CLASS("_TtC13BarberShop_V221AboutUsViewController")
 @class JTAppleCalendarView;
 @class UITableView;
 @class UILabel;
+@class UIBarButtonItem;
 @class UIStoryboardSegue;
 @class RoundButton;
 
@@ -220,6 +221,7 @@ SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified satLabel;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)addBookingTapped:(RoundButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -227,17 +229,9 @@ SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
 @end
 
 
-
-
-
-
 @interface ApointmentCalendarViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
-
-
-
-
 
 @class UITableViewCell;
 
@@ -250,8 +244,9 @@ SWIFT_CLASS("_TtC13BarberShop_V232ApointmentCalendarViewController")
 
 
 
+
+
 @class UITextView;
-@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC13BarberShop_V235ApointmentDetailTableViewController")
 @interface ApointmentDetailTableViewController : UITableViewController
@@ -357,6 +352,7 @@ SWIFT_CLASS("_TtC13BarberShop_V221BookingViewController") SWIFT_AVAILABILITY(ios
 @property (nonatomic, weak) IBOutlet RoundButton * _Null_unspecified bookingBtn;
 @property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)updateBookingTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
@@ -412,6 +408,10 @@ SWIFT_CLASS("_TtC13BarberShop_V224ByLocationViewController")
 @interface ByLocationViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionViewLocation;
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)doOnLangaue;
 - (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -464,6 +464,7 @@ SWIFT_CLASS("_TtC13BarberShop_V230ContainerServiceViewController")
 @interface ContainerServiceViewController : MXSegmentedPagerController
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified headerView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (NSString * _Nonnull)segmentedPager:(MXSegmentedPager * _Nonnull)segmentedPager titleForSectionAtIndex:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -485,10 +486,16 @@ SWIFT_CLASS("_TtC13BarberShop_V216CustomMarkerView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class UITabBarItem;
 
 SWIFT_CLASS("_TtC13BarberShop_V226CustomNavigationController")
 @interface CustomNavigationController : UINavigationController
-- (void)viewWillAppear:(BOOL)animated;
+@property (nonatomic, weak) IBOutlet UITabBarItem * _Null_unspecified teamTitleTabar;
+@property (nonatomic, weak) IBOutlet UITabBarItem * _Null_unspecified serviceTitleTabar;
+@property (nonatomic, weak) IBOutlet UITabBarItem * _Null_unspecified locationTitleTabar;
+@property (nonatomic, weak) IBOutlet UITabBarItem * _Null_unspecified bookingTitleTabar;
+@property (nonatomic, weak) IBOutlet UITabBarItem * _Null_unspecified moreTitleTabar;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)notificationAlert;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
@@ -526,6 +533,7 @@ SWIFT_CLASS("_TtC13BarberShop_V212CustomUIView")
 SWIFT_CLASS("_TtC13BarberShop_V224HairStylesViewController")
 @interface HairStylesViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified hairStyleCollectionView;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -555,7 +563,10 @@ SWIFT_CLASS("_TtC13BarberShop_V222HairTypeCollectionCell")
 SWIFT_CLASS("_TtC13BarberShop_V227HairTypeStyleViewController")
 @interface HairTypeStyleViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified styleTypeCollectionView;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -577,6 +588,15 @@ SWIFT_CLASS("_TtC13BarberShop_V223HairstyleCollectionCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageStyleHair;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shapeNameLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BarberShop_V210HeaderCell")
+@interface HeaderCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet RoundedImageView * _Null_unspecified imageProfile;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -619,6 +639,7 @@ SWIFT_CLASS("_TtC13BarberShop_V226HomeLocationViewController")
 @interface HomeLocationViewController : MXSegmentedPagerController
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified headerView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (NSString * _Nonnull)segmentedPager:(MXSegmentedPager * _Nonnull)segmentedPager titleForSectionAtIndex:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -689,6 +710,14 @@ SWIFT_CLASS("_TtC13BarberShop_V225ListRewardPointDataSource")
 @end
 
 
+SWIFT_CLASS("_TtC13BarberShop_V227LoadingScreenViewController")
+@interface LoadingScreenViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13BarberShop_V218LocalizationSystem")
 @interface LocalizationSystem : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -742,6 +771,15 @@ SWIFT_CLASS("_TtC13BarberShop_V225MapLocationViewController")
 @end
 
 
+SWIFT_CLASS("_TtC13BarberShop_V215MoreContentCell")
+@interface MoreContentCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleMoreLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified iconMoreImage;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13BarberShop_V217MoreTableViewCell")
 @interface MoreTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleMoreLabel;
@@ -762,13 +800,42 @@ SWIFT_CLASS("_TtC13BarberShop_V223MoreTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified aboutUsLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified logoutLabel;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)doOnLangaue;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BarberShop_V218MoreViewController")
+@interface MoreViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified moreTableView;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)doOnLangaue;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface MoreViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
@@ -839,7 +906,7 @@ SWIFT_CLASS("_TtC13BarberShop_V213Notifications")
 SWIFT_CLASS("_TtC13BarberShop_V227NotificationsViewController")
 @interface NotificationsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified notificationTableView;
-@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBarNotification;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)BackTapped:(UIBarButtonItem * _Nonnull)sender;
@@ -851,6 +918,8 @@ SWIFT_CLASS("_TtC13BarberShop_V227NotificationsViewController")
 @interface NotificationsViewController (SWIFT_EXTENSION(BarberShop_V2)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
@@ -865,11 +934,19 @@ SWIFT_CLASS("_TtC13BarberShop_V221OfflineViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC13BarberShop_V227OurTeamBarberViewController")
 @interface OurTeamBarberViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified teamCollectionView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified loadingViews;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified spinners;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified loadingLabels;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)doOnLangaue;
 - (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -892,7 +969,6 @@ SWIFT_CLASS("_TtC13BarberShop_V227OurTeamBarberViewController")
 
 @interface OurTeamBarberViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
@@ -945,6 +1021,8 @@ SWIFT_CLASS("_TtC13BarberShop_V221ProductCollectionCell")
 SWIFT_CLASS("_TtC13BarberShop_V221ProductViewController")
 @interface ProductViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified productCollectionView;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -983,6 +1061,8 @@ SWIFT_CLASS("_TtC13BarberShop_V225RewardPointCollectionCell")
 SWIFT_CLASS("_TtC13BarberShop_V225RewardPointViewController")
 @interface RewardPointViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified rewardCollectionView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointLabel;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -1078,7 +1158,7 @@ SWIFT_CLASS("_TtC13BarberShop_V227ServiceDetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pointTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descripTitleLabel;
-@property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified serviceDetailCollectionView;
 - (void)viewDidLoad;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
@@ -1126,6 +1206,10 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceViewController")
 @interface ServiceViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified serviceCollectionView;
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)doOnLangaue;
 - (IBAction)unwindToBookingWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -1148,7 +1232,6 @@ SWIFT_CLASS("_TtC13BarberShop_V221ServiceViewController")
 
 @interface ServiceViewController (SWIFT_EXTENSION(BarberShop_V2)) <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 @class UISlider;
@@ -1163,26 +1246,24 @@ SWIFT_CLASS("_TtC13BarberShop_V226SettingTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified minuteBeforeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified laterLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dayLatersLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified notificationLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified languagesLabel;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified beforeSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified laterSlider;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified apointmentSwitch;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified remainderSwitch;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified languageSwitch;
-@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified notificationAlertSwitch;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified englishBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified khmerBtn;
-- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)changeLanguageTapped:(UIButton * _Nonnull)sender;
 - (IBAction)apointmentSwitch:(UISwitch * _Nonnull)sender;
 - (IBAction)RemainderSwitch:(UISwitch * _Nonnull)sender;
 - (IBAction)languageSwitch:(UISwitch * _Nonnull)sender;
-- (IBAction)notificationAlertSwitch:(UISwitch * _Nonnull)sender;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)changebeforeSlider:(UISlider * _Nonnull)sender;
 - (IBAction)changeLaterSlider:(UISlider * _Nonnull)sender;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -1284,6 +1365,7 @@ SWIFT_CLASS("_TtC13BarberShop_V231TransitionHistoryViewController")
 @interface TransitionHistoryViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified historyTableView;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)backTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

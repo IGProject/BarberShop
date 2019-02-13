@@ -33,8 +33,8 @@ class MapLocationViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupGoogleMapMarkerInit()
-        setupClearNavigation()
+      setupGoogleMapMarkerInit();
+        //setupClearNavigation()
          getLocationDetail()
     }
   
@@ -48,13 +48,13 @@ class MapLocationViewController: UIViewController {
     timeLocation.text = timeString
   }
   
-  func setupClearNavigation() {
-    mapItemTitle.title = address
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.backgroundColor = .white
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-  }
+//  func setupClearNavigation() {
+//    mapItemTitle.title = address
+//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//    self.navigationController?.navigationBar.shadowImage = UIImage()
+//    self.navigationController?.navigationBar.backgroundColor = .white
+//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+//  }
   
     func setupGoogleMapMarkerInit(){
         let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: zoom)
@@ -76,10 +76,10 @@ class MapLocationViewController: UIViewController {
     navigationController?.popViewController(animated: true)
   }
   
+  
   @IBAction func BookingLocationTapped(_ sender: RoundButton) {
     
   }
-  
   
   @IBAction func collectionMapDestinationTapped(_ sender: UIButton) {
         switch sender.tag {

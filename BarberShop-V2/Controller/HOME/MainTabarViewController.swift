@@ -8,18 +8,23 @@
 
 import UIKit
 
-class MainTabarViewController: UITabBarController {
+class MainTabarViewController: UITabBarController{
   
    let network = NetworkManager.sharedInstance
   
-    override func viewDidLoad() {
+
+  override func viewDidLoad() {
         super.viewDidLoad()
-    
+      
         network.reachability.whenUnreachable = { reachability in
           self.showOfflinePage()
         }
-      }
+    
+   
+    
+    }
   
+
   private func showOfflinePage() -> Void {
     DispatchQueue.main.async {
       self.performSegue(withIdentifier: "NetworkUnavailable", sender: self)

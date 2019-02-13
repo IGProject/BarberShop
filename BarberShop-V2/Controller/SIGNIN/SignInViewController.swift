@@ -156,8 +156,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
           let loginResponse = try jsonDecoder.decode(SignInResponse.self, from: jsonData!)
            self.signInResponse = SignInResponse(booking: loginResponse.booking, response: loginResponse.response, userToken: loginResponse.userToken, userProfile: loginResponse.userProfile, notificationCount: loginResponse.notificationCount)
           
-
-          self.userDefault.set(self.signInResponse.userProfile[0].profileImage, forKey: UserKeys.userProfile.rawValue)
+          self.userDefault.set(self.signInResponse.userProfile[0].profileImage!, forKey: UserKeys.userProfileEmail.rawValue)
           self.userDefault.set(self.signInResponse.userProfile[0].username, forKey: UserKeys.usernameText.rawValue)
           self.userDefault.set(self.signInResponse.userProfile[0].id, forKey: UserKeys.userId.rawValue)
           
@@ -204,6 +203,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
           if let error = error {
             print("Error fetching remote instange ID: \(error)")
           } else if let result = result {
+    
             self.facebookUser = UserSocial(username: response.dictionaryValue!["name"]! as! String, email: response.dictionaryValue!["email"]! as! String, token: result.token, user_id: response.dictionaryValue!["id"]! as! String, image: imgURLString.absoluteString , type: .facebook)
 
             let param:[String:Any] = [
@@ -236,10 +236,11 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
         let jsonData = $0.data
         do {
           let userFbResponse = try JSONDecoder().decode(UserSocialResponse.self, from: jsonData!)
-          print("userFb:\(userFbResponse)")
+      
           
           self.userSocailRespone = UserSocialResponse(response: userFbResponse.response, notificationCount: userFbResponse.notificationCount, userData: userFbResponse.userData)
           
+           print(" facebook token\(self.userSocailRespone.userData.token)")
           //MARK: UserDefault
           self.userDefault.set(self.userSocailRespone.userData.image, forKey: UserKeys.userProfile.rawValue)
           
@@ -308,7 +309,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelega
           let googleResponse = try JSONDecoder().decode(UserSocialResponse.self, from: jsonData)
          
           self.userSocailRespone = UserSocialResponse(response: googleResponse.response, notificationCount: googleResponse.notificationCount, userData: googleResponse.userData)
-          
+         print(" google token\(self.userSocailRespone.userData.token)")
       
           //MARK: UserDefault
           self.userDefault.set(self.userSocailRespone.userData.image, forKey: UserKeys.userProfile.rawValue)

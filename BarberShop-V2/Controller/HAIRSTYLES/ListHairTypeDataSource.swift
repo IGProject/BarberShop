@@ -22,7 +22,7 @@ class ListHairTypeDataSource: NSObject,UICollectionViewDataSource {
     let url = URL(string: Domains.BaseURL)!
     let urlImage = url.appendingPathComponent(hairTypeString[indexPath.item])
     let imageTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HairTypeCollectionCell", for: indexPath) as! HairTypeCollectionCell
-    imageTypeCell.hairTypeImage.kf.setImage(with: urlImage)
+    imageTypeCell.hairTypeImage.kf.setImage(with: urlImage,placeholder: #imageLiteral(resourceName: "no_images_services"))
 
     imageTypeCell.layer.borderColor = UIColor(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
     imageTypeCell.layer.cornerRadius = 5

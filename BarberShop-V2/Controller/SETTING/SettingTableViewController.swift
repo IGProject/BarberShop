@@ -35,9 +35,7 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
   @IBOutlet weak var minuteBeforeLabel: UILabel!
   @IBOutlet weak var laterLabel: UILabel!
   @IBOutlet weak var dayLatersLabel: UILabel!
-  @IBOutlet weak var notificationLabel: UILabel!
-  
-  
+  @IBOutlet weak var languagesLabel: UILabel!
   
   @IBOutlet weak var beforeSlider: UISlider!
   @IBOutlet weak var laterSlider: UISlider!
@@ -45,11 +43,8 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
   @IBOutlet weak var apointmentSwitch: UISwitch!
   @IBOutlet weak var remainderSwitch: UISwitch!
   @IBOutlet weak var languageSwitch: UISwitch!
-  @IBOutlet weak var notificationAlertSwitch: UISwitch!
   
   var switchState = false
-  
-  
   
   @IBOutlet weak var englishBtn: UIButton!
   @IBOutlet weak var khmerBtn: UIButton!
@@ -59,19 +54,24 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
   var userDefault = UserDefaults.standard
   let notifications = Notifications()
   
-  override func viewWillAppear(_ animated: Bool) {
-    saveChangeSetting()
-  }
-  
-  
   override func viewDidLoad() {
         super.viewDidLoad()
     
     notifications.notificationCenter.delegate = notifications
     notifications.userRequest()
+    
     setTitleChangeLanguage()
     
     }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    saveChangeSetting()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.tableView.reloadData()
+  }
   
   //MARK: SetTitle
   func setTitleChangeLanguage(){
@@ -81,8 +81,12 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
     
     navTitle.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.navTitle.rawValue, comment: "")
     
-    notificationLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.notificationTitle.rawValue, comment: "")
-  
+   languagesLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.languageTitleLb.rawValue, comment: "")
+    
+    minuteBeforeLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.beforeLb.rawValue, comment: "")
+    
+     dayLatersLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.laterLb.rawValue, comment: "")
+    
   }
   
   //MARK:SaveChangeSetting with UserDefault
@@ -115,23 +119,19 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
       
     }
     
-    if let notifications = userDefault.value(forKey:SettingKeys.languagueSwitch.rawValue) as? Bool{
-      notificationAlertSwitch.isOn = notifications
-      notificationLabel.isEnabled = notifications
-    }
     
    if let changeSliderBefore = userDefault.value(forKey: SettingKeys.changeBefore.rawValue) as? Float {
     
-    minuteBeforeLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.beforeLb.rawValue, comment: "")
-    
      beforeLabel.text = String(Int(changeSliderBefore))
       beforeSlider.value = changeSliderBefore
+    
+    
     
     }
     
     if let changeSliderLater = userDefault.value(forKey: SettingKeys.changeLater.rawValue) as? Float {
       
-      dayLatersLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.laterLb.rawValue, comment: "")
+     
       laterLabel.text = String(Int(changeSliderLater))
       laterSlider.value = changeSliderLater
     }
@@ -140,9 +140,21 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
       if englishBtn.tag == changeLanguage {
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
         englishBtn.isSelected = true // open
+       
+        self.tabBarController?.tabBar.items?[0].title = "ជាងកាត់សក់"
+        self.tabBarController?.tabBar.items?[1].title = "សេវាកម្ម"
+        self.tabBarController?.tabBar.items?[2].title = "ទីតាំងជាង"
+        self.tabBarController?.tabBar.items?[3].title = "កក់ជាង"
+        self.tabBarController?.tabBar.items?[4].title = "បន្ថែម"
       }else {
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "km")
         khmerBtn.isSelected = true // open
+        
+        self.tabBarController?.tabBar.items?[0].title = "TEAMS"
+        self.tabBarController?.tabBar.items?[1].title = "SERVICES"
+        self.tabBarController?.tabBar.items?[2].title = "LOCATIONS"
+        self.tabBarController?.tabBar.items?[3].title = "BOOKING"
+        self.tabBarController?.tabBar.items?[4].title = "MORE"
       }
     }
   }
@@ -151,39 +163,26 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
   @IBAction func changeLanguageTapped(_ sender: UIButton) {
     if sender.tag == 0 {
       if LocalizationSystem.sharedInstance.getLanguage() == "km" {
-        LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
-        
-        khmerBtn.isSelected = false // close
-        englishBtn.isSelected = true // open
-     
+         self.notificationSetLangauge(langCode:"en", isEng: true, isKm: false,sender: sender)
       }
-      userDefault.set(sender.tag, forKey: SettingKeys.changeLanguages.rawValue)
     }else {
       if LocalizationSystem.sharedInstance.getLanguage() == "en" {
-        LocalizationSystem.sharedInstance.setLanguage(languageCode: "km")
         
-        englishBtn.isSelected = false
-        khmerBtn.isSelected = true
-      
+         self.notificationSetLangauge(langCode: "km", isEng: false, isKm: true,sender:sender)
       }
-      userDefault.set(sender.tag, forKey: SettingKeys.changeLanguages.rawValue)
+      
     }
-    
-    let storyboard:UIStoryboard = UIStoryboard(storyboard: .Setting)
-        let setting = storyboard.instantiateViewController(withIdentifier: "SettingTableViewController") as! SettingTableViewController
-        let appDlg = UIApplication.shared.delegate as? AppDelegate
-        let navigationRoot = UINavigationController(rootViewController: setting)
-            navigationRoot.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationRoot.navigationBar.shadowImage = UIImage()
-            navigationRoot.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-            UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-           appDlg?.window?.rootViewController = navigationRoot
-    
-
     
   }
   
-  
+  func notificationSetLangauge(langCode:String,isEng:Bool,isKm:Bool,sender:UIButton){
+    LocalizationSystem.sharedInstance.setLanguage(languageCode:langCode)
+    englishBtn.isSelected = isEng
+    khmerBtn.isSelected = isKm
+    self.setTitleChangeLanguage()
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: Domains.notificationLanguage), object: nil)
+    userDefault.set(sender.tag, forKey: SettingKeys.changeLanguages.rawValue)
+  }
   
   //MARK:Apointment Switch
   @IBAction func apointmentSwitch(_ sender: UISwitch) {
@@ -261,31 +260,10 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
 
   }
   
-  @IBAction func notificationAlertSwitch(_ sender: UISwitch) {
-    
-    if sender.isOn {
-      
-      self.switchState = true
-      userDefault.set(switchState, forKey: SettingKeys.notifications.rawValue)
-      userDefault.synchronize()
-      
-      notificationLabel.isEnabled = true
-      
-    }else {
-      
-      self.switchState = true
-      userDefault.set(switchState, forKey: SettingKeys.notifications.rawValue)
-      userDefault.synchronize()
-      
-      notificationLabel.isEnabled = false
-    }
-    
-  }
-  
   //MARK: BackTapped
   @IBAction func backTapped(_ sender: UIBarButtonItem) {
-    navigationController?.popViewController(animated: true)
-    print("back")
+    
+    self.navigationController?.popToRootViewController(animated: true)
   }
   
  
@@ -295,16 +273,12 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
     
     minuteBeforeLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.beforeLb.rawValue, comment: "")
     
-    let dateTimeBooking = userDefault.value(forKey: ApointmentBooking.dateTimeBooking.rawValue) as? [String]
-    let responseDateTime = userDefault.value(forKey: ApointmentBooking.responseDateTime.rawValue) as? [Bool]
+    let dateTimeBooking = userDefault.value(forKey: ApointmentBooking.dateTimeBooking.rawValue) as? String
+    let responseDateTime = userDefault.value(forKey: ApointmentBooking.responseDateTime.rawValue) as? Bool
     
     let datetimeFormatter = DateFormatter()
       datetimeFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
       datetimeFormatter.locale = Locale(identifier: "en_US_POSIX")
-    
-    let dateTimeShort = DateFormatter()
-    dateTimeShort.dateFormat = "dd-MMM-yyyy"
-    dateTimeShort.locale = Locale(identifier: "en_US_POSIX")
     
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "HH:mm"
@@ -312,64 +286,27 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
     
     
     if dateTimeBooking != nil && responseDateTime != nil {
-      for responses in responseDateTime!
-      {
-        for dateTimesBooking in dateTimeBooking!
-        {
-          
-          if let dateTimes = datetimeFormatter.date(from: dateTimesBooking)
-               {
-               if responses == true {
-                    let timestamp:NSNumber = Int(dateTimes.timeIntervalSince1970) as NSNumber
-                    let timeDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: timestamp))
-                    print("timeDate:\(timeDate)")
-                    let dateSubTime = timeDate.addingTimeInterval(TimeInterval(60.0) - TimeInterval(sender.value * 60.0)) //sub minute * 60 second
-            
-                    let timeSub = timeFormatter.string(from: dateSubTime as Date)
-            
-                    let divideTimeComponent = timeSub.components(separatedBy: ":")
-            
-                    let hours = divideTimeComponent[0]
-                    let minutes = divideTimeComponent[1]
-            
-              self.notifications.scheduleAlarmNotification(hour: hours, minute: minutes)
-              }// end if response
-              else {
-                  print("response is\(responses)")
-                }
-            }// end If dateTimes
-        }// for dateTimesBooking
-      }// for response Bool
+      print("dateTime\(String(describing: dateTimeBooking))")
+      if responseDateTime == true {
+        let dateTimes = datetimeFormatter.date(from: dateTimeBooking!)
+        let timestamp:NSNumber = Int((dateTimes?.timeIntervalSince1970)!) as NSNumber
+        let timeDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: timestamp))
+        let dateSubTime = timeDate.addingTimeInterval(TimeInterval(60.0) - TimeInterval(sender.value * 60.0))
+        let timeSub = timeFormatter.string(from: dateSubTime as Date)
+        let divideTimeComponent = timeSub.components(separatedBy: ":")
+        
+                let hours = divideTimeComponent[0]
+                let minutes = divideTimeComponent[1]
+        print("hour:\(hours)")
+              self.notifications.scheduleAlarmNotificationTime(hour: hours, minute: minutes)
+        
+            }else {
+        
+           print("response is\(String(describing: responseDateTime))")
+      }
     }
     
-    
-    //for dateTimesBooking in dateTimeBooking ?? [""] {
-     // print("datetimes:\(String(describing: dateTimesBooking))")
-//      if let dateTimes = datetimeFormatter.date(from: dateTimesBooking){
-//        let timestamp:NSNumber = Int(dateTimes.timeIntervalSince1970) as NSNumber
-//        let timeDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: timestamp))
-//        print("timeDate:\(timeDate)")
-//        let dateSubTime = timeDate.addingTimeInterval(TimeInterval(60.0) - TimeInterval(sender.value * 60.0)) //sub minute * 60 second
-//
-//        let timeSub = timeFormatter.string(from: dateSubTime as Date)
-//
-//        print("timeSub:\(timeSub)")
-//
-//        let divideTimeComponent = timeSub.components(separatedBy: ":")
-//
-//        let hours = divideTimeComponent[0]
-//        let minutes = divideTimeComponent[1]
-//
-//        self.notifications.scheduleAlarmNotification(hour: hours, minute: minutes)
-//
-//      }
- //   }
-    
- 
-    
     beforeLabel.text = String(Int(sender.value))
-
-    
     userDefault.set(sender.value, forKey: SettingKeys.changeBefore.rawValue)
     userDefault.synchronize()
   }
@@ -378,15 +315,35 @@ class SettingTableViewController: UITableViewController,UNUserNotificationCenter
     
     dayLatersLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: SettingTable.laterLb.rawValue, comment: "")
     
+    let dateTimeBooking = userDefault.value(forKey: ApointmentBooking.dateTimeBooking.rawValue) as? String
+    let responseDateTime = userDefault.value(forKey: ApointmentBooking.responseDateTime.rawValue) as? Bool
+    
+    let datetimeFormatter = DateFormatter()
+    datetimeFormatter.dateFormat = "dd-MMM-yyyy HH:mm"
+    datetimeFormatter.locale = Locale(identifier: "en_US_POSIX")
+    
+    if dateTimeBooking != nil && responseDateTime != nil {
+      print("dateTime:\(String(describing: dateTimeBooking))")
+      if responseDateTime == true {
+        if let startDate = datetimeFormatter.date(from: dateTimeBooking!){
+           let endDate = Date(timeInterval: 2*86400, since: startDate)
+          
+          let components = Calendar.current.dateComponents([.day], from: startDate, to: endDate)
+           let numberOfDays = components.day ?? 0
+          
+          for _ in 1...numberOfDays {
+            let nextDate = Calendar.current.date(byAdding: .day, value:Int(sender.value), to: startDate)
+            self.notifications.scheduleAlarmNotificationDate(day: (nextDate?.day())!)
+          }
+        }
+      }
+    }
+    
     laterLabel.text = String(Int(sender.value))
     
     userDefault.set(sender.value, forKey: SettingKeys.changeLater.rawValue)
     userDefault.synchronize()
-  }
-  
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
   }
+  
 }
-
-

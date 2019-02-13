@@ -20,9 +20,8 @@ extension OurTeamBarberViewController: UICollectionViewDataSource {
     listTeamCell.configure(data: itemsTeam.results[indexPath.item])
     listTeamCell.delegate = self
     
-    listTeamCell.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
-    listTeamCell.layer.cornerRadius = 5
-    listTeamCell.layer.borderWidth = 0.5
+    listTeamCell.contentMode = .scaleAspectFill
+    
     
     return listTeamCell
   

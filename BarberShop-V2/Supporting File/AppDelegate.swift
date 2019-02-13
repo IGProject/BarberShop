@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import Alamofire
 import UserNotifications
 import FirebaseMessaging
 
@@ -18,16 +18,20 @@ import GoogleSignIn
 import GoogleMaps
 import GooglePlaces
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
+  
+  public var notification: Int?
+  public var mNotCallback: NotificationListener?
+  public var mDataCallback: GetDataNotificationListener?
   
   var window: UIWindow?
   let gcmMessageIDKey = "gcm.message_id"
   let notifications = Notifications()
   var notificationAlert: UNNotification?
-var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.countNotification.rawValue) as? Int
   
-  
+  var countBudge = UserDefaults.standard.value(forKey: "budge") as? Int ?? 0
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
@@ -40,6 +44,7 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
     Messaging.messaging().delegate = self
     Messaging.messaging().shouldEstablishDirectChannel = true
     Messaging.messaging().useMessagingDelegateForDirectChannel = true
+    
     // [END set_messaging_delegate]
     // Register for remote notifications. This shows a permission dialog on first run, to
     // show the dialog at a more appropriate time move this registration accordingly.
@@ -47,8 +52,7 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
     
     //Notification Local
     
-    
-    
+       application.applicationIconBadgeNumber = countBudge
     
     if #available(iOS 10.0, *) {
       
@@ -65,12 +69,12 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
       let settings: UIUserNotificationSettings =
         UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
       application.registerUserNotificationSettings(settings)
-
+      
     }
     
+   //let countNotification = UserDefaults.standard.value(forKey:"budges") as? Int ?? 0
     application.registerForRemoteNotifications()
-    application.applicationIconBadgeNumber = countNotificaton ?? 0
-   
+  //  application.applicationIconBadgeNumber = countNotification
     
     //API KEY GOOGLE MAP
     GMSServices.provideAPIKey("AIzaSyDytfVVdSQfVN32VFBqpHPKAwa0cL_rx_o")
@@ -81,12 +85,12 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
     
     //navigation
     if #available(iOS 10.0, *) {
-      UINavigationBar.appearance().barTintColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+      UINavigationBar.appearance().barTintColor =  UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1.0)
     } else {
       // Fallback on earlier versions
     }
     
-    UIApplication.shared.statusBarStyle = .lightContent
+   UIApplication.shared.statusBarStyle = .lightContent
     UINavigationBar.appearance().tintColor = UIColor.white
     let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     UINavigationBar.appearance().titleTextAttributes = textAttributes
@@ -96,16 +100,18 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
     UINavigationController().navigationBar.setBackgroundImage(UIImage(), for: .default)
     UINavigationController().navigationBar.shadowImage = UIImage()
     UINavigationController().navigationBar.backgroundColor = .white
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    UIApplication.shared.statusBarView?.backgroundColor =  UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1.0)
     
     //
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.yellow], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
     
-    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: COlorCustom.hexStringToUIColor(hex:"#00695C")], for: .normal)
     
     UITabBar.appearance().isTranslucent = false
-    UITabBar.appearance().unselectedItemTintColor = UIColor.white
-    UITabBar.appearance().barTintColor = UIColor(red: 0/255, green: 105/255, blue: 92/255, alpha: 1.0)
+  
+    UITabBar.appearance().unselectedItemTintColor = COlorCustom.hexStringToUIColor(hex:"#616161")
+    UITabBar.appearance().tintColor = COlorCustom.hexStringToUIColor(hex: "#00695C")
+    UITabBar.appearance().barTintColor = UIColor.white
     
     //UITabBar.appearance().backgroundColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1)
     UITabBar.appearance().shadowColor = UIColor.clear
@@ -114,11 +120,13 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
   }
   
   
-  func alertNotification(budge:@escaping (Int) -> Void){
-    
-  }
+  
+  
   // [START receive_message]
   func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+    
+     getNotification()
+    application.applicationIconBadgeNumber = countBudge
     // If you are receiving a notification message while your app is in the background,
     // this callback will not be fired till the user taps on the notification launching the application.
     // TODO: Handle data of notification
@@ -132,19 +140,23 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
   func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
                    fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
     
+  
     // If you are receiving a notification message while your app is in the background,
     // this callback will not be fired till the user taps on the notification launching the application.
     // TODO: Handle data of notification
     // With swizzling disabled you must let Messaging know about the message, for Analytics
     
+      getNotification()
+      application.applicationIconBadgeNumber = countBudge
     
-  //  self.notifications.scheduleNotification(title:(userInfo["title"] as? String)!, body:(userInfo["body"] as? String)!)
-
     print("message_id:\(String(describing: userInfo[gcmMessageIDKey]))")
     if let messageID = userInfo[gcmMessageIDKey] {
-      print("Message ID: \(messageID)")
+      print("Message ID didReceiveRemoteNotification: \(messageID)")
     }
+    print("data payload:\(String(describing: userInfo["aps"]))")
     
+    
+    //postNotification(notiEndPoint: url, param: ["user_id":userId!])
     // Print full message.
     
     completionHandler(UIBackgroundFetchResult.newData)
@@ -158,6 +170,9 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
   // If swizzling is disabled then this function must be implemented so that the APNs token can be paired to
   // the FCM registration token.
   func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    
+    application.applicationIconBadgeNumber = countBudge
+    
     print("deviceTokenString: \(deviceToken)")
     InstanceID.instanceID().instanceID { (result, error) in
       if let error = error {
@@ -167,8 +182,6 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
       }
     }
     
-    // With swizzling disabled you must set the APNs token here.
-    // Messaging.messaging().apnsToken = deviceToken
   }
   
   func setupRootViewController(){
@@ -215,30 +228,64 @@ var countNotificaton = UserDefaults.standard.value(forKey: NotificationAlert.cou
   }
   
   
-  
+  func getNotification(){
+    let userId = UserDefaults.standard.value(forKey: UserKeys.userId.rawValue) as? Int
+    guard (userId != nil) else {return}
+    let notificationEndPoint = URL(string: Domains.BaseURL + "/notification/list?")!
+    let notificationData = Apointment(user_id: userId!)
+    let param:[String:Any] = ["user_id":notificationData.user_id]
+    
+    Alamofire.request(notificationEndPoint, method: .get, parameters: param).responseJSON { (response) in
+      switch response.result {
+      case .success(_):
+        let jsonData = response.data!
+        
+        do{
+          let responseNotification = try! JSONDecoder().decode(NotificationAlertResponse.self, from: jsonData)
+          let getResponse = NotificationAlertResponse(count: responseNotification.count, results: responseNotification.results)
+          
+          if self.mNotCallback != nil {
+            self.mNotCallback?.onNotificationLoad(value: getResponse.count)
+          }
+        }
+      case .failure(let error):
+        print("failure:\(error.localizedDescription)")
+      }
+    }
+  }
   
   func applicationWillResignActive(_ application: UIApplication) {
+     getNotification()
+    application.applicationIconBadgeNumber = countBudge
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
   }
   
   func applicationDidEnterBackground(_ application: UIApplication) {
+     getNotification()
+    
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
   }
   
   func applicationWillEnterForeground(_ application: UIApplication) {
-    
+    getNotification()
+    application.applicationIconBadgeNumber = countBudge
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
   }
   
   func applicationDidBecomeActive(_ application: UIApplication) {
+    //Open Screen
+     getNotification()
+     application.applicationIconBadgeNumber = countBudge
     //Handle any deeplink
-    // Deeplinker.checkDeepLink()
+
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
   }
   
   func applicationWillTerminate(_ application: UIApplication) {
+     getNotification()
+    application.applicationIconBadgeNumber = countBudge
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
 }
@@ -252,12 +299,17 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
   
   
   func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+   
+   getNotification()
     
+
+    //
     
     let userInfo = notification.request.content.userInfo
     
+    
     print("userInfo:\(String(describing: userInfo[gcmMessageIDKey]))")
-    print("aps\(userInfo["sps"])")
+    //print("aps\(userInfo["sps"])")
     completionHandler([.badge, .sound, .alert])
   }
   
@@ -267,9 +319,10 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     let userInfo = response.notification.request.content.userInfo
     // Print message ID.
     if let messageID = userInfo[gcmMessageIDKey] {
-      print("Message ID: \(messageID)")
+      print("Message ID didReceive response: \(messageID)")
     }
     
+   
     // Print full message.
     print(userInfo)
     
@@ -289,13 +342,9 @@ extension AppDelegate: MessagingDelegate {
     
     let dataDict:[String: String] = ["token": fcmToken]
     NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-    
   }
   
   func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
-    
-    //    self.notifications.scheduleNotification(title: (remoteMessage.appData["title"] as? String)!, body: (remoteMessage.appData["body"] as? String)!)
-    
     
     print("bookingTime:\(String(describing: remoteMessage.appData["book_time"]))")
     print("sound:\(String(describing: remoteMessage.appData["sound"]))")

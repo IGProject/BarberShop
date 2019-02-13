@@ -15,28 +15,55 @@ class TransitionHistoryViewController: UIViewController {
   
   var transitionItem = [Booking]()
    var userdefault = UserDefaults.standard
+  private let refreshControl = UIRefreshControl()
   
+  override func viewDidAppear(_ animated: Bool) {
+    setupTransitionItem()
+    setupTableView()
+  }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      setupTransitionItem()
-      setupTableView()
-      setNavigationBackground()
+      setupNavigation()
     }
   
-  func setNavigationBackground(){
+  func setupNavigation(){
+    
+    navigationItem.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.historyLb.rawValue, comment: "")
     navigationBar.setBackgroundImage(UIImage(), for: .default)
     navigationBar.shadowImage = UIImage()
-    navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
+    navigationBar.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
+    UIApplication.shared.statusBarView?.backgroundColor = COlorCustom.hexStringToUIColor(hex:"#00695C")
   }
+ 
   
   func setupTableView(){
     historyTableView.delegate = self
     historyTableView.dataSource = self
+    
+    let strokeTextAttributes = [
+      NSAttributedStringKey.foregroundColor : COlorCustom.hexStringToUIColor(hex:"#00695C"),
+      NSAttributedStringKey.strokeWidth : -2.0,
+      NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18)
+      ] as [NSAttributedStringKey : Any]
+    
+    refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+    refreshControl.attributedTitle = NSAttributedString(string: "Fetching History Data ...", attributes: strokeTextAttributes)
+    
+    //Add Refresh Control to Table View
+    if #available(iOS 10.0, *){
+      historyTableView.refreshControl = refreshControl
+    }else {
+      historyTableView.addSubview(refreshControl)
+    }
+    //Configure Refresh Controll
+    refreshControl.addTarget(self, action: #selector(refreshHistoryData), for: .valueChanged)
   }
   
+  @objc private func refreshHistoryData(_ sender:Any){
+    //Fetch Team Data
+    self.setupTransitionItem()
+  }
   
   @IBAction func backTapped(_ sender: UIBarButtonItem) {
      self.dismiss(animated: true)
@@ -59,6 +86,7 @@ class TransitionHistoryViewController: UIViewController {
           let notificationResponse = try JSONDecoder().decode(ApointmentResponse.self, from: $0.data!)
           self.transitionItem = notificationResponse.booking
           self.historyTableView.reloadData()
+          self.refreshControl.endRefreshing()
         }catch let err{
           print("err:\(err.localizedDescription)")
         }

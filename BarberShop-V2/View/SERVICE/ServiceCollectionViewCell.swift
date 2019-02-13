@@ -14,7 +14,7 @@ protocol ServiceBookingCellDelegate {
 }
 
 class ServiceCollectionCell: UICollectionViewCell,ConfigurableCell {
-    @IBOutlet weak var image_service: UIImageView!
+  @IBOutlet weak var image_service: UIImageView!
     @IBOutlet weak var title_service: UILabel!
     @IBOutlet weak var price_service: UILabel!
     @IBOutlet weak var des_service: UILabel!
@@ -32,8 +32,16 @@ class ServiceCollectionCell: UICollectionViewCell,ConfigurableCell {
   let serviceEndPoint = URL(string: Domains.BaseURL)
   
   func configure(data services: Services.Results) {
+    
+    image_service.contentMode = .scaleAspectFill
+    image_service.frame = CGRect(x: 0, y: 0, width: image_service.bounds.size.width, height: image_service.bounds.size.height)
+    
     let urlImage = serviceEndPoint?.appendingPathComponent(services.seva_profile)
-    self.image_service.kf.setImage(with: urlImage)
+    
+    self.image_service.kf.setImage(with: urlImage, placeholder: #imageLiteral(resourceName: "not_image"))
+    
+
+    
     self.title_service.text = services.title
     self.price_service.text = services.price
     self.des_service.text = services.description

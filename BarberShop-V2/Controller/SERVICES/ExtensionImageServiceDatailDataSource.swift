@@ -18,7 +18,10 @@ extension ServiceDetailViewController: UICollectionViewDataSource {
     
     let url = URL(string: Domains.BaseURL)
     let imageUrls = url?.appendingPathComponent(self.imageDetail[indexPath.item])
-    imageServiceCell.serviceDetailImageView.kf.setImage(with: imageUrls)
+    imageServiceCell.serviceDetailImageView.kf.setImage(with: imageUrls, placeholder: #imageLiteral(resourceName: "no_images_services"))
+    imageServiceCell.contentMode = .scaleAspectFill
+    
+//    imageServiceCell.frame = CGRect(x: 0, y: 0, width: imageServiceCell.bounds.size.width, height: imageServiceCell.bounds.size.height)
     return imageServiceCell
   }
 }

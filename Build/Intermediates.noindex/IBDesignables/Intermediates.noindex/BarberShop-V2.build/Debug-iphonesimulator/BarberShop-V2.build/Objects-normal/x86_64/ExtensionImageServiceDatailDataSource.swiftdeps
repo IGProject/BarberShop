@@ -7,6 +7,7 @@ provides-member:
 provides-dynamic-lookup:
 - "collectionView"
 depends-top-level:
+- "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "Domains"
 - "IndexPath"
@@ -18,6 +19,7 @@ depends-top-level:
 - "UICollectionViewCell"
 - "UICollectionViewDataSource"
 - !private "URL"
+- !private "_ImageLiteralType"
 depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
@@ -30,12 +32,14 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "item"]
 - !private ["SK", "subscript"]
+- !private ["So15CALayerDelegateP", "contentMode"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "kf"]
 - !private ["So15CALayerDelegateP", "serviceDetailImageView"]
 - !private ["s7CVarArgP", "Domains"]
 - !private ["s7CVarArgP", "URL"]
 - ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "contentMode"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "imageDetail"]
@@ -56,10 +60,12 @@ depends-member:
 - !private ["SL", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "item"]
+- !private ["So17UIViewContentModeV", "scaleAspectFill"]
 - !private ["s28CustomDebugStringConvertibleP", "Domains"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
 - ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "contentMode"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "imageDetail"]
@@ -86,6 +92,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
 - ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "contentMode"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "imageDetail"]
@@ -118,6 +125,7 @@ depends-member:
 - !private ["SQ", "URL"]
 - !private ["SQ", "appendingPathComponent"]
 - ["SQ", "collectionView"]
+- !private ["SQ", "contentMode"]
 - !private ["SQ", "count"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "imageDetail"]
@@ -129,6 +137,7 @@ depends-member:
 - !private ["SQ", "kf"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInCollectionView"]
+- !private ["SQ", "scaleAspectFill"]
 - !private ["SQ", "serviceDetailImageView"]
 - !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -145,6 +154,7 @@ depends-member:
 - !private ["SH", "URL"]
 - !private ["SH", "appendingPathComponent"]
 - ["SH", "collectionView"]
+- !private ["SH", "contentMode"]
 - !private ["SH", "count"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "imageDetail"]
@@ -156,6 +166,7 @@ depends-member:
 - !private ["SH", "kf"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInCollectionView"]
+- !private ["SH", "scaleAspectFill"]
 - !private ["SH", "serviceDetailImageView"]
 - !private ["SH", "subscript"]
 - !private ["10Foundation9IndexPathV", "item"]
@@ -173,6 +184,7 @@ depends-member:
 - !private ["So8NSCodingP", "Domains"]
 - !private ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", "collectionView"]
+- !private ["So8NSCodingP", "contentMode"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "imageDetail"]
 - ["So8NSCodingP", "indexTitles"]
@@ -197,6 +209,7 @@ depends-member:
 - ["So8NSObjectC", "UICollectionViewCell"]
 - !private ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", "collectionView"]
+- !private ["So8NSObjectC", "contentMode"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "imageDetail"]
 - ["So8NSObjectC", "indexTitles"]
@@ -208,6 +221,7 @@ depends-member:
 - !private ["So8NSObjectP", "Domains"]
 - !private ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "contentMode"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "imageDetail"]
 - ["So8NSObjectP", "indexTitles"]
@@ -224,6 +238,7 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "subscript"]
+- !private ["SY", "scaleAspectFill"]
 - !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "item"]
@@ -234,6 +249,7 @@ depends-member:
 - !private ["ST", "init"]
 - !private ["ST", "item"]
 - !private ["ST", "subscript"]
+- !private ["13BarberShop_V231ServiceDetailCollectionViewCellC", "contentMode"]
 - !private ["13BarberShop_V231ServiceDetailCollectionViewCellC", "serviceDetailImageView"]
 - !private ["13BarberShop_V227ServiceDetailViewControllerC", "Domains"]
 - ["13BarberShop_V227ServiceDetailViewControllerC", "IndexPath"]
@@ -266,15 +282,18 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "kf"]
+- !private ["So29UIAccessibilityIdentificationP", "contentMode"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "kf"]
 - !private ["So29UIAccessibilityIdentificationP", "serviceDetailImageView"]
+- !private ["So12UIAppearanceP", "contentMode"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "kf"]
 - !private ["So12UIAppearanceP", "serviceDetailImageView"]
 - !private ["So21UIAppearanceContainerP", "Domains"]
 - !private ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", "collectionView"]
+- !private ["So21UIAppearanceContainerP", "contentMode"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "imageDetail"]
 - ["So21UIAppearanceContainerP", "indexTitles"]
@@ -283,8 +302,10 @@ depends-member:
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInCollectionView"]
 - !private ["So21UIAppearanceContainerP", "serviceDetailImageView"]
+- !private ["So24UICollectionReusableViewC", "contentMode"]
 - !private ["So24UICollectionReusableViewC", "serviceDetailImageView"]
 - !private ["So16UICollectionViewC", "dequeueReusableCell"]
+- !private ["So20UICollectionViewCellC", "contentMode"]
 - !private ["So20UICollectionViewCellC", "serviceDetailImageView"]
 - !private ["So26UICollectionViewDataSourceP", "Domains"]
 - !private ["So26UICollectionViewDataSourceP", "URL"]
@@ -319,16 +340,19 @@ depends-member:
 - ["So18UIContentContainerP", "indexTitlesForCollectionView"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInCollectionView"]
+- !private ["So17UICoordinateSpaceP", "contentMode"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "kf"]
 - !private ["So17UICoordinateSpaceP", "serviceDetailImageView"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "contentMode"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "kf"]
 - !private ["So13UIDynamicItemP", "serviceDetailImageView"]
 - !private ["So18UIFocusEnvironmentP", "Domains"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", "collectionView"]
+- !private ["So18UIFocusEnvironmentP", "contentMode"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "imageDetail"]
 - ["So18UIFocusEnvironmentP", "indexTitles"]
@@ -337,9 +361,11 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "serviceDetailImageView"]
+- !private ["So11UIFocusItemP", "contentMode"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "kf"]
 - !private ["So11UIFocusItemP", "serviceDetailImageView"]
+- !private ["So20UIFocusItemContainerP", "contentMode"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "kf"]
 - !private ["So20UIFocusItemContainerP", "serviceDetailImageView"]
@@ -348,6 +374,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Domains"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", "collectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageDetail"]
 - ["So30UIPasteConfigurationSupportingP", "indexTitles"]
@@ -364,6 +391,7 @@ depends-member:
 - ["So11UIResponderC", "UICollectionViewCell"]
 - !private ["So11UIResponderC", "URL"]
 - ["So11UIResponderC", "collectionView"]
+- !private ["So11UIResponderC", "contentMode"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "imageDetail"]
 - ["So11UIResponderC", "indexTitles"]
@@ -375,6 +403,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Domains"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", "collectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "contentMode"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "imageDetail"]
 - ["So30UIResponderStandardEditActionsP", "indexTitles"]
@@ -404,6 +433,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Domains"]
 - !private ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", "collectionView"]
+- !private ["So18UITraitEnvironmentP", "contentMode"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "imageDetail"]
 - ["So18UITraitEnvironmentP", "indexTitles"]
@@ -415,6 +445,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Domains"]
 - !private ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", "collectionView"]
+- !private ["So23UIUserActivityRestoringP", "contentMode"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "imageDetail"]
 - ["So23UIUserActivityRestoringP", "indexTitles"]
@@ -423,6 +454,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "serviceDetailImageView"]
+- !private ["So6UIViewC", "contentMode"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "kf"]
 - !private ["So6UIViewC", "serviceDetailImageView"]
@@ -444,6 +476,7 @@ depends-member:
 - !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentMode"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "kf"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "serviceDetailImageView"]
@@ -466,6 +499,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Domains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageDetail"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexTitles"]
@@ -492,6 +526,7 @@ depends-nominal:
 - "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
+- !private "So17UIViewContentModeV"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
@@ -519,6 +554,7 @@ depends-nominal:
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
+- !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "10Kingfisher8ResourceP"
 - !private "ST"

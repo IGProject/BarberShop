@@ -18,8 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rb-sy-VYP">
+                                <rect key="frame" x="187.5" y="43" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sZW-QF-bCG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3no-kE-YgT">
-                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="576"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="10" maxY="10"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="0vA-RV-wHd">
@@ -56,15 +65,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Rb-sy-VYP" firstAttribute="centerX" secondItem="x7h-X9-hnQ" secondAttribute="centerX" id="DHO-ti-qGt"/>
                             <constraint firstAttribute="trailing" secondItem="3no-kE-YgT" secondAttribute="trailing" id="L2U-yu-bsj"/>
                             <constraint firstItem="3no-kE-YgT" firstAttribute="leading" secondItem="x7h-X9-hnQ" secondAttribute="leading" id="OOP-J4-v0T"/>
+                            <constraint firstItem="3no-kE-YgT" firstAttribute="top" secondItem="5Rb-sy-VYP" secondAttribute="bottom" constant="27" id="RrL-I9-ilv"/>
+                            <constraint firstItem="5Rb-sy-VYP" firstAttribute="top" secondItem="m66-Eg-zrb" secondAttribute="top" constant="23" id="Rs8-Lm-xX9"/>
                             <constraint firstAttribute="bottom" secondItem="3no-kE-YgT" secondAttribute="bottom" id="SkZ-RP-GYi"/>
-                            <constraint firstItem="3no-kE-YgT" firstAttribute="top" secondItem="x7h-X9-hnQ" secondAttribute="top" constant="30" id="orP-eh-Vst"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m66-Eg-zrb"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vq1-dU-lz1"/>
                     <connections>
+                        <outlet property="pointLabel" destination="5Rb-sy-VYP" id="H8B-W8-uSW"/>
                         <outlet property="rewardCollectionView" destination="3no-kE-YgT" id="K9p-GQ-VTc"/>
                     </connections>
                 </viewController>

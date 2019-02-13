@@ -14,6 +14,11 @@ provides-top-level:
 - "MoreTable"
 - "SettingTable"
 - "HistoryTable"
+- "ProductCollection"
+- "HairStyleCollection"
+- "NotificationTable"
+- "Loading"
+- "BarberTitleKey"
 provides-nominal:
 - "13BarberShop_V28LanguageO"
 - "13BarberShop_V26SignInO"
@@ -29,6 +34,11 @@ provides-nominal:
 - "13BarberShop_V29MoreTableO"
 - "13BarberShop_V212SettingTableO"
 - "13BarberShop_V212HistoryTableO"
+- "13BarberShop_V217ProductCollectionO"
+- "13BarberShop_V219HairStyleCollectionO"
+- "13BarberShop_V217NotificationTableO"
+- "13BarberShop_V27LoadingO"
+- "13BarberShop_V20A8TitleKeyO"
 provides-member:
 - ["13BarberShop_V28LanguageO", ""]
 - ["13BarberShop_V26SignInO", ""]
@@ -44,20 +54,30 @@ provides-member:
 - ["13BarberShop_V29MoreTableO", ""]
 - ["13BarberShop_V212SettingTableO", ""]
 - ["13BarberShop_V212HistoryTableO", ""]
+- ["13BarberShop_V217ProductCollectionO", ""]
+- ["13BarberShop_V219HairStyleCollectionO", ""]
+- ["13BarberShop_V217NotificationTableO", ""]
+- ["13BarberShop_V27LoadingO", ""]
+- ["13BarberShop_V20A8TitleKeyO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "ApointmentBarber"
 - "ApointmentDetail"
 - !private "Array"
+- "BarberTitleKey"
 - "BookingBarber"
 - !private "FloatLiteralType"
+- "HairStyleCollection"
 - "HistoryTable"
 - !private "IntegerLiteralType"
 - "Language"
+- "Loading"
 - "MoreTable"
+- "NotificationTable"
 - "OurTeam"
 - "OurTeamDetail"
+- "ProductCollection"
 - "ServiceBarber"
 - "ServiceDetail"
 - "SettingTable"
@@ -101,6 +121,19 @@ depends-member:
 - ["13BarberShop_V216ApointmentDetailO", "userNameLb"]
 - ["12FacebookCore26AppEventParameterValueTypeP", "init"]
 - ["12FacebookCore26AppEventParameterValueTypeP", "init"]
+- ["13BarberShop_V20A8TitleKeyO", "RawValue"]
+- ["13BarberShop_V20A8TitleKeyO", "_Default_RawValue"]
+- !private ["13BarberShop_V20A8TitleKeyO", "_findStringSwitchCase"]
+- ["13BarberShop_V20A8TitleKeyO", "bookingTitleBarKey"]
+- ["13BarberShop_V20A8TitleKeyO", "deinit"]
+- ["13BarberShop_V20A8TitleKeyO", "hash"]
+- ["13BarberShop_V20A8TitleKeyO", "hashValue"]
+- ["13BarberShop_V20A8TitleKeyO", "init"]
+- ["13BarberShop_V20A8TitleKeyO", "locationTitleBarKey"]
+- ["13BarberShop_V20A8TitleKeyO", "moreTitleBarKey"]
+- ["13BarberShop_V20A8TitleKeyO", "rawValue"]
+- ["13BarberShop_V20A8TitleKeyO", "serviceTitleBarKey"]
+- ["13BarberShop_V20A8TitleKeyO", "teamTitleBarKey"]
 - ["SK", "init"]
 - ["SK", "init"]
 - ["13BarberShop_V207BookingA0O", "RawValue"]
@@ -160,6 +193,15 @@ depends-member:
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["13BarberShop_V219HairStyleCollectionO", "RawValue"]
+- ["13BarberShop_V219HairStyleCollectionO", "_Default_RawValue"]
+- !private ["13BarberShop_V219HairStyleCollectionO", "_findStringSwitchCase"]
+- ["13BarberShop_V219HairStyleCollectionO", "deinit"]
+- ["13BarberShop_V219HairStyleCollectionO", "haireStyleLbKey"]
+- ["13BarberShop_V219HairStyleCollectionO", "hash"]
+- ["13BarberShop_V219HairStyleCollectionO", "hashValue"]
+- ["13BarberShop_V219HairStyleCollectionO", "init"]
+- ["13BarberShop_V219HairStyleCollectionO", "rawValue"]
 - ["SH", "RawValue"]
 - ["SH", ""]
 - ["SH", "_Default_RawValue"]
@@ -200,6 +242,16 @@ depends-member:
 - ["13BarberShop_V28LanguageO", "hashValue"]
 - ["13BarberShop_V28LanguageO", "init"]
 - ["13BarberShop_V28LanguageO", "rawValue"]
+- ["13BarberShop_V27LoadingO", "RawValue"]
+- ["13BarberShop_V27LoadingO", "_Default_RawValue"]
+- !private ["13BarberShop_V27LoadingO", "_findStringSwitchCase"]
+- ["13BarberShop_V27LoadingO", "deinit"]
+- ["13BarberShop_V27LoadingO", "hash"]
+- ["13BarberShop_V27LoadingO", "hashValue"]
+- ["13BarberShop_V27LoadingO", "init"]
+- ["13BarberShop_V27LoadingO", "loadingTitleKey"]
+- ["13BarberShop_V27LoadingO", "pointTitleKey"]
+- ["13BarberShop_V27LoadingO", "rawValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
@@ -222,6 +274,15 @@ depends-member:
 - ["13BarberShop_V29MoreTableO", "rawValue"]
 - ["13BarberShop_V29MoreTableO", "settingLb"]
 - ["13BarberShop_V29MoreTableO", "tabarMoreTitle"]
+- ["13BarberShop_V217NotificationTableO", "RawValue"]
+- ["13BarberShop_V217NotificationTableO", "_Default_RawValue"]
+- !private ["13BarberShop_V217NotificationTableO", "_findStringSwitchCase"]
+- ["13BarberShop_V217NotificationTableO", "deinit"]
+- ["13BarberShop_V217NotificationTableO", "hash"]
+- ["13BarberShop_V217NotificationTableO", "hashValue"]
+- ["13BarberShop_V217NotificationTableO", "init"]
+- ["13BarberShop_V217NotificationTableO", "notificationTitle"]
+- ["13BarberShop_V217NotificationTableO", "rawValue"]
 - ["13BarberShop_V27OurTeamO", "RawValue"]
 - ["13BarberShop_V27OurTeamO", "_Default_RawValue"]
 - !private ["13BarberShop_V27OurTeamO", "_findStringSwitchCase"]
@@ -248,6 +309,15 @@ depends-member:
 - ["13BarberShop_V213OurTeamDetailO", "phoneNumLb"]
 - ["13BarberShop_V213OurTeamDetailO", "rawValue"]
 - ["13BarberShop_V213OurTeamDetailO", "usernameLb"]
+- ["13BarberShop_V217ProductCollectionO", "RawValue"]
+- ["13BarberShop_V217ProductCollectionO", "_Default_RawValue"]
+- !private ["13BarberShop_V217ProductCollectionO", "_findStringSwitchCase"]
+- ["13BarberShop_V217ProductCollectionO", "deinit"]
+- ["13BarberShop_V217ProductCollectionO", "hash"]
+- ["13BarberShop_V217ProductCollectionO", "hashValue"]
+- ["13BarberShop_V217ProductCollectionO", "init"]
+- ["13BarberShop_V217ProductCollectionO", "productLbKey"]
+- ["13BarberShop_V217ProductCollectionO", "rawValue"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - ["SY", "RawValue"]
@@ -283,6 +353,7 @@ depends-member:
 - ["13BarberShop_V213ServiceDetailO", "hash"]
 - ["13BarberShop_V213ServiceDetailO", "hashValue"]
 - ["13BarberShop_V213ServiceDetailO", "init"]
+- ["13BarberShop_V213ServiceDetailO", "navigationBarKey"]
 - ["13BarberShop_V213ServiceDetailO", "pointLb"]
 - ["13BarberShop_V213ServiceDetailO", "pricesLb"]
 - ["13BarberShop_V213ServiceDetailO", "rawValue"]
@@ -296,6 +367,7 @@ depends-member:
 - ["13BarberShop_V212SettingTableO", "hash"]
 - ["13BarberShop_V212SettingTableO", "hashValue"]
 - ["13BarberShop_V212SettingTableO", "init"]
+- ["13BarberShop_V212SettingTableO", "languageTitleLb"]
 - ["13BarberShop_V212SettingTableO", "laterLb"]
 - ["13BarberShop_V212SettingTableO", "navTitle"]
 - ["13BarberShop_V212SettingTableO", "notificationTitle"]
@@ -380,6 +452,7 @@ depends-nominal:
 - "13BarberShop_V2010ApointmentA0O"
 - "13BarberShop_V216ApointmentDetailO"
 - "12FacebookCore26AppEventParameterValueTypeP"
+- "13BarberShop_V20A8TitleKeyO"
 - "SK"
 - "13BarberShop_V207BookingA0O"
 - !private "Sb"
@@ -397,16 +470,20 @@ depends-nominal:
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- "13BarberShop_V219HairStyleCollectionO"
 - "SH"
 - !private "s6HasherV"
 - "13BarberShop_V212HistoryTableO"
 - "10Kingfisher0A10CompatibleP"
 - "13BarberShop_V28LanguageO"
+- "13BarberShop_V27LoadingO"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "13BarberShop_V29MoreTableO"
+- "13BarberShop_V217NotificationTableO"
 - "13BarberShop_V27OurTeamO"
 - "13BarberShop_V213OurTeamDetailO"
+- "13BarberShop_V217ProductCollectionO"
 - "Sm"
 - "SY"
 - "ST"
@@ -715,4 +792,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ebe5b981b716196d7428bd4133163d0c"
+interface-hash: "9ddae731095161123cb3fc7c4413c5cf"

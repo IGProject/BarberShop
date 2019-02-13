@@ -19,9 +19,6 @@
 		CE07F8C321AD53EA0020B319 /* ListHairTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07F8C221AD53EA0020B319 /* ListHairTypeDataSource.swift */; };
 		CE0987E321929A78007388E6 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0987E221929A78007388E6 /* URLConstant.swift */; };
 		CE0987EB2192D7AC007388E6 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0987EA2192D7AC007388E6 /* APIConfiguration.swift */; };
-		CE0A0AD32162092000825759 /* AddUserBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A0AD22162092000825759 /* AddUserBooking.swift */; };
-		CE0A0AD521620CC000825759 /* ListItemServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A0AD421620CC000825759 /* ListItemServiceViewModel.swift */; };
-		CE0A0AD721620DBF00825759 /* ListItemServiceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A0AD621620DBF00825759 /* ListItemServiceDetailViewModel.swift */; };
 		CE0DE55321FC00DE007C5599 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DE55221FC00DE007C5599 /* LaunchViewController.swift */; };
 		CE0FCA56213E3B7700218CCA /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FCA54213E3B7700218CCA /* CustomUIView.swift */; };
 		CE0FCA59213E3EBE00218CCA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FCA58213E3EBD00218CCA /* RoundButton.swift */; };
@@ -52,7 +49,6 @@
 		CE5ACF0F214A4D530010A187 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ACF0E214A4D530010A187 /* JSON.swift */; };
 		CE5EAADD219BD70E006CBCAE /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAADC219BD70E006CBCAE /* ControllerType.swift */; };
 		CE5EAADF219BD787006CBCAE /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAADE219BD787006CBCAE /* ViewModelProtocol.swift */; };
-		CE5EAAE1219BD968006CBCAE /* SignUpViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAAE0219BD968006CBCAE /* SignUpViewViewModel.swift */; };
 		CE5EAAE3219C05EA006CBCAE /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAAE2219C05EA006CBCAE /* Observable+Extensions.swift */; };
 		CE5EAAE5219C0646006CBCAE /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAAE4219C0646006CBCAE /* UIViewController+Extensions.swift */; };
 		CE5EAAE7219C089C006CBCAE /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5EAAE6219C089B006CBCAE /* UIApplication+Extensions.swift */; };
@@ -61,7 +57,6 @@
 		CE6D58FD214A125300C165C9 /* CancelBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D58FC214A125300C165C9 /* CancelBooking.swift */; };
 		CE6D58FF214A130400C165C9 /* EditBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D58FE214A130400C165C9 /* EditBooking.swift */; };
 		CE6D5901214A169D00C165C9 /* SideBarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5900214A169D00C165C9 /* SideBarMenuViewController.swift */; };
-		CE6D5903214A413A00C165C9 /* SidebarMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5902214A413A00C165C9 /* SidebarMenuViewModel.swift */; };
 		CE6F142121479CEE00F58254 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F142021479CEE00F58254 /* ProfileCell.swift */; };
 		CE6F142321479D0A00F58254 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F142221479D0A00F58254 /* ContentCell.swift */; };
 		CE823B0820BFD0270095D101 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE823B0720BFD0270095D101 /* Home.storyboard */; };
@@ -119,6 +114,7 @@
 		CEADC9BD2152005300010988 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9BC2152005300010988 /* NotificationCell.swift */; };
 		CEADC9BF21520CC500010988 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADC9BE21520CC500010988 /* SettingTableViewController.swift */; };
 		CEB111F321F178390056515C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB111F221F178390056515C /* Notifications.swift */; };
+		CEB3C67B2203E43400FB1C3D /* ColorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3C67A2203E43400FB1C3D /* ColorCustom.swift */; };
 		CEB51A7121C1EC1F001AAEC2 /* Apointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB51A7021C1EC1F001AAEC2 /* Apointment.swift */; };
 		CEB51A7321C20363001AAEC2 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB51A7221C20363001AAEC2 /* SignInResponse.swift */; };
 		CEB70F88219FC58B00CA356A /* ProductClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB70F87219FC58B00CA356A /* ProductClientAPI.swift */; };
@@ -128,8 +124,13 @@
 		CEB70F90219FC5DE00CA356A /* NotificationClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB70F8F219FC5DE00CA356A /* NotificationClientAPI.swift */; };
 		CEBD6C7121AD911700BA26D5 /* ListProductDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD6C7021AD911700BA26D5 /* ListProductDataSource.swift */; };
 		CEBD6C7321ADA1B500BA26D5 /* ListRewardPointDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD6C7221ADA1B500BA26D5 /* ListRewardPointDataSource.swift */; };
+		CEC121FF22082D0600D385BD /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC121FE22082D0500D385BD /* LoadingScreenViewController.swift */; };
 		CEC44D9F21E0683A007F83F4 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC44D9E21E0683A007F83F4 /* MoreTableViewCell.swift */; };
 		CEC44DA121E068F3007F83F4 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC44DA021E068F3007F83F4 /* HeaderTableViewCell.swift */; };
+		CEC51ED4220D6CA10009AE09 /* RewardPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC51ED3220D6CA10009AE09 /* RewardPoint.swift */; };
+		CEC6EC9F2213BD4A00792571 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6EC9E2213BD4A00792571 /* HeaderCell.swift */; };
+		CEC6ECA12213BD6800792571 /* MoreContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECA02213BD6800792571 /* MoreContentCell.swift */; };
+		CEC6ECA32213BE0000792571 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6ECA22213BE0000792571 /* MoreViewController.swift */; };
 		CEC7CA5920C2485D008A4B81 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7CA5820C2485D008A4B81 /* HomeModel.swift */; };
 		CEC985DE20BF937200F89593 /* BookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985DD20BF937200F89593 /* BookingDetail.swift */; };
 		CEC985E020BF939200F89593 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985DF20BF939200F89593 /* ServiceModel.swift */; };
@@ -137,8 +138,6 @@
 		CEC985E420BF93C700F89593 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985E320BF93C700F89593 /* ProductDetails.swift */; };
 		CEC985E620BF93DF00F89593 /* HairStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985E520BF93DF00F89593 /* HairStyleModel.swift */; };
 		CEC985E820BF93F200F89593 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985E720BF93F200F89593 /* LocationModel.swift */; };
-		CEC985EA20BF944C00F89593 /* LoginEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985E920BF944C00F89593 /* LoginEmailViewModel.swift */; };
-		CEC985FA20BF94FB00F89593 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC985F920BF94FB00F89593 /* HomeViewModel.swift */; };
 		CECEA39F2200626000053B89 /* ContainerServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEA39E2200626000053B89 /* ContainerServiceViewController.swift */; };
 		CED4BE6521CB3CE900FF3D99 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BE6421CB3CE900FF3D99 /* Notification.swift */; };
 		CED4BE6721CB4AE400FF3D99 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4BE6621CB4AE400FF3D99 /* CustomNavigationController.swift */; };
@@ -149,30 +148,24 @@
 		CED75EF921FEA56400C3B50D /* servicePopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED75EF821FEA56400C3B50D /* servicePopUpCell.swift */; };
 		CED75EFB21FEA58000C3B50D /* BarberPopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED75EFA21FEA58000C3B50D /* BarberPopUpCell.swift */; };
 		CED87A7321B695BF00E417B5 /* BookingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED87A7221B695BF00E417B5 /* BookingResponse.swift */; };
+		CEDAB65B2202FDAD00A55816 /* NotificationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAB65A2202FDAD00A55816 /* NotificationListener.swift */; };
 		CEDB1ECC219E7EEC009BAB36 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB1ECB219E7EEC009BAB36 /* More.storyboard */; };
 		CEDB1ECF219E8065009BAB36 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB1ECE219E8064009BAB36 /* MoreTableViewController.swift */; };
 		CEDC343D20CFB20500CE9F53 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC343C20CFB20500CE9F53 /* UserType.swift */; };
 		CEDC3B28216283E700D0BFBB /* RegisterUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC3B27216283E700D0BFBB /* RegisterUserModel.swift */; };
 		CEDC3B2A2162842500D0BFBB /* RegisterSocialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC3B292162842500D0BFBB /* RegisterSocialModel.swift */; };
 		CEDC3B2C2162857F00D0BFBB /* SignInEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC3B2B2162857F00D0BFBB /* SignInEmail.swift */; };
-		CEDDF0F5215C8C890073CAC8 /* BarberCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDF0F4215C8C890073CAC8 /* BarberCellViewModel.swift */; };
 		CEE09B50219EB2CA00103898 /* MainTabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE09B4F219EB2CA00103898 /* MainTabarViewController.swift */; };
 		CEE1609520BE42F2001D0713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1609420BE42F2001D0713 /* AppDelegate.swift */; };
 		CEE1609C20BE42F4001D0713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1609B20BE42F4001D0713 /* Assets.xcassets */; };
 		CEE1609F20BE42F4001D0713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE1609D20BE42F4001D0713 /* LaunchScreen.storyboard */; };
 		CEE203EA21B768E500B9C81E /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE203E921B768E500B9C81E /* RegisterResponse.swift */; };
-		CEE2BBEC2148CC320034DAA4 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2BBEB2148CC320034DAA4 /* LoginProvider.swift */; };
-		CEE7AEED21C34C210001F32C /* PostItemBookApointmentUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7AEEC21C34C210001F32C /* PostItemBookApointmentUserId.swift */; };
-		CEE7AEEF21C34CDB0001F32C /* CollectionViewCalendarApointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7AEEE21C34CDB0001F32C /* CollectionViewCalendarApointment.swift */; };
-		CEE7AEF121C34D780001F32C /* TableViewDataApointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7AEF021C34D780001F32C /* TableViewDataApointments.swift */; };
 		CEE7AEF321C358950001F32C /* ApointmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7AEF221C358950001F32C /* ApointmentResponse.swift */; };
 		CEE7AEF921C3A60D0001F32C /* CancelBookingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7AEF821C3A60D0001F32C /* CancelBookingResponse.swift */; };
 		CEEA2B9121AF79A200FE311F /* ExtensionTeamDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA2B9021AF79A200FE311F /* ExtensionTeamDataSource.swift */; };
 		CEEA2B9721AF836D00FE311F /* ExtensionServiceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA2B9621AF836D00FE311F /* ExtensionServiceDataSource.swift */; };
 		CEEA2B9921AF84D600FE311F /* ExtensionImageServiceDatailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA2B9821AF84D600FE311F /* ExtensionImageServiceDatailDataSource.swift */; };
 		CEEA2B9B21AF85DF00FE311F /* ExtensionByLocationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA2B9A21AF85DF00FE311F /* ExtensionByLocationDataSource.swift */; };
-		CEF777D0214F839000C0796F /* ProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF777CF214F839000C0796F /* ProfileCellViewModel.swift */; };
-		CEF777D2214F83D700C0796F /* ContentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF777D1214F83D700C0796F /* ContentCellViewModel.swift */; };
 		CEFDB87A21A2557800889D90 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDB87921A2557800889D90 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
@@ -192,9 +185,6 @@
 		CE07F8C221AD53EA0020B319 /* ListHairTypeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHairTypeDataSource.swift; sourceTree = "<group>"; };
 		CE0987E221929A78007388E6 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		CE0987EA2192D7AC007388E6 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
-		CE0A0AD22162092000825759 /* AddUserBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserBooking.swift; sourceTree = "<group>"; };
-		CE0A0AD421620CC000825759 /* ListItemServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemServiceViewModel.swift; sourceTree = "<group>"; };
-		CE0A0AD621620DBF00825759 /* ListItemServiceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemServiceDetailViewModel.swift; sourceTree = "<group>"; };
 		CE0DE55221FC00DE007C5599 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CE0FCA54213E3B7700218CCA /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		CE0FCA58213E3EBD00218CCA /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = "../New Group/RoundButton.swift"; sourceTree = "<group>"; };
@@ -226,7 +216,6 @@
 		CE5AD5F620E472E60030C7AB /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5EAADC219BD70E006CBCAE /* ControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
 		CE5EAADE219BD787006CBCAE /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		CE5EAAE0219BD968006CBCAE /* SignUpViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewViewModel.swift; sourceTree = "<group>"; };
 		CE5EAAE2219C05EA006CBCAE /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
 		CE5EAAE4219C0646006CBCAE /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CE5EAAE6219C089B006CBCAE /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
@@ -236,7 +225,6 @@
 		CE6D58FC214A125300C165C9 /* CancelBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBooking.swift; sourceTree = "<group>"; };
 		CE6D58FE214A130400C165C9 /* EditBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBooking.swift; sourceTree = "<group>"; };
 		CE6D5900214A169D00C165C9 /* SideBarMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenuViewController.swift; sourceTree = "<group>"; };
-		CE6D5902214A413A00C165C9 /* SidebarMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuViewModel.swift; sourceTree = "<group>"; };
 		CE6F142021479CEE00F58254 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		CE6F142221479D0A00F58254 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		CE823B0720BFD0270095D101 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -295,6 +283,7 @@
 		CEADC9BC2152005300010988 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		CEADC9BE21520CC500010988 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		CEB111F221F178390056515C /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = "../../../../../../Downloads/calendar-iOS-master/Notifications.swift"; sourceTree = "<group>"; };
+		CEB3C67A2203E43400FB1C3D /* ColorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCustom.swift; sourceTree = "<group>"; };
 		CEB51A7021C1EC1F001AAEC2 /* Apointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apointment.swift; sourceTree = "<group>"; };
 		CEB51A7221C20363001AAEC2 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 		CEB70F87219FC58B00CA356A /* ProductClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClientAPI.swift; sourceTree = "<group>"; };
@@ -304,8 +293,13 @@
 		CEB70F8F219FC5DE00CA356A /* NotificationClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationClientAPI.swift; sourceTree = "<group>"; };
 		CEBD6C7021AD911700BA26D5 /* ListProductDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductDataSource.swift; sourceTree = "<group>"; };
 		CEBD6C7221ADA1B500BA26D5 /* ListRewardPointDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRewardPointDataSource.swift; sourceTree = "<group>"; };
+		CEC121FE22082D0500D385BD /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
 		CEC44D9E21E0683A007F83F4 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreTableViewCell.swift; path = ../../../../../AppDemo/tabarCustomDemo/tabarCustomDemo/MoreTableViewCell.swift; sourceTree = "<group>"; };
 		CEC44DA021E068F3007F83F4 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CEC51ED3220D6CA10009AE09 /* RewardPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RewardPoint.swift; path = ../../../../../AppDemo/MVVMDemo/MVVMDemo/View/RewardPoint.swift; sourceTree = "<group>"; };
+		CEC6EC9E2213BD4A00792571 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		CEC6ECA02213BD6800792571 /* MoreContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreContentCell.swift; sourceTree = "<group>"; };
+		CEC6ECA22213BE0000792571 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		CEC7CA5820C2485D008A4B81 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		CEC985DD20BF937200F89593 /* BookingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetail.swift; sourceTree = "<group>"; };
 		CEC985DF20BF939200F89593 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
@@ -313,8 +307,6 @@
 		CEC985E320BF93C700F89593 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 		CEC985E520BF93DF00F89593 /* HairStyleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairStyleModel.swift; sourceTree = "<group>"; };
 		CEC985E720BF93F200F89593 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
-		CEC985E920BF944C00F89593 /* LoginEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailViewModel.swift; sourceTree = "<group>"; };
-		CEC985F920BF94FB00F89593 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CECEA39E2200626000053B89 /* ContainerServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerServiceViewController.swift; sourceTree = "<group>"; };
 		CED4BE6421CB3CE900FF3D99 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = SOURCE_ROOT; };
 		CED4BE6621CB4AE400FF3D99 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
@@ -325,13 +317,13 @@
 		CED75EF821FEA56400C3B50D /* servicePopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicePopUpCell.swift; sourceTree = "<group>"; };
 		CED75EFA21FEA58000C3B50D /* BarberPopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPopUpCell.swift; sourceTree = "<group>"; };
 		CED87A7221B695BF00E417B5 /* BookingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookingResponse.swift; path = "BarberShop-V2/Model/Booking/BookingResponse.swift"; sourceTree = SOURCE_ROOT; };
+		CEDAB65A2202FDAD00A55816 /* NotificationListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListener.swift; sourceTree = "<group>"; };
 		CEDB1ECB219E7EEC009BAB36 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		CEDB1ECE219E8064009BAB36 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		CEDC343C20CFB20500CE9F53 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		CEDC3B27216283E700D0BFBB /* RegisterUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserModel.swift; sourceTree = "<group>"; };
 		CEDC3B292162842500D0BFBB /* RegisterSocialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSocialModel.swift; sourceTree = "<group>"; };
 		CEDC3B2B2162857F00D0BFBB /* SignInEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmail.swift; sourceTree = "<group>"; };
-		CEDDF0F4215C8C890073CAC8 /* BarberCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCellViewModel.swift; sourceTree = "<group>"; };
 		CEE09B4F219EB2CA00103898 /* MainTabarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabarViewController.swift; sourceTree = "<group>"; };
 		CEE1609120BE42F2001D0713 /* BarberShop-V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BarberShop-V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE1609420BE42F2001D0713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -339,18 +331,12 @@
 		CEE1609E20BE42F4001D0713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE160A020BE42F5001D0713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE203E921B768E500B9C81E /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterResponse.swift; path = "BarberShop-V2/Model/Booking/RegisterResponse.swift"; sourceTree = SOURCE_ROOT; };
-		CEE2BBEB2148CC320034DAA4 /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
-		CEE7AEEC21C34C210001F32C /* PostItemBookApointmentUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemBookApointmentUserId.swift; sourceTree = "<group>"; };
-		CEE7AEEE21C34CDB0001F32C /* CollectionViewCalendarApointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCalendarApointment.swift; sourceTree = "<group>"; };
-		CEE7AEF021C34D780001F32C /* TableViewDataApointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataApointments.swift; sourceTree = "<group>"; };
 		CEE7AEF221C358950001F32C /* ApointmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApointmentResponse.swift; sourceTree = "<group>"; };
 		CEE7AEF821C3A60D0001F32C /* CancelBookingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingResponse.swift; sourceTree = "<group>"; };
 		CEEA2B9021AF79A200FE311F /* ExtensionTeamDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTeamDataSource.swift; sourceTree = "<group>"; };
 		CEEA2B9621AF836D00FE311F /* ExtensionServiceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionServiceDataSource.swift; sourceTree = "<group>"; };
 		CEEA2B9821AF84D600FE311F /* ExtensionImageServiceDatailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImageServiceDatailDataSource.swift; sourceTree = "<group>"; };
 		CEEA2B9A21AF85DF00FE311F /* ExtensionByLocationDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionByLocationDataSource.swift; sourceTree = "<group>"; };
-		CEF777CF214F839000C0796F /* ProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellViewModel.swift; sourceTree = "<group>"; };
-		CEF777D1214F83D700C0796F /* ContentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCellViewModel.swift; sourceTree = "<group>"; };
 		CEFDB87921A2557800889D90 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		F25541E8777828FE5C2AE36D /* Pods_BarberShop_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarberShop_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3560AEDA3968C1BA4D14A9D /* Pods-BarberShop-V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberShop-V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarberShop-V2/Pods-BarberShop-V2.release.xcconfig"; sourceTree = "<group>"; };
@@ -444,6 +430,7 @@
 				CE0FCA5A213E61F700218CCA /* RoundImagesCustom.swift */,
 				CE0FCA58213E3EBD00218CCA /* RoundButton.swift */,
 				CE0FCA54213E3B7700218CCA /* CustomUIView.swift */,
+				CEB3C67A2203E43400FB1C3D /* ColorCustom.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -459,49 +446,11 @@
 		CE0FCA53213E314F00218CCA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC50B220CB78DA00CAAB64 /* Extension */,
 				CE5EAADB219BD68D006CBCAE /* Protocols */,
 				CE0987E42192A709007388E6 /* UI */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		CE1FE29220CCE9F3004D3CDF /* Booking */ = {
-			isa = PBXGroup;
-			children = (
-				CE0A0AD22162092000825759 /* AddUserBooking.swift */,
-			);
-			path = Booking;
-			sourceTree = "<group>";
-		};
-		CE288AC420DCDAA700CBAFD7 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				CE0A0AD421620CC000825759 /* ListItemServiceViewModel.swift */,
-				CE0A0AD621620DBF00825759 /* ListItemServiceDetailViewModel.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		CE288AC920DCF00C00CBAFD7 /* Barbers */ = {
-			isa = PBXGroup;
-			children = (
-				CEDDF0F4215C8C890073CAC8 /* BarberCellViewModel.swift */,
-			);
-			path = Barbers;
-			sourceTree = "<group>";
-		};
-		CE288ACE20DCF80100CBAFD7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Products;
-			sourceTree = "<group>";
-		};
-		CE288AD520DCFF0800CBAFD7 /* StylesHair */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StylesHair;
 			sourceTree = "<group>";
 		};
 		CE2E7F1621993166004125BD /* EndPoint */ = {
@@ -635,41 +584,6 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		CEA3CF5720DDD5200050479E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				CEC985F920BF94FB00F89593 /* HomeViewModel.swift */,
-				CE6D5902214A413A00C165C9 /* SidebarMenuViewModel.swift */,
-				CEF777CF214F839000C0796F /* ProfileCellViewModel.swift */,
-				CEF777D1214F83D700C0796F /* ContentCellViewModel.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		CEA3CF5820DDD5350050479E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				CEC985E920BF944C00F89593 /* LoginEmailViewModel.swift */,
-				CEE2BBEB2148CC320034DAA4 /* LoginProvider.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		CEA3CF5920DDD53F0050479E /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				CE5EAAE0219BD968006CBCAE /* SignUpViewViewModel.swift */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		CEA3CF5D20DDE23F0050479E /* Location */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
 		CEAC50AE20CB769F00CAAB64 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,8 +651,18 @@
 			children = (
 				CEC44D9E21E0683A007F83F4 /* MoreTableViewCell.swift */,
 				CEC44DA021E068F3007F83F4 /* HeaderTableViewCell.swift */,
+				CEC6EC9E2213BD4A00792571 /* HeaderCell.swift */,
+				CEC6ECA02213BD6800792571 /* MoreContentCell.swift */,
 			);
 			path = MORE;
+			sourceTree = "<group>";
+		};
+		CEC51ED2220D6C7D0009AE09 /* Reward Point */ = {
+			isa = PBXGroup;
+			children = (
+				CEC51ED3220D6CA10009AE09 /* RewardPoint.swift */,
+			);
+			path = "Reward Point";
 			sourceTree = "<group>";
 		};
 		CED4BE6321CB3CCD00FF3D99 /* Notifications */ = {
@@ -760,10 +684,19 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		CEDAB6592202FD8100A55816 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				CEDAB65A2202FDAD00A55816 /* NotificationListener.swift */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
 		CEDB1ECD219E7FB0009BAB36 /* More */ = {
 			isa = PBXGroup;
 			children = (
 				CEDB1ECE219E8064009BAB36 /* MoreTableViewController.swift */,
+				CEC6ECA22213BE0000792571 /* MoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -865,14 +798,13 @@
 		CEE1609320BE42F2001D0713 /* BarberShop-V2 */ = {
 			isa = PBXGroup;
 			children = (
+				CEDAB6592202FD8100A55816 /* Listener */,
 				CE0987DD21927958007388E6 /* Network */,
 				CE6994E02150BA7D003E0063 /* BarberShop-V2.entitlements */,
 				CE0FCA53213E314F00218CCA /* Utils */,
-				CEAC50B220CB78DA00CAAB64 /* Extension */,
 				CEE160A920BE49E7001D0713 /* Helper */,
 				CEE160A820BE49E1001D0713 /* View */,
 				CEE160A620BE49C2001D0713 /* Controller */,
-				CEE160A720BE49D4001D0713 /* ViewModel */,
 				CEE160AA20BE49F3001D0713 /* Model */,
 				CEAC50AE20CB769F00CAAB64 /* Storyboard */,
 				CEE160BE20BE58F0001D0713 /* Supporting File */,
@@ -904,22 +836,6 @@
 				CEE160AC20BE4EAC001D0713 /* SIGNUP */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		CEE160A720BE49D4001D0713 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CEA3CF5720DDD5200050479E /* Home */,
-				CEA3CF5820DDD5350050479E /* Login */,
-				CEA3CF5920DDD53F0050479E /* Sign Up */,
-				CEA3CF5D20DDE23F0050479E /* Location */,
-				CE288AD520DCFF0800CBAFD7 /* StylesHair */,
-				CE288ACE20DCF80100CBAFD7 /* Products */,
-				CE288AC920DCF00C00CBAFD7 /* Barbers */,
-				CE288AC420DCDAA700CBAFD7 /* Service */,
-				CE1FE29220CCE9F3004D3CDF /* Booking */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEE160A820BE49E1001D0713 /* View */ = {
@@ -954,6 +870,7 @@
 		CEE160AA20BE49F3001D0713 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEC51ED2220D6C7D0009AE09 /* Reward Point */,
 				CED4BE6321CB3CCD00FF3D99 /* Notifications */,
 				CEDC343720CF9DF500CE9F53 /* Home */,
 				CEDC343520CF9DB300CE9F53 /* Booking */,
@@ -1063,9 +980,6 @@
 			isa = PBXGroup;
 			children = (
 				CE823B6920BFD7C70095D101 /* ApointmentCalendarViewController.swift */,
-				CEE7AEEC21C34C210001F32C /* PostItemBookApointmentUserId.swift */,
-				CEE7AEEE21C34CDB0001F32C /* CollectionViewCalendarApointment.swift */,
-				CEE7AEF021C34D780001F32C /* TableViewDataApointments.swift */,
 				CE01D39021BA2A19002B6034 /* AppointmentDetailTableViewController.swift */,
 			);
 			path = APPOINTMENT;
@@ -1092,6 +1006,7 @@
 			isa = PBXGroup;
 			children = (
 				CE823B7220BFD9530095D101 /* SplashScreenViewController.swift */,
+				CEC121FE22082D0500D385BD /* LoadingScreenViewController.swift */,
 			);
 			path = SPLASHSCREEN;
 			sourceTree = "<group>";
@@ -1373,7 +1288,6 @@
 				CE2E7F2B21993291004125BD /* UserAuthAPI.swift in Sources */,
 				CE823B6320BFD7140095D101 /* NotificationsViewController.swift in Sources */,
 				CEBD6C7121AD911700BA26D5 /* ListProductDataSource.swift in Sources */,
-				CE6D5903214A413A00C165C9 /* SidebarMenuViewModel.swift in Sources */,
 				CE823B2020BFD23F0095D101 /* ServiceCollectionViewCell.swift in Sources */,
 				CEC7CA5920C2485D008A4B81 /* HomeModel.swift in Sources */,
 				CEB51A7321C20363001AAEC2 /* SignInResponse.swift in Sources */,
@@ -1383,8 +1297,6 @@
 				CE823B3120BFD38C0095D101 /* HairStylesViewController.swift in Sources */,
 				CE4F36AD21D077AE00A8EA9B /* NotificationAlertResponse.swift in Sources */,
 				CE07F8C121AD48E40020B319 /* ListHairStyleDataSource.swift in Sources */,
-				CEC985FA20BF94FB00F89593 /* HomeViewModel.swift in Sources */,
-				CEE7AEF121C34D780001F32C /* TableViewDataApointments.swift in Sources */,
 				CEDB1ECF219E8065009BAB36 /* MoreTableViewController.swift in Sources */,
 				CE9A695C21C73BB500701A18 /* SignInSocialResponse.swift in Sources */,
 				CE823B4220BFD4EA0095D101 /* ProductCollectionCell.swift in Sources */,
@@ -1398,6 +1310,7 @@
 				CE12FA9721A3C76E000C6435 /* UserResponse.swift in Sources */,
 				CE823B4C20BFD5910095D101 /* OurTeamBarberViewController.swift in Sources */,
 				CE1469EB21DDCA990063C1EF /* LocalizationSystem.swift in Sources */,
+				CEC121FF22082D0600D385BD /* LoadingScreenViewController.swift in Sources */,
 				CEAC50B020CB789600CAAB64 /* StoryboardBased.swift in Sources */,
 				CED4BE6521CB3CE900FF3D99 /* Notification.swift in Sources */,
 				CED75EFB21FEA58000C3B50D /* BarberPopUpCell.swift in Sources */,
@@ -1407,7 +1320,6 @@
 				CE2E7F2721993166004125BD /* UserEndPoint.swift in Sources */,
 				CEEA2B9721AF836D00FE311F /* ExtensionServiceDataSource.swift in Sources */,
 				CE2E7F2121993166004125BD /* TeamEndPoint.swift in Sources */,
-				CEF777D2214F83D700C0796F /* ContentCellViewModel.swift in Sources */,
 				CEE1609520BE42F2001D0713 /* AppDelegate.swift in Sources */,
 				CE823B1620BFD1410095D101 /* ServiceViewController.swift in Sources */,
 				CE823B5320BFD5FC0095D101 /* OurTeamCollectionCell.swift in Sources */,
@@ -1415,36 +1327,31 @@
 				CEB70F8E219FC5C400CA356A /* ServiceClientAPI.swift in Sources */,
 				CEBD6C7321ADA1B500BA26D5 /* ListRewardPointDataSource.swift in Sources */,
 				CED75EF121FEA2BA00C3B50D /* LocationPopUpViewController.swift in Sources */,
-				CE5EAAE1219BD968006CBCAE /* SignUpViewViewModel.swift in Sources */,
 				CE823B1220BFD0FF0095D101 /* ByLocationViewController.swift in Sources */,
 				CE0FCA56213E3B7700218CCA /* CustomUIView.swift in Sources */,
 				CE823B6720BFD7570095D101 /* TransitionHistoryViewController.swift in Sources */,
 				CE24CB7920C62EFC00E58D40 /* SidebarView.swift in Sources */,
 				CE82AC4C20EA2B1500F84E36 /* ContainerHistoryViewController.swift in Sources */,
-				CEC985EA20BF944C00F89593 /* LoginEmailViewModel.swift in Sources */,
 				CECEA39F2200626000053B89 /* ContainerServiceViewController.swift in Sources */,
 				CE4128D421467F02003B5602 /* CustomMarkerView.swift in Sources */,
 				CEE7AEF921C3A60D0001F32C /* CancelBookingResponse.swift in Sources */,
-				CE0A0AD32162092000825759 /* AddUserBooking.swift in Sources */,
 				CE6F142321479D0A00F58254 /* ContentCell.swift in Sources */,
 				CE2E7F2521993166004125BD /* LocationEndPoint.swift in Sources */,
 				CEC985E220BF93B100F89593 /* BarberTeamsModel.swift in Sources */,
 				CE00A39221D602AE001FB977 /* localizableConstant.swift in Sources */,
 				CEDC3B2A2162842500D0BFBB /* RegisterSocialModel.swift in Sources */,
 				CEAC50B720CB794900CAAB64 /* UIViewController+StoryboardIdentifier.swift in Sources */,
+				CEDAB65B2202FDAD00A55816 /* NotificationListener.swift in Sources */,
 				CE2E7F2821993166004125BD /* NotificationEndPoint.swift in Sources */,
 				CE823B3F20BFD4A90095D101 /* ProductViewController.swift in Sources */,
 				CE0FCA5B213E61F800218CCA /* RoundImagesCustom.swift in Sources */,
-				CEE7AEEF21C34CDB0001F32C /* CollectionViewCalendarApointment.swift in Sources */,
 				CE823B2220BFD2500095D101 /* ServiceDetailCollectionViewCell.swift in Sources */,
 				CE823B6A20BFD7C70095D101 /* ApointmentCalendarViewController.swift in Sources */,
 				CEC985E420BF93C700F89593 /* ProductDetails.swift in Sources */,
 				CE39884C21C4ABC300F938B5 /* Alert.swift in Sources */,
-				CE0A0AD721620DBF00825759 /* ListItemServiceDetailViewModel.swift in Sources */,
 				CE823B0E20BFD0970095D101 /* HomeLocationViewController.swift in Sources */,
 				CEC44D9F21E0683A007F83F4 /* MoreTableViewCell.swift in Sources */,
 				CE823B3620BFD3ED0095D101 /* HairtypeStyleViewController.swift in Sources */,
-				CE0A0AD521620CC000825759 /* ListItemServiceViewModel.swift in Sources */,
 				CEEA2B9B21AF85DF00FE311F /* ExtensionByLocationDataSource.swift in Sources */,
 				CED75EF521FEA2F400C3B50D /* BarberPopUpViewController.swift in Sources */,
 				CE07F8B921ACDFBA0020B319 /* ConfiguarbleCell.swift in Sources */,
@@ -1454,9 +1361,9 @@
 				CED75EF721FEA54C00C3B50D /* LocationPopUpCell.swift in Sources */,
 				CE12FA9521A3B494000C6435 /* String+Extension.swift in Sources */,
 				CE3FCB72219D697200DC21E4 /* BarberError.swift in Sources */,
+				CEC6EC9F2213BD4A00792571 /* HeaderCell.swift in Sources */,
 				CE07F8C321AD53EA0020B319 /* ListHairTypeDataSource.swift in Sources */,
 				CEADC9BB2152003E00010988 /* HistoryCell.swift in Sources */,
-				CEF777D0214F839000C0796F /* ProfileCellViewModel.swift in Sources */,
 				CEB70F88219FC58B00CA356A /* ProductClientAPI.swift in Sources */,
 				CE029C4121436EB900D0DE8F /* CalendarDayCell.swift in Sources */,
 				CE24CB7B20C6631900E58D40 /* MapLocationViewController.swift in Sources */,
@@ -1464,10 +1371,11 @@
 				CEC985E820BF93F200F89593 /* LocationModel.swift in Sources */,
 				CE0DE55321FC00DE007C5599 /* LaunchViewController.swift in Sources */,
 				CE6F142121479CEE00F58254 /* ProfileCell.swift in Sources */,
+				CEB3C67B2203E43400FB1C3D /* ColorCustom.swift in Sources */,
 				CE5EAAE3219C05EA006CBCAE /* Observable+Extensions.swift in Sources */,
-				CEDDF0F5215C8C890073CAC8 /* BarberCellViewModel.swift in Sources */,
 				CE6D5901214A169D00C165C9 /* SideBarMenuViewController.swift in Sources */,
 				CED87A7321B695BF00E417B5 /* BookingResponse.swift in Sources */,
+				CEC51ED4220D6CA10009AE09 /* RewardPoint.swift in Sources */,
 				CE823B4820BFD54F0095D101 /* SignUpViewController.swift in Sources */,
 				CE823B7A20BFDA800095D101 /* AboutUsViewController.swift in Sources */,
 				CE823B2620BFD28A0095D101 /* ByLocationCollectionCell.swift in Sources */,
@@ -1482,19 +1390,19 @@
 				CE67E9E3214BC56000CDA520 /* FindNear.swift in Sources */,
 				CE5EAAE5219C0646006CBCAE /* UIViewController+Extensions.swift in Sources */,
 				CEB70F8A219FC5A200CA356A /* BookingClientAPI.swift in Sources */,
+				CEC6ECA32213BE0000792571 /* MoreViewController.swift in Sources */,
 				CEADC9B82151E50200010988 /* RewardPointCollectionCell.swift in Sources */,
 				CE2E7F2021993166004125BD /* StyleListEndPoint.swift in Sources */,
 				CE6D58FD214A125300C165C9 /* CancelBooking.swift in Sources */,
 				CE2E7F2321993166004125BD /* BaseEndPoint.swift in Sources */,
+				CEC6ECA12213BD6800792571 /* MoreContentCell.swift in Sources */,
 				CE3FCB6D219D063300DC21E4 /* TeamClientAPI.swift in Sources */,
 				CEC44DA121E068F3007F83F4 /* HeaderTableViewCell.swift in Sources */,
 				CE2E7F2421993166004125BD /* BookEndPoint.swift in Sources */,
 				CED75EF921FEA56400C3B50D /* servicePopUpCell.swift in Sources */,
 				CE823B1020BFD0EB0095D101 /* NearestViewController.swift in Sources */,
-				CEE2BBEC2148CC320034DAA4 /* LoginProvider.swift in Sources */,
 				CE0987EB2192D7AC007388E6 /* APIConfiguration.swift in Sources */,
 				CE12FA9321A3A6FE000C6435 /* Image+Extension.swift in Sources */,
-				CEE7AEED21C34C210001F32C /* PostItemBookApointmentUserId.swift in Sources */,
 				CE04DCFA219A749A00593C7D /* Connection.swift in Sources */,
 				CEB111F321F178390056515C /* Notifications.swift in Sources */,
 				CEB51A7121C1EC1F001AAEC2 /* Apointment.swift in Sources */,

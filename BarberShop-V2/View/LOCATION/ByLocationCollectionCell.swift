@@ -40,7 +40,7 @@ class ByLocationCollectionCell: UICollectionViewCell,ConfigurableCell {
   
   func configure(data dataByLocation:Locations.Results) {
     let imageUrl = url.appendingPathComponent(dataByLocation.location_profile)
-    self.locationImageView.kf.setImage(with: imageUrl)
+    self.locationImageView.kf.setImage(with: imageUrl, placeholder: #imageLiteral(resourceName: "not_image"))
     self.addressLocationLabel.text = dataByLocation.address
     self.phoneLocationLabel.text = dataByLocation.phone
     self.timeLocationLabel.text = dataByLocation.work_time

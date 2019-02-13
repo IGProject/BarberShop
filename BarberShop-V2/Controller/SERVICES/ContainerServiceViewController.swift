@@ -9,21 +9,17 @@
 import UIKit
 import MXSegmentedPager
 class ContainerServiceViewController: MXSegmentedPagerController {
-@IBOutlet var headerView: UIView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      configContentPager()
-      //setupClearNavigation()
-     
-    }
-    
-//
-//  func setupClearNavigation() {
-//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//    self.navigationController?.navigationBar.shadowImage = UIImage()
-//    self.navigationController?.navigationBar.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
-//  }
+  @IBOutlet var headerView: UIView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    configContentPager()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.segmentedPager.reloadData()
+  }
   
   func configContentPager(){
     if #available(iOS 11.0, *) {
@@ -32,6 +28,7 @@ class ContainerServiceViewController: MXSegmentedPagerController {
       segmentedPager.parallaxHeader.view = headerView
       segmentedPager.parallaxHeader.mode = .fill
       segmentedPager.parallaxHeader.height = 63
+    
       
     }
     segmentedPager.segmentedControl.selectionStyle = .fullWidthStripe
@@ -43,10 +40,14 @@ class ContainerServiceViewController: MXSegmentedPagerController {
       UIFont.systemFont(ofSize: 14)]
     
     segmentedPager.segmentedControl.selectedTitleTextAttributes = [kCTForegroundColorAttributeName : UIColor.white]
+    
   }
   
   override func segmentedPager(_ segmentedPager: MXSegmentedPager, titleForSectionAt index: Int) -> String {
-    return ["Service","Product","Hair Style"][index]
+    return [LocalizationSystem.sharedInstance.localizedStringForKey(key:ServiceBarber.tabarServiceTitle.rawValue, comment: ""),
+            LocalizationSystem.sharedInstance.localizedStringForKey(key:ProductCollection.productLbKey.rawValue, comment: ""),
+            LocalizationSystem.sharedInstance.localizedStringForKey(key:HairStyleCollection.haireStyleLbKey.rawValue, comment: "")][index]
+    
   }
 }
 

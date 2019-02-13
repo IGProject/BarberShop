@@ -38,14 +38,18 @@ depends-top-level:
 - "OurTeamDetailViewController"
 - "RoundButton"
 - "String"
+- !private "StringLiteralType"
+- "UIActivityIndicatorView"
 - "UIBarButtonItem"
 - "UIImageView"
 - "UILabel"
 - "UINavigationItem"
 - !private "UIStoryboard"
 - "UIStoryboardSegue"
+- "UIView"
 - "UIViewController"
 - "URL"
+- !private "_ImageLiteralType"
 depends-member:
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
 - !private ["12FacebookCore26AppEventParameterValueTypeP", "init"]
@@ -54,6 +58,7 @@ depends-member:
 - !private ["13BarberShop_V221BookingViewControllerC", "locationAddress"]
 - !private ["13BarberShop_V221BookingViewControllerC", "teamName"]
 - !private ["So15CALayerDelegateP", "camera"]
+- ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "kf"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So22CLLocationCoordinate2DV", "init"]
@@ -63,7 +68,10 @@ depends-member:
 - !private ["s7CVarArgP", "GMSMarker"]
 - !private ["s7CVarArgP", "LocalizationSystem"]
 - !private ["s7CVarArgP", "OurTeamDetail"]
+- ["s7CVarArgP", "UIActivityIndicatorView"]
+- ["s7CVarArgP", "UILabel"]
 - !private ["s7CVarArgP", "UIStoryboard"]
+- ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", "URL"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "camera"]
@@ -76,7 +84,7 @@ depends-member:
 - !private ["s7CVarArgP", "googleMapView"]
 - !private ["s7CVarArgP", "imageTeam"]
 - !private ["s7CVarArgP", "imageTeamString"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "kf"]
@@ -117,7 +125,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "GMSMarker"]
 - !private ["s28CustomDebugStringConvertibleP", "LocalizationSystem"]
 - !private ["s28CustomDebugStringConvertibleP", "OurTeamDetail"]
+- ["s28CustomDebugStringConvertibleP", "UIActivityIndicatorView"]
+- ["s28CustomDebugStringConvertibleP", "UILabel"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", "URL"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
@@ -177,7 +188,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "GMSMarker"]
 - !private ["s23CustomStringConvertibleP", "LocalizationSystem"]
 - !private ["s23CustomStringConvertibleP", "OurTeamDetail"]
+- ["s23CustomStringConvertibleP", "UIActivityIndicatorView"]
+- ["s23CustomStringConvertibleP", "UILabel"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- ["s23CustomStringConvertibleP", "UIView"]
 - ["s23CustomStringConvertibleP", "URL"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
@@ -243,7 +257,10 @@ depends-member:
 - !private ["SQ", "GMSMarker"]
 - !private ["SQ", "LocalizationSystem"]
 - !private ["SQ", "OurTeamDetail"]
+- ["SQ", "UIActivityIndicatorView"]
+- ["SQ", "UILabel"]
 - !private ["SQ", "UIStoryboard"]
+- ["SQ", "UIView"]
 - ["SQ", "URL"]
 - ["SQ", ""]
 - !private ["SQ", "appendingPathComponent"]
@@ -320,7 +337,10 @@ depends-member:
 - !private ["SH", "GMSMarker"]
 - !private ["SH", "LocalizationSystem"]
 - !private ["SH", "OurTeamDetail"]
+- ["SH", "UIActivityIndicatorView"]
+- ["SH", "UILabel"]
 - !private ["SH", "UIStoryboard"]
+- ["SH", "UIView"]
 - ["SH", "URL"]
 - ["SH", ""]
 - !private ["SH", "appendingPathComponent"]
@@ -387,7 +407,10 @@ depends-member:
 - !private ["So8NSCodingP", "GMSMarker"]
 - !private ["So8NSCodingP", "LocalizationSystem"]
 - !private ["So8NSCodingP", "OurTeamDetail"]
+- ["So8NSCodingP", "UIActivityIndicatorView"]
+- ["So8NSCodingP", "UILabel"]
 - !private ["So8NSCodingP", "UIStoryboard"]
+- ["So8NSCodingP", "UIView"]
 - ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "camera"]
@@ -400,7 +423,7 @@ depends-member:
 - !private ["So8NSCodingP", "googleMapView"]
 - !private ["So8NSCodingP", "imageTeam"]
 - !private ["So8NSCodingP", "imageTeamString"]
-- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "kf"]
 - !private ["So8NSCodingP", "latitude"]
@@ -436,7 +459,10 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "GMSMarker"]
 - !private ["So26NSExtensionRequestHandlingP", "LocalizationSystem"]
 - !private ["So26NSExtensionRequestHandlingP", "OurTeamDetail"]
+- ["So26NSExtensionRequestHandlingP", "UIActivityIndicatorView"]
+- ["So26NSExtensionRequestHandlingP", "UILabel"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
+- ["So26NSExtensionRequestHandlingP", "UIView"]
 - ["So26NSExtensionRequestHandlingP", "URL"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "descriptionLabel"]
@@ -482,12 +508,14 @@ depends-member:
 - !private ["So8NSObjectC", "OurTeamDetail"]
 - ["So8NSObjectC", "RoundButton"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIActivityIndicatorView"]
 - ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UINavigationItem"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", "backItemTapped"]
 - !private ["So8NSObjectC", "camera"]
@@ -505,6 +533,8 @@ depends-member:
 - !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "kf"]
 - ["So8NSObjectC", "latitude"]
+- ["So8NSObjectC", "loadingLabel"]
+- ["So8NSObjectC", "loadingView"]
 - !private ["So8NSObjectC", "localizedStringForKey"]
 - !private ["So8NSObjectC", "locationAddress"]
 - ["So8NSObjectC", "locationName"]
@@ -523,6 +553,7 @@ depends-member:
 - ["So8NSObjectC", "setupViews"]
 - !private ["So8NSObjectC", "sharedInstance"]
 - !private ["So8NSObjectC", "snippet"]
+- ["So8NSObjectC", "spinner"]
 - ["So8NSObjectC", "teamBookingTapped"]
 - ["So8NSObjectC", "teamEndPoint"]
 - !private ["So8NSObjectC", "teamName"]
@@ -539,7 +570,10 @@ depends-member:
 - !private ["So8NSObjectP", "GMSMarker"]
 - !private ["So8NSObjectP", "LocalizationSystem"]
 - !private ["So8NSObjectP", "OurTeamDetail"]
+- ["So8NSObjectP", "UIActivityIndicatorView"]
+- ["So8NSObjectP", "UILabel"]
 - !private ["So8NSObjectP", "UIStoryboard"]
+- ["So8NSObjectP", "UIView"]
 - ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "camera"]
@@ -552,7 +586,7 @@ depends-member:
 - !private ["So8NSObjectP", "googleMapView"]
 - !private ["So8NSObjectP", "imageTeam"]
 - !private ["So8NSObjectP", "imageTeamString"]
-- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instantiateViewController"]
 - !private ["So8NSObjectP", "kf"]
@@ -605,12 +639,14 @@ depends-member:
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "OurTeamDetail"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "RoundButton"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "String"]
+- ["13BarberShop_V227OurTeamDetailViewControllerC", "UIActivityIndicatorView"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "UIBarButtonItem"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "UIImageView"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "UILabel"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "UINavigationItem"]
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "UIStoryboard"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "UIStoryboardSegue"]
+- ["13BarberShop_V227OurTeamDetailViewControllerC", "UIView"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "URL"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "backItemTapped"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "descriptionLabel"]
@@ -624,6 +660,8 @@ depends-member:
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "imageTeamString"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "init"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "latitude"]
+- ["13BarberShop_V227OurTeamDetailViewControllerC", "loadingLabel"]
+- ["13BarberShop_V227OurTeamDetailViewControllerC", "loadingView"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "locationName"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "longtitude"]
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "navigationController"]
@@ -634,6 +672,7 @@ depends-member:
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "setupGoogleMap"]
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "setupTitleViews"]
 - !private ["13BarberShop_V227OurTeamDetailViewControllerC", "setupViews"]
+- ["13BarberShop_V227OurTeamDetailViewControllerC", "spinner"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "teamBookingTapped"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "teamEndPoint"]
 - ["13BarberShop_V227OurTeamDetailViewControllerC", "unwindToBooking"]
@@ -661,7 +700,10 @@ depends-member:
 - !private ["13BarberShop_V215StoryboardBasedP", "GMSMarker"]
 - !private ["13BarberShop_V215StoryboardBasedP", "LocalizationSystem"]
 - !private ["13BarberShop_V215StoryboardBasedP", "OurTeamDetail"]
+- ["13BarberShop_V215StoryboardBasedP", "UIActivityIndicatorView"]
+- ["13BarberShop_V215StoryboardBasedP", "UILabel"]
 - !private ["13BarberShop_V215StoryboardBasedP", "UIStoryboard"]
+- ["13BarberShop_V215StoryboardBasedP", "UIView"]
 - ["13BarberShop_V215StoryboardBasedP", "URL"]
 - ["13BarberShop_V215StoryboardBasedP", ""]
 - !private ["13BarberShop_V215StoryboardBasedP", "descriptionLabel"]
@@ -705,9 +747,12 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "kf"]
 - !private ["So29UIAccessibilityIdentificationP", "camera"]
+- ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "kf"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- ["So23UIActivityIndicatorViewC", "init"]
 - !private ["So12UIAppearanceP", "camera"]
+- ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "kf"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "CLLocationCoordinate2D"]
@@ -716,7 +761,10 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "GMSMarker"]
 - !private ["So21UIAppearanceContainerP", "LocalizationSystem"]
 - !private ["So21UIAppearanceContainerP", "OurTeamDetail"]
+- ["So21UIAppearanceContainerP", "UIActivityIndicatorView"]
+- ["So21UIAppearanceContainerP", "UILabel"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
+- ["So21UIAppearanceContainerP", "UIView"]
 - ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "camera"]
@@ -729,7 +777,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "googleMapView"]
 - !private ["So21UIAppearanceContainerP", "imageTeam"]
 - !private ["So21UIAppearanceContainerP", "imageTeamString"]
-- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "kf"]
 - !private ["So21UIAppearanceContainerP", "latitude"]
@@ -759,7 +807,10 @@ depends-member:
 - !private ["So18UIContentContainerP", "GMSMarker"]
 - !private ["So18UIContentContainerP", "LocalizationSystem"]
 - !private ["So18UIContentContainerP", "OurTeamDetail"]
+- ["So18UIContentContainerP", "UIActivityIndicatorView"]
+- ["So18UIContentContainerP", "UILabel"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
+- ["So18UIContentContainerP", "UIView"]
 - ["So18UIContentContainerP", "URL"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "descriptionLabel"]
@@ -793,11 +844,14 @@ depends-member:
 - !private ["So18UIContentContainerP", "usernameString"]
 - !private ["So18UIContentContainerP", "usernameTitleLabel"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So30UIContentSizeCategoryAdjustingP", "init"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So17UICoordinateSpaceP", "camera"]
+- ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "kf"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "camera"]
+- ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "kf"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "CLLocationCoordinate2D"]
@@ -806,7 +860,10 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "GMSMarker"]
 - !private ["So18UIFocusEnvironmentP", "LocalizationSystem"]
 - !private ["So18UIFocusEnvironmentP", "OurTeamDetail"]
+- ["So18UIFocusEnvironmentP", "UIActivityIndicatorView"]
+- ["So18UIFocusEnvironmentP", "UILabel"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
+- ["So18UIFocusEnvironmentP", "UIView"]
 - ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "camera"]
@@ -819,7 +876,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "googleMapView"]
 - !private ["So18UIFocusEnvironmentP", "imageTeam"]
 - !private ["So18UIFocusEnvironmentP", "imageTeamString"]
-- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "kf"]
 - !private ["So18UIFocusEnvironmentP", "latitude"]
@@ -844,12 +901,15 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "usernameTitleLabel"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "camera"]
+- ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "kf"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "camera"]
+- ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "kf"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So11UIImageViewC", "kf"]
+- ["So7UILabelC", "init"]
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
@@ -860,7 +920,10 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "GMSMarker"]
 - !private ["So30UIPasteConfigurationSupportingP", "LocalizationSystem"]
 - !private ["So30UIPasteConfigurationSupportingP", "OurTeamDetail"]
+- ["So30UIPasteConfigurationSupportingP", "UIActivityIndicatorView"]
+- ["So30UIPasteConfigurationSupportingP", "UILabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- ["So30UIPasteConfigurationSupportingP", "UIView"]
 - ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "camera"]
@@ -873,7 +936,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "googleMapView"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageTeam"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageTeamString"]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "kf"]
 - !private ["So30UIPasteConfigurationSupportingP", "latitude"]
@@ -912,12 +975,14 @@ depends-member:
 - !private ["So11UIResponderC", "OurTeamDetail"]
 - ["So11UIResponderC", "RoundButton"]
 - ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIActivityIndicatorView"]
 - ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UINavigationItem"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "UIView"]
 - ["So11UIResponderC", "URL"]
 - ["So11UIResponderC", "backItemTapped"]
 - !private ["So11UIResponderC", "camera"]
@@ -934,6 +999,8 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "kf"]
 - ["So11UIResponderC", "latitude"]
+- ["So11UIResponderC", "loadingLabel"]
+- ["So11UIResponderC", "loadingView"]
 - !private ["So11UIResponderC", "locationAddress"]
 - ["So11UIResponderC", "locationName"]
 - ["So11UIResponderC", "longtitude"]
@@ -947,6 +1014,7 @@ depends-member:
 - ["So11UIResponderC", "setupGoogleMap"]
 - ["So11UIResponderC", "setupTitleViews"]
 - ["So11UIResponderC", "setupViews"]
+- ["So11UIResponderC", "spinner"]
 - ["So11UIResponderC", "teamBookingTapped"]
 - ["So11UIResponderC", "teamEndPoint"]
 - !private ["So11UIResponderC", "teamName"]
@@ -962,7 +1030,10 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "GMSMarker"]
 - !private ["So30UIResponderStandardEditActionsP", "LocalizationSystem"]
 - !private ["So30UIResponderStandardEditActionsP", "OurTeamDetail"]
+- ["So30UIResponderStandardEditActionsP", "UIActivityIndicatorView"]
+- ["So30UIResponderStandardEditActionsP", "UILabel"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- ["So30UIResponderStandardEditActionsP", "UIView"]
 - ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "camera"]
@@ -975,7 +1046,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "googleMapView"]
 - !private ["So30UIResponderStandardEditActionsP", "imageTeam"]
 - !private ["So30UIResponderStandardEditActionsP", "imageTeamString"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "kf"]
 - !private ["So30UIResponderStandardEditActionsP", "latitude"]
@@ -1005,7 +1076,10 @@ depends-member:
 - !private ["So16UIStateRestoringP", "GMSMarker"]
 - !private ["So16UIStateRestoringP", "LocalizationSystem"]
 - !private ["So16UIStateRestoringP", "OurTeamDetail"]
+- ["So16UIStateRestoringP", "UIActivityIndicatorView"]
+- ["So16UIStateRestoringP", "UILabel"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
+- ["So16UIStateRestoringP", "UIView"]
 - ["So16UIStateRestoringP", "URL"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "descriptionLabel"]
@@ -1049,7 +1123,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "GMSMarker"]
 - !private ["So18UITraitEnvironmentP", "LocalizationSystem"]
 - !private ["So18UITraitEnvironmentP", "OurTeamDetail"]
+- ["So18UITraitEnvironmentP", "UIActivityIndicatorView"]
+- ["So18UITraitEnvironmentP", "UILabel"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
+- ["So18UITraitEnvironmentP", "UIView"]
 - ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "camera"]
@@ -1062,7 +1139,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "googleMapView"]
 - !private ["So18UITraitEnvironmentP", "imageTeam"]
 - !private ["So18UITraitEnvironmentP", "imageTeamString"]
-- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "kf"]
 - !private ["So18UITraitEnvironmentP", "latitude"]
@@ -1092,7 +1169,10 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "GMSMarker"]
 - !private ["So23UIUserActivityRestoringP", "LocalizationSystem"]
 - !private ["So23UIUserActivityRestoringP", "OurTeamDetail"]
+- ["So23UIUserActivityRestoringP", "UIActivityIndicatorView"]
+- ["So23UIUserActivityRestoringP", "UILabel"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
+- ["So23UIUserActivityRestoringP", "UIView"]
 - ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "camera"]
@@ -1105,7 +1185,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "googleMapView"]
 - !private ["So23UIUserActivityRestoringP", "imageTeam"]
 - !private ["So23UIUserActivityRestoringP", "imageTeamString"]
-- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "kf"]
 - !private ["So23UIUserActivityRestoringP", "latitude"]
@@ -1130,6 +1210,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "usernameTitleLabel"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "camera"]
+- ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "kf"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "BookingViewController"]
@@ -1143,12 +1224,14 @@ depends-member:
 - !private ["So16UIViewControllerC", "OurTeamDetail"]
 - ["So16UIViewControllerC", "RoundButton"]
 - ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIActivityIndicatorView"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UINavigationItem"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", "UIView"]
 - ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "backItemTapped"]
@@ -1164,6 +1247,8 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "latitude"]
+- ["So16UIViewControllerC", "loadingLabel"]
+- ["So16UIViewControllerC", "loadingView"]
 - !private ["So16UIViewControllerC", "locationAddress"]
 - ["So16UIViewControllerC", "locationName"]
 - ["So16UIViewControllerC", "longtitude"]
@@ -1177,6 +1262,7 @@ depends-member:
 - ["So16UIViewControllerC", "setupGoogleMap"]
 - ["So16UIViewControllerC", "setupTitleViews"]
 - ["So16UIViewControllerC", "setupViews"]
+- ["So16UIViewControllerC", "spinner"]
 - ["So16UIViewControllerC", "teamBookingTapped"]
 - ["So16UIViewControllerC", "teamEndPoint"]
 - !private ["So16UIViewControllerC", "teamName"]
@@ -1191,6 +1277,7 @@ depends-member:
 - ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "camera"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "kf"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -1211,7 +1298,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSMarker"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalizationSystem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "OurTeamDetail"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIActivityIndicatorView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "camera"]
@@ -1224,7 +1314,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "googleMapView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageTeam"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageTeamString"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "kf"]
@@ -1268,7 +1358,7 @@ depends-nominal:
 - !private "12FacebookCore26AppEventParameterValueTypeP"
 - !private "SK"
 - !private "13BarberShop_V221BookingViewControllerC"
-- !private "So15CALayerDelegateP"
+- "So15CALayerDelegateP"
 - !private "So22CLLocationCoordinate2DV"
 - "s7CVarArgP"
 - !private "Sl"
@@ -1315,18 +1405,19 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
-- !private "So29UIAccessibilityIdentificationP"
-- !private "So12UIAppearanceP"
+- "So29UIAccessibilityIdentificationP"
+- "So23UIActivityIndicatorViewC"
+- "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
-- !private "So30UIContentSizeCategoryAdjustingP"
-- !private "So17UICoordinateSpaceP"
-- !private "So13UIDynamicItemP"
+- "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So20UIFocusItemContainerP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So11UIImageViewC"
-- !private "So7UILabelC"
+- "So7UILabelC"
 - !private "So22UINavigationControllerC"
 - !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
@@ -1339,11 +1430,11 @@ depends-nominal:
 - !private "So19UITextFieldDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
-- !private "So6UIViewC"
+- "So6UIViewC"
 - "So16UIViewControllerC"
 - "10Foundation3URLV"
 - "9Alamofire14URLConvertibleP"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -1638,4 +1729,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a90aa80ae34e077a6c4bed989828eac6"
+interface-hash: "3022554a0311519e70d9b10672fb4395"

@@ -28,30 +28,51 @@ class MoreTableViewController: UITableViewController {
   var user_Id:Int!
   var type:Int!
   
-  var moreList = ["",
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.apointmentLb.rawValue, comment: ""),
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.awardpointLb.rawValue, comment: ""),
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.historyLb.rawValue, comment: ""),
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.settingLb.rawValue, comment: ""),
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.aboutUsLb.rawValue, comment: ""),
-                  LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.logoutLb.rawValue, comment: "")]
+  var moreList = [String]()
   
-  var moreImageList = [#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style"),#imageLiteral(resourceName: "hair-style")]
+  var moreImageList = [#imageLiteral(resourceName: "calendar-white"),#imageLiteral(resourceName: "calendar-white"),#imageLiteral(resourceName: "reward"),#imageLiteral(resourceName: "history"),#imageLiteral(resourceName: "settings-white"),#imageLiteral(resourceName: "about-us"),#imageLiteral(resourceName: "logout")]
+  
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    // setupClearNavigation()
+    tableView.bounces = false
+    tableView.alwaysBounceVertical = false
+   setupMoreList()
+   
     }
- 
-  func setupClearNavigation() {
- 
-//    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//    self.navigationController?.navigationBar.shadowImage = UIImage()
-//    self.navigationController?.navigationBar.backgroundColor = .white
-//    UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0)
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.tableView.reloadData()
+  }
+  func setupMoreList(){
+    moreList.append(contentsOf: ["",
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.apointmentLb.rawValue, comment: ""),
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.awardpointLb.rawValue, comment: ""),
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.historyLb.rawValue, comment: ""),
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.settingLb.rawValue, comment: ""),
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.aboutUsLb.rawValue, comment: ""),
+                                 LocalizationSystem.sharedInstance.localizedStringForKey(key: MoreTable.logoutLb.rawValue, comment: "")])
+  }
+ 
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.addNotificationChangeLanguage()
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    self.tableView.reloadData()
+    NotificationCenter.default.removeObserver(self)
+  }
+  
+  func addNotificationChangeLanguage(){
+    NotificationCenter.default.addObserver(self, selector: #selector(doOnLangaue), name: NSNotification.Name(rawValue: Domains.notificationLanguage), object: nil)
+  }
+  
+  @objc func doOnLangaue(){
+    self.tableView.reloadData()
+  }
 
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,7 +83,7 @@ class MoreTableViewController: UITableViewController {
     if indexPath.row == 0 {
       return 240
     }else {
-      return 50
+      return UITableViewAutomaticDimension
     }
   }
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,7 +100,14 @@ class MoreTableViewController: UITableViewController {
     }
     
   }
-
+  override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    let footerView = UIView()
+    return footerView
+  }
+  
+  override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    return 1
+  }
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     let cell = tableView.cellForRow(at: indexPath)
@@ -93,7 +121,6 @@ class MoreTableViewController: UITableViewController {
       let appointment = storyboard.instantiateViewController(withIdentifier: "ApointmentCalendarViewController") as! ApointmentCalendarViewController
       let userId = userDefault.object(forKey: UserKeys.userId.rawValue) as! Int
       appointment.userId = userId
-    
       navigationController?.pushViewController(appointment, animated: true)
     
 
@@ -108,7 +135,7 @@ class MoreTableViewController: UITableViewController {
       let storyboard:UIStoryboard = UIStoryboard(storyboard: .History)
       let history = storyboard.instantiateViewController(withIdentifier: "TransitionHistoryViewController") as! TransitionHistoryViewController
       history.hidesBottomBarWhenPushed = true
-      navigationController?.pushViewController(history, animated: true)
+      navigationController?.present(history, animated: true)
 
     case 4:
       let storyboard:UIStoryboard = UIStoryboard(storyboard: .Setting)
@@ -126,11 +153,15 @@ class MoreTableViewController: UITableViewController {
     //  do {
         // Set the view to the login screen after signing out
          userDefault.removeObject(forKey: SignInKeys.SignedIn.rawValue)
+         userDefault.removeObject(forKey: UserKeys.userProfile.rawValue)
+         userDefault.removeObject(forKey: UserKeys.userProfileEmail.rawValue)
+         userDefault.removeObject(forKey: UserKeys.type.rawValue)
+         userDefault.removeObject(forKey: "budge")
+         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.setupRootViewController()
-     // } catch let signOutError as NSError {
-       // print ("Error signing out: \(signOutError)")
-     // }
+            appDelegate.countBudge = 0
+     
      break
     default:
       print("nothing")

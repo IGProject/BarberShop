@@ -7,71 +7,69 @@
 //
 
 import UIKit
+import Alamofire
 
 class RewardPointViewController: UIViewController {
     @IBOutlet weak var rewardCollectionView: UICollectionView!
     
-    var rewardPoint = [#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point"),#imageLiteral(resourceName: "reward-point")]
+  @IBOutlet weak var pointLabel: UILabel!
   
+  var rewardPoint = [UIImage]()
+  var point:Int?
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+      setupCollectionView()
+     getPointAPI()
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-       setupCollectionView()
-  
+      getPointAPI()
     }
+  
+  func getPointAPI(){
+   let userId = UserDefaults.standard.value(forKey: UserKeys.userId.rawValue) as? Int
+    let rewardEndPoint = URL(string: Domains.BaseURL + "/user/getPoint?")!
+    let param:[String:Any] = ["id":userId!]
+    
+    Alamofire.request(rewardEndPoint, method: .get, parameters: param).responseJSON { (response) in
+      
+      switch response.result {
+      case .success(_):
+        let jsonData = response.data
+        do {
+          let responsePoint = try! JSONDecoder().decode(PointResponse.self, from: jsonData!)
+    
+          self.point = responsePoint.point ?? 0
+          self.rewardCollectionView.reloadData()
+          
+          self.pointLabel.text = "\(LocalizationSystem.sharedInstance.localizedStringForKey(key: Loading.pointTitleKey.rawValue, comment: "")) \(String(describing: self.point!))"
+        }catch let err {
+          print("err:\(err.localizedDescription)")
+        }
+      case .failure(let failure):
+        print("failure:\(failure.localizedDescription)")
+      }
+    }
+    
+  }
   
   func setupCollectionView(){
     rewardCollectionView.delegate = self
     rewardCollectionView.dataSource = self
   }
-//    func setupTitleNav() {
-//        self.navigationItem.titleView = setTitle(title: "", subtitle: "")
-//    }
-//
-//    func setTitle(title:String, subtitle:String) -> UIView {
-//        let titleLabel = UILabel(frame:CGRect(x: 0, y: -2, width: 0, height: 0))
-//
-//        titleLabel.backgroundColor = UIColor.clear
-//        titleLabel.textColor = UIColor.white
-//        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
-//        titleLabel.text = title
-//        titleLabel.sizeToFit()
-//
-//        let subtitleLabel = UILabel(frame: CGRect(x: 0, y: 18, width: 0, height: 0))
-//        subtitleLabel.backgroundColor = UIColor.clear
-//        subtitleLabel.textColor = UIColor.white
-//        subtitleLabel.font = UIFont.systemFont(ofSize: 12)
-//        subtitleLabel.text = subtitle
-//        subtitleLabel.sizeToFit()
-//
-//        let titleView = UIView(frame: CGRect(x: 0, y:0, width: max(titleLabel.frame.size.width, subtitleLabel.frame.size.width), height: 30))
-//        titleView.addSubview(titleLabel)
-//        titleView.addSubview(subtitleLabel)
-//
-//        let widthDiff = subtitleLabel.frame.size.width - titleLabel.frame.size.width
-//
-//        if widthDiff < 0 {
-//            let newX = widthDiff / 2
-//            subtitleLabel.frame.origin.x = abs(newX)
-//        } else {
-//            let newX = widthDiff / 2
-//            titleLabel.frame.origin.x = newX
-//        }
-//
-//        return titleView
-//    }
-
 }
 
 extension RewardPointViewController: UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return rewardPoint.count
+      return self.point ?? 0 < 0 ? 0: self.point ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let rewardCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RewardPointCollectionCell", for: indexPath) as! RewardPointCollectionCell
-        rewardCell.rewardPointImageView.image = rewardPoint[indexPath.row]
-        
+      
+    
+  
         rewardCell.layer.borderColor = UIColor.init(red: 2/255.0, green: 86/255.0, blue: 153/255.0, alpha: 1).cgColor
         rewardCell.layer.cornerRadius = 5
         rewardCell.layer.borderWidth = 0.5

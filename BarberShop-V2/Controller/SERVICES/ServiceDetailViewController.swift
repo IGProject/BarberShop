@@ -22,7 +22,7 @@ class ServiceDetailViewController: UIViewController {
   @IBOutlet weak var pointTitleLabel: UILabel!
   @IBOutlet weak var descripTitleLabel: UILabel!
   
-  @IBOutlet weak var navigationBar: UINavigationBar!
+  @IBOutlet weak var navigationBar: UINavigationItem!
   @IBOutlet weak var serviceDetailCollectionView: UICollectionView!
   
   //MARK: Properties
@@ -43,7 +43,7 @@ class ServiceDetailViewController: UIViewController {
   
   private func setupViewService(){
     
-    navigationTitle.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.titleLb.rawValue, comment: "")
+    navigationTitle.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.navigationBarKey.rawValue, comment: "")
     
     title_service.text = titleServiceString
     
@@ -52,6 +52,7 @@ class ServiceDetailViewController: UIViewController {
     point_service.text = pointServiceString
     
     des_service.text = desServiceString
+    
     
     titleServiceLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: ServiceDetail.titleLb.rawValue, comment: "")
     
@@ -95,25 +96,30 @@ class ServiceDetailViewController: UIViewController {
 extension ServiceDetailViewController: UICollectionViewDelegate {
   
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
-        cell?.layer.borderWidth = 2
+//        let cell = collectionView.cellForItem(at: indexPath)
+//        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
+//        cell?.layer.borderWidth = 2
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
-        cell?.layer.borderWidth = 0.5
+//        let cell = collectionView.cellForItem(at: indexPath)
+//        cell?.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
+//        cell?.layer.borderWidth = 0.5
     }
 }
 
 extension ServiceDetailViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
       let numberOfColumns: CGFloat = CGFloat(imageDetail.count)
-        let width = collectionView.frame.size.width
-        let xInsets:CGFloat = 10
-        let cellSpacing: CGFloat = 5
-        
-        return CGSize(width: (width/numberOfColumns) - (xInsets + cellSpacing), height: 132)
+       // let width = collectionView.frame.size.width
+        let xInsets:CGFloat = 5
+        let cellSpacing: CGFloat = 2
+      
+      if numberOfColumns > 2 {
+         return CGSize(width: 180 - (xInsets + cellSpacing), height: 137)
+      }else {
+        return CGSize(width:175, height: 285)
+      }
+      
     }
 }

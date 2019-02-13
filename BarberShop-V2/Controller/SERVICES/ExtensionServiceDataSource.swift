@@ -19,9 +19,9 @@ extension ServiceViewController: UICollectionViewDataSource {
     serviceCell.configure(data: itemsService.results[indexPath.item])
     serviceCell.delegate = self
     
-    serviceCell.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
-    serviceCell.layer.cornerRadius = 5
-    serviceCell.layer.borderWidth = 0.5
+//    serviceCell.layer.borderColor = UIColor(red: 11/255, green: 34/255, blue: 57/255, alpha: 1.0).cgColor
+//    serviceCell.layer.cornerRadius = 5
+//    serviceCell.layer.borderWidth = 0.5
     
     return serviceCell
   }
